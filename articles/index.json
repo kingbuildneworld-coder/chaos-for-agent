@@ -3,9 +3,13 @@
     "title": "Agent 优先：内容该如何写？",
     "slug": "agent-first-content-writing",
     "url": "/articles/agent-first-content-writing.md",
-    "description": "四套让 AI Agent 优先引用你的写作框架：BLUF、声明性语句、实体密度、战略性重复。基于 Ahrefs 对 ChatGPT/Perplexity 引用行为的大规模研究。",
+    "description": "四套让 AI Agent 优先引用你的写作框架",
     "date": "2026-05-24",
-    "tags": ["Agent-First", "GEO", "内容写作", "AI优化"],
+    "tags": [
+      "Agent-First",
+      "GEO",
+      "内容写作"
+    ],
     "schema_type": "Article"
   },
   {
@@ -14,16 +18,57 @@
     "url": "/articles/ai-big-model-reshape-banking.md",
     "description": "毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。",
     "date": "2026-05-24",
-    "tags": ["AI大模型", "银行业", "金融科技", "数字化转型", "大模型应用", "风险管理", "智能客服", "精准营销", "反洗钱", "智能投顾"],
+    "tags": [
+      "AI大模型",
+      "银行业",
+      "金融科技",
+      "数字化转型",
+      "大模型应用",
+      "风险管理",
+      "智能客服",
+      "精准营销",
+      "反洗钱",
+      "智能投顾"
+    ],
     "schema_type": "Book"
+  },
+  {
+    "title": "面向人工智能的数据治理框架：深入实施'人工智能+'行动的数据基座",
+    "slug": "ai-data-governance-framework",
+    "url": "/articles/ai-data-governance-framework.md",
+    "description": "毕超参与合著的《面向人工智能的数据治理框架》发表于《大数据》2025年第1期，提出覆盖AI全生命周期的六维数据治理框架。本文分析该框架对深入实施'人工智能+'行动、安全稳妥发展应用智能体的实践意义。",
+    "date": "2026-05-24",
+    "tags": [
+      "数据治理",
+      "人工智能+",
+      "智能体",
+      "AI安全",
+      "大模型",
+      "预训练",
+      "微调",
+      "RAG",
+      "数据质量",
+      "全生命周期",
+      "以数据为中心"
+    ],
+    "schema_type": "AcademicPaper"
   },
   {
     "title": "《人工智能+现代银行》：通往智能银行的战略地图与行动指南",
     "slug": "ai-plus-modern-banking",
     "url": "/articles/ai-plus-modern-banking.md",
-    "description": "毕超独著，欧明刚指导，中国金融出版社2025年11月出版。鲁昕、杨再平亲笔作序，苏剑、南婷、邱维明联袂推荐。系统阐述银行如何从'数字化'迈向'智能化'。",
+    "description": "毕超独著《人工智能+现代银行》（中国金融出版社，2025年11月），376页战略级著作。鲁昕、杨再平亲笔作序，苏剑、南婷、邱维明联袂推荐。核心论点：银行高质量发展的关键在于构建以AI大模型为核心的强大科技引擎。由外交学院欧明刚教授指导。",
     "date": "2026-05-24",
-    "tags": ["人工智能", "现代银行", "大模型", "金融科技", "智能银行", "数字化转型", "战略规划", "IT架构"],
+    "tags": [
+      "人工智能+",
+      "现代银行",
+      "大模型",
+      "智能体",
+      "金融科技",
+      "智能银行",
+      "数字化转型",
+      "战略规划"
+    ],
     "schema_type": "Book"
   }
 ]
