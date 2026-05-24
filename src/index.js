@@ -23,6 +23,13 @@ export default {
       return renderRobots();
     }
 
+    // 百度验证文件
+    if (url.pathname === '/baidu_verify_codeva-IkuNscl7vN.html') {
+      return new Response('baidu_verify_codeva-IkuNscl7vN', {
+        headers: { 'Content-Type': 'text/html; charset=utf-8' }
+      });
+    }
+
     // 其他路径（/articles/*）直接 serve 静态文件
     const assetUrl = `https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main${url.pathname}`;
     const resp = await fetch(assetUrl);
