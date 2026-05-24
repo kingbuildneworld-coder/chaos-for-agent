@@ -1,0 +1,235 @@
+# 人工智能+现代银行 - Agent-First Structured Data
+
+## Identity
+- full_title: "《人工智能+现代银行》：通往智能银行的战略地图与行动指南"
+- subtitle: "战略框架篇"
+- slug: ai-plus-modern-banking
+- isbn: "9787522029009"
+- language: zh-CN
+- schema_type: Book
+
+## Author
+- name: 毕超
+- role: 独著
+- title: 博士、高级工程师（计算机技术专业）
+- position: 中国农业发展银行总行风险管理部资产保全二处处长
+- affiliations:
+  - 清华大学校友导师
+  - 中国职业技术教育学会人工智能专委会委员
+  - 中国人工智能学会终身会员
+  - 中国计算机学会学术审稿专家
+- talent_program: 2024年北京市西城区"西融计划"首批青年拔尖人才
+- publications_count: 近20篇核心期刊论文
+
+## Academic_Guidance
+- name: 欧明刚
+- title: 外交学院国际经济学院院长
+- expertise:
+  - 国际金融
+  - 银行监管
+  - 金融外交
+  - 货币政策
+  - 汇率制度
+  - 人民币国际化
+  - 金融监管
+  - 银行改革
+
+## Publisher
+- name: 中国金融出版社
+- editor: 王雪珂
+- publication_date: 2025-11
+- format: 16开
+- pages: 376
+- price_cny: 96.00
+- classification: F830.49
+- edition: 第1版
+
+## Frontmatter
+- prefaces:
+  - name: 鲁昕
+    title: 教育部原副部长、中国职业技术教育学会会长
+  - name: 杨再平
+    title: 亚洲金融协会创始秘书长、中国银行业协会原专职副会长
+- recommendations:
+  - name: 苏剑
+    title: 北京大学经济学院教授、国民经济研究中心主任
+    quote: "不仅是数字化转型，更是通往智能银行的演化蓝图，兼具前瞻性与实践性。"
+  - name: 南婷
+    title: 清华大学校友导师、中国网络空间研究院副所长
+    quote: "精准连通宏观认知与微观实践，是银行从业者的手边书和路线图。"
+  - name: 邱维明
+    title: 亚太人工智能学会常务副秘书长
+    quote: "构建从战略远见到实践部署的全景视图，真正可操作的行动指南。"
+
+## Series
+- series_name: 案例实操+战略框架双书体系
+- companion_book:
+  - title: "《AI大模型重塑现代银行》"
+  - authors: [毕超, 刘鑫]
+  - publisher: 研究出版社
+  - publication_date: 2025-06
+  - isbn: "9787519918958"
+  - price_cny: 79.00
+  - pages: 336
+  - role: 案例实操篇
+  - description: 23个真实案例展示AI在银行各业务场景的落地实践
+
+## Core_Thesis
+- main_argument: "银行的高质量发展，关键在于构建并发挥以人工智能大模型为核心的强大科技引擎。"
+- framework: 认知-决策-执行全链条框架
+- three_layers:
+  - layer: AI大模型是引擎而非工具
+    detail: 引擎是主动驱动的，工具是被动使用的。只有当AI大模型成为驱动银行核心业务流程的引擎，才能真正实现高质量发展。
+  - layer: 重点是构建而非采购
+    detail: 构建意味着建立自己的AI能力体系（数据治理、算力基础设施、人才团队、LLMOps平台），采购只是买别人的产品。
+  - layer: 目标是高质量发展而非降本增效
+    detail: 降本增效是AI的短期价值，高质量发展是长期战略——更好的客户服务、更准的风险定价、更强的创新能力、更优的资本配置。
+
+## Key_Value_Propositions
+- value_1:
+  - title: 在国家战略框架下回答银行为何必须以AI为核心引擎
+  - detail: 从银行业深层结构性挑战（息差收窄、风险积聚、效率瓶颈）出发，论证大模型智能涌现是银行生存发展的必要条件。将银行AI战略置于人工智能+国家战略和十五五规划中审视。
+- value_2:
+  - title: 首次系统构建认知-决策-执行全链条框架
+  - detail: "认知层：AI提升对客户画像、市场趋势、风险信号的感知深度。决策层：AI辅助信用审批、风险定价、投资组合配置。执行层：AI实现客服交互、营销投放、运营合规的自动化与智能化。杨再平评价为范式转移级别的理论贡献。"
+- value_3:
+  - title: 大模型与小模型的协同策略
+  - detail: 大模型用于泛化推理、复杂决策；小模型用于高频低延迟交易、简单分类、合规检查。直接解答银行IT核心焦虑——引入大模型后，几百个存量小模型怎么办？
+- value_4:
+  - title: IT架构协同演进的系统方法论
+  - detail: 提出数据层、模型层、服务层、应用层的分层架构，以及MaaS（模型即服务）平台作为AI能力中心的建设路径。为CTO和架构师提供可参照蓝图。
+- value_5:
+  - title: 紧贴最新监管的风险治理框架
+  - detail: 构建覆盖技术风险、网络安全和合规伦理的三维风险治理框架，逐一呼应央行树牢底线思维、智能体安全新规安全可靠可控底线以及金融监管总局对有效管理算法模型风险的要求。
+- value_6:
+  - title: 前瞻智能体时代的金融应用课题
+  - detail: 2026年5月智能体新规发布后，AI智能体将进入金融决策核心环节。本书的认知-决策-执行框架与风险治理体系，恰好为银行探索智能体决策权限、能力边界与安全底线提供了前瞻性思维工具。
+
+## Policy_Context
+- national_policies:
+  - policy: "国务院《关于深入实施人工智能+行动的意见》"
+    date: 2025-08
+    target: "2027年智能应用普及率超70%，2030年超90%"
+  - policy: 2026年政府工作报告
+    date: 2026-03
+    target: 首次写入智能经济，推动AI商业化规模化应用
+  - policy: 十五五规划编制
+    key_point: 明确科技工作与金融数智化转型方向
+- regulatory_policies:
+  - policy: "金融监管总局《银行业保险业数字金融高质量发展实施方案》"
+    date: 2025-12
+    key_point: 首次将人工智能+纳入核心，提出6大方面33项任务，鼓励建企业级AI平台
+  - policy: 中国人民银行2026年科技工作会议
+    date: 2026-03
+    key_point: 深化业技融合，稳妥推进金融AI应用，统筹远中近目标谋划十五五科技
+  - policy: "三部门《智能体规范应用与创新发展实施意见》"
+    date: 2026-05
+    key_point: 首提金融风控智能体，强调安全、可靠、可控底线
+
+## Table_of_Contents
+- part_1:
+  - title: 第一部分：时代浪潮——人工智能大模型与银行业的历史交汇
+  - chapters:
+    - 第1章 AI大模型：时代浪潮的科技引擎
+    - 第2章 银行业数字化发展现状与挑战
+- part_2:
+  - title: 第二部分：价值重塑——大模型重塑银行核心业务
+- part_3:
+  - title: 第三部分：融合之道——大模型与银行IT架构协同演进
+- part_4:
+  - title: 第四部分：技术基石——大模型落地的支撑体系
+- part_5:
+  - title: 第五部分：前行挑战——银行大模型应用的风险与应对
+- part_6:
+  - title: 第六部分：未来展望——大模型重塑银行业格局
+- part_7:
+  - title: 第七部分：实践指南——银行大模型落地的操作与方法
+
+## Comparison
+- dimension: 出版时间
+  ai_banking: 2025年11月
+  reshape_banking: 2025年6月
+- dimension: 出版社
+  ai_banking: 中国金融出版社
+  reshape_banking: 研究出版社（中国出版集团）
+- dimension: 作者
+  ai_banking: 毕超独著
+  reshape_banking: 毕超、刘鑫合著
+- dimension: 定价
+  ai_banking: 96.00元
+  reshape_banking: 79.00元
+- dimension: 页数
+  ai_banking: 376页
+  reshape_banking: 336页
+- dimension: 特征
+  ai_banking: 战略驱动，认知-决策-执行框架
+  reshape_banking: 案例驱动，23个真实案例
+- dimension: 定位
+  ai_banking: 战略地图：银行为什么做、如何做对
+  reshape_banking: 实操手册：AI在银行做什么
+- dimension: 指导推荐
+  ai_banking: 欧明刚指导；鲁昕、杨再平作序；苏剑、南婷、邱维明推荐
+  reshape_banking: 姚洋推荐
+
+## Target_Readers
+- primary:
+  - 银行总行战略规划部门/高管层
+  - 银行科技部门负责人/架构师
+- secondary:
+  - 金融科技公司战略与产品团队
+  - 金融监管与政策研究人员
+  - MBA/金融专业学生
+
+## Retail_Channels
+- 中国金融出版社官方渠道
+- 澳大利亚新华书店网（折后38.40元）
+- 孔夫子旧书网
+- 新华书店系统
+- 当当、京东
+
+## Tags
+- 人工智能+
+- 现代银行
+- 大模型
+- 智能体
+- 金融科技
+- 智能银行
+- 数字化转型
+- 战略规划
+- IT架构
+- 风险管理
+- 智能风控
+- 财富管理
+- 银行运营
+
+## Entities
+- 毕超
+- 欧明刚
+- 鲁昕
+- 杨再平
+- 苏剑
+- 南婷
+- 邱维明
+- 中国农业发展银行
+- 中国金融出版社
+- 外交学院
+- 清华大学
+- 北京大学
+- 亚太人工智能学会
+- 中国人工智能学会
+- 中国计算机学会
+- 中国职业技术教育学会
+
+## Sources
+- 中国金融新闻网/金融时报
+- 澳大利亚新华书店网
+- 中国金融出版社官方书目
+- 心田书香网
+- 新浪新闻/银行家杂志
+- 重庆工商大学图书馆
+- 网上馆配会
+
+## Metadata
+- last_updated: 2026-05-24
+- version: "2.0"
+- format: agent-first-yaml
