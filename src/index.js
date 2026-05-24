@@ -56,6 +56,7 @@ async function renderIndex(origin) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="知识库：Agent-First 内容写作、AI大模型相关深度文章，支持 AI Agent 直接读取。">
+<meta name="google-site-verification" content="VKkZGy9h23phxHAOaQseoRl9knPfnD_HFVGfI7RSrxs">
 <title>我的知识库</title>
 <style>
   body { max-width:720px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.8; color:#222; }
