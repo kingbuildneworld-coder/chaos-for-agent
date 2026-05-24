@@ -1,0 +1,174 @@
+# 数字人民币2.0 - Agent-First Structured Data
+
+## Identity
+- full_title: "数字人民币2.0为智能经济发展注入强劲动能"
+- subtitle: "金融与科技"
+- slug: digital-yuan-2-0-smart-economy
+- language: zh-CN
+- schema_type: Article
+- format: agent-first-yaml
+
+## Author
+- name: 毕超
+- unit: 中国农业发展银行总行风险管理部资产保全二处处长
+- affiliations:
+  - 清华大学校友导师
+  - 中国职业技术教育学会人工智能专委会委员
+  - 中国人工智能学会终身会员
+  - 中国计算机学会学术审稿专家
+- talent_program: 2024年北京市西城区"西融计划"首批青年拔尖人才
+
+## Publication
+- publisher: 金融与科技
+- publication_date: "2026"
+- source: 经作者授权发布
+- editor: 丁开yan
+- reviewer: 秦婷
+- editor_in_chief: 兰银帆
+
+## Core_Arguments
+- main_thesis: "数字人民币2.0不是简单支付手段更迭，而是中国金融基础设施的深刻变革，为智能经济高质量发展注入强大货币动能。"
+- key_transformation: "从现金型1.0版向存款货币型2.0版的历史性跨越"
+- technical_core: "账户体系+币串+智能合约三位一体数字化方案"
+
+## Key_Data
+- cumulative_transactions: "34.8亿笔"
+- cumulative_amount: "16.7万亿元"
+- personal_wallets: "2.3亿个"
+- corporate_wallets: "1884万个"
+- mBridge_transactions: "4047笔"
+- mBridge_amount: "3872亿元"
+- mBridge_eCNY_share: "95.3%"
+- data_as_of: "2025年11月末"
+
+## Three_Core_Changes
+- change_1:
+  - title: 从现金型向存款货币型转变
+  - before: "M0替代，不计付利息，游离于银行信贷体系之外"
+  - after: "商业银行负债，计付利息，纳入存款准备金制度和存款保险保障范畴"
+  - impacts:
+    - 解决商业银行运营动力问题
+    - 增强用户持有意愿
+    - 实现与现代银行体系全面融合
+- change_2:
+  - title: 账户体系+币串+智能合约三位一体
+  - account_system: "以账户为基础，松耦合，可穿透式监管"
+  - coin_string: "加密数字串，携带可编程元数据（支付条件、用途限制、时间戳、交易轨迹）"
+  - smart_contract: "预先编写的代码，满足条件时自动执行，2026年春节红包精准直达案例"
+- change_3:
+  - title: 兼容分布式账本技术
+  - architecture: "中央银行技术支持+商业银行运营+兼容分布式账本技术"
+  - centralization_benefit: "央行掌握统一发行和登记总账，确保货币主权安全"
+  - distributed_benefit: "特定场景下兼容应用分布式账本技术"
+  - rwa_policy: "2026年2月6日八部委通知，为RWA留出合规发展空间"
+
+## Four_Practice_Paths
+- path_1:
+  - title: 推动产业升级，实现精准滴灌
+  - scenarios: [智能制造, 智慧农业, 现代物流]
+  - case: "2026年2月成都全国首单数字人民币智能合约农民工工资发放"
+  - bank: 交通银行四川省分行
+  - mechanism: "智能代发合约，专款专用，精准直达"
+- path_2:
+  - title: 重塑消费范式，促进普惠金融
+  - soft_wallet: "手机APP"
+  - hard_wallet: "智能卡、可穿戴设备，支持双离线支付"
+  - offline_mechanism: "近场通信碰一碰"
+  - county_coverage: "江苏宝应、兴化等地打造数币特色村镇"
+- path_3:
+  - title: 优化社会治理，提升监管效能
+  - principle: "可控匿名——小额匿名、大额可追溯"
+  - ai_big_data: "央行利用AI和大数据进行宏观模式识别与趋势分析"
+  - benefits:
+    - 提前预警产业过热或衰退风险
+    - 识别防范系统性金融风险跨市场传染
+- path_4:
+  - title: 助力全球合作，打造跨境支付新通道
+  - mBridge_case: "2025年8月深圳6800万元跨境结算，数秒到账"
+  - comparison: "SWIFT需1-3个工作日，mBridge效率提升数百倍，零手续费"
+  - CIPS_stats:
+    - direct_participants: 190
+    - indirect_participants: 1567
+    - asia_share: "超70%"
+  - CIPS_new_rules: "2026年2月1日新版业务规则施行"
+
+## Risks_And_Challenges
+- risk_1:
+  - title: 算法安全与货币安全交织
+  - detail: "智能合约安全性与货币系统安全性紧密捆绑，需建立严格审计、测试和认证体系"
+- risk_2:
+  - title: 数据主权与用户隐私平衡
+  - detail: "需明确数据收集、存储、使用和销毁边界，遵循最小化必要性原则"
+- risk_3:
+  - title: 传统金融基础设施升级
+  - detail: "需与现有银行核心系统、支付清算系统、证券登记结算系统平滑对接"
+
+## Key_Conclusions
+- "数字人民币2.0不是简单支付手段更迭，而是中国金融基础设施的深刻变革"
+- "账户体系+币串+智能合约三位一体方案是技术灵魂"
+- "从M0现金到存款货币的转变，标志着数字人民币正式融入现代银行体系"
+- "mBridge+CIPS双轮驱动，人民币国际化和金融强国建设获得重要引擎"
+- "数字人民币不是要取代支付宝和微信，而是提供更安全普惠、更自主便捷的支付通道"
+- "对国家而言，数字人民币是金融基础设施数字化的底层操作系统"
+
+## Policy_Refs
+- policy: "中国人民银行《关于进一步加强数字人民币管理服务体系和相关金融基础设施建设的行动方案》"
+  date: "2026-01-01"
+  key_point: "新一代数字人民币计量框架、管理体系、运行机制和生态体系正式启动"
+- policy: "中国人民银行等八部委《关于进一步防范和处置虚拟货币等相关风险的通知》"
+  date: "2026-02-06"
+  key_point: "为现实世界资产代币化RWA留出合规发展空间"
+- policy: "新版CIPS业务规则"
+  date: "2026-02-01"
+  key_point: "覆盖全球主要地区，190家直接参与者、1567家间接参与者"
+
+## Comparison_With_AI_Banking_Books
+- relation: "同一作者毕超在AI+金融领域的系列著作"
+- ai_banking_book:
+  - title: "《人工智能+现代银行》"
+  - publisher: 中国金融出版社
+  - date: 2025-11
+  - isbn: "9787522029009"
+  - focus: "银行AI战略框架与智能引擎构建"
+- reshape_banking_book:
+  - title: "《AI大模型重塑现代银行》"
+  - publisher: 研究出版社
+  - date: 2025-06
+  - isbn: "9787519918958"
+  - focus: "23个真实案例展示AI在银行落地实践"
+- this_article_focus: "数字人民币2.0作为智能经济货币基础设施的深度分析"
+
+## Tags
+- 数字人民币
+- 智能经济
+- 数字货币
+- 智能合约
+- 跨境支付
+- mBridge
+- CIPS
+- 金融基础设施
+- 货币数字化
+- 普惠金融
+- 存款货币
+- 可控匿名
+
+## Entities
+- 毕超
+- 中国农业发展银行
+- 中国人民银行
+- 数字人民币
+- mBridge
+- CIPS
+- SWIFT
+- 交通银行四川省分行
+
+## Sources
+- 金融与科技（经作者授权发布）
+- 中国人民银行官方数据
+- 多边央行数字货币桥mBridge官方统计
+- CIPS官方统计
+
+## Metadata
+- last_updated: "2026-05-24"
+- version: "1.0"
+- format: agent-first-yaml
