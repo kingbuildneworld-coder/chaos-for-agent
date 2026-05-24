@@ -1,0 +1,13 @@
+{
+  "name": "我的知识库",
+  "description": "Agent-First 知识库，所有内容均支持 AI Agent 直接读取和引用",
+  "data_endpoints": {
+    "articles": "/articles/index.json"
+  },
+  "structured_content_paths": [
+    "/articles/"
+  ],
+  "schema_types": ["Article", "FAQPage"],
+  "format": "Markdown",
+  "last_updated": "2026-05-24"
+}
