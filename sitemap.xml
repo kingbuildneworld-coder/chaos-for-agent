@@ -15,4 +15,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-plus-modern-banking.md</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-data-governance-framework.md</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-agent-banking-exploration.md</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
