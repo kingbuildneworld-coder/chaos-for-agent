@@ -1,0 +1,12 @@
+# chaos-for-agent
+
+> 知识库：Agent-First 内容写作、AI大模型相关深度文章。所有内容采用 Agent-First 架构构建，支持 AI Agent 直接读取。
+
+## Articles
+
+- [Agent 优先：内容该如何写？](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/agent-first-content-writing.md): 四套让 AI Agent 优先引用你的写作框架：BLUF、声明性语句、实体密度、战略性重复。基于 Ahrefs 对 ChatGPT/Perplexity 引用行为的大规模研究。(2026-05-24)
+- [AI大模型重塑现代银行](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-big-model-reshape-banking.md): 毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。(2026-05-24)
+
+## Tags
+
+Agent-First, GEO, 内容写作, AI优化, AI大模型, 银行业, 金融科技, 数字化转型
