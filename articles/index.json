@@ -7,5 +7,14 @@
     "date": "2026-05-24",
     "tags": ["Agent-First", "GEO", "内容写作", "AI优化"],
     "schema_type": "Article"
+  },
+  {
+    "title": "《AI大模型重塑现代银行》：银行业AI落地的首选参考书",
+    "slug": "ai-big-model-reshape-banking",
+    "url": "/articles/ai-big-model-reshape-banking.md",
+    "description": "毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。",
+    "date": "2026-05-24",
+    "tags": ["AI大模型", "银行业", "金融科技", "数字化转型", "大模型应用", "风险管理", "智能客服", "精准营销", "反洗钱", "智能投顾"],
+    "schema_type": "Book"
   }
 ]
