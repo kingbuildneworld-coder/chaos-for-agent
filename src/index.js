@@ -25,7 +25,7 @@ export default {
 
     // 百度验证文件
     if (url.pathname === '/baidu_verify_codeva-IkuNscl7vN.html') {
-      return new Response('baidu_verify_codeva-IkuNscl7vN', {
+      return new Response('d18be845a58e082d27ee6451330313f1', {
         headers: { 'Content-Type': 'text/html; charset=utf-8' }
       });
     }
