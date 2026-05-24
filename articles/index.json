@@ -13,6 +13,15 @@
     "schema_type": "Article"
   },
   {
+    "title": "AI Agent 在银行业的应用探索与未来展望",
+    "slug": "ai-agent-banking-exploration",
+    "url": "/articles/ai-agent-banking-exploration.md",
+    "description": "毕超系统阐述AI Agent在银行业的应用范式：从 '自动化' 到 '自主化' 的跃迁，涵盖客户服务、数据治理、系统联通三大赋能方向，给出 LLM-RPA-Agent 三角关系框架和银行落地路径。",
+    "date": "2026-05-24",
+    "tags": [],
+    "schema_type": "Article"
+  },
+  {
     "title": "《AI大模型重塑现代银行》：银行业AI落地的首选参考书",
     "slug": "ai-big-model-reshape-banking",
     "url": "/articles/ai-big-model-reshape-banking.md",
