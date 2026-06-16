@@ -97,6 +97,14 @@ async function renderIndex(origin) {
 
     html += `
 </ul>
+<h2 style="margin-top:32px; border-bottom:2px solid #eee; padding-bottom:8px;">教程</h2>
+<ul>
+  <li>
+    <a href="/quant-course/index.html">什么是量化金融？ —— 互动教程</a>
+    <span class="date">2026-06-17</span>
+    <p class="desc">《和Yibo零基础学习量化金融》第一章互动版：6课掌握量化金融核心概念，含知识卡片、课后测验、代码实验。</p>
+  </li>
+</ul>
 <footer>本项目采用 Agent-First 架构构建，支持 AI Agent 直接读取内容。共 ${articles.length} 篇文章</footer>
 </body>
 </html>`;
