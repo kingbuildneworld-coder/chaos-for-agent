@@ -1,13 +1,72 @@
 {
-  "name": "我的知识库",
-  "description": "Agent-First 知识库，所有内容均支持 AI Agent 直接读取和引用",
-  "data_endpoints": {
-    "articles": "/articles/index.json"
+  "name": "chaos-for-agent",
+  "domain": "bi-chao.com",
+  "description": "毕超的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。采用 Agent-First 架构构建，支持 AI Agent 直接读取和引用。",
+  "author": {
+    "name": "毕超",
+    "title": "博士、高级工程师",
+    "organization": "中国农业发展银行",
+    "url": "https://bi-chao.com/about"
   },
-  "structured_content_paths": [
-    "/articles/"
+  "content": {
+    "format": "Markdown with YAML front matter",
+    "total_articles": 7,
+    "update_frequency": "weekly",
+    "primary_language": "zh-CN",
+    "topics": ["AI Agent", "AI大模型", "银行业", "金融科技", "数字化转型", "数据治理", "数字人民币", "GEO", "Agent-First 写作"],
+    "schema_types": ["Article", "Book", "AcademicPaper", "Person", "Organization"]
+  },
+  "ai_access": {
+    "llms_txt": "https://bi-chao.com/llms.txt",
+    "sitemap": "https://bi-chao.com/sitemap.xml",
+    "feed": "https://bi-chao.com/feed.xml",
+    "robots_txt": "https://bi-chao.com/robots.txt"
+  },
+  "articles": [
+    {
+      "slug": "agent-first-content-writing",
+      "title": "Agent 优先：内容该如何写？",
+      "date": "2026-05-24",
+      "description": "四套让 AI Agent 优先引用你的写作框架",
+      "tags": ["Agent-First", "GEO", "内容写作"]
+    },
+    {
+      "slug": "ai-agent-banking-exploration",
+      "title": "AI Agent 在银行业的应用探索与未来展望",
+      "date": "2026-05-24",
+      "description": "毕超系统阐述AI Agent在银行业的应用范式",
+      "tags": ["AI Agent", "智能体", "银行业", "大模型", "金融科技"]
+    },
+    {
+      "slug": "ai-big-model-reshape-banking",
+      "title": "《AI大模型重塑现代银行》",
+      "date": "2026-05-24",
+      "description": "国内首本系统论述AI大模型在银行领域理论与案例的图书",
+      "tags": ["AI大模型", "银行业", "金融科技", "数字化转型"]
+    },
+    {
+      "slug": "ai-data-governance-framework",
+      "title": "面向人工智能的数据治理框架",
+      "date": "2026-05-24",
+      "description": "提出覆盖AI全生命周期的六维数据治理框架",
+      "tags": ["数据治理", "人工智能+", "智能体", "AI安全", "大模型"]
+    },
+    {
+      "slug": "ai-plus-modern-banking",
+      "title": "《人工智能+现代银行》",
+      "date": "2026-05-24",
+      "description": "376页战略级著作，鲁昕、杨再平亲笔作序",
+      "tags": ["人工智能+", "现代银行", "大模型", "智能体", "金融科技"]
+    },
+    {
+      "slug": "digital-yuan-2-0-smart-economy",
+      "title": "数字人民币2.0为智能经济发展注入强劲动能",
+      "date": "2026-05-24",
+      "description": "深度分析数字人民币2.0版核心特征与战略价值",
+      "tags": ["数字人民币", "智能经济", "数字货币", "智能合约"]
+    }
   ],
-  "schema_types": ["Article", "FAQPage"],
-  "format": "Markdown",
-  "last_updated": "2026-05-24"
+  "license": "CC BY-NC-ND 4.0",
+  "last_updated": "2026-06-18",
+  "version": "1.0"
 }
