@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+  <id>https://bi-chao.com/</id>
+  <title>chaos-for-agent — 毕超的知识库</title>
+  <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
+  <updated>2026-06-18T00:00:00Z</updated>
+  <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
+  <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
+  <author>
+    <name>毕超</name>
+    <uri>https://bi-chao.com/about</uri>
+  </author>
+  <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
+  <rights>CC BY-NC-ND 4.0</rights>
+
+  <entry>
+    <id>https://bi-chao.com/articles/agent-first-content-writing</id>
+    <title>Agent 优先：内容该如何写？</title>
+    <updated>2026-05-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/agent-first-content-writing" rel="alternate" type="text/html"/>
+    <summary>四套让 AI Agent 优先引用你的写作框架：BLUF、声明性语句、最大化实体密度、战略性重复。基于 Ahrefs 对 AI 引用行为的大规模研究。</summary>
+    <category term="Agent-First"/>
+    <category term="GEO"/>
+    <category term="内容写作"/>
+  </entry>
+
+  <entry>
+    <id>https://bi-chao.com/articles/ai-agent-banking-exploration</id>
+    <title>AI Agent 在银行业的应用探索与未来展望</title>
+    <updated>2026-05-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-agent-banking-exploration" rel="alternate" type="text/html"/>
+    <summary>毕超系统阐述AI Agent在银行业的应用范式，提出 LLM-RPA-Agent 三角关系框架。发表于《清华金融评论》2025年7月刊。</summary>
+    <category term="AI Agent"/>
+    <category term="银行业"/>
+    <category term="大模型"/>
+    <category term="金融科技"/>
+  </entry>
+
+  <entry>
+    <id>https://bi-chao.com/articles/ai-big-model-reshape-banking</id>
+    <title>《AI大模型重塑现代银行》：银行业AI落地的首选参考书</title>
+    <updated>2026-05-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-big-model-reshape-banking" rel="alternate" type="text/html"/>
+    <summary>毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30。</summary>
+    <category term="AI大模型"/>
+    <category term="银行业"/>
+    <category term="金融科技"/>
+    <category term="数字化转型"/>
+  </entry>
+
+  <entry>
+    <id>https://bi-chao.com/articles/ai-data-governance-framework</id>
+    <title>面向人工智能的数据治理框架</title>
+    <updated>2026-05-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-data-governance-framework" rel="alternate" type="text/html"/>
+    <summary>毕超作为通信作者合著的论文，提出覆盖AI全生命周期的六维数据治理框架。发表于《大数据》2025年第1期。</summary>
+    <category term="数据治理"/>
+    <category term="人工智能+"/>
+    <category term="智能体"/>
+    <category term="大模型"/>
+  </entry>
+
+  <entry>
+    <id>https://bi-chao.com/articles/ai-plus-modern-banking</id>
+    <title>《人工智能+现代银行》：通往智能银行的战略地图与行动指南</title>
+    <updated>2026-05-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-plus-modern-banking" rel="alternate" type="text/html"/>
+    <summary>毕超独著，中国金融出版社2025年11月出版，376页。鲁昕、杨再平亲笔作序，苏剑、南婷、邱维明联袂推荐。</summary>
+    <category term="人工智能+"/>
+    <category term="现代银行"/>
+    <category term="大模型"/>
+    <category term="智能银行"/>
+  </entry>
+
+  <entry>
+    <id>https://bi-chao.com/articles/digital-yuan-2-0-smart-economy</id>
+    <title>数字人民币2.0为智能经济发展注入强劲动能</title>
+    <updated>2026-05-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/digital-yuan-2-0-smart-economy" rel="alternate" type="text/html"/>
+    <summary>毕超深度分析数字人民币2.0版从M0现金到存款货币的历史性跨越，及其对智能经济的战略价值。</summary>
+    <category term="数字人民币"/>
+    <category term="智能经济"/>
+    <category term="数字货币"/>
+    <category term="智能合约"/>
+  </entry>
+</feed>
