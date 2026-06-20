@@ -504,6 +504,7 @@ ${JSON.stringify(SCHEMA_ORGANIZATION)}
 <h2 style="margin-top:32px;border-bottom:2px solid #eee;padding-bottom:8px;">教程</h2>
 <ul>
   <li><a href="/quant-course/index.html">什么是量化金融？ —— 互动教程</a><span class="date">2026-06-17</span><p class="desc">《和Yibo零基础学习量化金融》第一章互动版：6课掌握量化金融核心概念。</p></li>
+  <li><a href="/quant-course/chapter2-first-quant-experiment.html">你的第一个量化实验 —— 互动教程</a><span class="date">2026-06-20</span><p class="desc">《和Yibo零基础学习量化金融》第二章互动版：OHLCV数据、收益率计算、多股波动率对比实验。</p></li>
 </ul>
 <footer>共 ${articles.length} 篇文章 · <a href="/about">关于作者</a> · <a href="/feed.xml">RSS</a> · <a href="/ai-manifest.json">AI Manifest</a></footer>
 </body>
