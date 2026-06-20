@@ -615,8 +615,19 @@ export default {
     try {
       const resp = await fetch(`${REPO_RAW}${p}`);
       if (resp.ok) {
+        const ext = p.split('.').pop().toLowerCase();
+        const mimeMap = {
+          html: 'text/html', htm: 'text/html',
+          css: 'text/css', js: 'application/javascript', json: 'application/json',
+          xml: 'application/xml', svg: 'image/svg+xml',
+          png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif', webp: 'image/webp', ico: 'image/x-icon',
+          pdf: 'application/pdf',
+          md: 'text/html; charset=utf-8', txt: 'text/plain',
+          woff2: 'font/woff2', woff: 'font/woff'
+        };
+        const ct = mimeMap[ext] || 'text/html; charset=utf-8';
         return new Response(resp.body, {
-          headers: { 'Content-Type': resp.headers.get('Content-Type') || 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=600' }
+          headers: { 'Content-Type': ct, 'Cache-Control': 'public, max-age=600' }
         });
       }
     } catch (_) {}
