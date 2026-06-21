@@ -60,12 +60,7 @@ body {
 .lesson-body td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .lesson-body tr:last-child td { border-bottom: none; }
 .lesson-body tr:nth-child(even) td { background: #fdfaf3; }
-@media (max-width: 600px) {
-  .lesson-body table, .lesson-body thead, .lesson-body tbody, .lesson-body th, .lesson-body td, .lesson-body tr { display: block; }
-  .lesson-body thead { display: none; }
-  .lesson-body td { position: relative; padding-left: 50%; border-bottom: 1px solid var(--border); }
-  .lesson-body td::before { content: attr(data-label); position: absolute; left: 12px; top: 10px; font-weight: 700; color: var(--muted); font-size: 0.78rem; white-space: nowrap; }
-}
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
 .info-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin: 20px 0; font-size: 0.9rem; }
 .info-box.tip { border-left: 4px solid var(--success); }
 .info-box.warn { border-left: 4px solid var(--warning); }
@@ -526,16 +521,18 @@ cum_return = (<span class="number">1</span> + rets).<span class="function">cumpr
 
   // 7: 本章总结
   `<h2>本章总结</h2>
+  <div class="table-wrap">
   <table>
     <thead><tr><th>学到的</th><th>一句话</th></tr></thead>
     <tbody>
-    <tr><td data-label="学到的">OHLCV</td><td data-label="一句话">日线数据的标准五官；Close 最常用</td></tr>
-    <tr><td data-label="学到的">收益率</td><td data-label="一句话">「今天比昨天涨跌了多少比例」</td></tr>
-    <tr><td data-label="学到的">pct_change()</td><td data-label="一句话">一行代码算完整列日收益率</td></tr>
-    <tr><td data-label="学到的">曲线 + 直方图</td><td data-label="一句话">金融数据分析的初体验</td></tr>
-    <tr><td data-label="学到的">标准差</td><td data-label="一句话">粗略比较谁波动更大</td></tr>
+    <tr><td>OHLCV</td><td>日线数据的标准五官；Close 最常用</td></tr>
+    <tr><td>收益率</td><td>「今天比昨天涨跌了多少比例」</td></tr>
+    <tr><td>pct_change()</td><td>一行代码算完整列日收益率</td></tr>
+    <tr><td>曲线 + 直方图</td><td>金融数据分析的初体验</td></tr>
+    <tr><td>标准差</td><td>粗略比较谁波动更大</td></tr>
     </tbody>
   </table>
+  </div>
   <p style="margin-top:20px;">苹果、特斯拉、英伟达——往往不是一个脾气。量化分析的第一步，就是用数据看清这些差异。</p>
   <div class="info-box tip">
     <h5>下一章预告</h5>
