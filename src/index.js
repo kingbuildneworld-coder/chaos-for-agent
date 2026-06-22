@@ -547,6 +547,9 @@ async function renderSitemap() {
   for (const a of articles) {
     xml += `\n  <url><loc>${DOMAIN}/articles/${a.slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`;
   }
+  // 教程页
+  xml += `\n  <url><loc>${DOMAIN}/quant-course/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
+  xml += `\n  <url><loc>${DOMAIN}/quant-course/chapter2-first-quant-experiment.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
   xml += '\n</urlset>';
 
   return new Response(xml, {
