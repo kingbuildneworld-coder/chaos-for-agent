@@ -1,7 +1,7 @@
 /**
- * bi-chao.com Cloudflare Worker — GEO Optimized v2.2
+ * bi-chao.com Cloudflare Worker — GEO Optimized v2.3
  *
- * 修复: canonical/og:url 路径 + WebSite Schema + SearchAction + 缓存优化
+ * P1增强: TOC目录 + 作者信息卡 + 上/下篇导航 + 相关文章推荐
  */
 
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
@@ -155,21 +155,49 @@ __JSONLD__
   li{margin:.35rem 0;}
   blockquote{border-left:3px solid var(--accent);padding:.5rem 1rem;margin:1rem 0;background:#f8fafc;color:var(--muted);}
   .article-meta{color:var(--muted);font-size:.875rem;margin-bottom:1.5rem;}
+  /* TOC */
+  .toc{background:#f8fafc;border:1px solid var(--border);border-radius:6px;padding:1rem 1.25rem;margin-bottom:2rem;font-size:.9rem;}
+  .toc summary{font-weight:700;cursor:pointer;color:var(--accent);}
+  .toc ul{list-style:none;margin:.5rem 0 0 0;}
+  .toc li{margin:.35rem 0;}
+  .toc a{color:var(--text);text-decoration:none;border-bottom:1px dotted var(--border);}
+  .toc a:hover{color:var(--accent);}
+  .toc .toc-h3{padding-left:1.25rem;}
+  /* Author card */
+  .author-card{background:linear-gradient(135deg,#f0f4ff,#f8fafc);border:1px solid var(--border);border-radius:8px;padding:1.25rem;margin-top:3rem;}
+  .author-card h3{font-size:1rem;margin:0 0 .5rem 0;color:var(--accent);}
+  .author-card p{font-size:.875rem;color:var(--muted);margin:.25rem 0;}
+  .author-card strong{color:var(--text);}
+  /* Nav */
+  .prev-next{display:flex;justify-content:space-between;gap:1rem;margin-bottom:1rem;font-size:.875rem;}
+  .prev-next a{flex:1;padding:.5rem .75rem;border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);}
+  .prev-next a:hover{border-color:var(--accent);background:#f8fafc;}
+  .prev-next span{display:block;color:var(--muted);font-size:.8rem;}
+  .related-articles{margin-bottom:1rem;}
+  .related-articles h4{font-size:.9rem;color:var(--muted);margin-bottom:.5rem;}
+  .related-articles li{font-size:.875rem;}
   .related-nav{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);}
   footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;}
   footer a,a{color:var(--accent);text-decoration:none;}
   a:hover{text-decoration:underline;}
   strong{font-weight:700;}
   img{max-width:100%;height:auto;}
+  @media(max-width:600px){
+    .prev-next{flex-direction:column;}
+  }
 </style>
 </head>
 <body>
 <article>
   <h1>__TITLE__</h1>
   <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a></div>
+  __TOC__
   __CONTENT__
+  __AUTHOR_CARD__
 </article>
 <div class="related-nav">
+  __PREV_NEXT__
+  __RELATED__
   <p>← <a href="https://bi-chao.com/">返回首页</a> &nbsp;|&nbsp; <a href="https://bi-chao.com/about">关于作者</a> &nbsp;|&nbsp; <a href="https://bi-chao.com/feed.xml">RSS</a></p>
 </div>
 <footer>
@@ -374,6 +402,105 @@ function fillTpl(tpl, vars) {
   return result;
 }
 
+/** 从 Markdown 提取 h2/h3 生成 TOC */
+function generateTOC(md) {
+  const headings = [];
+  const lines = md.split('\n');
+  for (const line of lines) {
+    const h2 = line.match(/^## (.+)$/);
+    const h3 = line.match(/^### (.+)$/);
+    if (h2) {
+      const text = h2[1];
+      const id = text.replace(/[^\w\u4e00-\u9fff]+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+      headings.push({ level: 2, text, id });
+    } else if (h3) {
+      const text = h3[1];
+      const id = text.replace(/[^\w\u4e00-\u9fff]+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+      headings.push({ level: 3, text, id });
+    }
+  }
+  if (headings.length < 3) return '';
+  let html = '<details class="toc" open><summary>目录</summary><ul>';
+  for (const h of headings) {
+    html += h.level === 3
+      ? `<li class="toc-h3"><a href="#${h.id}">${h.text}</a></li>`
+      : `<li><a href="#${h.id}">${h.text}</a></li>`;
+  }
+  html += '</ul></details>';
+  return html;
+}
+
+/** 给 Markdown 中的 h2/h3 添加 id 属性 */
+function addHeadingIds(md) {
+  return md.replace(/^(#{2,3}) (.+)$/gm, (_, hashes, text) => {
+    const id = text.replace(/[^\w\u4e00-\u9fff]+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+    return `${hashes} ${text} {#${id}}`;
+  });
+}
+
+/** 在 HTML 中给 h2/h3 标签注入 id */
+function injectHeadingIds(html) {
+  let idx = 0;
+  return html.replace(/<(h[23])>(.+?)<\/\1>/g, (_, tag, text) => {
+    const id = text.replace(/<[^>]*>/g, '').replace(/[^\w\u4e00-\u9fff]+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+    return `<${tag} id="${id}">${text}</${tag}>`;
+  });
+}
+
+/** 作者信息卡 */
+const AUTHOR_CARD_HTML = `<div class="author-card">
+<h3>关于作者</h3>
+<p><strong>毕超</strong>，博士、高级工程师（计算机技术专业），中国农业发展银行总行处长。</p>
+<p>清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。</p>
+<p>研究方向：大语言模型、数字金融、金融科技。2024年获北京市西城区"西融计划"青年拔尖人才。</p>
+<p>了解更多：<a href="https://bi-chao.com/about">关于作者</a></p>
+</div>`;
+
+/** 上/下篇导航 */
+function getPrevNext(articles, currentSlug) {
+  const sorted = [...articles].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  const idx = sorted.findIndex(a => a.slug === currentSlug);
+  if (idx < 0) return '';
+  let html = '<div class="prev-next">';
+  if (idx > 0) {
+    const p = sorted[idx - 1];
+    html += `<a href="/articles/${p.slug}"><span>← 上一篇</span>${p.title}</a>`;
+  } else {
+    html += '<a></a>';
+  }
+  if (idx < sorted.length - 1) {
+    const n = sorted[idx + 1];
+    html += `<a href="/articles/${n.slug}"><span>下一篇 →</span>${n.title}</a>`;
+  } else {
+    html += '<a></a>';
+  }
+  html += '</div>';
+  return html;
+}
+
+/** 相关文章（按标签匹配度） */
+function getRelated(articles, currentSlug, currentTags) {
+  if (!currentTags || currentTags.length === 0) return '';
+  const currentTagsSet = new Set(Array.isArray(currentTags) ? currentTags : [currentTags]);
+  const scored = articles
+    .filter(a => a.slug !== currentSlug)
+    .map(a => {
+      const aTags = Array.isArray(a.tags) ? a.tags : [];
+      const overlap = aTags.filter(t => currentTagsSet.has(t)).length;
+      return { ...a, score: overlap };
+    })
+    .filter(a => a.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3);
+  if (scored.length === 0) return '';
+  let html = '<div class="related-articles"><h4>相关文章</h4><ul>';
+  for (const a of scored) {
+    html += `<li><a href="/articles/${a.slug}">${a.title}</a></li>`;
+  }
+  html += '</ul></div>';
+  return html;
+}
+
 // ========== 数据获取 ==========
 
 async function getArticles() {
@@ -411,7 +538,10 @@ async function renderArticle(pathname) {
     const schemaType = meta.schema_type || article.schema_type || 'Article';
 
     // 转换正文
-    const contentHtml = md2html(body);
+    const contentHtml = injectHeadingIds(md2html(body));
+    const tocHtml = generateTOC(body);
+    const prevNextHtml = getPrevNext(articles, slug);
+    const relatedHtml = getRelated(articles, slug, tags);
 
     // 构建 JSON-LD（直接构造对象，避免字符串注入）
     let jsonLd;
@@ -454,7 +584,11 @@ async function renderArticle(pathname) {
       SLUG: article.slug,
       OGTYPE: ogType,
       JSONLD: JSON.stringify(jsonLd, null, 2),
-      CONTENT: contentHtml
+      CONTENT: contentHtml,
+      TOC: tocHtml,
+      AUTHOR_CARD: AUTHOR_CARD_HTML,
+      PREV_NEXT: prevNextHtml,
+      RELATED: relatedHtml
     });
 
     return new Response(html, {
