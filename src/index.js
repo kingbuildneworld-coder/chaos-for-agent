@@ -186,6 +186,12 @@ __FAQ_JSONLD__
   .faq-q{font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);cursor:default;}
   .faq-a{font-size:.875rem;color:var(--muted);line-height:1.7;}
   .faq-a p{margin:.35rem 0;}
+  /* References */
+  .ref-section{margin:2rem 0;padding:1rem 1.25rem;background:#fafaf8;border:1px solid var(--border);border-radius:6px;}
+  .ref-section h2{font-size:1rem;margin:0 0 .75rem;border-bottom:none;color:var(--muted);}
+  .ref-section ol{margin:0;padding-left:1.5rem;font-size:.875rem;}
+  .ref-section li{margin:.35rem 0;}
+  .ref-source{color:var(--muted);font-size:.75rem;margin-left:.35rem;}
   footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;}
   footer a,a{color:var(--accent);text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -203,6 +209,7 @@ __FAQ_JSONLD__
   __TOC__
   __FAQ__
   __CONTENT__
+  __REFERENCES__
   __AUTHOR_CARD__
 </article>
 <div class="related-nav">
@@ -545,6 +552,18 @@ function renderFAQ(items) {
   return html;
 }
 
+/** 渲染参考文献区块 */
+function renderReferences(refs) {
+  if (!refs || refs.length === 0) return '';
+  let html = '<section class="ref-section"><h2>参考文献</h2><ol>';
+  for (const r of refs) {
+    const src = r.source ? ` <span class="ref-source">[${r.source}]</span>` : '';
+    html += `<li><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.title}</a>${src}</li>`;
+  }
+  html += '</ol></section>';
+  return html;
+}
+
 // ========== 数据获取 ==========
 
 async function getArticles() {
@@ -591,6 +610,10 @@ async function renderArticle(pathname) {
     }
     const faqHtml = renderFAQ(faqItems);
 
+    // 参考文献
+    const references = meta.references || article.references || [];
+    const refHtml = renderReferences(references);
+
     // 转换正文
     const contentHtml = injectHeadingIds(md2html(body));
     const tocHtml = generateTOC(body);
@@ -624,9 +647,15 @@ async function renderArticle(pathname) {
         "inLanguage": "zh-CN",
         "isAccessibleForFree": true,
         "about": {"@type": "Thing", "name": (Array.isArray(tags) ? tags[0] : '') || title},
-        "keywords": Array.isArray(tags) ? tags.join(', ') : (tags || '')
+        "keywords": Array.isArray(tags) ? tags.join(', ') : (tags || ''),
+        "citation": Array.isArray(references) && references.length ? references.map(r => ({
+          "@type": "CreativeWork", "name": r.title, "url": r.url
+        })) : undefined
       };
     }
+
+    // 清理 undefined 值
+    jsonLd = JSON.parse(JSON.stringify(jsonLd));
 
     const ogType = schemaType === 'Book' ? 'book' : 'article';
 
@@ -659,7 +688,8 @@ async function renderArticle(pathname) {
       AUTHOR_CARD: AUTHOR_CARD_HTML,
       PREV_NEXT: prevNextHtml,
       RELATED: relatedHtml,
-      FAQ: faqHtml
+      FAQ: faqHtml,
+      REFERENCES: refHtml
     });
 
     return new Response(html, {
