@@ -137,6 +137,7 @@ __JSONLD__
   ]
 }
 </script>
+__FAQ_JSONLD__
 <style>
   :root {--bg:#fafaf8;--text:#1a1a1a;--muted:#6b6b6b;--accent:#1e40af;--border:#e5e5e5;--code-bg:#f4f4f5;}
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -177,6 +178,14 @@ __JSONLD__
   .related-articles h4{font-size:.9rem;color:var(--muted);margin-bottom:.5rem;}
   .related-articles li{font-size:.875rem;}
   .related-nav{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);}
+  /* FAQ */
+  .faq-section{margin:2rem 0;padding:1.25rem;background:#f8fafc;border:1px solid var(--border);border-radius:8px;}
+  .faq-section h2{font-size:1.15rem;margin:0 0 1rem;border-bottom:none;color:var(--accent);}
+  .faq-item{margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px dashed var(--border);}
+  .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+  .faq-q{font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);cursor:default;}
+  .faq-a{font-size:.875rem;color:var(--muted);line-height:1.7;}
+  .faq-a p{margin:.35rem 0;}
   footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;}
   footer a,a{color:var(--accent);text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -192,6 +201,7 @@ __JSONLD__
   <h1>__TITLE__</h1>
   <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
   __TOC__
+  __FAQ__
   __CONTENT__
   __AUTHOR_CARD__
 </article>
@@ -501,6 +511,40 @@ function getRelated(articles, currentSlug, currentTags) {
   return html;
 }
 
+// ========== FAQ 检测与渲染 ==========
+
+/** 从正文自动检测 FAQ 模式：匹配 Q: 或 **Q:** 或 > Q: 格式 */
+function detectFAQ(body) {
+  const blocks = [];
+  const lines = body.split('\n');
+  let currentQ = null, currentA = '';
+  const qRe = /^(?:>\s*)?\*{0,2}Q[：:]\*{0,2}\s*(.+)/i;
+
+  for (const line of lines) {
+    const m = line.match(qRe);
+    if (m) {
+      if (currentQ && currentA) blocks.push({ question: currentQ, answer: currentA.trim() });
+      currentQ = m[1].trim();
+      currentA = '';
+    } else if (currentQ) {
+      currentA += line + '\n';
+    }
+  }
+  if (currentQ && currentA) blocks.push({ question: currentQ, answer: currentA.trim() });
+  return blocks.length >= 2 ? blocks : null;
+}
+
+/** 渲染 FAQ HTML 区块 */
+function renderFAQ(items) {
+  if (!items || items.length < 2) return '';
+  let html = '<section class="faq-section"><h2>常见问题</h2>';
+  for (const item of items) {
+    html += `<div class="faq-item"><h3 class="faq-q">${item.question}</h3><div class="faq-a">${md2html(item.answer)}</div></div>`;
+  }
+  html += '</section>';
+  return html;
+}
+
 // ========== 数据获取 ==========
 
 async function getArticles() {
@@ -539,6 +583,13 @@ async function renderArticle(pathname) {
       ? tags.map(t => `<a href="/tags/${encodeURIComponent(t)}" style="display:inline-block;margin:0 .2rem;padding:0 .4rem;background:#f0f4ff;border-radius:4px;font-size:.8rem;">${t}</a>`).join('')
       : '';
     const schemaType = meta.schema_type || article.schema_type || 'Article';
+
+    // FAQ: 优先从前置元数据读取，否则从正文自动检测
+    let faqItems = meta.faq || article.faq || null;
+    if (!faqItems) {
+      faqItems = detectFAQ(body);
+    }
+    const faqHtml = renderFAQ(faqItems);
 
     // 转换正文
     const contentHtml = injectHeadingIds(md2html(body));
@@ -579,6 +630,20 @@ async function renderArticle(pathname) {
 
     const ogType = schemaType === 'Book' ? 'book' : 'article';
 
+    // FAQPage Schema
+    let faqJsonLd = '';
+    if (faqItems && faqItems.length) {
+      faqJsonLd = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map(q => ({
+          "@type": "Question",
+          "name": q.question,
+          "acceptedAnswer": {"@type": "Answer", "text": q.answer}
+        }))
+      }, null, 2);
+    }
+
     const html = fillTpl(TEMPLATE_HTML, {
       TITLE: title,
       DESCRIPTION: description,
@@ -587,12 +652,14 @@ async function renderArticle(pathname) {
       SLUG: article.slug,
       OGTYPE: ogType,
       JSONLD: JSON.stringify(jsonLd, null, 2),
+      FAQ_JSONLD: faqJsonLd,
       TAGS: tagsHtml,
       CONTENT: contentHtml,
       TOC: tocHtml,
       AUTHOR_CARD: AUTHOR_CARD_HTML,
       PREV_NEXT: prevNextHtml,
-      RELATED: relatedHtml
+      RELATED: relatedHtml,
+      FAQ: faqHtml
     });
 
     return new Response(html, {
