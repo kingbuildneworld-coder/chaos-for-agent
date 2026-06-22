@@ -1,7 +1,7 @@
 /**
- * bi-chao.com Cloudflare Worker — GEO Optimized v2.1
+ * bi-chao.com Cloudflare Worker — GEO Optimized v2.2
  *
- * 修复: YAML 内联数组解析 (tags: ["a","b"]) + JSON-LD 安全注入
+ * 修复: canonical/og:url 路径 + WebSite Schema + SearchAction + 缓存优化
  */
 
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
@@ -86,6 +86,23 @@ const SCHEMA_ORGANIZATION = {
   "founder": {"@type": "Person", "name": "毕超", "url": "https://bi-chao.com/about"}
 };
 
+const SCHEMA_WEBSITE = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "chaos-for-agent",
+  "alternateName": "毕超的知识库",
+  "url": "https://bi-chao.com",
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://bi-chao.com/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+
 // ========== HTML 模板 ==========
 
 const TEMPLATE_HTML = `<!DOCTYPE html>
@@ -99,13 +116,13 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta property="og:title" content="__TITLE__">
 <meta property="og:description" content="__DESCRIPTION__">
 <meta property="og:type" content="__OGTYPE__">
-<meta property="og:url" content="https://bi-chao.com/__SLUG__">
+<meta property="og:url" content="https://bi-chao.com/articles/__SLUG__">
 <meta property="og:site_name" content="chaos-for-agent">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="__TITLE__">
 <meta name="twitter:description" content="__DESCRIPTION__">
-<link rel="canonical" href="https://bi-chao.com/__SLUG__">
+<link rel="canonical" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
 __JSONLD__
@@ -116,7 +133,7 @@ __JSONLD__
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bi-chao.com/"},
-    {"@type": "ListItem", "position": 2, "name": "__TITLE__", "item": "https://bi-chao.com/__SLUG__"}
+    {"@type": "ListItem", "position": 2, "name": "__TITLE__", "item": "https://bi-chao.com/articles/__SLUG__"}
   ]
 }
 </script>
@@ -443,7 +460,7 @@ async function renderArticle(pathname) {
     return new Response(html, {
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
-        'Cache-Control': 'public, max-age=300'
+        'Cache-Control': 'public, max-age=3600'
       }
     });
   } catch (e) {
@@ -484,6 +501,9 @@ async function renderIndex() {
 <link rel="canonical" href="https://bi-chao.com/">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
+${JSON.stringify(SCHEMA_WEBSITE)}
+</script>
+<script type="application/ld+json">
 ${JSON.stringify(SCHEMA_ORGANIZATION)}
 </script>
 <title>毕超的知识库 — chaos-for-agent</title>
@@ -511,7 +531,7 @@ ${JSON.stringify(SCHEMA_ORGANIZATION)}
 </html>`;
 
   return new Response(html, {
-    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=120' }
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' }
   });
 }
 
@@ -599,6 +619,10 @@ export default {
     if (p === '/sitemap.xml') return renderSitemap();
     if (p === '/llms.txt') return renderLlms();
     if (p === '/robots.txt') return renderRobots();
+    if (p.startsWith('/search')) {
+      const q = url.searchParams.get('q') || '';
+      return Response.redirect(`https://www.google.com/search?q=site%3Abi-chao.com+${encodeURIComponent(q)}`, 302);
+    }
     if (p === '/ai-manifest.json') return proxyFile('/ai-manifest.json', 'application/json', 300);
     if (p === '/feed.xml') return proxyFile('/feed.xml', 'application/atom+xml', 300);
     if (p === '/about' || p === '/about/') return renderAbout();
