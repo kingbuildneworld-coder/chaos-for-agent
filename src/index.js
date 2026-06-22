@@ -190,7 +190,7 @@ __JSONLD__
 <body>
 <article>
   <h1>__TITLE__</h1>
-  <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a></div>
+  <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
   __TOC__
   __CONTENT__
   __AUTHOR_CARD__
@@ -535,6 +535,9 @@ async function renderArticle(pathname) {
     const description = meta.description || article.description;
     const date = meta.date || article.date;
     const tags = meta.tags || article.tags || [];
+    const tagsHtml = Array.isArray(tags) && tags.length
+      ? tags.map(t => `<a href="/tags/${encodeURIComponent(t)}" style="display:inline-block;margin:0 .2rem;padding:0 .4rem;background:#f0f4ff;border-radius:4px;font-size:.8rem;">${t}</a>`).join('')
+      : '';
     const schemaType = meta.schema_type || article.schema_type || 'Article';
 
     // 转换正文
@@ -584,6 +587,7 @@ async function renderArticle(pathname) {
       SLUG: article.slug,
       OGTYPE: ogType,
       JSONLD: JSON.stringify(jsonLd, null, 2),
+      TAGS: tagsHtml,
       CONTENT: contentHtml,
       TOC: tocHtml,
       AUTHOR_CARD: AUTHOR_CARD_HTML,
@@ -684,6 +688,12 @@ async function renderSitemap() {
   // 教程页
   xml += `\n  <url><loc>${DOMAIN}/quant-course/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
   xml += `\n  <url><loc>${DOMAIN}/quant-course/chapter2-first-quant-experiment.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
+  // 标签页
+  xml += `\n  <url><loc>${DOMAIN}/tags</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>`;
+  const tagMap = getTagMap(articles);
+  for (const tag of Object.keys(tagMap)) {
+    xml += `\n  <url><loc>${DOMAIN}/tags/${encodeURIComponent(tag)}</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>`;
+  }
   xml += '\n</urlset>';
 
   return new Response(xml, {
@@ -703,6 +713,129 @@ async function renderLlms() {
 
   return new Response(txt, {
     headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'public, max-age=300' }
+  });
+}
+
+// ========== 标签聚合页 ==========
+
+function getTagMap(articles) {
+  const map = {};
+  for (const a of articles) {
+    const tags = Array.isArray(a.tags) ? a.tags : [];
+    for (const t of tags) {
+      if (!map[t]) map[t] = [];
+      map[t].push(a);
+    }
+  }
+  return map;
+}
+
+async function renderTagIndex() {
+  const articles = await getArticles();
+  const tagMap = getTagMap(articles);
+  const tagNames = Object.keys(tagMap).sort((a, b) => tagMap[b].length - tagMap[a].length);
+
+  let tagList = '';
+  for (const tag of tagNames) {
+    tagList += `<li><a href="/tags/${encodeURIComponent(tag)}">${tag}</a> <span class="date">${tagMap[tag].length} 篇</span></li>`;
+  }
+
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="毕超的知识库 — 按标签浏览全部文章：AI、大数据、金融科技、数据治理等主题分类。">
+<meta property="og:title" content="标签索引 — chaos-for-agent">
+<meta property="og:description" content="按标签浏览毕超知识库的全部文章。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bi-chao.com/tags">
+<meta property="og:site_name" content="chaos-for-agent">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://bi-chao.com/tags">
+<script type="application/ld+json">
+${JSON.stringify(SCHEMA_WEBSITE)}
+</script>
+<title>标签索引 — chaos-for-agent</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#222;}
+  h1{font-size:1.8em;border-bottom:2px solid #eee;padding-bottom:8px;}
+  a{color:#2563eb;text-decoration:none;}a:hover{text-decoration:underline;}
+  .date{color:#999;font-size:.85em;margin-left:12px;}
+  li{margin-bottom:12px;}
+  footer{margin-top:60px;padding-top:20px;border-top:1px solid #eee;color:#999;font-size:.8em;}
+</style>
+</head>
+<body>
+<h1>标签索引</h1>
+<p style="color:#555;margin-bottom:24px;">共 ${tagNames.length} 个标签，${articles.length} 篇文章</p>
+<ul>${tagList}</ul>
+<footer>← <a href="/">返回首页</a> · <a href="/about">关于作者</a> · <a href="/feed.xml">RSS</a></footer>
+</body>
+</html>`;
+
+  return new Response(html, {
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' }
+  });
+}
+
+async function renderTagPage(tagParam) {
+  const tag = decodeURIComponent(tagParam);
+  const articles = await getArticles();
+  const tagMap = getTagMap(articles);
+  const matched = tagMap[tag] || [];
+
+  if (matched.length === 0) return new Response('Not Found', { status: 404 });
+
+  let listItems = '';
+  for (const a of matched) {
+    listItems += `
+  <li>
+    <a href="/articles/${a.slug}">${a.title}</a>
+    <span class="date">${a.date}</span>
+    <p class="desc">${a.description}</p>
+  </li>`;
+  }
+
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="标签"${tag}"下的${matched.length}篇深度文章。毕超知识库 — Agent-First 内容写作、AI大模型、银行业数字化转型。">
+<meta property="og:title" content="${tag} — 标签归档 | chaos-for-agent">
+<meta property="og:description" content="标签"${tag}"下的${matched.length}篇文章。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bi-chao.com/tags/${encodeURIComponent(tag)}">
+<meta property="og:site_name" content="chaos-for-agent">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://bi-chao.com/tags/${encodeURIComponent(tag)}">
+<script type="application/ld+json">
+${JSON.stringify(SCHEMA_WEBSITE)}
+</script>
+<title>${tag} — 标签归档 | chaos-for-agent</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#222;}
+  h1{font-size:1.8em;border-bottom:2px solid #eee;padding-bottom:8px;}
+  a{color:#2563eb;text-decoration:none;}a:hover{text-decoration:underline;}
+  .date{color:#999;font-size:.85em;margin-left:12px;}
+  .desc{color:#555;font-size:.9em;margin:4px 0 0 0;}
+  li{margin-bottom:16px;}
+  footer{margin-top:60px;padding-top:20px;border-top:1px solid #eee;color:#999;font-size:.8em;}
+</style>
+</head>
+<body>
+<h1>标签：${tag}</h1>
+<p style="color:#555;margin-bottom:24px;">共 ${matched.length} 篇文章</p>
+<ul>${listItems}</ul>
+<footer>← <a href="/">返回首页</a> · <a href="/tags">标签索引</a> · <a href="/about">关于作者</a></footer>
+</body>
+</html>`;
+
+  return new Response(html, {
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' }
   });
 }
 
@@ -756,6 +889,8 @@ export default {
     if (p === '/sitemap.xml') return renderSitemap();
     if (p === '/llms.txt') return renderLlms();
     if (p === '/robots.txt') return renderRobots();
+    if (p === '/tags' || p === '/tags/') return renderTagIndex();
+    if (p.startsWith('/tags/')) return renderTagPage(p.replace(/^\/tags\//, ''));
     if (p.startsWith('/search')) {
       const q = url.searchParams.get('q') || '';
       return Response.redirect(`https://www.google.com/search?q=site%3Abi-chao.com+${encodeURIComponent(q)}`, 302);
