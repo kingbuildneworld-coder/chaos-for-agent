@@ -1,6 +1,7 @@
 /**
- * bi-chao.com Cloudflare Worker — GEO Optimized v2.8
+ * bi-chao.com Cloudflare Worker — GEO Optimized v2.9
  *
+ * v2.9: 正文内链自动注入 — 自动识别文章间标题共现并插入上下文链接
  * v2.8: Article wordCount/timeRequired/articleSection + Tag CollectionPage + Organization sameAs
  * v2.7: OG Image + 阅读时间 + llms.txt 四段式 + 首页 BreadcrumbList + dateModified
  * v2.6: 参考文献区块 + citation JSON-LD
@@ -584,6 +585,62 @@ function readingTime(text) {
   return Math.max(1, Math.ceil(chars / 400));
 }
 
+/** 正文内链注入：在 HTML 正文中自动插入对其他文章的上下文链接 */
+function injectInternalLinks(html, articles, currentSlug) {
+  if (!articles || articles.length < 2) return html;
+
+  // 构建候选文章列表（排除当前文章，按标题长度降序避免短标题误匹配）
+  const candidates = articles
+    .filter(a => a.slug !== currentSlug && a.title && a.title.length >= 4)
+    .sort((a, b) => b.title.length - a.title.length);
+
+  if (candidates.length === 0) return html;
+
+  // 提取已存在的链接文本，避免重复链接
+  const existingLinks = new Set();
+  const linkRe = /<a\b[^>]*>([\s\S]*?)<\/a>/gi;
+  let lm;
+  while ((lm = linkRe.exec(html)) !== null) {
+    existingLinks.add(lm[1].replace(/<[^>]*>/g, '').trim());
+  }
+
+  // 收集所有已标记的位置区间 [start, end)，避免嵌套链接
+  const markedRanges = [];
+
+  for (const cand of candidates) {
+    const escaped = cand.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(escaped, 'g');
+    let m;
+    while ((m = re.exec(html)) !== null) {
+      const start = m.index;
+      const end = start + cand.title.length;
+
+      // 跳过已链接区域
+      if (existingLinks.has(cand.title)) continue;
+
+      // 检查是否与已标记区间重叠
+      let overlap = false;
+      for (const [ms, me] of markedRanges) {
+        if (start < me && end > ms) { overlap = true; break; }
+      }
+      if (overlap) continue;
+
+      // 检查是否在 HTML 标签内（简单检测：前 200 字符内有未闭合的 <）
+      const before = html.substring(Math.max(0, start - 200), start);
+      const openCount = (before.match(/<[^/>][^>]*>/g) || []).length;
+      const closeCount = (before.match(/<\/[^>]+>/g) || []).length + (before.match(/<[^/>]+\/>/g) || []).length;
+      if (openCount !== closeCount) continue;
+
+      // 标记区间并替换
+      markedRanges.push([start, end]);
+      const link = `<a href="/articles/${cand.slug}">${cand.title}</a>`;
+      html = html.substring(0, start) + link + html.substring(end);
+      break; // 每篇文章最多链接一次
+    }
+  }
+  return html;
+}
+
 // ========== 数据获取 ==========
 
 async function getArticles() {
@@ -641,8 +698,9 @@ async function renderArticle(pathname) {
     // OG Image（优先 frontmatter，否则自动生成占位图）
     const ogImage = meta.og_image || article.og_image || `https://bi-chao.com/og?title=${encodeURIComponent(title)}&date=${encodeURIComponent(date || '')}`;
 
-    // 转换正文
-    const contentHtml = injectHeadingIds(md2html(body));
+    // 转换正文 + 内链注入
+    let contentHtml = injectHeadingIds(md2html(body));
+    contentHtml = injectInternalLinks(contentHtml, articles, slug);
     const tocHtml = generateTOC(body);
     const prevNextHtml = getPrevNext(articles, slug);
     const relatedHtml = getRelated(articles, slug, tags);
