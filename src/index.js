@@ -1,6 +1,7 @@
 /**
- * bi-chao.com Cloudflare Worker — GEO Optimized v2.9
+ * bi-chao.com Cloudflare Worker — GEO Optimized v2.10
  *
+ * v2.10: Speakable Schema + WebSite hasPart 增强
  * v2.9: 正文内链自动注入 — 自动识别文章间标题共现并插入上下文链接
  * v2.8: Article wordCount/timeRequired/articleSection + Tag CollectionPage + Organization sameAs
  * v2.7: OG Image + 阅读时间 + llms.txt 四段式 + 首页 BreadcrumbList + dateModified
@@ -111,7 +112,12 @@ const SCHEMA_WEBSITE = {
       "urlTemplate": "https://bi-chao.com/search?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
-  }
+  },
+  "hasPart": [
+    {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "毕超博士的个人简介与学术背景"},
+    {"@type": "WebPage", "name": "标签索引", "url": "https://bi-chao.com/tags", "description": "按主题标签浏览全部文章"},
+    {"@type": "WebPage", "name": "Sitemap", "url": "https://bi-chao.com/sitemap.xml"}
+  ]
 };
 
 // ========== HTML 模板 ==========
@@ -153,6 +159,7 @@ __JSONLD__
 }
 </script>
 __FAQ_JSONLD__
+__SPEAKABLE_JSONLD__
 <style>
   :root {--bg:#fafaf8;--text:#1a1a1a;--muted:#6b6b6b;--accent:#1e40af;--border:#e5e5e5;--code-bg:#f4f4f5;}
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -763,6 +770,16 @@ async function renderArticle(pathname) {
       }, null, 2);
     }
 
+    // Speakable Schema（语音搜索）
+    const speakableJsonLd = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SpeakableSpecification",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "article > p:first-of-type"]
+      }
+    });
+
     const html = fillTpl(TEMPLATE_HTML, {
       TITLE: title,
       DESCRIPTION: description,
@@ -772,6 +789,7 @@ async function renderArticle(pathname) {
       OGTYPE: ogType,
       JSONLD: JSON.stringify(jsonLd, null, 2),
       FAQ_JSONLD: faqJsonLd,
+      SPEAKABLE_JSONLD: speakableJsonLd,
       TAGS: tagsHtml,
       CONTENT: contentHtml,
       TOC: tocHtml,
