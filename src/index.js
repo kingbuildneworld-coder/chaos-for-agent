@@ -128,6 +128,7 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>__TITLE__ — 毕超的知识库</title>
+<meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta name="description" content="__DESCRIPTION__">
 <meta name="author" content="毕超">
 <meta property="og:title" content="__TITLE__">
