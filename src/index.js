@@ -122,6 +122,10 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="__TITLE__">
 <meta name="twitter:description" content="__DESCRIPTION__">
+<meta name="twitter:image" content="__OG_IMAGE__">
+<meta property="og:image" content="__OG_IMAGE__">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <link rel="canonical" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
@@ -205,7 +209,7 @@ __FAQ_JSONLD__
 <body>
 <article>
   <h1>__TITLE__</h1>
-  <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
+  <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; __READING_TIME__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
   __TOC__
   __FAQ__
   __CONTENT__
@@ -564,6 +568,12 @@ function renderReferences(refs) {
   return html;
 }
 
+/** 估算阅读时间（中文 ~400 字/分钟） */
+function readingTime(text) {
+  const chars = text.replace(/\s/g, '').length;
+  return Math.max(1, Math.ceil(chars / 400));
+}
+
 // ========== 数据获取 ==========
 
 async function getArticles() {
@@ -597,6 +607,7 @@ async function renderArticle(pathname) {
     const title = meta.title || article.title;
     const description = meta.description || article.description;
     const date = meta.date || article.date;
+    const dateModified = meta.updated || meta.last_modified || article.updated || article.last_modified || date;
     const tags = meta.tags || article.tags || [];
     const tagsHtml = Array.isArray(tags) && tags.length
       ? tags.map(t => `<a href="/tags/${encodeURIComponent(t)}" style="display:inline-block;margin:0 .2rem;padding:0 .4rem;background:#f0f4ff;border-radius:4px;font-size:.8rem;">${t}</a>`).join('')
@@ -613,6 +624,12 @@ async function renderArticle(pathname) {
     // 参考文献
     const references = meta.references || article.references || [];
     const refHtml = renderReferences(references);
+
+    // 阅读时间
+    const readTime = readingTime(body);
+
+    // OG Image（优先 frontmatter，否则自动生成占位图）
+    const ogImage = meta.og_image || article.og_image || `https://bi-chao.com/og?title=${encodeURIComponent(title)}&date=${encodeURIComponent(date || '')}`;
 
     // 转换正文
     const contentHtml = injectHeadingIds(md2html(body));
@@ -632,6 +649,7 @@ async function renderArticle(pathname) {
         "publisher": {"@type": "Organization", "name": meta.publisher || "中国金融出版社"},
         "datePublished": meta.publication_date || date,
         "numberOfPages": meta.pages ? String(meta.pages) : "",
+        "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 630 },
         "inLanguage": "zh-CN"
       };
     } else {
@@ -642,12 +660,13 @@ async function renderArticle(pathname) {
         "description": description,
         "author": {"@type": "Person", "name": AUTHOR_NAME, "url": "https://bi-chao.com/about", "jobTitle": "中国农业发展银行总行处长", "alumniOf": "清华大学"},
         "datePublished": date,
-        "dateModified": date,
+        "dateModified": dateModified,
         "publisher": {"@type": "Organization", "name": "chaos-for-agent", "url": "https://bi-chao.com"},
         "inLanguage": "zh-CN",
         "isAccessibleForFree": true,
         "about": {"@type": "Thing", "name": (Array.isArray(tags) ? tags[0] : '') || title},
         "keywords": Array.isArray(tags) ? tags.join(', ') : (tags || ''),
+        "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 630 },
         "citation": Array.isArray(references) && references.length ? references.map(r => ({
           "@type": "CreativeWork", "name": r.title, "url": r.url
         })) : undefined
@@ -689,7 +708,9 @@ async function renderArticle(pathname) {
       PREV_NEXT: prevNextHtml,
       RELATED: relatedHtml,
       FAQ: faqHtml,
-      REFERENCES: refHtml
+      REFERENCES: refHtml,
+      READING_TIME: `约 ${readTime} 分钟`,
+      OG_IMAGE: ogImage
     });
 
     return new Response(html, {
@@ -740,6 +761,15 @@ ${JSON.stringify(SCHEMA_WEBSITE)}
 </script>
 <script type="application/ld+json">
 ${JSON.stringify(SCHEMA_ORGANIZATION)}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bi-chao.com/"}
+  ]
+}
 </script>
 <title>毕超的知识库 — chaos-for-agent</title>
 <style>
@@ -802,11 +832,45 @@ async function renderSitemap() {
 
 async function renderLlms() {
   const articles = await getArticles();
-  let txt = `# chaos-for-agent\n\n> 毕超的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。\n\n## About\n- [关于作者](${DOMAIN}/about)\n\n## Articles\n`;
+
+  // 按标签聚合
+  const tagMap = getTagMap(articles);
+  const topTags = Object.keys(tagMap).sort((a, b) => tagMap[b].length - tagMap[a].length).slice(0, 10);
+
+  let txt = `# chaos-for-agent — 毕超的知识库
+
+> 面向 AI Agent 和搜索引擎优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。
+> 作者：毕超，中国农业发展银行总行处长，清华大学校友。
+
+## Site Map
+- Home: ${DOMAIN}/
+- About: ${DOMAIN}/about
+- Tags: ${DOMAIN}/tags
+- Tutorials: ${DOMAIN}/quant-course/index.html
+
+## Articles (${articles.length})
+`;
+
   for (const a of articles) {
-    txt += `\n- [${a.title}](${DOMAIN}/articles/${a.slug}): ${a.description} (${a.date})`;
+    const tagStr = (Array.isArray(a.tags) ? a.tags : []).join(', ');
+    txt += `\n- [${a.title}](${DOMAIN}/articles/${a.slug})`;
+    txt += `\n  - Description: ${a.description}`;
+    txt += `\n  - Date: ${a.date}`;
+    if (tagStr) txt += `\n  - Tags: ${tagStr}`;
   }
-  txt += `\n\n## AI Access\n- Sitemap: ${DOMAIN}/sitemap.xml\n- RSS: ${DOMAIN}/feed.xml\n- AI Manifest: ${DOMAIN}/ai-manifest.json\n- Robots: ${DOMAIN}/robots.txt\n`;
+
+  txt += `\n\n## Topics (top ${topTags.length})`;
+  for (const tag of topTags) {
+    txt += `\n- ${tag}: ${tagMap[tag].length} articles → ${DOMAIN}/tags/${encodeURIComponent(tag)}`;
+  }
+
+  txt += `\n\n## For AI Agents
+- Sitemap: ${DOMAIN}/sitemap.xml
+- RSS: ${DOMAIN}/feed.xml
+- AI Manifest: ${DOMAIN}/ai-manifest.json
+- Robots: ${DOMAIN}/robots.txt
+- Search: ${DOMAIN}/search?q={query}
+`;
 
   return new Response(txt, {
     headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'public, max-age=300' }
@@ -961,6 +1025,41 @@ async function renderAbout() {
   return new Response('Not Found', { status: 404 });
 }
 
+// ========== OG 图片生成 ==========
+
+function renderOgImage(title, date) {
+  const lines = wrapText(title, 24);
+  let y = 280 - (lines.length - 1) * 20;
+  const textEls = lines.map(l => `<text x="50%" y="${y}" text-anchor="middle" fill="white" font-size="36" font-weight="700" font-family="'Noto Serif SC',serif">${escapeXml(l)}</text>${(y += 48, '')}`).join('');
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1e293b"/>
+  <rect x="40" y="40" width="1120" height="550" rx="12" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="50%" y="180" text-anchor="middle" fill="#94a3b8" font-size="20" font-family="sans-serif">chaos-for-agent / 毕超的知识库</text>
+  ${textEls}
+  <text x="50%" y="520" text-anchor="middle" fill="#64748b" font-size="18" font-family="sans-serif">${date || ''}</text>
+  <text x="50%" y="560" text-anchor="middle" fill="#475569" font-size="14" font-family="sans-serif">bi-chao.com</text>
+</svg>`;
+  return new Response(svg, {
+    headers: { 'Content-Type': 'image/svg+xml', 'Cache-Control': 'public, max-age=86400' }
+  });
+}
+
+function wrapText(text, maxChars) {
+  const lines = [];
+  let cur = '';
+  for (const ch of text) {
+    if (cur.length >= maxChars) { lines.push(cur); cur = ''; }
+    cur += ch;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+function escapeXml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 // ========== Feed & Manifest (代理) ==========
 
 async function proxyFile(path, contentType, maxAge) {
@@ -995,6 +1094,14 @@ export default {
     if (p === '/ai-manifest.json') return proxyFile('/ai-manifest.json', 'application/json', 300);
     if (p === '/feed.xml') return proxyFile('/feed.xml', 'application/atom+xml', 300);
     if (p === '/about' || p === '/about/') return renderAbout();
+
+    // OG 图片
+    if (p.startsWith('/og')) {
+      const title = url.searchParams.get('title') || 'chaos-for-agent';
+      const date = url.searchParams.get('date') || '';
+      return renderOgImage(title, date);
+    }
+
     if (p === '/baidu_verify_codeva-IkuNscl7vN.html') {
       return new Response('d18be845a58e082d27ee6451330313f1', { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
     }
