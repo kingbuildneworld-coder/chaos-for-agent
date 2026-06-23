@@ -144,6 +144,7 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <link rel="canonical" href="https://bi-chao.com/articles/__SLUG__">
+<link rel="alternate" hreflang="zh-CN" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
 __JSONLD__
@@ -200,6 +201,11 @@ __SPEAKABLE_JSONLD__
   .related-articles h4{font-size:.9rem;color:var(--muted);margin-bottom:.5rem;}
   .related-articles li{font-size:.875rem;}
   .related-nav{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);}
+  /* Key Takeaways */
+  .key-takeaways{background:linear-gradient(135deg,#eff6ff,#f0fdf4);border:2px solid var(--accent);border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:1.5rem;}
+  .key-takeaways h3{font-size:.95rem;color:var(--accent);margin:0 0 .75rem;}
+  .key-takeaways ul{margin:0 0 0 1.25rem;}
+  .key-takeaways li{margin:.25rem 0;font-size:.875rem;color:var(--text);}
   /* FAQ */
   .faq-section{margin:2rem 0;padding:1.25rem;background:#f8fafc;border:1px solid var(--border);border-radius:8px;}
   .faq-section h2{font-size:1.15rem;margin:0 0 1rem;border-bottom:none;color:var(--accent);}
@@ -228,6 +234,7 @@ __SPEAKABLE_JSONLD__
 <article>
   <h1>__TITLE__</h1>
   <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; __READING_TIME__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
+  __KEY_TAKEAWAYS__
   __TOC__
   __FAQ__
   __CONTENT__
@@ -592,6 +599,49 @@ function readingTime(text) {
   return Math.max(1, Math.ceil(chars / 400));
 }
 
+/** 生成核心摘要框：从正文提取关键句（加粗语句 + 首段关键句） */
+function genKeyTakeaways(body, description) {
+  const items = [];
+
+  // 1. 提取加粗语句 **text**（前 800 字符范围内，限 4 条）
+  const boldRe = /\*\*(.+?)\*\*/g;
+  const earlyBody = body.slice(0, 800);
+  let bm;
+  while ((bm = boldRe.exec(earlyBody)) !== null && items.length < 4) {
+    const t = bm[1].trim();
+    if (t.length >= 8 && t.length <= 80 && !items.includes(t)) {
+      items.push(t);
+    }
+  }
+
+  // 2. 首段纯文本句（20~120 字普通句，非标题、非列表）
+  if (items.length < 3) {
+    const plainText = body.replace(/[#*>\-`\[\]()!_~|]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
+    const sentences = plainText.split(/[。；\n]/).filter(s => {
+      const len = s.trim().length;
+      return len >= 15 && len <= 120;
+    });
+    for (const s of sentences) {
+      const t = s.trim();
+      if (items.length >= 4) break;
+      if (!items.includes(t)) items.push(t);
+    }
+  }
+
+  // 3. 兜底：使用 description
+  if (items.length === 0 && description) {
+    items.push(description);
+  }
+
+  if (items.length === 0) return '';
+  let html = '<div class="key-takeaways"><h3>核心摘要</h3><ul>';
+  for (const item of items.slice(0, 4)) {
+    html += `<li>${item}</li>`;
+  }
+  html += '</ul></div>';
+  return html;
+}
+
 /** 正文内链注入：在 HTML 正文中自动插入对其他文章的上下文链接 */
 function injectInternalLinks(html, articles, currentSlug) {
   if (!articles || articles.length < 2) return html;
@@ -695,6 +745,9 @@ async function renderArticle(pathname) {
     }
     const faqHtml = renderFAQ(faqItems);
 
+    // 独立摘要框
+    const keyTakeawaysHtml = genKeyTakeaways(body, description);
+
     // 参考文献
     const references = meta.references || article.references || [];
     const refHtml = renderReferences(references);
@@ -797,6 +850,7 @@ async function renderArticle(pathname) {
       PREV_NEXT: prevNextHtml,
       RELATED: relatedHtml,
       FAQ: faqHtml,
+      KEY_TAKEAWAYS: keyTakeawaysHtml,
       REFERENCES: refHtml,
       READING_TIME: `约 ${readTime} 分钟`,
       OG_IMAGE: ogImage
