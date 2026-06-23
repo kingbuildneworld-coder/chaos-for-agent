@@ -1,7 +1,12 @@
 /**
- * bi-chao.com Cloudflare Worker — GEO Optimized v2.3
+ * bi-chao.com Cloudflare Worker — GEO Optimized v2.8
  *
- * P1增强: TOC目录 + 作者信息卡 + 上/下篇导航 + 相关文章推荐
+ * v2.8: Article wordCount/timeRequired/articleSection + Tag CollectionPage + Organization sameAs
+ * v2.7: OG Image + 阅读时间 + llms.txt 四段式 + 首页 BreadcrumbList + dateModified
+ * v2.6: 参考文献区块 + citation JSON-LD
+ * v2.5: FAQ 检测与 FAQPage Schema
+ * v2.4: 标签聚合页 /tags + /tags/{tag}
+ * v2.3: TOC目录 + 作者信息卡 + 上/下篇导航 + 相关文章推荐
  */
 
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
@@ -83,7 +88,12 @@ const SCHEMA_ORGANIZATION = {
   "alternateName": "毕超的知识库",
   "url": "https://bi-chao.com",
   "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
-  "founder": {"@type": "Person", "name": "毕超", "url": "https://bi-chao.com/about"}
+  "founder": {"@type": "Person", "name": "毕超", "url": "https://bi-chao.com/about"},
+  "sameAs": [
+    "https://github.com/kingbuildneworld-coder",
+    "https://bi-chao.com/about"
+  ],
+  "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理"]
 };
 
 const SCHEMA_WEBSITE = {
@@ -666,6 +676,9 @@ async function renderArticle(pathname) {
         "isAccessibleForFree": true,
         "about": {"@type": "Thing", "name": (Array.isArray(tags) ? tags[0] : '') || title},
         "keywords": Array.isArray(tags) ? tags.join(', ') : (tags || ''),
+        "wordCount": body.replace(/\s/g, '').length,
+        "timeRequired": `PT${readTime}M`,
+        "articleSection": Array.isArray(tags) && tags.length ? tags[0] : undefined,
         "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 630 },
         "citation": Array.isArray(references) && references.length ? references.map(r => ({
           "@type": "CreativeWork", "name": r.title, "url": r.url
@@ -959,6 +972,26 @@ async function renderTagPage(tagParam) {
   </li>`;
   }
 
+  // CollectionPage JSON-LD
+  const collectionPageLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `${tag} — 毕超的知识库`,
+    "description": `标签"${tag}"下的${matched.length}篇深度文章。`,
+    "url": `https://bi-chao.com/tags/${encodeURIComponent(tag)}`,
+    "isPartOf": {"@type": "WebSite", "name": "chaos-for-agent", "url": "https://bi-chao.com"},
+    "about": {"@type": "Thing", "name": tag},
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": matched.map((a, i) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "url": `https://bi-chao.com/articles/${a.slug}`,
+        "name": a.title
+      }))
+    }
+  };
+
   const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -974,7 +1007,7 @@ async function renderTagPage(tagParam) {
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://bi-chao.com/tags/${encodeURIComponent(tag)}">
 <script type="application/ld+json">
-${JSON.stringify(SCHEMA_WEBSITE)}
+${JSON.stringify(collectionPageLd)}
 </script>
 <title>${tag} — 标签归档 | chaos-for-agent</title>
 <style>
