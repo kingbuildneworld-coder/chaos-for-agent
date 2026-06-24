@@ -160,8 +160,12 @@ __JSONLD__
   ]
 }
 </script>
+<script type="application/ld+json">
 __FAQ_JSONLD__
+</script>
+<script type="application/ld+json">
 __SPEAKABLE_JSONLD__
+</script>
 <style>
   :root {--bg:#fafaf8;--text:#1a1a1a;--muted:#6b6b6b;--accent:#1e40af;--border:#e5e5e5;--code-bg:#f4f4f5;}
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -828,10 +832,7 @@ async function renderArticle(pathname) {
     const speakableJsonLd = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "SpeakableSpecification",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": ["h1", "article > p:first-of-type"]
-      }
+      "cssSelector": ["h1", "article > p:first-of-type"]
     });
 
     const html = fillTpl(TEMPLATE_HTML, {
@@ -889,15 +890,22 @@ async function renderIndex() {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="毕超的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta name="author" content="毕超">
 <meta name="google-site-verification" content="VKkZGy9h23phxHAOaQseoRl9knPfnD_HFVGfI7RSrxs">
-<meta name="baidu-site-verification" content="codeva-IkuNscl7vN">
+<meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta property="og:title" content="毕超的知识库 — chaos-for-agent">
 <meta property="og:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bi-chao.com/">
 <meta property="og:site_name" content="chaos-for-agent">
 <meta property="og:locale" content="zh_CN">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bi-chao.com/og?title=%E6%AF%95%E8%B6%85%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="毕超的知识库 — chaos-for-agent">
+<meta name="twitter:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta name="twitter:image" content="https://bi-chao.com/og?title=%E6%AF%95%E8%B6%85%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
 <link rel="canonical" href="https://bi-chao.com/">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
