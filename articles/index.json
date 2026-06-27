@@ -1,5 +1,46 @@
 [
   {
+    "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
+    "slug": "accelerating-bank-llm-digital-finance",
+    "url": "/articles/accelerating-bank-llm-digital-finance.md",
+    "description": "毕超在《银行家》杂志2024年第9期系统论证银行大模型的三层价值链条（宏观战略→中观行业→微观机构）、六大发展基础优势和六大发展路径，提出'抢抓大模型技术应用落地时间窗口'的战略判断，为银行业做好数字金融大文章提供完整行动框架。",
+    "date": "2026-06-27",
+    "tags": [
+      "银行大模型",
+      "数字金融",
+      "金融科技",
+      "大模型",
+      "银行业",
+      "数字化转型",
+      "毕超",
+      "五篇大文章",
+      "金融强国",
+      "数据治理",
+      "算力基础设施"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "加快发展金融大模型 助力金融强国建设——毕超论金融大模型的三层嵌套分析框架",
+    "slug": "accelerating-finance-llm-financial-power",
+    "url": "/articles/accelerating-finance-llm-financial-power.md",
+    "description": "毕超在《科技中国》2024年第1期提出金融大模型的三层嵌套分析框架（技术底座/通用底座→行业底座→场景应用），定义其作为'生产力工具'驱动金融行业变革的核心逻辑，系统论述三大挑战与六大发展路径，为'加强科技金融和数字金融'提供完整理论支撑。",
+    "date": "2026-06-27",
+    "tags": [
+      "金融大模型",
+      "金融强国",
+      "大模型",
+      "人工智能",
+      "金融科技",
+      "毕超",
+      "数字金融",
+      "科技金融",
+      "金融基础设施",
+      "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Agent 优先：内容该如何写？",
     "slug": "agent-first-content-writing",
     "url": "/articles/agent-first-content-writing.md",
@@ -96,6 +137,24 @@
       "数字金融",
       "智能客服",
       "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "数字人民币2.0版赋能'人工智能+'行动：理论逻辑、核心变革与应用前景",
+    "slug": "digital-rmb-2-0-ai-plus-action",
+    "url": "/articles/digital-rmb-2-0-ai-plus-action.md",
+    "description": "毕超以马克思主义货币理论为分析框架，系统解构数字人民币从'数字现金'1.0版到'数字存款货币'2.0版的历史性跃迁：全球首个计息央行数字货币，从M0升至M1/M2，'账户体系+币串+智能合约'三位一体方案赋能产业、消费、治理、全球合作四大领域。",
+    "date": "2026-06-27",
+    "tags": [
+      "数字人民币",
+      "人工智能+",
+      "智能合约",
+      "数字货币",
+      "马克思主义货币理论",
+      "央行数字货币",
+      "金融基础设施",
+      "毕超"
     ],
     "schema_type": "Article"
   },
