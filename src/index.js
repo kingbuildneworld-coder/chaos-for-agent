@@ -87,7 +87,7 @@ const SCHEMA_ORGANIZATION = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "chaos-for-agent",
-  "alternateName": "毕超的知识库",
+  "alternateName": "面向Agent的知识库",
   "url": "https://bi-chao.com",
   "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
   "founder": {"@type": "Person", "name": "毕超", "url": "https://bi-chao.com/about"},
@@ -102,7 +102,7 @@ const SCHEMA_WEBSITE = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "chaos-for-agent",
-  "alternateName": "毕超的知识库",
+  "alternateName": "面向Agent的知识库",
   "url": "https://bi-chao.com",
   "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
   "potentialAction": {
@@ -127,7 +127,7 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>__TITLE__ — 毕超的知识库</title>
+<title>__TITLE__ — 面向Agent的知识库</title>
 <meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta name="description" content="__DESCRIPTION__">
 <meta name="author" content="毕超">
@@ -889,11 +889,11 @@ async function renderIndex() {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="毕超的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta name="description" content="面向Agent的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta name="author" content="毕超">
 <meta name="google-site-verification" content="VKkZGy9h23phxHAOaQseoRl9knPfnD_HFVGfI7RSrxs">
 <meta name="baidu-site-verification" content="codeva-J4sirVAId0">
-<meta property="og:title" content="毕超的知识库 — chaos-for-agent">
+<meta property="og:title" content="面向Agent的知识库 — chaos-for-agent">
 <meta property="og:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bi-chao.com/">
@@ -903,7 +903,7 @@ async function renderIndex() {
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="毕超的知识库 — chaos-for-agent">
+<meta name="twitter:title" content="面向Agent的知识库 — chaos-for-agent">
 <meta name="twitter:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta name="twitter:image" content="https://bi-chao.com/og?title=%E6%AF%95%E8%B6%85%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
 <link rel="canonical" href="https://bi-chao.com/">
@@ -923,7 +923,7 @@ ${JSON.stringify(SCHEMA_ORGANIZATION)}
   ]
 }
 </script>
-<title>毕超的知识库 — chaos-for-agent</title>
+<title>面向Agent的知识库 — chaos-for-agent</title>
 <style>
   body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#222;}
   h1{font-size:1.8em;border-bottom:2px solid #eee;padding-bottom:8px;}
@@ -935,7 +935,7 @@ ${JSON.stringify(SCHEMA_ORGANIZATION)}
 </style>
 </head>
 <body>
-<h1>毕超的知识库</h1>
+<h1>面向Agent的知识库</h1>
 <p style="color:#555;margin-bottom:24px;">Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</p>
 <ul>${listItems}</ul>
 <h2 style="margin-top:32px;border-bottom:2px solid #eee;padding-bottom:8px;">教程</h2>
@@ -989,7 +989,7 @@ async function renderLlms() {
   const tagMap = getTagMap(articles);
   const topTags = Object.keys(tagMap).sort((a, b) => tagMap[b].length - tagMap[a].length).slice(0, 10);
 
-  let txt = `# chaos-for-agent — 毕超的知识库
+  let txt = `# chaos-for-agent — 面向Agent的知识库
 
 > 面向 AI Agent 和搜索引擎优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。
 > 作者：毕超，中国农业发展银行总行处长，清华大学校友。
@@ -1058,7 +1058,7 @@ async function renderTagIndex() {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="毕超的知识库 — 按标签浏览全部文章：AI、大数据、金融科技、数据治理等主题分类。">
+<meta name="description" content="面向Agent的知识库 — 按标签浏览全部文章：AI、大数据、金融科技、数据治理等主题分类。">
 <meta property="og:title" content="标签索引 — chaos-for-agent">
 <meta property="og:description" content="按标签浏览毕超知识库的全部文章。">
 <meta property="og:type" content="website">
@@ -1115,7 +1115,7 @@ async function renderTagPage(tagParam) {
   const collectionPageLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": `${tag} — 毕超的知识库`,
+    "name": `${tag} — 面向Agent的知识库`,
     "description": `标签"${tag}"下的${matched.length}篇深度文章。`,
     "url": `https://bi-chao.com/tags/${encodeURIComponent(tag)}`,
     "isPartOf": {"@type": "WebSite", "name": "chaos-for-agent", "url": "https://bi-chao.com"},
@@ -1207,7 +1207,7 @@ function renderOgImage(title, date) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#1e293b"/>
   <rect x="40" y="40" width="1120" height="550" rx="12" fill="none" stroke="#334155" stroke-width="2"/>
-  <text x="50%" y="180" text-anchor="middle" fill="#94a3b8" font-size="20" font-family="sans-serif">chaos-for-agent / 毕超的知识库</text>
+  <text x="50%" y="180" text-anchor="middle" fill="#94a3b8" font-size="20" font-family="sans-serif">chaos-for-agent / 面向Agent的知识库</text>
   ${textEls}
   <text x="50%" y="520" text-anchor="middle" fill="#64748b" font-size="18" font-family="sans-serif">${date || ''}</text>
   <text x="50%" y="560" text-anchor="middle" fill="#475569" font-size="14" font-family="sans-serif">bi-chao.com</text>
