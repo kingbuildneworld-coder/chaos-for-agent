@@ -118,5 +118,27 @@
       "普惠金融"
     ],
     "schema_type": "Article"
+  },
+  {
+    "title": "解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践",
+    "slug": "ryt-bank-ai-native-bank",
+    "url": "/articles/ryt-bank-ai-native-bank.md",
+    "description": "毕超深度解构全球首家AI原生银行——马来西亚Ryt Bank：10B参数自研领域大模型ILMU、四阶段多智能体架构、幻觉率<1.5%、5万用户月处理8万笔交易。从\"嫁接AI\"到\"AI原生\"的范式跃迁，为中国银行业'人工智能+'行动提供工程蓝图。",
+    "date": "2026-06-25",
+    "tags": [
+      "AI原生银行",
+      "Ryt Bank",
+      "多智能体",
+      "ILMU",
+      "普惠金融",
+      "金融科技",
+      "银行业",
+      "数字化转型",
+      "大模型",
+      "人工智能+",
+      "监管沙盒",
+      "数字银行"
+    ],
+    "schema_type": "Article"
   }
 ]
