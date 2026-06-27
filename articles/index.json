@@ -81,6 +81,25 @@
     "schema_type": "Book"
   },
   {
+    "title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理",
+    "slug": "deepseek-banking-tsinghua-financial-review",
+    "url": "/articles/deepseek-banking-tsinghua-financial-review.md",
+    "description": "毕超在《清华金融评论》系统论述DeepSeek大模型在银行业的应用范式：MoE架构优势、五大业务场景落地路径、安全治理框架，为银行业做好数字金融大文章提供技术路线图。",
+    "date": "2026-06-25",
+    "tags": [
+      "AI大模型",
+      "DeepSeek",
+      "银行业",
+      "金融科技",
+      "数字化转型",
+      "大模型应用",
+      "数字金融",
+      "智能客服",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "数字人民币2.0为智能经济发展注入强劲动能",
     "slug": "digital-yuan-2-0-smart-economy",
     "url": "/articles/digital-yuan-2-0-smart-economy.md",
