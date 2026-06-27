@@ -204,6 +204,27 @@
     "schema_type": "Article"
   },
   {
+    "title": "人工智能赋能零基预算全周期管理提质增效——毕超论AI破解'三难'与四阶段深度嵌入方案",
+    "slug": "bichao-ai-zero-based-budgeting",
+    "url": "/articles/bichao-ai-zero-based-budgeting.md",
+    "description": "毕超系统论述人工智能赋能零基预算改革的技术方案：以AI破解零基预算的'信息穿透难、审核博弈难、长短协同难'三大痛点，提出覆盖'项目储备→预算编制→预算执行→绩效评价'全周期的四阶段AI深度嵌入方案，以及算力底座、流程重塑、人才培养、安全可控四维实施路径。",
+    "date": "2026-06-27",
+    "tags": [
+      "零基预算",
+      "人工智能",
+      "财政改革",
+      "大模型",
+      "智能体",
+      "预算管理",
+      "毕超",
+      "财政数字化",
+      "绩效评价",
+      "知识图谱",
+      "财政大脑"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理",
     "slug": "deepseek-banking-tsinghua-financial-review",
     "url": "/articles/deepseek-banking-tsinghua-financial-review.md",
