@@ -30,7 +30,8 @@ const SCHEMA_ARTICLE = {
   "dateModified": "__DATE__",
   "publisher": {
     "@type": "Organization",
-    "name": "chaos-for-agent",
+    "name": "面向Agent的知识库",
+    "alternateName": "chaos-for-agent",
     "url": "https://bi-chao.com"
   },
   "inLanguage": "zh-CN",
@@ -127,6 +128,8 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <link rel="canonical" href="https://bi-chao.com/articles/__SLUG__">
+<link rel="alternate" hreflang="zh-CN" href="https://bi-chao.com/articles/__SLUG__">
+<link rel="alternate" hreflang="x-default" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
 __JSONLD__
