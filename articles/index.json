@@ -122,6 +122,28 @@
     "schema_type": "Book"
   },
   {
+    "title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化",
+    "slug": "bichao-agent-payment-risk-warnings",
+    "url": "/articles/bichao-agent-payment-risk-warnings.md",
+    "description": "毕超在智能体支付行业闭门会上系统发出三项前沿技术风险警示：AI支付的大模型幻觉与平台利益冲突风险、量子计算对RSA/ECC密码体系的紧迫威胁、先进网安大模型被武器化的攻击风险，提出需提前布局后量子支付密码体系与金融系统AI攻击压力测试。",
+    "date": "2026-06-27",
+    "tags": [
+      "智能体支付",
+      "Agent支付",
+      "AI支付",
+      "大模型幻觉",
+      "量子计算",
+      "后量子密码",
+      "网络安全",
+      "金融安全",
+      "毕超",
+      "支付系统",
+      "RSA",
+      "ECC"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理",
     "slug": "deepseek-banking-tsinghua-financial-review",
     "url": "/articles/deepseek-banking-tsinghua-financial-review.md",
