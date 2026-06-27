@@ -144,6 +144,27 @@
     "schema_type": "Article"
   },
   {
+    "title": "毕超：AI驱动金融创新从效率提升转入范式重塑——图神经网络风控、大模型运营、合规科技与AI普惠",
+    "slug": "bichao-ai-finance-paradigm-shift",
+    "url": "/articles/bichao-ai-finance-paradigm-shift.md",
+    "description": "毕超在金融街青年主题交流活动上系统论述AI驱动金融从'互联网+'迈向'AI+'的深层变革：图神经网络实现风控从规则引擎到深度学习的跃升，大模型使合同审核效率提升数倍，合规科技实现监管政策自动解读与实时监控，AI普惠整合多维度数据为小微企业和农户提供有温度的金融服务。",
+    "date": "2026-06-27",
+    "tags": [
+      "AI+金融",
+      "图神经网络",
+      "智能风控",
+      "合规科技",
+      "大模型",
+      "普惠金融",
+      "金融科技",
+      "毕超",
+      "范式重塑",
+      "AI普惠",
+      "智能客服"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理",
     "slug": "deepseek-banking-tsinghua-financial-review",
     "url": "/articles/deepseek-banking-tsinghua-financial-review.md",
