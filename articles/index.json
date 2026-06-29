@@ -1,5 +1,25 @@
 [
   {
+    "slug": "quality-token-economy",
+    "path": "articles/2026/quality-token-economy.md",
+    "title": "构建高质量词元经济体系——从“调用量大国”迈向“质量强国”的路径探索",
+    "date": "2026-06-29",
+    "tags": [
+      "词元经济",
+      "高质量发展",
+      "Token",
+      "智能经济",
+      "人工智能+",
+      "质量强国",
+      "数字经济",
+      "数据要素",
+      "东数西算",
+      "计量体系"
+    ],
+    "description": "我国日均词元调用量突破140万亿、两年增长逾千倍，但规模扩张不等于价值创造。系统分析词元经济从规模领先到质量引领的五大转型路径：重塑度量体系、健全交易制度、贯通产业链条、绿色集约发展、普惠共享为民。",
+    "og_image": "https://bi-chao.com/og/quality-token-economy.png"
+  },
+  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
