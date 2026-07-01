@@ -1,5 +1,22 @@
 [
   {
+    "slug": "ai-agriculture-scenario-innovation",
+    "path": "articles/ai-agriculture-scenario-innovation.md",
+    "title": "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命",
+    "date": "2026-07-01",
+    "tags": [
+      "人工智能",
+      "智慧农业",
+      "农业强国",
+      "场景创新",
+      "供应链金融",
+      "新质生产力",
+      "种业振兴",
+      "数字乡村"
+    ],
+    "description": "2026年被业界视为AI智能体应用元年。中国智慧农业市场规模预计突破1340亿元，30万架农业无人机服务4.6亿亩耕地。本文从种业、农场、牧场、渔场到供应链金融，深度分析AI赋能农业的五大落地场景与四大保障体系。"
+  },
+  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
