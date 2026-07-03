@@ -5,28 +5,7 @@ date: "2026-07-03"
 updated: "2026-07-03"
 tags: ["AI前瞻", "数据安全", "大模型", "本地部署", "金融科技", "AI治理", "企业架构"]
 keywords: ["大模型本地部署", "企业数据安全", "Token税", "模型蒸馏风险", "银行AI部署", "数据闭环", "开源大模型", "阿里禁用大模型"]
-references:
-  - title: "Palantir CEO Alex Karp on AI Business Models"
-    url: "https://www.youtube.com/watch?v=karp-ai-interview"
-    source: "Palantir / CNBC Interview"
-  - title: "阿里内部通知禁用国外大模型工具"
-    url: "https://www.theinformation.com/articles/alibaba-bans-staff-from-using-competitors-ai-models"
-    source: "The Information"
-  - title: "模型蒸馏（Model Distillation）技术原理与安全风险"
-    url: "https://arxiv.org/abs/2305.15717"
-    source: "arXiv"
-  - title: "中国信通院《大模型安全与治理白皮书》"
-    url: "http://www.caict.ac.cn/kxyj/qwfb/bps/202403/t20240328_476231.htm"
-    source: "中国信息通信研究院"
-  - title: "中国人民银行《金融数据安全 数据安全分级指南》"
-    url: "http://www.pbc.gov.cn/"
-    source: "中国人民银行"
-  - title: "Gartner: 75% of Enterprise-Generated Data Will Be Created and Processed Outside Centralized Data Centers by 2026"
-    url: "https://www.gartner.com/en/newsroom/press-releases"
-    source: "Gartner"
-  - title: "McKinsey Global Survey: The state of AI in 2025"
-    url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-    source: "McKinsey & Company"
+references: []
 ---
 
 ## 核心摘要
