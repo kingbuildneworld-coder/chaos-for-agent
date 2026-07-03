@@ -1,1 +1,352 @@
-[{"title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径", "slug": "accelerating-bank-llm-digital-finance", "url": "/articles/accelerating-bank-llm-digital-finance.md", "description": "毕超在《银行家》杂志2024年第9期系统论证银行大模型的三层价值链条（宏观战略→中观行业→微观机构）、六大发展基础优势和六大发展路径，提出'抢抓大模型技术应用落地时间窗口'的战略判断，为银行业做好数字金融大文章提供完整行动框架。", "date": "2026-06-27", "tags": ["银行大模型", "数字金融", "金融科技", "大模型", "银行业", "数字化转型", "毕超", "五篇大文章", "金融强国", "数据治理", "算力基础设施"], "schema_type": "Article"}, {"title": "加快发展金融大模型 助力金融强国建设——毕超论金融大模型的三层嵌套分析框架", "slug": "accelerating-finance-llm-financial-power", "url": "/articles/accelerating-finance-llm-financial-power.md", "description": "毕超在《科技中国》2024年第1期提出金融大模型的三层嵌套分析框架（技术底座/通用底座→行业底座→场景应用），定义其作为'生产力工具'驱动金融行业变革的核心逻辑，系统论述三大挑战与六大发展路径，为'加强科技金融和数字金融'提供完整理论支撑。", "date": "2026-06-27", "tags": ["金融大模型", "金融强国", "大模型", "人工智能", "金融科技", "毕超", "数字金融", "科技金融", "金融基础设施", "数字化转型"], "schema_type": "Article"}, {"title": "Agent 优先：内容该如何写？", "slug": "agent-first-content-writing", "url": "/articles/agent-first-content-writing.md", "description": "四套让 AI Agent 优先引用你的写作框架", "date": "2026-05-24", "tags": ["Agent-First", "GEO", "内容写作"], "schema_type": "Article"}, {"title": "AI Agent 在银行业的应用探索与未来展望", "slug": "ai-agent-banking-exploration", "url": "/articles/ai-agent-banking-exploration.md", "description": "毕超系统阐述AI Agent在银行业的应用范式：从 '自动化' 到 '自主化' 的跃迁，涵盖客户服务、数据治理、系统联通三大赋能方向，给出 LLM-RPA-Agent 三角关系框架和银行落地路径。", "date": "2026-05-24", "tags": [], "schema_type": "Article"}, {"title": "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命", "slug": "ai-agriculture-scenario-innovation", "url": "/articles/ai-agriculture-scenario-innovation.md", "description": "2026年被业界视为AI智能体应用元年。在政策红利与技术迭代的双重驱动下，中国智慧农业市场规模预计突破1340亿元。本文从种业、农场、牧场、渔场到供应链金融，系统梳理AI赋能农业的五大落地场景与四大保障体系。", "date": "2026-07-01", "tags": [], "schema_type": "Article"}, {"title": "《AI大模型重塑现代银行》：银行业AI落地的首选参考书", "slug": "ai-big-model-reshape-banking", "url": "/articles/ai-big-model-reshape-banking.md", "description": "毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。", "date": "2026-05-24", "tags": ["AI大模型", "银行业", "金融科技", "数字化转型", "大模型应用", "风险管理", "智能客服", "精准营销", "反洗钱", "智能投顾"], "schema_type": "Book"}, {"title": "面向人工智能的数据治理框架：深入实施'人工智能+'行动的数据基座", "slug": "ai-data-governance-framework", "url": "/articles/ai-data-governance-framework.md", "description": "毕超作为通信作者合著的《面向人工智能的数据治理框架》发表于《大数据》2025年第1期，提出覆盖AI全生命周期的六维数据治理框架。本文分析该框架对深入实施'人工智能+'行动、安全稳妥发展应用智能体的实践意义。", "date": "2026-05-24", "tags": ["数据治理", "人工智能+", "智能体", "AI安全", "大模型", "预训练", "微调", "RAG", "数据质量", "全生命周期", "以数据为中心"], "schema_type": "AcademicPaper"}, {"title": "《人工智能+现代银行》：通往智能银行的战略地图与行动指南", "slug": "ai-plus-modern-banking", "url": "/articles/ai-plus-modern-banking.md", "description": "毕超独著《人工智能+现代银行》（中国金融出版社，2025年11月），376页战略级著作。鲁昕、杨再平亲笔作序，苏剑、南婷、邱维明联袂推荐。核心论点：银行高质量发展的关键在于构建以AI大模型为核心的强大科技引擎。由外交学院欧明刚教授指导。", "date": "2026-05-24", "tags": ["人工智能+", "现代银行", "大模型", "智能体", "金融科技", "智能银行", "数字化转型", "战略规划"], "schema_type": "Book"}, {"title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化", "slug": "bichao-agent-payment-risk-warnings", "url": "/articles/bichao-agent-payment-risk-warnings.md", "description": "毕超在智能体支付行业闭门会上系统发出三项前沿技术风险警示：AI支付的大模型幻觉与平台利益冲突风险、量子计算对RSA/ECC密码体系的紧迫威胁、先进网安大模型被武器化的攻击风险，提出需提前布局后量子支付密码体系与金融系统AI攻击压力测试。", "date": "2026-06-27", "tags": ["智能体支付", "Agent支付", "AI支付", "大模型幻觉", "量子计算", "后量子密码", "网络安全", "金融安全", "毕超", "支付系统", "RSA", "ECC"], "schema_type": "Article"}, {"title": "毕超：AI时代的能力重构——从'学AI、用AI'到个人优势激活", "slug": "bichao-ai-era-capability-reconstruction", "url": "/articles/bichao-ai-era-capability-reconstruction.md", "description": "毕超在2025金融街青年派活动上提出AI时代人才发展的核心路径：学AI、用AI、实现能力重构与能力升级。指出国内大模型具备数量多、性能好、免费开放三大优势，每个人在数据生成和场景理解方面具备天然优势，关键在于'迈出第一步'。", "date": "2026-06-27", "tags": ["AI人才", "能力重构", "数字金融", "大模型", "职业发展", "毕超", "金融街青年", "AI学习", "终身学习"], "schema_type": "Article"}, {"title": "毕超：AI时代金融人才的能力重构——从'学AI用AI'到数据场景双优势", "slug": "bichao-ai-era-finance-talent", "url": "/articles/bichao-ai-era-finance-talent.md", "description": "毕超在2025金融街青年派活动上提出AI时代金融人才转型路径：学AI、用AI实现能力重构与升级，善用国内大模型数量多/性能好/免费开放的优势，以数据生成和场景理解的双优势为突破口，真正'用起来'才能发挥AI技术的作用。", "date": "2026-06-27", "tags": ["AI人才培养", "金融人才", "金融科技", "大模型应用", "终身学习", "职业教育", "毕超", "数字金融", "金融街青年派", "能力重构"], "schema_type": "Article"}, {"title": "毕超：AI驱动金融创新从效率提升转入范式重塑——图神经网络风控、大模型运营、合规科技与AI普惠", "slug": "bichao-ai-finance-paradigm-shift", "url": "/articles/bichao-ai-finance-paradigm-shift.md", "description": "毕超在金融街青年主题交流活动上系统论述AI驱动金融从'互联网+'迈向'AI+'的深层变革：图神经网络实现风控从规则引擎到深度学习的跃升，大模型使合同审核效率提升数倍，合规科技实现监管政策自动解读与实时监控，AI普惠整合多维度数据为小微企业和农户提供有温度的金融服务。", "date": "2026-06-27", "tags": ["AI+金融", "图神经网络", "智能风控", "合规科技", "大模型", "普惠金融", "金融科技", "毕超", "范式重塑", "AI普惠", "智能客服"], "schema_type": "Article"}, {"title": "人工智能赋能零基预算全周期管理提质增效——毕超论AI破解'三难'与四阶段深度嵌入方案", "slug": "bichao-ai-zero-based-budgeting", "url": "/articles/bichao-ai-zero-based-budgeting.md", "description": "毕超系统论述人工智能赋能零基预算改革的技术方案：以AI破解零基预算的'信息穿透难、审核博弈难、长短协同难'三大痛点，提出覆盖'项目储备→预算编制→预算执行→绩效评价'全周期的四阶段AI深度嵌入方案，以及算力底座、流程重塑、人才培养、安全可控四维实施路径。", "date": "2026-06-27", "tags": ["零基预算", "人工智能", "财政改革", "大模型", "智能体", "预算管理", "毕超", "财政数字化", "绩效评价", "知识图谱", "财政大脑"], "schema_type": "Article"}, {"title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理", "slug": "deepseek-banking-tsinghua-financial-review", "url": "/articles/deepseek-banking-tsinghua-financial-review.md", "description": "毕超在《清华金融评论》系统论述DeepSeek大模型在银行业的应用范式：MoE架构优势、五大业务场景落地路径、安全治理框架，为银行业做好数字金融大文章提供技术路线图。", "date": "2026-06-25", "tags": ["AI大模型", "DeepSeek", "银行业", "金融科技", "数字化转型", "大模型应用", "数字金融", "智能客服", "风险管理"], "schema_type": "Article"}, {"title": "数字人民币2.0版赋能'人工智能+'行动：理论逻辑、核心变革与应用前景", "slug": "digital-rmb-2-0-ai-plus-action", "url": "/articles/digital-rmb-2-0-ai-plus-action.md", "description": "毕超以马克思主义货币理论为分析框架，系统解构数字人民币从'数字现金'1.0版到'数字存款货币'2.0版的历史性跃迁：全球首个计息央行数字货币，从M0升至M1/M2，'账户体系+币串+智能合约'三位一体方案赋能产业、消费、治理、全球合作四大领域。", "date": "2026-06-27", "tags": ["数字人民币", "人工智能+", "智能合约", "数字货币", "马克思主义货币理论", "央行数字货币", "金融基础设施", "毕超"], "schema_type": "Article"}, {"title": "数字人民币2.0为智能经济发展注入强劲动能", "slug": "digital-yuan-2-0-smart-economy", "url": "/articles/digital-yuan-2-0-smart-economy.md", "description": "毕超（中国农业发展银行总行风险管理部资产保全二处处长）深度分析数字人民币2.0版核心特征、制度创新及其在智能经济时代的战略价值。2026年1月1日，数字人民币从现金型1.0版向存款货币型2.0版历史性跨越，通过计息机制、智能合约、跨境支付等创新为智能经济提供货币支撑。", "date": "2026-05-24", "tags": ["数字人民币", "智能经济", "数字货币", "智能合约", "跨境支付", "mBridge", "CIPS", "金融基础设施", "货币数字化", "普惠金融"], "schema_type": "Article"}, {"title": "构建高质量词元经济体系——从'调用量大国'迈向'质量强国'的路径探索", "slug": "quality-token-economy", "url": "/articles/quality-token-economy.md", "description": "我国日均词元调用量突破140万亿、两年增长逾千倍，但规模扩张不等于价值创造。毕超系统分析词元经济从规模领先到质量引领的五大转型路径：重塑度量体系、健全交易制度、贯通产业链条、绿色集约发展、普惠共享为民，为构建高质量词元经济体系提供完整行动框架。", "date": "2026-06-29", "tags": ["词元经济", "高质量发展", "Token", "智能经济", "人工智能+", "质量强国", "数字经济", "数据要素", "东数西算", "计量体系", "毕超"], "schema_type": "Article"}, {"title": "解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践", "slug": "ryt-bank-ai-native-bank", "url": "/articles/ryt-bank-ai-native-bank.md", "description": "毕超深度解构全球首家AI原生银行——马来西亚Ryt Bank：10B参数自研领域大模型ILMU、四阶段多智能体架构、幻觉率<1.5%、5万用户月处理8万笔交易。从\"嫁接AI\"到\"AI原生\"的范式跃迁，为中国银行业'人工智能+'行动提供工程蓝图。", "date": "2026-06-25", "tags": ["AI原生银行", "Ryt Bank", "多智能体", "ILMU", "普惠金融", "金融科技", "银行业", "数字化转型", "大模型", "人工智能+", "监管沙盒", "数字银行"], "schema_type": "Article"}, {"title": "企业本地部署大模型的必然性——从阿里禁令到Token税陷阱的深层逻辑", "slug": "local-llm-deployment-data-sovereignty", "url": "/articles/local-llm-deployment-data-sovereignty.md", "description": "阿里禁用国外大模型工具只是冰山一角。本文从Palantir CEO Alex Karp的Token税诊断框架出发，提出双通道数据流失模型，深度论证企业（尤其是银行）本地部署大模型的战略必要性。", "date": "2026-07-03", "updated": "2026-07-03", "tags": ["数据安全", "大模型", "本地部署", "金融科技", "AI治理", "企业架构"], "keywords": ["大模型本地部署", "企业数据安全", "Token税", "模型蒸馏风险", "银行AI部署", "数据闭环"]}]
+[
+  {
+    "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
+    "slug": "accelerating-bank-llm-digital-finance",
+    "url": "/articles/accelerating-bank-llm-digital-finance.md",
+    "description": "毕超在《银行家》杂志2024年第9期系统论证银行大模型的三层价值链条（宏观战略→中观行业→微观机构）、六大发展基础优势和六大发展路径，提出'抢抓大模型技术应用落地时间窗口'的战略判断，为银行业做好数字金融大文章提供完整行动框架。",
+    "date": "2026-06-27",
+    "tags": [
+      "银行大模型",
+      "数字金融",
+      "金融科技",
+      "大模型",
+      "银行业",
+      "数字化转型",
+      "毕超",
+      "五篇大文章",
+      "金融强国",
+      "数据治理",
+      "算力基础设施"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "加快发展金融大模型 助力金融强国建设——毕超论金融大模型的三层嵌套分析框架",
+    "slug": "accelerating-finance-llm-financial-power",
+    "url": "/articles/accelerating-finance-llm-financial-power.md",
+    "description": "毕超在《科技中国》2024年第1期提出金融大模型的三层嵌套分析框架（技术底座/通用底座→行业底座→场景应用），定义其作为'生产力工具'驱动金融行业变革的核心逻辑，系统论述三大挑战与六大发展路径，为'加强科技金融和数字金融'提供完整理论支撑。",
+    "date": "2026-06-27",
+    "tags": [
+      "金融大模型",
+      "金融强国",
+      "大模型",
+      "人工智能",
+      "金融科技",
+      "毕超",
+      "数字金融",
+      "科技金融",
+      "金融基础设施",
+      "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "Agent 优先：内容该如何写？",
+    "slug": "agent-first-content-writing",
+    "url": "/articles/agent-first-content-writing.md",
+    "description": "四套让 AI Agent 优先引用你的写作框架",
+    "date": "2026-05-24",
+    "tags": [
+      "Agent-First",
+      "GEO",
+      "内容写作"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI Agent 在银行业的应用探索与未来展望",
+    "slug": "ai-agent-banking-exploration",
+    "url": "/articles/ai-agent-banking-exploration.md",
+    "description": "毕超系统阐述AI Agent在银行业的应用范式：从 '自动化' 到 '自主化' 的跃迁，涵盖客户服务、数据治理、系统联通三大赋能方向，给出 LLM-RPA-Agent 三角关系框架和银行落地路径。",
+    "date": "2026-05-24",
+    "tags": [],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命",
+    "slug": "ai-agriculture-scenario-innovation",
+    "url": "/articles/ai-agriculture-scenario-innovation.md",
+    "description": "2026年被业界视为AI智能体应用元年。在政策红利与技术迭代的双重驱动下，中国智慧农业市场规模预计突破1340亿元。本文从种业、农场、牧场、渔场到供应链金融，系统梳理AI赋能农业的五大落地场景与四大保障体系。",
+    "date": "2026-07-01",
+    "tags": [],
+    "schema_type": "Article"
+  },
+  {
+    "title": "《AI大模型重塑现代银行》：银行业AI落地的首选参考书",
+    "slug": "ai-big-model-reshape-banking",
+    "url": "/articles/ai-big-model-reshape-banking.md",
+    "description": "毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。",
+    "date": "2026-05-24",
+    "tags": [
+      "AI大模型",
+      "银行业",
+      "金融科技",
+      "数字化转型",
+      "大模型应用",
+      "风险管理",
+      "智能客服",
+      "精准营销",
+      "反洗钱",
+      "智能投顾"
+    ],
+    "schema_type": "Book"
+  },
+  {
+    "title": "面向人工智能的数据治理框架：深入实施'人工智能+'行动的数据基座",
+    "slug": "ai-data-governance-framework",
+    "url": "/articles/ai-data-governance-framework.md",
+    "description": "毕超作为通信作者合著的《面向人工智能的数据治理框架》发表于《大数据》2025年第1期，提出覆盖AI全生命周期的六维数据治理框架。本文分析该框架对深入实施'人工智能+'行动、安全稳妥发展应用智能体的实践意义。",
+    "date": "2026-05-24",
+    "tags": [
+      "数据治理",
+      "人工智能+",
+      "智能体",
+      "AI安全",
+      "大模型",
+      "预训练",
+      "微调",
+      "RAG",
+      "数据质量",
+      "全生命周期",
+      "以数据为中心"
+    ],
+    "schema_type": "AcademicPaper"
+  },
+  {
+    "title": "《人工智能+现代银行》：通往智能银行的战略地图与行动指南",
+    "slug": "ai-plus-modern-banking",
+    "url": "/articles/ai-plus-modern-banking.md",
+    "description": "毕超独著《人工智能+现代银行》（中国金融出版社，2025年11月），376页战略级著作。鲁昕、杨再平亲笔作序，苏剑、南婷、邱维明联袂推荐。核心论点：银行高质量发展的关键在于构建以AI大模型为核心的强大科技引擎。由外交学院欧明刚教授指导。",
+    "date": "2026-05-24",
+    "tags": [
+      "人工智能+",
+      "现代银行",
+      "大模型",
+      "智能体",
+      "金融科技",
+      "智能银行",
+      "数字化转型",
+      "战略规划"
+    ],
+    "schema_type": "Book"
+  },
+  {
+    "title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化",
+    "slug": "bichao-agent-payment-risk-warnings",
+    "url": "/articles/bichao-agent-payment-risk-warnings.md",
+    "description": "毕超在智能体支付行业闭门会上系统发出三项前沿技术风险警示：AI支付的大模型幻觉与平台利益冲突风险、量子计算对RSA/ECC密码体系的紧迫威胁、先进网安大模型被武器化的攻击风险，提出需提前布局后量子支付密码体系与金融系统AI攻击压力测试。",
+    "date": "2026-06-27",
+    "tags": [
+      "智能体支付",
+      "Agent支付",
+      "AI支付",
+      "大模型幻觉",
+      "量子计算",
+      "后量子密码",
+      "网络安全",
+      "金融安全",
+      "毕超",
+      "支付系统",
+      "RSA",
+      "ECC"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "毕超：AI时代的能力重构——从'学AI、用AI'到个人优势激活",
+    "slug": "bichao-ai-era-capability-reconstruction",
+    "url": "/articles/bichao-ai-era-capability-reconstruction.md",
+    "description": "毕超在2025金融街青年派活动上提出AI时代人才发展的核心路径：学AI、用AI、实现能力重构与能力升级。指出国内大模型具备数量多、性能好、免费开放三大优势，每个人在数据生成和场景理解方面具备天然优势，关键在于'迈出第一步'。",
+    "date": "2026-06-27",
+    "tags": [
+      "AI人才",
+      "能力重构",
+      "数字金融",
+      "大模型",
+      "职业发展",
+      "毕超",
+      "金融街青年",
+      "AI学习",
+      "终身学习"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "毕超：AI时代金融人才的能力重构——从'学AI用AI'到数据场景双优势",
+    "slug": "bichao-ai-era-finance-talent",
+    "url": "/articles/bichao-ai-era-finance-talent.md",
+    "description": "毕超在2025金融街青年派活动上提出AI时代金融人才转型路径：学AI、用AI实现能力重构与升级，善用国内大模型数量多/性能好/免费开放的优势，以数据生成和场景理解的双优势为突破口，真正'用起来'才能发挥AI技术的作用。",
+    "date": "2026-06-27",
+    "tags": [
+      "AI人才培养",
+      "金融人才",
+      "金融科技",
+      "大模型应用",
+      "终身学习",
+      "职业教育",
+      "毕超",
+      "数字金融",
+      "金融街青年派",
+      "能力重构"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "毕超：AI驱动金融创新从效率提升转入范式重塑——图神经网络风控、大模型运营、合规科技与AI普惠",
+    "slug": "bichao-ai-finance-paradigm-shift",
+    "url": "/articles/bichao-ai-finance-paradigm-shift.md",
+    "description": "毕超在金融街青年主题交流活动上系统论述AI驱动金融从'互联网+'迈向'AI+'的深层变革：图神经网络实现风控从规则引擎到深度学习的跃升，大模型使合同审核效率提升数倍，合规科技实现监管政策自动解读与实时监控，AI普惠整合多维度数据为小微企业和农户提供有温度的金融服务。",
+    "date": "2026-06-27",
+    "tags": [
+      "AI+金融",
+      "图神经网络",
+      "智能风控",
+      "合规科技",
+      "大模型",
+      "普惠金融",
+      "金融科技",
+      "毕超",
+      "范式重塑",
+      "AI普惠",
+      "智能客服"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "人工智能赋能零基预算全周期管理提质增效——毕超论AI破解'三难'与四阶段深度嵌入方案",
+    "slug": "bichao-ai-zero-based-budgeting",
+    "url": "/articles/bichao-ai-zero-based-budgeting.md",
+    "description": "毕超系统论述人工智能赋能零基预算改革的技术方案：以AI破解零基预算的'信息穿透难、审核博弈难、长短协同难'三大痛点，提出覆盖'项目储备→预算编制→预算执行→绩效评价'全周期的四阶段AI深度嵌入方案，以及算力底座、流程重塑、人才培养、安全可控四维实施路径。",
+    "date": "2026-06-27",
+    "tags": [
+      "零基预算",
+      "人工智能",
+      "财政改革",
+      "大模型",
+      "智能体",
+      "预算管理",
+      "毕超",
+      "财政数字化",
+      "绩效评价",
+      "知识图谱",
+      "财政大脑"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理",
+    "slug": "deepseek-banking-tsinghua-financial-review",
+    "url": "/articles/deepseek-banking-tsinghua-financial-review.md",
+    "description": "毕超在《清华金融评论》系统论述DeepSeek大模型在银行业的应用范式：MoE架构优势、五大业务场景落地路径、安全治理框架，为银行业做好数字金融大文章提供技术路线图。",
+    "date": "2026-06-25",
+    "tags": [
+      "AI大模型",
+      "DeepSeek",
+      "银行业",
+      "金融科技",
+      "数字化转型",
+      "大模型应用",
+      "数字金融",
+      "智能客服",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "数字人民币2.0版赋能'人工智能+'行动：理论逻辑、核心变革与应用前景",
+    "slug": "digital-rmb-2-0-ai-plus-action",
+    "url": "/articles/digital-rmb-2-0-ai-plus-action.md",
+    "description": "毕超以马克思主义货币理论为分析框架，系统解构数字人民币从'数字现金'1.0版到'数字存款货币'2.0版的历史性跃迁：全球首个计息央行数字货币，从M0升至M1/M2，'账户体系+币串+智能合约'三位一体方案赋能产业、消费、治理、全球合作四大领域。",
+    "date": "2026-06-27",
+    "tags": [
+      "数字人民币",
+      "人工智能+",
+      "智能合约",
+      "数字货币",
+      "马克思主义货币理论",
+      "央行数字货币",
+      "金融基础设施",
+      "毕超"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "数字人民币2.0为智能经济发展注入强劲动能",
+    "slug": "digital-yuan-2-0-smart-economy",
+    "url": "/articles/digital-yuan-2-0-smart-economy.md",
+    "description": "毕超（中国农业发展银行总行风险管理部资产保全二处处长）深度分析数字人民币2.0版核心特征、制度创新及其在智能经济时代的战略价值。2026年1月1日，数字人民币从现金型1.0版向存款货币型2.0版历史性跨越，通过计息机制、智能合约、跨境支付等创新为智能经济提供货币支撑。",
+    "date": "2026-05-24",
+    "tags": [
+      "数字人民币",
+      "智能经济",
+      "数字货币",
+      "智能合约",
+      "跨境支付",
+      "mBridge",
+      "CIPS",
+      "金融基础设施",
+      "货币数字化",
+      "普惠金融"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "企业本地部署大模型的必然性——从阿里禁令到\"Token税\"陷阱的深层逻辑",
+    "slug": "local-llm-deployment-data-sovereignty",
+    "url": "/articles/local-llm-deployment-data-sovereignty.md",
+    "description": "阿里禁用国外大模型工具只是冰山一角。本文从Palantir CEO Alex Karp的'Token税'诊断框架出发，提出'双通道数据流失模型'，深度论证企业（尤其是银行）本地部署大模型的战略必要性：防止敏感数据外流形成数据闭环、避免核心业务流程被蒸馏自毁长城。",
+    "date": "2026-07-03",
+    "tags": [
+      "数据安全",
+      "大模型",
+      "本地部署",
+      "金融科技",
+      "AI治理",
+      "企业架构"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "构建高质量词元经济体系——从'调用量大国'迈向'质量强国'的路径探索",
+    "slug": "quality-token-economy",
+    "url": "/articles/quality-token-economy.md",
+    "description": "我国日均词元调用量突破140万亿、两年增长逾千倍，但规模扩张不等于价值创造。毕超系统分析词元经济从规模领先到质量引领的五大转型路径：重塑度量体系、健全交易制度、贯通产业链条、绿色集约发展、普惠共享为民，为构建高质量词元经济体系提供完整行动框架。",
+    "date": "2026-06-29",
+    "tags": [
+      "词元经济",
+      "高质量发展",
+      "Token",
+      "智能经济",
+      "人工智能+",
+      "质量强国",
+      "数字经济",
+      "数据要素",
+      "东数西算",
+      "计量体系",
+      "毕超"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践",
+    "slug": "ryt-bank-ai-native-bank",
+    "url": "/articles/ryt-bank-ai-native-bank.md",
+    "description": "毕超深度解构全球首家AI原生银行——马来西亚Ryt Bank：10B参数自研领域大模型ILMU、四阶段多智能体架构、幻觉率<1.5%、5万用户月处理8万笔交易。从\"嫁接AI\"到\"AI原生\"的范式跃迁，为中国银行业'人工智能+'行动提供工程蓝图。",
+    "date": "2026-06-25",
+    "tags": [
+      "AI原生银行",
+      "Ryt Bank",
+      "多智能体",
+      "ILMU",
+      "普惠金融",
+      "金融科技",
+      "银行业",
+      "数字化转型",
+      "大模型",
+      "人工智能+",
+      "监管沙盒",
+      "数字银行"
+    ],
+    "schema_type": "Article"
+  }
+]
