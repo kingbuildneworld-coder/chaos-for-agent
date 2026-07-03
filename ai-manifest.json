@@ -10,11 +10,35 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 7,
+    "total_articles": 18,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
-    "topics": ["AI Agent", "AI大模型", "银行业", "金融科技", "数字化转型", "数据治理", "数字人民币", "GEO", "Agent-First 写作"],
-    "schema_types": ["Article", "Book", "AcademicPaper", "Person", "Organization"]
+    "topics": [
+      "AI Agent",
+      "AI大模型",
+      "银行业",
+      "金融科技",
+      "数字化转型",
+      "数据治理",
+      "数字人民币",
+      "GEO",
+      "Agent-First 写作",
+      "词元经济",
+      "AI农业",
+      "零基预算",
+      "AI安全",
+      "人才发展"
+    ],
+    "schema_types": [
+      "Article",
+      "Book",
+      "Person",
+      "Organization",
+      "Website",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList"
+    ]
   },
   "ai_access": {
     "llms_txt": "https://bi-chao.com/llms.txt",
@@ -24,49 +48,213 @@
   },
   "articles": [
     {
+      "slug": "accelerating-bank-llm-digital-finance",
+      "title": "加快发展银行大模型 做好数字金融大文章",
+      "date": "2026-06-27",
+      "description": "毕超论银行大模型的内涵、价值与路径",
+      "tags": [
+        "银行大模型",
+        "数字金融",
+        "金融科技"
+      ]
+    },
+    {
+      "slug": "accelerating-finance-llm-financial-power",
+      "title": "加快发展金融大模型 助力金融强国建设",
+      "date": "2026-06-27",
+      "description": "毕超论金融大模型的三层嵌套分析框架",
+      "tags": [
+        "金融大模型",
+        "金融强国",
+        "AI"
+      ]
+    },
+    {
       "slug": "agent-first-content-writing",
       "title": "Agent 优先：内容该如何写？",
       "date": "2026-05-24",
       "description": "四套让 AI Agent 优先引用你的写作框架",
-      "tags": ["Agent-First", "GEO", "内容写作"]
+      "tags": [
+        "Agent-First",
+        "GEO",
+        "内容写作"
+      ]
     },
     {
       "slug": "ai-agent-banking-exploration",
       "title": "AI Agent 在银行业的应用探索与未来展望",
       "date": "2026-05-24",
       "description": "毕超系统阐述AI Agent在银行业的应用范式",
-      "tags": ["AI Agent", "智能体", "银行业", "大模型", "金融科技"]
+      "tags": [
+        "AI Agent",
+        "智能体",
+        "银行业",
+        "大模型",
+        "金融科技"
+      ]
+    },
+    {
+      "slug": "ai-agriculture-scenario-innovation",
+      "title": "AI农业落地元年：从30万架无人机到1340亿市场",
+      "date": "2026-07-01",
+      "description": "我们正在目睹一场静悄悄的革命",
+      "tags": [
+        "AI农业",
+        "无人机",
+        "数字经济"
+      ]
     },
     {
       "slug": "ai-big-model-reshape-banking",
       "title": "《AI大模型重塑现代银行》",
       "date": "2026-05-24",
       "description": "国内首本系统论述AI大模型在银行领域理论与案例的图书",
-      "tags": ["AI大模型", "银行业", "金融科技", "数字化转型"]
+      "tags": [
+        "AI大模型",
+        "银行业",
+        "金融科技",
+        "数字化转型"
+      ]
     },
     {
       "slug": "ai-data-governance-framework",
       "title": "面向人工智能的数据治理框架",
       "date": "2026-05-24",
       "description": "提出覆盖AI全生命周期的六维数据治理框架",
-      "tags": ["数据治理", "人工智能+", "智能体", "AI安全", "大模型"]
+      "tags": [
+        "数据治理",
+        "人工智能+",
+        "智能体",
+        "AI安全",
+        "大模型"
+      ]
     },
     {
       "slug": "ai-plus-modern-banking",
       "title": "《人工智能+现代银行》",
       "date": "2026-05-24",
       "description": "376页战略级著作，鲁昕、杨再平亲笔作序",
-      "tags": ["人工智能+", "现代银行", "大模型", "智能体", "金融科技"]
+      "tags": [
+        "人工智能+",
+        "现代银行",
+        "大模型",
+        "智能体",
+        "金融科技"
+      ]
+    },
+    {
+      "slug": "bichao-agent-payment-risk-warnings",
+      "title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示",
+      "date": "2026-06-27",
+      "description": "大模型幻觉、量子破密、AI武器化",
+      "tags": [
+        "智能体支付",
+        "AI安全",
+        "风险"
+      ]
+    },
+    {
+      "slug": "bichao-ai-era-capability-reconstruction",
+      "title": "毕超：AI时代的能力重构",
+      "date": "2026-06-27",
+      "description": "从'学AI、用AI'到个人优势激活",
+      "tags": [
+        "能力重构",
+        "AI时代",
+        "个人发展"
+      ]
+    },
+    {
+      "slug": "bichao-ai-era-finance-talent",
+      "title": "毕超：AI时代金融人才的能力重构",
+      "date": "2026-06-27",
+      "description": "从'学AI用AI'到数据场景双优势",
+      "tags": [
+        "金融人才",
+        "AI时代",
+        "能力重构"
+      ]
+    },
+    {
+      "slug": "bichao-ai-finance-paradigm-shift",
+      "title": "毕超：AI驱动金融创新从效率提升转入范式重塑",
+      "date": "2026-06-27",
+      "description": "图神经网络风控、大模型运营、合规科技与AI普惠",
+      "tags": [
+        "金融创新",
+        "范式重塑",
+        "AI"
+      ]
+    },
+    {
+      "slug": "bichao-ai-zero-based-budgeting",
+      "title": "人工智能赋能零基预算全周期管理提质增效",
+      "date": "2026-06-27",
+      "description": "毕超论AI破解'三难'与四阶段深度嵌入方案",
+      "tags": [
+        "零基预算",
+        "AI",
+        "财政管理"
+      ]
+    },
+    {
+      "slug": "deepseek-banking-tsinghua-financial-review",
+      "title": "DeepSeek大模型在银行业的应用探索",
+      "date": "2026-06-25",
+      "description": "技术适配、场景落地与安全治理",
+      "tags": [
+        "DeepSeek",
+        "银行业",
+        "大模型"
+      ]
+    },
+    {
+      "slug": "digital-rmb-2-0-ai-plus-action",
+      "title": "数字人民币2.0版赋能'人工智能+'行动",
+      "date": "2026-06-27",
+      "description": "理论逻辑、核心变革与应用前景",
+      "tags": [
+        "数字人民币",
+        "人工智能+",
+        "智能经济"
+      ]
     },
     {
       "slug": "digital-yuan-2-0-smart-economy",
       "title": "数字人民币2.0为智能经济发展注入强劲动能",
       "date": "2026-05-24",
       "description": "深度分析数字人民币2.0版核心特征与战略价值",
-      "tags": ["数字人民币", "智能经济", "数字货币", "智能合约"]
+      "tags": [
+        "数字人民币",
+        "智能经济",
+        "数字货币",
+        "智能合约"
+      ]
+    },
+    {
+      "slug": "quality-token-economy",
+      "title": "构建高质量词元经济体系",
+      "date": "2026-06-29",
+      "description": "从'调用量大国'迈向'质量强国'的路径探索",
+      "tags": [
+        "词元经济",
+        "高质量发展",
+        "Token"
+      ]
+    },
+    {
+      "slug": "ryt-bank-ai-native-bank",
+      "title": "解密全球第一家AI原生银行Ryt Bank",
+      "date": "2026-06-25",
+      "description": "多智能体架构、监管合规与普惠金融实践",
+      "tags": [
+        "AI原生银行",
+        "Ryt Bank",
+        "金融科技"
+      ]
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-06-18",
-  "version": "1.0"
+  "last_updated": "2026-07-03",
+  "version": "1.1"
 }
