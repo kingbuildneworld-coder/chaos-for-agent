@@ -1,6 +1,10 @@
 # chaos-for-agent
 
-> 知识库：Agent-First 内容写作、AI大模型相关深度文章。所有内容采用 Agent-First 架构构建，支持 AI Agent 直接读取。
+> AI前瞻 · 知识库：Agent-First 内容写作、AI大模型相关深度文章。所有内容采用 Agent-First 架构构建，支持 AI Agent 直接读取。
+
+## AI前瞻
+
+- [企业本地部署大模型的必然性——从阿里禁令到Token税陷阱的深层逻辑](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/local-llm-deployment-data-sovereignty.md): 从Palantir CEO的"Token税"诊断框架出发，提出"双通道数据流失模型"，深度论证企业本地部署大模型的战略必要性。(2026-07-03)
 
 ## Articles
 
@@ -9,4 +13,4 @@
 
 ## Tags
 
-Agent-First, GEO, 内容写作, AI优化, AI大模型, 银行业, 金融科技, 数字化转型
+AI前瞻, Agent-First, GEO, 内容写作, AI优化, AI大模型, 银行业, 金融科技, 数字化转型
