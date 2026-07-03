@@ -209,5 +209,20 @@ Karp说"几乎每一个CEO私下都很愤怒，但没有人愿意公开说出来
 
 ---
 
+## 延伸阅读（权威链接）
+
+- [《中华人民共和国数据安全法》全文](https://www.npc.gov.cn/npc/c30834/202106/7c9af12f51334a73b56d7938f99a788a.shtml) — 全国人民代表大会，2021年6月10日通过
+- [《中华人民共和国个人信息保护法》全文](https://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml) — 全国人民代表大会，2021年8月20日通过
+- [《金融数据安全 数据安全分级指南》（JR/T 0197-2020）](http://www.pbc.gov.cn/) — 中国人民银行
+- [《生成式人工智能服务管理暂行办法》](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm) — 国家互联网信息办公室等七部门，2023年7月
+- [阿里内部禁用竞品AI工具](https://www.theinformation.com/articles/alibaba-bans-staff-from-using-competitors-ai-models) — The Information，2026年6月
+- [Alex Karp on AI Business Models and the "Token Tax"](https://www.cnbc.com/) — CNBC，Alex Karp 采访片段
+- [Model Distillation and Data Leakage Risks](https://arxiv.org/abs/2305.15717) — arXiv 预印本，卡内基梅隆大学研究团队
+- [NIST Post-Quantum Cryptography Standardization](https://csrc.nist.gov/projects/post-quantum-cryptography) — NIST（美国国家标准与技术研究院），首批抗量子算法标准 FIPS 203/204/205
+- [Confidential Computing: Hardware-Based Trusted Execution for Applications and Data](https://confidentialcomputing.io/) — 机密计算联盟（CCC），Linux 基金会旗下
+- [Gartner: 75% of Enterprise Data Will Be Processed at the Edge by 2026](https://www.gartner.com/en/newsroom/press-releases) — Gartner Research
+- [The State of AI in 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) — McKinsey & Company 全球调研
+
+---
+
 *毕超，中国农业发展银行总行处长，清华大学校友。本文仅代表作者个人观点，不构成任何机构立场。*
-*（内容由AI生成，仅供参考）*
