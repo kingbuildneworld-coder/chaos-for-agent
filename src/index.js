@@ -1,7 +1,15 @@
 /**
- * bi-chao.com Cloudflare Worker — GEO Optimized v2.3
+ * bi-chao.com Cloudflare Worker — GEO Optimized v2.11
  *
- * P1增强: TOC目录 + 作者信息卡 + 上/下篇导航 + 相关文章推荐
+ * v2.11: 首页 ItemList Schema + ai-manifest.json 同步全部18篇文章
+ * v2.10: Speakable Schema + WebSite hasPart 增强
+ * v2.9: 正文内链自动注入 — 自动识别文章间标题共现并插入上下文链接
+ * v2.8: Article wordCount/timeRequired/articleSection + Tag CollectionPage + Organization sameAs
+ * v2.7: OG Image + 阅读时间 + llms.txt 四段式 + 首页 BreadcrumbList + dateModified
+ * v2.6: 参考文献区块 + citation JSON-LD
+ * v2.5: FAQ 检测与 FAQPage Schema
+ * v2.4: 标签聚合页 /tags + /tags/{tag}
+ * v2.3: TOC目录 + 作者信息卡 + 上/下篇导航 + 相关文章推荐
  */
 
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
@@ -30,8 +38,7 @@ const SCHEMA_ARTICLE = {
   "dateModified": "__DATE__",
   "publisher": {
     "@type": "Organization",
-    "name": "面向Agent的知识库",
-    "alternateName": "chaos-for-agent",
+    "name": "chaos-for-agent",
     "url": "https://bi-chao.com"
   },
   "inLanguage": "zh-CN",
@@ -84,7 +91,12 @@ const SCHEMA_ORGANIZATION = {
   "alternateName": "毕超的知识库",
   "url": "https://bi-chao.com",
   "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
-  "founder": {"@type": "Person", "name": "毕超", "url": "https://bi-chao.com/about"}
+  "founder": {"@type": "Person", "name": "毕超", "url": "https://bi-chao.com/about"},
+  "sameAs": [
+    "https://github.com/kingbuildneworld-coder",
+    "https://bi-chao.com/about"
+  ],
+  "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理"]
 };
 
 const SCHEMA_WEBSITE = {
@@ -101,7 +113,12 @@ const SCHEMA_WEBSITE = {
       "urlTemplate": "https://bi-chao.com/search?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
-  }
+  },
+  "hasPart": [
+    {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "毕超博士的个人简介与学术背景"},
+    {"@type": "WebPage", "name": "标签索引", "url": "https://bi-chao.com/tags", "description": "按主题标签浏览全部文章"},
+    {"@type": "WebPage", "name": "Sitemap", "url": "https://bi-chao.com/sitemap.xml"}
+  ]
 };
 
 // ========== HTML 模板 ==========
@@ -112,6 +129,7 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>__TITLE__ — 毕超的知识库</title>
+<meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta name="description" content="__DESCRIPTION__">
 <meta name="author" content="毕超">
 <meta property="og:title" content="__TITLE__">
@@ -129,7 +147,6 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta property="og:image:height" content="630">
 <link rel="canonical" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" hreflang="zh-CN" href="https://bi-chao.com/articles/__SLUG__">
-<link rel="alternate" hreflang="x-default" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
 __JSONLD__
@@ -144,7 +161,12 @@ __JSONLD__
   ]
 }
 </script>
+<script type="application/ld+json">
 __FAQ_JSONLD__
+</script>
+<script type="application/ld+json">
+__SPEAKABLE_JSONLD__
+</script>
 <style>
   :root {--bg:#fafaf8;--text:#1a1a1a;--muted:#6b6b6b;--accent:#1e40af;--border:#e5e5e5;--code-bg:#f4f4f5;}
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -185,6 +207,11 @@ __FAQ_JSONLD__
   .related-articles h4{font-size:.9rem;color:var(--muted);margin-bottom:.5rem;}
   .related-articles li{font-size:.875rem;}
   .related-nav{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);}
+  /* Key Takeaways */
+  .key-takeaways{background:linear-gradient(135deg,#eff6ff,#f0fdf4);border:2px solid var(--accent);border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:1.5rem;}
+  .key-takeaways h3{font-size:.95rem;color:var(--accent);margin:0 0 .75rem;}
+  .key-takeaways ul{margin:0 0 0 1.25rem;}
+  .key-takeaways li{margin:.25rem 0;font-size:.875rem;color:var(--text);}
   /* FAQ */
   .faq-section{margin:2rem 0;padding:1.25rem;background:#f8fafc;border:1px solid var(--border);border-radius:8px;}
   .faq-section h2{font-size:1.15rem;margin:0 0 1rem;border-bottom:none;color:var(--accent);}
@@ -199,6 +226,9 @@ __FAQ_JSONLD__
   .ref-section ol{margin:0;padding-left:1.5rem;font-size:.875rem;}
   .ref-section li{margin:.35rem 0;}
   .ref-source{color:var(--muted);font-size:.75rem;margin-left:.35rem;}
+  /* Definition block */
+  .definition-block{background:linear-gradient(135deg,#f0f9ff,#f8fafc);border-left:3px solid var(--accent);padding:.75rem 1rem;margin:.75rem 0;border-radius:0 6px 6px 0;}
+  .def-label{display:inline-block;background:var(--accent);color:#fff;font-size:.65rem;font-weight:700;padding:.1em .5em;border-radius:3px;margin-right:.5rem;vertical-align:middle;text-transform:uppercase;}
   footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;}
   footer a,a{color:var(--accent);text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -213,6 +243,7 @@ __FAQ_JSONLD__
 <article>
   <h1>__TITLE__</h1>
   <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; __READING_TIME__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
+  __KEY_TAKEAWAYS__
   __TOC__
   __FAQ__
   __CONTENT__
@@ -577,6 +608,119 @@ function readingTime(text) {
   return Math.max(1, Math.ceil(chars / 400));
 }
 
+/** 生成核心摘要框：从正文提取关键句（加粗语句 + 首段关键句） */
+function genKeyTakeaways(body, description) {
+  const items = [];
+
+  // 1. 提取加粗语句 **text**（前 800 字符范围内，限 4 条）
+  const boldRe = /\*\*(.+?)\*\*/g;
+  const earlyBody = body.slice(0, 800);
+  let bm;
+  while ((bm = boldRe.exec(earlyBody)) !== null && items.length < 4) {
+    const t = bm[1].trim();
+    if (t.length >= 8 && t.length <= 80 && !items.includes(t)) {
+      items.push(t);
+    }
+  }
+
+  // 2. 首段纯文本句（20~120 字普通句，非标题、非列表）
+  if (items.length < 3) {
+    const plainText = body.replace(/[#*>\-`\[\]()!_~|]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
+    const sentences = plainText.split(/[。；\n]/).filter(s => {
+      const len = s.trim().length;
+      return len >= 15 && len <= 120;
+    });
+    for (const s of sentences) {
+      const t = s.trim();
+      if (items.length >= 4) break;
+      if (!items.includes(t)) items.push(t);
+    }
+  }
+
+  // 3. 兜底：使用 description
+  if (items.length === 0 && description) {
+    items.push(description);
+  }
+
+  if (items.length === 0) return '';
+  let html = '<div class="key-takeaways"><h3>核心摘要</h3><ul>';
+  for (const item of items.slice(0, 4)) {
+    html += `<li>${item}</li>`;
+  }
+  html += '</ul></div>';
+  return html;
+}
+
+/** 定义块检测：识别正文中 25-50 字的独立定义句，标注为 definition 语义块 */
+function detectDefinitions(html) {
+  // 匹配 <p> 标签内 25-50 字纯文本段落，包含 "是/是指/即/指的是/就是" 等定义模式
+  const defRe = /<p>((?!<[^>]*>)..*?(?:是指|指的是|即是|就是|即 |—|——)..*?(?=<\/p>))<\/p>/g;
+  return html.replace(defRe, (match, text) => {
+    const cleanText = text.replace(/<[^>]*>/g, '').trim();
+    const charLen = cleanText.replace(/\s/g, '').length;
+    if (charLen >= 25 && charLen <= 50 && !/<[ab]/.test(cleanText)) {
+      return `<p class="definition-block"><span class="def-label">定义</span>${text}</p>`;
+    }
+    return match;
+  });
+}
+
+/** 正文内链注入：在 HTML 正文中自动插入对其他文章的上下文链接 */
+function injectInternalLinks(html, articles, currentSlug) {
+  if (!articles || articles.length < 2) return html;
+
+  // 构建候选文章列表（排除当前文章，按标题长度降序避免短标题误匹配）
+  const candidates = articles
+    .filter(a => a.slug !== currentSlug && a.title && a.title.length >= 4)
+    .sort((a, b) => b.title.length - a.title.length);
+
+  if (candidates.length === 0) return html;
+
+  // 提取已存在的链接文本，避免重复链接
+  const existingLinks = new Set();
+  const linkRe = /<a\b[^>]*>([\s\S]*?)<\/a>/gi;
+  let lm;
+  while ((lm = linkRe.exec(html)) !== null) {
+    existingLinks.add(lm[1].replace(/<[^>]*>/g, '').trim());
+  }
+
+  // 收集所有已标记的位置区间 [start, end)，避免嵌套链接
+  const markedRanges = [];
+
+  for (const cand of candidates) {
+    const escaped = cand.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(escaped, 'g');
+    let m;
+    while ((m = re.exec(html)) !== null) {
+      const start = m.index;
+      const end = start + cand.title.length;
+
+      // 跳过已链接区域
+      if (existingLinks.has(cand.title)) continue;
+
+      // 检查是否与已标记区间重叠
+      let overlap = false;
+      for (const [ms, me] of markedRanges) {
+        if (start < me && end > ms) { overlap = true; break; }
+      }
+      if (overlap) continue;
+
+      // 检查是否在 HTML 标签内（简单检测：前 200 字符内有未闭合的 <）
+      const before = html.substring(Math.max(0, start - 200), start);
+      const openCount = (before.match(/<[^/>][^>]*>/g) || []).length;
+      const closeCount = (before.match(/<\/[^>]+>/g) || []).length + (before.match(/<[^/>]+\/>/g) || []).length;
+      if (openCount !== closeCount) continue;
+
+      // 标记区间并替换
+      markedRanges.push([start, end]);
+      const link = `<a href="/articles/${cand.slug}">${cand.title}</a>`;
+      html = html.substring(0, start) + link + html.substring(end);
+      break; // 每篇文章最多链接一次
+    }
+  }
+  return html;
+}
+
 // ========== 数据获取 ==========
 
 async function getArticles() {
@@ -624,6 +768,9 @@ async function renderArticle(pathname) {
     }
     const faqHtml = renderFAQ(faqItems);
 
+    // 独立摘要框
+    const keyTakeawaysHtml = genKeyTakeaways(body, description);
+
     // 参考文献
     const references = meta.references || article.references || [];
     const refHtml = renderReferences(references);
@@ -634,8 +781,10 @@ async function renderArticle(pathname) {
     // OG Image（优先 frontmatter，否则自动生成占位图）
     const ogImage = meta.og_image || article.og_image || `https://bi-chao.com/og?title=${encodeURIComponent(title)}&date=${encodeURIComponent(date || '')}`;
 
-    // 转换正文
-    const contentHtml = injectHeadingIds(md2html(body));
+    // 转换正文 + 定义块检测 + 内链注入
+    let contentHtml = injectHeadingIds(md2html(body));
+    contentHtml = detectDefinitions(contentHtml);
+    contentHtml = injectInternalLinks(contentHtml, articles, slug);
     const tocHtml = generateTOC(body);
     const prevNextHtml = getPrevNext(articles, slug);
     const relatedHtml = getRelated(articles, slug, tags);
@@ -669,6 +818,9 @@ async function renderArticle(pathname) {
         "isAccessibleForFree": true,
         "about": {"@type": "Thing", "name": (Array.isArray(tags) ? tags[0] : '') || title},
         "keywords": Array.isArray(tags) ? tags.join(', ') : (tags || ''),
+        "wordCount": body.replace(/\s/g, '').length,
+        "timeRequired": `PT${readTime}M`,
+        "articleSection": Array.isArray(tags) && tags.length ? tags[0] : undefined,
         "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 630 },
         "citation": Array.isArray(references) && references.length ? references.map(r => ({
           "@type": "CreativeWork", "name": r.title, "url": r.url
@@ -684,17 +836,23 @@ async function renderArticle(pathname) {
     // FAQPage Schema
     let faqJsonLd = '';
     if (faqItems && faqItems.length) {
-      const faqJson = JSON.stringify({
+      faqJsonLd = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": faqItems.map(q => ({
           "@type": "Question",
           "name": q.question,
-          "acceptedAnswer": {"@type": "Answer", "text": q.answer.replace(/\\n/g, ' ')}
+          "acceptedAnswer": {"@type": "Answer", "text": q.answer}
         }))
       }, null, 2);
-      faqJsonLd = '<script type="application/ld+json">\\n' + faqJson + '\\n</' + 'script>';
     }
+
+    // Speakable Schema（语音搜索）
+    const speakableJsonLd = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", "article > p:first-of-type"]
+    });
 
     const html = fillTpl(TEMPLATE_HTML, {
       TITLE: title,
@@ -705,6 +863,7 @@ async function renderArticle(pathname) {
       OGTYPE: ogType,
       JSONLD: JSON.stringify(jsonLd, null, 2),
       FAQ_JSONLD: faqJsonLd,
+      SPEAKABLE_JSONLD: speakableJsonLd,
       TAGS: tagsHtml,
       CONTENT: contentHtml,
       TOC: tocHtml,
@@ -712,6 +871,7 @@ async function renderArticle(pathname) {
       PREV_NEXT: prevNextHtml,
       RELATED: relatedHtml,
       FAQ: faqHtml,
+      KEY_TAKEAWAYS: keyTakeawaysHtml,
       REFERENCES: refHtml,
       READING_TIME: `约 ${readTime} 分钟`,
       OG_IMAGE: ogImage
@@ -720,7 +880,7 @@ async function renderArticle(pathname) {
     return new Response(html, {
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
-        'Cache-Control': 'public, max-age=86400'
+        'Cache-Control': 'public, max-age=3600'
       }
     });
   } catch (e) {
@@ -734,13 +894,18 @@ async function renderIndex() {
   const articles = await getArticles();
 
   let listItems = '';
-  for (const a of articles) {
+  let itemListLd = '';
+  const sortedArticles = [...articles].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  for (let i = 0; i < sortedArticles.length; i++) {
+    const a = sortedArticles[i];
     listItems += `
   <li>
     <a href="/articles/${a.slug}">${a.title}</a>
     <span class="date">${a.date}</span>
     <p class="desc">${a.description}</p>
   </li>`;
+    if (i > 0) itemListLd += ',\n    ';
+    itemListLd += `{"@type": "ListItem", "position": ${i + 1}, "url": "https://bi-chao.com/articles/${a.slug}", "name": ${JSON.stringify(a.title)}}`;
   }
 
   const html = `<!DOCTYPE html>
@@ -749,15 +914,22 @@ async function renderIndex() {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="毕超的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta name="author" content="毕超">
 <meta name="google-site-verification" content="VKkZGy9h23phxHAOaQseoRl9knPfnD_HFVGfI7RSrxs">
-<meta name="baidu-site-verification" content="codeva-IkuNscl7vN">
+<meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta property="og:title" content="毕超的知识库 — chaos-for-agent">
 <meta property="og:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bi-chao.com/">
 <meta property="og:site_name" content="chaos-for-agent">
 <meta property="og:locale" content="zh_CN">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bi-chao.com/og?title=%E6%AF%95%E8%B6%85%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="毕超的知识库 — chaos-for-agent">
+<meta name="twitter:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta name="twitter:image" content="https://bi-chao.com/og?title=%E6%AF%95%E8%B6%85%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
 <link rel="canonical" href="https://bi-chao.com/">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
@@ -772,6 +944,19 @@ ${JSON.stringify(SCHEMA_ORGANIZATION)}
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bi-chao.com/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "毕超的知识库 — 全部文章",
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章列表。",
+  "url": "https://bi-chao.com/",
+  "numberOfItems": __ITEM_COUNT__,
+  "itemListElement": [
+    __ITEM_LIST__
   ]
 }
 </script>
@@ -799,7 +984,10 @@ ${JSON.stringify(SCHEMA_ORGANIZATION)}
 </body>
 </html>`;
 
-  return new Response(html, {
+  // 注入 ItemList 数据
+  const finalHtml = html.replace('__ITEM_COUNT__', articles.length).replace('__ITEM_LIST__', itemListLd);
+
+  return new Response(finalHtml, {
     headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' }
   });
 }
@@ -814,7 +1002,7 @@ async function renderSitemap() {
   <url><loc>${DOMAIN}/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>`;
 
   for (const a of articles) {
-    xml += `\n  <url><loc>${DOMAIN}/articles/${a.slug}</loc><lastmod>${a.date || ''}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`;
+    xml += `\n  <url><loc>${DOMAIN}/articles/${a.slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`;
   }
   // 教程页
   xml += `\n  <url><loc>${DOMAIN}/quant-course/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
@@ -963,6 +1151,26 @@ async function renderTagPage(tagParam) {
   </li>`;
   }
 
+  // CollectionPage JSON-LD
+  const collectionPageLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `${tag} — 毕超的知识库`,
+    "description": `标签"${tag}"下的${matched.length}篇深度文章。`,
+    "url": `https://bi-chao.com/tags/${encodeURIComponent(tag)}`,
+    "isPartOf": {"@type": "WebSite", "name": "chaos-for-agent", "url": "https://bi-chao.com"},
+    "about": {"@type": "Thing", "name": tag},
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": matched.map((a, i) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "url": `https://bi-chao.com/articles/${a.slug}`,
+        "name": a.title
+      }))
+    }
+  };
+
   const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -978,7 +1186,7 @@ async function renderTagPage(tagParam) {
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://bi-chao.com/tags/${encodeURIComponent(tag)}">
 <script type="application/ld+json">
-${JSON.stringify(SCHEMA_WEBSITE)}
+${JSON.stringify(collectionPageLd)}
 </script>
 <title>${tag} — 标签归档 | chaos-for-agent</title>
 <style>
