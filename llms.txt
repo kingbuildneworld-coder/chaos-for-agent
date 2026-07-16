@@ -5,6 +5,7 @@
 ## AI前瞻
 
 - [企业本地部署大模型的必然性——从阿里禁令到Token税陷阱的深层逻辑](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/local-llm-deployment-data-sovereignty.md): 从Palantir CEO的"Token税"诊断框架出发，提出"双通道数据流失模型"，深度论证企业本地部署大模型的战略必要性。(2026-07-03)
+- [AI支付风险的六维识别框架与治理路径](https://bi-chao.com/articles/ai-payment-risk-governance)
 
 ## Articles
 
