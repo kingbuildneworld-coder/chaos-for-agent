@@ -113,6 +113,22 @@
     "schema_type": "AcademicPaper"
   },
   {
+    "title": "AI支付风险的六维识别框架与治理路径",
+    "slug": "ai-payment-risk-governance",
+    "url": "/articles/ai-payment-risk-governance.md",
+    "description": "AI正在把支付从'交易环节'推向'智能决策环节'。本文提出AI支付六大风险维度（主体/意图/授权/模型/数据/平台）和八条治理路径，构建从'资金安全'到'意图真实'的下一代支付安全范式。",
+    "date": "2026-07-04",
+    "tags": [
+      "AI前瞻",
+      "金融科技",
+      "支付安全",
+      "AI治理",
+      "风险管理",
+      "银行"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "《人工智能+现代银行》：通往智能银行的战略地图与行动指南",
     "slug": "ai-plus-modern-banking",
     "url": "/articles/ai-plus-modern-banking.md",
