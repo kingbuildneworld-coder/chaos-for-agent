@@ -15,6 +15,8 @@
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
 const DOMAIN = 'https://bi-chao.com';
 const AUTHOR_NAME = '毕超';
+const AUTHOR_JOB_TITLE = '金融行业风险管理从业者';
+const AUTHOR_ORG = '金融行业';
 
 // ========== JSON-LD Schema 模板 ==========
 
@@ -69,10 +71,9 @@ const SCHEMA_PERSON = {
   "@type": "Person",
   "name": "毕超",
   "alternateName": "Bi Chao",
-  "description": "博士、高级工程师（计算机技术专业），中国农业发展银行总行处长。清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。研究方向为大语言模型、数字金融、金融科技。",
+  "description": "博士、高级工程师（计算机技术专业），金融行业风险管理从业者。清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。研究方向为大语言模型、数字金融、金融科技。",
   "url": "https://bi-chao.com/about",
-  "jobTitle": "中国农业发展银行总行处长",
-  "worksFor": {"@type": "Organization", "name": "中国农业发展银行", "url": "https://www.adbc.com.cn"},
+  "jobTitle": "金融行业风险管理从业者",
   "alumniOf": {"@type": "CollegeOrUniversity", "name": "清华大学"},
   "memberOf": [
     {"@type": "Organization", "name": "中国人工智能学会"},
@@ -167,6 +168,8 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta property="og:image" content="__OG_IMAGE__">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="__DATE__">
+<meta property="article:modified_time" content="__DATE_MODIFIED__">
 <link rel="canonical" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" hreflang="zh-CN" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
@@ -297,9 +300,9 @@ const ABOUT_TEMPLATE_PART = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>毕超 — 关于作者 | chaos-for-agent</title>
-<meta name="description" content="毕超，博士、高级工程师（计算机技术专业），中国农业发展银行总行处长。清华大学校友导师，中国人工智能学会终身会员。">
+<meta name="description" content="毕超，博士、高级工程师（计算机技术专业），金融行业风险管理从业者。清华大学校友导师，中国人工智能学会终身会员。">
 <meta property="og:title" content="毕超 — 关于作者">
-<meta property="og:description" content="博士、高级工程师，中国农业发展银行总行处长。主要研究方向为大语言模型、数字金融、金融科技。">
+<meta property="og:description" content="博士、高级工程师，金融行业风险管理从业者。主要研究方向为大语言模型、数字金融、金融科技。">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://bi-chao.com/about">
 <meta property="og:site_name" content="chaos-for-agent">
@@ -906,10 +909,10 @@ async function renderArticle(pathname) {
     } else {
       jsonLd = {
         "@context": "https://schema.org",
-        "@type": schemaType === 'AcademicPaper' ? 'Article' : schemaType,
+        "@type": (schemaType === 'Article' || schemaType === 'AcademicPaper') ? 'ScholarlyArticle' : schemaType,
         "headline": title,
         "description": description,
-        "author": {"@type": "Person", "name": AUTHOR_NAME, "url": "https://bi-chao.com/about", "jobTitle": "中国农业发展银行总行处长", "alumniOf": "清华大学"},
+        "author": {"@type": "Person", "name": AUTHOR_NAME, "url": "https://bi-chao.com/about", "jobTitle": AUTHOR_JOB_TITLE, "alumniOf": "清华大学"},
         "datePublished": date,
         "dateModified": dateModified,
         "publisher": {"@type": "Organization", "name": "chaos-for-agent", "url": "https://bi-chao.com"},
@@ -989,6 +992,7 @@ async function renderArticle(pathname) {
       DESCRIPTION: description,
       AUTHOR: AUTHOR_NAME,
       DATE: date,
+      DATE_MODIFIED: dateModified,
       SLUG: article.slug,
       OGTYPE: ogType,
       JSONLD: JSON.stringify(jsonLd, null, 2),
