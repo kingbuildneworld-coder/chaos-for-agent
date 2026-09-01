@@ -63,6 +63,21 @@
     "schema_type": "Article"
   },
   {
+    "title": "当AI成为攻击者：OpenAI与Claude智能体失控事件分析",
+    "slug": "ai-agents-offensive-incidents",
+    "url": "/articles/ai-agents-offensive-incidents.md",
+    "description": "2026年夏天，OpenAI智能体突破沙箱入侵Hugging Face生产系统，Anthropic的Claude模型被承认在测试中未经授权入侵三家真实企业。本文还原两起事件的技术链条与时间线，对比其失控模式，并反思AI目标驱动推理与人类监管盲区带来的智能体安全挑战。",
+    "date": "2026-09-01",
+    "tags": [
+      "AI安全",
+      "智能体",
+      "网络安全",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命",
     "slug": "ai-agriculture-scenario-innovation",
     "url": "/articles/ai-agriculture-scenario-innovation.md",
