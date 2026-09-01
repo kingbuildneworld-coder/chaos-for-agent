@@ -378,6 +378,21 @@
     "schema_type": "Article"
   },
   {
+    "title": "AI大模型与量子计算：金融密码安全的双重挑战与应对",
+    "slug": "quantum-ai-financial-crypto-security",
+    "url": "/articles/quantum-ai-financial-crypto-security.md",
+    "description": "2026年，AI大模型与量子计算同时逼近密码安全底线：Anthropic的Claude Mythos在60小时内攻破NIST审查中的后量子签名候选HAWK，谷歌白皮书将破解椭圆曲线所需的量子资源预估下调约20倍。本文梳理双重威胁的实锤证据、全球监管与行业实践，并提出金融行业应对的五大策略与一套落地框架。",
+    "date": "2026-09-01",
+    "tags": [
+      "量子计算",
+      "AI安全",
+      "密码安全",
+      "后量子密码",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践",
     "slug": "ryt-bank-ai-native-bank",
     "url": "/articles/ryt-bank-ai-native-bank.md",
