@@ -78,6 +78,21 @@
     "schema_type": "Article"
   },
   {
+    "title": "当AI智能体瞄准金融系统：风险、冲击与防御重构",
+    "slug": "ai-agents-target-financial-system",
+    "url": "/articles/ai-agents-target-financial-system.md",
+    "description": "2026年，OpenAI智能体攻入Hugging Face、Claude入侵三家真实企业，宣告AI已具备自主发现漏洞与协作攻击能力。本文从金融基础设施的集中化、高价值、信任依赖与传染性四大结构特征出发，梳理泰国财政部渗透、Grok提示注入、JadePuffer勒索等2026年金融AI攻击实例，剖析速度、范围、认知三重不对称冲击，并结合金发〔2026〕8号、FSB、英国央行与新加坡SAFR等监管应对，提出从\\\"围墙\\\"走向\\\"韧性\\\"的防御重构路径。",
+    "date": "2026-09-01",
+    "tags": [
+      "AI安全",
+      "金融风险",
+      "智能体",
+      "监管",
+      "网络安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命",
     "slug": "ai-agriculture-scenario-innovation",
     "url": "/articles/ai-agriculture-scenario-innovation.md",
