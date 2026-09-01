@@ -147,6 +147,20 @@
     "schema_type": "Book"
   },
   {
+    "title": "银行业怎么用对AI？麦肯锡新管理手册的五步落地指南",
+    "slug": "banking-ai-playbook",
+    "url": "/articles/banking-ai-playbook.md",
+    "description": "结合麦肯锡《The new management playbook for AI》核心框架，拆解银行业正确使用AI的五步路径：北极星目标、信任建设、工作流重塑、架构平衡与员工赋能。给出银行专属落地清单、四象限诊断框架与FAQ，帮助金融机构避开'重投入、轻产出'的AI陷阱，把技术真正转化为经营价值。",
+    "date": "2026-09-01",
+    "tags": [
+      "AI",
+      "银行业",
+      "麦肯锡",
+      "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化",
     "slug": "bichao-agent-payment-risk-warnings",
     "url": "/articles/bichao-agent-payment-risk-warnings.md",
