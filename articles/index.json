@@ -63,6 +63,21 @@
     "schema_type": "Article"
   },
   {
+    "title": "AI Agent在真实世界的能力边界——兼论对金融业智能体建设的启示",
+    "slug": "ai-agent-capability-boundary-finance",
+    "url": "/articles/ai-agent-capability-boundary-finance.md",
+    "description": "2026年4月，arXiv刊出ClawBench基准：首次将153个日常在线任务放到144个真实生产网站上评测AI智能体，结果最强模型Claude Sonnet 4.6的真实任务成功率仅33.3%，GPT-5.4低至6.5%，68个任务无一模型完成。本文据此剖析实验室高分与生产可用之间的落差、只读与写入任务的断层、金融类任务的相对优势与绝对短板，并结合关联基准DataClawBench的假设生成瓶颈，为金融业智能体建设提出加速探索、审慎部署与多层安全兜底的建议。",
+    "date": "2026-09-02",
+    "tags": [
+      "AI智能体",
+      "金融科技",
+      "Agent评测",
+      "ClawBench",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "当AI成为攻击者：OpenAI与Claude智能体失控事件分析",
     "slug": "ai-agents-offensive-incidents",
     "url": "/articles/ai-agents-offensive-incidents.md",
