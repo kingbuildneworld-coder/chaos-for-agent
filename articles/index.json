@@ -192,6 +192,22 @@
     "schema_type": "Book"
   },
   {
+    "title": "AI重塑量化投资：从辅助工具到基础设施的应用现状与趋势",
+    "slug": "ai-quantitative-investing-trends",
+    "url": "/articles/ai-quantitative-investing-trends.md",
+    "description": "2025年是中国量化投资的AI落地元年，大模型正全面重构因子挖掘、组合构建、交易风控与合规运维全链路。本文梳理端到端深度学习范式跃迁、AI Agent从代码补全到自主工程师的演进、大语言模型对非结构化数据的信号化改造，并结合策略同质化、过拟合、数据合规与监管收紧等风险，提出AI量化竞争正从因子竞争走向智能体系统竞争的判断。",
+    "date": "2026-09-02",
+    "tags": [
+      "AI量化",
+      "量化投资",
+      "端到端深度学习",
+      "AI智能体",
+      "大语言模型",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行业怎么用对AI？麦肯锡新管理手册的五步落地指南",
     "slug": "banking-ai-playbook",
     "url": "/articles/banking-ai-playbook.md",
