@@ -252,9 +252,37 @@
         "Ryt Bank",
         "金融科技"
       ]
+    },
+    {
+      "slug": "ai-agent-capability-boundary-finance",
+      "title": "AI Agent在真实世界的能力边界——兼论对金融业智能体建设的启示",
+      "date": "2026-09-02",
+      "description": "2026年4月，arXiv刊出ClawBench基准：首次将153个日常在线任务放到144个真实生产网站上评测AI智能体，结果最强模型Claude Sonnet 4.6的真实任务成功率仅33.3%，GPT-5.4低至6.5%，68个任务无一模型完成。本文据此剖析实验室高分与生产可用之间的落差、只读与写入任务的断层、金融类任务的相对优势与绝对短板，并结合关联基准DataClawBench的假设生成瓶颈，为金融业智能体建设提出加速探索、审慎部署与多层安全兜底的建议。",
+      "tags": [
+        "AI智能体",
+        "金融科技",
+        "Agent评测",
+        "ClawBench",
+        "风险管理"
+      ]
+    },
+    {
+      "slug": "multi-model-collaboration-paradigms",
+      "title": "多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告",
+      "date": "2026-09-02",
+      "description": "深入对比FUMO Fusion动态证据采购、Sakana Fugu任务分解调度、OpenRouter Fusion并行答案合成三大多模型协作范式的机制、基准与适用场景，探讨其组合价值。",
+      "tags": [
+        "多模型协作",
+        "大模型",
+        "FUMO",
+        "Sakana",
+        "OpenRouter",
+        "智能调度",
+        "技术报告"
+      ]
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-07-03",
+  "last_updated": "2026-09-02",
   "version": "1.1"
 }
