@@ -418,6 +418,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告",
+    "slug": "multi-model-collaboration-paradigms",
+    "url": "/articles/multi-model-collaboration-paradigms.md",
+    "description": "深入对比FUMO Fusion动态证据采购、Sakana Fugu任务分解调度、OpenRouter Fusion并行答案合成三大多模型协作范式的机制、基准与适用场景，探讨其组合价值。",
+    "date": "2026-09-02",
+    "tags": [
+      "多模型协作",
+      "大模型",
+      "FUMO",
+      "Sakana",
+      "OpenRouter",
+      "智能调度",
+      "技术报告"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "构建高质量词元经济体系——从'调用量大国'迈向'质量强国'的路径探索",
     "slug": "quality-token-economy",
     "url": "/articles/quality-token-economy.md",
