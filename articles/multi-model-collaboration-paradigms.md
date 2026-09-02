@@ -1,9 +1,9 @@
 ---
-title: 多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告
+title: "多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告"
 date: 2026-09-02
-description: 深入对比FUMO Fusion动态证据采购、Sakana Fugu任务分解调度、OpenRouter Fusion并行答案合成三大多模型协作范式的机制、基准与适用场景，探讨其组合价值。
-tags: [多模型协作, 大模型, FUMO, Sakana, OpenRouter, 算法导流]
-schema_type: tech-report
+description: "深入对比FUMO Fusion动态证据采购、Sakana Fugu任务分解调度、OpenRouter Fusion并行答案合成三大多模型协作范式的机制、基准与适用场景，探讨其组合价值。"
+tags: ["多模型协作", "大模型", "FUMO", "Sakana", "OpenRouter", "智能调度", "技术报告"]
+schema_type: "Article"
 ---
 
 # 多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告
