@@ -549,5 +549,25 @@
       "Agent落地"
     ],
     "schema_type": "Article"
+  },
+  {
+    "title": "量子计算的货币冲击：主权数字货币与加密货币的暴露、重构与对策",
+    "slug": "quantum-computing-sovereign-digital-currency-crypto",
+    "url": "/articles/quantum-computing-sovereign-digital-currency-crypto.md",
+    "description": "2026年以来，谷歌白皮书将破解椭圆曲线密码的量子资源门槛下调至50万物理量子比特以内，Oratomic提出2.6万中性原子量子比特几天内破解比特币的方案，量子威胁从'远期想象'进入'可测算的倒计时'。本文从威胁基准面出发，对比分析主权数字货币（CBDC）与加密货币两类体系在量子冲击下的结构性差异：前者依托央行主导可强制迁移，后者受困于公开账本与公钥暴露，并在发行设计、密码敏捷、资产迁移与监管协同四个维度给出对策。",
+    "date": "2026-09-03",
+    "tags": [
+      "量子计算",
+      "主权数字货币",
+      "央行数字货币",
+      "CBDC",
+      "加密货币",
+      "比特币",
+      "后量子密码",
+      "金融科技",
+      "风险管理",
+      "数字人民币"
+    ],
+    "schema_type": "Article"
   }
 ]
