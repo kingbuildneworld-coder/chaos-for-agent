@@ -491,5 +491,23 @@
       "数字银行"
     ],
     "schema_type": "Article"
+  },
+  {
+    "title": "企业级Agent的多表面知识路由——北大WorkSurface基准评测及其对银行的启示",
+    "slug": "worksurface-enterprise-agent-routing-banking",
+    "url": "/articles/worksurface-enterprise-agent-routing-banking.md",
+    "description": "深度解读北京大学DCAI团队开源的WorkSurface-Bench与WorkSurface-Build企业Agent评测基准：1,151个任务直面文档、表格、知识图谱三类数据入口，用Route/Evidence/Answer/Efficiency四维评分定位Agent失败环节，并探讨其对银行智能体工程落地的启示。",
+    "date": "2026-09-03",
+    "tags": [
+      "企业Agent",
+      "评测基准",
+      "知识路由",
+      "RAG",
+      "知识图谱",
+      "银行数字化",
+      "大模型",
+      "Agent落地"
+    ],
+    "schema_type": "Article"
   }
 ]
