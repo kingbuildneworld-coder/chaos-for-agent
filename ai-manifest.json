@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 22,
+    "total_articles": 23,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -29,7 +29,11 @@
       "AI安全",
       "人才发展",
       "G20",
-      "AI治理"
+      "AI治理",
+      "量子加密",
+      "后量子密码",
+      "量子计算",
+      "金融安全"
     ],
     "schema_types": [
       "Article",
@@ -313,6 +317,21 @@
         "全球治理",
         "风险管理",
         "金融科技"
+      ]
+    },
+    {
+      "slug": "us-treasury-quantum-readiness-japan-photonics",
+      "title": "美国财政部量子就绪部署与日本光量子突破：量子加密竞赛的金融影响与应对",
+      "date": "2026-09-03",
+      "description": "综述美国财政部量子就绪工作组推动金融业PQC迁移的部署全貌，结合日本W态纠缠测量与光量子计算突破，分析量子加密攻防对金融业的影响并给出迁移对策。",
+      "tags": [
+        "量子加密",
+        "后量子密码",
+        "美国财政部",
+        "量子计算",
+        "风险",
+        "密码迁移",
+        "光量子计算"
       ]
     }
   ],
