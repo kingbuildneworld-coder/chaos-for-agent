@@ -401,6 +401,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "G20人工智能治理的新风向：卡罗莱纳原则与全球AI共识的竞与合",
+    "slug": "g20-ai-governance-carolina-principles-banking",
+    "url": "/articles/g20-ai-governance-carolina-principles-banking.md",
+    "description": "2026年美国G20主席年，人工智能被提升为三大优先议题之一。9月1-2日北卡罗来纳创新部长会议闭幕，二十国经济体首次就新兴技术治理达成完整共识——卡罗莱纳原则确立'轻接触'监管基调，中国罕见签署，产业领袖马斯克、阿尔特曼、黄仁勋等悉数发声。本文全景梳理近期G20关于人工智能的核心观点，从约翰内斯堡到迈阿密复盘全球AI治理演进，并落脚其对银行业的深层启示。",
+    "date": "2026-09-03",
+    "tags": [
+      "G20",
+      "人工智能",
+      "AI治理",
+      "卡罗莱纳原则",
+      "创新部长会议",
+      "全球治理",
+      "银行业",
+      "风险管理",
+      "金融科技",
+      "国际规则"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "企业本地部署大模型的必然性——从阿里禁令到\"Token税\"陷阱的深层逻辑",
     "slug": "local-llm-deployment-data-sovereignty",
     "url": "/articles/local-llm-deployment-data-sovereignty.md",
