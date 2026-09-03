@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 18,
+    "total_articles": 22,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -27,7 +27,9 @@
       "AI农业",
       "零基预算",
       "AI安全",
-      "人才发展"
+      "人才发展",
+      "G20",
+      "AI治理"
     ],
     "schema_types": [
       "Article",
@@ -296,10 +298,26 @@
         "大模型",
         "Agent落地"
       ]
+    },
+    {
+      "slug": "g20-ai-governance-carolina-principles-banking",
+      "title": "G20人工智能治理的新风向：卡罗莱纳原则与全球AI共识的竞与合",
+      "date": "2026-09-03",
+      "description": "美国G20主席年AI与新兴技术升为三大优先议题，创新部长会议达成卡罗莱纳原则，二十个经济体首次就新兴技术治理达成完整共识",
+      "tags": [
+        "G20",
+        "人工智能",
+        "AI治理",
+        "卡罗莱纳原则",
+        "创新部长会议",
+        "全球治理",
+        "风险管理",
+        "金融科技"
+      ]
     }
   ],
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-03",
   "version": "1.1",
-  "total_articles": 21
+  "total_articles": 22
 }
