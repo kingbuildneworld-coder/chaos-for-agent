@@ -513,6 +513,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "美国财政部量子就绪部署与日本光量子突破：量子加密竞赛的金融影响与应对",
+    "slug": "us-treasury-quantum-readiness-japan-photonics",
+    "url": "/articles/us-treasury-quantum-readiness-japan-photonics.md",
+    "description": "2026年8月24日，美国财政部正式成立量子就绪特别工作组（Quantum-Readiness Task Force），推动银行、支付系统、金融市场基础设施与技术服务商向后量子密码（PQC）迁移，后量子密码由此从标准制定进入金融产业落地阶段。几乎同步，日本京都大学与广岛大学宣布首次实现三光子W态的纠缠测量，破解量子信息领域约二十五年的未解难题，光量子计算与量子通信明显提速。一边布防、一边突破之间，本文综述美国财政部量子加密部署的政策全貌与日本光量子技术突破的技术内核，并从金融风险管理视角分析影响、提出对策。",
+    "date": "2026-09-03",
+    "tags": [
+      "量子加密",
+      "后量子密码",
+      "美国财政部",
+      "量子计算",
+      "量子通信",
+      "金融科技",
+      "风险管理",
+      "密码迁移",
+      "光量子计算",
+      "金融安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "企业级Agent的多表面知识路由——北大WorkSurface基准评测及其对银行的启示",
     "slug": "worksurface-enterprise-agent-routing-banking",
     "url": "/articles/worksurface-enterprise-agent-routing-banking.md",
