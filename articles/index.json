@@ -208,6 +208,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行落地可演进 Harness：原因、路径与风险防范——企业Agent工程方法论在银行业的论证",
+    "slug": "bank-harness-agent-engineering",
+    "url": "/articles/bank-harness-agent-engineering.md",
+    "description": "张慧敏在《企业Agent工程方法论：从企业现实到可演进Harness的构建与治理》中提出：企业Agent落地的主要挑战，正从单轮生成与局部推理，转向在既有系统、授权结构与审计要求中实现可靠行动与可控演进，其核心结论是'模型能力不会自动转化为企业行动资格'。银行是'企业现实'密度最高的行业——账户状态、授信敞口、风控规则、授权矩阵与审计轨迹数十年沉淀，恰是该方法论最典型的适用场域。本文论证该观点在银行业的成立性，给出银行落地Harness的原因、六步路径与分层风险防范，主张银行智能体的核心竞争力不在单一模型，而在以Harness为控制层、以Harness Cell为演进边界、以Learning Runtime为治理机制的可演进工程体系。",
+    "date": "2026-09-04",
+    "tags": [
+      "智能体",
+      "Agent",
+      "Harness",
+      "企业Agent工程",
+      "银行科技",
+      "AI治理",
+      "风险防范",
+      "金融科技",
+      "大模型",
+      "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行业怎么用对AI？麦肯锡新管理手册的五步落地指南",
     "slug": "banking-ai-playbook",
     "url": "/articles/banking-ai-playbook.md",
@@ -401,6 +421,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "Fable 5.1 提示词泄露之后：对后训练开源模型的五点启示",
+    "slug": "fable-5-1-prompt-leak-post-training-open-source-lessons",
+    "url": "/articles/fable-5-1-prompt-leak-post-training-open-source-lessons.md",
+    "description": "2026年9月2日，Anthropic 发布旗舰模型 Fable 5.1（公众安全版）与 Mythos 5.1（已审核专家版），ARC-AGI-2 达90.0%、ARC-AGI-1 达97.5%，平均推理成本较上代下降约32%；然而发布数小时后，越狱研究者 Pliny the Liberator 便公开了长达27.5万字符的完整运行时组装指令——涵盖核心行为逻辑、记忆系统、搜索与版权规则、工具路由及全部46个工具的JSON架构，而官方同日仅披露约2.7万字。大量原始资料显示，这套'提示词'实为一份融合员工手册、合规手册与工具参考的巨型运行资产，其中版权红线、'永不存储'记忆禁区、工具调用规范等信息密度极高。本文以该事件为切口，讨论安全护栏的可剥离性、版权对齐、类别级隐私治理、工具后训练与推理成本效率五个维度，对后训练与开源模型生态提出启示。",
+    "date": "2026-09-04",
+    "tags": [
+      "大模型",
+      "后训练",
+      "开源模型",
+      "Open Weights",
+      "系统提示词",
+      "模型安全",
+      "版权合规",
+      "隐私治理",
+      "Agent",
+      "Fable 5.1"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "G20人工智能治理的新风向：卡罗莱纳原则与全球AI共识的竞与合",
     "slug": "g20-ai-governance-carolina-principles-banking",
     "url": "/articles/g20-ai-governance-carolina-principles-banking.md",
@@ -491,6 +531,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "量子计算的货币冲击：主权数字货币与加密货币的暴露、重构与对策",
+    "slug": "quantum-computing-sovereign-digital-currency-crypto",
+    "url": "/articles/quantum-computing-sovereign-digital-currency-crypto.md",
+    "description": "2026年以来，谷歌白皮书将破解椭圆曲线密码的量子资源门槛下调至50万物理量子比特以内，Oratomic提出2.6万中性原子量子比特几天内破解比特币的方案，量子威胁从'远期想象'进入'可测算的倒计时'。这篇文章从威胁基准面出发，对比分析主权数字货币（CBDC）与加密货币两类体系在量子冲击下的结构性差异：前者依托央行主导可强制迁移，后者受困于公开账本与公钥暴露。在此基础上提出覆盖发行设计、密码敏捷、资产迁移与监管协同的对策体系，为金融从业者提供决策框架。",
+    "date": "2026-09-03",
+    "tags": [
+      "量子计算",
+      "主权数字货币",
+      "央行数字货币",
+      "CBDC",
+      "加密货币",
+      "比特币",
+      "后量子密码",
+      "金融科技",
+      "风险管理",
+      "数字人民币"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践",
     "slug": "ryt-bank-ai-native-bank",
     "url": "/articles/ryt-bank-ai-native-bank.md",
@@ -547,66 +607,6 @@
       "银行数字化",
       "大模型",
       "Agent落地"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "量子计算的货币冲击：主权数字货币与加密货币的暴露、重构与对策",
-    "slug": "quantum-computing-sovereign-digital-currency-crypto",
-    "url": "/articles/quantum-computing-sovereign-digital-currency-crypto.md",
-    "description": "2026年以来，谷歌白皮书将破解椭圆曲线密码的量子资源门槛下调至50万物理量子比特以内，Oratomic提出2.6万中性原子量子比特几天内破解比特币的方案，量子威胁从'远期想象'进入'可测算的倒计时'。本文从威胁基准面出发，对比分析主权数字货币（CBDC）与加密货币两类体系在量子冲击下的结构性差异：前者依托央行主导可强制迁移，后者受困于公开账本与公钥暴露，并在发行设计、密码敏捷、资产迁移与监管协同四个维度给出对策。",
-    "date": "2026-09-03",
-    "tags": [
-      "量子计算",
-      "主权数字货币",
-      "央行数字货币",
-      "CBDC",
-      "加密货币",
-      "比特币",
-      "后量子密码",
-      "金融科技",
-      "风险管理",
-      "数字人民币"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "银行落地可演进 Harness：原因、路径与风险防范——企业Agent工程方法论在银行业的论证",
-    "slug": "bank-harness-agent-engineering",
-    "url": "/articles/bank-harness-agent-engineering.md",
-    "description": "张慧敏在《企业Agent工程方法论：从企业现实到可演进Harness的构建与治理》中提出：企业Agent落地的主要挑战正从单轮生成与局部推理，转向在既有系统、授权结构与审计要求中实现可靠行动与可控演进，核心结论是'模型能力不会自动转化为企业行动资格'。银行是'企业现实'密度最高的行业，恰是该方法论最典型的适用场域。本文论证该观点在银行业的成立性，给出银行落地Harness的原因、六步路径与分层风险防范。",
-    "date": "2026-09-04",
-    "tags": [
-      "智能体",
-      "Agent",
-      "Harness",
-      "企业Agent工程",
-      "银行科技",
-      "AI治理",
-      "风险防范",
-      "金融科技",
-      "大模型",
-      "数字化转型"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "Fable 5.1 提示词泄露之后：对后训练开源模型的五点启示",
-    "slug": "fable-5-1-prompt-leak-post-training-open-source-lessons",
-    "url": "/articles/fable-5-1-prompt-leak-post-training-open-source-lessons.md",
-    "description": "2026年9月2日，Anthropic发布Fable 5.1与Mythos 5.1，ARC-AGI-2达90.0%、ARC-AGI-1达97.5%，推理成本较上代降约32%；发布数小时后27.5万字完整运行时组装指令被公开，官方仅披露约2.7万字。本文以该事件为切口，讨论安全护栏可剥离性、版权对齐、类别级隐私治理、工具后训练与推理成本效率五个维度对后训练与开源模型生态的启示。",
-    "date": "2026-09-04",
-    "tags": [
-      "大模型",
-      "后训练",
-      "开源模型",
-      "Open Weights",
-      "系统提示词",
-      "模型安全",
-      "版权合规",
-      "隐私治理",
-      "Agent",
-      "Fable 5.1"
     ],
     "schema_type": "Article"
   }
