@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 24,
+    "total_articles": 25,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -351,10 +351,28 @@
         "风险管理",
         "数字人民币"
       ]
+    },
+    {
+      "slug": "bank-harness-agent-engineering",
+      "title": "银行落地可演进 Harness：原因、路径与风险防范——企业Agent工程方法论在银行业的论证",
+      "date": "2026-09-04",
+      "description": "张慧敏在《企业Agent工程方法论：从企业现实到可演进Harness的构建与治理》中提出：企业Agent落地的主要挑战正从单轮生成与局部推理，转向在既有系统、授权结构与审计要求中实现可靠行动与可控演进，核心结论是'模型能力不会自动转化为企业行动资格'。银行是'企业现实'密度最高的行业，恰是该方法论最典型的适用场域。本文论证该观点在银行业的成立性，给出银行落地Harness的原因、六步路径与分层风险防范。",
+      "tags": [
+        "智能体",
+        "Agent",
+        "Harness",
+        "企业Agent工程",
+        "银行科技",
+        "AI治理",
+        "风险防范",
+        "金融科技",
+        "大模型",
+        "数字化转型"
+      ]
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-03",
+  "last_updated": "2026-09-04",
   "version": "1.1",
-  "total_articles": 24
+  "total_articles": 25
 }
