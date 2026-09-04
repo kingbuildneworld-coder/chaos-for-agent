@@ -589,5 +589,25 @@
       "数字化转型"
     ],
     "schema_type": "Article"
+  },
+  {
+    "title": "Fable 5.1 提示词泄露之后：对后训练开源模型的五点启示",
+    "slug": "fable-5-1-prompt-leak-post-training-open-source-lessons",
+    "url": "/articles/fable-5-1-prompt-leak-post-training-open-source-lessons.md",
+    "description": "2026年9月2日，Anthropic发布Fable 5.1与Mythos 5.1，ARC-AGI-2达90.0%、ARC-AGI-1达97.5%，推理成本较上代降约32%；发布数小时后27.5万字完整运行时组装指令被公开，官方仅披露约2.7万字。本文以该事件为切口，讨论安全护栏可剥离性、版权对齐、类别级隐私治理、工具后训练与推理成本效率五个维度对后训练与开源模型生态的启示。",
+    "date": "2026-09-04",
+    "tags": [
+      "大模型",
+      "后训练",
+      "开源模型",
+      "Open Weights",
+      "系统提示词",
+      "模型安全",
+      "版权合规",
+      "隐私治理",
+      "Agent",
+      "Fable 5.1"
+    ],
+    "schema_type": "Article"
   }
 ]
