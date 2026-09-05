@@ -609,5 +609,25 @@
       "Agent落地"
     ],
     "schema_type": "Article"
+  },
+  {
+    "title": "Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究",
+    "slug": "graph-engineering-bank-asset-preservation",
+    "url": "/articles/graph-engineering-bank-asset-preservation.md",
+    "description": "以《Graph Engineering explained》钻石模式、检查器机制、舰队模式、锚点、伪边五大方法论，对照公开核实后的银行实践，落地贷后资金穿透监控、担保圈风险阻断、不良资产处置提效三大环节，并给出四阶段落地路径。",
+    "date": "2026-09-05",
+    "tags": [
+      "图工程",
+      "Graph Engineering",
+      "银行资产保全",
+      "贷后资金穿透",
+      "担保圈风险",
+      "不良资产处置",
+      "知识图谱",
+      "多智能体",
+      "图数据库",
+      "风控"
+    ],
+    "schema_type": "Article"
   }
 ]
