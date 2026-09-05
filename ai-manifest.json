@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 36,
+    "total_articles": 37,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -197,6 +197,17 @@
         "智能体",
         "Agent",
         "Harness"
+      ]
+    },
+    {
+      "slug": "bank-still-needs-software-engineers-agentic-era",
+      "title": "银行还需要软件工程师吗：智能体软件时代的角色迁移",
+      "date": "2026-09-05",
+      "description": "以arXiv最新论文《Agentic Software: How AI Agents Are Restructuring the Software Paradigm》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版'双内核'结论与四类新兴角色定义。",
+      "tags": [
+        "银行科技",
+        "软件工程",
+        "Agentic Engineering"
       ]
     },
     {
@@ -431,14 +442,14 @@
       ]
     },
     {
-      "slug": "bank-still-needs-software-engineers-agentic-era",
-      "title": "银行还需要软件工程师吗：智能体软件时代的角色迁移",
+      "slug": "post-training-attention-gymnastics",
+      "title": "给模型做注意力体操：从Attention原理推导高质量后训练数据的五条黄金法则",
       "date": "2026-09-05",
-      "description": "以arXiv最新论文《Agentic Software》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版'双内核'结论与四类新兴角色定义。",
+      "description": "基于《Understanding Attention》手册从QKV、因果掩码与位置编码、密集与稀疏注意力、注意力可解释性、KV缓存压缩等底层原理，推导出高质量后训练数据构建的五条黄金法则，并给出'注意力体操五式'统一框架、自检清单与实操示例。",
       "tags": [
-        "银行科技",
-        "软件工程",
-        "Agentic Engineering"
+        "大模型",
+        "后训练",
+        "注意力机制"
       ]
     }
   ],
