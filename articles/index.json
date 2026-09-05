@@ -535,6 +535,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "给模型做注意力体操：从Attention原理推导高质量后训练数据的五条黄金法则",
+    "slug": "post-training-attention-gymnastics",
+    "url": "/articles/post-training-attention-gymnastics.md",
+    "description": "基于《Understanding Attention》手册从QKV、因果掩码与位置编码、密集与稀疏注意力、注意力可解释性、KV缓存压缩等底层原理，推导出高质量后训练数据（SFT、RLHF/DPO、Long-Context微调）构建的五条黄金法则，并给出统一框架、自检清单与实操示例。",
+    "date": "2026-09-05",
+    "tags": [
+      "大模型",
+      "后训练",
+      "注意力机制",
+      "SFT",
+      "RLHF",
+      "DPO",
+      "长上下文",
+      "数据集构建",
+      "Transformer",
+      "CoT"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "构建高质量词元经济体系——从'调用量大国'迈向'质量强国'的路径探索",
     "slug": "quality-token-economy",
     "url": "/articles/quality-token-economy.md",
@@ -647,26 +667,6 @@
       "银行数字化",
       "大模型",
       "Agent落地"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "给模型做注意力体操：从Attention原理推导高质量后训练数据的五条黄金法则",
-    "slug": "post-training-attention-gymnastics",
-    "url": "/articles/post-training-attention-gymnastics.md",
-    "description": "基于《Understanding Attention》手册从QKV、因果掩码与位置编码、密集与稀疏注意力、注意力可解释性、KV缓存压缩等底层原理，推导出高质量后训练数据构建的五条黄金法则，并给出'注意力体操五式'统一框架、自检清单与实操示例。",
-    "date": "2026-09-05",
-    "tags": [
-      "大模型",
-      "后训练",
-      "注意力机制",
-      "SFT",
-      "RLHF",
-      "DPO",
-      "长上下文",
-      "数据集构建",
-      "Transformer",
-      "CoT"
     ],
     "schema_type": "Article"
   }
