@@ -461,6 +461,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究",
+    "slug": "graph-engineering-bank-asset-preservation",
+    "url": "/articles/graph-engineering-bank-asset-preservation.md",
+    "description": "近期X平台热文《Graph Engineering explained》以'钻石模式（扇出-归约-合成）''检查器机制''舰队模式''锚点''伪边'等概念重新定义了多智能体工作流的组织方式。本文将其核心方法论与当前银行资产保全实践对照核查并落地映射：贷后资金穿透监控对应钻石模式的扇出归约，担保圈风险传染识别对应检查器的独立验证，不良资产处置对应舰队的并行协同，最终以'锚点'（监管规则、司法数据、资金事实）约束全链路。文中北仑农商银行、中原银行、常熟农商银行、北京银行、民丰农商银行及嬴图Ultipa等案例均经公开报道核实，违规纾贷资金流向规则的出处也一并标注。",
+    "date": "2026-09-05",
+    "tags": [
+      "图工程",
+      "Graph Engineering",
+      "银行资产保全",
+      "贷后资金穿透",
+      "担保圈风险",
+      "不良资产处置",
+      "知识图谱",
+      "多智能体",
+      "图数据库",
+      "风控"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "企业本地部署大模型的必然性——从阿里禁令到\"Token税\"陷阱的深层逻辑",
     "slug": "local-llm-deployment-data-sovereignty",
     "url": "/articles/local-llm-deployment-data-sovereignty.md",
@@ -607,26 +627,6 @@
       "银行数字化",
       "大模型",
       "Agent落地"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究",
-    "slug": "graph-engineering-bank-asset-preservation",
-    "url": "/articles/graph-engineering-bank-asset-preservation.md",
-    "description": "以《Graph Engineering explained》钻石模式、检查器机制、舰队模式、锚点、伪边五大方法论，对照公开核实后的银行实践，落地贷后资金穿透监控、担保圈风险阻断、不良资产处置提效三大环节，并给出四阶段落地路径。",
-    "date": "2026-09-05",
-    "tags": [
-      "图工程",
-      "Graph Engineering",
-      "银行资产保全",
-      "贷后资金穿透",
-      "担保圈风险",
-      "不良资产处置",
-      "知识图谱",
-      "多智能体",
-      "图数据库",
-      "风控"
     ],
     "schema_type": "Article"
   }
