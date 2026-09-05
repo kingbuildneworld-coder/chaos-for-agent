@@ -629,5 +629,25 @@
       "Agent落地"
     ],
     "schema_type": "Article"
+  },
+  {
+    "title": "银行还需要软件工程师吗：智能体软件时代的角色迁移",
+    "slug": "bank-still-needs-software-engineers-agentic-era",
+    "url": "/articles/bank-still-needs-software-engineers-agentic-era.md",
+    "description": "以arXiv最新论文《Agentic Software》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版'双内核'结论与四类新兴角色定义。",
+    "date": "2026-09-05",
+    "tags": [
+      "银行科技",
+      "软件工程",
+      "Agentic Engineering",
+      "智能体",
+      "AI编程",
+      "核心系统",
+      "金融监管",
+      "软件工程师",
+      "数字化转型",
+      "可信AI"
+    ],
+    "schema_type": "Article"
   }
 ]
