@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 38,
+    "total_articles": 39,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -454,7 +454,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-05",
+  "last_updated": "2026-09-06",
   "version": "1.1",
   "total_articles": 25
 }
