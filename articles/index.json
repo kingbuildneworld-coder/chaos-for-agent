@@ -689,5 +689,25 @@
       "德勤"
     ],
     "schema_type": "Article"
+  },
+  {
+    "title": "从「FDE案例100」到银行：Datawhale一百个AI落地现场，给了金融业哪些启示",
+    "slug": "bank-lessons-from-datawhale-fde-case-100",
+    "url": "/articles/bank-lessons-from-datawhale-fde-case-100.md",
+    "description": "Datawhale《FDE案例100》以24个真实企业AI落地案例记录FDE（前向部署工程师）如何把技术变成业务结果：从央国企财务报销、线下零售对账到跨境快消数据断层，反复出现一套高度收敛的执行方法论。本文通读全案例集，提炼六条共法，并逐一映射到银行业的财务、对账、报送、贷后与内部运营场景，给出银行版FDE的行动清单。",
+    "date": "2026-09-06",
+    "tags": [
+      "前向部署工程师",
+      "FDE",
+      "FDE案例100",
+      "Datawhale",
+      "银行科技",
+      "AI落地",
+      "对账",
+      "监管报送",
+      "数字化转型",
+      "智能体"
+    ],
+    "schema_type": "Article"
   }
 ]
