@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 39,
+    "total_articles": 40,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -451,10 +451,24 @@
         "后训练",
         "注意力机制"
       ]
+    },
+    {
+      "slug": "genai-cryptography-guide-financial-application",
+      "title": "AI密码合规有了首份施工图：解读《生成式人工智能系统密码应用指引》及金融落地路径",
+      "date": "2026-09-06",
+      "description": "2026年8月，中国密码学会密评联委会发布《生成式人工智能系统密码应用指引》（V1.0），首次把密码应用要求系统性地落到大模型与智能体上。本文解读指引架构与要点，并给出金融机构落地AI密码应用的行动清单。",
+      "tags": [
+        "生成式人工智能",
+        "密码应用",
+        "密评",
+        "商用密码",
+        "智能体安全",
+        "数据安全"
+      ]
     }
   ],
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-06",
   "version": "1.1",
-  "total_articles": 25
+  "total_articles": 40
 }
