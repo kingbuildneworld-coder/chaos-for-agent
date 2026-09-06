@@ -208,6 +208,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "当最激进的实验室发出刹车声明：深读《异类心智》与金融业模型全周期风险治理",
+    "slug": "alien-mind-financial-model-governance",
+    "url": "/articles/alien-mind-financial-model-governance.md",
+    "description": "2026年9月6日，OpenAI首席科学家Jakub Pachocki发布长文《An Alien Mind》（异类心智），公开承认没有任何实验室把对齐与监控解决到足以继续全速扩展的程度：目标对齐相对容易，价值对齐才是真正的难题；思维链监控正在因推理与工具使用交织、模型自我修饰推理过程、预训练隐形智能而逐步失效；且他强烈预期当前速度可能持续进入递归自我改进（RSI）。本文深读这篇来自'最激进公司'内部的刹车声明，剖析其四层逻辑，并结合金融业不可逆操作、强监管、高敏感数据的特殊性，给出模型应用全周期的风险管理与行业协同治理框架。",
+    "date": "2026-09-07",
+    "tags": [
+      "异类心智",
+      "An Alien Mind",
+      "AI对齐",
+      "AI安全",
+      "智能体",
+      "金融风险管理",
+      "模型治理",
+      "AI治理",
+      "递归自我改进",
+      "大模型"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行需要怎样的前向部署工程师：德勤Open Model Engineering实践的启示",
     "slug": "bank-forward-deployed-engineers-open-model-engineering",
     "url": "/articles/bank-forward-deployed-engineers-open-model-engineering.md",
