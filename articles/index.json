@@ -208,6 +208,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行需要怎样的前向部署工程师：德勤Open Model Engineering实践的启示",
+    "slug": "bank-forward-deployed-engineers-open-model-engineering",
+    "url": "/articles/bank-forward-deployed-engineers-open-model-engineering.md",
+    "description": "2026年9月2日德勤全球宣布推出Open Model Engineering实践，核心动作之一是在全球雇佣、培训并认证基于开源模型的forward deployed engineers（FDE，前向部署工程师）。本文拆解该新闻稿并溯源FDE概念，论证银行为何尤其需要FDE，并给出银行版FDE的七维能力画像与落地路径。",
+    "date": "2026-09-05",
+    "tags": [
+      "银行科技",
+      "前向部署工程师",
+      "FDE",
+      "开源模型",
+      "Open Model Engineering",
+      "Agentic AI",
+      "模型治理",
+      "银发经济",
+      "数字化转型",
+      "德勤"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行落地可演进 Harness：原因、路径与风险防范——企业Agent工程方法论在银行业的论证",
     "slug": "bank-harness-agent-engineering",
     "url": "/articles/bank-harness-agent-engineering.md",
@@ -224,6 +244,26 @@
       "金融科技",
       "大模型",
       "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "从「FDE案例100」到银行：Datawhale一百个AI落地现场，给了金融业哪些启示",
+    "slug": "bank-lessons-from-datawhale-fde-case-100",
+    "url": "/articles/bank-lessons-from-datawhale-fde-case-100.md",
+    "description": "Datawhale《FDE案例100》以24个真实企业AI落地案例记录FDE（前向部署工程师）如何把技术变成业务结果：从央国企财务报销、线下零售对账到跨境快消数据断层，反复出现一套高度收敛的执行方法论。本文通读全案例集，提炼六条共法，并逐一映射到银行业的财务、对账、报送、贷后与内部运营场景，给出银行版FDE的行动清单。",
+    "date": "2026-09-06",
+    "tags": [
+      "前向部署工程师",
+      "FDE",
+      "FDE案例100",
+      "Datawhale",
+      "银行科技",
+      "AI落地",
+      "对账",
+      "监管报送",
+      "数字化转型",
+      "智能体"
     ],
     "schema_type": "Article"
   },
@@ -481,6 +521,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "AI密码合规有了首份施工图：解读《生成式人工智能系统密码应用指引》及金融落地路径",
+    "slug": "genai-cryptography-guide-financial-application",
+    "url": "/articles/genai-cryptography-guide-financial-application.md",
+    "description": "2026年8月，中国密码学会密评联委会发布《生成式人工智能系统密码应用指引》（V1.0），首次把密码应用要求系统性地落到大模型与智能体上：从运行环境、数据、模型、应用四个层面给出风险清单与密码措施，并把数字证书、数字签名、数字水印、TEE、同态加密、差分隐私、多方安全计算等一批密码技术直接对准模型权重复制、语料投毒、RAG污染、智能体越权等AI特有威胁。本文解读指引的架构与要点，并结合密评刚需、智能体安全、隐私保护与全生命周期管理四条主线，给出金融机构落地AI密码应用的行动清单。",
+    "date": "2026-09-06",
+    "tags": [
+      "生成式人工智能",
+      "密码应用",
+      "密评",
+      "商用密码",
+      "金融科技",
+      "银行数字化转型",
+      "智能体安全",
+      "数据安全",
+      "大模型",
+      "密码合规"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究",
     "slug": "graph-engineering-bank-asset-preservation",
     "url": "/articles/graph-engineering-bank-asset-preservation.md",
@@ -667,46 +727,6 @@
       "银行数字化",
       "大模型",
       "Agent落地"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "银行需要怎样的前向部署工程师：德勤Open Model Engineering实践的启示",
-    "slug": "bank-forward-deployed-engineers-open-model-engineering",
-    "url": "/articles/bank-forward-deployed-engineers-open-model-engineering.md",
-    "description": "2026年9月2日德勤全球宣布推出Open Model Engineering实践，核心动作之一是在全球雇佣、培训并认证基于开源模型的forward deployed engineers（FDE，前向部署工程师）。本文拆解该新闻稿并溯源FDE概念，论证银行为何尤其需要FDE，并给出银行版FDE的七维能力画像与落地路径。",
-    "date": "2026-09-05",
-    "tags": [
-      "银行科技",
-      "前向部署工程师",
-      "FDE",
-      "开源模型",
-      "Open Model Engineering",
-      "Agentic AI",
-      "模型治理",
-      "银发经济",
-      "数字化转型",
-      "德勤"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "从「FDE案例100」到银行：Datawhale一百个AI落地现场，给了金融业哪些启示",
-    "slug": "bank-lessons-from-datawhale-fde-case-100",
-    "url": "/articles/bank-lessons-from-datawhale-fde-case-100.md",
-    "description": "Datawhale《FDE案例100》以24个真实企业AI落地案例记录FDE（前向部署工程师）如何把技术变成业务结果：从央国企财务报销、线下零售对账到跨境快消数据断层，反复出现一套高度收敛的执行方法论。本文通读全案例集，提炼六条共法，并逐一映射到银行业的财务、对账、报送、贷后与内部运营场景，给出银行版FDE的行动清单。",
-    "date": "2026-09-06",
-    "tags": [
-      "前向部署工程师",
-      "FDE",
-      "FDE案例100",
-      "Datawhale",
-      "银行科技",
-      "AI落地",
-      "对账",
-      "监管报送",
-      "数字化转型",
-      "智能体"
     ],
     "schema_type": "Article"
   }
