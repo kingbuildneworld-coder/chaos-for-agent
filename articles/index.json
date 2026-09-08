@@ -425,6 +425,43 @@
     "schema_type": "Article"
   },
   {
+    "title": "从承保一次发射到运营一类资产：商业航天如何倒逼金融业重构定价基础设施",
+    "slug": "commercial-space-financial-pricing-infrastructure",
+    "url": "/articles/commercial-space-financial-pricing-infrastructure.md",
+    "description": "2026年可回收火箭降本兑现，商业航天从技术叙事切换到成本-现金流叙事，金融业正从旁观者变为这场重构的定价者。本文解析航天保险精算失效与四层创新、卫星遥感重塑信贷穿透式风控、估值锚从利润转向技术里程碑，以及中国卫星数据金融服务、中小银行差异化路径，并对比中美欧三大经济体的金融适配度。",
+    "date": "2026-09-08",
+    "tags": [
+      "商业航天",
+      "航天保险",
+      "卫星遥感",
+      "信贷风控",
+      "资产证券化",
+      "科创板",
+      "航天金融",
+      "金融科技",
+      "空间经济"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "可回收火箭把入轨成本推向消费品区间：2026商业航天临界点与产业重构",
+    "slug": "commercial-space-reusable-rocket-cost-inflection",
+    "url": "/articles/commercial-space-reusable-rocket-cost-inflection.md",
+    "description": "2026年7月长征十号乙海上回收、8月朱雀三号陆地垂直回收、9月德国光谱火箭欧洲民企首入轨、5月星舰V3首飞——四条技术路线同时兑现，将每公斤入轨成本从奢侈品区间推向消费品区间。本文剖析三条路线的含金量分层、成本递进曲线与中国量产元年，并给出金融机构必须盯住的时间窗口。",
+    "date": "2026-09-08",
+    "tags": [
+      "商业航天",
+      "可回收火箭",
+      "成本曲线",
+      "星座组网",
+      "火箭回收",
+      "产业趋势",
+      "SpaceX",
+      "星舰"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "当经济统计还在用工业时代的透镜——智能体日活数量统计的时代意义与框架构建",
     "slug": "daa-smart-economy-statistics",
     "url": "/articles/daa-smart-economy-statistics.md",
