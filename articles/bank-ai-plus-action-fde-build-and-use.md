@@ -33,17 +33,11 @@ AIGC:
 
 对中国金融业来说，这面镜子照出的问题更直接：**"人工智能+"行动落地金融场景，真正卡脖子的环节往往不是模型与算法的选择，而是缺少一支能驻场、懂业务、能把通用模型改造成可治理金融系统的工程队伍。** 本文以这则新闻为引子，先拆解其建制逻辑，再落到中国金融业"如何打造"与"如何用好"FDE 两条主线上。
 
-```mermaid
-graph TD
-    A[人工智能+行动 落地金融业] --> B[组织建制：AI现场工程与交付中心]
-    A --> C[能力认证：银行版FDE分级认证]
-    A --> D[资产沉淀：场景资产库与复用]
-    B --> E[驻场FDE 驱动业务现场诊断]
-    C --> E
-    D --> F[可衡量业务结果 沉淀为复用资产]
-    E --> F
-    F --> G[避免三陷阱 迈向规模化采纳]
-```
+
+
+<img src="https://mermaid.ink/svg/Z3JhcGggVEQKICAgIEFb5Lq65bel5pm66IO9K-ihjOWKqCDokL3lnLDph5Hono3kuJpdIC0tPiBCW-e7hOe7h-W7uuWItu-8mkFJ546w5Zy65bel56iL5LiO5Lqk5LuY5Lit5b-DXQogICAgQSAtLT4gQ1vog73lipvorqTor4HvvJrpk7booYzniYhGREXliIbnuqforqTor4FdCiAgICBBIC0tPiBEW-i1hOS6p-ayiea3gO-8muWcuuaZr-i1hOS6p-W6k-S4juWkjeeUqF0KICAgIEIgLS0-IEVb6am75Zy6RkRFIOmpseWKqOS4muWKoeeOsOWcuuiviuaWrV0KICAgIEMgLS0-IEUKICAgIEQgLS0-IEZb5Y-v6KGh6YeP5Lia5Yqh57uT5p6cIOayiea3gOS4uuWkjeeUqOi1hOS6p10KICAgIEUgLS0-IEYKICAgIEYgLS0-IEdb6YG_5YWN5LiJ6Zm36ZixIOi_iOWQkeinhOaooeWMlumHh-e6s10K" alt="bank-ai-plus-action-fde-build-and-use.md-mermaid-1" style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;padding:8px;background:#fff;">
+
+
 
 ## 一、埃森哲这则发布到底讲了什么
 
