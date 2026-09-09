@@ -830,6 +830,21 @@
   {
     "slug": "ai-infrastructure-power-capital-castings",
     "title": "AI基建三巨头：电力、资本与铸件的终局赌注",
-    "date": "2026-09-09"
+    "date": "2026-09-09",
+    "url": "/articles/ai-infrastructure-power-capital-castings.md",
+    "description": "孙正义押注电力、黄仁勋押注资金、马斯克押注铸件——三位科技巨头不约而同把AI战场从虚拟模型训练转向物理世界基建争夺。梳理三者动作的核实细节，拆解能源、资金、关键零部件三大瓶颈，并从金融机构视角解读AI基建资产化的金融工程、算力信贷与风险边界。",
+    "tags": [
+      "孙正义",
+      "黄仁勋",
+      "马斯克",
+      "AI基础设施",
+      "算力",
+      "数据中心",
+      "燃气轮机叶片",
+      "算力金融化",
+      "资产证券化",
+      "风险管理"
+    ],
+    "schema_type": "Article"
   }
 ]
