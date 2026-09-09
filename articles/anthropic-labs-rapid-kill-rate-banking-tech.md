@@ -33,22 +33,7 @@ AIGC:
 
 对科技行业而言，这套机制是"快速试错"的教科书；但把它放到金融业面前，问题立刻变得棘手。银行业科技开发的底色是长周期、重合规、强审计、追责文化——在这样的组织里，"鼓励失败""两周砍项目"几乎是反直觉甚至反纪律的。那么，这套机制对金融业、银行业到底有没有借鉴意义？能借鉴到什么程度？本文先核实机制的真实细节，再逐层论证：**什么内核可搬，什么形式不可照搬，以及如何翻译成银行能用的语言。**
 
-```mermaid
-graph LR
-    A[Anthropic Labs 20人轮换团队] --> B[持续提出原型押注]
-    B --> C[每两周坚持或转向评审]
-    C --> D[表现不佳: 砍掉或并入其他项目]
-    C --> E[表现潜力: 毕业独立成产品团队]
-    E --> F[Claude Code 与 MCP 与 Claude Design]
-    D --> G[成员快速转向新押注]
-    G --> B
-    C --> H[翻译为银行机制]
-    H --> H1[隔离验证区 沙箱与监管沙盒]
-    H --> H2[轻量级短周期继续或转向评审]
-    H --> H3[明确毕业门槛防止无限迭代]
-    H --> H4[失败资产化 代码经验人才回流]
-    H --> H5[贴近业务一线的前沿感知]
-```
+![Anthropic Labs机制图](https://mermaid.ink/svg/Z3JhcGggTFIKICAgIEFbQW50aHJvcGljIExhYnMgMjDkurrova7mjaLlm6LpmJ9dIC0tPiBCW-aMgee7reaPkOWHuuWOn-Wei-aKvOazqF0KICAgIEIgLS0-IENb5q-P5Lik5ZGo5Z2a5oyB5oiW6L2s5ZCR6K-E5a6hXQogICAgQyAtLT4gRFvooajnjrDkuI3kvbM6IOegjeaOieaIluW5tuWFpeWFtuS7lumhueebrl0KICAgIEMgLS0-IEVb6KGo546w5r2c5YqbOiDmr5XkuJrni6znq4vmiJDkuqflk4Hlm6LpmJ9dCiAgICBFIC0tPiBGW0NsYXVkZSBDb2RlIOS4jiBNQ1Ag5LiOIENsYXVkZSBEZXNpZ25dCiAgICBEIC0tPiBHW-aIkOWRmOW_q-mAn-i9rOWQkeaWsOaKvOazqF0KICAgIEcgLS0-IEIKICAgIEMgLS0-IEhb57-76K-R5Li66ZO26KGM5py65Yi2XQogICAgSCAtLT4gSDFb6ZqU56a76aqM6K-B5Yy6IOaymeeuseS4juebkeeuoeaymeebkl0KICAgIEggLS0-IEgyW-i9u-mHj-e6p-efreWRqOacn-e7p-e7reaIlui9rOWQkeivhOWuoV0KICAgIEggLS0-IEgzW-aYjuehruavleS4mumXqOanm-mYsuatouaXoOmZkOi_reS7o10KICAgIEggLS0-IEg0W-Wksei0pei1hOS6p-WMliDku6PnoIHnu4_pqozkurrmiY3lm57mtYFdCiAgICBIIC0tPiBINVvotLTov5HkuJrliqHkuIDnur_nmoTliY3msr_mhJ_nn6VdCg)
 
 ## 一、机制核实：Anthropic Labs 到底怎么运作
 
