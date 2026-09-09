@@ -33,19 +33,11 @@ AIGC:
 
 这三个人的押注方向，恰好对应了AI扩张在物理世界面临的三个最现实瓶颈：**能源、资金、关键零部件。** 模型负责"上天"，他们负责"落地"。本文先逐一核实三人的最新动作，再把三条线索收拢为一体，最后从金融机构的视角讨论：这场从代码到电、钱与金属的转移，对银行业与资本市场的含义到底是什么。
 
-```mermaid
-graph TD
-    A[AI底层竞争 转向物理世界] --> B[孙正义·能源<br/>电网+发电+核聚变]
-    A --> C[黄仁勋·资金<br/>算力信贷+资产证券化]
-    A --> D[马斯克·关键零部件<br/>燃气轮机叶片铸造]
-    B --> E[算电协同 全球圈地]
-    C --> F[GPU可抵押可流转]
-    D --> G[自建产能 提前18个月]
-    E --> H[对金融机构：评估电与土地资产]
-    F --> H
-    G --> H
-    H --> I[算力资产的信贷框架与风险边界]
-```
+
+
+<img src="https://mermaid.ink/svg/Z3JhcGggVEQKICAgIEFbQUnlupXlsYLnq57kuokg6L2s5ZCR54mp55CG5LiW55WMXSAtLT4gQlvlrZnmraPkuYnCt-iDvea6kDxici8-55S1572RK-WPkeeUtSvmoLjogZrlj5hdCiAgICBBIC0tPiBDW-m7hOS7geWLi8K36LWE6YeRPGJyLz7nrpflipvkv6HotLcr6LWE5Lqn6K-B5Yi45YyWXQogICAgQSAtLT4gRFvpqazmlq_lhYvCt-WFs-mUrumbtumDqOS7tjxici8-54eD5rCU6L2u5py65Y-254mH6ZO46YCgXQogICAgQiAtLT4gRVvnrpfnlLXljY_lkIwg5YWo55CD5ZyI5ZywXQogICAgQyAtLT4gRltHUFXlj6_mirXmirzlj6_mtYHovaxdCiAgICBEIC0tPiBHW-iHquW7uuS6p-iDvSDmj5DliY0xOOS4quaciF0KICAgIEUgLS0-IEhb5a-56YeR6J6N5py65p6E77ya6K-E5Lyw55S15LiO5Zyf5Zyw6LWE5LqnXQogICAgRiAtLT4gSAogICAgRyAtLT4gSAogICAgSCAtLT4gSVvnrpflipvotYTkuqfnmoTkv6HotLfmoYbmnrbkuI7po47pmanovrnnlYxdCg" alt="ai-infrastructure-power-capital-castings.md-mermaid-1" style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;padding:8px;background:#fff;">
+
+
 
 ## 一、孙正义：AI的尽头是能源，"算电协同"全球圈地
 
