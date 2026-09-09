@@ -848,5 +848,26 @@
       "Agent落地"
     ],
     "schema_type": "Article"
+  },
+  {
+    "date": "2026-09-09",
+    "description": "Anthropic 内部一支约20人的 Labs 团队以两周为周期评审、约70%至80%的押注最终被砍，却孵化出 Claude Code、MCP 等核心产品。本文核实该机制真实细节，逐层拆解其运作逻辑，并论证一个更尖锐的问题：以稳健、合规、追责为底色的金融业银行业，这套快速验证与高淘汰机制到底能不能借鉴——哪些内核可搬、哪些形式不可照搬、如何翻译成银行语言落地。",
+    "schema_type": "Article",
+    "slug": "anthropic-labs-rapid-kill-rate-banking-tech",
+    "tags": [
+      "Anthropic",
+      "Claude Code",
+      "Labs",
+      "创新孵化",
+      "快速验证",
+      "敏捷开发",
+      "银行科技",
+      "科技开发",
+      "创新治理",
+      "风险管理",
+      "组织创新"
+    ],
+    "title": "让失败常态化的创新机器：Anthropic Labs“两周淘汰70%项目”机制，金融业科技开发能不能学？",
+    "url": "https://bi-chao.com/articles/anthropic-labs-rapid-kill-rate-banking-tech"
   }
 ]
