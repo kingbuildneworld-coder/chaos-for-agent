@@ -158,6 +158,28 @@
     "schema_type": "AcademicPaper"
   },
   {
+    "title": "AI的尽头是电、钱与金属：孙正义、黄仁勋、马斯克的三重押注与金融启示",
+    "slug": "ai-infrastructure-power-capital-castings",
+    "url": "/articles/ai-infrastructure-power-capital-castings.md",
+    "description": "当全球还在争论下一个世界模型时，孙正义押注电力、黄仁勋押注资金、马斯克押注铸件——三位科技巨头不约而同把战场从虚拟的模型训练，转向土地、电网与关键零部件的物理世界。本文梳理三者动作的核实细节，拆解能源、资金、关键零部件三大瓶颈，并从金融机构视角解读AI基建资产化的金融工程、算力信贷与风险边界。",
+    "date": "2026-09-09",
+    "tags": [
+      "孙正义",
+      "黄仁勋",
+      "马斯克",
+      "AI基础设施",
+      "算力",
+      "数据中心",
+      "燃气轮机叶片",
+      "核聚变",
+      "算力金融化",
+      "资产证券化",
+      "银行",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI支付风险的六维识别框架与治理路径",
     "slug": "ai-payment-risk-governance",
     "url": "/articles/ai-payment-risk-governance.md",
@@ -224,6 +246,26 @@
       "AI治理",
       "递归自我改进",
       "大模型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "中国金融业实施'人工智能+'行动如何打造与用好FDE——从埃森哲千人FDE队伍的启示",
+    "slug": "bank-ai-plus-action-fde-build-and-use",
+    "url": "/articles/bank-ai-plus-action-fde-build-and-use.md",
+    "description": "以埃森哲与Google Cloud成立Gemini Enterprise业务集团、组建千人FDE队伍为引，探讨中国金融业在'人工智能+'行动下如何打造与用好前向部署工程师（FDE）：不追求规模本身，而是建成驻场、跨界、可复用的现场工程力量，并从组织建制、能力认证、资产沉淀三层给出落地路径。",
+    "date": "2026-09-09",
+    "tags": [
+      "人工智能+",
+      "前向部署工程师",
+      "FDE",
+      "Accenture",
+      "Gemini Enterprise",
+      "智能体",
+      "银行科技",
+      "数据治理",
+      "数字化转型",
+      "银行工程化"
     ],
     "schema_type": "Article"
   },
@@ -598,6 +640,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "第四轮算力增长来临？GPT-6、Computer Use与银行的三种身份",
+    "slug": "gpt6-compute-banking-implications",
+    "url": "/articles/gpt6-compute-banking-implications.md",
+    "description": "腾讯科技文章提出AI正进入第四轮指数级算力需求增长：Chatbot、Reasoning、Coding Agent之后，Computer Use重构白领工作。本文从银行三重身份深读：算力与Agent的重度买家、算力重资产的资金供给方、模型风险的最后承担者，剖析对成本结构、信贷逻辑与风控框架的实质含义，并给出行动清单。",
+    "date": "2026-09-08",
+    "tags": [
+      "GPT-6",
+      "算力",
+      "Computer Use",
+      "Agent",
+      "银行数字化",
+      "算力信贷",
+      "AI基础设施",
+      "风险管理",
+      "大模型",
+      "银行转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究",
     "slug": "graph-engineering-bank-asset-preservation",
     "url": "/articles/graph-engineering-bank-asset-preservation.md",
@@ -784,66 +846,6 @@
       "银行数字化",
       "大模型",
       "Agent落地"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "第四轮算力增长来临？GPT-6、Computer Use与银行的三种身份",
-    "slug": "gpt6-compute-banking-implications",
-    "url": "/articles/gpt6-compute-banking-implications.md",
-    "description": "腾讯科技文章提出AI正进入第四轮指数级算力需求增长：Chatbot、Reasoning、Coding Agent之后，Computer Use重构白领工作。本文从银行三重身份深读：算力与Agent的重度买家、算力重资产的资金供给方、模型风险的最后承担者，剖析对成本结构、信贷逻辑与风控框架的实质含义，并给出行动清单。",
-    "date": "2026-09-08",
-    "tags": [
-      "GPT-6",
-      "算力",
-      "Computer Use",
-      "Agent",
-      "银行数字化",
-      "算力信贷",
-      "AI基础设施",
-      "风险管理",
-      "大模型",
-      "银行转型"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "中国金融业实施'人工智能+'行动如何打造与用好FDE——从埃森哲千人FDE队伍的启示",
-    "slug": "bank-ai-plus-action-fde-build-and-use",
-    "url": "/articles/bank-ai-plus-action-fde-build-and-use.md",
-    "description": "以埃森哲与Google Cloud成立Gemini Enterprise业务集团、组建千人FDE队伍为引，探讨中国金融业在'人工智能+'行动下如何打造与用好前向部署工程师（FDE）：不追求规模本身，而是建成驻场、跨界、可复用的现场工程力量，并从组织建制、能力认证、资产沉淀三层给出落地路径。",
-    "date": "2026-09-09",
-    "tags": [
-      "人工智能+",
-      "前向部署工程师",
-      "FDE",
-      "Accenture",
-      "Gemini Enterprise",
-      "智能体",
-      "银行科技",
-      "数据治理",
-      "数字化转型",
-      "银行工程化"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "slug": "ai-infrastructure-power-capital-castings",
-    "title": "AI基建三巨头：电力、资本与铸件的终局赌注",
-    "date": "2026-09-09",
-    "url": "/articles/ai-infrastructure-power-capital-castings.md",
-    "description": "孙正义押注电力、黄仁勋押注资金、马斯克押注铸件——三位科技巨头不约而同把AI战场从虚拟模型训练转向物理世界基建争夺。梳理三者动作的核实细节，拆解能源、资金、关键零部件三大瓶颈，并从金融机构视角解读AI基建资产化的金融工程、算力信贷与风险边界。",
-    "tags": [
-      "孙正义",
-      "黄仁勋",
-      "马斯克",
-      "AI基础设施",
-      "算力",
-      "数据中心",
-      "燃气轮机叶片",
-      "算力金融化",
-      "资产证券化",
-      "风险管理"
     ],
     "schema_type": "Article"
   }
