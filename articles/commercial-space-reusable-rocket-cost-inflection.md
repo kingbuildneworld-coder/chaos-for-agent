@@ -72,16 +72,11 @@ AIGC:
 
 但必须给市场泼一盆冷水：**75%级别的降本不会在2026年一次性兑现**。燃料成本只占一次发射的3%至5%，真正贵的是箭体硬件与发动机，占总成本70%至80%，所以降本逻辑本质是"分摊硬件造价"。赛迪研究院与券商的测算曲线是：复用3次降幅40%至45%，复用10次降至60%至70%，要触碰75%这条线，**复用必须突破20次、同时年发射量突破100次**。而且回收后的一子级不能直接复飞，需经过箭体状态全面评估、关键部件翻新维修（发动机热端部件清洗检测延寿、更换密封件易损件、修复气动热损伤）、复飞前综合验证（地面试车、总装测试）三个环节，当前国内损伤修复仍处起步阶段，数据积累与标准化流程不足，检修周期长、维修成本高，会抬升复用初期的综合成本。这条路SpaceX走了十年，国内大概率需要七年左右。
 
-```mermaid
-flowchart TD
-    A["火箭一级回收成功<br/>2026 中国双路线验证"] --> B["硬件成本分摊逻辑成立<br/>一级占全箭成本60%-70%"]
-    B --> C["复用次数爬坡<br/>3次→10次→20次"]
-    C --> D["单位入轨成本下降<br/>2.82万→1.13万→0.85万元/公斤"]
-    D --> E["星座组网经济可行性成立"]
-    E --> F["发射频次激增<br/>商业发射占比超六成"]
-    F --> G["风险敞口与融资结构重构"]
-    G --> H["金融业成为产业定价基础设施"]
-```
+
+
+<img src="https://mermaid.ink/svg/Zmxvd2NoYXJ0IFRECiAgICBBWyLngavnrq3kuIDnuqflm57mlLbmiJDlip88YnIvPjIwMjYg5Lit5Zu95Y-M6Lev57q_6aqM6K-BIl0gLS0-IEJbIuehrOS7tuaIkOacrOWIhuaRiumAu-i-keaIkOerizxici8-5LiA57qn5Y2g5YWo566t5oiQ5pysNjAlLTcwJSJdCiAgICBCIC0tPiBDWyLlpI3nlKjmrKHmlbDniKzlnaE8YnIvPjPmrKHihpIxMOasoeKGkjIw5qyhIl0KICAgIEMgLS0-IERbIuWNleS9jeWFpei9qOaIkOacrOS4i-mZjTxici8-Mi44MuS4h-KGkjEuMTPkuIfihpIwLjg15LiH5YWDL-WFrOaWpCJdCiAgICBEIC0tPiBFWyLmmJ_luqfnu4TnvZHnu4_mtY7lj6_ooYzmgKfmiJDnq4siXQogICAgRSAtLT4gRlsi5Y-R5bCE6aKR5qyh5r-A5aKePGJyLz7llYbkuJrlj5HlsITljaDmr5TotoXlha3miJAiXQogICAgRiAtLT4gR1si6aOO6Zmp5pWe5Y-j5LiO6J6N6LWE57uT5p6E6YeN5p6EIl0KICAgIEcgLS0-IEhbIumHkeiejeS4muaIkOS4uuS6p-S4muWumuS7t-WfuuehgOiuvuaWvSJdCg" alt="commercial-space-reusable-rocket-cost-inflection.md-mermaid-1" style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;padding:8px;background:#fff;">
+
+
 
 ## 三、产业影响：供需缺口与中国"量产元年"
 
