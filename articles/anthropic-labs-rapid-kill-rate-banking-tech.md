@@ -1,4 +1,9 @@
 ---
+title: "让失败常态化的创新机器：Anthropic Labs“两周淘汰70%项目”机制，金融业科技开发能不能学？"
+date: "2026-09-09"
+description: "Anthropic内部不足20人的Labs团队以两周为周期评审押注，约70%至80%的项目最终被砍，却孵化出Claude Code、MCP、Claude Design等核心产品。本文核实机制真实细节，逐层论证其对金融业科技开发的可借鉴内核与不可照搬的形式，并提出把高淘汰翻译成隔离验证区的银行业落地路径。"
+tags: ["Anthropic","Labs","两周淘汰70%","快速试错","Claude Code","MCP","金融科技","银行业","科技开发","创新机制","失败常态化","隔离验证区"]
+schema_type: "Article"
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
