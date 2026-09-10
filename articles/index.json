@@ -662,6 +662,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "GPT-6 Astra 技术报告拆解：四层脉络看懂新一代旗舰",
+    "slug": "gpt6-astra-technical-breakdown",
+    "url": "/articles/gpt6-astra-technical-breakdown.md",
+    "description": "从 Symphony 架构、自主操作能力、授权边界对齐到提示词范式迁移，拆解 GPT-6 Astra 117 页 System Card 的四层技术突破，并讨论其对金融业与银行业的含义。",
+    "date": "2026-09-10",
+    "tags": [
+      "GPT-6",
+      "OpenAI",
+      "Symphony架构",
+      "System Card",
+      "网络安全",
+      "提示词工程",
+      "人工智能"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "第四轮算力增长来临？GPT-6、Computer Use与银行的三种身份",
     "slug": "gpt6-compute-banking-implications",
     "url": "/articles/gpt6-compute-banking-implications.md",
