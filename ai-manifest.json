@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 47,
+    "total_articles": 48,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "gpt6-astra-technical-breakdown",
+      "title": "GPT-6 Astra 技术报告拆解：四层脉络看懂新一代旗舰",
+      "date": "2026-09-10",
+      "description": "从 Symphony 架构、自主操作能力、授权边界对齐到提示词范式迁移，拆解 GPT-6 Astra 117 页 System Card 的四层技术突破，并讨论其对金融业与银行业的含义。",
+      "tags": [
+        "GPT-6",
+        "OpenAI",
+        "Symphony架构",
+        "System Card",
+        "网络安全",
+        "提示词工程",
+        "人工智能"
+      ]
+    },
     {
       "slug": "accelerating-bank-llm-digital-finance",
       "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
