@@ -35,7 +35,10 @@ AIGC:
 
 
 
-<img src="https://mermaid.ink/svg/Z3JhcGggVEQKICAgIEFb5Lq65bel5pm66IO9K-ihjOWKqCDokL3lnLDph5Hono3kuJpdIC0tPiBCW-e7hOe7h-W7uuWItu-8mkFJ546w5Zy65bel56iL5LiO5Lqk5LuY5Lit5b-DXQogICAgQSAtLT4gQ1vog73lipvorqTor4HvvJrpk7booYzniYhGREXliIbnuqforqTor4FdCiAgICBBIC0tPiBEW-i1hOS6p-ayiea3gO-8muWcuuaZr-i1hOS6p-W6k-S4juWkjeeUqF0KICAgIEIgLS0-IEVb6am75Zy6RkRFIOmpseWKqOS4muWKoeeOsOWcuuiviuaWrV0KICAgIEMgLS0-IEUKICAgIEQgLS0-IEZb5Y-v6KGh6YeP5Lia5Yqh57uT5p6cIOayiea3gOS4uuWkjeeUqOi1hOS6p10KICAgIEUgLS0-IEYKICAgIEYgLS0-IEdb6YG_5YWN5LiJ6Zm36ZixIOi_iOWQkeinhOaooeWMlumHh-e6s10K" alt="bank-ai-plus-action-fde-build-and-use.md-mermaid-1" style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;padding:8px;background:#fff;">
+<img src="https://mermaid.ink/svg/Z3JhcGggVEQKICAgIEFb5Lq65bel5pm66IO9K-ihjOWKqCDokL3lnLDph5Hono3kuJpdIC0tPiBCW-e7hOe7h-W7uuWItu-8mkFJ546w5Zy65bel56iL5LiO5Lqk5LuY5Lit5b-DXQogICAgQSAtLT4gQ1vog73lipvorqTor4HvvJrpk7booYzniYhGREXliIbnuqforqTor4FdCiAgICBBIC0tPiBEW-i1hOS6p-ayiea3gO-8muWcuuaZr-i1hOS6p-W6k-S4juWkjeeUqF0KICAgIEIgLS0-IEVb6am75Zy6RkRFIOmpseWKqOS4muWKoeeOsOWcuuiviuaWrV0KICAgIEMgLS0-IEUKICAgIEQgLS0-IEZb5Y-v6KGh6YeP5Lia5Yqh57uT5p6cIOayiea3gOS4uuWkjeeUqOi1hOS6p10KICAgIEUgLS0-IEYKICAgIEYgLS0-IEdb6YG_5YWN5LiJ6Zm36ZixIOi_iOWQkeinhOaooeWMlumHh-e6s10K" alt="AI+行动落地金融业的三条路径：组织建制（AI现场工程与交付中心）、能力认证（银行版FDE分级认证）、资产沉淀（场景资产库与复用）；前两条驱动驻场FDE进行业务现场诊断，第三条把可衡量的业务结果沉淀为复用资产，最终避免三个陷阱、迈向规模化采纳。" style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;padding:8px;background:#fff;">
+
+> 图片说明：上图展示银行建设与使用FDE的路径——组织、认证、资产三条线共同支撑驻场FDE产出可复用业务结果。
+
 
 
 
