@@ -35,7 +35,10 @@ AIGC:
 
 
 
-<img src="https://mermaid.ink/svg/Z3JhcGggTFIKICAgIEFbR1BULTYgQXN0cmEg5Y-R5biDPGJyLz7nrKzlm5vova7mjIfmlbDnuqfnrpflipvlop7plb_lgYforr5dIC0tPiBCW-eul-WKm-WQg-e0p-S4juS-nei1luWKoOa3sV0KICAgIEIgLS0-IENb6Lqr5Lu95LiA77ya566X5Yqb5LiOQWdlbnTph43luqbkubDlrrZdCiAgICBCIC0tPiBEW-i6q-S7veS6jO-8mueul-WKm-mHjei1hOS6p-i1hOmHkeS-m-e7meaWuV0KICAgIEIgLS0-IEVb6Lqr5Lu95LiJ77ya5qih5Z6L6aOO6Zmp5pyA5ZCO5om_5ouF6ICFXQogICAgQyAtLT4gRlvmiJDmnKznu5PmnoTCt0lU6aKE566XwrfkurrmlYjmipjnrpddCiAgICBEIC0tPiBHW-S_oei0t-mAu-i-kcK36ZuG5Lit5bqmwrflkajmnJ_po47pmaldCiAgICBFIC0tPiBIW-esrOS4ieaWueS-nei1lsK35Yy65Z-f5pyN5Yqh6LSo6YeP5rOi5YqoXQo" alt="gpt6-compute-banking-implications.md-mermaid-1" style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;padding:8px;background:#fff;">
+<img src="https://mermaid.ink/svg/Z3JhcGggTFIKICAgIEFbR1BULTYgQXN0cmEg5Y-R5biDPGJyLz7nrKzlm5vova7mjIfmlbDnuqfnrpflipvlop7plb_lgYforr5dIC0tPiBCW-eul-WKm-WQg-e0p-S4juS-nei1luWKoOa3sV0KICAgIEIgLS0-IENb6Lqr5Lu95LiA77ya566X5Yqb5LiOQWdlbnTph43luqbkubDlrrZdCiAgICBCIC0tPiBEW-i6q-S7veS6jO-8mueul-WKm-mHjei1hOS6p-i1hOmHkeS-m-e7meaWuV0KICAgIEIgLS0-IEVb6Lqr5Lu95LiJ77ya5qih5Z6L6aOO6Zmp5pyA5ZCO5om_5ouF6ICFXQogICAgQyAtLT4gRlvmiJDmnKznu5PmnoTCt0lU6aKE566XwrfkurrmlYjmipjnrpddCiAgICBEIC0tPiBHW-S_oei0t-mAu-i-kcK36ZuG5Lit5bqmwrflkajmnJ_po47pmaldCiAgICBFIC0tPiBIW-esrOS4ieaWueS-nei1lsK35Yy65Z-f5pyN5Yqh6LSo6YeP5rOi5YqoXQo" alt="GPT-6 Astra发布带来第四轮指数级算力增长假设，引发算力吃紧与依赖加深，银行面临三重身份：算力与Agent重度买家（关注成本结构、IT预算、人效折算）、算力重资产资金供给方（关注信贷逻辑、集中度、周期风险）、模型风险最后承担者（关注第三方依赖、区域服务质量波动）。" style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;padding:8px;background:#fff;">
+
+> 图片说明：上图左侧是GPT-6带来的算力压力，右侧分列银行在算力经济中的三重身份及其各自风险关注点。
+
 
 
 
