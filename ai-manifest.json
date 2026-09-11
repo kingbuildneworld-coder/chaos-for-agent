@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 49,
+    "total_articles": 39,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -179,17 +179,6 @@
         "AI前瞻",
         "金融科技",
         "支付安全"
-      ]
-    },
-    {
-      "slug": "ai-plus-modern-banking",
-      "title": "《人工智能+现代银行》：通往智能银行的战略地图与行动指南",
-      "date": "2026-05-24",
-      "description": "毕超独著《人工智能+现代银行》（中国金融出版社，2025年11月），376页战略级著作。鲁昕、杨再平亲笔作序，苏剑、南婷、邱维明联袂推荐。核心论点：银行高质量发展的关键在于构建以AI大模型为核心的强大科技引擎。由外交学院欧明刚教授指导。",
-      "tags": [
-        "人工智能+",
-        "现代银行",
-        "大模型"
       ]
     },
     {
@@ -502,7 +491,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-10",
+  "last_updated": "2026-09-11",
   "version": "1.1",
-  "total_articles": 49
+  "total_articles": 39
 }
