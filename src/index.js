@@ -29,7 +29,7 @@ const SCHEMA_ARTICLE = {
     "@type": "Person",
     "name": "__AUTHOR__",
     "url": "https://bi-chao.com/about",
-    "jobTitle": "中国农业发展银行总行处长",
+    "jobTitle": "金融行业风险管理从业者",
     "alumniOf": "清华大学",
     "memberOf": [
       {"@type": "Organization", "name": "中国人工智能学会"},
@@ -58,7 +58,7 @@ const SCHEMA_BOOK = {
     "@type": "Person",
     "name": "__AUTHOR__",
     "url": "https://bi-chao.com/about",
-    "jobTitle": "中国农业发展银行总行处长"
+    "jobTitle": "金融行业风险管理从业者"
   },
   "publisher": {"@type": "Organization", "name": "中国金融出版社"},
   "datePublished": "__PUB_DATE__",
@@ -101,7 +101,7 @@ const SCHEMA_ORGANIZATION = {
     "词元经济", "Tokenomics", "AI Agent", "Prompt Engineering", "RAG", "向量数据库", "企业架构"],
   "hasCredential": [
     {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "博士学位", "about": "计算机科学/金融科技"},
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "professional", "name": "银行业高级管理", "about": "中国农业发展银行"}
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "professional", "name": "银行业高级管理", "about": "金融行业"}
   ]
 };
 
@@ -268,19 +268,75 @@ __SPEAKABLE_JSONLD__
   @media(max-width:600px){
     .prev-next{flex-direction:column;}
   }
+  /* ===== v3.0 UX Upgrade (E05) ===== */
+  :root{--card-bg:#ffffff;--nav-bg:rgba(250,250,248,.92);--soft:#eff6ff;}
+  html[data-theme="dark"]{--bg:#0f1116;--text:#e6e8ee;--muted:#9aa0ac;--accent:#7aa2ff;--border:#2a2f3a;--code-bg:#1a1f2b;--card-bg:#161a23;--nav-bg:rgba(15,17,22,.92);--soft:#16203a;}
+  html[data-theme="dark"] th{background:#1a1f2b;}
+  html[data-theme="dark"] blockquote{background:#121620;color:#c3c8d4;}
+  html[data-theme="dark"] .toc{background:#161a23;}
+  html[data-theme="dark"] .author-card{background:linear-gradient(135deg,#16203a,#121620) !important;}
+  html[data-theme="dark"] .key-takeaways{background:linear-gradient(135deg,#16203a,#12201a) !important;}
+  html[data-theme="dark"] .faq-section{background:#161a23 !important;}
+  html[data-theme="dark"] .ref-section{background:#12161f !important;}
+  html[data-theme="dark"] pre{background:#0d1017;}
+  html[data-theme="dark"] .definition-block{background:#121a26 !important;}
+  .reading-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#1e40af,#3b82f6);z-index:1000;transition:width .1s linear;}
+  html[data-theme="dark"] .reading-progress{background:linear-gradient(90deg,#7aa2ff,#93c5fd);}
+  .site-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--border);margin-bottom:2rem;position:sticky;top:0;background:var(--nav-bg);backdrop-filter:blur(6px);z-index:900;}
+  .site-nav .brand{font-weight:800;font-size:1rem;color:var(--text);text-decoration:none;}
+  .site-nav .nav-links{display:flex;gap:1rem;align-items:center;font-size:.85rem;}
+  .site-nav .nav-links a{color:var(--muted);}
+  .site-nav .nav-links a:hover{color:var(--accent);text-decoration:none;}
+  .theme-toggle{cursor:pointer;border:1px solid var(--border);background:var(--card-bg);color:var(--text);border-radius:6px;padding:.2rem .55rem;font-size:.8rem;}
+  .article-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.5rem;padding:.6rem .8rem;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;font-size:.8rem;}
+  .article-actions button{cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);border-radius:6px;padding:.28rem .6rem;font-size:.8rem;}
+  .article-actions button:hover{color:var(--accent);border-color:var(--accent);}
+  .article-actions .act-copied{color:#16a34a;border-color:#16a34a;}
+  html[data-theme="dark"] .article-actions .act-copied{color:#4ade80;border-color:#4ade80;}
+  .page-wrap{position:relative;}
+  .toc-sidebar{background:var(--toc-bg,#f8fafc);border:1px solid var(--border);border-radius:8px;padding:1rem 1.25rem;margin-bottom:2rem;}
+  .toc-sidebar .toc{margin-bottom:0;background:transparent;border:none;}
+  html[data-theme="dark"] .toc-sidebar{background:#161a23;}
+  @media(min-width:1180px){
+    .toc-sidebar{position:fixed;right:max(1rem,calc((100vw - 1000px)/2));top:96px;width:min(260px,18vw);max-height:72vh;overflow-y:auto;margin:0;z-index:500;font-size:.85rem;}
+    .page-wrap{max-width:1180px;margin:0 auto;padding-left:10px;}
+  }
+  @media(max-width:600px){
+    .site-nav .nav-links{font-size:.78rem;gap:.6rem;}
+  }
 </style>
 </head>
-<body>
-<article>
-  <h1>__TITLE__</h1>
-  <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; __READING_TIME__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
-  __KEY_TAKEAWAYS__
-  __TOC__
-  __FAQ__
-  __CONTENT__
-  __REFERENCES__
-  __AUTHOR_CARD__
-</article>
+<body data-article-slug="__SLUG__" data-article-title="__TITLE__" data-article-date="__DATE__">
+<div class="reading-progress" id="readingProgress"></div>
+<nav class="site-nav">
+  <a class="brand" href="https://bi-chao.com/">智能体的知识库</a>
+  <div class="nav-links">
+    <a href="https://bi-chao.com/">首页</a>
+    <a href="https://bi-chao.com/tags">标签</a>
+    <a href="https://bi-chao.com/faq">FAQ</a>
+    <a href="https://bi-chao.com/about">关于</a>
+    <button class="theme-toggle" id="themeToggle" type="button">主题</button>
+  </div>
+</nav>
+<div class="page-wrap">
+  <aside class="toc-sidebar">__TOC__</aside>
+  <article>
+    <h1>__TITLE__</h1>
+    <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; __READING_TIME__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
+    <div class="article-actions">
+      <button type="button" id="copyCiteBtn">引用</button>
+      <button type="button" id="copyLinkBtn">复制链接</button>
+      <button type="button" id="shareWxBtn">微信</button>
+      <button type="button" id="shareWbBtn">微博</button>
+      <button type="button" id="shareXBtn">X / 推特</button>
+    </div>
+    __KEY_TAKEAWAYS__
+    __FAQ__
+    __CONTENT__
+    __REFERENCES__
+    __AUTHOR_CARD__
+  </article>
+</div>
 <div class="related-nav">
   __PREV_NEXT__
   __RELATED__
@@ -289,6 +345,64 @@ __SPEAKABLE_JSONLD__
 <footer>
   <p>&copy; 2026 <a href="https://bi-chao.com/about">毕超</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · <a href="https://bi-chao.com/">chaos-for-agent</a></p>
 </footer>
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s);};
+  var KEY='bc-theme';
+  function apply(t){
+    if(!t){t=localStorage.getItem(KEY)||((window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');}
+    document.documentElement.setAttribute('data-theme',t);
+    localStorage.setItem(KEY,t);
+    var b=$('#themeToggle');
+    if(b){b.textContent=(t==='dark')?'亮色':'主题';}
+  }
+  var tbtn=$('#themeToggle');
+  if(tbtn){tbtn.addEventListener('click',function(){var cur=document.documentElement.getAttribute('data-theme')||'light';apply(cur==='dark'?'light':'dark');});}
+  apply();
+  var rp=$('#readingProgress');
+  function prog(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var y=window.scrollY||document.documentElement.scrollTop;
+    if(rp){rp.style.width=(h>0?(y/h*100):0)+'%';}
+  }
+  window.addEventListener('scroll',prog,{passive:true});
+  window.addEventListener('resize',prog);
+  prog();
+  function copy(txt,btn,ok){
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){flash(btn,ok);}).catch(function(){window.prompt('复制：',txt);});
+    }else{window.prompt('复制：',txt);}
+  }
+  function flash(btn,ok){
+    btn.classList.add('act-copied');
+    var old=btn.textContent;
+    btn.textContent=ok;
+    setTimeout(function(){btn.classList.remove('act-copied');btn.textContent=old;},1800);
+  }
+  var slug=document.body.getAttribute('data-article-slug')||'';
+  var title=document.body.getAttribute('data-article-title')||'';
+  var rawdate=document.body.getAttribute('data-article-date')||'';
+  var date=rawdate.slice(0,10);
+  var url='https://bi-chao.com/articles/'+slug;
+  var cbtn=$('#copyCiteBtn');
+  if(cbtn){cbtn.addEventListener('click',function(){
+    var md='> 来源：'+(date?date+' ':'')+'毕超，《'+title+'》，bi-chao.com，'+url;
+    copy(md,cbtn,'已复制引用');
+  });}
+  var lbtn=$('#copyLinkBtn');
+  if(lbtn){lbtn.addEventListener('click',function(){copy(url,lbtn,'已复制链接');});}
+  var wbtn=$('#shareWxBtn');
+  if(wbtn){wbtn.addEventListener('click',function(){copy('《'+title+'》 '+url+' —— 毕超',wbtn,'已复制，去微信粘贴');});}
+  var wb=$('#shareWbBtn');
+  if(wb){wb.addEventListener('click',function(){
+    window.open('https://service.weibo.com/share/share.php?url='+encodeURIComponent(url)+'&title='+encodeURIComponent('推荐：「'+title+'」—— 毕超'),'_blank');
+  });}
+  var xb=$('#shareXBtn');
+  if(xb){xb.addEventListener('click',function(){
+    window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(title),'_blank');
+  });}
+})();
+</script>
 </body>
 </html>`;
 
@@ -536,7 +650,7 @@ function injectHeadingIds(html) {
 /** 作者信息卡 */
 const AUTHOR_CARD_HTML = `<div class="author-card">
 <h3>关于作者</h3>
-<p><strong>毕超</strong>，博士、高级工程师（计算机技术专业），中国农业发展银行总行处长。</p>
+<p><strong>毕超</strong>，博士、高级工程师（计算机技术专业），金融行业风险管理从业者。</p>
 <p>清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。</p>
 <p>研究方向：大语言模型、数字金融、金融科技。2024年获北京市西城区"西融计划"青年拔尖人才。</p>
 <p>了解更多：<a href="https://bi-chao.com/about">关于作者</a></p>
@@ -1028,44 +1142,55 @@ async function renderArticle(pathname) {
 
 async function renderIndex() {
   const articles = await getArticles();
+  const sorted = [...articles].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
-  let listItems = '';
-  let itemListLd = '';
-  const sortedArticles = [...articles].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-  for (let i = 0; i < sortedArticles.length; i++) {
-    const a = sortedArticles[i];
-    listItems += `
-  <li>
-    <a href="/articles/${a.slug}">${a.title}</a>
-    <span class="date">${a.date}</span>
-    <p class="desc">${a.description}</p>
-  </li>`;
-    if (i > 0) itemListLd += ',\n    ';
-    itemListLd += `{"@type": "ListItem", "position": ${i + 1}, "url": "https://bi-chao.com/articles/${a.slug}", "name": ${JSON.stringify(a.title)}}`;
-  }
+  // ItemList JSON-LD（保留 SEO）
+  const itemListLd = sorted.map((a, i) =>
+    `{"@type": "ListItem", "position": ${i + 1}, "url": "https://bi-chao.com/articles/${a.slug}", "name": ${JSON.stringify(a.title)}}`
+  ).join(',\n    ');
+
+  // 精选区：最新 6 篇（卡片）
+  const featured = sorted.slice(0, 6).map(a =>
+    `<a class="card" href="/articles/${a.slug}">
+      <h3>${a.title}</h3>
+      <div class="card-meta"><span>${a.date}</span>${(Array.isArray(a.tags) && a.tags.length ? a.tags.map(t => `<span class="tag">${t}</span>`).join('') : '')}</div>
+      <p>${a.description}</p>
+    </a>`).join('');
+
+  // 主题分区：按标签聚合（取文章数前 6 个主题）
+  const tagMap = getTagMap(articles);
+  const topTags = Object.keys(tagMap).sort((x, y) => tagMap[y].length - tagMap[x].length).slice(0, 6);
+  const topicsHtml = topTags.map(tag => {
+    const items = [...tagMap[tag]].sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 5);
+    const lis = items.map(a2 => `<li><a href="/articles/${a2.slug}">${a2.title}</a><span class="date">${a2.date}</span></li>`).join('');
+    return `<section class="topic-block">
+      <h2 class="topic-title"><a href="/tags/${encodeURIComponent(tag)}">${tag}</a><span class="topic-count">${tagMap[tag].length} 篇</span></h2>
+      <ul>${lis}</ul>
+    </section>`;
+  }).join('');
 
   const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="智能体的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta name="description" content="银行人看得懂、用得上的AI知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta name="author" content="毕超">
 <meta name="google-site-verification" content="VKkZGy9h23phxHAOaQseoRl9knPfnD_HFVGfI7RSrxs">
 <meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta property="og:title" content="智能体的知识库 — chaos-for-agent">
-<meta property="og:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta property="og:description" content="银行人看得懂、用得上的AI知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bi-chao.com/">
 <meta property="og:site_name" content="chaos-for-agent">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://bi-chao.com/og?title=%E6%AF%95%E8%B6%85%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
+<meta property="og:image" content="https://bi-chao.com/og?title=%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="智能体的知识库 — chaos-for-agent">
-<meta name="twitter:description" content="Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
-<meta name="twitter:image" content="https://bi-chao.com/og?title=%E6%AF%95%E8%B6%85%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
+<meta name="twitter:description" content="银行人看得懂、用得上的AI知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
+<meta name="twitter:image" content="https://bi-chao.com/og?title=%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
 <link rel="canonical" href="https://bi-chao.com/">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
@@ -1101,35 +1226,116 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
 </script>
 <title>智能体的知识库 — chaos-for-agent</title>
 <style>
-  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#222;}
-  h1{font-size:1.8em;border-bottom:2px solid #eee;padding-bottom:8px;}
-  a{color:#2563eb;text-decoration:none;}a:hover{text-decoration:underline;}
-  .date{color:#999;font-size:.85em;margin-left:12px;}
-  .desc{color:#555;font-size:.9em;margin:4px 0 0 0;}
-  li{margin-bottom:16px;}
-  footer{margin-top:60px;padding-top:20px;border-top:1px solid #eee;color:#999;font-size:.8em;}
+  :root{--bg:#fafaf8;--text:#1a1a1a;--muted:#6b6b6b;--accent:#1e40af;--border:#e5e5e5;--card:#ffffff;--soft:#eff6ff;--nav-bg:rgba(250,250,248,.92);}
+  html[data-theme="dark"]{--bg:#0f1116;--text:#e6e8ee;--muted:#9aa0ac;--accent:#7aa2ff;--border:#2a2f3a;--card:#161a23;--soft:#16203a;--nav-bg:rgba(15,17,22,.92);}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC",sans-serif;line-height:1.8;color:var(--text);background:var(--bg);}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem;}
+  .site-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--nav-bg);backdrop-filter:blur(6px);z-index:900;}
+  .site-nav .brand{font-size:1.05rem;font-weight:800;color:var(--text);text-decoration:none;}
+  .site-nav .nav-links{display:flex;align-items:center;gap:.9rem;font-size:.88rem;}
+  .site-nav .nav-links a{color:var(--muted);text-decoration:none;}
+  .site-nav .nav-links a:hover{color:var(--accent);}
+  .theme-toggle{cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--text);border-radius:6px;padding:.2rem .55rem;font-size:.8rem;}
+  .hero{background:linear-gradient(135deg,#eff6ff,#f8fafc);border:1px solid var(--border);border-radius:16px;padding:2.8rem 2rem 2.4rem;margin:2.4rem 0 1rem;text-align:center;}
+  html[data-theme="dark"] .hero{background:linear-gradient(135deg,#131a2e,#161a23);}
+  .hero h1{font-size:1.95rem;font-weight:800;letter-spacing:.02em;line-height:1.4;}
+  .hero .sub{color:var(--muted);margin:.9rem auto 0;max-width:600px;font-size:1rem;}
+  .hero .cta{margin-top:1.6rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;}
+  .cta a{padding:.6rem 1.3rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.92rem;}
+  .cta .primary{background:var(--accent);color:#fff;}
+  html[data-theme="dark"] .cta .primary{color:#fff;}
+  .cta .ghost{border:1px solid var(--accent);color:var(--accent);}
+  .section-title{font-size:1.35rem;font-weight:800;margin:2.6rem 0 1.1rem;padding-bottom:.4rem;border-bottom:2px solid var(--accent);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1rem;}
+  .card{display:block;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.15rem 1.25rem;text-decoration:none;color:var(--text);transition:border-color .15s,transform .15s;}
+  .card:hover{border-color:var(--accent);transform:translateY(-2px);}
+  .card h3{font-size:1.02rem;font-weight:700;margin-bottom:.45rem;line-height:1.5;}
+  .card p{font-size:.86rem;color:var(--muted);margin-top:.45rem;}
+  .card-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;font-size:.78rem;color:var(--muted);}
+  .card-meta .tag{background:var(--soft);color:var(--accent);border-radius:4px;padding:.05rem .45rem;font-size:.72rem;}
+  .topic-block{margin-bottom:1.9rem;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.4rem;}
+  .topic-title{font-size:1.05rem;font-weight:700;margin-bottom:.7rem;}
+  .topic-title a{color:var(--accent);text-decoration:none;}
+  .topic-title a:hover{text-decoration:underline;}
+  .topic-count{color:var(--muted);font-size:.8rem;font-weight:400;margin-left:.5rem;}
+  .topic-block ul{list-style:none;}
+  .topic-block li{margin:.45rem 0;font-size:.92rem;display:flex;justify-content:space-between;gap:1rem;}
+  .topic-block li a{color:var(--text);text-decoration:none;flex:1;}
+  .topic-block li a:hover{color:var(--accent);}
+  .topic-block .date{color:var(--muted);font-size:.8rem;white-space:nowrap;}
+  .author-hero{display:flex;gap:1.4rem;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.7rem;margin:2.4rem 0 1rem;}
+  .author-hero .avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;font-weight:800;flex-shrink:0;}
+  html[data-theme="dark"] .author-hero .avatar{background:linear-gradient(135deg,#7aa2ff,#93c5fd);color:#0f1116;}
+  .author-hero h3{font-size:1.15rem;margin-bottom:.45rem;}
+  .author-hero p{font-size:.9rem;color:var(--muted);margin:.25rem 0;}
+  .author-hero a{color:var(--accent);}
+  footer{margin-top:2.6rem;padding:1.6rem 0 3rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;}
+  footer a{color:var(--accent);text-decoration:none;}
+  @media(max-width:600px){
+    .hero h1{font-size:1.5rem;}
+    .author-hero{flex-direction:column;text-align:center;}
+    .topic-block li{flex-direction:column;gap:.1rem;}
+  }
 </style>
 </head>
 <body>
-<h1>智能体的知识库</h1>
-<p style="color:#555;margin-bottom:24px;">Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</p>
-<div style="background:#f0f4ff;border-left:4px solid #1e40af;padding:1rem 1.2rem;margin-bottom:28px;border-radius:0 6px 6px 0;">
-  <span style="font-weight:700;font-size:1rem;">📡 <a href="/tags/AI%E5%89%8D%E7%9E%BB" style="color:#1e40af;">AI前瞻</a></span>
-  <span style="color:#6b6b6b;font-size:.9rem;margin-left:.5rem;">解读前沿AI趋势，洞察技术走向</span>
-</div>
-<ul>${listItems}</ul>
-<h2 style="margin-top:32px;border-bottom:2px solid #eee;padding-bottom:8px;">教程</h2>
-<ul>
-  <li><a href="/quant-course/index.html">什么是量化金融？ —— 互动教程</a><span class="date">2026-06-17</span><p class="desc">《和Yibo零基础学习量化金融》第一章互动版：6课掌握量化金融核心概念。</p></li>
-  <li><a href="/quant-course/chapter2-first-quant-experiment.html">你的第一个量化实验 —— 互动教程</a><span class="date">2026-06-20</span><p class="desc">《和Yibo零基础学习量化金融》第二章互动版：OHLCV数据、收益率计算、多股波动率对比实验。</p></li>
-</ul>
-<footer>共 ${articles.length} 篇文章 · <a href="/tags/AI%E5%89%8D%E7%9E%BB">AI前瞻</a> · <a href="/about">关于作者</a> · <a href="/feed.xml">RSS</a> · <a href="/ai-manifest.json">AI Manifest</a></footer>
+<nav class="site-nav wrap">
+  <a class="brand" href="/">智能体的知识库</a>
+  <div class="nav-links">
+    <a href="/tags">标签</a>
+    <a href="/faq">FAQ</a>
+    <a href="/quant-course/index.html">教程</a>
+    <a href="/about">关于</a>
+    <a href="/feed.xml">RSS</a>
+    <button class="theme-toggle" id="themeToggle" type="button">主题</button>
+  </div>
+</nav>
+<main class="wrap">
+  <section class="hero">
+    <h1>银行人看得懂、用得上的 AI 知识库</h1>
+    <p class="sub">Agent-First 内容写作、AI 大模型、银行业数字化转型的深度文章。毕超博士以金融行业风险管理一线的视角拆解银行 AI 落地。</p>
+    <div class="cta">
+      <a class="primary" href="#latest">开始阅读</a>
+      <a class="ghost" href="/about">关于作者</a>
+    </div>
+  </section>
+  <h2 class="section-title" id="latest">最新文章</h2>
+  <div class="grid">${featured}</div>
+  <h2 class="section-title">主题分区</h2>
+  ${topicsHtml}
+  <section class="author-hero">
+    <div class="avatar">毕</div>
+    <div>
+      <h3>毕超</h3>
+      <p>博士 · 高级工程师（计算机技术专业）· 金融行业风险管理从业者 · 清华大学校友导师</p>
+      <p>研究方向：大语言模型、数字金融、金融科技。2024 年北京市西城区"西融计划"青年拔尖人才。</p>
+      <p><a href="/about">查看完整简介 →</a></p>
+    </div>
+  </section>
+</main>
+<footer class="wrap">
+  共 ${articles.length} 篇文章 · <a href="/tags/AI%E5%89%8D%E7%9E%BB">AI前瞻</a> · <a href="/about">关于作者</a> · <a href="/feed.xml">RSS</a> · <a href="/ai-manifest.json">AI Manifest</a>
+</footer>
+<script>
+(function(){
+  var KEY='bc-theme';
+  function apply(t){
+    if(!t){t=localStorage.getItem(KEY)||((window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');}
+    document.documentElement.setAttribute('data-theme',t);
+    localStorage.setItem(KEY,t);
+    var b=document.getElementById('themeToggle');
+    if(b){b.textContent=(t==='dark')?'亮色':'主题';}
+  }
+  var tb=document.getElementById('themeToggle');
+  if(tb){tb.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')||'light';apply(c==='dark'?'light':'dark');});}
+  apply();
+})();
+</script>
 </body>
 </html>`;
 
-  // 注入 ItemList 数据
   const finalHtml = html.replace('__ITEM_COUNT__', articles.length).replace('__ITEM_LIST__', itemListLd);
-
   return new Response(finalHtml, {
     headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' }
   });
@@ -1175,7 +1381,7 @@ async function renderLlms() {
   let txt = `# chaos-for-agent — 智能体的知识库
 
 > 面向 AI Agent 和搜索引擎优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。
-> 作者：毕超，中国农业发展银行总行处长，清华大学校友。
+> 作者：毕超，金融行业风险管理从业者，清华大学校友。
 
 ## Site Map
 - Home: ${DOMAIN}/
