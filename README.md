@@ -14,7 +14,6 @@
 | [AI Agent 在银行业的应用探索与未来展望](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-agent-banking-exploration.md) | 毕超 | 从自动化到自主化的跃迁，LLM-RPA-Agent 三角关系框架 |
 | [《AI大模型重塑现代银行》](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-big-model-reshape-banking.md) | 毕超、刘鑫 | 23个真实案例展示AI在银行落地实践 |
 | [面向人工智能的数据治理框架](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-data-governance-framework.md) | 李继峰、张成龙、刘鑫、陈劲宇、张津铭、毕超 | 覆盖AI全生命周期的六维数据治理框架 |
-| [《人工智能+现代银行》](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/ai-plus-modern-banking.md) | 毕超 | 通往智能银行的战略地图与行动指南 |
 | [数字人民币2.0为智能经济发展注入强劲动能](https://chaos-for-agent.kingbuildneworld.workers.dev/articles/digital-yuan-2-0-smart-economy.md) | 毕超 | 数字人民币从现金型1.0向存款货币型2.0跨越 |
 
 ## 作者
