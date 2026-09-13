@@ -6,8 +6,6 @@ tags: ["OpenAI", "Research Agents", "RSI", "AI治理", "金融科技"]
 schema_type: Article
 ---
 
-# 同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车
-
 > 作者：金融行业风险管理从业者
 > 发布日期：2026-09-13
 
