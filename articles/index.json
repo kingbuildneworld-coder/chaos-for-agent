@@ -1,5 +1,20 @@
 [
   {
+    "title": "银行非结构化数据价值发掘的隐形地基：Tokenization 如何决定 RAG 与智能知识底座的质量上限",
+    "slug": "tokenization-rag-banking-knowledge-foundation",
+    "url": "/articles/tokenization-rag-banking-knowledge-foundation.md",
+    "description": "结合《Understanding Tokenization》手册技术要点，拆解银行在构建 RAG 与智能知识底座时 Tokenization 的五条隐性传导路径，并给出确保质量效果的工程化清单。",
+    "date": "2026-09-13",
+    "tags": [
+      "Tokenization",
+      "RAG",
+      "智能知识底座",
+      "非结构化数据",
+      "银行AI"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行风险管理部门的 Harness Engineering 安全：大模型、数据与信息系统安全如何耦合",
     "slug": "harness-engineering-security-coupling-banking-risk",
     "url": "/articles/harness-engineering-security-coupling-banking-risk.md",
