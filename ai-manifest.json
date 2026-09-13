@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 56,
+    "total_articles": 57,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "banking-ai-governance-systemic-framework",
+      "title": "\"银行业人工智能治理的系统性框架：从算法伦理到气候正义的全维度拼图\"",
+      "date": "2026-09-13",
+      "description": "\"以 AI 治理全景框架（AI 系统自身、全生命周期环境足迹、社会治理效应、全球治理机制四层维度）为参照，拆解银行业人工智能治理的系统性框架：模型风险、数据主权、算力效率、气候责任与普惠金融如何在银行场景中形成闭环。\"",
+      "tags": [
+        "银行AI治理",
+        "AI治理框架",
+        "模型风险管理",
+        "算法伦理",
+        "ESG",
+        "金融科技",
+        "AI监管"
+      ]
+    },
     {
       "slug": "research-acceleration-openai-internally-rsi-finance",
       "title": "\"同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车\"",
@@ -506,5 +521,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-13",
   "version": "1.1",
-  "total_articles": 56
+  "total_articles": 57
 }
