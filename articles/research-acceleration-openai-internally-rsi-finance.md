@@ -1,10 +1,15 @@
 ---
-title: "同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车"
-date: 2026-09-13
-description: "对照 OpenAI 同日发布的两篇博客《Research acceleration: The view inside OpenAI》与《An Alien Mind》，拆解 agent 化研究加速的内部数据、安全侧的三个失明，以及金融业应从中计提的六条治理杠杆。"
-tags: ["OpenAI", "Research Agents", "RSI", "AI治理", "金融科技"]
-schema_type: Article
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: 7f583cd62b816ae81bf2b5e7e390dad8_8400785baf3a11f188ac525400dcc5b3
+    ReservedCode1: VReJMep+lrx4b7hR7VxAy3fLgVQ4An8DGQK89u10ZvJ+omwSln9JU7l/6Br6wlE/Uf34l41x4QLRw2DbzyfdzMnm0xf8xQpPd7lAkbBihWQcH991InoeepGBbJz+N6bY5JVd54iSqpudFYA0ZyMad8af9h3YywngN2nX0DulirMV89FFhT6qvjxO55s=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: 7f583cd62b816ae81bf2b5e7e390dad8_8400785baf3a11f188ac525400dcc5b3
+    ReservedCode2: VReJMep+lrx4b7hR7VxAy3fLgVQ4An8DGQK89u10ZvJ+omwSln9JU7l/6Br6wlE/Uf34l41x4QLRw2DbzyfdzMnm0xf8xQpPd7lAkbBihWQcH991InoeepGBbJz+N6bY5JVd54iSqpudFYA0ZyMad8af9h3YywngN2nX0DulirMV89FFhT6qvjxO55s=
 ---
+
+
 
 # 同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车
 
@@ -35,9 +40,6 @@ schema_type: Article
 
 > 一句话总结油门侧：**研究组织已事实上切换为"人要少导、agent 多劳"的模式，但天花板仍卡在人的算力——设定研究方向、判断优先级、启动与部署，依旧高度依赖人。**
 
-```<yyb-image-gallery>
-[图1：OpenAI 研究加速六组关键数据](https://mermaid.ink/svg/pako:eJydU9FugzAM_JV8p7bThhCyqU1Cqtu0pubZqbKc1GlTpHhmnKRVkf4-Q4FFS0OFTEywz3bONjaKW4oYvvFxSRG-yLdsv9lsN8gEMwmz8gtPj6rOOlMgwopw3XTVdNu6Wfq1Qyt1uPq__G93Xvd1d4vDWwKNGSI1UblJ9ZaRLn6NcodCg4yY7FqPzIvx5Sds3PfI7ChDVrHclINNlFPlKlR9dmHICBOUjgKfGLGaSAVNNzKSPnojtIh7vBe9c_twr2yRDuLSmpJ52vTfkLQcSqgfXNqw2j6m3p7aE3z4gvAe4d9MF27p-u5wDVEhmwskp1DUBBbPLcWqnB2m4BXG2USdM0KThdE0Q3X7kCAR5XW2bfJVbHCLp2R_i9YmlqvK3uVgFkxCuNxVHJgec8vUoTaJY1ecTU4NU0TMNFpU6hPGTqQuOMaOSm9Y1dvpAOwTe_H1LDrULnRP5d7eBgOCgWDSXWYxsYD9XwcRNXSz6z8)
-```
 
 ## 二、刹车侧在怕什么：《异类心智》的三个"失明"
 
@@ -51,9 +53,6 @@ schema_type: Article
 
 > 一句话总结刹车侧：**最激进的实验室亲口承认——加速路上看得见的护栏，可能根本没兜住核心风险。**
 
-```<yyb-image-gallery>
-[图2：两篇文章的对照：油门数据 vs 刹车警告，共同指向受控的加速](https://mermaid.ink/svg/pako:eJytVEtvgkAQ_ivJ7nvh1U2ND5pIbG2TqtFzY2FwaakLshSwoanpj-8sKPSlUtNcFuYx38y3s7OLuKdREh0UI2GcRYMh7ysjwZSFcXjZuQ9DXdc7ekZ3nM1XpoPEm9qNebq0-5vSbbEHthfbn9mVpbwaupV-bbme-6POJY5dOVfGYu2lLP4j4QBCvfMR2jyMmo6EFz5SB7lbM33LeiAQp7Z8u0x4gMTIw5_5Bim5rMGEiXnO7JbWy0ONbMY92D0bWb8ntir1_7jx0w9iR5M9jUe7v8G2AiPcgDOYArwpV5FTlk4oUfBlhFijBEnWKYudFqhBCtLd1--uJd1nL3Epo9L1r6GB1EGwE7HbmcTZbzb0mgHBUgF3uEP4SBI98UBjiIp7uS_dfx5zzbWMZPQ4f1XaTbii6_F9tSXpgnlSJTcpwC9RbZJSl3uOoyS0AH63v4_PGYEQkFvh4lENWAsGzKMUF28jMq5OWv4D)
-```
 
 ## 三、两篇合读：真正的重点是"受控"二字
 
@@ -88,12 +87,10 @@ schema_type: Article
 
 **杠杆六：把"能力演进"纳入常态化测量与披露。** OpenAI 已经把指标（日消耗、agent 工时倍数、任务成功率、高并发占比）当作治理的仪表盘，并呼吁对 RSI 进度做公开追踪。金融机构应建立自己的 AI 能力台账：上线哪些能力、运行多少 agent 工时、效果与事故率如何——对内支撑治理决策，对外为监管与客户提供可核验的透明口径。披露，正在从品牌姿态变成风控必需。
 
-```<yyb-image-gallery>
-[图3：金融业六条受控加速治理杠杆](https://mermaid.ink/svg/pako:eJytVE1vgkAQ_SvJnnvpRdM0Nz6ASCpJY9V4Nra67BqW2paFpWpM_O9doKB81KbEXJh5vMcM2Sgk9gTBVbP5Th1-BE2zPIYQzDMqUa36b1tBlqVZzqtseZfX41S1OIZP0uB0-zCI9rnOfrPz5lS-tjVBo7H0HExLVI67PCJ__7TQ6NR2HFqc7dRsY-a4dWpnL1cjvMn0D8E_jOeY_E2C--5Dz5wSfSNbVWvBRZiHzdNcZe7eD_w8J5CN0L3Net5aS2xnThSLqWIP8u96uEJTAssJbAoCe7MBBNI7uqVU-A_pp-Av4R2B0gIO9xSjmXP6ZdA2xhoT87BX7Yhu6TS2tFZ0nYSuJUw3sVlGQJmwrKBtj_bp6b21JnJdGfR4dD5Pr1FCNwyYZR4gN8LCwKnkGYSxr5zxDsdJuzn5Bw)
-```
 
 ## 结语：油门和刹车装在同一个方向盘上
 
 同一周的这两篇文章，谁也没推翻谁：**加速没有因为承认风险而停下来，承认风险也没有因为加速而变成空话。** OpenAI 展示的，是一种"全力加速、随时可刹、边跑边修"的组织状态——它不完美，但它是目前最接近真实的样本。
 
 对金融行业来说，最有价值的不是模仿 OpenAI 的研究节奏，而是复制它的**受控机制**：把 agent 的授权边界、人类守门、暂停回滚、基础加固、多模型冗余、测量披露，做成和资本充足率、流动性管理一样日常的制度性动作。能力先行已成定局，但"谁来踩刹车、刹车好不好用"，才是决定金融业能否长期从 AI 中获利的分水岭。
+*（内容由AI生成，仅供参考）*
