@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-06-18T00:00:00Z</updated>
+  <updated>2026-09-11T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
+
+  <entry>
+    <id>https://bi-chao.com/articles/ai-plus-software-finance-secure-lifecycle</id>
+    <title>人工智能+软件落地金融：实施路径与安全全生命周期嵌入</title>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-plus-software-finance-secure-lifecycle" rel="alternate" type="text/html"/>
+    <summary>深度拆解工信部《人工智能+软件专项行动实施方案》对金融行业的落地含义，从智能编程、专业智能体、智能服务三条主线给出实施路径，并构建覆盖需求、编码、测试、部署、运行、治理全周期的安全嵌入框架。</summary>
+    <category term="人工智能+软件"/>
+    <category term="智能体"/>
+    <category term="DevSecOps"/>
+    <category term="金融科技"/>
+  </entry>
 
   <entry>
     <id>https://bi-chao.com/articles/agent-first-content-writing</id>
