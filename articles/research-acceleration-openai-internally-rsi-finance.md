@@ -1,15 +1,10 @@
 ---
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 7f583cd62b816ae81bf2b5e7e390dad8_8400785baf3a11f188ac525400dcc5b3
-    ReservedCode1: VReJMep+lrx4b7hR7VxAy3fLgVQ4An8DGQK89u10ZvJ+omwSln9JU7l/6Br6wlE/Uf34l41x4QLRw2DbzyfdzMnm0xf8xQpPd7lAkbBihWQcH991InoeepGBbJz+N6bY5JVd54iSqpudFYA0ZyMad8af9h3YywngN2nX0DulirMV89FFhT6qvjxO55s=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 7f583cd62b816ae81bf2b5e7e390dad8_8400785baf3a11f188ac525400dcc5b3
-    ReservedCode2: VReJMep+lrx4b7hR7VxAy3fLgVQ4An8DGQK89u10ZvJ+omwSln9JU7l/6Br6wlE/Uf34l41x4QLRw2DbzyfdzMnm0xf8xQpPd7lAkbBihWQcH991InoeepGBbJz+N6bY5JVd54iSqpudFYA0ZyMad8af9h3YywngN2nX0DulirMV89FFhT6qvjxO55s=
+title: "同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车"
+date: 2026-09-13
+description: "对照 OpenAI 同日发布的两篇博客《Research acceleration: The view inside OpenAI》与《An Alien Mind》，拆解 agent 化研究加速的内部数据、安全侧的三个失明，以及金融业应从中计提的六条治理杠杆。"
+tags: ["OpenAI", "Research Agents", "RSI", "AI治理", "金融科技"]
+schema_type: Article
 ---
-
-
 
 # 同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车
 
