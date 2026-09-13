@@ -1,5 +1,23 @@
 [
   {
+    "title": "构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座",
+    "slug": "asset-preservation-semantic-foundation",
+    "url": "/articles/asset-preservation-semantic-foundation.md",
+    "description": "资产保全智能体的知识底座应从'通用知识库'升级为受控的、可推理的、可审计的'语义底座'。本文基于蚂蚁数科KBase、神州信息本体论白皮书、彩讯Rich AIBox、天阳科技双核引擎等已核实实践，给出四层架构、六步落地流程与可追溯证据链设计。",
+    "date": "2026-09-13",
+    "tags": [
+      "资产保全",
+      "智能体",
+      "知识底座",
+      "本体论",
+      "GraphRAG",
+      "规则引擎",
+      "银行",
+      "可审计AI"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行 AI 智能体需要什么样的 AI 原生数据库？Loop / Graph Engineering / RSI 与 KV Cache 的系统方案",
     "slug": "ai-native-database-for-banking-agents",
     "url": "/articles/ai-native-database-for-banking-agents.md",
