@@ -38,7 +38,22 @@
     <category term="非结构化数据"/>
   </entry>
 
-  <entry>
+   <entry>
+    <id>https://bi-chao.com/articles/banking-ai-governance-systemic-framework</id>
+    <title>"银行业人工智能治理的系统性框架：从算法伦理到气候正义的全维度拼图"</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banking-ai-governance-systemic-framework" rel="alternate" type="text/html"/>
+    <summary>"以 AI 治理全景框架（AI 系统自身、全生命周期环境足迹、社会治理效应、全球治理机制四层维度）为参照，拆解银行业人工智能治理的系统性框架：模型风险、数据主权、算力效率、气候责任与普惠金融如何在银行场景中形成闭环。"</summary>
+    <category term="银行AI治理"/>
+    <category term="AI治理框架"/>
+    <category term="模型风险管理"/>
+    <category term="算法伦理"/>
+    <category term="ESG"/>
+    <category term="金融科技"/>
+    <category term="AI监管"/>
+  </entry>
+
+   <entry>
     <id>https://bi-chao.com/articles/harness-engineering-security-coupling-banking-risk</id>
     <title>银行风险管理部门的 Harness Engineering 安全：大模型、数据与信息系统安全如何耦合</title>
     P26-09-13T00:00:00Z</updated>
