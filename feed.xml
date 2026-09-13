@@ -14,6 +14,18 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/org-context-engineering-banking</id>
+    <title>组织级上下文为什么是银行业 AI 时代的核心工程(Context Engineering)</title>
+    P26-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/org-context-engineering-banking" rel="alternate" type="text/html"/>
+    <summary>从 context engineering 视角拆解银行组织级上下文：为什么它是银行智能体的可信大脑，包括数据/流程/监管/领域/工具五类内容，以及五步构建方法论与治理红线。</summary>
+    <category term="context-engineering"/>
+    <category term="AI"/>
+    <category term="银行"/>
+    <category term="知识图谱"/>
+  </entry>
+
+  <entry>
     <id>https://bi-chao.com/articles/pace-frontier-rsi-finance-governance</id>
     <title>前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径</title>
     <updated>2026-09-13T00:00:00Z</updated>
