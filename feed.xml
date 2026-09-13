@@ -14,6 +14,18 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/ai-native-database-for-banking-agents</id>
+    <title>银行 AI 智能体需要什么样的 AI 原生数据库？Loop / Graph Engineering / RSI 与 KV Cache 的系统方案</title>
+    P26-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-native-database-for-banking-agents" rel="alternate" type="text/html"/>
+    <summary>从 Agent Loop、Graph Engineering、RSI 与 KV Cache 四类需求出发，论证银行需要多模型融合的 AI 原生数据库，并提出一套以'关系+向量+图+KV Cache 上下文层'为核心的系统架构方案。</summary>
+    <category term="AI-native-database"/>
+    <category term="agentic-AI"/>
+    <category term="KV-cache"/>
+    <category term="graph-engineering"/>
+  </entry>
+
+  <entry>
     <id>https://bi-chao.com/articles/org-context-engineering-banking</id>
     <title>组织级上下文为什么是银行业 AI 时代的核心工程(Context Engineering)</title>
     P26-09-13T00:00:00Z</updated>
