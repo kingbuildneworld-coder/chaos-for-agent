@@ -67,7 +67,23 @@
     <category term="银行风险管理"/>
   </entry>
 
-  <entry>
+   <entry>
+    <id>https://bi-chao.com/articles/collaborative-ai-model-over-models</id>
+    <title>"从"堆参数"到"组网络"：协作式 AI（Model over Models）范式对产业的影响与思考"</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/collaborative-ai-model-over-models" rel="alternate" type="text/html"/>
+    <summary>"基于世界人工智能大会杨红霞、陈海青、吴建民独家观点，深度拆解从 Model over Data 到 Model over Models 的范式转变：95%对65%专用小模型跑赢通用大模型的内在逻辑，FP8低比特训练、模型融合、Agent原生操作系统、Co-GenAI协作平台四大基石的产业含义，以及数据质量、精度损失、安全治理等批判性反思。"</summary>
+    <category term="协作式AI"/>
+    <category term="Model over Models"/>
+    <category term="专用小模型"/>
+    <category term="FP8低比特训练"/>
+    <category term="模型融合"/>
+    <category term="Agent-Native OS"/>
+    <category term="Co-GenAI"/>
+    <category term="人工智能产业"/>
+  </entry>
+
+   <entry>
     <id>https://bi-chao.com/articles/asset-preservation-semantic-foundation</id>
     <title>构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座</title>
     P26-09-13T00:00:00Z</updated>
