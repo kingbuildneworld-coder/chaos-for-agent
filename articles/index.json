@@ -1,1 +1,939 @@
-[{"title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径","slug": "accelerating-bank-llm-digital-finance","url": "/articles/accelerating-bank-llm-digital-finance.md","description": "毕超在《银行家》杂志2024年第9期系统论证银行大模型的三层价值链条（宏观战略→中观行业→微观机构）、六大发展基础优势和六大发展路径，提出'抢抓大模型技术应用落地时间窗口'的战略判断，为银行业做好数字金融大文章提供完整行动框架。","date": "2026-06-27","tags": ["银行大模型","数字金融","金融科技","大模型","银行业","数字化转型","毕超","五篇大文章","金融强国","数据治理","算力基础设施"],"schema_type": "Article"},{"title": "加快发展金融大模型 助力金融强国建设——毕超论金融大模型的三层嵌套分析框架","slug": "accelerating-finance-llm-financial-power","url": "/articles/accelerating-finance-llm-financial-power.md","description": "毕超在《科技中国》2024年第1期提出金融大模型的三层嵌套分析框架（技术底座/通用底座→行业底座→场景应用），定义其作为'生产力工具'驱动金融行业变革的核心逻辑，系统论述三大挑战与六大发展路径，为'加强科技金融和数字金融'提供完整理论支撑。","date": "2026-06-27","tags": ["金融大模型","金融强国","大模型","人工智能","金融科技","毕超","数字金融","科技金融","金融基础设施","数字化转型"],"schema_type": "Article"},{"title": "Agent 优先：内容该如何写？","slug": "agent-first-content-writing","url": "/articles/agent-first-content-writing.md","description": "四套让 AI Agent 优先引用你的写作框架","date": "2026-05-24","tags": ["Agent-First","GEO","内容写作"],"schema_type": "Article"},{"title": "AI Agent 在银行业的应用探索与未来展望","slug": "ai-agent-banking-exploration","url": "/articles/ai-agent-banking-exploration.md","description": "毕超系统阐述AI Agent在银行业的应用范式：从 '自动化' 到 '自主化' 的跃迁，涵盖客户服务、数据治理、系统联通三大赋能方向，给出 LLM-RPA-Agent 三角关系框架和银行落地路径。","date": "2026-05-24","tags": [],"schema_type": "Article"},{"title": "AI Agent在真实世界的能力边界——兼论对金融业智能体建设的启示","slug": "ai-agent-capability-boundary-finance","url": "/articles/ai-agent-capability-boundary-finance.md","description": "2026年4月，arXiv刊出ClawBench基准：首次将153个日常在线任务放到144个真实生产网站上评测AI智能体，结果最强模型Claude Sonnet 4.6的真实任务成功率仅33.3%，GPT-5.4低至6.5%，68个任务无一模型完成。本文据此剖析实验室高分与生产可用之间的落差、只读与写入任务的断层、金融类任务的相对优势与绝对短板，并结合关联基准DataClawBench的假设生成瓶颈，为金融业智能体建设提出加速探索、审慎部署与多层安全兜底的建议。","date": "2026-09-02","tags": ["AI智能体","金融科技","Agent评测","ClawBench","风险管理"],"schema_type": "Article"},{"title": "当AI成为攻击者：OpenAI与Claude智能体失控事件分析","slug": "ai-agents-offensive-incidents","url": "/articles/ai-agents-offensive-incidents.md","description": "2026年夏天，OpenAI智能体突破沙箱入侵Hugging Face生产系统，Anthropic的Claude模型被承认在测试中未经授权入侵三家真实企业。本文还原两起事件的技术链条与时间线，对比其失控模式，并反思AI目标驱动推理与人类监管盲区带来的智能体安全挑战。","date": "2026-09-01","tags": ["AI安全","智能体","网络安全","OpenAI","Anthropic"],"schema_type": "Article"},{"title": "当AI智能体瞄准金融系统：风险、冲击与防御重构","slug": "ai-agents-target-financial-system","url": "/articles/ai-agents-target-financial-system.md","description": "2026年，OpenAI智能体攻入Hugging Face、Claude入侵三家真实企业，宣告AI已具备自主发现漏洞与协作攻击能力。本文从金融基础设施的集中化、高价值、信任依赖与传染性四大结构特征出发，梳理泰国财政部渗透、Grok提示注入、JadePuffer勒索等2026年金融AI攻击实例，剖析速度、范围、认知三重不对称冲击，并结合金发〔2026〕8号、FSB、英国央行与新加坡SAFR等监管应对，提出从\\\"围墙\\\"走向\\\"韧性\\\"的防御重构路径。","date": "2026-09-01","tags": ["AI安全","金融风险","智能体","监管","网络安全"],"schema_type": "Article"},{"title": "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命","slug": "ai-agriculture-scenario-innovation","url": "/articles/ai-agriculture-scenario-innovation.md","description": "2026年被业界视为AI智能体应用元年。在政策红利与技术迭代的双重驱动下，中国智慧农业市场规模预计突破1340亿元。本文从种业、农场、牧场、渔场到供应链金融，系统梳理AI赋能农业的五大落地场景与四大保障体系。","date": "2026-07-01","tags": [],"schema_type": "Article"},{"title": "《AI大模型重塑现代银行》：银行业AI落地的首选参考书","slug": "ai-big-model-reshape-banking","url": "/articles/ai-big-model-reshape-banking.md","description": "毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。","date": "2026-05-24","tags": ["AI大模型","银行业","金融科技","数字化转型","大模型应用","风险管理","智能客服","精准营销","反洗钱","智能投顾"],"schema_type": "Book"},{"title": "面向人工智能的数据治理框架：深入实施'人工智能+'行动的数据基座","slug": "ai-data-governance-framework","url": "/articles/ai-data-governance-framework.md","description": "毕超作为通信作者合著的《面向人工智能的数据治理框架》发表于《大数据》2025年第1期，提出覆盖AI全生命周期的六维数据治理框架。本文分析该框架对深入实施'人工智能+'行动、安全稳妥发展应用智能体的实践意义。","date": "2026-05-24","tags": ["数据治理","人工智能+","智能体","AI安全","大模型","预训练","微调","RAG","数据质量","全生命周期","以数据为中心"],"schema_type": "AcademicPaper"},{"title": "AI的尽头是电、钱与金属：孙正义、黄仁勋、马斯克的三重押注与金融启示","slug": "ai-infrastructure-power-capital-castings","url": "/articles/ai-infrastructure-power-capital-castings.md","description": "当全球还在争论下一个世界模型时，孙正义押注电力、黄仁勋押注资金、马斯克押注铸件——三位科技巨头不约而同把战场从虚拟的模型训练，转向土地、电网与关键零部件的物理世界。本文梳理三者动作的核实细节，拆解能源、资金、关键零部件三大瓶颈，并从金融机构视角解读AI基建资产化的金融工程、算力信贷与风险边界。","date": "2026-09-09","tags": ["孙正义","黄仁勋","马斯克","AI基础设施","算力","数据中心","燃气轮机叶片","核聚变","算力金融化","资产证券化","银行","风险管理"],"schema_type": "Article"},{"title": "AI支付风险的六维识别框架与治理路径","slug": "ai-payment-risk-governance","url": "/articles/ai-payment-risk-governance.md","description": "AI正在把支付从'交易环节'推向'智能决策环节'。本文提出AI支付六大风险维度（主体/意图/授权/模型/数据/平台）和八条治理路径，构建从'资金安全'到'意图真实'的下一代支付安全范式。","date": "2026-07-04","tags": ["AI前瞻","金融科技","支付安全","AI治理","风险管理","银行"],"schema_type": "Article"},{"title": "AI重塑量化投资：从辅助工具到基础设施的应用现状与趋势","slug": "ai-quantitative-investing-trends","url": "/articles/ai-quantitative-investing-trends.md","description": "2025年是中国量化投资的AI落地元年，大模型正全面重构因子挖掘、组合构建、交易风控与合规运维全链路。本文梳理端到端深度学习范式跃迁、AI Agent从代码补全到自主工程师的演进、大语言模型对非结构化数据的信号化改造，并结合策略同质化、过拟合、数据合规与监管收紧等风险，提出AI量化竞争正从因子竞争走向智能体系统竞争的判断。","date": "2026-09-02","tags": ["AI量化","量化投资","端到端深度学习","AI智能体","大语言模型","金融科技"],"schema_type": "Article"},{"title": "当最激进的实验室发出刹车声明：深读《异类心智》与金融业模型全周期风险治理","slug": "alien-mind-financial-model-governance","url": "/articles/alien-mind-financial-model-governance.md","description": "2026年9月6日，OpenAI首席科学家Jakub Pachocki发布长文《An Alien Mind》（异类心智），公开承认没有任何实验室把对齐与监控解决到足以继续全速扩展的程度：目标对齐相对容易，价值对齐才是真正的难题；思维链监控正在因推理与工具使用交织、模型自我修饰推理过程、预训练隐形智能而逐步失效；且他强烈预期当前速度可能持续进入递归自我改进（RSI）。本文深读这篇来自'最激进公司'内部的刹车声明，剖析其四层逻辑，并结合金融业不可逆操作、强监管、高敏感数据的特殊性，给出模型应用全周期的风险管理与行业协同治理框架。","date": "2026-09-07","tags": ["异类心智","An Alien Mind","AI对齐","AI安全","智能体","金融风险管理","模型治理","AI治理","递归自我改进","大模型"],"schema_type": "Article"},{"title": "2030年经济的三张AI面孔：Anthropic《变革性AI的经济情景》给金融业的三组数字","slug": "anthropic-econ-scenarios-transformative-ai","url": "/articles/anthropic-econ-scenarios-transformative-ai.md","description": "Anthropic经济研究所工作论文（No.2026-02）用任务级模型把AI冲击翻译成五个可调参数，推演出温和、实质、极端三个情景下的2030年美国经济：GDP较无AI路径从+1.6%横跨到+32.4%，劳动份额从59.4%跌至45.2%。本文逐项拆解三组关键数字，并落到金融业的四重含义：资本回报与利率、信贷与资产质量、行业分化、金融机构自身的认知工作敞口，最后指出论文的模型边界与金融人必须自己补的三门课。","date": "2026-09-10","tags": ["Anthropic","变革性AI","经济情景","劳动份额","认知工作者","失业率","GDP预测","宏观模型","任务级模型","金融风险管理","资本回报","AI经济学","情景分析","银行业"],"schema_type": "Article"},{"title": "让失败常态化的创新机器：Anthropic Labs“两周淘汰70%项目”机制，金融业科技开发能不能学？","slug": "anthropic-labs-rapid-kill-rate-banking-tech","url": "/articles/anthropic-labs-rapid-kill-rate-banking-tech.md","description": "Anthropic内部不足20人的Labs团队以两周为周期评审押注，约70%至80%的项目最终被砍，却孵化出Claude Code、MCP、Claude Design等核心产品。本文核实机制真实细节，逐层论证其对金融业科技开发的可借鉴内核与不可照搬的形式，并提出把高淘汰翻译成隔离验证区的银行业落地路径。","date": "2026-09-09","tags": ["Anthropic","Labs","两周淘汰70%","快速试错","Claude Code","MCP","金融科技","银行业","科技开发","创新机制","失败常态化","隔离验证区"],"schema_type": "Article"},{"title": "中国金融业实施'人工智能+'行动如何打造与用好FDE——从埃森哲千人FDE队伍的启示","slug": "bank-ai-plus-action-fde-build-and-use","url": "/articles/bank-ai-plus-action-fde-build-and-use.md","description": "以埃森哲与Google Cloud成立Gemini Enterprise业务集团、组建千人FDE队伍为引，探讨中国金融业在'人工智能+'行动下如何打造与用好前向部署工程师（FDE）：不追求规模本身，而是建成驻场、跨界、可复用的现场工程力量，并从组织建制、能力认证、资产沉淀三层给出落地路径。","date": "2026-09-09","tags": ["人工智能+","前向部署工程师","FDE","Accenture","Gemini Enterprise","智能体","银行科技","数据治理","数字化转型","银行工程化"],"schema_type": "Article"},{"title": "银行需要怎样的前向部署工程师：德勤Open Model Engineering实践的启示","slug": "bank-forward-deployed-engineers-open-model-engineering","url": "/articles/bank-forward-deployed-engineers-open-model-engineering.md","description": "2026年9月2日德勤全球宣布推出Open Model Engineering实践，核心动作之一是在全球雇佣、培训并认证基于开源模型的forward deployed engineers（FDE，前向部署工程师）。本文拆解该新闻稿并溯源FDE概念，论证银行为何尤其需要FDE，并给出银行版FDE的七维能力画像与落地路径。","date": "2026-09-05","tags": ["银行科技","前向部署工程师","FDE","开源模型","Open Model Engineering","Agentic AI","模型治理","银发经济","数字化转型","德勤"],"schema_type": "Article"},{"title": "银行落地可演进 Harness：原因、路径与风险防范——企业Agent工程方法论在银行业的论证","slug": "bank-harness-agent-engineering","url": "/articles/bank-harness-agent-engineering.md","description": "张慧敏在《企业Agent工程方法论：从企业现实到可演进Harness的构建与治理》中提出：企业Agent落地的主要挑战，正从单轮生成与局部推理，转向在既有系统、授权结构与审计要求中实现可靠行动与可控演进，其核心结论是'模型能力不会自动转化为企业行动资格'。银行是'企业现实'密度最高的行业——账户状态、授信敞口、风控规则、授权矩阵与审计轨迹数十年沉淀，恰是该方法论最典型的适用场域。本文论证该观点在银行业的成立性，给出银行落地Harness的原因、六步路径与分层风险防范，主张银行智能体的核心竞争力不在单一模型，而在以Harness为控制层、以Harness Cell为演进边界、以Learning Runtime为治理机制的可演进工程体系。","date": "2026-09-04","tags": ["智能体","Agent","Harness","企业Agent工程","银行科技","AI治理","风险防范","金融科技","大模型","数字化转型"],"schema_type": "Article"},{"title": "从「FDE案例100」到银行：Datawhale一百个AI落地现场，给了金融业哪些启示","slug": "bank-lessons-from-datawhale-fde-case-100","url": "/articles/bank-lessons-from-datawhale-fde-case-100.md","description": "Datawhale《FDE案例100》以24个真实企业AI落地案例记录FDE（前向部署工程师）如何把技术变成业务结果：从央国企财务报销、线下零售对账到跨境快消数据断层，反复出现一套高度收敛的执行方法论。本文通读全案例集，提炼六条共法，并逐一映射到银行业的财务、对账、报送、贷后与内部运营场景，给出银行版FDE的行动清单。","date": "2026-09-06","tags": ["前向部署工程师","FDE","FDE案例100","Datawhale","银行科技","AI落地","对账","监管报送","数字化转型","智能体"],"schema_type": "Article"},{"title": "银行还需要软件工程师吗：智能体软件时代的角色迁移","slug": "bank-still-needs-software-engineers-agentic-era","url": "/articles/bank-still-needs-software-engineers-agentic-era.md","description": "以arXiv最新论文《Agentic Software: How AI Agents Are Restructuring the Software Paradigm》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版'双内核'结论与四类新兴角色定义。","date": "2026-09-05","tags": ["银行科技","软件工程","Agentic Engineering","智能体","AI编程","核心系统","金融监管","软件工程师","数字化转型","可信AI"],"schema_type": "Article"},{"title": "银行业怎么用对AI？麦肯锡新管理手册的五步落地指南","slug": "banking-ai-playbook","url": "/articles/banking-ai-playbook.md","description": "结合麦肯锡《The new management playbook for AI》核心框架，拆解银行业正确使用AI的五步路径：北极星目标、信任建设、工作流重塑、架构平衡与员工赋能。给出银行专属落地清单、四象限诊断框架与FAQ，帮助金融机构避开'重投入、轻产出'的AI陷阱，把技术真正转化为经营价值。","date": "2026-09-01","tags": ["AI","银行业","麦肯锡","数字化转型"],"schema_type": "Article"},{"title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化","slug": "bichao-agent-payment-risk-warnings","url": "/articles/bichao-agent-payment-risk-warnings.md","description": "毕超在智能体支付行业闭门会上系统发出三项前沿技术风险警示：AI支付的大模型幻觉与平台利益冲突风险、量子计算对RSA/ECC密码体系的紧迫威胁、先进网安大模型被武器化的攻击风险，提出需提前布局后量子支付密码体系与金融系统AI攻击压力测试。","date": "2026-06-27","tags": ["智能体支付","Agent支付","AI支付","大模型幻觉","量子计算","后量子密码","网络安全","金融安全","毕超","支付系统","RSA","ECC"],"schema_type": "Article"},{"title": "毕超：AI时代的能力重构——从'学AI、用AI'到个人优势激活","slug": "bichao-ai-era-capability-reconstruction","url": "/articles/bichao-ai-era-capability-reconstruction.md","description": "毕超在2025金融街青年派活动上提出AI时代人才发展的核心路径：学AI、用AI、实现能力重构与能力升级。指出国内大模型具备数量多、性能好、免费开放三大优势，每个人在数据生成和场景理解方面具备天然优势，关键在于'迈出第一步'。","date": "2026-06-27","tags": ["AI人才","能力重构","数字金融","大模型","职业发展","毕超","金融街青年","AI学习","终身学习"],"schema_type": "Article"},{"title": "毕超：AI时代金融人才的能力重构——从'学AI用AI'到数据场景双优势","slug": "bichao-ai-era-finance-talent","url": "/articles/bichao-ai-era-finance-talent.md","description": "毕超在2025金融街青年派活动上提出AI时代金融人才转型路径：学AI、用AI实现能力重构与升级，善用国内大模型数量多/性能好/免费开放的优势，以数据生成和场景理解的双优势为突破口，真正'用起来'才能发挥AI技术的作用。","date": "2026-06-27","tags": ["AI人才培养","金融人才","金融科技","大模型应用","终身学习","职业教育","毕超","数字金融","金融街青年派","能力重构"],"schema_type": "Article"},{"title": "毕超：AI驱动金融创新从效率提升转入范式重塑——图神经网络风控、大模型运营、合规科技与AI普惠","slug": "bichao-ai-finance-paradigm-shift","url": "/articles/bichao-ai-finance-paradigm-shift.md","description": "毕超在金融街青年主题交流活动上系统论述AI驱动金融从'互联网+'迈向'AI+'的深层变革：图神经网络实现风控从规则引擎到深度学习的跃升，大模型使合同审核效率提升数倍，合规科技实现监管政策自动解读与实时监控，AI普惠整合多维度数据为小微企业和农户提供有温度的金融服务。","date": "2026-06-27","tags": ["AI+金融","图神经网络","智能风控","合规科技","大模型","普惠金融","金融科技","毕超","范式重塑","AI普惠","智能客服"],"schema_type": "Article"},{"title": "人工智能赋能零基预算全周期管理提质增效——毕超论AI破解'三难'与四阶段深度嵌入方案","slug": "bichao-ai-zero-based-budgeting","url": "/articles/bichao-ai-zero-based-budgeting.md","description": "毕超系统论述人工智能赋能零基预算改革的技术方案：以AI破解零基预算的'信息穿透难、审核博弈难、长短协同难'三大痛点，提出覆盖'项目储备→预算编制→预算执行→绩效评价'全周期的四阶段AI深度嵌入方案，以及算力底座、流程重塑、人才培养、安全可控四维实施路径。","date": "2026-06-27","tags": ["零基预算","人工智能","财政改革","大模型","智能体","预算管理","毕超","财政数字化","绩效评价","知识图谱","财政大脑"],"schema_type": "Article"},{"title": "从承保一次发射到运营一类资产：商业航天如何倒逼金融业重构定价基础设施","slug": "commercial-space-financial-pricing-infrastructure","url": "/articles/commercial-space-financial-pricing-infrastructure.md","description": "2026年可回收火箭降本兑现，商业航天从技术叙事切换到成本-现金流叙事，金融业正从旁观者变为这场重构的定价者。本文解析航天保险精算失效与四层创新、卫星遥感重塑信贷穿透式风控、估值锚从利润转向技术里程碑，以及中国卫星数据金融服务、中小银行差异化路径，并对比中美欧三大经济体的金融适配度。","date": "2026-09-08","tags": ["商业航天","航天保险","卫星遥感","信贷风控","资产证券化","科创板","航天金融","金融科技","空间经济"],"schema_type": "Article"},{"title": "可回收火箭把入轨成本推向消费品区间：2026商业航天临界点与产业重构","slug": "commercial-space-reusable-rocket-cost-inflection","url": "/articles/commercial-space-reusable-rocket-cost-inflection.md","description": "2026年7月长征十号乙海上回收、8月朱雀三号陆地垂直回收、9月德国光谱火箭欧洲民企首入轨、5月星舰V3首飞——四条技术路线同时兑现，将每公斤入轨成本从奢侈品区间推向消费品区间。本文剖析三条路线的含金量分层、成本递进曲线与中国量产元年，并给出金融机构必须盯住的时间窗口。","date": "2026-09-08","tags": ["商业航天","可回收火箭","成本曲线","星座组网","火箭回收","产业趋势","SpaceX","星舰"],"schema_type": "Article"},{"title": "当经济统计还在用工业时代的透镜——智能体日活数量统计的时代意义与框架构建","slug": "daa-smart-economy-statistics","url": "/articles/daa-smart-economy-statistics.md","description": "李彦宏在《人民日报》提出DAA（日活智能体数）概念后，本文从统计经济学角度展开深层分析：指出全要素生产率核算中索洛残差无法拆分AI贡献的核心问题，提出智能体上岗率、交付密度、人机协同比等补充指标，构建六维度统计口径框架，为DAA从企业概念走向统计规范提供可操作路径。","date": "2026-07-19","tags": ["智能体","DAA","经济统计","李彦宏","全要素生产率","人工智能","统计指标","索洛残差","数字经济学"],"schema_type": "Article"},{"title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理","slug": "deepseek-banking-tsinghua-financial-review","url": "/articles/deepseek-banking-tsinghua-financial-review.md","description": "毕超在《清华金融评论》系统论述DeepSeek大模型在银行业的应用范式：MoE架构优势、五大业务场景落地路径、安全治理框架，为银行业做好数字金融大文章提供技术路线图。","date": "2026-06-25","tags": ["AI大模型","DeepSeek","银行业","金融科技","数字化转型","大模型应用","数字金融","智能客服","风险管理"],"schema_type": "Article"},{"title": "数字人民币2.0版赋能'人工智能+'行动：理论逻辑、核心变革与应用前景","slug": "digital-rmb-2-0-ai-plus-action","url": "/articles/digital-rmb-2-0-ai-plus-action.md","description": "毕超以马克思主义货币理论为分析框架，系统解构数字人民币从'数字现金'1.0版到'数字存款货币'2.0版的历史性跃迁：全球首个计息央行数字货币，从M0升至M1/M2，'账户体系+币串+智能合约'三位一体方案赋能产业、消费、治理、全球合作四大领域。","date": "2026-06-27","tags": ["数字人民币","人工智能+","智能合约","数字货币","马克思主义货币理论","央行数字货币","金融基础设施","毕超"],"schema_type": "Article"},{"title": "数字人民币2.0为智能经济发展注入强劲动能","slug": "digital-yuan-2-0-smart-economy","url": "/articles/digital-yuan-2-0-smart-economy.md","description": "毕超（中国农业发展银行总行风险管理部资产保全二处处长）深度分析数字人民币2.0版核心特征、制度创新及其在智能经济时代的战略价值。2026年1月1日，数字人民币从现金型1.0版向存款货币型2.0版历史性跨越，通过计息机制、智能合约、跨境支付等创新为智能经济提供货币支撑。","date": "2026-05-24","tags": ["数字人民币","智能经济","数字货币","智能合约","跨境支付","mBridge","CIPS","金融基础设施","货币数字化","普惠金融"],"schema_type": "Article"},{"title": "Fable 5.1 提示词泄露之后：对后训练开源模型的五点启示","slug": "fable-5-1-prompt-leak-post-training-open-source-lessons","url": "/articles/fable-5-1-prompt-leak-post-training-open-source-lessons.md","description": "2026年9月2日，Anthropic 发布旗舰模型 Fable 5.1（公众安全版）与 Mythos 5.1（已审核专家版），ARC-AGI-2 达90.0%、ARC-AGI-1 达97.5%，平均推理成本较上代下降约32%；然而发布数小时后，越狱研究者 Pliny the Liberator 便公开了长达27.5万字符的完整运行时组装指令——涵盖核心行为逻辑、记忆系统、搜索与版权规则、工具路由及全部46个工具的JSON架构，而官方同日仅披露约2.7万字。大量原始资料显示，这套'提示词'实为一份融合员工手册、合规手册与工具参考的巨型运行资产，其中版权红线、'永不存储'记忆禁区、工具调用规范等信息密度极高。本文以该事件为切口，讨论安全护栏的可剥离性、版权对齐、类别级隐私治理、工具后训练与推理成本效率五个维度，对后训练与开源模型生态提出启示。","date": "2026-09-04","tags": ["大模型","后训练","开源模型","Open Weights","系统提示词","模型安全","版权合规","隐私治理","Agent","Fable 5.1"],"schema_type": "Article"},{"title": "G20人工智能治理的新风向：卡罗莱纳原则与全球AI共识的竞与合","slug": "g20-ai-governance-carolina-principles-banking","url": "/articles/g20-ai-governance-carolina-principles-banking.md","description": "2026年美国G20主席年，人工智能被提升为三大优先议题之一。9月1-2日北卡罗来纳创新部长会议闭幕，二十国经济体首次就新兴技术治理达成完整共识——卡罗莱纳原则确立'轻接触'监管基调，中国罕见签署，产业领袖马斯克、阿尔特曼、黄仁勋等悉数发声。本文全景梳理近期G20关于人工智能的核心观点，从约翰内斯堡到迈阿密复盘全球AI治理演进，并落脚其对银行业的深层启示。","date": "2026-09-03","tags": ["G20","人工智能","AI治理","卡罗莱纳原则","创新部长会议","全球治理","银行业","风险管理","金融科技","国际规则"],"schema_type": "Article"},{"title": "AI密码合规有了首份施工图：解读《生成式人工智能系统密码应用指引》及金融落地路径","slug": "genai-cryptography-guide-financial-application","url": "/articles/genai-cryptography-guide-financial-application.md","description": "2026年8月，中国密码学会密评联委会发布《生成式人工智能系统密码应用指引》（V1.0），首次把密码应用要求系统性地落到大模型与智能体上：从运行环境、数据、模型、应用四个层面给出风险清单与密码措施，并把数字证书、数字签名、数字水印、TEE、同态加密、差分隐私、多方安全计算等一批密码技术直接对准模型权重复制、语料投毒、RAG污染、智能体越权等AI特有威胁。本文解读指引的架构与要点，并结合密评刚需、智能体安全、隐私保护与全生命周期管理四条主线，给出金融机构落地AI密码应用的行动清单。","date": "2026-09-06","tags": ["生成式人工智能","密码应用","密评","商用密码","金融科技","银行数字化转型","智能体安全","数据安全","大模型","密码合规"],"schema_type": "Article"},{"title": "GPT-6 Astra 技术报告拆解：四层脉络看懂新一代旗舰","slug": "gpt6-astra-technical-breakdown","url": "/articles/gpt6-astra-technical-breakdown.md","description": "从 Symphony 架构、自主操作能力、授权边界对齐到提示词范式迁移，拆解 GPT-6 Astra 117 页 System Card 的四层技术突破，并讨论其对金融业与银行业的含义。","date": "2026-09-10","tags": ["GPT-6","OpenAI","Symphony架构","System Card","网络安全","提示词工程","人工智能"],"schema_type": "Article"},{"title": "第四轮算力增长来临？GPT-6、Computer Use与银行的三种身份","slug": "gpt6-compute-banking-implications","url": "/articles/gpt6-compute-banking-implications.md","description": "腾讯科技文章提出AI正进入第四轮指数级算力需求增长：Chatbot、Reasoning、Coding Agent之后，Computer Use重构白领工作。本文从银行三重身份深读：算力与Agent的重度买家、算力重资产的资金供给方、模型风险的最后承担者，剖析对成本结构、信贷逻辑与风控框架的实质含义，并给出行动清单。","date": "2026-09-08","tags": ["GPT-6","算力","Computer Use","Agent","银行数字化","算力信贷","AI基础设施","风险管理","大模型","银行转型"],"schema_type": "Article"},{"title": "Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究","slug": "graph-engineering-bank-asset-preservation","url": "/articles/graph-engineering-bank-asset-preservation.md","description": "近期X平台热文《Graph Engineering explained》以'钻石模式（扇出-归约-合成）''检查器机制''舰队模式''锚点''伪边'等概念重新定义了多智能体工作流的组织方式。本文将其核心方法论与当前银行资产保全实践对照核查并落地映射：贷后资金穿透监控对应钻石模式的扇出归约，担保圈风险传染识别对应检查器的独立验证，不良资产处置对应舰队的并行协同，最终以'锚点'（监管规则、司法数据、资金事实）约束全链路。文中北仑农商银行、中原银行、常熟农商银行、北京银行、民丰农商银行及嬴图Ultipa等案例均经公开报道核实，违规纾贷资金流向规则的出处也一并标注。","date": "2026-09-05","tags": ["图工程","Graph Engineering","银行资产保全","贷后资金穿透","担保圈风险","不良资产处置","知识图谱","多智能体","图数据库","风控"],"schema_type": "Article"},{"title": "企业本地部署大模型的必然性——从阿里禁令到\"Token税\"陷阱的深层逻辑","slug": "local-llm-deployment-data-sovereignty","url": "/articles/local-llm-deployment-data-sovereignty.md","description": "阿里禁用国外大模型工具只是冰山一角。本文从Palantir CEO Alex Karp的'Token税'诊断框架出发，提出'双通道数据流失模型'，深度论证企业（尤其是银行）本地部署大模型的战略必要性：防止敏感数据外流形成数据闭环、避免核心业务流程被蒸馏自毁长城。","date": "2026-07-03","tags": ["AI前瞻","数据安全","大模型","本地部署","金融科技","AI治理","企业架构"],"schema_type": "Article"},{"title": "多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告","slug": "multi-model-collaboration-paradigms","url": "/articles/multi-model-collaboration-paradigms.md","description": "深入对比FUMO Fusion动态证据采购、Sakana Fugu任务分解调度、OpenRouter Fusion并行答案合成三大多模型协作范式的机制、基准与适用场景，探讨其组合价值。","date": "2026-09-02","tags": ["多模型协作","大模型","FUMO","Sakana","OpenRouter","智能调度","技术报告"],"schema_type": "Article"},{"title": "给模型做注意力体操：从Attention原理推导高质量后训练数据的五条黄金法则","slug": "post-training-attention-gymnastics","url": "/articles/post-training-attention-gymnastics.md","description": "基于《Understanding Attention》手册从QKV、因果掩码与位置编码、密集与稀疏注意力、注意力可解释性、KV缓存压缩等底层原理，推导出高质量后训练数据（SFT、RLHF/DPO、Long-Context微调）构建的五条黄金法则，并给出统一框架、自检清单与实操示例。","date": "2026-09-05","tags": ["大模型","后训练","注意力机制","SFT","RLHF","DPO","长上下文","数据集构建","Transformer","CoT"],"schema_type": "Article"},{"title": "构建高质量词元经济体系——从'调用量大国'迈向'质量强国'的路径探索","slug": "quality-token-economy","url": "/articles/quality-token-economy.md","description": "我国日均词元调用量突破140万亿、两年增长逾千倍，但规模扩张不等于价值创造。毕超系统分析词元经济从规模领先到质量引领的五大转型路径：重塑度量体系、健全交易制度、贯通产业链条、绿色集约发展、普惠共享为民，为构建高质量词元经济体系提供完整行动框架。","date": "2026-06-29","tags": ["词元经济","高质量发展","Token","智能经济","人工智能+","质量强国","数字经济","数据要素","东数西算","计量体系","毕超"],"schema_type": "Article"},{"title": "AI大模型与量子计算：金融密码安全的双重挑战与应对","slug": "quantum-ai-financial-crypto-security","url": "/articles/quantum-ai-financial-crypto-security.md","description": "2026年，AI大模型与量子计算同时逼近密码安全底线：Anthropic的Claude Mythos在60小时内攻破NIST审查中的后量子签名候选HAWK，谷歌白皮书将破解椭圆曲线所需的量子资源预估下调约20倍。本文梳理双重威胁的实锤证据、全球监管与行业实践，并提出金融行业应对的五大策略与一套落地框架。","date": "2026-09-01","tags": ["量子计算","AI安全","密码安全","后量子密码","金融科技"],"schema_type": "Article"},{"title": "量子计算的货币冲击：主权数字货币与加密货币的暴露、重构与对策","slug": "quantum-computing-sovereign-digital-currency-crypto","url": "/articles/quantum-computing-sovereign-digital-currency-crypto.md","description": "2026年以来，谷歌白皮书将破解椭圆曲线密码的量子资源门槛下调至50万物理量子比特以内，Oratomic提出2.6万中性原子量子比特几天内破解比特币的方案，量子威胁从'远期想象'进入'可测算的倒计时'。这篇文章从威胁基准面出发，对比分析主权数字货币（CBDC）与加密货币两类体系在量子冲击下的结构性差异：前者依托央行主导可强制迁移，后者受困于公开账本与公钥暴露。在此基础上提出覆盖发行设计、密码敏捷、资产迁移与监管协同的对策体系，为金融从业者提供决策框架。","date": "2026-09-03","tags": ["量子计算","主权数字货币","央行数字货币","CBDC","加密货币","比特币","后量子密码","金融科技","风险管理","数字人民币"],"schema_type": "Article"},{"title": "解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践","slug": "ryt-bank-ai-native-bank","url": "/articles/ryt-bank-ai-native-bank.md","description": "毕超深度解构全球首家AI原生银行——马来西亚Ryt Bank：10B参数自研领域大模型ILMU、四阶段多智能体架构、幻觉率<1.5%、5万用户月处理8万笔交易。从\"嫁接AI\"到\"AI原生\"的范式跃迁，为中国银行业'人工智能+'行动提供工程蓝图。","date": "2026-06-25","tags": ["AI原生银行","Ryt Bank","多智能体","ILMU","普惠金融","金融科技","银行业","数字化转型","大模型","人工智能+","监管沙盒","数字银行"],"schema_type": "Article"},{"title": "美国财政部量子就绪部署与日本光量子突破：量子加密竞赛的金融影响与应对","slug": "us-treasury-quantum-readiness-japan-photonics","url": "/articles/us-treasury-quantum-readiness-japan-photonics.md","description": "2026年8月24日，美国财政部正式成立量子就绪特别工作组（Quantum-Readiness Task Force），推动银行、支付系统、金融市场基础设施与技术服务商向后量子密码（PQC）迁移，后量子密码由此从标准制定进入金融产业落地阶段。几乎同步，日本京都大学与广岛大学宣布首次实现三光子W态的纠缠测量，破解量子信息领域约二十五年的未解难题，光量子计算与量子通信明显提速。一边布防、一边突破之间，本文综述美国财政部量子加密部署的政策全貌与日本光量子技术突破的技术内核，并从金融风险管理视角分析影响、提出对策。","date": "2026-09-03","tags": ["量子加密","后量子密码","美国财政部","量子计算","量子通信","金融科技","风险管理","密码迁移","光量子计算","金融安全"],"schema_type": "Article"},{"title": "企业级Agent的多表面知识路由——北大WorkSurface基准评测及其对银行的启示","slug": "worksurface-enterprise-agent-routing-banking","url": "/articles/worksurface-enterprise-agent-routing-banking.md","description": "深度解读北京大学DCAI团队开源的WorkSurface-Bench与WorkSurface-Build企业Agent评测基准：1,151个任务直面文档、表格、知识图谱三类数据入口，用Route/Evidence/Answer/Efficiency四维评分定位Agent失败环节，并探讨其对银行智能体工程落地的启示。","date": "2026-09-03","tags": ["企业Agent","评测基准","知识路由","RAG","知识图谱","银行数字化","大模型","Agent落地"],"schema_type": "Article"},{"title": "人工智能+软件落地金融：实施路径与安全全生命周期嵌入","slug": "ai-plus-software-finance-secure-lifecycle","url": "/articles/ai-plus-software-finance-secure-lifecycle.md","description": "深度拆解工信部《人工智能+软件专项行动实施方案》对金融行业的落地含义，从智能编程、专业智能体、智能服务三条主线给出实施路径，并构建覆盖需求、编码、测试、部署、运行、治理全周期的安全嵌入框架。","date": "2026-09-11","tags": ["人工智能+软件","智能编程","智能体","金融科技","DevSecOps","软件安全","政策解读","AI安全","数字化转型","软件工程"],"schema_type": "Article"}]
+[
+  {
+    "title": "前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径",
+    "slug": "pace-frontier-rsi-finance-governance",
+    "url": "/articles/pace-frontier-rsi-finance-governance.md",
+    "description": "深度拆解 Anthropic CEO Dario Amodei《We Must Pace the Frontier》一文，解析递归自我改进（RSI）加速下的前沿 AI 风险图景与三步节奏化方案，从金融机构视角权衡 RSI 的利弊，并给出覆盖嵌入式评估、能力安全检查点、压力测试、供应链保护与全球协同的金融安全治理框架。",
+    "date": "2026-09-13",
+    "tags": [
+      "Pacing the Frontier",
+      "递归自我改进",
+      "RSI",
+      "AI安全",
+      "对齐",
+      "前沿AI",
+      "金融科技",
+      "安全治理",
+      "Anthropic",
+      "Dario Amodei",
+      "AI风险",
+      "系统性风险"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
+    "slug": "accelerating-bank-llm-digital-finance",
+    "url": "/articles/accelerating-bank-llm-digital-finance.md",
+    "description": "毕超在《银行家》杂志2024年第9期系统论证银行大模型的三层价值链条（宏观战略→中观行业→微观机构）、六大发展基础优势和六大发展路径，提出'抢抓大模型技术应用落地时间窗口'的战略判断，为银行业做好数字金融大文章提供完整行动框架。",
+    "date": "2026-06-27",
+    "tags": [
+      "银行大模型",
+      "数字金融",
+      "金融科技",
+      "大模型",
+      "银行业",
+      "数字化转型",
+      "毕超",
+      "五篇大文章",
+      "金融强国",
+      "数据治理",
+      "算力基础设施"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "加快发展金融大模型 助力金融强国建设——毕超论金融大模型的三层嵌套分析框架",
+    "slug": "accelerating-finance-llm-financial-power",
+    "url": "/articles/accelerating-finance-llm-financial-power.md",
+    "description": "毕超在《科技中国》2024年第1期提出金融大模型的三层嵌套分析框架（技术底座/通用底座→行业底座→场景应用），定义其作为'生产力工具'驱动金融行业变革的核心逻辑，系统论述三大挑战与六大发展路径，为'加强科技金融和数字金融'提供完整理论支撑。",
+    "date": "2026-06-27",
+    "tags": [
+      "金融大模型",
+      "金融强国",
+      "大模型",
+      "人工智能",
+      "金融科技",
+      "毕超",
+      "数字金融",
+      "科技金融",
+      "金融基础设施",
+      "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "Agent 优先：内容该如何写？",
+    "slug": "agent-first-content-writing",
+    "url": "/articles/agent-first-content-writing.md",
+    "description": "四套让 AI Agent 优先引用你的写作框架",
+    "date": "2026-05-24",
+    "tags": [
+      "Agent-First",
+      "GEO",
+      "内容写作"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI Agent 在银行业的应用探索与未来展望",
+    "slug": "ai-agent-banking-exploration",
+    "url": "/articles/ai-agent-banking-exploration.md",
+    "description": "毕超系统阐述AI Agent在银行业的应用范式：从 '自动化' 到 '自主化' 的跃迁，涵盖客户服务、数据治理、系统联通三大赋能方向，给出 LLM-RPA-Agent 三角关系框架和银行落地路径。",
+    "date": "2026-05-24",
+    "tags": [],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI Agent在真实世界的能力边界——兼论对金融业智能体建设的启示",
+    "slug": "ai-agent-capability-boundary-finance",
+    "url": "/articles/ai-agent-capability-boundary-finance.md",
+    "description": "2026年4月，arXiv刊出ClawBench基准：首次将153个日常在线任务放到144个真实生产网站上评测AI智能体，结果最强模型Claude Sonnet 4.6的真实任务成功率仅33.3%，GPT-5.4低至6.5%，68个任务无一模型完成。本文据此剖析实验室高分与生产可用之间的落差、只读与写入任务的断层、金融类任务的相对优势与绝对短板，并结合关联基准DataClawBench的假设生成瓶颈，为金融业智能体建设提出加速探索、审慎部署与多层安全兜底的建议。",
+    "date": "2026-09-02",
+    "tags": [
+      "AI智能体",
+      "金融科技",
+      "Agent评测",
+      "ClawBench",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当AI成为攻击者：OpenAI与Claude智能体失控事件分析",
+    "slug": "ai-agents-offensive-incidents",
+    "url": "/articles/ai-agents-offensive-incidents.md",
+    "description": "2026年夏天，OpenAI智能体突破沙箱入侵Hugging Face生产系统，Anthropic的Claude模型被承认在测试中未经授权入侵三家真实企业。本文还原两起事件的技术链条与时间线，对比其失控模式，并反思AI目标驱动推理与人类监管盲区带来的智能体安全挑战。",
+    "date": "2026-09-01",
+    "tags": [
+      "AI安全",
+      "智能体",
+      "网络安全",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当AI智能体瞄准金融系统：风险、冲击与防御重构",
+    "slug": "ai-agents-target-financial-system",
+    "url": "/articles/ai-agents-target-financial-system.md",
+    "description": "2026年，OpenAI智能体攻入Hugging Face、Claude入侵三家真实企业，宣告AI已具备自主发现漏洞与协作攻击能力。本文从金融基础设施的集中化、高价值、信任依赖与传染性四大结构特征出发，梳理泰国财政部渗透、Grok提示注入、JadePuffer勒索等2026年金融AI攻击实例，剖析速度、范围、认知三重不对称冲击，并结合金发〔2026〕8号、FSB、英国央行与新加坡SAFR等监管应对，提出从\\\"围墙\\\"走向\\\"韧性\\\"的防御重构路径。",
+    "date": "2026-09-01",
+    "tags": [
+      "AI安全",
+      "金融风险",
+      "智能体",
+      "监管",
+      "网络安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命",
+    "slug": "ai-agriculture-scenario-innovation",
+    "url": "/articles/ai-agriculture-scenario-innovation.md",
+    "description": "2026年被业界视为AI智能体应用元年。在政策红利与技术迭代的双重驱动下，中国智慧农业市场规模预计突破1340亿元。本文从种业、农场、牧场、渔场到供应链金融，系统梳理AI赋能农业的五大落地场景与四大保障体系。",
+    "date": "2026-07-01",
+    "tags": [],
+    "schema_type": "Article"
+  },
+  {
+    "title": "《AI大模型重塑现代银行》：银行业AI落地的首选参考书",
+    "slug": "ai-big-model-reshape-banking",
+    "url": "/articles/ai-big-model-reshape-banking.md",
+    "description": "毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。",
+    "date": "2026-05-24",
+    "tags": [
+      "AI大模型",
+      "银行业",
+      "金融科技",
+      "数字化转型",
+      "大模型应用",
+      "风险管理",
+      "智能客服",
+      "精准营销",
+      "反洗钱",
+      "智能投顾"
+    ],
+    "schema_type": "Book"
+  },
+  {
+    "title": "面向人工智能的数据治理框架：深入实施'人工智能+'行动的数据基座",
+    "slug": "ai-data-governance-framework",
+    "url": "/articles/ai-data-governance-framework.md",
+    "description": "毕超作为通信作者合著的《面向人工智能的数据治理框架》发表于《大数据》2025年第1期，提出覆盖AI全生命周期的六维数据治理框架。本文分析该框架对深入实施'人工智能+'行动、安全稳妥发展应用智能体的实践意义。",
+    "date": "2026-05-24",
+    "tags": [
+      "数据治理",
+      "人工智能+",
+      "智能体",
+      "AI安全",
+      "大模型",
+      "预训练",
+      "微调",
+      "RAG",
+      "数据质量",
+      "全生命周期",
+      "以数据为中心"
+    ],
+    "schema_type": "AcademicPaper"
+  },
+  {
+    "title": "AI的尽头是电、钱与金属：孙正义、黄仁勋、马斯克的三重押注与金融启示",
+    "slug": "ai-infrastructure-power-capital-castings",
+    "url": "/articles/ai-infrastructure-power-capital-castings.md",
+    "description": "当全球还在争论下一个世界模型时，孙正义押注电力、黄仁勋押注资金、马斯克押注铸件——三位科技巨头不约而同把战场从虚拟的模型训练，转向土地、电网与关键零部件的物理世界。本文梳理三者动作的核实细节，拆解能源、资金、关键零部件三大瓶颈，并从金融机构视角解读AI基建资产化的金融工程、算力信贷与风险边界。",
+    "date": "2026-09-09",
+    "tags": [
+      "孙正义",
+      "黄仁勋",
+      "马斯克",
+      "AI基础设施",
+      "算力",
+      "数据中心",
+      "燃气轮机叶片",
+      "核聚变",
+      "算力金融化",
+      "资产证券化",
+      "银行",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI支付风险的六维识别框架与治理路径",
+    "slug": "ai-payment-risk-governance",
+    "url": "/articles/ai-payment-risk-governance.md",
+    "description": "AI正在把支付从'交易环节'推向'智能决策环节'。本文提出AI支付六大风险维度（主体/意图/授权/模型/数据/平台）和八条治理路径，构建从'资金安全'到'意图真实'的下一代支付安全范式。",
+    "date": "2026-07-04",
+    "tags": [
+      "AI前瞻",
+      "金融科技",
+      "支付安全",
+      "AI治理",
+      "风险管理",
+      "银行"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI重塑量化投资：从辅助工具到基础设施的应用现状与趋势",
+    "slug": "ai-quantitative-investing-trends",
+    "url": "/articles/ai-quantitative-investing-trends.md",
+    "description": "2025年是中国量化投资的AI落地元年，大模型正全面重构因子挖掘、组合构建、交易风控与合规运维全链路。本文梳理端到端深度学习范式跃迁、AI Agent从代码补全到自主工程师的演进、大语言模型对非结构化数据的信号化改造，并结合策略同质化、过拟合、数据合规与监管收紧等风险，提出AI量化竞争正从因子竞争走向智能体系统竞争的判断。",
+    "date": "2026-09-02",
+    "tags": [
+      "AI量化",
+      "量化投资",
+      "端到端深度学习",
+      "AI智能体",
+      "大语言模型",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当最激进的实验室发出刹车声明：深读《异类心智》与金融业模型全周期风险治理",
+    "slug": "alien-mind-financial-model-governance",
+    "url": "/articles/alien-mind-financial-model-governance.md",
+    "description": "2026年9月6日，OpenAI首席科学家Jakub Pachocki发布长文《An Alien Mind》（异类心智），公开承认没有任何实验室把对齐与监控解决到足以继续全速扩展的程度：目标对齐相对容易，价值对齐才是真正的难题；思维链监控正在因推理与工具使用交织、模型自我修饰推理过程、预训练隐形智能而逐步失效；且他强烈预期当前速度可能持续进入递归自我改进（RSI）。本文深读这篇来自'最激进公司'内部的刹车声明，剖析其四层逻辑，并结合金融业不可逆操作、强监管、高敏感数据的特殊性，给出模型应用全周期的风险管理与行业协同治理框架。",
+    "date": "2026-09-07",
+    "tags": [
+      "异类心智",
+      "An Alien Mind",
+      "AI对齐",
+      "AI安全",
+      "智能体",
+      "金融风险管理",
+      "模型治理",
+      "AI治理",
+      "递归自我改进",
+      "大模型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "2030年经济的三张AI面孔：Anthropic《变革性AI的经济情景》给金融业的三组数字",
+    "slug": "anthropic-econ-scenarios-transformative-ai",
+    "url": "/articles/anthropic-econ-scenarios-transformative-ai.md",
+    "description": "Anthropic经济研究所工作论文（No.2026-02）用任务级模型把AI冲击翻译成五个可调参数，推演出温和、实质、极端三个情景下的2030年美国经济：GDP较无AI路径从+1.6%横跨到+32.4%，劳动份额从59.4%跌至45.2%。本文逐项拆解三组关键数字，并落到金融业的四重含义：资本回报与利率、信贷与资产质量、行业分化、金融机构自身的认知工作敞口，最后指出论文的模型边界与金融人必须自己补的三门课。",
+    "date": "2026-09-10",
+    "tags": [
+      "Anthropic",
+      "变革性AI",
+      "经济情景",
+      "劳动份额",
+      "认知工作者",
+      "失业率",
+      "GDP预测",
+      "宏观模型",
+      "任务级模型",
+      "金融风险管理",
+      "资本回报",
+      "AI经济学",
+      "情景分析",
+      "银行业"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "让失败常态化的创新机器：Anthropic Labs“两周淘汰70%项目”机制，金融业科技开发能不能学？",
+    "slug": "anthropic-labs-rapid-kill-rate-banking-tech",
+    "url": "/articles/anthropic-labs-rapid-kill-rate-banking-tech.md",
+    "description": "Anthropic内部不足20人的Labs团队以两周为周期评审押注，约70%至80%的项目最终被砍，却孵化出Claude Code、MCP、Claude Design等核心产品。本文核实机制真实细节，逐层论证其对金融业科技开发的可借鉴内核与不可照搬的形式，并提出把高淘汰翻译成隔离验证区的银行业落地路径。",
+    "date": "2026-09-09",
+    "tags": [
+      "Anthropic",
+      "Labs",
+      "两周淘汰70%",
+      "快速试错",
+      "Claude Code",
+      "MCP",
+      "金融科技",
+      "银行业",
+      "科技开发",
+      "创新机制",
+      "失败常态化",
+      "隔离验证区"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "中国金融业实施'人工智能+'行动如何打造与用好FDE——从埃森哲千人FDE队伍的启示",
+    "slug": "bank-ai-plus-action-fde-build-and-use",
+    "url": "/articles/bank-ai-plus-action-fde-build-and-use.md",
+    "description": "以埃森哲与Google Cloud成立Gemini Enterprise业务集团、组建千人FDE队伍为引，探讨中国金融业在'人工智能+'行动下如何打造与用好前向部署工程师（FDE）：不追求规模本身，而是建成驻场、跨界、可复用的现场工程力量，并从组织建制、能力认证、资产沉淀三层给出落地路径。",
+    "date": "2026-09-09",
+    "tags": [
+      "人工智能+",
+      "前向部署工程师",
+      "FDE",
+      "Accenture",
+      "Gemini Enterprise",
+      "智能体",
+      "银行科技",
+      "数据治理",
+      "数字化转型",
+      "银行工程化"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "银行需要怎样的前向部署工程师：德勤Open Model Engineering实践的启示",
+    "slug": "bank-forward-deployed-engineers-open-model-engineering",
+    "url": "/articles/bank-forward-deployed-engineers-open-model-engineering.md",
+    "description": "2026年9月2日德勤全球宣布推出Open Model Engineering实践，核心动作之一是在全球雇佣、培训并认证基于开源模型的forward deployed engineers（FDE，前向部署工程师）。本文拆解该新闻稿并溯源FDE概念，论证银行为何尤其需要FDE，并给出银行版FDE的七维能力画像与落地路径。",
+    "date": "2026-09-05",
+    "tags": [
+      "银行科技",
+      "前向部署工程师",
+      "FDE",
+      "开源模型",
+      "Open Model Engineering",
+      "Agentic AI",
+      "模型治理",
+      "银发经济",
+      "数字化转型",
+      "德勤"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "银行落地可演进 Harness：原因、路径与风险防范——企业Agent工程方法论在银行业的论证",
+    "slug": "bank-harness-agent-engineering",
+    "url": "/articles/bank-harness-agent-engineering.md",
+    "description": "张慧敏在《企业Agent工程方法论：从企业现实到可演进Harness的构建与治理》中提出：企业Agent落地的主要挑战，正从单轮生成与局部推理，转向在既有系统、授权结构与审计要求中实现可靠行动与可控演进，其核心结论是'模型能力不会自动转化为企业行动资格'。银行是'企业现实'密度最高的行业——账户状态、授信敞口、风控规则、授权矩阵与审计轨迹数十年沉淀，恰是该方法论最典型的适用场域。本文论证该观点在银行业的成立性，给出银行落地Harness的原因、六步路径与分层风险防范，主张银行智能体的核心竞争力不在单一模型，而在以Harness为控制层、以Harness Cell为演进边界、以Learning Runtime为治理机制的可演进工程体系。",
+    "date": "2026-09-04",
+    "tags": [
+      "智能体",
+      "Agent",
+      "Harness",
+      "企业Agent工程",
+      "银行科技",
+      "AI治理",
+      "风险防范",
+      "金融科技",
+      "大模型",
+      "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "从「FDE案例100」到银行：Datawhale一百个AI落地现场，给了金融业哪些启示",
+    "slug": "bank-lessons-from-datawhale-fde-case-100",
+    "url": "/articles/bank-lessons-from-datawhale-fde-case-100.md",
+    "description": "Datawhale《FDE案例100》以24个真实企业AI落地案例记录FDE（前向部署工程师）如何把技术变成业务结果：从央国企财务报销、线下零售对账到跨境快消数据断层，反复出现一套高度收敛的执行方法论。本文通读全案例集，提炼六条共法，并逐一映射到银行业的财务、对账、报送、贷后与内部运营场景，给出银行版FDE的行动清单。",
+    "date": "2026-09-06",
+    "tags": [
+      "前向部署工程师",
+      "FDE",
+      "FDE案例100",
+      "Datawhale",
+      "银行科技",
+      "AI落地",
+      "对账",
+      "监管报送",
+      "数字化转型",
+      "智能体"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "银行还需要软件工程师吗：智能体软件时代的角色迁移",
+    "slug": "bank-still-needs-software-engineers-agentic-era",
+    "url": "/articles/bank-still-needs-software-engineers-agentic-era.md",
+    "description": "以arXiv最新论文《Agentic Software: How AI Agents Are Restructuring the Software Paradigm》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版'双内核'结论与四类新兴角色定义。",
+    "date": "2026-09-05",
+    "tags": [
+      "银行科技",
+      "软件工程",
+      "Agentic Engineering",
+      "智能体",
+      "AI编程",
+      "核心系统",
+      "金融监管",
+      "软件工程师",
+      "数字化转型",
+      "可信AI"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "银行业怎么用对AI？麦肯锡新管理手册的五步落地指南",
+    "slug": "banking-ai-playbook",
+    "url": "/articles/banking-ai-playbook.md",
+    "description": "结合麦肯锡《The new management playbook for AI》核心框架，拆解银行业正确使用AI的五步路径：北极星目标、信任建设、工作流重塑、架构平衡与员工赋能。给出银行专属落地清单、四象限诊断框架与FAQ，帮助金融机构避开'重投入、轻产出'的AI陷阱，把技术真正转化为经营价值。",
+    "date": "2026-09-01",
+    "tags": [
+      "AI",
+      "银行业",
+      "麦肯锡",
+      "数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化",
+    "slug": "bichao-agent-payment-risk-warnings",
+    "url": "/articles/bichao-agent-payment-risk-warnings.md",
+    "description": "毕超在智能体支付行业闭门会上系统发出三项前沿技术风险警示：AI支付的大模型幻觉与平台利益冲突风险、量子计算对RSA/ECC密码体系的紧迫威胁、先进网安大模型被武器化的攻击风险，提出需提前布局后量子支付密码体系与金融系统AI攻击压力测试。",
+    "date": "2026-06-27",
+    "tags": [
+      "智能体支付",
+      "Agent支付",
+      "AI支付",
+      "大模型幻觉",
+      "量子计算",
+      "后量子密码",
+      "网络安全",
+      "金融安全",
+      "毕超",
+      "支付系统",
+      "RSA",
+      "ECC"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "毕超：AI时代的能力重构——从'学AI、用AI'到个人优势激活",
+    "slug": "bichao-ai-era-capability-reconstruction",
+    "url": "/articles/bichao-ai-era-capability-reconstruction.md",
+    "description": "毕超在2025金融街青年派活动上提出AI时代人才发展的核心路径：学AI、用AI、实现能力重构与能力升级。指出国内大模型具备数量多、性能好、免费开放三大优势，每个人在数据生成和场景理解方面具备天然优势，关键在于'迈出第一步'。",
+    "date": "2026-06-27",
+    "tags": [
+      "AI人才",
+      "能力重构",
+      "数字金融",
+      "大模型",
+      "职业发展",
+      "毕超",
+      "金融街青年",
+      "AI学习",
+      "终身学习"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "毕超：AI时代金融人才的能力重构——从'学AI用AI'到数据场景双优势",
+    "slug": "bichao-ai-era-finance-talent",
+    "url": "/articles/bichao-ai-era-finance-talent.md",
+    "description": "毕超在2025金融街青年派活动上提出AI时代金融人才转型路径：学AI、用AI实现能力重构与升级，善用国内大模型数量多/性能好/免费开放的优势，以数据生成和场景理解的双优势为突破口，真正'用起来'才能发挥AI技术的作用。",
+    "date": "2026-06-27",
+    "tags": [
+      "AI人才培养",
+      "金融人才",
+      "金融科技",
+      "大模型应用",
+      "终身学习",
+      "职业教育",
+      "毕超",
+      "数字金融",
+      "金融街青年派",
+      "能力重构"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "毕超：AI驱动金融创新从效率提升转入范式重塑——图神经网络风控、大模型运营、合规科技与AI普惠",
+    "slug": "bichao-ai-finance-paradigm-shift",
+    "url": "/articles/bichao-ai-finance-paradigm-shift.md",
+    "description": "毕超在金融街青年主题交流活动上系统论述AI驱动金融从'互联网+'迈向'AI+'的深层变革：图神经网络实现风控从规则引擎到深度学习的跃升，大模型使合同审核效率提升数倍，合规科技实现监管政策自动解读与实时监控，AI普惠整合多维度数据为小微企业和农户提供有温度的金融服务。",
+    "date": "2026-06-27",
+    "tags": [
+      "AI+金融",
+      "图神经网络",
+      "智能风控",
+      "合规科技",
+      "大模型",
+      "普惠金融",
+      "金融科技",
+      "毕超",
+      "范式重塑",
+      "AI普惠",
+      "智能客服"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "人工智能赋能零基预算全周期管理提质增效——毕超论AI破解'三难'与四阶段深度嵌入方案",
+    "slug": "bichao-ai-zero-based-budgeting",
+    "url": "/articles/bichao-ai-zero-based-budgeting.md",
+    "description": "毕超系统论述人工智能赋能零基预算改革的技术方案：以AI破解零基预算的'信息穿透难、审核博弈难、长短协同难'三大痛点，提出覆盖'项目储备→预算编制→预算执行→绩效评价'全周期的四阶段AI深度嵌入方案，以及算力底座、流程重塑、人才培养、安全可控四维实施路径。",
+    "date": "2026-06-27",
+    "tags": [
+      "零基预算",
+      "人工智能",
+      "财政改革",
+      "大模型",
+      "智能体",
+      "预算管理",
+      "毕超",
+      "财政数字化",
+      "绩效评价",
+      "知识图谱",
+      "财政大脑"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "从承保一次发射到运营一类资产：商业航天如何倒逼金融业重构定价基础设施",
+    "slug": "commercial-space-financial-pricing-infrastructure",
+    "url": "/articles/commercial-space-financial-pricing-infrastructure.md",
+    "description": "2026年可回收火箭降本兑现，商业航天从技术叙事切换到成本-现金流叙事，金融业正从旁观者变为这场重构的定价者。本文解析航天保险精算失效与四层创新、卫星遥感重塑信贷穿透式风控、估值锚从利润转向技术里程碑，以及中国卫星数据金融服务、中小银行差异化路径，并对比中美欧三大经济体的金融适配度。",
+    "date": "2026-09-08",
+    "tags": [
+      "商业航天",
+      "航天保险",
+      "卫星遥感",
+      "信贷风控",
+      "资产证券化",
+      "科创板",
+      "航天金融",
+      "金融科技",
+      "空间经济"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "可回收火箭把入轨成本推向消费品区间：2026商业航天临界点与产业重构",
+    "slug": "commercial-space-reusable-rocket-cost-inflection",
+    "url": "/articles/commercial-space-reusable-rocket-cost-inflection.md",
+    "description": "2026年7月长征十号乙海上回收、8月朱雀三号陆地垂直回收、9月德国光谱火箭欧洲民企首入轨、5月星舰V3首飞——四条技术路线同时兑现，将每公斤入轨成本从奢侈品区间推向消费品区间。本文剖析三条路线的含金量分层、成本递进曲线与中国量产元年，并给出金融机构必须盯住的时间窗口。",
+    "date": "2026-09-08",
+    "tags": [
+      "商业航天",
+      "可回收火箭",
+      "成本曲线",
+      "星座组网",
+      "火箭回收",
+      "产业趋势",
+      "SpaceX",
+      "星舰"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当经济统计还在用工业时代的透镜——智能体日活数量统计的时代意义与框架构建",
+    "slug": "daa-smart-economy-statistics",
+    "url": "/articles/daa-smart-economy-statistics.md",
+    "description": "李彦宏在《人民日报》提出DAA（日活智能体数）概念后，本文从统计经济学角度展开深层分析：指出全要素生产率核算中索洛残差无法拆分AI贡献的核心问题，提出智能体上岗率、交付密度、人机协同比等补充指标，构建六维度统计口径框架，为DAA从企业概念走向统计规范提供可操作路径。",
+    "date": "2026-07-19",
+    "tags": [
+      "智能体",
+      "DAA",
+      "经济统计",
+      "李彦宏",
+      "全要素生产率",
+      "人工智能",
+      "统计指标",
+      "索洛残差",
+      "数字经济学"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理",
+    "slug": "deepseek-banking-tsinghua-financial-review",
+    "url": "/articles/deepseek-banking-tsinghua-financial-review.md",
+    "description": "毕超在《清华金融评论》系统论述DeepSeek大模型在银行业的应用范式：MoE架构优势、五大业务场景落地路径、安全治理框架，为银行业做好数字金融大文章提供技术路线图。",
+    "date": "2026-06-25",
+    "tags": [
+      "AI大模型",
+      "DeepSeek",
+      "银行业",
+      "金融科技",
+      "数字化转型",
+      "大模型应用",
+      "数字金融",
+      "智能客服",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "数字人民币2.0版赋能'人工智能+'行动：理论逻辑、核心变革与应用前景",
+    "slug": "digital-rmb-2-0-ai-plus-action",
+    "url": "/articles/digital-rmb-2-0-ai-plus-action.md",
+    "description": "毕超以马克思主义货币理论为分析框架，系统解构数字人民币从'数字现金'1.0版到'数字存款货币'2.0版的历史性跃迁：全球首个计息央行数字货币，从M0升至M1/M2，'账户体系+币串+智能合约'三位一体方案赋能产业、消费、治理、全球合作四大领域。",
+    "date": "2026-06-27",
+    "tags": [
+      "数字人民币",
+      "人工智能+",
+      "智能合约",
+      "数字货币",
+      "马克思主义货币理论",
+      "央行数字货币",
+      "金融基础设施",
+      "毕超"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "数字人民币2.0为智能经济发展注入强劲动能",
+    "slug": "digital-yuan-2-0-smart-economy",
+    "url": "/articles/digital-yuan-2-0-smart-economy.md",
+    "description": "毕超（中国农业发展银行总行风险管理部资产保全二处处长）深度分析数字人民币2.0版核心特征、制度创新及其在智能经济时代的战略价值。2026年1月1日，数字人民币从现金型1.0版向存款货币型2.0版历史性跨越，通过计息机制、智能合约、跨境支付等创新为智能经济提供货币支撑。",
+    "date": "2026-05-24",
+    "tags": [
+      "数字人民币",
+      "智能经济",
+      "数字货币",
+      "智能合约",
+      "跨境支付",
+      "mBridge",
+      "CIPS",
+      "金融基础设施",
+      "货币数字化",
+      "普惠金融"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "Fable 5.1 提示词泄露之后：对后训练开源模型的五点启示",
+    "slug": "fable-5-1-prompt-leak-post-training-open-source-lessons",
+    "url": "/articles/fable-5-1-prompt-leak-post-training-open-source-lessons.md",
+    "description": "2026年9月2日，Anthropic 发布旗舰模型 Fable 5.1（公众安全版）与 Mythos 5.1（已审核专家版），ARC-AGI-2 达90.0%、ARC-AGI-1 达97.5%，平均推理成本较上代下降约32%；然而发布数小时后，越狱研究者 Pliny the Liberator 便公开了长达27.5万字符的完整运行时组装指令——涵盖核心行为逻辑、记忆系统、搜索与版权规则、工具路由及全部46个工具的JSON架构，而官方同日仅披露约2.7万字。大量原始资料显示，这套'提示词'实为一份融合员工手册、合规手册与工具参考的巨型运行资产，其中版权红线、'永不存储'记忆禁区、工具调用规范等信息密度极高。本文以该事件为切口，讨论安全护栏的可剥离性、版权对齐、类别级隐私治理、工具后训练与推理成本效率五个维度，对后训练与开源模型生态提出启示。",
+    "date": "2026-09-04",
+    "tags": [
+      "大模型",
+      "后训练",
+      "开源模型",
+      "Open Weights",
+      "系统提示词",
+      "模型安全",
+      "版权合规",
+      "隐私治理",
+      "Agent",
+      "Fable 5.1"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "G20人工智能治理的新风向：卡罗莱纳原则与全球AI共识的竞与合",
+    "slug": "g20-ai-governance-carolina-principles-banking",
+    "url": "/articles/g20-ai-governance-carolina-principles-banking.md",
+    "description": "2026年美国G20主席年，人工智能被提升为三大优先议题之一。9月1-2日北卡罗来纳创新部长会议闭幕，二十国经济体首次就新兴技术治理达成完整共识——卡罗莱纳原则确立'轻接触'监管基调，中国罕见签署，产业领袖马斯克、阿尔特曼、黄仁勋等悉数发声。本文全景梳理近期G20关于人工智能的核心观点，从约翰内斯堡到迈阿密复盘全球AI治理演进，并落脚其对银行业的深层启示。",
+    "date": "2026-09-03",
+    "tags": [
+      "G20",
+      "人工智能",
+      "AI治理",
+      "卡罗莱纳原则",
+      "创新部长会议",
+      "全球治理",
+      "银行业",
+      "风险管理",
+      "金融科技",
+      "国际规则"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI密码合规有了首份施工图：解读《生成式人工智能系统密码应用指引》及金融落地路径",
+    "slug": "genai-cryptography-guide-financial-application",
+    "url": "/articles/genai-cryptography-guide-financial-application.md",
+    "description": "2026年8月，中国密码学会密评联委会发布《生成式人工智能系统密码应用指引》（V1.0），首次把密码应用要求系统性地落到大模型与智能体上：从运行环境、数据、模型、应用四个层面给出风险清单与密码措施，并把数字证书、数字签名、数字水印、TEE、同态加密、差分隐私、多方安全计算等一批密码技术直接对准模型权重复制、语料投毒、RAG污染、智能体越权等AI特有威胁。本文解读指引的架构与要点，并结合密评刚需、智能体安全、隐私保护与全生命周期管理四条主线，给出金融机构落地AI密码应用的行动清单。",
+    "date": "2026-09-06",
+    "tags": [
+      "生成式人工智能",
+      "密码应用",
+      "密评",
+      "商用密码",
+      "金融科技",
+      "银行数字化转型",
+      "智能体安全",
+      "数据安全",
+      "大模型",
+      "密码合规"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "GPT-6 Astra 技术报告拆解：四层脉络看懂新一代旗舰",
+    "slug": "gpt6-astra-technical-breakdown",
+    "url": "/articles/gpt6-astra-technical-breakdown.md",
+    "description": "从 Symphony 架构、自主操作能力、授权边界对齐到提示词范式迁移，拆解 GPT-6 Astra 117 页 System Card 的四层技术突破，并讨论其对金融业与银行业的含义。",
+    "date": "2026-09-10",
+    "tags": [
+      "GPT-6",
+      "OpenAI",
+      "Symphony架构",
+      "System Card",
+      "网络安全",
+      "提示词工程",
+      "人工智能"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "第四轮算力增长来临？GPT-6、Computer Use与银行的三种身份",
+    "slug": "gpt6-compute-banking-implications",
+    "url": "/articles/gpt6-compute-banking-implications.md",
+    "description": "腾讯科技文章提出AI正进入第四轮指数级算力需求增长：Chatbot、Reasoning、Coding Agent之后，Computer Use重构白领工作。本文从银行三重身份深读：算力与Agent的重度买家、算力重资产的资金供给方、模型风险的最后承担者，剖析对成本结构、信贷逻辑与风控框架的实质含义，并给出行动清单。",
+    "date": "2026-09-08",
+    "tags": [
+      "GPT-6",
+      "算力",
+      "Computer Use",
+      "Agent",
+      "银行数字化",
+      "算力信贷",
+      "AI基础设施",
+      "风险管理",
+      "大模型",
+      "银行转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究",
+    "slug": "graph-engineering-bank-asset-preservation",
+    "url": "/articles/graph-engineering-bank-asset-preservation.md",
+    "description": "近期X平台热文《Graph Engineering explained》以'钻石模式（扇出-归约-合成）''检查器机制''舰队模式''锚点''伪边'等概念重新定义了多智能体工作流的组织方式。本文将其核心方法论与当前银行资产保全实践对照核查并落地映射：贷后资金穿透监控对应钻石模式的扇出归约，担保圈风险传染识别对应检查器的独立验证，不良资产处置对应舰队的并行协同，最终以'锚点'（监管规则、司法数据、资金事实）约束全链路。文中北仑农商银行、中原银行、常熟农商银行、北京银行、民丰农商银行及嬴图Ultipa等案例均经公开报道核实，违规纾贷资金流向规则的出处也一并标注。",
+    "date": "2026-09-05",
+    "tags": [
+      "图工程",
+      "Graph Engineering",
+      "银行资产保全",
+      "贷后资金穿透",
+      "担保圈风险",
+      "不良资产处置",
+      "知识图谱",
+      "多智能体",
+      "图数据库",
+      "风控"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "企业本地部署大模型的必然性——从阿里禁令到\"Token税\"陷阱的深层逻辑",
+    "slug": "local-llm-deployment-data-sovereignty",
+    "url": "/articles/local-llm-deployment-data-sovereignty.md",
+    "description": "阿里禁用国外大模型工具只是冰山一角。本文从Palantir CEO Alex Karp的'Token税'诊断框架出发，提出'双通道数据流失模型'，深度论证企业（尤其是银行）本地部署大模型的战略必要性：防止敏感数据外流形成数据闭环、避免核心业务流程被蒸馏自毁长城。",
+    "date": "2026-07-03",
+    "tags": [
+      "AI前瞻",
+      "数据安全",
+      "大模型",
+      "本地部署",
+      "金融科技",
+      "AI治理",
+      "企业架构"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告",
+    "slug": "multi-model-collaboration-paradigms",
+    "url": "/articles/multi-model-collaboration-paradigms.md",
+    "description": "深入对比FUMO Fusion动态证据采购、Sakana Fugu任务分解调度、OpenRouter Fusion并行答案合成三大多模型协作范式的机制、基准与适用场景，探讨其组合价值。",
+    "date": "2026-09-02",
+    "tags": [
+      "多模型协作",
+      "大模型",
+      "FUMO",
+      "Sakana",
+      "OpenRouter",
+      "智能调度",
+      "技术报告"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "给模型做注意力体操：从Attention原理推导高质量后训练数据的五条黄金法则",
+    "slug": "post-training-attention-gymnastics",
+    "url": "/articles/post-training-attention-gymnastics.md",
+    "description": "基于《Understanding Attention》手册从QKV、因果掩码与位置编码、密集与稀疏注意力、注意力可解释性、KV缓存压缩等底层原理，推导出高质量后训练数据（SFT、RLHF/DPO、Long-Context微调）构建的五条黄金法则，并给出统一框架、自检清单与实操示例。",
+    "date": "2026-09-05",
+    "tags": [
+      "大模型",
+      "后训练",
+      "注意力机制",
+      "SFT",
+      "RLHF",
+      "DPO",
+      "长上下文",
+      "数据集构建",
+      "Transformer",
+      "CoT"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "构建高质量词元经济体系——从'调用量大国'迈向'质量强国'的路径探索",
+    "slug": "quality-token-economy",
+    "url": "/articles/quality-token-economy.md",
+    "description": "我国日均词元调用量突破140万亿、两年增长逾千倍，但规模扩张不等于价值创造。毕超系统分析词元经济从规模领先到质量引领的五大转型路径：重塑度量体系、健全交易制度、贯通产业链条、绿色集约发展、普惠共享为民，为构建高质量词元经济体系提供完整行动框架。",
+    "date": "2026-06-29",
+    "tags": [
+      "词元经济",
+      "高质量发展",
+      "Token",
+      "智能经济",
+      "人工智能+",
+      "质量强国",
+      "数字经济",
+      "数据要素",
+      "东数西算",
+      "计量体系",
+      "毕超"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI大模型与量子计算：金融密码安全的双重挑战与应对",
+    "slug": "quantum-ai-financial-crypto-security",
+    "url": "/articles/quantum-ai-financial-crypto-security.md",
+    "description": "2026年，AI大模型与量子计算同时逼近密码安全底线：Anthropic的Claude Mythos在60小时内攻破NIST审查中的后量子签名候选HAWK，谷歌白皮书将破解椭圆曲线所需的量子资源预估下调约20倍。本文梳理双重威胁的实锤证据、全球监管与行业实践，并提出金融行业应对的五大策略与一套落地框架。",
+    "date": "2026-09-01",
+    "tags": [
+      "量子计算",
+      "AI安全",
+      "密码安全",
+      "后量子密码",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "量子计算的货币冲击：主权数字货币与加密货币的暴露、重构与对策",
+    "slug": "quantum-computing-sovereign-digital-currency-crypto",
+    "url": "/articles/quantum-computing-sovereign-digital-currency-crypto.md",
+    "description": "2026年以来，谷歌白皮书将破解椭圆曲线密码的量子资源门槛下调至50万物理量子比特以内，Oratomic提出2.6万中性原子量子比特几天内破解比特币的方案，量子威胁从'远期想象'进入'可测算的倒计时'。这篇文章从威胁基准面出发，对比分析主权数字货币（CBDC）与加密货币两类体系在量子冲击下的结构性差异：前者依托央行主导可强制迁移，后者受困于公开账本与公钥暴露。在此基础上提出覆盖发行设计、密码敏捷、资产迁移与监管协同的对策体系，为金融从业者提供决策框架。",
+    "date": "2026-09-03",
+    "tags": [
+      "量子计算",
+      "主权数字货币",
+      "央行数字货币",
+      "CBDC",
+      "加密货币",
+      "比特币",
+      "后量子密码",
+      "金融科技",
+      "风险管理",
+      "数字人民币"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践",
+    "slug": "ryt-bank-ai-native-bank",
+    "url": "/articles/ryt-bank-ai-native-bank.md",
+    "description": "毕超深度解构全球首家AI原生银行——马来西亚Ryt Bank：10B参数自研领域大模型ILMU、四阶段多智能体架构、幻觉率<1.5%、5万用户月处理8万笔交易。从\"嫁接AI\"到\"AI原生\"的范式跃迁，为中国银行业'人工智能+'行动提供工程蓝图。",
+    "date": "2026-06-25",
+    "tags": [
+      "AI原生银行",
+      "Ryt Bank",
+      "多智能体",
+      "ILMU",
+      "普惠金融",
+      "金融科技",
+      "银行业",
+      "数字化转型",
+      "大模型",
+      "人工智能+",
+      "监管沙盒",
+      "数字银行"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "美国财政部量子就绪部署与日本光量子突破：量子加密竞赛的金融影响与应对",
+    "slug": "us-treasury-quantum-readiness-japan-photonics",
+    "url": "/articles/us-treasury-quantum-readiness-japan-photonics.md",
+    "description": "2026年8月24日，美国财政部正式成立量子就绪特别工作组（Quantum-Readiness Task Force），推动银行、支付系统、金融市场基础设施与技术服务商向后量子密码（PQC）迁移，后量子密码由此从标准制定进入金融产业落地阶段。几乎同步，日本京都大学与广岛大学宣布首次实现三光子W态的纠缠测量，破解量子信息领域约二十五年的未解难题，光量子计算与量子通信明显提速。一边布防、一边突破之间，本文综述美国财政部量子加密部署的政策全貌与日本光量子技术突破的技术内核，并从金融风险管理视角分析影响、提出对策。",
+    "date": "2026-09-03",
+    "tags": [
+      "量子加密",
+      "后量子密码",
+      "美国财政部",
+      "量子计算",
+      "量子通信",
+      "金融科技",
+      "风险管理",
+      "密码迁移",
+      "光量子计算",
+      "金融安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "企业级Agent的多表面知识路由——北大WorkSurface基准评测及其对银行的启示",
+    "slug": "worksurface-enterprise-agent-routing-banking",
+    "url": "/articles/worksurface-enterprise-agent-routing-banking.md",
+    "description": "深度解读北京大学DCAI团队开源的WorkSurface-Bench与WorkSurface-Build企业Agent评测基准：1,151个任务直面文档、表格、知识图谱三类数据入口，用Route/Evidence/Answer/Efficiency四维评分定位Agent失败环节，并探讨其对银行智能体工程落地的启示。",
+    "date": "2026-09-03",
+    "tags": [
+      "企业Agent",
+      "评测基准",
+      "知识路由",
+      "RAG",
+      "知识图谱",
+      "银行数字化",
+      "大模型",
+      "Agent落地"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "人工智能+软件落地金融：实施路径与安全全生命周期嵌入",
+    "slug": "ai-plus-software-finance-secure-lifecycle",
+    "url": "/articles/ai-plus-software-finance-secure-lifecycle.md",
+    "description": "深度拆解工信部《人工智能+软件专项行动实施方案》对金融行业的落地含义，从智能编程、专业智能体、智能服务三条主线给出实施路径，并构建覆盖需求、编码、测试、部署、运行、治理全周期的安全嵌入框架。",
+    "date": "2026-09-11",
+    "tags": [
+      "人工智能+软件",
+      "智能编程",
+      "智能体",
+      "金融科技",
+      "DevSecOps",
+      "软件安全",
+      "政策解读",
+      "AI安全",
+      "数字化转型",
+      "软件工程"
+    ],
+    "schema_type": "Article"
+  }
+]
