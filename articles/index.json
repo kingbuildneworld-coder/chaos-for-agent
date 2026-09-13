@@ -1,5 +1,22 @@
 [
   {
+    "title": "\"银行业人工智能治理的系统性框架：从算法伦理到气候正义的全维度拼图\"",
+    "slug": "banking-ai-governance-systemic-framework",
+    "url": "/articles/banking-ai-governance-systemic-framework.md",
+    "description": "\"以 AI 治理全景框架（AI 系统自身、全生命周期环境足迹、社会治理效应、全球治理机制四层维度）为参照，拆解银行业人工智能治理的系统性框架：模型风险、数据主权、算力效率、气候责任与普惠金融如何在银行场景中形成闭环。\"",
+    "date": "2026-09-13",
+    "tags": [
+      "银行AI治理",
+      "AI治理框架",
+      "模型风险管理",
+      "算法伦理",
+      "ESG",
+      "金融科技",
+      "AI监管"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
