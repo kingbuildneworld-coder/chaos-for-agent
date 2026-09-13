@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 57,
+    "total_articles": 58,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "collaborative-ai-model-over-models",
+      "title": "\"从\"堆参数\"到\"组网络\"：协作式 AI（Model over Models）范式对产业的影响与思考\"",
+      "date": "2026-09-13",
+      "description": "\"基于世界人工智能大会杨红霞、陈海青、吴建民独家观点，深度拆解从 Model over Data 到 Model over Models 的范式转变：95%对65%专用小模型跑赢通用大模型的内在逻辑，FP8低比特训练、模型融合、Agent原生操作系统、Co-GenAI协作平台四大基石的产业含义，以及数据质量、精度损失、安全治理等批判性反思。\"",
+      "tags": [
+        "协作式AI",
+        "Model over Models",
+        "专用小模型",
+        "FP8低比特训练",
+        "模型融合",
+        "Agent-Native OS",
+        "Co-GenAI",
+        "人工智能产业"
+      ]
+    },
     {
       "slug": "banking-ai-governance-systemic-framework",
       "title": "\"银行业人工智能治理的系统性框架：三向影响闭环与双向责任\"",
@@ -521,5 +537,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-13",
   "version": "1.1",
-  "total_articles": 57
+  "total_articles": 58
 }
