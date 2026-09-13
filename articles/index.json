@@ -1,5 +1,20 @@
 [
   {
+    "title": "\"同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车\"",
+    "slug": "research-acceleration-openai-internally-rsi-finance",
+    "url": "/articles/research-acceleration-openai-internally-rsi-finance.md",
+    "description": "\"对照 OpenAI 同日发布的两篇博客《Research acceleration: The view inside OpenAI》与《An Alien Mind》，拆解 agent 化研究加速的内部数据、安全侧的三个失明，以及金融业应从中计提的六条治理杠杆。\"",
+    "date": "2026-09-13",
+    "tags": [
+      "OpenAI",
+      "Research Agents",
+      "RSI",
+      "AI治理",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行非结构化数据价值发掘的隐形地基：Tokenization 如何决定 RAG 与智能知识底座的质量上限",
     "slug": "tokenization-rag-banking-knowledge-foundation",
     "url": "/articles/tokenization-rag-banking-knowledge-foundation.md",
