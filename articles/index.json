@@ -1,123 +1,5 @@
 [
   {
-    "title": "\"同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车\"",
-    "slug": "research-acceleration-openai-internally-rsi-finance",
-    "url": "/articles/research-acceleration-openai-internally-rsi-finance.md",
-    "description": "\"对照 OpenAI 同日发布的两篇博客《Research acceleration: The view inside OpenAI》与《An Alien Mind》，拆解 agent 化研究加速的内部数据、安全侧的三个失明，以及金融业应从中计提的六条治理杠杆。\"",
-    "date": "2026-09-13",
-    "tags": [
-      "OpenAI",
-      "Research Agents",
-      "RSI",
-      "AI治理",
-      "金融科技"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "银行非结构化数据价值发掘的隐形地基：Tokenization 如何决定 RAG 与智能知识底座的质量上限",
-    "slug": "tokenization-rag-banking-knowledge-foundation",
-    "url": "/articles/tokenization-rag-banking-knowledge-foundation.md",
-    "description": "结合《Understanding Tokenization》手册技术要点，拆解银行在构建 RAG 与智能知识底座时 Tokenization 的五条隐性传导路径，并给出确保质量效果的工程化清单。",
-    "date": "2026-09-13",
-    "tags": [
-      "Tokenization",
-      "RAG",
-      "智能知识底座",
-      "非结构化数据",
-      "银行AI"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "银行风险管理部门的 Harness Engineering 安全：大模型、数据与信息系统安全如何耦合",
-    "slug": "harness-engineering-security-coupling-banking-risk",
-    "url": "/articles/harness-engineering-security-coupling-banking-risk.md",
-    "description": "以英格兰银行 harness engineering 技术说明为锚，拆解银行风险管理部门如何通过驾驭层把大模型安全、数据安全、信息系统安全在运行时耦合为统一的授权、边界与证据链。",
-    "date": "2026-09-13",
-    "tags": [
-      "Harness Engineering",
-      "大模型安全",
-      "数据安全",
-      "银行风险管理",
-      "AI治理"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座",
-    "slug": "asset-preservation-semantic-foundation",
-    "url": "/articles/asset-preservation-semantic-foundation.md",
-    "description": "资产保全智能体的知识底座应从'通用知识库'升级为受控的、可推理的、可审计的'语义底座'。本文基于蚂蚁数科KBase、神州信息本体论白皮书、彩讯Rich AIBox、天阳科技双核引擎等已核实实践，给出四层架构、六步落地流程与可追溯证据链设计。",
-    "date": "2026-09-13",
-    "tags": [
-      "资产保全",
-      "智能体",
-      "知识底座",
-      "本体论",
-      "GraphRAG",
-      "规则引擎",
-      "银行",
-      "可审计AI"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "银行 AI 智能体需要什么样的 AI 原生数据库？Loop / Graph Engineering / RSI 与 KV Cache 的系统方案",
-    "slug": "ai-native-database-for-banking-agents",
-    "url": "/articles/ai-native-database-for-banking-agents.md",
-    "description": "从 Agent Loop、Graph Engineering、RSI 与 KV Cache 四类需求出发，论证银行需要多模型融合的 AI 原生数据库，并提出一套以'关系+向量+图+KV Cache 上下文层'为核心的系统架构方案。",
-    "date": "2026-09-13",
-    "tags": [
-      "AI-native-database",
-      "agentic-AI",
-      "KV-cache",
-      "graph-engineering",
-      "RSI",
-      "银行",
-      "大模型"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "组织级上下文为什么是银行业 AI 时代的核心工程(Context Engineering)",
-    "slug": "org-context-engineering-banking",
-    "url": "/articles/org-context-engineering-banking.md",
-    "description": "从 context engineering 视角拆解银行组织级上下文：为什么它是银行智能体的可信大脑，包括数据/流程/监管/领域/工具五类内容，以及五步构建方法论与治理红线。",
-    "date": "2026-09-13",
-    "tags": [
-      "context-engineering",
-      "AI",
-      "银行",
-      "知识图谱",
-      "大模型",
-      "企业架构"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径",
-    "slug": "pace-frontier-rsi-finance-governance",
-    "url": "/articles/pace-frontier-rsi-finance-governance.md",
-    "description": "深度拆解 Anthropic CEO Dario Amodei《We Must Pace the Frontier》一文，解析递归自我改进（RSI）加速下的前沿 AI 风险图景与三步节奏化方案，从金融机构视角权衡 RSI 的利弊，并给出覆盖嵌入式评估、能力安全检查点、压力测试、供应链保护与全球协同的金融安全治理框架。",
-    "date": "2026-09-13",
-    "tags": [
-      "Pacing the Frontier",
-      "递归自我改进",
-      "RSI",
-      "AI安全",
-      "对齐",
-      "前沿AI",
-      "金融科技",
-      "安全治理",
-      "Anthropic",
-      "Dario Amodei",
-      "AI风险",
-      "系统性风险"
-    ],
-    "schema_type": "Article"
-  },
-  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
@@ -298,6 +180,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行 AI 智能体需要什么样的 AI 原生数据库？Loop / Graph Engineering / RSI 与 KV Cache 的系统方案",
+    "slug": "ai-native-database-for-banking-agents",
+    "url": "/articles/ai-native-database-for-banking-agents.md",
+    "description": "从 Agent Loop、Graph Engineering、RSI 与 KV Cache 四类需求出发，论证银行需要多模型融合的 AI 原生数据库，并提出一套以'关系+向量+图+KV Cache 上下文层'为核心的系统架构方案。",
+    "date": "2026-09-13",
+    "tags": [
+      "AI-native-database",
+      "agentic-AI",
+      "KV-cache",
+      "graph-engineering",
+      "RSI",
+      "银行",
+      "大模型"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI支付风险的六维识别框架与治理路径",
     "slug": "ai-payment-risk-governance",
     "url": "/articles/ai-payment-risk-governance.md",
@@ -310,6 +209,26 @@
       "AI治理",
       "风险管理",
       "银行"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "人工智能+软件落地金融：实施路径与安全全生命周期嵌入",
+    "slug": "ai-plus-software-finance-secure-lifecycle",
+    "url": "/articles/ai-plus-software-finance-secure-lifecycle.md",
+    "description": "深度拆解工信部《人工智能+软件专项行动实施方案》对金融行业的落地含义，从智能编程、专业智能体、智能服务三条主线给出实施路径，并构建覆盖需求、编码、测试、部署、运行、治理全周期的安全嵌入框架。",
+    "date": "2026-09-11",
+    "tags": [
+      "人工智能+软件",
+      "智能编程",
+      "智能体",
+      "金融科技",
+      "DevSecOps",
+      "软件安全",
+      "政策解读",
+      "AI安全",
+      "数字化转型",
+      "软件工程"
     ],
     "schema_type": "Article"
   },
@@ -392,6 +311,24 @@
       "创新机制",
       "失败常态化",
       "隔离验证区"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座",
+    "slug": "asset-preservation-semantic-foundation",
+    "url": "/articles/asset-preservation-semantic-foundation.md",
+    "description": "资产保全智能体的知识底座应从'通用知识库'升级为受控的、可推理的、可审计的'语义底座'。本文基于蚂蚁数科KBase、神州信息本体论白皮书、彩讯Rich AIBox、天阳科技双核引擎等已核实实践，给出四层架构、六步落地流程与可追溯证据链设计。",
+    "date": "2026-09-13",
+    "tags": [
+      "资产保全",
+      "智能体",
+      "知识底座",
+      "本体论",
+      "GraphRAG",
+      "规则引擎",
+      "银行",
+      "可审计AI"
     ],
     "schema_type": "Article"
   },
@@ -843,6 +780,21 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行风险管理部门的 Harness Engineering 安全：大模型、数据与信息系统安全如何耦合",
+    "slug": "harness-engineering-security-coupling-banking-risk",
+    "url": "/articles/harness-engineering-security-coupling-banking-risk.md",
+    "description": "以英格兰银行 harness engineering 技术说明为锚，拆解银行风险管理部门如何通过驾驭层把大模型安全、数据安全、信息系统安全在运行时耦合为统一的授权、边界与证据链。",
+    "date": "2026-09-13",
+    "tags": [
+      "Harness Engineering",
+      "大模型安全",
+      "数据安全",
+      "银行风险管理",
+      "AI治理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "企业本地部署大模型的必然性——从阿里禁令到\"Token税\"陷阱的深层逻辑",
     "slug": "local-llm-deployment-data-sovereignty",
     "url": "/articles/local-llm-deployment-data-sovereignty.md",
@@ -873,6 +825,44 @@
       "OpenRouter",
       "智能调度",
       "技术报告"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "组织级上下文为什么是银行业 AI 时代的核心工程(Context Engineering)",
+    "slug": "org-context-engineering-banking",
+    "url": "/articles/org-context-engineering-banking.md",
+    "description": "从 context engineering 视角拆解银行组织级上下文：为什么它是银行智能体的可信大脑，包括数据/流程/监管/领域/工具五类内容，以及五步构建方法论与治理红线。",
+    "date": "2026-09-13",
+    "tags": [
+      "context-engineering",
+      "AI",
+      "银行",
+      "知识图谱",
+      "大模型",
+      "企业架构"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径",
+    "slug": "pace-frontier-rsi-finance-governance",
+    "url": "/articles/pace-frontier-rsi-finance-governance.md",
+    "description": "深度拆解 Anthropic CEO Dario Amodei《We Must Pace the Frontier》一文，解析递归自我改进（RSI）加速下的前沿 AI 风险图景与三步节奏化方案，从金融机构视角权衡 RSI 的利弊，并给出覆盖嵌入式评估、能力安全检查点、压力测试、供应链保护与全球协同的金融安全治理框架。",
+    "date": "2026-09-13",
+    "tags": [
+      "Pacing the Frontier",
+      "递归自我改进",
+      "RSI",
+      "AI安全",
+      "对齐",
+      "前沿AI",
+      "金融科技",
+      "安全治理",
+      "Anthropic",
+      "Dario Amodei",
+      "AI风险",
+      "系统性风险"
     ],
     "schema_type": "Article"
   },
@@ -975,6 +965,21 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行非结构化数据价值发掘的隐形地基：Tokenization 如何决定 RAG 与智能知识底座的质量上限",
+    "slug": "tokenization-rag-banking-knowledge-foundation",
+    "url": "/articles/tokenization-rag-banking-knowledge-foundation.md",
+    "description": "结合《Understanding Tokenization》手册技术要点，拆解银行在构建 RAG 与智能知识底座时 Tokenization 的五条隐性传导路径，并给出确保质量效果的工程化清单。",
+    "date": "2026-09-13",
+    "tags": [
+      "Tokenization",
+      "RAG",
+      "智能知识底座",
+      "非结构化数据",
+      "银行AI"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "美国财政部量子就绪部署与日本光量子突破：量子加密竞赛的金融影响与应对",
     "slug": "us-treasury-quantum-readiness-japan-photonics",
     "url": "/articles/us-treasury-quantum-readiness-japan-photonics.md",
@@ -1009,26 +1014,6 @@
       "银行数字化",
       "大模型",
       "Agent落地"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "人工智能+软件落地金融：实施路径与安全全生命周期嵌入",
-    "slug": "ai-plus-software-finance-secure-lifecycle",
-    "url": "/articles/ai-plus-software-finance-secure-lifecycle.md",
-    "description": "深度拆解工信部《人工智能+软件专项行动实施方案》对金融行业的落地含义，从智能编程、专业智能体、智能服务三条主线给出实施路径，并构建覆盖需求、编码、测试、部署、运行、治理全周期的安全嵌入框架。",
-    "date": "2026-09-11",
-    "tags": [
-      "人工智能+软件",
-      "智能编程",
-      "智能体",
-      "金融科技",
-      "DevSecOps",
-      "软件安全",
-      "政策解读",
-      "AI安全",
-      "数字化转型",
-      "软件工程"
     ],
     "schema_type": "Article"
   }
