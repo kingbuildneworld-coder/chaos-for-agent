@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-09-11T00:00:00Z</updated>
+  P26-09-13T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
+
+  <entry>
+    <id>https://bi-chao.com/articles/pace-frontier-rsi-finance-governance</id>
+    <title>前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/pace-frontier-rsi-finance-governance" rel="alternate" type="text/html"/>
+    <summary>深度拆解 Anthropic CEO Dario Amodei《We Must Pace the Frontier》一文，解析递归自我改进（RSI）加速下的前沿 AI 风险图景与三步节奏化方案，从金融机构视角权衡 RSI 的利弊，并给出覆盖</summary>
+    <category term="Pacing the Frontier"/>
+    <category term="递归自我改进"/>
+    <category term="RSI"/>
+    <category term="AI安全"/>
+  </entry>
 
   <entry>
     <id>https://bi-chao.com/articles/ai-plus-software-finance-secure-lifecycle</id>
