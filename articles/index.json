@@ -1,5 +1,21 @@
 [
   {
+    "title": "组织级上下文为什么是银行业 AI 时代的核心工程(Context Engineering)",
+    "slug": "org-context-engineering-banking",
+    "url": "/articles/org-context-engineering-banking.md",
+    "description": "从 context engineering 视角拆解银行组织级上下文：为什么它是银行智能体的可信大脑，包括数据/流程/监管/领域/工具五类内容，以及五步构建方法论与治理红线。",
+    "date": "2026-09-13",
+    "tags": [
+      "context-engineering",
+      "AI",
+      "银行",
+      "知识图谱",
+      "大模型",
+      "企业架构"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径",
     "slug": "pace-frontier-rsi-finance-governance",
     "url": "/articles/pace-frontier-rsi-finance-governance.md",
