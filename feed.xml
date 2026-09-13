@@ -14,6 +14,18 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/harness-engineering-security-coupling-banking-risk</id>
+    <title>银行风险管理部门的 Harness Engineering 安全：大模型、数据与信息系统安全如何耦合</title>
+    P26-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/harness-engineering-security-coupling-banking-risk" rel="alternate" type="text/html"/>
+    <summary>以英格兰银行 harness engineering 技术说明为锚，拆解银行风险管理部门如何通过驾驭层把大模型安全、数据安全、信息系统安全在运行时耦合为统一的授权、边界与证据链。</summary>
+    <category term="Harness Engineering"/>
+    <category term="大模型安全"/>
+    <category term="数据安全"/>
+    <category term="银行风险管理"/>
+  </entry>
+
+  <entry>
     <id>https://bi-chao.com/articles/asset-preservation-semantic-foundation</id>
     <title>构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座</title>
     P26-09-13T00:00:00Z</updated>
