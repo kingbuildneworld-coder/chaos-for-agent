@@ -13,10 +13,23 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+      <entry>
+    <id>https://bi-chao.com/articles/organizational-second-brain-institutional-memory</id>
+    <title>"从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示"</title>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/organizational-second-brain-institutional-memory" rel="alternate" type="text/html"/>
+    <summary>"Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。"</summary>
+    <category term="AI Agent"/>
+    <category term="机构知识管理"/>
+    <category term="组织记忆"/>
+    <category term="Meta"/>
+    <category term="金融科技"/>
+  </entry>
+
    <entry>
     <id>https://bi-chao.com/articles/banking-ai-governance-systemic-framework</id>
     <title>"银行业人工智能治理的系统性框架：三向影响闭环与双向责任"</title>
-    <updated>2026-09-13T00:00:00Z</updated>
+    <updated>2026-09-14T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/banking-ai-governance-systemic-framework" rel="alternate" type="text/html"/>
     <summary>"以算法、数据、算力治理与环境、社会、机制多层维度为骨架，构建银行AI治理的三向闭环：银行应用大模型的前向影响、以 Anthropic Mythos 为代表的反向系统冲击、以及银行作为AI产业链资金中枢所承受与传导的侧向影响（含 Fable 5.1 密码能力与后量子加密迁移）。"</summary>
     <category term="银行AI治理"/>
