@@ -13,10 +13,24 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
-            <entry>
+               <entry>
+    <id>https://bi-chao.com/articles/api-call-data-ip-security-leakage</id>
+    <title>"当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄"</title>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/api-call-data-ip-security-leakage" rel="alternate" type="text/html"/>
+    <summary>"从英伟达Palantir设限Anthropic到OpenAI数学证明署名争议，剖析API调用引发数据安全、知识产权与技术外泄的治理难题。"</summary>
+    <category term="API数据安全"/>
+    <category term="零数据留存"/>
+    <category term="知识产权"/>
+    <category term="技术外泄"/>
+    <category term="前沿模型治理"/>
+    <category term="AI数据主权"/>
+  </entry>
+
+   <entry>
     <id>https://bi-chao.com/articles/claude-money-chatgpt-finance-bank-account-ai</id>
     <title>"当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战"</title>
-    <updated>2026-09-14T00:00:00Z</updated>
+    <updated>2026-09-15T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/claude-money-chatgpt-finance-bank-account-ai" rel="alternate" type="text/html"/>
     <summary>"Anthropic 被曝筹备 Claude Money（谐音致敬莫奈），让用户在 iOS 版 Claude 里连接银行账户、用自然语言管理个人财务；OpenAI 的 ChatGPT Finance 预览已在美国面向 Pro 用户落地，覆盖超 1.2 万家金融机构。当通用 AI 助手开始直接读取用户银行账户，银行的 '用户入口' 与 '账户中心' 地位正面临一场静默但深刻的迁徙。"</summary>
     <category term="Claude Money"/>
