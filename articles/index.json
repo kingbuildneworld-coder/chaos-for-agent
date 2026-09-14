@@ -1,5 +1,20 @@
 [
   {
+    "title": "\"从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示\"",
+    "slug": "organizational-second-brain-institutional-memory",
+    "url": "/articles/organizational-second-brain-institutional-memory.md",
+    "description": "\"Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。\"",
+    "date": "2026-09-14",
+    "tags": [
+      "AI Agent",
+      "机构知识管理",
+      "组织记忆",
+      "Meta",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
@@ -876,21 +891,6 @@
       "知识图谱",
       "大模型",
       "企业架构"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示",
-    "slug": "organizational-second-brain-institutional-memory",
-    "url": "/articles/organizational-second-brain-institutional-memory.md",
-    "description": "Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。",
-    "date": "2026-09-14",
-    "tags": [
-      "AI Agent",
-      "机构知识管理",
-      "组织记忆",
-      "Meta",
-      "金融科技"
     ],
     "schema_type": "Article"
   },
