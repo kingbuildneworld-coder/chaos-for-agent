@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 61,
+    "total_articles": 62,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "api-call-data-ip-security-leakage",
+      "title": "\"当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄\"",
+      "date": "2026-09-15",
+      "description": "\"从英伟达Palantir设限Anthropic到OpenAI数学证明署名争议，剖析API调用引发数据安全、知识产权与技术外泄的治理难题。\""
+    },
     {
       "slug": "claude-money-chatgpt-finance-bank-account-ai",
       "title": "\"当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战\"",
@@ -553,7 +559,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-14",
+  "last_updated": "2026-09-15",
   "version": "1.1",
-  "total_articles": 61
+  "total_articles": 62
 }
