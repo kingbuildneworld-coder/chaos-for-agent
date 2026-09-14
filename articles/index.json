@@ -1,40 +1,5 @@
 [
   {
-    "title": "\"从\"堆参数\"到\"组网络\"：协作式 AI（Model over Models）范式对产业的影响与思考\"",
-    "slug": "collaborative-ai-model-over-models",
-    "url": "/articles/collaborative-ai-model-over-models.md",
-    "description": "\"基于世界人工智能大会杨红霞、陈海青、吴建民独家观点，深度拆解从 Model over Data 到 Model over Models 的范式转变：95%对65%专用小模型跑赢通用大模型的内在逻辑，FP8低比特训练、模型融合、Agent原生操作系统、Co-GenAI协作平台四大基石的产业含义，以及数据质量、精度损失、安全治理等批判性反思。\"",
-    "date": "2026-09-13",
-    "tags": [
-      "协作式AI",
-      "Model over Models",
-      "专用小模型",
-      "FP8低比特训练",
-      "模型融合",
-      "Agent-Native OS",
-      "Co-GenAI",
-      "人工智能产业"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "\"银行业人工智能治理的系统性框架：三向影响闭环与双向责任\"",
-    "slug": "banking-ai-governance-systemic-framework",
-    "url": "/articles/banking-ai-governance-systemic-framework.md",
-    "description": "\"以算法、数据、算力治理与环境、社会、机制多层维度为骨架，构建银行AI治理的三向闭环：银行应用大模型的前向影响、以 Anthropic Mythos 为代表的反向系统冲击、以及银行作为AI产业链资金中枢所承受与传导的侧向影响（含 Fable 5.1 密码能力与后量子加密迁移）。\"",
-    "date": "2026-09-13",
-    "tags": [
-      "银行AI治理",
-      "AI治理框架",
-      "模型风险管理",
-      "算法伦理",
-      "ESG",
-      "金融科技",
-      "AI监管"
-    ],
-    "schema_type": "Article"
-  },
-  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
@@ -468,6 +433,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行业人工智能治理的系统性框架：三向影响闭环与双向责任",
+    "slug": "banking-ai-governance-systemic-framework",
+    "url": "/articles/banking-ai-governance-systemic-framework.md",
+    "description": "以算法、数据、算力治理与环境、社会、机制多层维度为骨架，构建银行AI治理的三向闭环：银行应用大模型的前向影响、以 Anthropic Mythos 为代表的反向系统冲击、以及银行作为AI产业链资金中枢所承受与传导的侧向影响（含 Fable 5.1 密码能力与后量子加密迁移）。",
+    "date": "2026-09-13",
+    "tags": [
+      "银行AI治理",
+      "AI治理框架",
+      "模型风险管理",
+      "算法伦理",
+      "ESG",
+      "金融科技",
+      "AI监管"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行业怎么用对AI？麦肯锡新管理手册的五步落地指南",
     "slug": "banking-ai-playbook",
     "url": "/articles/banking-ai-playbook.md",
@@ -581,6 +563,24 @@
       "绩效评价",
       "知识图谱",
       "财政大脑"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "从\"堆参数\"到\"组网络\"：协作式 AI（Model over Models）范式对产业的影响与思考",
+    "slug": "collaborative-ai-model-over-models",
+    "url": "/articles/collaborative-ai-model-over-models.md",
+    "description": "基于世界人工智能大会杨红霞、陈海青、吴建民独家观点，深度拆解从 Model over Data 到 Model over Models 的范式转变：95%对65%专用小模型跑赢通用大模型的内在逻辑，FP8低比特训练、模型融合、Agent原生操作系统、Co-GenAI协作平台四大基石的产业含义，以及数据质量、精度损失、安全治理等批判性反思。",
+    "date": "2026-09-13",
+    "tags": [
+      "协作式AI",
+      "Model over Models",
+      "专用小模型",
+      "FP8低比特训练",
+      "模型融合",
+      "Agent-Native OS",
+      "Co-GenAI",
+      "人工智能产业"
     ],
     "schema_type": "Article"
   },
@@ -876,6 +876,21 @@
       "知识图谱",
       "大模型",
       "企业架构"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示",
+    "slug": "organizational-second-brain-institutional-memory",
+    "url": "/articles/organizational-second-brain-institutional-memory.md",
+    "description": "Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。",
+    "date": "2026-09-14",
+    "tags": [
+      "AI Agent",
+      "机构知识管理",
+      "组织记忆",
+      "Meta",
+      "金融科技"
     ],
     "schema_type": "Article"
   },
