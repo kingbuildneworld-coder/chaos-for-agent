@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 59,
+    "total_articles": 60,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "taas-training-api-bank-model-autonomy",
+      "title": "\"当「训练」也能按需调用：TaaS 范式对银行的模型自主权、专属模型矩阵与数据主权的启示\"",
+      "date": "2026-09-14",
+      "description": "\"Harvey、Cursor 用专业数据训练专属模型，桥水基金以 Qwen3-235B 做金融信息筛选把错误率降低 29.8%、推理成本降 13.8 倍。当 PyTRIO 把大模型训练封装成 Training API、开启 TaaS 范式，银行面对的不只是新工具，而是模型自主权、数据主权与算力治理三重命题。\""
+    },
     {
       "slug": "organizational-second-brain-institutional-memory",
       "title": "\"从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示\"",
@@ -543,5 +549,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-14",
   "version": "1.1",
-  "total_articles": 59
+  "total_articles": 60
 }
