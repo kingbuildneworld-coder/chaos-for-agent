@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 58,
+    "total_articles": 59,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "organizational-second-brain-institutional-memory",
+      "title": "\"从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示\"",
+      "date": "2026-09-14",
+      "description": "\"Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。\""
+    },
     {
       "slug": "collaborative-ai-model-over-models",
       "title": "\"从\"堆参数\"到\"组网络\"：协作式 AI（Model over Models）范式对产业的影响与思考\"",
@@ -535,7 +541,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-13",
+  "last_updated": "2026-09-14",
   "version": "1.1",
-  "total_articles": 58
+  "total_articles": 59
 }
