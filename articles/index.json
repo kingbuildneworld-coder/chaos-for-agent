@@ -1,5 +1,21 @@
 [
   {
+    "title": "\"当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战\"",
+    "slug": "claude-money-chatgpt-finance-bank-account-ai",
+    "url": "/articles/claude-money-chatgpt-finance-bank-account-ai.md",
+    "description": "\"Anthropic 被曝筹备 Claude Money（谐音致敬莫奈），让用户在 iOS 版 Claude 里连接银行账户、用自然语言管理个人财务；OpenAI 的 ChatGPT Finance 预览已在美国面向 Pro 用户落地，覆盖超 1.2 万家金融机构。当通用 AI 助手开始直接读取用户银行账户，银行的 '用户入口' 与 '账户中心' 地位正面临一场静默但深刻的迁徙。\"",
+    "date": "2026-09-14",
+    "tags": [
+      "Claude Money",
+      "ChatGPT Finance",
+      "个人财务",
+      "银行账户连接",
+      "银行AI",
+      "开放银行"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "\"当「训练」也能按需调用：TaaS 范式对银行的模型自主权、专属模型矩阵与数据主权的启示\"",
     "slug": "taas-training-api-bank-model-autonomy",
     "url": "/articles/taas-training-api-bank-model-autonomy.md",
