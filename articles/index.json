@@ -1,5 +1,21 @@
 [
   {
+    "title": "\"当「训练」也能按需调用：TaaS 范式对银行的模型自主权、专属模型矩阵与数据主权的启示\"",
+    "slug": "taas-training-api-bank-model-autonomy",
+    "url": "/articles/taas-training-api-bank-model-autonomy.md",
+    "description": "\"Harvey、Cursor 用专业数据训练专属模型，桥水基金以 Qwen3-235B 做金融信息筛选把错误率降低 29.8%、推理成本降 13.8 倍。当 PyTRIO 把大模型训练封装成 Training API、开启 TaaS 范式，银行面对的不只是新工具，而是模型自主权、数据主权与算力治理三重命题。\"",
+    "date": "2026-09-14",
+    "tags": [
+      "TaaS",
+      "模型训练",
+      "大模型",
+      "银行AI",
+      "金融科技",
+      "算力"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "\"从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示\"",
     "slug": "organizational-second-brain-institutional-memory",
     "url": "/articles/organizational-second-brain-institutional-memory.md",
