@@ -1,5 +1,21 @@
 [
   {
+    "title": "\"当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄\"",
+    "slug": "api-call-data-ip-security-leakage",
+    "url": "/articles/api-call-data-ip-security-leakage.md",
+    "description": "\"从英伟达Palantir设限Anthropic到OpenAI数学证明署名争议，剖析API调用引发数据安全、知识产权与技术外泄的治理难题。\"",
+    "date": "2026-09-15",
+    "tags": [
+      "API数据安全",
+      "零数据留存",
+      "知识产权",
+      "技术外泄",
+      "前沿模型治理",
+      "AI数据主权"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "\"当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战\"",
     "slug": "claude-money-chatgpt-finance-bank-account-ai",
     "url": "/articles/claude-money-chatgpt-finance-bank-account-ai.md",
