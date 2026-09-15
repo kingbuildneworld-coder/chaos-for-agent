@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/byte-level-distillation-bank-model-economics</id>
+    <title>Token 天花板破了：字节级蒸馏对银行模型成本与部署格局的启示</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/byte-level-distillation-bank-model-economics" rel="alternate" type="text/html"/>
+    <summary>Meta FAIR 与华盛顿大学提出字节级蒸馏，让学生模型直接从字节概率分布学习，预测上限比 Token 蒸馏高 4 个百分点。拆解这项研究对银行小模型经济学、数据主权与部署策略的启示。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/bank-rsi-self-evolving-path</id>
     <title>"让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界"</title>
     <updated>2026-09-15T00:00:00Z</updated>
