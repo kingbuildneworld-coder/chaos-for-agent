@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 62,
+    "total_articles": 63,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "bank-rsi-self-evolving-path",
+      "title": "\"让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界\"",
+      "date": "2026-09-15",
+      "description": "\"从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。\""
+    },
     {
       "slug": "api-call-data-ip-security-leakage",
       "title": "\"当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄\"",
@@ -561,5 +567,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-15",
   "version": "1.1",
-  "total_articles": 62
+  "total_articles": 63
 }
