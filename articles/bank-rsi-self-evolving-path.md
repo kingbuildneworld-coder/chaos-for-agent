@@ -156,4 +156,3 @@ RSI 为银行描绘了一幅诱人的图景：AI 在完成一笔授信审批后�
 13. GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks：https://arxiv.org/abs/2608.03764
 14. FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows：https://arxiv.org/abs/2608.06144
 15. Mem²Evolve: Towards Self-Evolving Agents：https://arxiv.org/abs/2604.10923
-*（内容由AI生成，仅供参考）*
