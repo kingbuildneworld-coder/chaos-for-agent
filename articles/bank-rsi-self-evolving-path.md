@@ -1,16 +1,10 @@
 ---
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 7f583cd62b816ae81bf2b5e7e390dad8_a7d54287b09811f18f50525400aeaaa3
-    ReservedCode1: 6rExIbaIcxx4dLp5gqRIuNfo+0dknvu0tbAxVYGmQy1nfxpc/Ff+bBUcsVPbNUGCb6FUz7M2kTTcLl/7HTYfTUDRTvznFJmOPeWc956R9bfg46u/U5iRzopgduhy8tKkg0Q4lFqdWZ3X8Cwe02M5g7mvvH8TPE1g6HBoPByfGtMX8v4wS6NRWdZEA9o=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 7f583cd62b816ae81bf2b5e7e390dad8_a7d54287b09811f18f50525400aeaaa3
-    ReservedCode2: 6rExIbaIcxx4dLp5gqRIuNfo+0dknvu0tbAxVYGmQy1nfxpc/Ff+bBUcsVPbNUGCb6FUz7M2kTTcLl/7HTYfTUDRTvznFJmOPeWc956R9bfg46u/U5iRzopgduhy8tKkg0Q4lFqdWZ3X8Cwe02M5g7mvvH8TPE1g6HBoPByfGtMX8v4wS6NRWdZEA9o=
+title: "让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界"
+date: 2026-09-15
+description: "从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。"
+tags: ["RSI", "递归自改进", "银行AI", "自进化Agent", "模型风险管理", "FinEvo-Bench"]
+schema_type: "Article"
 ---
-
-
-
 ## 让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界
 
 过去两年，银行部署大模型时最常问的问题是：「这个模型准不准、稳不稳？」现在，前沿研究提出了一个更进一步的命题：AI 能不能在完成任务的过程中，自己变得越来越强？
