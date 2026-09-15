@@ -13,7 +13,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
-               <entry>
+                  <entry>
+    <id>https://bi-chao.com/articles/bank-rsi-self-evolving-path</id>
+    <title>"让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界"</title>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-rsi-self-evolving-path" rel="alternate" type="text/html"/>
+    <summary>"从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。"</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+
+   <entry>
     <id>https://bi-chao.com/articles/api-call-data-ip-security-leakage</id>
     <title>"当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄"</title>
     <updated>2026-09-15T00:00:00Z</updated>
