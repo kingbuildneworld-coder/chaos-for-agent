@@ -1,5 +1,22 @@
 [
   {
+    "title": "量子科技叠加人工智能：金融机构风险管理的双引擎与治理边界",
+    "slug": "quantum-ai-financial-risk-management",
+    "url": "/articles/quantum-ai-financial-risk-management.md",
+    "description": "AI 重塑风控流程、量子计算突破算力边界、量子加密筑牢数据底座。拆解量子科技与人工智能双引擎如何协同强化金融机构风险管理，并给出从单点试点到体系治理的落地路径与合规边界。",
+    "date": "2026-09-16",
+    "tags": [
+      "量子科技",
+      "量子计算",
+      "量子加密",
+      "人工智能",
+      "风险管理",
+      "银行AI",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Token 天花板破了：字节级蒸馏对银行模型成本与部署格局的启示",
     "slug": "byte-level-distillation-bank-model-economics",
     "url": "/articles/byte-level-distillation-bank-model-economics.md",
