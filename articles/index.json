@@ -429,6 +429,22 @@
     "schema_type": "Article"
   },
   {
+    "title": "让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界",
+    "slug": "bank-rsi-self-evolving-path",
+    "url": "/articles/bank-rsi-self-evolving-path.md",
+    "description": "从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。",
+    "date": "2026-09-15",
+    "tags": [
+      "RSI",
+      "递归自改进",
+      "银行AI",
+      "自进化Agent",
+      "模型风险管理",
+      "FinEvo-Bench"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行还需要软件工程师吗：智能体软件时代的角色迁移",
     "slug": "bank-still-needs-software-engineers-agentic-era",
     "url": "/articles/bank-still-needs-software-engineers-agentic-era.md",
