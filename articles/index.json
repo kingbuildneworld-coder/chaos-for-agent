@@ -1,84 +1,5 @@
 [
   {
-    "title": "\"让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界\"",
-    "slug": "bank-rsi-self-evolving-path",
-    "url": "/articles/bank-rsi-self-evolving-path.md",
-    "description": "\"从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。\"",
-    "date": "2026-09-15",
-    "tags": [
-      "RSI",
-      "递归自改进",
-      "银行AI",
-      "自进化Agent",
-      "模型风险管理",
-      "FinEvo-Bench"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "\"当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄\"",
-    "slug": "api-call-data-ip-security-leakage",
-    "url": "/articles/api-call-data-ip-security-leakage.md",
-    "description": "\"从英伟达Palantir设限Anthropic到OpenAI数学证明署名争议，剖析API调用引发数据安全、知识产权与技术外泄的治理难题。\"",
-    "date": "2026-09-15",
-    "tags": [
-      "API数据安全",
-      "零数据留存",
-      "知识产权",
-      "技术外泄",
-      "前沿模型治理",
-      "AI数据主权"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "\"当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战\"",
-    "slug": "claude-money-chatgpt-finance-bank-account-ai",
-    "url": "/articles/claude-money-chatgpt-finance-bank-account-ai.md",
-    "description": "\"Anthropic 被曝筹备 Claude Money（谐音致敬莫奈），让用户在 iOS 版 Claude 里连接银行账户、用自然语言管理个人财务；OpenAI 的 ChatGPT Finance 预览已在美国面向 Pro 用户落地，覆盖超 1.2 万家金融机构。当通用 AI 助手开始直接读取用户银行账户，银行的 '用户入口' 与 '账户中心' 地位正面临一场静默但深刻的迁徙。\"",
-    "date": "2026-09-14",
-    "tags": [
-      "Claude Money",
-      "ChatGPT Finance",
-      "个人财务",
-      "银行账户连接",
-      "银行AI",
-      "开放银行"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "\"当「训练」也能按需调用：TaaS 范式对银行的模型自主权、专属模型矩阵与数据主权的启示\"",
-    "slug": "taas-training-api-bank-model-autonomy",
-    "url": "/articles/taas-training-api-bank-model-autonomy.md",
-    "description": "\"Harvey、Cursor 用专业数据训练专属模型，桥水基金以 Qwen3-235B 做金融信息筛选把错误率降低 29.8%、推理成本降 13.8 倍。当 PyTRIO 把大模型训练封装成 Training API、开启 TaaS 范式，银行面对的不只是新工具，而是模型自主权、数据主权与算力治理三重命题。\"",
-    "date": "2026-09-14",
-    "tags": [
-      "TaaS",
-      "模型训练",
-      "大模型",
-      "银行AI",
-      "金融科技",
-      "算力"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "\"从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示\"",
-    "slug": "organizational-second-brain-institutional-memory",
-    "url": "/articles/organizational-second-brain-institutional-memory.md",
-    "description": "\"Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。\"",
-    "date": "2026-09-14",
-    "tags": [
-      "AI Agent",
-      "机构知识管理",
-      "组织记忆",
-      "Meta",
-      "金融科技"
-    ],
-    "schema_type": "Article"
-  },
-  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
@@ -394,6 +315,22 @@
     "schema_type": "Article"
   },
   {
+    "title": "当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄",
+    "slug": "api-call-data-ip-security-leakage",
+    "url": "/articles/api-call-data-ip-security-leakage.md",
+    "description": "从英伟达Palantir设限Anthropic到OpenAI数学证明署名争议，剖析API调用引发数据安全、知识产权与技术外泄的治理难题。",
+    "date": "2026-09-15",
+    "tags": [
+      "API数据安全",
+      "零数据留存",
+      "知识产权",
+      "技术外泄",
+      "前沿模型治理",
+      "AI数据主权"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座",
     "slug": "asset-preservation-semantic-foundation",
     "url": "/articles/asset-preservation-semantic-foundation.md",
@@ -642,6 +579,22 @@
       "绩效评价",
       "知识图谱",
       "财政大脑"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战",
+    "slug": "claude-money-chatgpt-finance-bank-account-ai",
+    "url": "/articles/claude-money-chatgpt-finance-bank-account-ai.md",
+    "description": "Anthropic 被曝筹备 Claude Money（谐音致敬莫奈），让用户在 iOS 版 Claude 里连接银行账户、用自然语言管理个人财务；OpenAI 的 ChatGPT Finance 预览已在美国面向 Pro 用户落地，覆盖超 1.2 万家金融机构。当通用 AI 助手开始直接读取用户银行账户，银行的 '用户入口' 与 '账户中心' 地位正面临一场静默但深刻的迁徙。",
+    "date": "2026-09-14",
+    "tags": [
+      "Claude Money",
+      "ChatGPT Finance",
+      "个人财务",
+      "银行账户连接",
+      "银行AI",
+      "开放银行"
     ],
     "schema_type": "Article"
   },
@@ -959,6 +912,21 @@
     "schema_type": "Article"
   },
   {
+    "title": "从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示",
+    "slug": "organizational-second-brain-institutional-memory",
+    "url": "/articles/organizational-second-brain-institutional-memory.md",
+    "description": "Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。",
+    "date": "2026-09-14",
+    "tags": [
+      "AI Agent",
+      "机构知识管理",
+      "组织记忆",
+      "Meta",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径",
     "slug": "pace-frontier-rsi-finance-governance",
     "url": "/articles/pace-frontier-rsi-finance-governance.md",
@@ -1090,6 +1058,22 @@
       "人工智能+",
       "监管沙盒",
       "数字银行"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当「训练」也能按需调用：TaaS 范式对银行的模型自主权、专属模型矩阵与数据主权的启示",
+    "slug": "taas-training-api-bank-model-autonomy",
+    "url": "/articles/taas-training-api-bank-model-autonomy.md",
+    "description": "Harvey、Cursor 用专业数据训练专属模型，桥水基金以 Qwen3-235B 做金融信息筛选把错误率降低 29.8%、推理成本降 13.8 倍。当 PyTRIO 把大模型训练封装成 Training API、开启 TaaS 范式，银行面对的不只是新工具，而是模型自主权、数据主权与算力治理三重命题。",
+    "date": "2026-09-14",
+    "tags": [
+      "TaaS",
+      "模型训练",
+      "大模型",
+      "银行AI",
+      "金融科技",
+      "算力"
     ],
     "schema_type": "Article"
   },
