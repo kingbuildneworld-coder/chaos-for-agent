@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 63,
+    "total_articles": 64,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "byte-level-distillation-bank-model-economics",
+      "title": "Token 天花板破了：字节级蒸馏对银行模型成本与部署格局的启示",
+      "date": "2026-09-16",
+      "description": "Meta FAIR 与华盛顿大学提出字节级蒸馏，让学生模型直接从字节概率分布学习，预测上限比 Token 蒸馏高 4 个百分点。拆解这项研究对银行小模型经济学、数据主权与部署策略的启示。"
+    },
     {
       "slug": "bank-rsi-self-evolving-path",
       "title": "\"让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界\"",
@@ -565,7 +571,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-15",
+  "last_updated": "2026-09-16",
   "version": "1.1",
-  "total_articles": 63
+  "total_articles": 64
 }
