@@ -11,18 +11,27 @@
 日期: date: 2026-09-15
 
 ---
-title: "让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界"
-date: 2026-09-15
-description: "从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。"
-tags: ["RSI", "递归自改进", "银行AI", "自进化Agent", "模型风险管理", "FinEvo-Bench"]
-schema_type: "Article"
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: 7f583cd62b816ae81bf2b5e7e390dad8_a7d54287b09811f18f50525400aeaaa3
+    ReservedCode1: 6rExIbaIcxx4dLp5gqRIuNfo+0dknvu0tbAxVYGmQy1nfxpc/Ff+bBUcsVPbNUGCb6FUz7M2kTTcLl/7HTYfTUDRTvznFJmOPeWc956R9bfg46u/U5iRzopgduhy8tKkg0Q4lFqdWZ3X8Cwe02M5g7mvvH8TPE1g6HBoPByfGtMX8v4wS6NRWdZEA9o=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: 7f583cd62b816ae81bf2b5e7e390dad8_a7d54287b09811f18f50525400aeaaa3
+    ReservedCode2: 6rExIbaIcxx4dLp5gqRIuNfo+0dknvu0tbAxVYGmQy1nfxpc/Ff+bBUcsVPbNUGCb6FUz7M2kTTcLl/7HTYfTUDRTvznFJmOPeWc956R9bfg46u/U5iRzopgduhy8tKkg0Q4lFqdWZ3X8Cwe02M5g7mvvH8TPE1g6HBoPByfGtMX8v4wS6NRWdZEA9o=
 ---
 
 ## 让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界
 
 过去两年，银行部署大模型时最常问的问题是：「这个模型准不准、稳不稳？」现在，前沿研究提出了一个更进一步的命题：AI 能不能在完成任务的过程中，自己变得越来越强？
 
-这个命题在学术界有一个名字——RSI（Recursive Self-Improvement，递归自改进），也叫自进化（Self-Evolving）。青稞AI 与 MLNLP 社区近期发布的万字综述，系统梳理了这一领域的技术版图：从参数、上下文、记忆、Skill 到 Harness 代码，从链式、树形到图式的进化结构，从自身更新、教师更新到联合更新的权责分工，从离线、在线到混合模式的更新时机。对于正在把 Agent 引入信贷、风控、运营与合规场景的金融机构来说，这套坐标系不仅关乎技术选型，更关乎一套全新的治理命题：**当 AI 开始自己修改自己，银行的模型风险管理框架是否跟得上？**
+这个命题在学术界有一个名字——RSI（Recursive Self-Improvement，递归自改进），也叫自进化（Self-Evolving）。青稞AI 与 MLNLP 社区近期发布的万字综述，系统梳理了这一领域的技术版图：从参数、上下文、记忆、Skill 到 Harness 代码，从链式、树形到图式的进化结构，从自身更新、教师更新到联合更新的权责分工，从离线、在线到混合模式的更新时机。对于正在把 Agent 引入信贷、风控、运营与合规场景的金融机构来说，这套坐标系不仅关乎技术选型，更关乎一套全新的治理命题：当 AI 开始自己修改自己，银行的模型风险管理框架是否跟得上？
+
+**全文要点：**
+- **银行 RSI 落地应遵循"教师主导、人类终审"，AI 不得自行修改风控规则与关键决策逻辑**
+- **参数进化限定离线受控；上下文、记忆与 Skill 进化可优先在生产侧探索**
+- **金融场景坚持"离线优先、受控在线"的混合更新模式，禁止纯在线自进化**
+- **自进化是能力更是治理命题，可回滚、可审计、可解释是银行落地底线**
 
 本文以该综述为技术坐标，从金融行业视角拆解银行如何借助 RSI 实现自进化，以及哪些进化路径适合银行、哪些必须设限。
 
@@ -163,6 +172,8 @@ RSI 为银行描绘了一幅诱人的图景：AI 在完成一笔授信审批后�
 13. GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks：https://arxiv.org/abs/2608.03764
 14. FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows：https://arxiv.org/abs/2608.06144
 15. Mem²Evolve: Towards Self-Evolving Agents：https://arxiv.org/abs/2604.10923
+*（内容由AI生成，仅供参考）*
+
 
 ## ---
 
