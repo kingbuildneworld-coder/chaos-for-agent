@@ -1,5 +1,22 @@
 [
   {
+    "title": "Token 天花板破了：字节级蒸馏对银行模型成本与部署格局的启示",
+    "slug": "byte-level-distillation-bank-model-economics",
+    "url": "/articles/byte-level-distillation-bank-model-economics.md",
+    "description": "Meta FAIR 与华盛顿大学提出字节级蒸馏，让学生模型直接从字节概率分布学习，预测上限比 Token 蒸馏高 4 个百分点。拆解这项研究对银行小模型经济学、数据主权与部署策略的启示。",
+    "date": "2026-09-16",
+    "tags": [
+      "字节级蒸馏",
+      "Token蒸馏",
+      "模型压缩",
+      "银行AI",
+      "模型部署",
+      "Meta FAIR",
+      "数据主权"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
