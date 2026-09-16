@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/terminal-agent-bank-autonomy</id>
+    <title>终端 Agent 逼近旗舰：银行长程自主执行能力跃升的机遇与治理边界</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/terminal-agent-bank-autonomy" rel="alternate" type="text/html"/>
+    <summary>腾讯混元基于 Qwen3.5-122B-A10B 后训练出终端智能体 T1，Terminal-Bench 2.1 任务完成率 64.0%，逼近 Claude 旗舰。拆解长程强化学习、训练推理一致性等技术突破对银行复杂流程自动化的启示，以及部署终端 Agent 前必须回答的治理问题。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/quantum-ai-financial-risk-management</id>
     <title>量子科技叠加人工智能：金融机构风险管理的双引擎与治理边界</title>
     <updated>2026-09-16T00:00:00Z</updated>
