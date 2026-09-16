@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 66,
+    "total_articles": 67,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "cowork-model-bank-adaptation",
+      "title": "35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径",
+      "date": "2026-09-16",
+      "description": "阿里 Accio 团队开源 Occamy-1.0，35B 规模模型在长流程 Co-work 任务上逼近前沿大模型。以银行为场景，拆解长流程智能体能否胜任信贷、合规、运营等业务的关键判据，以及银行业适配改造的完整路径与治理边界。"
+    },
     {
       "slug": "terminal-agent-bank-autonomy",
       "title": "终端 Agent 逼近旗舰：银行长程自主执行能力跃升的机遇与治理边界",
@@ -585,5 +591,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-16",
   "version": "1.1",
-  "total_articles": 66
+  "total_articles": 67
 }
