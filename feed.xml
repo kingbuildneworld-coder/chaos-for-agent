@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/cowork-model-bank-adaptation</id>
+    <title>35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/cowork-model-bank-adaptation" rel="alternate" type="text/html"/>
+    <summary>阿里 Accio 团队开源 Occamy-1.0，35B 规模模型在长流程 Co-work 任务上逼近前沿大模型。以银行为场景，拆解长流程智能体能否胜任信贷、合规、运营等业务的关键判据，以及银行业适配改造的完整路径与治理边界。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/terminal-agent-bank-autonomy</id>
     <title>终端 Agent 逼近旗舰：银行长程自主执行能力跃升的机遇与治理边界</title>
     <updated>2026-09-16T00:00:00Z</updated>
