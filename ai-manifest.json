@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 67,
+    "total_articles": 68,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "humanist-ai-banking-governance",
+      "title": "人本主义 AI 的治理范式：微软 MAI 行为准则对金融行业的借鉴与落实",
+      "date": "2026-09-16",
+      "description": "从 Mustafa Suleyman 提出 Humanist Superintelligence 愿景，到微软 AI 发布《Humanist AI Code of Conduct》草案并开放公众咨询，人本主义 AI 正在从理念走向可操作的治理框架。拆解其指令层级、绝对约束与人类控制要求，并映射到金融行业的风险管理、模型治理与供应商管理实践。"
+    },
     {
       "slug": "cowork-model-bank-adaptation",
       "title": "35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径",
@@ -591,5 +597,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-16",
   "version": "1.1",
-  "total_articles": 67
+  "total_articles": 68
 }
