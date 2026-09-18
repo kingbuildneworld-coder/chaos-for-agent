@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/humanist-ai-banking-governance</id>
+    <title>人本主义 AI 的治理范式：微软 MAI 行为准则对金融行业的借鉴与落实</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/humanist-ai-banking-governance" rel="alternate" type="text/html"/>
+    <summary>从 Mustafa Suleyman 提出 Humanist Superintelligence 愿景，到微软 AI 发布《Humanist AI Code of Conduct》草案并开放公众咨询，人本主义 AI 正在从理念走向可操作的治理框架。拆解其指令层级、绝对约束与人类控制要求，并映射到金融行业的风险管理、模型治理与供应商管理实践。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/cowork-model-bank-adaptation</id>
     <title>35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径</title>
     <updated>2026-09-16T00:00:00Z</updated>
