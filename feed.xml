@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/measuring-pace-ai-development-explained</id>
+    <title>通俗解读：AI 跑多快、谁来盯？Anthropic 给公众的三块&#x27;发展仪表盘&#x27;</title>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/measuring-pace-ai-development-explained" rel="alternate" type="text/html"/>
+    <summary>Anthropic 首次公开三项测量指标：Claude 已主导 26% 的 AI 研发工作、超 90% 工作达到 AI 协作级、3 万 Agent 受 100% 在线监控、AI 研发算力仅 6% 投向安全。一文读懂&#x27;给 AI 发展测速&#x27;。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/jev-system-one-model-bank-implications</id>
     <title>JEV：当 AI 学会&quot;只决策、不聊天&quot;，银行的决策层要重构了</title>
     <updated>2026-09-19T00:00:00Z</updated>
