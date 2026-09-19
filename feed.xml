@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/banking-rsi-necessity-analysis</id>
+    <title>金融业需要 RSI 吗：递归自我改进对银行业的必要性与边界</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banking-rsi-necessity-analysis" rel="alternate" type="text/html"/>
+    <summary>Datawhale 长文《RSI 从 0 理一遍》拆解了递归自我改进的四层标准与五次边界推进：持久改进、自主闭环已经出现，递归增益尚无证据，稳健可控远未解决。对金融业而言，答案不是简单的要与不要：经验持久化与有界闭环正是风控与合规急需的能力，而递归增益与开放式 RSI 则是必须设防的禁区。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/legal-ontology-finance-implications</id>
     <title>法律本体论如何重塑金融知识基础设施：Draftwise Legal Ontology 对金融业的启示借鉴</title>
     <updated>2026-09-20T00:00:00Z</updated>
