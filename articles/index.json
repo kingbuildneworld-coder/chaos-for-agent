@@ -1,5 +1,23 @@
 [
   {
+    "title": "银行的数据管理为何需要一场工业母机式重构：AI 数据管理（IDM）视角下的银行业深度分析",
+    "slug": "banking-data-management-idm-analysis",
+    "url": "/articles/banking-data-management-idm-analysis.md",
+    "description": "黄大年茶思屋科技网站文章将 AI 数据管理（IDM）定位为算力纪元的工业母机：数据取代土地、资本成为核心生产资料，竞争壁垒从信息不对称转向行动不对称。对银行而言，数据既是燃料也是产品，本文拆解 IDM 对银行业的五个深度价值、三类差异化挑战，给出从盘点、治理到活性化、智能化的落地路线图。",
+    "date": "2026-09-20",
+    "tags": [
+      "银行数据管理",
+      "IDM",
+      "AI数据管理",
+      "数据治理",
+      "数据资产",
+      "银行AI",
+      "数据要素",
+      "合规"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "金融业需要 RSI 吗：递归自我改进对银行业的必要性与边界",
     "slug": "banking-rsi-necessity-analysis",
     "url": "/articles/banking-rsi-necessity-analysis.md",
