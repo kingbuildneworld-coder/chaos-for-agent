@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 69,
+    "total_articles": 70,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "measuring-pace-ai-development-explained",
+      "title": "通俗解读：AI 跑多快、谁来盯？Anthropic 给公众的三块'发展仪表盘'",
+      "date": "2026-09-19",
+      "description": "Anthropic 首次公开三项测量指标：Claude 已主导 26% 的 AI 研发工作、超 90% 工作达到 AI 协作级、3 万 Agent 受 100% 在线监控、AI 研发算力仅 6% 投向安全。一文读懂'给 AI 发展测速'。"
+    },
     {
       "slug": "jev-system-one-model-bank-implications",
       "title": "JEV：当 AI 学会\"只决策、不聊天\"，银行的决策层要重构了",
@@ -603,5 +609,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-19",
   "version": "1.1",
-  "total_articles": 69
+  "total_articles": 70
 }
