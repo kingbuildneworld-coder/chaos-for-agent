@@ -1,5 +1,23 @@
 [
   {
+    "title": "Kimi 金融方案 vs 海外大模型金融方案：功能与监管合规的深度对比",
+    "slug": "kimi-vs-global-ai-finance-solutions",
+    "url": "/articles/kimi-vs-global-ai-finance-solutions.md",
+    "description": "2026 年 9 月，月之暗面发布 Kimi 金融行业解决方案，OpenAI 与 Anthropic 前后脚推出金融专用产品。三套方案功能设计有何异同？站在中国金融监管框架下，谁更接近「合规可用」？本文从功能方案与监管符合性两个维度做深度对比。",
+    "date": "2026-09-20",
+    "tags": [
+      "Kimi",
+      "金融AI",
+      "ChatGPT for Financial Services",
+      "Claude for Financial Advisors",
+      "大模型",
+      "金融监管",
+      "AI治理",
+      "合规"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "通俗解读：AI 跑多快、谁来盯？Anthropic 给公众的三块'发展仪表盘'",
     "slug": "measuring-pace-ai-development-explained",
     "url": "/articles/measuring-pace-ai-development-explained.md",
