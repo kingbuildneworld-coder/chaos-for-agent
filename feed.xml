@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/jev-system-one-model-bank-implications</id>
+    <title>JEV：当 AI 学会&quot;只决策、不聊天&quot;，银行的决策层要重构了</title>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/jev-system-one-model-bank-implications" rel="alternate" type="text/html"/>
+    <summary>前 OpenAI 研究员发布 System One 模型 JEV：只输出带概率的类型化决策、不生成文本，延迟 70-500ms，输入价 $0.042/百万 token。对银行反欺诈、路由、Agent 监控与模型风险管理意味着什么？</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/humanist-ai-banking-governance</id>
     <title>人本主义 AI 的治理范式：微软 MAI 行为准则对金融行业的借鉴与落实</title>
     <updated>2026-09-16T00:00:00Z</updated>
