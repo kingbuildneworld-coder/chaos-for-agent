@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 73,
+    "total_articles": 74,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "banking-data-management-idm-analysis",
+      "title": "银行的数据管理为何需要一场工业母机式重构：AI 数据管理（IDM）视角下的银行业深度分析",
+      "date": "2026-09-20",
+      "description": "黄大年茶思屋科技网站文章将 AI 数据管理（IDM）定位为算力纪元的工业母机：数据取代土地、资本成为核心生产资料，竞争壁垒从信息不对称转向行动不对称。对银行而言，数据既是燃料也是产品，本文拆解 IDM 对银行业的五个深度价值、三类差异化挑战，给出从盘点、治理到活性化、智能化的落地路线图。"
+    },
     {
       "slug": "banking-rsi-necessity-analysis",
       "title": "金融业需要 RSI 吗：递归自我改进对银行业的必要性与边界",
@@ -627,5 +633,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-20",
   "version": "1.1",
-  "total_articles": 73
+  "total_articles": 74
 }
