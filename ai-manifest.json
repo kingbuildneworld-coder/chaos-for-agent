@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 71,
+    "total_articles": 72,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "legal-ontology-finance-implications",
+      "title": "法律本体论如何重塑金融知识基础设施：Draftwise Legal Ontology 对金融业的启示借鉴",
+      "date": "2026-09-20",
+      "description": "Draftwise CEO James Ding 在官方博客阐释了法律本体论（Legal Ontology）：以对象与关系而非文档组织法律知识，让经验可查询、可比较、可推理。法律行业的这一结构性变革，对金融业的风险管理、合规义务追踪与 AI 治理有直接借鉴价值。本文拆解原文概念，映射金融场景，给出落地路径。"
+    },
     {
       "slug": "kimi-vs-global-ai-finance-solutions",
       "title": "Kimi 金融方案 vs 海外大模型金融方案：功能与监管合规的深度对比",
@@ -615,5 +621,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-20",
   "version": "1.1",
-  "total_articles": 71
+  "total_articles": 72
 }
