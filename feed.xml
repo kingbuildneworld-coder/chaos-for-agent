@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/trump-ai-force-enterprise-implications</id>
+    <title>特朗普AI特别工作组的企业启示：护航式监管下的机会、不确定性与应对</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/trump-ai-force-enterprise-implications" rel="alternate" type="text/html"/>
+    <summary>特朗普宣布组建AI特别工作组并任命AI沙皇，称AI可能占美国GDP的25%，同时称风险担忧是骗局、将利用现有司法体系防范不良行为。对企业而言，这是典型的护航式监管信号：产业加速与执法从严并存。本文解码事件政策逻辑，拆解四个直接信号，给出金融机构双轨合规与五条企业应对清单。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/banking-data-prior-posterior-analysis</id>
     <title>银行数据管理的先验与后验：从数字全息照片到贝叶斯式自我进化</title>
     <updated>2026-09-20T00:00:00Z</updated>
