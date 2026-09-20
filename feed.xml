@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/banking-data-prior-posterior-analysis</id>
+    <title>银行数据管理的先验与后验：从数字全息照片到贝叶斯式自我进化</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banking-data-prior-posterior-analysis" rel="alternate" type="text/html"/>
+    <summary>黄大年茶思屋科技网站《我眼中的AI时代与数据管理（II）》提出：数据是人类实践的符号投影，传统IT把意图、约束、事实三元割裂，大模型是全人类先验经验的高维压缩，但静态先验存在时钟停摆与概率虚构两大致命伤，可靠AI必须靠RAG、智能体与环境碰撞、人类调教注入后验知识，并以卡尔曼滤波为哲学原型。对银行而言，数据既是实践的留痕也是风险定价的原料，本文拆解银行数据的三元困境、先验-后验对话机制与卡尔曼滤波式风险管理闭环，给出数据底座建设路径。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/banking-data-management-idm-analysis</id>
     <title>银行的数据管理为何需要一场工业母机式重构：AI 数据管理（IDM）视角下的银行业深度分析</title>
     <updated>2026-09-20T00:00:00Z</updated>
