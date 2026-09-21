@@ -1,5 +1,23 @@
 [
   {
+    "title": "如何应用AI避免AI转型失败：科特八错误的三十年回响与下半场行动框架",
+    "slug": "ai-transformation-failure-kotter-lessons",
+    "url": "/articles/ai-transformation-failure-kotter-lessons.md",
+    "description": "科特1995年总结的变革八错误，在AI转型中一个没少，部分还更隐蔽。麦肯锡数据显示80%受访者个人提效、仅37%企业EBIT正向、AI高绩效企业约6%；Deloitte称34%企业认为文化正直接阻碍AI转型。本文逐条拆解八个错误的AI时代变形，判断转型重心已从AI能做什么迁移到企业如何重新组织自己，并给出企业八条行动框架与金融机构特别提醒。",
+    "date": "2026-09-21",
+    "tags": [
+      "AI转型",
+      "组织变革",
+      "科特",
+      "变革管理",
+      "AI治理",
+      "operating model",
+      "人机协同",
+      "企业文化"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "特朗普AI特别工作组的企业启示：护航式监管下的机会、不确定性与应对",
     "slug": "trump-ai-force-enterprise-implications",
     "url": "/articles/trump-ai-force-enterprise-implications.md",
