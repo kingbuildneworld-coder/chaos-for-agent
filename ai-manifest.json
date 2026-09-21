@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 79,
+    "total_articles": 80,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "ai-financial-power-15th-five-year-plan",
+      "title": "AI 如何发力金融强国“十五五”规划：三条主线、六个发力面与三条安全边界",
+      "date": "2026-09-21",
+      "description": "以国新办 9·10 发布会与《金融强国建设“十五五”规划》为坐标，拆解 AI 在防风险、强监管、促高质量发展三条主线上的六个发力面：从风险“四早”流水线、穿透监管的技防转型，到五篇大文章与 109 项重大工程的融资保障，并给出由“可验证性梯度”决定的应用次序与三条不可越过的安全边界，附机构侧六项落地行动与监管文件对照表。"
+    },
     {
       "slug": "ai-empowered-bank-risk-committee",
       "title": "AI 如何赋能银行风控会：从治理客体到治理工具的六项行动",
@@ -663,5 +669,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-21",
   "version": "1.1",
-  "total_articles": 79
+  "total_articles": 80
 }
