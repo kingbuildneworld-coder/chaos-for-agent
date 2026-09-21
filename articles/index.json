@@ -1,5 +1,25 @@
 [
   {
+    "title": "AI 如何赋能银行风控会：从治理客体到治理工具的六项行动",
+    "slug": "ai-empowered-bank-risk-committee",
+    "url": "/articles/ai-empowered-bank-risk-committee.md",
+    "description": "以麦肯锡《AI改写规则：董事会如何自我进化》为素材，把董事会 AI 治理框架迁移到银行风险管理委员会（风控会）场景：拆解风控会面对 AI 的双重身份——既是被治理的风险客体，也是可用于治理的工具，并给出定位审查、职责边界、制度框架、一线沟通、价值挂钩与素养提升六项行动的银行版落地清单，附监管坐标对照与风控会 AI 仪表盘指标体系。",
+    "date": "2026-09-21",
+    "tags": [
+      "银行风控",
+      "AI治理",
+      "风险管理委员会",
+      "董事会治理",
+      "模型风险",
+      "智能风控",
+      "金融监管",
+      "可解释性",
+      "三道防线",
+      "AI安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "词元金融的必要性、可行性与风控边界：从北京“词元经济十条”看智能要素金融化的正路与红线",
     "slug": "token-finance-necessity-feasibility-risk-control",
     "url": "/articles/token-finance-necessity-feasibility-risk-control.md",
