@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 80,
+    "total_articles": 81,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,12 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "ai-judgment-scarcity-financial-risk",
+      "title": "判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代",
+      "date": "2026-09-22",
+      "description": "以 Google Research 首期播客访谈为切口，结合银行校招收缩、FSB 与金融监管总局文件三组同期信号，提出判断力三层结构与三个时间尺度错配框架，拆解风险管理条线四类控制点与机构侧六项行动，并回答“AI 接管基础工作后训练场消失”带来的断代风险如何治理。"
+    },
     {
       "slug": "ai-financial-power-15th-five-year-plan",
       "title": "AI 如何发力金融强国“十五五”规划：三条主线、六个发力面与三条安全边界",
@@ -667,7 +673,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-21",
+  "last_updated": "2026-09-22",
   "version": "1.1",
-  "total_articles": 80
+  "total_articles": 81
 }
