@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
                   <entry>
+    <id>https://bi-chao.com/articles/ai-judgment-scarcity-financial-risk</id>
+    <title>判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代</title>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-judgment-scarcity-financial-risk" rel="alternate" type="text/html"/>
+    <summary>以 Google Research 首期播客访谈为切口，结合银行校招收缩、FSB 与金融监管总局文件三组同期信号，提出判断力三层结构与三个时间尺度错配框架，拆解风险管理条线四类控制点与机构侧六项行动，并回答“AI 接管基础工作后训练场消失”带来的断代风险如何治理。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/ai-financial-power-15th-five-year-plan</id>
     <title>AI 如何发力金融强国“十五五”规划：三条主线、六个发力面与三条安全边界</title>
     <updated>2026-09-21T00:00:00Z</updated>
