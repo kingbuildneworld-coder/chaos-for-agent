@@ -1,312 +1,5 @@
 [
   {
-    "title": "AI 如何发力金融强国“十五五”规划：三条主线、六个发力面与三条安全边界",
-    "slug": "ai-financial-power-15th-five-year-plan",
-    "url": "/articles/ai-financial-power-15th-five-year-plan.md",
-    "description": "以国新办 9·10 发布会与《金融强国建设“十五五”规划》为坐标，拆解 AI 在防风险、强监管、促高质量发展三条主线上的六个发力面：从风险“四早”流水线、穿透监管的技防转型，到五篇大文章与 109 项重大工程的融资保障，并给出由“可验证性梯度”决定的应用次序与三条不可越过的安全边界，附机构侧六项落地行动与监管文件对照表。",
-    "date": "2026-09-21",
-    "tags": [
-      "金融强国",
-      "十五五规划",
-      "人工智能",
-      "金融监管",
-      "AI治理",
-      "监管科技",
-      "数字金融",
-      "五篇大文章",
-      "金融风险",
-      "人工智能+"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "AI 如何赋能银行风控会：从治理客体到治理工具的六项行动",
-    "slug": "ai-empowered-bank-risk-committee",
-    "url": "/articles/ai-empowered-bank-risk-committee.md",
-    "description": "以麦肯锡《AI改写规则：董事会如何自我进化》为素材，把董事会 AI 治理框架迁移到银行风险管理委员会（风控会）场景：拆解风控会面对 AI 的双重身份——既是被治理的风险客体，也是可用于治理的工具，并给出定位审查、职责边界、制度框架、一线沟通、价值挂钩与素养提升六项行动的银行版落地清单，附监管坐标对照与风控会 AI 仪表盘指标体系。",
-    "date": "2026-09-21",
-    "tags": [
-      "银行风控",
-      "AI治理",
-      "风险管理委员会",
-      "董事会治理",
-      "模型风险",
-      "智能风控",
-      "金融监管",
-      "可解释性",
-      "三道防线",
-      "AI安全"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "词元金融的必要性、可行性与风控边界：从北京“词元经济十条”看智能要素金融化的正路与红线",
-    "slug": "token-finance-necessity-feasibility-risk-control",
-    "url": "/articles/token-finance-necessity-feasibility-risk-control.md",
-    "description": "北京“词元经济十条”首提“创新算力与词元金融工具”，词元金融从概念走向产业议题。本文辨析两种“词元金融”——服务词元经济的金融工具与词元本身的金融化炒作，论证前者必要且技术可行、后者触碰非法金融红线；提出属性、流通、计量、资本、数据安全五条风控边界与监管—平台—机构三层防线，并给出金融机构落地清单。",
-    "date": "2026-09-21",
-    "tags": [
-      "词元经济",
-      "词元金融",
-      "AI治理",
-      "金融监管",
-      "数据要素",
-      "词元工厂",
-      "非法金融活动",
-      "风险管理"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "如何应用AI避免AI转型失败：科特八错误的三十年回响与下半场行动框架",
-    "slug": "ai-transformation-failure-kotter-lessons",
-    "url": "/articles/ai-transformation-failure-kotter-lessons.md",
-    "description": "科特1995年总结的变革八错误，在AI转型中一个没少，部分还更隐蔽。麦肯锡数据显示80%受访者个人提效、仅37%企业EBIT正向、AI高绩效企业约6%；Deloitte称34%企业认为文化正直接阻碍AI转型。本文逐条拆解八个错误的AI时代变形，判断转型重心已从AI能做什么迁移到企业如何重新组织自己，并给出企业八条行动框架与金融机构特别提醒。",
-    "date": "2026-09-21",
-    "tags": [
-      "AI转型",
-      "组织变革",
-      "科特",
-      "变革管理",
-      "AI治理",
-      "operating model",
-      "人机协同",
-      "企业文化"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "特朗普AI特别工作组的企业启示：护航式监管下的机会、不确定性与应对",
-    "slug": "trump-ai-force-enterprise-implications",
-    "url": "/articles/trump-ai-force-enterprise-implications.md",
-    "description": "特朗普宣布组建AI特别工作组并任命AI沙皇，称AI可能占美国GDP的25%，同时称风险担忧是骗局、将利用现有司法体系防范不良行为。对企业而言，这是典型的护航式监管信号：产业加速与执法从严并存。本文解码事件政策逻辑，拆解四个直接信号，给出金融机构双轨合规与五条企业应对清单。",
-    "date": "2026-09-20",
-    "tags": [
-      "特朗普",
-      "AI特别工作组",
-      "AI沙皇",
-      "企业AI战略",
-      "AI监管",
-      "政策",
-      "金融AI",
-      "合规"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "银行数据管理的先验与后验：从数字全息照片到贝叶斯式自我进化",
-    "slug": "banking-data-prior-posterior-analysis",
-    "url": "/articles/banking-data-prior-posterior-analysis.md",
-    "description": "黄大年茶思屋科技网站《我眼中的AI时代与数据管理（II）》提出：数据是人类实践的符号投影，传统IT把意图、约束、事实三元割裂，大模型是全人类先验经验的高维压缩，但静态先验存在时钟停摆与概率虚构两大致命伤，可靠AI必须靠RAG、智能体与环境碰撞、人类调教注入后验知识，并以卡尔曼滤波为哲学原型。对银行而言，数据既是实践的留痕也是风险定价的原料，本文拆解银行数据的三元困境、先验-后验对话机制与卡尔曼滤波式风险管理闭环，给出数据底座建设路径。",
-    "date": "2026-09-20",
-    "tags": [
-      "银行数据管理",
-      "先验后验",
-      "数据本质",
-      "卡尔曼滤波",
-      "银行AI",
-      "数据治理",
-      "大模型",
-      "风险管理"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "银行的数据管理为何需要一场工业母机式重构：AI 数据管理（IDM）视角下的银行业深度分析",
-    "slug": "banking-data-management-idm-analysis",
-    "url": "/articles/banking-data-management-idm-analysis.md",
-    "description": "黄大年茶思屋科技网站文章将 AI 数据管理（IDM）定位为算力纪元的工业母机：数据取代土地、资本成为核心生产资料，竞争壁垒从信息不对称转向行动不对称。对银行而言，数据既是燃料也是产品，本文拆解 IDM 对银行业的五个深度价值、三类差异化挑战，给出从盘点、治理到活性化、智能化的落地路线图。",
-    "date": "2026-09-20",
-    "tags": [
-      "银行数据管理",
-      "IDM",
-      "AI数据管理",
-      "数据治理",
-      "数据资产",
-      "银行AI",
-      "数据要素",
-      "合规"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "金融业需要 RSI 吗：递归自我改进对银行业的必要性与边界",
-    "slug": "banking-rsi-necessity-analysis",
-    "url": "/articles/banking-rsi-necessity-analysis.md",
-    "description": "Datawhale 长文《RSI 从 0 理一遍》拆解了递归自我改进的四层标准与五次边界推进：持久改进、自主闭环已经出现，递归增益尚无证据，稳健可控远未解决。对金融业而言，答案不是简单的要与不要：经验持久化与有界闭环正是风控与合规急需的能力，而递归增益与开放式 RSI 则是必须设防的禁区。",
-    "date": "2026-09-20",
-    "tags": [
-      "RSI",
-      "递归自我改进",
-      "金融AI",
-      "银行AI",
-      "模型风险管理",
-      "AI治理",
-      "奖励黑客",
-      "可解释性"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "法律本体论如何重塑金融知识基础设施：Draftwise Legal Ontology 对金融业的启示借鉴",
-    "slug": "legal-ontology-finance-implications",
-    "url": "/articles/legal-ontology-finance-implications.md",
-    "description": "Draftwise CEO James Ding 在官方博客阐释了法律本体论（Legal Ontology）：以对象与关系而非文档组织法律知识，让经验可查询、可比较、可推理。法律行业的这一结构性变革，对金融业的风险管理、合规义务追踪与 AI 治理有直接借鉴价值。本文拆解原文概念，映射金融场景，给出落地路径。",
-    "date": "2026-09-20",
-    "tags": [
-      "法律本体论",
-      "Legal Ontology",
-      "Draftwise",
-      "金融AI",
-      "知识图谱",
-      "风险管理",
-      "合规",
-      "AI治理",
-      "数据基础设施"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "Kimi 金融方案 vs 海外大模型金融方案：功能与监管合规的深度对比",
-    "slug": "kimi-vs-global-ai-finance-solutions",
-    "url": "/articles/kimi-vs-global-ai-finance-solutions.md",
-    "description": "2026 年 9 月，月之暗面发布 Kimi 金融行业解决方案，OpenAI 与 Anthropic 前后脚推出金融专用产品。三套方案功能设计有何异同？站在中国金融监管框架下，谁更接近「合规可用」？本文从功能方案与监管符合性两个维度做深度对比。",
-    "date": "2026-09-20",
-    "tags": [
-      "Kimi",
-      "金融AI",
-      "ChatGPT for Financial Services",
-      "Claude for Financial Advisors",
-      "大模型",
-      "金融监管",
-      "AI治理",
-      "合规"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "通俗解读：AI 跑多快、谁来盯？Anthropic 给公众的三块'发展仪表盘'",
-    "slug": "measuring-pace-ai-development-explained",
-    "url": "/articles/measuring-pace-ai-development-explained.md",
-    "description": "Anthropic 首次公开三项测量指标：Claude 已主导 26% 的 AI 研发工作、超 90% 工作达到 AI 协作级、3 万 Agent 受 100% 在线监控、AI 研发算力仅 6% 投向安全。一文读懂'给 AI 发展测速'。",
-    "date": "2026-09-19",
-    "tags": [
-      "Anthropic",
-      "AI发展速度",
-      "自动化指数",
-      "Agent监督",
-      "算力分配",
-      "AI治理",
-      "透明度"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "JEV：当 AI 学会\"只决策、不聊天\"，银行的决策层要重构了",
-    "slug": "jev-system-one-model-bank-implications",
-    "url": "/articles/jev-system-one-model-bank-implications.md",
-    "description": "前 OpenAI 研究员发布 System One 模型 JEV：只输出带概率的类型化决策、不生成文本，延迟 70-500ms，输入价 $0.042/百万 token。对银行反欺诈、路由、Agent 监控与模型风险管理意味着什么？",
-    "date": "2026-09-19",
-    "tags": [
-      "JEV",
-      "System One",
-      "TypeSafe AI",
-      "决策模型",
-      "银行AI",
-      "模型风险管理",
-      "智能体监控"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "人本主义 AI 的治理范式：微软 MAI 行为准则对金融行业的借鉴与落实",
-    "slug": "humanist-ai-banking-governance",
-    "url": "/articles/humanist-ai-banking-governance.md",
-    "description": "从 Mustafa Suleyman 提出 Humanist Superintelligence 愿景，到微软 AI 发布《Humanist AI Code of Conduct》草案并开放公众咨询，人本主义 AI 正在从理念走向可操作的治理框架。拆解其指令层级、绝对约束与人类控制要求，并映射到金融行业的风险管理、模型治理与供应商管理实践。",
-    "date": "2026-09-16",
-    "tags": [
-      "人本主义AI",
-      "Humanist AI",
-      "微软",
-      "MAI",
-      "AI治理",
-      "行为准则",
-      "金融监管",
-      "模型风险管理",
-      "超级智能"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径",
-    "slug": "cowork-model-bank-adaptation",
-    "url": "/articles/cowork-model-bank-adaptation.md",
-    "description": "阿里 Accio 团队开源 Occamy-1.0，35B 规模模型在长流程 Co-work 任务上逼近前沿大模型。以银行为场景，拆解长流程智能体能否胜任信贷、合规、运营等业务的关键判据，以及银行业适配改造的完整路径与治理边界。",
-    "date": "2026-09-16",
-    "tags": [
-      "Co-work",
-      "Occamy",
-      "阿里",
-      "智能体",
-      "模型适配",
-      "银行AI",
-      "长流程任务",
-      "模型风险管理"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "终端 Agent 逼近旗舰：银行长程自主执行能力跃升的机遇与治理边界",
-    "slug": "terminal-agent-bank-autonomy",
-    "url": "/articles/terminal-agent-bank-autonomy.md",
-    "description": "腾讯混元基于 Qwen3.5-122B-A10B 后训练出终端智能体 T1，Terminal-Bench 2.1 任务完成率 64.0%，逼近 Claude 旗舰。拆解长程强化学习、训练推理一致性等技术突破对银行复杂流程自动化的启示，以及部署终端 Agent 前必须回答的治理问题。",
-    "date": "2026-09-16",
-    "tags": [
-      "终端Agent",
-      "腾讯混元",
-      "长程任务",
-      "强化学习",
-      "MoE",
-      "银行AI",
-      "模型风险管理"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "量子科技叠加人工智能：金融机构风险管理的双引擎与治理边界",
-    "slug": "quantum-ai-financial-risk-management",
-    "url": "/articles/quantum-ai-financial-risk-management.md",
-    "description": "AI 重塑风控流程、量子计算突破算力边界、量子加密筑牢数据底座。拆解量子科技与人工智能双引擎如何协同强化金融机构风险管理，并给出从单点试点到体系治理的落地路径与合规边界。",
-    "date": "2026-09-16",
-    "tags": [
-      "量子科技",
-      "量子计算",
-      "量子加密",
-      "人工智能",
-      "风险管理",
-      "银行AI",
-      "金融科技"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "Token 天花板破了：字节级蒸馏对银行模型成本与部署格局的启示",
-    "slug": "byte-level-distillation-bank-model-economics",
-    "url": "/articles/byte-level-distillation-bank-model-economics.md",
-    "description": "Meta FAIR 与华盛顿大学提出字节级蒸馏，让学生模型直接从字节概率分布学习，预测上限比 Token 蒸馏高 4 个百分点。拆解这项研究对银行小模型经济学、数据主权与部署策略的启示。",
-    "date": "2026-09-16",
-    "tags": [
-      "字节级蒸馏",
-      "Token蒸馏",
-      "模型压缩",
-      "银行AI",
-      "模型部署",
-      "Meta FAIR",
-      "数据主权"
-    ],
-    "schema_type": "Article"
-  },
-  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
@@ -465,6 +158,46 @@
     "schema_type": "AcademicPaper"
   },
   {
+    "title": "AI 如何赋能银行风控会：从治理客体到治理工具的六项行动",
+    "slug": "ai-empowered-bank-risk-committee",
+    "url": "/articles/ai-empowered-bank-risk-committee.md",
+    "description": "以麦肯锡《AI改写规则：董事会如何自我进化》为素材，把董事会 AI 治理框架迁移到银行风险管理委员会（风控会）场景：拆解风控会面对 AI 的双重身份——既是被治理的风险客体，也是可用于治理的工具，并给出定位审查、职责边界、制度框架、一线沟通、价值挂钩与素养提升六项行动的银行版落地清单，附监管坐标对照与风控会 AI 仪表盘指标体系。",
+    "date": "2026-09-21",
+    "tags": [
+      "银行风控",
+      "AI治理",
+      "风险管理委员会",
+      "董事会治理",
+      "模型风险",
+      "智能风控",
+      "金融监管",
+      "可解释性",
+      "三道防线",
+      "AI安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "AI 如何发力金融强国“十五五”规划：三条主线、六个发力面与三条安全边界",
+    "slug": "ai-financial-power-15th-five-year-plan",
+    "url": "/articles/ai-financial-power-15th-five-year-plan.md",
+    "description": "以国新办 9·10 发布会与《金融强国建设“十五五”规划》为坐标，拆解 AI 在防风险、强监管、促高质量发展三条主线上的六个发力面：从风险“四早”流水线、穿透监管的技防转型，到五篇大文章与 109 项重大工程的融资保障，并给出由“可验证性梯度”决定的应用次序与三条不可越过的安全边界，附机构侧六项落地行动与监管文件对照表。",
+    "date": "2026-09-21",
+    "tags": [
+      "金融强国",
+      "十五五规划",
+      "人工智能",
+      "金融监管",
+      "AI治理",
+      "监管科技",
+      "数字金融",
+      "五篇大文章",
+      "金融风险",
+      "人工智能+"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI的尽头是电、钱与金属：孙正义、黄仁勋、马斯克的三重押注与金融启示",
     "slug": "ai-infrastructure-power-capital-castings",
     "url": "/articles/ai-infrastructure-power-capital-castings.md",
@@ -483,6 +216,22 @@
       "资产证券化",
       "银行",
       "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代",
+    "slug": "ai-judgment-scarcity-financial-risk",
+    "url": "/articles/ai-judgment-scarcity-financial-risk.md",
+    "description": "以 Google Research 首期播客访谈为切口，结合银行校招收缩、FSB 与金融监管总局文件三组同期信号，提出判断力三层结构与三个时间尺度错配框架，拆解风险管理条线四类控制点与机构侧六项行动，并回答“AI 接管基础工作后训练场消失”带来的断代风险如何治理。",
+    "date": "2026-09-22",
+    "tags": [
+      "人工智能",
+      "金融风险管理",
+      "AI治理",
+      "判断力",
+      "人才培养",
+      "模型风险"
     ],
     "schema_type": "Article"
   },
@@ -552,6 +301,24 @@
       "AI智能体",
       "大语言模型",
       "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "如何应用AI避免AI转型失败：科特八错误的三十年回响与下半场行动框架",
+    "slug": "ai-transformation-failure-kotter-lessons",
+    "url": "/articles/ai-transformation-failure-kotter-lessons.md",
+    "description": "科特1995年总结的变革八错误，在AI转型中一个没少，部分还更隐蔽。麦肯锡数据显示80%受访者个人提效、仅37%企业EBIT正向、AI高绩效企业约6%；Deloitte称34%企业认为文化正直接阻碍AI转型。本文逐条拆解八个错误的AI时代变形，判断转型重心已从AI能做什么迁移到企业如何重新组织自己，并给出企业八条行动框架与金融机构特别提醒。",
+    "date": "2026-09-21",
+    "tags": [
+      "AI转型",
+      "组织变革",
+      "科特",
+      "变革管理",
+      "AI治理",
+      "operating model",
+      "人机协同",
+      "企业文化"
     ],
     "schema_type": "Article"
   },
@@ -803,6 +570,60 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行的数据管理为何需要一场工业母机式重构：AI 数据管理（IDM）视角下的银行业深度分析",
+    "slug": "banking-data-management-idm-analysis",
+    "url": "/articles/banking-data-management-idm-analysis.md",
+    "description": "黄大年茶思屋科技网站文章将 AI 数据管理（IDM）定位为算力纪元的工业母机：数据取代土地、资本成为核心生产资料，竞争壁垒从信息不对称转向行动不对称。对银行而言，数据既是燃料也是产品，本文拆解 IDM 对银行业的五个深度价值、三类差异化挑战，给出从盘点、治理到活性化、智能化的落地路线图。",
+    "date": "2026-09-20",
+    "tags": [
+      "银行数据管理",
+      "IDM",
+      "AI数据管理",
+      "数据治理",
+      "数据资产",
+      "银行AI",
+      "数据要素",
+      "合规"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "银行数据管理的先验与后验：从数字全息照片到贝叶斯式自我进化",
+    "slug": "banking-data-prior-posterior-analysis",
+    "url": "/articles/banking-data-prior-posterior-analysis.md",
+    "description": "黄大年茶思屋科技网站《我眼中的AI时代与数据管理（II）》提出：数据是人类实践的符号投影，传统IT把意图、约束、事实三元割裂，大模型是全人类先验经验的高维压缩，但静态先验存在时钟停摆与概率虚构两大致命伤，可靠AI必须靠RAG、智能体与环境碰撞、人类调教注入后验知识，并以卡尔曼滤波为哲学原型。对银行而言，数据既是实践的留痕也是风险定价的原料，本文拆解银行数据的三元困境、先验-后验对话机制与卡尔曼滤波式风险管理闭环，给出数据底座建设路径。",
+    "date": "2026-09-20",
+    "tags": [
+      "银行数据管理",
+      "先验后验",
+      "数据本质",
+      "卡尔曼滤波",
+      "银行AI",
+      "数据治理",
+      "大模型",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "金融业需要 RSI 吗：递归自我改进对银行业的必要性与边界",
+    "slug": "banking-rsi-necessity-analysis",
+    "url": "/articles/banking-rsi-necessity-analysis.md",
+    "description": "Datawhale 长文《RSI 从 0 理一遍》拆解了递归自我改进的四层标准与五次边界推进：持久改进、自主闭环已经出现，递归增益尚无证据，稳健可控远未解决。对金融业而言，答案不是简单的要与不要：经验持久化与有界闭环正是风控与合规急需的能力，而递归增益与开放式 RSI 则是必须设防的禁区。",
+    "date": "2026-09-20",
+    "tags": [
+      "RSI",
+      "递归自我改进",
+      "金融AI",
+      "银行AI",
+      "模型风险管理",
+      "AI治理",
+      "奖励黑客",
+      "可解释性"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化",
     "slug": "bichao-agent-payment-risk-warnings",
     "url": "/articles/bichao-agent-payment-risk-warnings.md",
@@ -906,6 +727,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "Token 天花板破了：字节级蒸馏对银行模型成本与部署格局的启示",
+    "slug": "byte-level-distillation-bank-model-economics",
+    "url": "/articles/byte-level-distillation-bank-model-economics.md",
+    "description": "Meta FAIR 与华盛顿大学提出字节级蒸馏，让学生模型直接从字节概率分布学习，预测上限比 Token 蒸馏高 4 个百分点。拆解这项研究对银行小模型经济学、数据主权与部署策略的启示。",
+    "date": "2026-09-16",
+    "tags": [
+      "字节级蒸馏",
+      "Token蒸馏",
+      "模型压缩",
+      "银行AI",
+      "模型部署",
+      "Meta FAIR",
+      "数据主权"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战",
     "slug": "claude-money-chatgpt-finance-bank-account-ai",
     "url": "/articles/claude-money-chatgpt-finance-bank-account-ai.md",
@@ -973,6 +811,24 @@
       "产业趋势",
       "SpaceX",
       "星舰"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径",
+    "slug": "cowork-model-bank-adaptation",
+    "url": "/articles/cowork-model-bank-adaptation.md",
+    "description": "阿里 Accio 团队开源 Occamy-1.0，35B 规模模型在长流程 Co-work 任务上逼近前沿大模型。以银行为场景，拆解长流程智能体能否胜任信贷、合规、运营等业务的关键判据，以及银行业适配改造的完整路径与治理边界。",
+    "date": "2026-09-16",
+    "tags": [
+      "Co-work",
+      "Occamy",
+      "阿里",
+      "智能体",
+      "模型适配",
+      "银行AI",
+      "长流程任务",
+      "模型风险管理"
     ],
     "schema_type": "Article"
   },
@@ -1185,6 +1041,79 @@
     "schema_type": "Article"
   },
   {
+    "title": "人本主义 AI 的治理范式：微软 MAI 行为准则对金融行业的借鉴与落实",
+    "slug": "humanist-ai-banking-governance",
+    "url": "/articles/humanist-ai-banking-governance.md",
+    "description": "从 Mustafa Suleyman 提出 Humanist Superintelligence 愿景，到微软 AI 发布《Humanist AI Code of Conduct》草案并开放公众咨询，人本主义 AI 正在从理念走向可操作的治理框架。拆解其指令层级、绝对约束与人类控制要求，并映射到金融行业的风险管理、模型治理与供应商管理实践。",
+    "date": "2026-09-16",
+    "tags": [
+      "人本主义AI",
+      "Humanist AI",
+      "微软",
+      "MAI",
+      "AI治理",
+      "行为准则",
+      "金融监管",
+      "模型风险管理",
+      "超级智能"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "JEV：当 AI 学会\"只决策、不聊天\"，银行的决策层要重构了",
+    "slug": "jev-system-one-model-bank-implications",
+    "url": "/articles/jev-system-one-model-bank-implications.md",
+    "description": "前 OpenAI 研究员发布 System One 模型 JEV：只输出带概率的类型化决策、不生成文本，延迟 70-500ms，输入价 $0.042/百万 token。对银行反欺诈、路由、Agent 监控与模型风险管理意味着什么？",
+    "date": "2026-09-19",
+    "tags": [
+      "JEV",
+      "System One",
+      "TypeSafe AI",
+      "决策模型",
+      "银行AI",
+      "模型风险管理",
+      "智能体监控"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "Kimi 金融方案 vs 海外大模型金融方案：功能与监管合规的深度对比",
+    "slug": "kimi-vs-global-ai-finance-solutions",
+    "url": "/articles/kimi-vs-global-ai-finance-solutions.md",
+    "description": "2026 年 9 月，月之暗面发布 Kimi 金融行业解决方案，OpenAI 与 Anthropic 前后脚推出金融专用产品。三套方案功能设计有何异同？站在中国金融监管框架下，谁更接近「合规可用」？本文从功能方案与监管符合性两个维度做深度对比。",
+    "date": "2026-09-20",
+    "tags": [
+      "Kimi",
+      "金融AI",
+      "ChatGPT for Financial Services",
+      "Claude for Financial Advisors",
+      "大模型",
+      "金融监管",
+      "AI治理",
+      "合规"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "法律本体论如何重塑金融知识基础设施：Draftwise Legal Ontology 对金融业的启示借鉴",
+    "slug": "legal-ontology-finance-implications",
+    "url": "/articles/legal-ontology-finance-implications.md",
+    "description": "Draftwise CEO James Ding 在官方博客阐释了法律本体论（Legal Ontology）：以对象与关系而非文档组织法律知识，让经验可查询、可比较、可推理。法律行业的这一结构性变革，对金融业的风险管理、合规义务追踪与 AI 治理有直接借鉴价值。本文拆解原文概念，映射金融场景，给出落地路径。",
+    "date": "2026-09-20",
+    "tags": [
+      "法律本体论",
+      "Legal Ontology",
+      "Draftwise",
+      "金融AI",
+      "知识图谱",
+      "风险管理",
+      "合规",
+      "AI治理",
+      "数据基础设施"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "企业本地部署大模型的必然性——从阿里禁令到\"Token税\"陷阱的深层逻辑",
     "slug": "local-llm-deployment-data-sovereignty",
     "url": "/articles/local-llm-deployment-data-sovereignty.md",
@@ -1198,6 +1127,23 @@
       "金融科技",
       "AI治理",
       "企业架构"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "通俗解读：AI 跑多快、谁来盯？Anthropic 给公众的三块'发展仪表盘",
+    "slug": "measuring-pace-ai-development-explained",
+    "url": "/articles/measuring-pace-ai-development-explained.md",
+    "description": "Anthropic 首次公开三项测量指标：Claude 已主导 26% 的 AI 研发工作、超 90% 工作达到 AI 协作级、3 万 Agent 受 100% 在线监控、AI 研发算力仅 6% 投向安全。一文读懂'给 AI 发展测速'。",
+    "date": "2026-09-19",
+    "tags": [
+      "Anthropic",
+      "AI发展速度",
+      "自动化指数",
+      "Agent监督",
+      "算力分配",
+      "AI治理",
+      "透明度"
     ],
     "schema_type": "Article"
   },
@@ -1328,6 +1274,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "量子科技叠加人工智能：金融机构风险管理的双引擎与治理边界",
+    "slug": "quantum-ai-financial-risk-management",
+    "url": "/articles/quantum-ai-financial-risk-management.md",
+    "description": "AI 重塑风控流程、量子计算突破算力边界、量子加密筑牢数据底座。拆解量子科技与人工智能双引擎如何协同强化金融机构风险管理，并给出从单点试点到体系治理的落地路径与合规边界。",
+    "date": "2026-09-16",
+    "tags": [
+      "量子科技",
+      "量子计算",
+      "量子加密",
+      "人工智能",
+      "风险管理",
+      "银行AI",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "量子计算的货币冲击：主权数字货币与加密货币的暴露、重构与对策",
     "slug": "quantum-computing-sovereign-digital-currency-crypto",
     "url": "/articles/quantum-computing-sovereign-digital-currency-crypto.md",
@@ -1401,6 +1364,41 @@
     "schema_type": "Article"
   },
   {
+    "title": "终端 Agent 逼近旗舰：银行长程自主执行能力跃升的机遇与治理边界",
+    "slug": "terminal-agent-bank-autonomy",
+    "url": "/articles/terminal-agent-bank-autonomy.md",
+    "description": "腾讯混元基于 Qwen3.5-122B-A10B 后训练出终端智能体 T1，Terminal-Bench 2.1 任务完成率 64.0%，逼近 Claude 旗舰。拆解长程强化学习、训练推理一致性等技术突破对银行复杂流程自动化的启示，以及部署终端 Agent 前必须回答的治理问题。",
+    "date": "2026-09-16",
+    "tags": [
+      "终端Agent",
+      "腾讯混元",
+      "长程任务",
+      "强化学习",
+      "MoE",
+      "银行AI",
+      "模型风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "词元金融的必要性、可行性与风控边界：从北京“词元经济十条”看智能要素金融化的正路与红线",
+    "slug": "token-finance-necessity-feasibility-risk-control",
+    "url": "/articles/token-finance-necessity-feasibility-risk-control.md",
+    "description": "北京“词元经济十条”首提“创新算力与词元金融工具”，词元金融从概念走向产业议题。本文辨析两种“词元金融”——服务词元经济的金融工具与词元本身的金融化炒作，论证前者必要且技术可行、后者触碰非法金融红线；提出属性、流通、计量、资本、数据安全五条风控边界与监管—平台—机构三层防线，并给出金融机构落地清单。",
+    "date": "2026-09-21",
+    "tags": [
+      "词元经济",
+      "词元金融",
+      "AI治理",
+      "金融监管",
+      "数据要素",
+      "词元工厂",
+      "非法金融活动",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行非结构化数据价值发掘的隐形地基：Tokenization 如何决定 RAG 与智能知识底座的质量上限",
     "slug": "tokenization-rag-banking-knowledge-foundation",
     "url": "/articles/tokenization-rag-banking-knowledge-foundation.md",
@@ -1412,6 +1410,24 @@
       "智能知识底座",
       "非结构化数据",
       "银行AI"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "特朗普AI特别工作组的企业启示：护航式监管下的机会、不确定性与应对",
+    "slug": "trump-ai-force-enterprise-implications",
+    "url": "/articles/trump-ai-force-enterprise-implications.md",
+    "description": "特朗普宣布组建AI特别工作组并任命AI沙皇，称AI可能占美国GDP的25%，同时称风险担忧是骗局、将利用现有司法体系防范不良行为。对企业而言，这是典型的护航式监管信号：产业加速与执法从严并存。本文解码事件政策逻辑，拆解四个直接信号，给出金融机构双轨合规与五条企业应对清单。",
+    "date": "2026-09-20",
+    "tags": [
+      "特朗普",
+      "AI特别工作组",
+      "AI沙皇",
+      "企业AI战略",
+      "AI监管",
+      "政策",
+      "金融AI",
+      "合规"
     ],
     "schema_type": "Article"
   },
