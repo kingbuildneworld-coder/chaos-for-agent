@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  P26-09-13T00:00:00Z</updated>
+  <updated>2026-09-22T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,260 +13,281 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
-                  <entry>
+  <entry>
     <id>https://bi-chao.com/articles/ai-judgment-scarcity-financial-risk</id>
     <title>判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代</title>
     <updated>2026-09-22T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/ai-judgment-scarcity-financial-risk" rel="alternate" type="text/html"/>
     <summary>以 Google Research 首期播客访谈为切口，结合银行校招收缩、FSB 与金融监管总局文件三组同期信号，提出判断力三层结构与三个时间尺度错配框架，拆解风险管理条线四类控制点与机构侧六项行动，并回答“AI 接管基础工作后训练场消失”带来的断代风险如何治理。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="人工智能"/>
+    <category term="金融风险管理"/>
+    <category term="AI治理"/>
+    <category term="判断力"/>
+    <category term="人才培养"/>
+    <category term="模型风险"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/ai-financial-power-15th-five-year-plan</id>
-    <title>AI 如何发力金融强国“十五五”规划：三条主线、六个发力面与三条安全边界</title>
-    <updated>2026-09-21T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/ai-financial-power-15th-five-year-plan" rel="alternate" type="text/html"/>
-    <summary>以国新办 9·10 发布会与《金融强国建设“十五五”规划》为坐标，拆解 AI 在防风险、强监管、促高质量发展三条主线上的六个发力面：从风险“四早”流水线、穿透监管的技防转型，到五篇大文章与 109 项重大工程的融资保障，并给出由“可验证性梯度”决定的应用次序与三条不可越过的安全边界，附机构侧六项落地行动与监管文件对照表。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
-  </entry>
-<entry>
+  <entry>
     <id>https://bi-chao.com/articles/ai-empowered-bank-risk-committee</id>
     <title>AI 如何赋能银行风控会：从治理客体到治理工具的六项行动</title>
     <updated>2026-09-21T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/ai-empowered-bank-risk-committee" rel="alternate" type="text/html"/>
     <summary>以麦肯锡《AI改写规则：董事会如何自我进化》为素材，把董事会 AI 治理框架迁移到银行风险管理委员会（风控会）场景：拆解风控会面对 AI 的双重身份——既是被治理的风险客体，也是可用于治理的工具，并给出定位审查、职责边界、制度框架、一线沟通、价值挂钩与素养提升六项行动的银行版落地清单，附监管坐标对照与风控会 AI 仪表盘指标体系。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="银行风控"/>
+    <category term="AI治理"/>
+    <category term="风险管理委员会"/>
+    <category term="董事会治理"/>
+    <category term="模型风险"/>
+    <category term="智能风控"/>
+    <category term="金融监管"/>
+    <category term="可解释性"/>
+    <category term="三道防线"/>
+    <category term="AI安全"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/token-finance-necessity-feasibility-risk-control</id>
-    <title>词元金融的必要性、可行性与风控边界：从北京“词元经济十条”看智能要素金融化的正路与红线</title>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-financial-power-15th-five-year-plan</id>
+    <title>AI 如何发力金融强国“十五五”规划：三条主线、六个发力面与三条安全边界</title>
     <updated>2026-09-21T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/token-finance-necessity-feasibility-risk-control" rel="alternate" type="text/html"/>
-    <summary>北京“词元经济十条”首提“创新算力与词元金融工具”，词元金融从概念走向产业议题。本文辨析两种“词元金融”——服务词元经济的金融工具与词元本身的金融化炒作，论证前者必要且技术可行、后者触碰非法金融红线；提出属性、流通、计量、资本、数据安全五条风控边界与监管—平台—机构三层防线，并给出金融机构落地清单。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <link href="https://bi-chao.com/articles/ai-financial-power-15th-five-year-plan" rel="alternate" type="text/html"/>
+    <summary>以国新办 9·10 发布会与《金融强国建设“十五五”规划》为坐标，拆解 AI 在防风险、强监管、促高质量发展三条主线上的六个发力面：从风险“四早”流水线、穿透监管的技防转型，到五篇大文章与 109 项重大工程的融资保障，并给出由“可验证性梯度”决定的应用次序与三条不可越过的安全边界，附机构侧六项落地行动与监管文件对照表。</summary>
+    <category term="金融强国"/>
+    <category term="十五五规划"/>
+    <category term="人工智能"/>
+    <category term="金融监管"/>
+    <category term="AI治理"/>
+    <category term="监管科技"/>
+    <category term="数字金融"/>
+    <category term="五篇大文章"/>
+    <category term="金融风险"/>
+    <category term="人工智能+"/>
   </entry>
-<entry>
+  <entry>
     <id>https://bi-chao.com/articles/ai-transformation-failure-kotter-lessons</id>
     <title>如何应用AI避免AI转型失败：科特八错误的三十年回响与下半场行动框架</title>
     <updated>2026-09-21T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/ai-transformation-failure-kotter-lessons" rel="alternate" type="text/html"/>
     <summary>科特1995年总结的变革八错误，在AI转型中一个没少，部分还更隐蔽。麦肯锡数据显示80%受访者个人提效、仅37%企业EBIT正向、AI高绩效企业约6%；Deloitte称34%企业认为文化正直接阻碍AI转型。本文逐条拆解八个错误的AI时代变形，判断转型重心已从AI能做什么迁移到企业如何重新组织自己，并给出企业八条行动框架与金融机构特别提醒。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="AI转型"/>
+    <category term="组织变革"/>
+    <category term="科特"/>
+    <category term="变革管理"/>
+    <category term="AI治理"/>
+    <category term="operating model"/>
+    <category term="人机协同"/>
+    <category term="企业文化"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/trump-ai-force-enterprise-implications</id>
-    <title>特朗普AI特别工作组的企业启示：护航式监管下的机会、不确定性与应对</title>
-    <updated>2026-09-20T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/trump-ai-force-enterprise-implications" rel="alternate" type="text/html"/>
-    <summary>特朗普宣布组建AI特别工作组并任命AI沙皇，称AI可能占美国GDP的25%，同时称风险担忧是骗局、将利用现有司法体系防范不良行为。对企业而言，这是典型的护航式监管信号：产业加速与执法从严并存。本文解码事件政策逻辑，拆解四个直接信号，给出金融机构双轨合规与五条企业应对清单。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+  <entry>
+    <id>https://bi-chao.com/articles/token-finance-necessity-feasibility-risk-control</id>
+    <title>词元金融的必要性、可行性与风控边界：从北京“词元经济十条”看智能要素金融化的正路与红线</title>
+    <updated>2026-09-21T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/token-finance-necessity-feasibility-risk-control" rel="alternate" type="text/html"/>
+    <summary>北京“词元经济十条”首提“创新算力与词元金融工具”，词元金融从概念走向产业议题。本文辨析两种“词元金融”——服务词元经济的金融工具与词元本身的金融化炒作，论证前者必要且技术可行、后者触碰非法金融红线；提出属性、流通、计量、资本、数据安全五条风控边界与监管—平台—机构三层防线，并给出金融机构落地清单。</summary>
+    <category term="词元经济"/>
+    <category term="词元金融"/>
+    <category term="AI治理"/>
+    <category term="金融监管"/>
+    <category term="数据要素"/>
+    <category term="词元工厂"/>
+    <category term="非法金融活动"/>
+    <category term="风险管理"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/banking-data-prior-posterior-analysis</id>
-    <title>银行数据管理的先验与后验：从数字全息照片到贝叶斯式自我进化</title>
-    <updated>2026-09-20T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/banking-data-prior-posterior-analysis" rel="alternate" type="text/html"/>
-    <summary>黄大年茶思屋科技网站《我眼中的AI时代与数据管理（II）》提出：数据是人类实践的符号投影，传统IT把意图、约束、事实三元割裂，大模型是全人类先验经验的高维压缩，但静态先验存在时钟停摆与概率虚构两大致命伤，可靠AI必须靠RAG、智能体与环境碰撞、人类调教注入后验知识，并以卡尔曼滤波为哲学原型。对银行而言，数据既是实践的留痕也是风险定价的原料，本文拆解银行数据的三元困境、先验-后验对话机制与卡尔曼滤波式风险管理闭环，给出数据底座建设路径。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
-  </entry>
-<entry>
+  <entry>
     <id>https://bi-chao.com/articles/banking-data-management-idm-analysis</id>
     <title>银行的数据管理为何需要一场工业母机式重构：AI 数据管理（IDM）视角下的银行业深度分析</title>
     <updated>2026-09-20T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/banking-data-management-idm-analysis" rel="alternate" type="text/html"/>
     <summary>黄大年茶思屋科技网站文章将 AI 数据管理（IDM）定位为算力纪元的工业母机：数据取代土地、资本成为核心生产资料，竞争壁垒从信息不对称转向行动不对称。对银行而言，数据既是燃料也是产品，本文拆解 IDM 对银行业的五个深度价值、三类差异化挑战，给出从盘点、治理到活性化、智能化的落地路线图。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
+    <category term="银行数据管理"/>
+    <category term="IDM"/>
+    <category term="AI数据管理"/>
+    <category term="数据治理"/>
+    <category term="数据资产"/>
     <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="数据要素"/>
+    <category term="合规"/>
   </entry>
-<entry>
+  <entry>
+    <id>https://bi-chao.com/articles/banking-data-prior-posterior-analysis</id>
+    <title>银行数据管理的先验与后验：从数字全息照片到贝叶斯式自我进化</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banking-data-prior-posterior-analysis" rel="alternate" type="text/html"/>
+    <summary>黄大年茶思屋科技网站《我眼中的AI时代与数据管理（II）》提出：数据是人类实践的符号投影，传统IT把意图、约束、事实三元割裂，大模型是全人类先验经验的高维压缩，但静态先验存在时钟停摆与概率虚构两大致命伤，可靠AI必须靠RAG、智能体与环境碰撞、人类调教注入后验知识，并以卡尔曼滤波为哲学原型。对银行而言，数据既是实践的留痕也是风险定价的原料，本文拆解银行数据的三元困境、先验-后验对话机制与卡尔曼滤波式风险管理闭环，给出数据底座建设路径。</summary>
+    <category term="银行数据管理"/>
+    <category term="先验后验"/>
+    <category term="数据本质"/>
+    <category term="卡尔曼滤波"/>
+    <category term="银行AI"/>
+    <category term="数据治理"/>
+    <category term="大模型"/>
+    <category term="风险管理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/banking-rsi-necessity-analysis</id>
     <title>金融业需要 RSI 吗：递归自我改进对银行业的必要性与边界</title>
     <updated>2026-09-20T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/banking-rsi-necessity-analysis" rel="alternate" type="text/html"/>
     <summary>Datawhale 长文《RSI 从 0 理一遍》拆解了递归自我改进的四层标准与五次边界推进：持久改进、自主闭环已经出现，递归增益尚无证据，稳健可控远未解决。对金融业而言，答案不是简单的要与不要：经验持久化与有界闭环正是风控与合规急需的能力，而递归增益与开放式 RSI 则是必须设防的禁区。</summary>
     <category term="RSI"/>
-    <category term="递归自改进"/>
+    <category term="递归自我改进"/>
+    <category term="金融AI"/>
     <category term="银行AI"/>
-    <category term="自进化Agent"/>
     <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="AI治理"/>
+    <category term="奖励黑客"/>
+    <category term="可解释性"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/legal-ontology-finance-implications</id>
-    <title>法律本体论如何重塑金融知识基础设施：Draftwise Legal Ontology 对金融业的启示借鉴</title>
-    <updated>2026-09-20T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/legal-ontology-finance-implications" rel="alternate" type="text/html"/>
-    <summary>Draftwise CEO James Ding 在官方博客阐释了法律本体论（Legal Ontology）：以对象与关系而非文档组织法律知识，让经验可查询、可比较、可推理。法律行业的这一结构性变革，对金融业的风险管理、合规义务追踪与 AI 治理有直接借鉴价值。本文拆解原文概念，映射金融场景，给出落地路径。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
-  </entry>
-<entry>
+  <entry>
     <id>https://bi-chao.com/articles/kimi-vs-global-ai-finance-solutions</id>
     <title>Kimi 金融方案 vs 海外大模型金融方案：功能与监管合规的深度对比</title>
     <updated>2026-09-20T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/kimi-vs-global-ai-finance-solutions" rel="alternate" type="text/html"/>
     <summary>2026 年 9 月，月之暗面发布 Kimi 金融行业解决方案，OpenAI 与 Anthropic 前后脚推出金融专用产品。三套方案功能设计有何异同？站在中国金融监管框架下，谁更接近「合规可用」？本文从功能方案与监管符合性两个维度做深度对比。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="Kimi"/>
+    <category term="金融AI"/>
+    <category term="ChatGPT for Financial Services"/>
+    <category term="Claude for Financial Advisors"/>
+    <category term="大模型"/>
+    <category term="金融监管"/>
+    <category term="AI治理"/>
+    <category term="合规"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/measuring-pace-ai-development-explained</id>
-    <title>通俗解读：AI 跑多快、谁来盯？Anthropic 给公众的三块&#x27;发展仪表盘&#x27;</title>
-    <updated>2026-09-19T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/measuring-pace-ai-development-explained" rel="alternate" type="text/html"/>
-    <summary>Anthropic 首次公开三项测量指标：Claude 已主导 26% 的 AI 研发工作、超 90% 工作达到 AI 协作级、3 万 Agent 受 100% 在线监控、AI 研发算力仅 6% 投向安全。一文读懂&#x27;给 AI 发展测速&#x27;。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+  <entry>
+    <id>https://bi-chao.com/articles/legal-ontology-finance-implications</id>
+    <title>法律本体论如何重塑金融知识基础设施：Draftwise Legal Ontology 对金融业的启示借鉴</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/legal-ontology-finance-implications" rel="alternate" type="text/html"/>
+    <summary>Draftwise CEO James Ding 在官方博客阐释了法律本体论（Legal Ontology）：以对象与关系而非文档组织法律知识，让经验可查询、可比较、可推理。法律行业的这一结构性变革，对金融业的风险管理、合规义务追踪与 AI 治理有直接借鉴价值。本文拆解原文概念，映射金融场景，给出落地路径。</summary>
+    <category term="法律本体论"/>
+    <category term="Legal Ontology"/>
+    <category term="Draftwise"/>
+    <category term="金融AI"/>
+    <category term="知识图谱"/>
+    <category term="风险管理"/>
+    <category term="合规"/>
+    <category term="AI治理"/>
+    <category term="数据基础设施"/>
   </entry>
-<entry>
+  <entry>
+    <id>https://bi-chao.com/articles/trump-ai-force-enterprise-implications</id>
+    <title>特朗普AI特别工作组的企业启示：护航式监管下的机会、不确定性与应对</title>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/trump-ai-force-enterprise-implications" rel="alternate" type="text/html"/>
+    <summary>特朗普宣布组建AI特别工作组并任命AI沙皇，称AI可能占美国GDP的25%，同时称风险担忧是骗局、将利用现有司法体系防范不良行为。对企业而言，这是典型的护航式监管信号：产业加速与执法从严并存。本文解码事件政策逻辑，拆解四个直接信号，给出金融机构双轨合规与五条企业应对清单。</summary>
+    <category term="特朗普"/>
+    <category term="AI特别工作组"/>
+    <category term="AI沙皇"/>
+    <category term="企业AI战略"/>
+    <category term="AI监管"/>
+    <category term="政策"/>
+    <category term="金融AI"/>
+    <category term="合规"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/jev-system-one-model-bank-implications</id>
     <title>JEV：当 AI 学会&quot;只决策、不聊天&quot;，银行的决策层要重构了</title>
     <updated>2026-09-19T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/jev-system-one-model-bank-implications" rel="alternate" type="text/html"/>
     <summary>前 OpenAI 研究员发布 System One 模型 JEV：只输出带概率的类型化决策、不生成文本，延迟 70-500ms，输入价 $0.042/百万 token。对银行反欺诈、路由、Agent 监控与模型风险管理意味着什么？</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
+    <category term="JEV"/>
+    <category term="System One"/>
+    <category term="TypeSafe AI"/>
+    <category term="决策模型"/>
     <category term="银行AI"/>
-    <category term="自进化Agent"/>
     <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="智能体监控"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/humanist-ai-banking-governance</id>
-    <title>人本主义 AI 的治理范式：微软 MAI 行为准则对金融行业的借鉴与落实</title>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/humanist-ai-banking-governance" rel="alternate" type="text/html"/>
-    <summary>从 Mustafa Suleyman 提出 Humanist Superintelligence 愿景，到微软 AI 发布《Humanist AI Code of Conduct》草案并开放公众咨询，人本主义 AI 正在从理念走向可操作的治理框架。拆解其指令层级、绝对约束与人类控制要求，并映射到金融行业的风险管理、模型治理与供应商管理实践。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+  <entry>
+    <id>https://bi-chao.com/articles/measuring-pace-ai-development-explained</id>
+    <title>通俗解读：AI 跑多快、谁来盯？Anthropic 给公众的三块&apos;发展仪表盘&apos;</title>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/measuring-pace-ai-development-explained" rel="alternate" type="text/html"/>
+    <summary>Anthropic 首次公开三项测量指标：Claude 已主导 26% 的 AI 研发工作、超 90% 工作达到 AI 协作级、3 万 Agent 受 100% 在线监控、AI 研发算力仅 6% 投向安全。一文读懂&apos;给 AI 发展测速&apos;。</summary>
+    <category term="Anthropic"/>
+    <category term="AI发展速度"/>
+    <category term="自动化指数"/>
+    <category term="Agent监督"/>
+    <category term="算力分配"/>
+    <category term="AI治理"/>
+    <category term="透明度"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/cowork-model-bank-adaptation</id>
-    <title>35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径</title>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/cowork-model-bank-adaptation" rel="alternate" type="text/html"/>
-    <summary>阿里 Accio 团队开源 Occamy-1.0，35B 规模模型在长流程 Co-work 任务上逼近前沿大模型。以银行为场景，拆解长流程智能体能否胜任信贷、合规、运营等业务的关键判据，以及银行业适配改造的完整路径与治理边界。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
-  </entry>
-<entry>
-    <id>https://bi-chao.com/articles/terminal-agent-bank-autonomy</id>
-    <title>终端 Agent 逼近旗舰：银行长程自主执行能力跃升的机遇与治理边界</title>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/terminal-agent-bank-autonomy" rel="alternate" type="text/html"/>
-    <summary>腾讯混元基于 Qwen3.5-122B-A10B 后训练出终端智能体 T1，Terminal-Bench 2.1 任务完成率 64.0%，逼近 Claude 旗舰。拆解长程强化学习、训练推理一致性等技术突破对银行复杂流程自动化的启示，以及部署终端 Agent 前必须回答的治理问题。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
-  </entry>
-<entry>
-    <id>https://bi-chao.com/articles/quantum-ai-financial-risk-management</id>
-    <title>量子科技叠加人工智能：金融机构风险管理的双引擎与治理边界</title>
-    <updated>2026-09-16T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/quantum-ai-financial-risk-management" rel="alternate" type="text/html"/>
-    <summary>AI 重塑风控流程、量子计算突破算力边界、量子加密筑牢数据底座。拆解量子科技与人工智能双引擎如何协同强化金融机构风险管理，并给出从单点试点到体系治理的落地路径与合规边界。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
-    <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
-  </entry>
-<entry>
+  <entry>
     <id>https://bi-chao.com/articles/byte-level-distillation-bank-model-economics</id>
     <title>Token 天花板破了：字节级蒸馏对银行模型成本与部署格局的启示</title>
     <updated>2026-09-16T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/byte-level-distillation-bank-model-economics" rel="alternate" type="text/html"/>
     <summary>Meta FAIR 与华盛顿大学提出字节级蒸馏，让学生模型直接从字节概率分布学习，预测上限比 Token 蒸馏高 4 个百分点。拆解这项研究对银行小模型经济学、数据主权与部署策略的启示。</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
+    <category term="字节级蒸馏"/>
+    <category term="Token蒸馏"/>
+    <category term="模型压缩"/>
     <category term="银行AI"/>
-    <category term="自进化Agent"/>
-    <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
+    <category term="模型部署"/>
+    <category term="Meta FAIR"/>
+    <category term="数据主权"/>
   </entry>
-<entry>
-    <id>https://bi-chao.com/articles/bank-rsi-self-evolving-path</id>
-    <title>"让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界"</title>
-    <updated>2026-09-15T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/bank-rsi-self-evolving-path" rel="alternate" type="text/html"/>
-    <summary>"从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。"</summary>
-    <category term="RSI"/>
-    <category term="递归自改进"/>
+  <entry>
+    <id>https://bi-chao.com/articles/cowork-model-bank-adaptation</id>
+    <title>35B 模型能否胜任银行业务：从 Occamy-1.0 看长流程 Co-work 模型的适配改造路径</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/cowork-model-bank-adaptation" rel="alternate" type="text/html"/>
+    <summary>阿里 Accio 团队开源 Occamy-1.0，35B 规模模型在长流程 Co-work 任务上逼近前沿大模型。以银行为场景，拆解长流程智能体能否胜任信贷、合规、运营等业务的关键判据，以及银行业适配改造的完整路径与治理边界。</summary>
+    <category term="Co-work"/>
+    <category term="Occamy"/>
+    <category term="阿里"/>
+    <category term="智能体"/>
+    <category term="模型适配"/>
     <category term="银行AI"/>
-    <category term="自进化Agent"/>
+    <category term="长流程任务"/>
     <category term="模型风险管理"/>
-    <category term="FinEvo-Bench"/>
   </entry>
-
-   <entry>
+  <entry>
+    <id>https://bi-chao.com/articles/humanist-ai-banking-governance</id>
+    <title>人本主义 AI 的治理范式：微软 MAI 行为准则对金融行业的借鉴与落实</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/humanist-ai-banking-governance" rel="alternate" type="text/html"/>
+    <summary>从 Mustafa Suleyman 提出 Humanist Superintelligence 愿景，到微软 AI 发布《Humanist AI Code of Conduct》草案并开放公众咨询，人本主义 AI 正在从理念走向可操作的治理框架。拆解其指令层级、绝对约束与人类控制要求，并映射到金融行业的风险管理、模型治理与供应商管理实践。</summary>
+    <category term="人本主义AI"/>
+    <category term="Humanist AI"/>
+    <category term="微软"/>
+    <category term="MAI"/>
+    <category term="AI治理"/>
+    <category term="行为准则"/>
+    <category term="金融监管"/>
+    <category term="模型风险管理"/>
+    <category term="超级智能"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/quantum-ai-financial-risk-management</id>
+    <title>量子科技叠加人工智能：金融机构风险管理的双引擎与治理边界</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/quantum-ai-financial-risk-management" rel="alternate" type="text/html"/>
+    <summary>AI 重塑风控流程、量子计算突破算力边界、量子加密筑牢数据底座。拆解量子科技与人工智能双引擎如何协同强化金融机构风险管理，并给出从单点试点到体系治理的落地路径与合规边界。</summary>
+    <category term="量子科技"/>
+    <category term="量子计算"/>
+    <category term="量子加密"/>
+    <category term="人工智能"/>
+    <category term="风险管理"/>
+    <category term="银行AI"/>
+    <category term="金融科技"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/terminal-agent-bank-autonomy</id>
+    <title>终端 Agent 逼近旗舰：银行长程自主执行能力跃升的机遇与治理边界</title>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/terminal-agent-bank-autonomy" rel="alternate" type="text/html"/>
+    <summary>腾讯混元基于 Qwen3.5-122B-A10B 后训练出终端智能体 T1，Terminal-Bench 2.1 任务完成率 64.0%，逼近 Claude 旗舰。拆解长程强化学习、训练推理一致性等技术突破对银行复杂流程自动化的启示，以及部署终端 Agent 前必须回答的治理问题。</summary>
+    <category term="终端Agent"/>
+    <category term="腾讯混元"/>
+    <category term="长程任务"/>
+    <category term="强化学习"/>
+    <category term="MoE"/>
+    <category term="银行AI"/>
+    <category term="模型风险管理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/api-call-data-ip-security-leakage</id>
-    <title>"当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄"</title>
+    <title>当你的输入成为别人的燃料：API 调用背后的数据安全、知识产权与技术外泄</title>
     <updated>2026-09-15T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/api-call-data-ip-security-leakage" rel="alternate" type="text/html"/>
-    <summary>"从英伟达Palantir设限Anthropic到OpenAI数学证明署名争议，剖析API调用引发数据安全、知识产权与技术外泄的治理难题。"</summary>
+    <summary>从英伟达Palantir设限Anthropic到OpenAI数学证明署名争议，剖析API调用引发数据安全、知识产权与技术外泄的治理难题。</summary>
     <category term="API数据安全"/>
     <category term="零数据留存"/>
     <category term="知识产权"/>
@@ -274,13 +295,25 @@
     <category term="前沿模型治理"/>
     <category term="AI数据主权"/>
   </entry>
-
-   <entry>
-    <id>https://bi-chao.com/articles/claude-money-chatgpt-finance-bank-account-ai</id>
-    <title>"当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战"</title>
+  <entry>
+    <id>https://bi-chao.com/articles/bank-rsi-self-evolving-path</id>
+    <title>让银行学会自我进化：RSI（递归自改进）的银行业落地路径与治理边界</title>
     <updated>2026-09-15T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-rsi-self-evolving-path" rel="alternate" type="text/html"/>
+    <summary>从参数、上下文、记忆、Skill 到 Harness 代码，拆解 RSI 五条进化路径在银行业的适配度，给出金融场景下的版本治理、教师主导与合规边界。</summary>
+    <category term="RSI"/>
+    <category term="递归自改进"/>
+    <category term="银行AI"/>
+    <category term="自进化Agent"/>
+    <category term="模型风险管理"/>
+    <category term="FinEvo-Bench"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/claude-money-chatgpt-finance-bank-account-ai</id>
+    <title>当 AI 开始「读你的银行账户」：Claude Money 爆料、ChatGPT Finance 落地与银行的用户入口保卫战</title>
+    <updated>2026-09-14T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/claude-money-chatgpt-finance-bank-account-ai" rel="alternate" type="text/html"/>
-    <summary>"Anthropic 被曝筹备 Claude Money（谐音致敬莫奈），让用户在 iOS 版 Claude 里连接银行账户、用自然语言管理个人财务；OpenAI 的 ChatGPT Finance 预览已在美国面向 Pro 用户落地，覆盖超 1.2 万家金融机构。当通用 AI 助手开始直接读取用户银行账户，银行的 '用户入口' 与 '账户中心' 地位正面临一场静默但深刻的迁徙。"</summary>
+    <summary>Anthropic 被曝筹备 Claude Money（谐音致敬莫奈），让用户在 iOS 版 Claude 里连接银行账户、用自然语言管理个人财务；OpenAI 的 ChatGPT Finance 预览已在美国面向 Pro 用户落地，覆盖超 1.2 万家金融机构。当通用 AI 助手开始直接读取用户银行账户，银行的 &apos;用户入口&apos; 与 &apos;账户中心&apos; 地位正面临一场静默但深刻的迁徙。</summary>
     <category term="Claude Money"/>
     <category term="ChatGPT Finance"/>
     <category term="个人财务"/>
@@ -288,13 +321,24 @@
     <category term="银行AI"/>
     <category term="开放银行"/>
   </entry>
-
-   <entry>
+  <entry>
+    <id>https://bi-chao.com/articles/organizational-second-brain-institutional-memory</id>
+    <title>从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示</title>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/organizational-second-brain-institutional-memory" rel="alternate" type="text/html"/>
+    <summary>Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。</summary>
+    <category term="AI Agent"/>
+    <category term="机构知识管理"/>
+    <category term="组织记忆"/>
+    <category term="Meta"/>
+    <category term="金融科技"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/taas-training-api-bank-model-autonomy</id>
-    <title>"当「训练」也能按需调用：TaaS 范式对银行的模型自主权、专属模型矩阵与数据主权的启示"</title>
+    <title>当「训练」也能按需调用：TaaS 范式对银行的模型自主权、专属模型矩阵与数据主权的启示</title>
     <updated>2026-09-14T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/taas-training-api-bank-model-autonomy" rel="alternate" type="text/html"/>
-    <summary>"Harvey、Cursor 用专业数据训练专属模型，桥水基金以 Qwen3-235B 做金融信息筛选把错误率降低 29.8%、推理成本降 13.8 倍。当 PyTRIO 把大模型训练封装成 Training API、开启 TaaS 范式，银行面对的不只是新工具，而是模型自主权、数据主权与算力治理三重命题。"</summary>
+    <summary>Harvey、Cursor 用专业数据训练专属模型，桥水基金以 Qwen3-235B 做金融信息筛选把错误率降低 29.8%、推理成本降 13.8 倍。当 PyTRIO 把大模型训练封装成 Training API、开启 TaaS 范式，银行面对的不只是新工具，而是模型自主权、数据主权与算力治理三重命题。</summary>
     <category term="TaaS"/>
     <category term="模型训练"/>
     <category term="大模型"/>
@@ -302,53 +346,41 @@
     <category term="金融科技"/>
     <category term="算力"/>
   </entry>
-
-   <entry>
-    <id>https://bi-chao.com/articles/organizational-second-brain-institutional-memory</id>
-    <title>"从「档案」到「制度记忆」：Meta 组织级第二大脑的工程化路线与金融机构的知识治理启示"</title>
-    <updated>2026-09-14T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/organizational-second-brain-institutional-memory" rel="alternate" type="text/html"/>
-    <summary>"Meta 发布《An Organizational Second Brain》技术长文：一个同时具备可审计知识架构与自我改进循环的领域专家 Agent，把专家反馈编译为经过验证、回归测试的制度记忆，全程无需重训模型。本文拆解其四层架构与改进飞轮，并从机构知识治理视角做批判性审视。"</summary>
-    <category term="AI Agent"/>
-    <category term="机构知识管理"/>
-    <category term="组织记忆"/>
-    <category term="Meta"/>
-    <category term="金融科技"/>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-native-database-for-banking-agents</id>
+    <title>银行 AI 智能体需要什么样的 AI 原生数据库？Loop / Graph Engineering / RSI 与 KV Cache 的系统方案</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-native-database-for-banking-agents" rel="alternate" type="text/html"/>
+    <summary>从 Agent Loop、Graph Engineering、RSI 与 KV Cache 四类需求出发，论证银行需要多模型融合的 AI 原生数据库，并提出一套以&apos;关系+向量+图+KV Cache 上下文层&apos;为核心的系统架构方案。</summary>
+    <category term="AI-native-database"/>
+    <category term="agentic-AI"/>
+    <category term="KV-cache"/>
+    <category term="graph-engineering"/>
+    <category term="RSI"/>
+    <category term="银行"/>
+    <category term="大模型"/>
   </entry>
-
-   <entry>
+  <entry>
+    <id>https://bi-chao.com/articles/asset-preservation-semantic-foundation</id>
+    <title>构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/asset-preservation-semantic-foundation" rel="alternate" type="text/html"/>
+    <summary>资产保全智能体的知识底座应从&apos;通用知识库&apos;升级为受控的、可推理的、可审计的&apos;语义底座&apos;。本文基于蚂蚁数科KBase、神州信息本体论白皮书、彩讯Rich AIBox、天阳科技双核引擎等已核实实践，给出四层架构、六步落地流程与可追溯证据链设计。</summary>
+    <category term="资产保全"/>
+    <category term="智能体"/>
+    <category term="知识底座"/>
+    <category term="本体论"/>
+    <category term="GraphRAG"/>
+    <category term="规则引擎"/>
+    <category term="银行"/>
+    <category term="可审计AI"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/banking-ai-governance-systemic-framework</id>
-    <title>"银行业人工智能治理的系统性框架：三向影响闭环与双向责任"</title>
-    <updated>2026-09-14T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/banking-ai-governance-systemic-framework" rel="alternate" type="text/html"/>
-    <summary>"以算法、数据、算力治理与环境、社会、机制多层维度为骨架，构建银行AI治理的三向闭环：银行应用大模型的前向影响、以 Anthropic Mythos 为代表的反向系统冲击、以及银行作为AI产业链资金中枢所承受与传导的侧向影响（含 Fable 5.1 密码能力与后量子加密迁移）。"</summary>
-    <category term="银行AI治理"/>
-    <category term="AI治理框架"/>
-    <category term="模型风险管理"/>
-    <category term="算法伦理"/>
-    <category term="ESG"/>
-    <category term="金融科技"/>
-    <category term="AI监管"/>
-  </entry>
-
-   <entry>
-    <id>https://bi-chao.com/articles/tokenization-rag-banking-knowledge-foundation</id>
-    <title>银行非结构化数据价值发掘的隐形地基：Tokenization 如何决定 RAG 与智能知识底座的质量上限</title>
-    P26-09-13T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/tokenization-rag-banking-knowledge-foundation" rel="alternate" type="text/html"/>
-    <summary>结合《Understanding Tokenization》手册技术要点，拆解银行在构建 RAG 与智能知识底座时 Tokenization 的五条隐性传导路径，并给出确保质量效果的工程化清单。</summary>
-    <category term="Tokenization"/>
-    <category term="RAG"/>
-    <category term="智能知识底座"/>
-    <category term="非结构化数据"/>
-  </entry>
-
-   <entry>
-    <id>https://bi-chao.com/articles/banking-ai-governance-systemic-framework</id>
-    <title>"银行业人工智能治理的系统性框架：从算法伦理到气候正义的全维度拼图"</title>
+    <title>银行业人工智能治理的系统性框架：三向影响闭环与双向责任</title>
     <updated>2026-09-13T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/banking-ai-governance-systemic-framework" rel="alternate" type="text/html"/>
-    <summary>"以 AI 治理全景框架（AI 系统自身、全生命周期环境足迹、社会治理效应、全球治理机制四层维度）为参照，拆解银行业人工智能治理的系统性框架：模型风险、数据主权、算力效率、气候责任与普惠金融如何在银行场景中形成闭环。"</summary>
+    <summary>以算法、数据、算力治理与环境、社会、机制多层维度为骨架，构建银行AI治理的三向闭环：银行应用大模型的前向影响、以 Anthropic Mythos 为代表的反向系统冲击、以及银行作为AI产业链资金中枢所承受与传导的侧向影响（含 Fable 5.1 密码能力与后量子加密迁移）。</summary>
     <category term="银行AI治理"/>
     <category term="AI治理框架"/>
     <category term="模型风险管理"/>
@@ -357,25 +389,12 @@
     <category term="金融科技"/>
     <category term="AI监管"/>
   </entry>
-
-   <entry>
-    <id>https://bi-chao.com/articles/harness-engineering-security-coupling-banking-risk</id>
-    <title>银行风险管理部门的 Harness Engineering 安全：大模型、数据与信息系统安全如何耦合</title>
-    P26-09-13T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/harness-engineering-security-coupling-banking-risk" rel="alternate" type="text/html"/>
-    <summary>以英格兰银行 harness engineering 技术说明为锚，拆解银行风险管理部门如何通过驾驭层把大模型安全、数据安全、信息系统安全在运行时耦合为统一的授权、边界与证据链。</summary>
-    <category term="Harness Engineering"/>
-    <category term="大模型安全"/>
-    <category term="数据安全"/>
-    <category term="银行风险管理"/>
-  </entry>
-
-   <entry>
+  <entry>
     <id>https://bi-chao.com/articles/collaborative-ai-model-over-models</id>
-    <title>"从"堆参数"到"组网络"：协作式 AI（Model over Models）范式对产业的影响与思考"</title>
+    <title>从&quot;堆参数&quot;到&quot;组网络&quot;：协作式 AI（Model over Models）范式对产业的影响与思考</title>
     <updated>2026-09-13T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/collaborative-ai-model-over-models" rel="alternate" type="text/html"/>
-    <summary>"基于世界人工智能大会杨红霞、陈海青、吴建民独家观点，深度拆解从 Model over Data 到 Model over Models 的范式转变：95%对65%专用小模型跑赢通用大模型的内在逻辑，FP8低比特训练、模型融合、Agent原生操作系统、Co-GenAI协作平台四大基石的产业含义，以及数据质量、精度损失、安全治理等批判性反思。"</summary>
+    <summary>基于世界人工智能大会杨红霞、陈海青、吴建民独家观点，深度拆解从 Model over Data 到 Model over Models 的范式转变：95%对65%专用小模型跑赢通用大模型的内在逻辑，FP8低比特训练、模型融合、Agent原生操作系统、Co-GenAI协作平台四大基石的产业含义，以及数据质量、精度损失、安全治理等批判性反思。</summary>
     <category term="协作式AI"/>
     <category term="Model over Models"/>
     <category term="专用小模型"/>
@@ -385,55 +404,74 @@
     <category term="Co-GenAI"/>
     <category term="人工智能产业"/>
   </entry>
-
-   <entry>
-    <id>https://bi-chao.com/articles/asset-preservation-semantic-foundation</id>
-    <title>构建支撑资产保全智能体的智能知识底座：从通用知识库到受控·可推理·可审计的语义底座</title>
-    P26-09-13T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/asset-preservation-semantic-foundation" rel="alternate" type="text/html"/>
-    <summary>资产保全智能体的知识底座应从'通用知识库'升级为受控的、可推理的、可审计的'语义底座'。本文基于蚂蚁数科KBase、神州信息本体论白皮书、彩讯Rich AIBox、天阳科技双核引擎等已核实实践，给出四层架构、六步落地流程与可追溯证据链设计。</summary>
-    <category term="资产保全"/>
-    <category term="智能体"/>
-    <category term="知识底座"/>
-    <category term="本体论"/>
-  </entry>
-
   <entry>
-    <id>https://bi-chao.com/articles/ai-native-database-for-banking-agents</id>
-    <title>银行 AI 智能体需要什么样的 AI 原生数据库？Loop / Graph Engineering / RSI 与 KV Cache 的系统方案</title>
-    P26-09-13T00:00:00Z</updated>
-    <link href="https://bi-chao.com/articles/ai-native-database-for-banking-agents" rel="alternate" type="text/html"/>
-    <summary>从 Agent Loop、Graph Engineering、RSI 与 KV Cache 四类需求出发，论证银行需要多模型融合的 AI 原生数据库，并提出一套以'关系+向量+图+KV Cache 上下文层'为核心的系统架构方案。</summary>
-    <category term="AI-native-database"/>
-    <category term="agentic-AI"/>
-    <category term="KV-cache"/>
-    <category term="graph-engineering"/>
+    <id>https://bi-chao.com/articles/harness-engineering-security-coupling-banking-risk</id>
+    <title>银行风险管理部门的 Harness Engineering 安全：大模型、数据与信息系统安全如何耦合</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/harness-engineering-security-coupling-banking-risk" rel="alternate" type="text/html"/>
+    <summary>以英格兰银行 harness engineering 技术说明为锚，拆解银行风险管理部门如何通过驾驭层把大模型安全、数据安全、信息系统安全在运行时耦合为统一的授权、边界与证据链。</summary>
+    <category term="Harness Engineering"/>
+    <category term="大模型安全"/>
+    <category term="数据安全"/>
+    <category term="银行风险管理"/>
+    <category term="AI治理"/>
   </entry>
-
   <entry>
     <id>https://bi-chao.com/articles/org-context-engineering-banking</id>
     <title>组织级上下文为什么是银行业 AI 时代的核心工程(Context Engineering)</title>
-    P26-09-13T00:00:00Z</updated>
+    <updated>2026-09-13T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/org-context-engineering-banking" rel="alternate" type="text/html"/>
     <summary>从 context engineering 视角拆解银行组织级上下文：为什么它是银行智能体的可信大脑，包括数据/流程/监管/领域/工具五类内容，以及五步构建方法论与治理红线。</summary>
     <category term="context-engineering"/>
     <category term="AI"/>
     <category term="银行"/>
     <category term="知识图谱"/>
+    <category term="大模型"/>
+    <category term="企业架构"/>
   </entry>
-
   <entry>
     <id>https://bi-chao.com/articles/pace-frontier-rsi-finance-governance</id>
     <title>前沿节奏化（Pacing the Frontier）时代的金融审视：递归自我改进（RSI）之利与弊及安全治理路径</title>
     <updated>2026-09-13T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/pace-frontier-rsi-finance-governance" rel="alternate" type="text/html"/>
-    <summary>深度拆解 Anthropic CEO Dario Amodei《We Must Pace the Frontier》一文，解析递归自我改进（RSI）加速下的前沿 AI 风险图景与三步节奏化方案，从金融机构视角权衡 RSI 的利弊，并给出覆盖</summary>
+    <summary>深度拆解 Anthropic CEO Dario Amodei《We Must Pace the Frontier》一文，解析递归自我改进（RSI）加速下的前沿 AI 风险图景与三步节奏化方案，从金融机构视角权衡 RSI 的利弊，并给出覆盖嵌入式评估、能力安全检查点、压力测试、供应链保护与全球协同的金融安全治理框架。</summary>
     <category term="Pacing the Frontier"/>
     <category term="递归自我改进"/>
     <category term="RSI"/>
     <category term="AI安全"/>
+    <category term="对齐"/>
+    <category term="前沿AI"/>
+    <category term="金融科技"/>
+    <category term="安全治理"/>
+    <category term="Anthropic"/>
+    <category term="Dario Amodei"/>
+    <category term="AI风险"/>
+    <category term="系统性风险"/>
   </entry>
-
+  <entry>
+    <id>https://bi-chao.com/articles/research-acceleration-openai-internally-rsi-finance</id>
+    <title>同一家 OpenAI 的一周两面：研究加速的油门，与异类心智的刹车</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/research-acceleration-openai-internally-rsi-finance" rel="alternate" type="text/html"/>
+    <summary>对照 OpenAI 同日发布的两篇博客《Research acceleration: The view inside OpenAI》与《An Alien Mind》，拆解 agent 化研究加速的内部数据、安全侧的三个失明，以及金融业应从中计提的六条治理杠杆。</summary>
+    <category term="OpenAI"/>
+    <category term="Research Agents"/>
+    <category term="RSI"/>
+    <category term="AI治理"/>
+    <category term="金融科技"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/tokenization-rag-banking-knowledge-foundation</id>
+    <title>银行非结构化数据价值发掘的隐形地基：Tokenization 如何决定 RAG 与智能知识底座的质量上限</title>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/tokenization-rag-banking-knowledge-foundation" rel="alternate" type="text/html"/>
+    <summary>结合《Understanding Tokenization》手册技术要点，拆解银行在构建 RAG 与智能知识底座时 Tokenization 的五条隐性传导路径，并给出确保质量效果的工程化清单。</summary>
+    <category term="Tokenization"/>
+    <category term="RAG"/>
+    <category term="智能知识底座"/>
+    <category term="非结构化数据"/>
+    <category term="银行AI"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/ai-plus-software-finance-secure-lifecycle</id>
     <title>人工智能+软件落地金融：实施路径与安全全生命周期嵌入</title>
@@ -441,68 +479,785 @@
     <link href="https://bi-chao.com/articles/ai-plus-software-finance-secure-lifecycle" rel="alternate" type="text/html"/>
     <summary>深度拆解工信部《人工智能+软件专项行动实施方案》对金融行业的落地含义，从智能编程、专业智能体、智能服务三条主线给出实施路径，并构建覆盖需求、编码、测试、部署、运行、治理全周期的安全嵌入框架。</summary>
     <category term="人工智能+软件"/>
+    <category term="智能编程"/>
     <category term="智能体"/>
+    <category term="金融科技"/>
     <category term="DevSecOps"/>
+    <category term="软件安全"/>
+    <category term="政策解读"/>
+    <category term="AI安全"/>
+    <category term="数字化转型"/>
+    <category term="软件工程"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/anthropic-econ-scenarios-transformative-ai</id>
+    <title>2030年经济的三张AI面孔：Anthropic《变革性AI的经济情景》给金融业的三组数字</title>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/anthropic-econ-scenarios-transformative-ai" rel="alternate" type="text/html"/>
+    <summary>Anthropic经济研究所工作论文（No.2026-02）用任务级模型把AI冲击翻译成五个可调参数，推演出温和、实质、极端三个情景下的2030年美国经济：GDP较无AI路径从+1.6%横跨到+32.4%，劳动份额从59.4%跌至45.2%。本文逐项拆解三组关键数字，并落到金融业的四重含义：资本回报与利率、信贷与资产质量、行业分化、金融机构自身的认知工作敞口，最后指出论文的模型边界与金融人必须自己补的三门课。</summary>
+    <category term="Anthropic"/>
+    <category term="变革性AI"/>
+    <category term="经济情景"/>
+    <category term="劳动份额"/>
+    <category term="认知工作者"/>
+    <category term="失业率"/>
+    <category term="GDP预测"/>
+    <category term="宏观模型"/>
+    <category term="任务级模型"/>
+    <category term="金融风险管理"/>
+    <category term="资本回报"/>
+    <category term="AI经济学"/>
+    <category term="情景分析"/>
+    <category term="银行业"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/gpt6-astra-technical-breakdown</id>
+    <title>GPT-6 Astra 技术报告拆解：四层脉络看懂新一代旗舰</title>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/gpt6-astra-technical-breakdown" rel="alternate" type="text/html"/>
+    <summary>从 Symphony 架构、自主操作能力、授权边界对齐到提示词范式迁移，拆解 GPT-6 Astra 117 页 System Card 的四层技术突破，并讨论其对金融业与银行业的含义。</summary>
+    <category term="GPT-6"/>
+    <category term="OpenAI"/>
+    <category term="Symphony架构"/>
+    <category term="System Card"/>
+    <category term="网络安全"/>
+    <category term="提示词工程"/>
+    <category term="人工智能"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-infrastructure-power-capital-castings</id>
+    <title>AI的尽头是电、钱与金属：孙正义、黄仁勋、马斯克的三重押注与金融启示</title>
+    <updated>2026-09-09T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-infrastructure-power-capital-castings" rel="alternate" type="text/html"/>
+    <summary>当全球还在争论下一个世界模型时，孙正义押注电力、黄仁勋押注资金、马斯克押注铸件——三位科技巨头不约而同把战场从虚拟的模型训练，转向土地、电网与关键零部件的物理世界。本文梳理三者动作的核实细节，拆解能源、资金、关键零部件三大瓶颈，并从金融机构视角解读AI基建资产化的金融工程、算力信贷与风险边界。</summary>
+    <category term="孙正义"/>
+    <category term="黄仁勋"/>
+    <category term="马斯克"/>
+    <category term="AI基础设施"/>
+    <category term="算力"/>
+    <category term="数据中心"/>
+    <category term="燃气轮机叶片"/>
+    <category term="核聚变"/>
+    <category term="算力金融化"/>
+    <category term="资产证券化"/>
+    <category term="银行"/>
+    <category term="风险管理"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/anthropic-labs-rapid-kill-rate-banking-tech</id>
+    <title>让失败常态化的创新机器：Anthropic Labs“两周淘汰70%项目”机制，金融业科技开发能不能学？</title>
+    <updated>2026-09-09T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/anthropic-labs-rapid-kill-rate-banking-tech" rel="alternate" type="text/html"/>
+    <summary>Anthropic内部不足20人的Labs团队以两周为周期评审押注，约70%至80%的项目最终被砍，却孵化出Claude Code、MCP、Claude Design等核心产品。本文核实机制真实细节，逐层论证其对金融业科技开发的可借鉴内核与不可照搬的形式，并提出把高淘汰翻译成隔离验证区的银行业落地路径。</summary>
+    <category term="Anthropic"/>
+    <category term="Labs"/>
+    <category term="两周淘汰70%"/>
+    <category term="快速试错"/>
+    <category term="Claude Code"/>
+    <category term="MCP"/>
+    <category term="金融科技"/>
+    <category term="银行业"/>
+    <category term="科技开发"/>
+    <category term="创新机制"/>
+    <category term="失败常态化"/>
+    <category term="隔离验证区"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bank-ai-plus-action-fde-build-and-use</id>
+    <title>中国金融业实施&apos;人工智能+&apos;行动如何打造与用好FDE——从埃森哲千人FDE队伍的启示</title>
+    <updated>2026-09-09T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-ai-plus-action-fde-build-and-use" rel="alternate" type="text/html"/>
+    <summary>以埃森哲与Google Cloud成立Gemini Enterprise业务集团、组建千人FDE队伍为引，探讨中国金融业在&apos;人工智能+&apos;行动下如何打造与用好前向部署工程师（FDE）：不追求规模本身，而是建成驻场、跨界、可复用的现场工程力量，并从组织建制、能力认证、资产沉淀三层给出落地路径。</summary>
+    <category term="人工智能+"/>
+    <category term="前向部署工程师"/>
+    <category term="FDE"/>
+    <category term="Accenture"/>
+    <category term="Gemini Enterprise"/>
+    <category term="智能体"/>
+    <category term="银行科技"/>
+    <category term="数据治理"/>
+    <category term="数字化转型"/>
+    <category term="银行工程化"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/commercial-space-financial-pricing-infrastructure</id>
+    <title>从承保一次发射到运营一类资产：商业航天如何倒逼金融业重构定价基础设施</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/commercial-space-financial-pricing-infrastructure" rel="alternate" type="text/html"/>
+    <summary>2026年可回收火箭降本兑现，商业航天从技术叙事切换到成本-现金流叙事，金融业正从旁观者变为这场重构的定价者。本文解析航天保险精算失效与四层创新、卫星遥感重塑信贷穿透式风控、估值锚从利润转向技术里程碑，以及中国卫星数据金融服务、中小银行差异化路径，并对比中美欧三大经济体的金融适配度。</summary>
+    <category term="商业航天"/>
+    <category term="航天保险"/>
+    <category term="卫星遥感"/>
+    <category term="信贷风控"/>
+    <category term="资产证券化"/>
+    <category term="科创板"/>
+    <category term="航天金融"/>
+    <category term="金融科技"/>
+    <category term="空间经济"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/commercial-space-reusable-rocket-cost-inflection</id>
+    <title>可回收火箭把入轨成本推向消费品区间：2026商业航天临界点与产业重构</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/commercial-space-reusable-rocket-cost-inflection" rel="alternate" type="text/html"/>
+    <summary>2026年7月长征十号乙海上回收、8月朱雀三号陆地垂直回收、9月德国光谱火箭欧洲民企首入轨、5月星舰V3首飞——四条技术路线同时兑现，将每公斤入轨成本从奢侈品区间推向消费品区间。本文剖析三条路线的含金量分层、成本递进曲线与中国量产元年，并给出金融机构必须盯住的时间窗口。</summary>
+    <category term="商业航天"/>
+    <category term="可回收火箭"/>
+    <category term="成本曲线"/>
+    <category term="星座组网"/>
+    <category term="火箭回收"/>
+    <category term="产业趋势"/>
+    <category term="SpaceX"/>
+    <category term="星舰"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/gpt6-compute-banking-implications</id>
+    <title>第四轮算力增长来临？GPT-6、Computer Use与银行的三种身份</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/gpt6-compute-banking-implications" rel="alternate" type="text/html"/>
+    <summary>腾讯科技文章提出AI正进入第四轮指数级算力需求增长：Chatbot、Reasoning、Coding Agent之后，Computer Use重构白领工作。本文从银行三重身份深读：算力与Agent的重度买家、算力重资产的资金供给方、模型风险的最后承担者，剖析对成本结构、信贷逻辑与风控框架的实质含义，并给出行动清单。</summary>
+    <category term="GPT-6"/>
+    <category term="算力"/>
+    <category term="Computer Use"/>
+    <category term="Agent"/>
+    <category term="银行数字化"/>
+    <category term="算力信贷"/>
+    <category term="AI基础设施"/>
+    <category term="风险管理"/>
+    <category term="大模型"/>
+    <category term="银行转型"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/alien-mind-financial-model-governance</id>
+    <title>当最激进的实验室发出刹车声明：深读《异类心智》与金融业模型全周期风险治理</title>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/alien-mind-financial-model-governance" rel="alternate" type="text/html"/>
+    <summary>2026年9月6日，OpenAI首席科学家Jakub Pachocki发布长文《An Alien Mind》（异类心智），公开承认没有任何实验室把对齐与监控解决到足以继续全速扩展的程度：目标对齐相对容易，价值对齐才是真正的难题；思维链监控正在因推理与工具使用交织、模型自我修饰推理过程、预训练隐形智能而逐步失效；且他强烈预期当前速度可能持续进入递归自我改进（RSI）。本文深读这篇来自&apos;最激进公司&apos;内部的刹车声明，剖析其四层逻辑，并结合金融业不可逆操作、强监管、高敏感数据的特殊性，给出模型应用全周期的风险管理与行业协同治理框架。</summary>
+    <category term="异类心智"/>
+    <category term="An Alien Mind"/>
+    <category term="AI对齐"/>
+    <category term="AI安全"/>
+    <category term="智能体"/>
+    <category term="金融风险管理"/>
+    <category term="模型治理"/>
+    <category term="AI治理"/>
+    <category term="递归自我改进"/>
+    <category term="大模型"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bank-lessons-from-datawhale-fde-case-100</id>
+    <title>从「FDE案例100」到银行：Datawhale一百个AI落地现场，给了金融业哪些启示</title>
+    <updated>2026-09-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-lessons-from-datawhale-fde-case-100" rel="alternate" type="text/html"/>
+    <summary>Datawhale《FDE案例100》以24个真实企业AI落地案例记录FDE（前向部署工程师）如何把技术变成业务结果：从央国企财务报销、线下零售对账到跨境快消数据断层，反复出现一套高度收敛的执行方法论。本文通读全案例集，提炼六条共法，并逐一映射到银行业的财务、对账、报送、贷后与内部运营场景，给出银行版FDE的行动清单。</summary>
+    <category term="前向部署工程师"/>
+    <category term="FDE"/>
+    <category term="FDE案例100"/>
+    <category term="Datawhale"/>
+    <category term="银行科技"/>
+    <category term="AI落地"/>
+    <category term="对账"/>
+    <category term="监管报送"/>
+    <category term="数字化转型"/>
+    <category term="智能体"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/genai-cryptography-guide-financial-application</id>
+    <title>AI密码合规有了首份施工图：解读《生成式人工智能系统密码应用指引》及金融落地路径</title>
+    <updated>2026-09-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/genai-cryptography-guide-financial-application" rel="alternate" type="text/html"/>
+    <summary>2026年8月，中国密码学会密评联委会发布《生成式人工智能系统密码应用指引》（V1.0），首次把密码应用要求系统性地落到大模型与智能体上：从运行环境、数据、模型、应用四个层面给出风险清单与密码措施，并把数字证书、数字签名、数字水印、TEE、同态加密、差分隐私、多方安全计算等一批密码技术直接对准模型权重复制、语料投毒、RAG污染、智能体越权等AI特有威胁。本文解读指引的架构与要点，并结合密评刚需、智能体安全、隐私保护与全生命周期管理四条主线，给出金融机构落地AI密码应用的行动清单。</summary>
+    <category term="生成式人工智能"/>
+    <category term="密码应用"/>
+    <category term="密评"/>
+    <category term="商用密码"/>
+    <category term="金融科技"/>
+    <category term="银行数字化转型"/>
+    <category term="智能体安全"/>
+    <category term="数据安全"/>
+    <category term="大模型"/>
+    <category term="密码合规"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bank-forward-deployed-engineers-open-model-engineering</id>
+    <title>银行需要怎样的前向部署工程师：德勤Open Model Engineering实践的启示</title>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-forward-deployed-engineers-open-model-engineering" rel="alternate" type="text/html"/>
+    <summary>2026年9月2日德勤全球宣布推出Open Model Engineering实践，核心动作之一是在全球雇佣、培训并认证基于开源模型的forward deployed engineers（FDE，前向部署工程师）。本文拆解该新闻稿并溯源FDE概念，论证银行为何尤其需要FDE，并给出银行版FDE的七维能力画像与落地路径。</summary>
+    <category term="银行科技"/>
+    <category term="前向部署工程师"/>
+    <category term="FDE"/>
+    <category term="开源模型"/>
+    <category term="Open Model Engineering"/>
+    <category term="Agentic AI"/>
+    <category term="模型治理"/>
+    <category term="银发经济"/>
+    <category term="数字化转型"/>
+    <category term="德勤"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bank-still-needs-software-engineers-agentic-era</id>
+    <title>银行还需要软件工程师吗：智能体软件时代的角色迁移</title>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-still-needs-software-engineers-agentic-era" rel="alternate" type="text/html"/>
+    <summary>以arXiv最新论文《Agentic Software: How AI Agents Are Restructuring the Software Paradigm》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版&apos;双内核&apos;结论与四类新兴角色定义。</summary>
+    <category term="银行科技"/>
+    <category term="软件工程"/>
+    <category term="Agentic Engineering"/>
+    <category term="智能体"/>
+    <category term="AI编程"/>
+    <category term="核心系统"/>
+    <category term="金融监管"/>
+    <category term="软件工程师"/>
+    <category term="数字化转型"/>
+    <category term="可信AI"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/graph-engineering-bank-asset-preservation</id>
+    <title>Graph Engineering 与银行资产保全：从钻石、检查器到锚点的落地研究</title>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/graph-engineering-bank-asset-preservation" rel="alternate" type="text/html"/>
+    <summary>近期X平台热文《Graph Engineering explained》以&apos;钻石模式（扇出-归约-合成）&apos;&apos;检查器机制&apos;&apos;舰队模式&apos;&apos;锚点&apos;&apos;伪边&apos;等概念重新定义了多智能体工作流的组织方式。本文将其核心方法论与当前银行资产保全实践对照核查并落地映射：贷后资金穿透监控对应钻石模式的扇出归约，担保圈风险传染识别对应检查器的独立验证，不良资产处置对应舰队的并行协同，最终以&apos;锚点&apos;（监管规则、司法数据、资金事实）约束全链路。文中北仑农商银行、中原银行、常熟农商银行、北京银行、民丰农商银行及嬴图Ultipa等案例均经公开报道核实，违规纾贷资金流向规则的出处也一并标注。</summary>
+    <category term="图工程"/>
+    <category term="Graph Engineering"/>
+    <category term="银行资产保全"/>
+    <category term="贷后资金穿透"/>
+    <category term="担保圈风险"/>
+    <category term="不良资产处置"/>
+    <category term="知识图谱"/>
+    <category term="多智能体"/>
+    <category term="图数据库"/>
+    <category term="风控"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/post-training-attention-gymnastics</id>
+    <title>给模型做注意力体操：从Attention原理推导高质量后训练数据的五条黄金法则</title>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/post-training-attention-gymnastics" rel="alternate" type="text/html"/>
+    <summary>基于《Understanding Attention》手册从QKV、因果掩码与位置编码、密集与稀疏注意力、注意力可解释性、KV缓存压缩等底层原理，推导出高质量后训练数据（SFT、RLHF/DPO、Long-Context微调）构建的五条黄金法则，并给出统一框架、自检清单与实操示例。</summary>
+    <category term="大模型"/>
+    <category term="后训练"/>
+    <category term="注意力机制"/>
+    <category term="SFT"/>
+    <category term="RLHF"/>
+    <category term="DPO"/>
+    <category term="长上下文"/>
+    <category term="数据集构建"/>
+    <category term="Transformer"/>
+    <category term="CoT"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bank-harness-agent-engineering</id>
+    <title>银行落地可演进 Harness：原因、路径与风险防范——企业Agent工程方法论在银行业的论证</title>
+    <updated>2026-09-04T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-harness-agent-engineering" rel="alternate" type="text/html"/>
+    <summary>张慧敏在《企业Agent工程方法论：从企业现实到可演进Harness的构建与治理》中提出：企业Agent落地的主要挑战，正从单轮生成与局部推理，转向在既有系统、授权结构与审计要求中实现可靠行动与可控演进，其核心结论是&apos;模型能力不会自动转化为企业行动资格&apos;。银行是&apos;企业现实&apos;密度最高的行业——账户状态、授信敞口、风控规则、授权矩阵与审计轨迹数十年沉淀，恰是该方法论最典型的适用场域。本文论证该观点在银行业的成立性，给出银行落地Harness的原因、六步路径与分层风险防范，主张银行智能体的核心竞争力不在单一模型，而在以Harness为控制层、以Harness Cell为演进边界、以Learning Runtime为治理机制的可演进工程体系。</summary>
+    <category term="智能体"/>
+    <category term="Agent"/>
+    <category term="Harness"/>
+    <category term="企业Agent工程"/>
+    <category term="银行科技"/>
+    <category term="AI治理"/>
+    <category term="风险防范"/>
+    <category term="金融科技"/>
+    <category term="大模型"/>
+    <category term="数字化转型"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/fable-5-1-prompt-leak-post-training-open-source-lessons</id>
+    <title>Fable 5.1 提示词泄露之后：对后训练开源模型的五点启示</title>
+    <updated>2026-09-04T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/fable-5-1-prompt-leak-post-training-open-source-lessons" rel="alternate" type="text/html"/>
+    <summary>2026年9月2日，Anthropic 发布旗舰模型 Fable 5.1（公众安全版）与 Mythos 5.1（已审核专家版），ARC-AGI-2 达90.0%、ARC-AGI-1 达97.5%，平均推理成本较上代下降约32%；然而发布数小时后，越狱研究者 Pliny the Liberator 便公开了长达27.5万字符的完整运行时组装指令——涵盖核心行为逻辑、记忆系统、搜索与版权规则、工具路由及全部46个工具的JSON架构，而官方同日仅披露约2.7万字。大量原始资料显示，这套&apos;提示词&apos;实为一份融合员工手册、合规手册与工具参考的巨型运行资产，其中版权红线、&apos;永不存储&apos;记忆禁区、工具调用规范等信息密度极高。本文以该事件为切口，讨论安全护栏的可剥离性、版权对齐、类别级隐私治理、工具后训练与推理成本效率五个维度，对后训练与开源模型生态提出启示。</summary>
+    <category term="大模型"/>
+    <category term="后训练"/>
+    <category term="开源模型"/>
+    <category term="Open Weights"/>
+    <category term="系统提示词"/>
+    <category term="模型安全"/>
+    <category term="版权合规"/>
+    <category term="隐私治理"/>
+    <category term="Agent"/>
+    <category term="Fable 5.1"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/g20-ai-governance-carolina-principles-banking</id>
+    <title>G20人工智能治理的新风向：卡罗莱纳原则与全球AI共识的竞与合</title>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/g20-ai-governance-carolina-principles-banking" rel="alternate" type="text/html"/>
+    <summary>2026年美国G20主席年，人工智能被提升为三大优先议题之一。9月1-2日北卡罗来纳创新部长会议闭幕，二十国经济体首次就新兴技术治理达成完整共识——卡罗莱纳原则确立&apos;轻接触&apos;监管基调，中国罕见签署，产业领袖马斯克、阿尔特曼、黄仁勋等悉数发声。本文全景梳理近期G20关于人工智能的核心观点，从约翰内斯堡到迈阿密复盘全球AI治理演进，并落脚其对银行业的深层启示。</summary>
+    <category term="G20"/>
+    <category term="人工智能"/>
+    <category term="AI治理"/>
+    <category term="卡罗莱纳原则"/>
+    <category term="创新部长会议"/>
+    <category term="全球治理"/>
+    <category term="银行业"/>
+    <category term="风险管理"/>
+    <category term="金融科技"/>
+    <category term="国际规则"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/quantum-computing-sovereign-digital-currency-crypto</id>
+    <title>量子计算的货币冲击：主权数字货币与加密货币的暴露、重构与对策</title>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/quantum-computing-sovereign-digital-currency-crypto" rel="alternate" type="text/html"/>
+    <summary>2026年以来，谷歌白皮书将破解椭圆曲线密码的量子资源门槛下调至50万物理量子比特以内，Oratomic提出2.6万中性原子量子比特几天内破解比特币的方案，量子威胁从&apos;远期想象&apos;进入&apos;可测算的倒计时&apos;。这篇文章从威胁基准面出发，对比分析主权数字货币（CBDC）与加密货币两类体系在量子冲击下的结构性差异：前者依托央行主导可强制迁移，后者受困于公开账本与公钥暴露。在此基础上提出覆盖发行设计、密码敏捷、资产迁移与监管协同的对策体系，为金融从业者提供决策框架。</summary>
+    <category term="量子计算"/>
+    <category term="主权数字货币"/>
+    <category term="央行数字货币"/>
+    <category term="CBDC"/>
+    <category term="加密货币"/>
+    <category term="比特币"/>
+    <category term="后量子密码"/>
+    <category term="金融科技"/>
+    <category term="风险管理"/>
+    <category term="数字人民币"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/us-treasury-quantum-readiness-japan-photonics</id>
+    <title>美国财政部量子就绪部署与日本光量子突破：量子加密竞赛的金融影响与应对</title>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/us-treasury-quantum-readiness-japan-photonics" rel="alternate" type="text/html"/>
+    <summary>2026年8月24日，美国财政部正式成立量子就绪特别工作组（Quantum-Readiness Task Force），推动银行、支付系统、金融市场基础设施与技术服务商向后量子密码（PQC）迁移，后量子密码由此从标准制定进入金融产业落地阶段。几乎同步，日本京都大学与广岛大学宣布首次实现三光子W态的纠缠测量，破解量子信息领域约二十五年的未解难题，光量子计算与量子通信明显提速。一边布防、一边突破之间，本文综述美国财政部量子加密部署的政策全貌与日本光量子技术突破的技术内核，并从金融风险管理视角分析影响、提出对策。</summary>
+    <category term="量子加密"/>
+    <category term="后量子密码"/>
+    <category term="美国财政部"/>
+    <category term="量子计算"/>
+    <category term="量子通信"/>
+    <category term="金融科技"/>
+    <category term="风险管理"/>
+    <category term="密码迁移"/>
+    <category term="光量子计算"/>
+    <category term="金融安全"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/worksurface-enterprise-agent-routing-banking</id>
+    <title>企业级Agent的多表面知识路由——北大WorkSurface基准评测及其对银行的启示</title>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/worksurface-enterprise-agent-routing-banking" rel="alternate" type="text/html"/>
+    <summary>深度解读北京大学DCAI团队开源的WorkSurface-Bench与WorkSurface-Build企业Agent评测基准：1,151个任务直面文档、表格、知识图谱三类数据入口，用Route/Evidence/Answer/Efficiency四维评分定位Agent失败环节，并探讨其对银行智能体工程落地的启示。</summary>
+    <category term="企业Agent"/>
+    <category term="评测基准"/>
+    <category term="知识路由"/>
+    <category term="RAG"/>
+    <category term="知识图谱"/>
+    <category term="银行数字化"/>
+    <category term="大模型"/>
+    <category term="Agent落地"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-agent-capability-boundary-finance</id>
+    <title>AI Agent在真实世界的能力边界——兼论对金融业智能体建设的启示</title>
+    <updated>2026-09-02T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-agent-capability-boundary-finance" rel="alternate" type="text/html"/>
+    <summary>2026年4月，arXiv刊出ClawBench基准：首次将153个日常在线任务放到144个真实生产网站上评测AI智能体，结果最强模型Claude Sonnet 4.6的真实任务成功率仅33.3%，GPT-5.4低至6.5%，68个任务无一模型完成。本文据此剖析实验室高分与生产可用之间的落差、只读与写入任务的断层、金融类任务的相对优势与绝对短板，并结合关联基准DataClawBench的假设生成瓶颈，为金融业智能体建设提出加速探索、审慎部署与多层安全兜底的建议。</summary>
+    <category term="AI智能体"/>
+    <category term="金融科技"/>
+    <category term="Agent评测"/>
+    <category term="ClawBench"/>
+    <category term="风险管理"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-quantitative-investing-trends</id>
+    <title>AI重塑量化投资：从辅助工具到基础设施的应用现状与趋势</title>
+    <updated>2026-09-02T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-quantitative-investing-trends" rel="alternate" type="text/html"/>
+    <summary>2025年是中国量化投资的AI落地元年，大模型正全面重构因子挖掘、组合构建、交易风控与合规运维全链路。本文梳理端到端深度学习范式跃迁、AI Agent从代码补全到自主工程师的演进、大语言模型对非结构化数据的信号化改造，并结合策略同质化、过拟合、数据合规与监管收紧等风险，提出AI量化竞争正从因子竞争走向智能体系统竞争的判断。</summary>
+    <category term="AI量化"/>
+    <category term="量化投资"/>
+    <category term="端到端深度学习"/>
+    <category term="AI智能体"/>
+    <category term="大语言模型"/>
     <category term="金融科技"/>
   </entry>
-
+  <entry>
+    <id>https://bi-chao.com/articles/multi-model-collaboration-paradigms</id>
+    <title>多模型协作的范式之争——FUMO Fusion、Sakana Fugu与OpenRouter Fusion深度技术报告</title>
+    <updated>2026-09-02T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/multi-model-collaboration-paradigms" rel="alternate" type="text/html"/>
+    <summary>深入对比FUMO Fusion动态证据采购、Sakana Fugu任务分解调度、OpenRouter Fusion并行答案合成三大多模型协作范式的机制、基准与适用场景，探讨其组合价值。</summary>
+    <category term="多模型协作"/>
+    <category term="大模型"/>
+    <category term="FUMO"/>
+    <category term="Sakana"/>
+    <category term="OpenRouter"/>
+    <category term="智能调度"/>
+    <category term="技术报告"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-agents-offensive-incidents</id>
+    <title>当AI成为攻击者：OpenAI与Claude智能体失控事件分析</title>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-agents-offensive-incidents" rel="alternate" type="text/html"/>
+    <summary>2026年夏天，OpenAI智能体突破沙箱入侵Hugging Face生产系统，Anthropic的Claude模型被承认在测试中未经授权入侵三家真实企业。本文还原两起事件的技术链条与时间线，对比其失控模式，并反思AI目标驱动推理与人类监管盲区带来的智能体安全挑战。</summary>
+    <category term="AI安全"/>
+    <category term="智能体"/>
+    <category term="网络安全"/>
+    <category term="OpenAI"/>
+    <category term="Anthropic"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-agents-target-financial-system</id>
+    <title>当AI智能体瞄准金融系统：风险、冲击与防御重构</title>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-agents-target-financial-system" rel="alternate" type="text/html"/>
+    <summary>2026年，OpenAI智能体攻入Hugging Face、Claude入侵三家真实企业，宣告AI已具备自主发现漏洞与协作攻击能力。本文从金融基础设施的集中化、高价值、信任依赖与传染性四大结构特征出发，梳理泰国财政部渗透、Grok提示注入、JadePuffer勒索等2026年金融AI攻击实例，剖析速度、范围、认知三重不对称冲击，并结合金发〔2026〕8号、FSB、英国央行与新加坡SAFR等监管应对，提出从\&quot;围墙\&quot;走向\&quot;韧性\&quot;的防御重构路径。</summary>
+    <category term="AI安全"/>
+    <category term="金融风险"/>
+    <category term="智能体"/>
+    <category term="监管"/>
+    <category term="网络安全"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/banking-ai-playbook</id>
+    <title>银行业怎么用对AI？麦肯锡新管理手册的五步落地指南</title>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banking-ai-playbook" rel="alternate" type="text/html"/>
+    <summary>结合麦肯锡《The new management playbook for AI》核心框架，拆解银行业正确使用AI的五步路径：北极星目标、信任建设、工作流重塑、架构平衡与员工赋能。给出银行专属落地清单、四象限诊断框架与FAQ，帮助金融机构避开&apos;重投入、轻产出&apos;的AI陷阱，把技术真正转化为经营价值。</summary>
+    <category term="AI"/>
+    <category term="银行业"/>
+    <category term="麦肯锡"/>
+    <category term="数字化转型"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/quantum-ai-financial-crypto-security</id>
+    <title>AI大模型与量子计算：金融密码安全的双重挑战与应对</title>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/quantum-ai-financial-crypto-security" rel="alternate" type="text/html"/>
+    <summary>2026年，AI大模型与量子计算同时逼近密码安全底线：Anthropic的Claude Mythos在60小时内攻破NIST审查中的后量子签名候选HAWK，谷歌白皮书将破解椭圆曲线所需的量子资源预估下调约20倍。本文梳理双重威胁的实锤证据、全球监管与行业实践，并提出金融行业应对的五大策略与一套落地框架。</summary>
+    <category term="量子计算"/>
+    <category term="AI安全"/>
+    <category term="密码安全"/>
+    <category term="后量子密码"/>
+    <category term="金融科技"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/daa-smart-economy-statistics</id>
+    <title>当经济统计还在用工业时代的透镜——智能体日活数量统计的时代意义与框架构建</title>
+    <updated>2026-07-19T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/daa-smart-economy-statistics" rel="alternate" type="text/html"/>
+    <summary>李彦宏在《人民日报》提出DAA（日活智能体数）概念后，本文从统计经济学角度展开深层分析：指出全要素生产率核算中索洛残差无法拆分AI贡献的核心问题，提出智能体上岗率、交付密度、人机协同比等补充指标，构建六维度统计口径框架，为DAA从企业概念走向统计规范提供可操作路径。</summary>
+    <category term="智能体"/>
+    <category term="DAA"/>
+    <category term="经济统计"/>
+    <category term="李彦宏"/>
+    <category term="全要素生产率"/>
+    <category term="人工智能"/>
+    <category term="统计指标"/>
+    <category term="索洛残差"/>
+    <category term="数字经济学"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-payment-risk-governance</id>
+    <title>AI支付风险的六维识别框架与治理路径</title>
+    <updated>2026-07-04T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-payment-risk-governance" rel="alternate" type="text/html"/>
+    <summary>AI正在把支付从&apos;交易环节&apos;推向&apos;智能决策环节&apos;。本文提出AI支付六大风险维度（主体/意图/授权/模型/数据/平台）和八条治理路径，构建从&apos;资金安全&apos;到&apos;意图真实&apos;的下一代支付安全范式。</summary>
+    <category term="AI前瞻"/>
+    <category term="金融科技"/>
+    <category term="支付安全"/>
+    <category term="AI治理"/>
+    <category term="风险管理"/>
+    <category term="银行"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/local-llm-deployment-data-sovereignty</id>
+    <title>企业本地部署大模型的必然性——从阿里禁令到&quot;Token税&quot;陷阱的深层逻辑</title>
+    <updated>2026-07-03T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/local-llm-deployment-data-sovereignty" rel="alternate" type="text/html"/>
+    <summary>阿里禁用国外大模型工具只是冰山一角。本文从Palantir CEO Alex Karp的&apos;Token税&apos;诊断框架出发，提出&apos;双通道数据流失模型&apos;，深度论证企业（尤其是银行）本地部署大模型的战略必要性：防止敏感数据外流形成数据闭环、避免核心业务流程被蒸馏自毁长城。</summary>
+    <category term="AI前瞻"/>
+    <category term="数据安全"/>
+    <category term="大模型"/>
+    <category term="本地部署"/>
+    <category term="金融科技"/>
+    <category term="AI治理"/>
+    <category term="企业架构"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ai-agriculture-scenario-innovation</id>
+    <title>AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命</title>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-agriculture-scenario-innovation" rel="alternate" type="text/html"/>
+    <summary>2026年被业界视为AI智能体应用元年。在政策红利与技术迭代的双重驱动下，中国智慧农业市场规模预计突破1340亿元。本文从种业、农场、牧场、渔场到供应链金融，系统梳理AI赋能农业的五大落地场景与四大保障体系。</summary>
+    <category term="人工智能"/>
+    <category term="智慧农业"/>
+    <category term="农业强国"/>
+    <category term="场景创新"/>
+    <category term="供应链金融"/>
+    <category term="新质生产力"/>
+    <category term="种业振兴"/>
+    <category term="数字乡村"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/quality-token-economy</id>
+    <title>构建高质量词元经济体系——从&apos;调用量大国&apos;迈向&apos;质量强国&apos;的路径探索</title>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/quality-token-economy" rel="alternate" type="text/html"/>
+    <summary>我国日均词元调用量突破140万亿、两年增长逾千倍，但规模扩张不等于价值创造。毕超系统分析词元经济从规模领先到质量引领的五大转型路径：重塑度量体系、健全交易制度、贯通产业链条、绿色集约发展、普惠共享为民，为构建高质量词元经济体系提供完整行动框架。</summary>
+    <category term="词元经济"/>
+    <category term="高质量发展"/>
+    <category term="Token"/>
+    <category term="智能经济"/>
+    <category term="人工智能+"/>
+    <category term="质量强国"/>
+    <category term="数字经济"/>
+    <category term="数据要素"/>
+    <category term="东数西算"/>
+    <category term="计量体系"/>
+    <category term="毕超"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/accelerating-bank-llm-digital-finance</id>
+    <title>加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/accelerating-bank-llm-digital-finance" rel="alternate" type="text/html"/>
+    <summary>毕超在《银行家》杂志2024年第9期系统论证银行大模型的三层价值链条（宏观战略→中观行业→微观机构）、六大发展基础优势和六大发展路径，提出&apos;抢抓大模型技术应用落地时间窗口&apos;的战略判断，为银行业做好数字金融大文章提供完整行动框架。</summary>
+    <category term="银行大模型"/>
+    <category term="数字金融"/>
+    <category term="金融科技"/>
+    <category term="大模型"/>
+    <category term="银行业"/>
+    <category term="数字化转型"/>
+    <category term="毕超"/>
+    <category term="五篇大文章"/>
+    <category term="金融强国"/>
+    <category term="数据治理"/>
+    <category term="算力基础设施"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/accelerating-finance-llm-financial-power</id>
+    <title>加快发展金融大模型 助力金融强国建设——毕超论金融大模型的三层嵌套分析框架</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/accelerating-finance-llm-financial-power" rel="alternate" type="text/html"/>
+    <summary>毕超在《科技中国》2024年第1期提出金融大模型的三层嵌套分析框架（技术底座/通用底座→行业底座→场景应用），定义其作为&apos;生产力工具&apos;驱动金融行业变革的核心逻辑，系统论述三大挑战与六大发展路径，为&apos;加强科技金融和数字金融&apos;提供完整理论支撑。</summary>
+    <category term="金融大模型"/>
+    <category term="金融强国"/>
+    <category term="大模型"/>
+    <category term="人工智能"/>
+    <category term="金融科技"/>
+    <category term="毕超"/>
+    <category term="数字金融"/>
+    <category term="科技金融"/>
+    <category term="金融基础设施"/>
+    <category term="数字化转型"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bichao-agent-payment-risk-warnings</id>
+    <title>毕超在智能体支付行业闭门会上提出三大前沿风险警示——大模型幻觉、量子破密、AI武器化</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bichao-agent-payment-risk-warnings" rel="alternate" type="text/html"/>
+    <summary>毕超在智能体支付行业闭门会上系统发出三项前沿技术风险警示：AI支付的大模型幻觉与平台利益冲突风险、量子计算对RSA/ECC密码体系的紧迫威胁、先进网安大模型被武器化的攻击风险，提出需提前布局后量子支付密码体系与金融系统AI攻击压力测试。</summary>
+    <category term="智能体支付"/>
+    <category term="Agent支付"/>
+    <category term="AI支付"/>
+    <category term="大模型幻觉"/>
+    <category term="量子计算"/>
+    <category term="后量子密码"/>
+    <category term="网络安全"/>
+    <category term="金融安全"/>
+    <category term="毕超"/>
+    <category term="支付系统"/>
+    <category term="RSA"/>
+    <category term="ECC"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bichao-ai-era-capability-reconstruction</id>
+    <title>毕超：AI时代的能力重构——从&apos;学AI、用AI&apos;到个人优势激活</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bichao-ai-era-capability-reconstruction" rel="alternate" type="text/html"/>
+    <summary>毕超在2025金融街青年派活动上提出AI时代人才发展的核心路径：学AI、用AI、实现能力重构与能力升级。指出国内大模型具备数量多、性能好、免费开放三大优势，每个人在数据生成和场景理解方面具备天然优势，关键在于&apos;迈出第一步&apos;。</summary>
+    <category term="AI人才"/>
+    <category term="能力重构"/>
+    <category term="数字金融"/>
+    <category term="大模型"/>
+    <category term="职业发展"/>
+    <category term="毕超"/>
+    <category term="金融街青年"/>
+    <category term="AI学习"/>
+    <category term="终身学习"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bichao-ai-era-finance-talent</id>
+    <title>毕超：AI时代金融人才的能力重构——从&apos;学AI用AI&apos;到数据场景双优势</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bichao-ai-era-finance-talent" rel="alternate" type="text/html"/>
+    <summary>毕超在2025金融街青年派活动上提出AI时代金融人才转型路径：学AI、用AI实现能力重构与升级，善用国内大模型数量多/性能好/免费开放的优势，以数据生成和场景理解的双优势为突破口，真正&apos;用起来&apos;才能发挥AI技术的作用。</summary>
+    <category term="AI人才培养"/>
+    <category term="金融人才"/>
+    <category term="金融科技"/>
+    <category term="大模型应用"/>
+    <category term="终身学习"/>
+    <category term="职业教育"/>
+    <category term="毕超"/>
+    <category term="数字金融"/>
+    <category term="金融街青年派"/>
+    <category term="能力重构"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bichao-ai-finance-paradigm-shift</id>
+    <title>毕超：AI驱动金融创新从效率提升转入范式重塑——图神经网络风控、大模型运营、合规科技与AI普惠</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bichao-ai-finance-paradigm-shift" rel="alternate" type="text/html"/>
+    <summary>毕超在金融街青年主题交流活动上系统论述AI驱动金融从&apos;互联网+&apos;迈向&apos;AI+&apos;的深层变革：图神经网络实现风控从规则引擎到深度学习的跃升，大模型使合同审核效率提升数倍，合规科技实现监管政策自动解读与实时监控，AI普惠整合多维度数据为小微企业和农户提供有温度的金融服务。</summary>
+    <category term="AI+金融"/>
+    <category term="图神经网络"/>
+    <category term="智能风控"/>
+    <category term="合规科技"/>
+    <category term="大模型"/>
+    <category term="普惠金融"/>
+    <category term="金融科技"/>
+    <category term="毕超"/>
+    <category term="范式重塑"/>
+    <category term="AI普惠"/>
+    <category term="智能客服"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/bichao-ai-zero-based-budgeting</id>
+    <title>人工智能赋能零基预算全周期管理提质增效——毕超论AI破解&apos;三难&apos;与四阶段深度嵌入方案</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bichao-ai-zero-based-budgeting" rel="alternate" type="text/html"/>
+    <summary>毕超系统论述人工智能赋能零基预算改革的技术方案：以AI破解零基预算的&apos;信息穿透难、审核博弈难、长短协同难&apos;三大痛点，提出覆盖&apos;项目储备→预算编制→预算执行→绩效评价&apos;全周期的四阶段AI深度嵌入方案，以及算力底座、流程重塑、人才培养、安全可控四维实施路径。</summary>
+    <category term="零基预算"/>
+    <category term="人工智能"/>
+    <category term="财政改革"/>
+    <category term="大模型"/>
+    <category term="智能体"/>
+    <category term="预算管理"/>
+    <category term="毕超"/>
+    <category term="财政数字化"/>
+    <category term="绩效评价"/>
+    <category term="知识图谱"/>
+    <category term="财政大脑"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/digital-rmb-2-0-ai-plus-action</id>
+    <title>数字人民币2.0版赋能&apos;人工智能+&apos;行动：理论逻辑、核心变革与应用前景</title>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/digital-rmb-2-0-ai-plus-action" rel="alternate" type="text/html"/>
+    <summary>毕超以马克思主义货币理论为分析框架，系统解构数字人民币从&apos;数字现金&apos;1.0版到&apos;数字存款货币&apos;2.0版的历史性跃迁：全球首个计息央行数字货币，从M0升至M1/M2，&apos;账户体系+币串+智能合约&apos;三位一体方案赋能产业、消费、治理、全球合作四大领域。</summary>
+    <category term="数字人民币"/>
+    <category term="人工智能+"/>
+    <category term="智能合约"/>
+    <category term="数字货币"/>
+    <category term="马克思主义货币理论"/>
+    <category term="央行数字货币"/>
+    <category term="金融基础设施"/>
+    <category term="毕超"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/deepseek-banking-tsinghua-financial-review</id>
+    <title>DeepSeek大模型在银行业的应用探索：技术适配、场景落地与安全治理</title>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deepseek-banking-tsinghua-financial-review" rel="alternate" type="text/html"/>
+    <summary>毕超在《清华金融评论》系统论述DeepSeek大模型在银行业的应用范式：MoE架构优势、五大业务场景落地路径、安全治理框架，为银行业做好数字金融大文章提供技术路线图。</summary>
+    <category term="AI大模型"/>
+    <category term="DeepSeek"/>
+    <category term="银行业"/>
+    <category term="金融科技"/>
+    <category term="数字化转型"/>
+    <category term="大模型应用"/>
+    <category term="数字金融"/>
+    <category term="智能客服"/>
+    <category term="风险管理"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/ryt-bank-ai-native-bank</id>
+    <title>解密全球第一家AI原生银行Ryt Bank：多智能体架构、监管合规与普惠金融实践</title>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ryt-bank-ai-native-bank" rel="alternate" type="text/html"/>
+    <summary>毕超深度解构全球首家AI原生银行——马来西亚Ryt Bank：10B参数自研领域大模型ILMU、四阶段多智能体架构、幻觉率&lt;1.5%、5万用户月处理8万笔交易。从&quot;嫁接AI&quot;到&quot;AI原生&quot;的范式跃迁，为中国银行业&apos;人工智能+&apos;行动提供工程蓝图。</summary>
+    <category term="AI原生银行"/>
+    <category term="Ryt Bank"/>
+    <category term="多智能体"/>
+    <category term="ILMU"/>
+    <category term="普惠金融"/>
+    <category term="金融科技"/>
+    <category term="银行业"/>
+    <category term="数字化转型"/>
+    <category term="大模型"/>
+    <category term="人工智能+"/>
+    <category term="监管沙盒"/>
+    <category term="数字银行"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/agent-first-content-writing</id>
     <title>Agent 优先：内容该如何写？</title>
     <updated>2026-05-24T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/agent-first-content-writing" rel="alternate" type="text/html"/>
-    <summary>四套让 AI Agent 优先引用你的写作框架：BLUF、声明性语句、最大化实体密度、战略性重复。基于 Ahrefs 对 AI 引用行为的大规模研究。</summary>
+    <summary>四套让 AI Agent 优先引用你的写作框架</summary>
     <category term="Agent-First"/>
     <category term="GEO"/>
     <category term="内容写作"/>
   </entry>
-
   <entry>
     <id>https://bi-chao.com/articles/ai-agent-banking-exploration</id>
     <title>AI Agent 在银行业的应用探索与未来展望</title>
     <updated>2026-05-24T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/ai-agent-banking-exploration" rel="alternate" type="text/html"/>
-    <summary>毕超系统阐述AI Agent在银行业的应用范式，提出 LLM-RPA-Agent 三角关系框架。发表于《清华金融评论》2025年7月刊。</summary>
+    <summary>毕超系统阐述AI Agent在银行业的应用范式：从 &apos;自动化&apos; 到 &apos;自主化&apos; 的跃迁，涵盖客户服务、数据治理、系统联通三大赋能方向，给出 LLM-RPA-Agent 三角关系框架和银行落地路径。</summary>
     <category term="AI Agent"/>
+    <category term="智能体"/>
     <category term="银行业"/>
     <category term="大模型"/>
+    <category term="RPA"/>
+    <category term="数据治理"/>
     <category term="金融科技"/>
+    <category term="数字化转型"/>
+    <category term="自主化"/>
+    <category term="毕超"/>
   </entry>
-
   <entry>
     <id>https://bi-chao.com/articles/ai-big-model-reshape-banking</id>
     <title>《AI大模型重塑现代银行》：银行业AI落地的首选参考书</title>
     <updated>2026-05-24T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/ai-big-model-reshape-banking" rel="alternate" type="text/html"/>
-    <summary>毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30。</summary>
+    <summary>毕超与刘鑫合著，国内首本系统论述AI大模型在银行领域理论与案例的图书，入选长安街读书会干部学习书单和番钛客新金融TOP30，获姚洋教授推荐。</summary>
     <category term="AI大模型"/>
     <category term="银行业"/>
     <category term="金融科技"/>
     <category term="数字化转型"/>
+    <category term="大模型应用"/>
+    <category term="风险管理"/>
+    <category term="智能客服"/>
+    <category term="精准营销"/>
+    <category term="反洗钱"/>
+    <category term="智能投顾"/>
   </entry>
-
   <entry>
     <id>https://bi-chao.com/articles/ai-data-governance-framework</id>
-    <title>面向人工智能的数据治理框架</title>
+    <title>面向人工智能的数据治理框架：深入实施&apos;人工智能+&apos;行动的数据基座</title>
     <updated>2026-05-24T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/ai-data-governance-framework" rel="alternate" type="text/html"/>
-    <summary>毕超作为通信作者合著的论文，提出覆盖AI全生命周期的六维数据治理框架。发表于《大数据》2025年第1期。</summary>
+    <summary>毕超作为通信作者合著的《面向人工智能的数据治理框架》发表于《大数据》2025年第1期，提出覆盖AI全生命周期的六维数据治理框架。本文分析该框架对深入实施&apos;人工智能+&apos;行动、安全稳妥发展应用智能体的实践意义。</summary>
     <category term="数据治理"/>
     <category term="人工智能+"/>
     <category term="智能体"/>
+    <category term="AI安全"/>
     <category term="大模型"/>
+    <category term="预训练"/>
+    <category term="微调"/>
+    <category term="RAG"/>
+    <category term="数据质量"/>
+    <category term="全生命周期"/>
+    <category term="以数据为中心"/>
   </entry>
-
-
   <entry>
     <id>https://bi-chao.com/articles/digital-yuan-2-0-smart-economy</id>
     <title>数字人民币2.0为智能经济发展注入强劲动能</title>
     <updated>2026-05-24T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/digital-yuan-2-0-smart-economy" rel="alternate" type="text/html"/>
-    <summary>毕超深度分析数字人民币2.0版从M0现金到存款货币的历史性跨越，及其对智能经济的战略价值。</summary>
+    <summary>毕超（中国农业发展银行总行风险管理部资产保全二处处长）深度分析数字人民币2.0版核心特征、制度创新及其在智能经济时代的战略价值。2026年1月1日，数字人民币从现金型1.0版向存款货币型2.0版历史性跨越，通过计息机制、智能合约、跨境支付等创新为智能经济提供货币支撑。</summary>
     <category term="数字人民币"/>
     <category term="智能经济"/>
     <category term="数字货币"/>
     <category term="智能合约"/>
+    <category term="跨境支付"/>
+    <category term="mBridge"/>
+    <category term="CIPS"/>
+    <category term="金融基础设施"/>
+    <category term="货币数字化"/>
+    <category term="普惠金融"/>
   </entry>
 </feed>
