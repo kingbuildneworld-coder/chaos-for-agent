@@ -1,5 +1,21 @@
 [
   {
+    "title": "判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代",
+    "slug": "ai-judgment-scarcity-financial-risk",
+    "url": "/articles/ai-judgment-scarcity-financial-risk.md",
+    "description": "以 Google Research 首期播客访谈为切口，结合银行校招收缩、FSB 与金融监管总局文件三组同期信号，提出判断力三层结构与三个时间尺度错配框架，拆解风险管理条线四类控制点与机构侧六项行动，并回答“AI 接管基础工作后训练场消失”带来的断代风险如何治理。",
+    "date": "2026-09-22",
+    "tags": [
+      "人工智能",
+      "金融风险管理",
+      "AI治理",
+      "判断力",
+      "人才培养",
+      "模型风险"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "加快发展银行大模型 做好数字金融大文章——毕超论银行大模型的内涵、价值与路径",
     "slug": "accelerating-bank-llm-digital-finance",
     "url": "/articles/accelerating-bank-llm-digital-finance.md",
@@ -216,22 +232,6 @@
       "资产证券化",
       "银行",
       "风险管理"
-    ],
-    "schema_type": "Article"
-  },
-  {
-    "title": "判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代",
-    "slug": "ai-judgment-scarcity-financial-risk",
-    "url": "/articles/ai-judgment-scarcity-financial-risk.md",
-    "description": "以 Google Research 首期播客访谈为切口，结合银行校招收缩、FSB 与金融监管总局文件三组同期信号，提出判断力三层结构与三个时间尺度错配框架，拆解风险管理条线四类控制点与机构侧六项行动，并回答“AI 接管基础工作后训练场消失”带来的断代风险如何治理。",
-    "date": "2026-09-22",
-    "tags": [
-      "人工智能",
-      "金融风险管理",
-      "AI治理",
-      "判断力",
-      "人才培养",
-      "模型风险"
     ],
     "schema_type": "Article"
   },
