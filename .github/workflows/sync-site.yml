@@ -1,0 +1,116 @@
+name: Sync site artifacts
+
+# Regenerate derived artifacts when source content changes.
+#
+# NOTE on paths: deliberately 'articles/*.md' and NOT 'articles/**'. The bot
+# commits articles/index.json, so a broad 'articles/**' filter would re-trigger
+# this workflow on its own commits, spawning overlapping runs that then fail
+# with "rejected: non-fast-forward". See commit history for the 44/50 failures.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'articles/*.md'
+      - 'articles/**/*.md'
+      - 'about.md'
+      - 'src/index.js'
+  workflow_dispatch:
+
+# Serialize runs: overlapping runs race on the same commit and one always
+# gets rejected. Queueing them is the safe behaviour.
+concurrency:
+  group: sync-site
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate derived artifacts
+        run: python3 scripts/generate_site.py
+
+      - name: Commit and push if changed
+        env:
+          PUSH_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add articles/index.json feed.xml sitemap.xml ai-manifest.json llms-full.txt llms.txt
+
+          if git diff --cached --quiet; then
+            echo "No derived artifacts changed; nothing to commit."
+            exit 0
+          fi
+
+          # [skip ci] stops our own commit from re-triggering this workflow.
+          git commit -m "chore: sync site artifacts [skip ci]"
+
+          # Retry: another actor may push between our commit and our push.
+          # Without this, concurrent pushes yield "rejected: non-fast-forward"
+          # - the failure mode seen in 44 of the last 50 runs of the old workflow.
+          pushed=0
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${PUSH_BRANCH}"; then
+              pushed=1
+              echo "Pushed on attempt ${attempt}."
+              break
+            fi
+            echo "Push rejected (attempt ${attempt}); rebasing onto origin/${PUSH_BRANCH}..."
+            git fetch origin "${PUSH_BRANCH}"
+            git rebase "origin/${PUSH_BRANCH}"
+            sleep 3
+          done
+
+          if [ "${pushed}" -ne 1 ]; then
+            echo "::error::Push failed after 5 attempts - another actor keeps winning the race."
+            exit 1
+          fi
+
+          git log -1 --oneline
+
+      - name: Purge Cloudflare cache
+        # Optional: skipped until the CF_API_TOKEN secret exists. Add it in
+        # Settings > Secrets and variables > Actions.
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CF_API_TOKEN}" ] || [ -z "${CF_ZONE_ID}" ]; then
+            echo "CF_API_TOKEN / CF_ZONE_ID not set - skipping cache purge."
+            echo "Add them as repository secrets to purge on every sync."
+            exit 0
+          fi
+
+          # Purge by URL - deterministic and avoids tag-prefix setup.
+          urls='['
+          for path in / /feed.xml /ai-manifest.json /llms.txt /llms-full.txt /sitemap.xml /articles/index.json; do
+            urls+="{\"url\":\"https://bi-chao.com${path}\"},"
+          done
+          urls="${urls%,}]}"
+
+          body=$(printf '{"keys":%s}' "$urls")
+          echo "Request body: ${body}"
+
+          resp=$(curl -sS -X POST \
+            -H "Authorization: Bearer ${CF_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+            -d "$body")
+
+          echo "$resp"
+
+          if echo "$resp" | python3 -c "import sys,json; d=json.load(sys.stdin); sys.exit(0 if d.get('success') else 1)"; then
+            echo "Cloudflare cache purged."
+          else
+            echo "::warning::Cloudflare purge failed - the token may lack Zone.Cache.Purge, or not_before may still be in the future. Check: https://api.cloudflare.com/client/v4/user/tokens/verify"
+          fi
