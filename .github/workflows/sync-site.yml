@@ -91,14 +91,10 @@ jobs:
             exit 0
           fi
 
-          # Purge by URL - deterministic and avoids tag-prefix setup.
-          urls='['
-          for path in / /feed.xml /ai-manifest.json /llms.txt /llms-full.txt /sitemap.xml /articles/index.json; do
-            urls+="{\"url\":\"https://bi-chao.com${path}\"},"
-          done
-          urls="${urls%,}]}"
-
-          body=$(printf '{"keys":%s}' "$urls")
+          # Build the payload with python so the JSON is always valid.
+          # Cloudflare expects {"files": ["https://..."]} - a flat list of URLs.
+          # Note: "keys" is not a valid field (error 1012); the field is "files".
+          body=$(python3 -c 'import json;print(json.dumps({"files":["https://bi-chao.com"+p for p in ["/","/feed.xml","/ai-manifest.json","/llms.txt","/llms-full.txt","/sitemap.xml","/articles/index.json"]]},separators=(",",":")))')
           echo "Request body: ${body}"
 
           resp=$(curl -sS -X POST \
@@ -112,5 +108,5 @@ jobs:
           if echo "$resp" | python3 -c "import sys,json; d=json.load(sys.stdin); sys.exit(0 if d.get('success') else 1)"; then
             echo "Cloudflare cache purged."
           else
-            echo "::warning::Cloudflare purge failed - the token may lack Zone.Cache.Purge, or not_before may still be in the future. Check: https://api.cloudflare.com/client/v4/user/tokens/verify"
+            echo "::warning::Cloudflare purge failed - the token may lack Zone.Cache.Purge on this zone."
           fi
