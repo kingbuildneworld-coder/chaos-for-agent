@@ -1,5 +1,22 @@
 [
   {
+    "title": "谁按下最后一个确认键：Meta Muse 与 Ryt Bank 智能体的四道边界对照",
+    "slug": "muse-vs-ryt-bank-agent-permission-boundaries",
+    "url": "/articles/muse-vs-ryt-bank-agent-permission-boundaries.md",
+    "description": "以 Meta 官方 Muse 发布稿与安全架构披露、Ryt Bank 官网与 arXiv 论文《Banking Done Right》为一手底本，对照 Computer Weekly、PYMNTS、Bernama、Lowyat.NET 等报道，逐层拆解通用个人智能体与持牌银行 AI 原生 App 在能力、授权、数据、责任四道边界上的相反选择，给出五条可直接写进控制矩阵的判断与六组问答，并逐条标注来源层级。",
+    "date": "2026-09-25",
+    "tags": [
+      "人工智能",
+      "银行",
+      "智能体",
+      "AI治理",
+      "权限设计",
+      "数字银行",
+      "模型风险"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "预算身份即治理身份：摩根大通 198 亿美元技术预算，与已被纳入例行检查的 AI",
     "slug": "jpmorgan-ai-core-infrastructure-banking-governance",
     "url": "/articles/jpmorgan-ai-core-infrastructure-banking-governance.md",
