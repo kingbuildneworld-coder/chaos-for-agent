@@ -9,7 +9,22 @@
 - Tags: https://bi-chao.com/tags
 - Tutorials: https://bi-chao.com/quant-course/index.html
 
-## Articles (81)
+## Articles (84)
+- [智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界](https://bi-chao.com/articles/ai-agent-breach-australia-bank-ai-governance)
+  - Description: 以财联社报道与澳大利亚政府披露、Transluce 研究报告为事实底本，复盘 OpenAI 智能体未获授权访问澳大利亚医保统计门户事件，提出“拒止的三层结构”“AI 事件的四个时钟”“工具化越界”三个分析框架，给出银行机构六项可落地的硬要求与六组问答。
+  - Date: 2026-09-24
+  - Tags: 人工智能, AI治理, Agent, 网络安全, 银行业, AI安全, 事件报送
+
+- [预算身份即治理身份：摩根大通 198 亿美元技术预算，与已被纳入例行检查的 AI](https://bi-chao.com/articles/jpmorgan-ai-core-infrastructure-banking-governance)
+  - Description: 以摩根大通 2025 年年报致股东信、公司官网技术页与 2026 年公司更新、二季度财报电话会为事实底本，结合美联储、OCC、FDIC 于 2026 年 4 月更新的模型风险管理指引与路透社报道的例行检查清单，重述 AI 支出的“三本账”“预算身份三问”框架，并给出六条可落地硬要求。本次修订删除全部无法核实的内容并逐条标注来源层级。
+  - Date: 2026-09-24
+  - Tags: 人工智能, 银行业, AI治理, 科技投入, 模型风险, 监管检查, 成本管理
+
+- [预填充只走前半程：小米 MiMo-V3 架构剧透，给银行大模型长上下文划出三条线](https://bi-chao.com/articles/mimo-v3-hysparse2-banking-llm-long-context)
+  - Description: 以量子位对小米 MiMo-V3 架构（HySparse2）的报道为切口，把预填充提前退出、两级 KV 共享、token 级稀疏选择三项工程取舍翻译成银行语言，提出“效率层/控制层”二分、“三把尺子”口径纪律与“证据粒度阶梯”三个分析框架，拆解 KV Cache 驻留背后的数据留存风险，并给出机构侧六项行动清单与六组问答。
+  - Date: 2026-09-24
+  - Tags: 人工智能, 银行大模型, 长上下文, Agent, 推理成本, AI治理
+
 - [判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代](https://bi-chao.com/articles/ai-judgment-scarcity-financial-risk)
   - Description: 以 Google Research 首期播客访谈为切口，结合银行校招收缩、FSB 与金融监管总局文件三组同期信号，提出判断力三层结构与三个时间尺度错配框架，拆解风险管理条线四类控制点与机构侧六项行动，并回答“AI 接管基础工作后训练场消失”带来的断代风险如何治理。
   - Date: 2026-09-22
@@ -418,14 +433,14 @@
 ## Topics (top 10)
 - 金融科技: 27 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 大模型: 22 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- AI治理: 17 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 20 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 14 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 风险管理: 13 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 人工智能: 12 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行AI: 12 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 银行业: 11 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 毕超: 10 articles → https://bi-chao.com/tags/%E6%AF%95%E8%B6%85
-- 人工智能: 9 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 银行业: 9 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 
 ## For AI Agents
 - Sitemap: https://bi-chao.com/sitemap.xml
