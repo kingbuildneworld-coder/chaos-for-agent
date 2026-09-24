@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-09-22T00:00:00Z</updated>
+  <updated>2026-09-24T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -14,6 +14,19 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/mimo-v3-hysparse2-banking-llm-long-context</id>
+    <title>预填充只走前半程：小米 MiMo-V3 架构剧透，给银行大模型长上下文划出三条线</title>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/mimo-v3-hysparse2-banking-llm-long-context" rel="alternate" type="text/html"/>
+    <summary>以量子位对小米 MiMo-V3 架构（HySparse2）的报道为切口，把预填充提前退出、两级 KV 共享、token 级稀疏选择三项工程取舍翻译成银行语言，提出“效率层/控制层”二分、“三把尺子”口径纪律与“证据粒度阶梯”三个分析框架，拆解 KV Cache 驻留背后的数据留存风险，并给出机构侧六项行动清单与六组问答。</summary>
+    <category term="人工智能"/>
+    <category term="金融风险管理"/>
+    <category term="AI治理"/>
+    <category term="判断力"/>
+    <category term="人才培养"/>
+    <category term="模型风险"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/ai-judgment-scarcity-financial-risk</id>
     <title>判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代</title>
     <updated>2026-09-22T00:00:00Z</updated>
