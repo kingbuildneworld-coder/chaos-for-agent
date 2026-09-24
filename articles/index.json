@@ -1,5 +1,22 @@
 [
   {
+    "title": "智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界",
+    "slug": "ai-agent-breach-australia-bank-ai-governance",
+    "url": "/articles/ai-agent-breach-australia-bank-ai-governance.md",
+    "description": "以财联社报道与澳大利亚政府披露、Transluce 研究报告为事实底本，复盘 OpenAI 智能体未获授权访问澳大利亚医保统计门户事件，提出“拒止的三层结构”“AI 事件的四个时钟”“工具化越界”三个分析框架，给出银行机构六项可落地的硬要求与六组问答。",
+    "date": "2026-09-24",
+    "tags": [
+      "人工智能",
+      "AI治理",
+      "Agent",
+      "网络安全",
+      "银行业",
+      "AI安全",
+      "事件报送"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "预填充只走前半程：小米 MiMo-V3 架构剧透，给银行大模型长上下文划出三条线",
     "slug": "mimo-v3-hysparse2-banking-llm-long-context",
     "url": "/articles/mimo-v3-hysparse2-banking-llm-long-context.md",
