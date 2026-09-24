@@ -1,5 +1,22 @@
 [
   {
+    "title": "预算身份即治理身份：摩根大通 198 亿美元技术投入，把 AI 从实验科目写进基础设施",
+    "slug": "jpmorgan-ai-core-infrastructure-banking-governance",
+    "url": "/articles/jpmorgan-ai-core-infrastructure-banking-governance.md",
+    "description": "以商业内幕、路透转述的摩根大通 2026 年公司更新与二季度财报电话会内容为事实底本，结合美联储、OCC、FDIC 于 2026 年 4 月更新的模型风险管理指引及其实务检查要点，提出 AI 支出的“三本账”与“预算身份三问”两个分析框架，并给出机构可落地的六条硬要求与六组问答。",
+    "date": "2026-09-24",
+    "tags": [
+      "人工智能",
+      "银行业",
+      "AI治理",
+      "科技投入",
+      "模型风险",
+      "监管检查",
+      "成本管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界",
     "slug": "ai-agent-breach-australia-bank-ai-governance",
     "url": "/articles/ai-agent-breach-australia-bank-ai-governance.md",
