@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 81,
+    "total_articles": 82,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,20 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "mimo-v3-hysparse2-banking-llm-long-context",
+      "title": "预填充只走前半程：小米 MiMo-V3 架构剧透，给银行大模型长上下文划出三条线",
+      "date": "2026-09-24",
+      "description": "以量子位对小米 MiMo-V3 架构（HySparse2）的报道为切口，把预填充提前退出、两级 KV 共享、token 级稀疏选择三项工程取舍翻译成银行语言，提出“效率层/控制层”二分、“三把尺子”口径纪律与“证据粒度阶梯”三个分析框架，拆解 KV Cache 驻留背后的数据留存风险，并给出机构侧六项行动清单与六组问答。",
+      "tags": [
+        "人工智能",
+        "银行大模型",
+        "长上下文",
+        "Agent",
+        "推理成本",
+        "AI治理"
+      ]
+    },
     {
       "slug": "ai-judgment-scarcity-financial-risk",
       "title": "判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代",
@@ -1383,7 +1397,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-22",
+  "last_updated": "2026-09-24",
   "version": "1.1",
-  "total_articles": 81
+  "total_articles": 82
 }
