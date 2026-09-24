@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-09-24T00:00:00Z</updated>
+  <updated>2026-09-25T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -14,6 +14,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/muse-vs-ryt-bank-agent-permission-boundaries</id>
+    <title>谁按下最后一个确认键：Meta Muse 与 Ryt Bank 智能体的四道边界对照</title>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/muse-vs-ryt-bank-agent-permission-boundaries" rel="alternate" type="text/html"/>
+    <summary>以 Meta 官方 Muse 发布稿与安全架构披露、Ryt Bank 官网与 arXiv 论文《Banking Done Right》为一手底本，对照 Computer Weekly、PYMNTS、Bernama、Lowyat.NET 等报道，逐层拆解通用个人智能体与持牌银行 AI 原生 App 在能力、授权、数据、责任四道边界上的相反选择，给出五条可直接写进控制矩阵的判断与六组问答，并逐条标注来源层级。</summary>
+    <category term="人工智能"/>
+    <category term="AI治理"/>
+    <category term="Agent"/>
+    <category term="网络安全"/>
+    <category term="银行业"/>
+    <category term="AI安全"/>
+    <category term="事件报送"/>
+  </entry>
+<entry>
     <id>https://bi-chao.com/articles/ai-agent-breach-australia-bank-ai-governance</id>
     <title>智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界</title>
     <updated>2026-09-24T00:00:00Z</updated>
