@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 85,
+    "total_articles": 86,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "ai-industrial-revolution-finance-integration",
+      "title": "智能是工厂，不是项目：从黄仁勋的工业革命逻辑，看 AI 与金融业融合的五层地基与三道闸门",
+      "date": "2026-09-25",
+      "description": "以黄仁勋在 The Ezra Klein Show 的最新三万字对话《AI 危言耸听已走得太远》为分析底本（该素材未经独立核实），对照 NVIDIA 提交 SEC 的 8-K 收购文件、国家金融监督管理总局《关于银行业保险业人工智能安全开发应用的指导意见》报道、招行/邮储/平安/兴业/微众等 2026 年半年报与股东会披露口径、麦肯锡银行 AI 研究，把'五层蛋糕'翻译成金融业的五层地基，并给出验证、隔离、监督三道闸门、算力资产化的双重敞口分析、四类场景的 token 价值评估框架，以及八条可直接写进控制矩阵的判断。",
+      "tags": [
+        "人工智能",
+        "金融业",
+        "AI工厂",
+        "银行",
+        "AI治理",
+        "模型风险",
+        "算力经济",
+        "监管科技"
+      ]
+    },
     {
       "slug": "muse-vs-ryt-bank-agent-permission-boundaries",
       "title": "谁按下最后一个确认键：Meta Muse 与 Ryt Bank 智能体的四道边界对照",
@@ -1444,5 +1460,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-25",
   "version": "1.1",
-  "total_articles": 85
+  "total_articles": 86
 }
