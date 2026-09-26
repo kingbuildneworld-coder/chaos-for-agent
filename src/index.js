@@ -328,9 +328,39 @@ __SPEAKABLE_JSONLD__
   .toc-sidebar{background:var(--toc-bg,#f8fafc);border:1px solid var(--border);border-radius:8px;padding:1rem 1.25rem;margin-bottom:2rem;}
   .toc-sidebar .toc{margin-bottom:0;background:transparent;border:none;}
   html[data-theme="dark"] .toc-sidebar{background:#161a23;}
+  /*
+   * 宽屏布局修复（原实现会遮挡正文）
+   * ---------------------------------
+   * 原实现：.page-wrap 满宽（max-width:1180px、右侧零留白），
+   *         而 .toc-sidebar 用 position:fixed 浮在右侧。
+   * 后果：实测在 1200px 视口下，目录左边缘 x=869、正文右边缘 x=929 ——
+   *       **水平压住正文 60px、纵向压 568px**，直接妨碍阅读。
+   * 修法：改为两列网格，把目录放成**真实的一列**（position:sticky，
+   *       随页面滚动吸附），因此它在任何宽度下都不可能覆盖正文。
+   * 窄屏（<1180px）不受影响：目录仍作为正文上方的一个普通区块。
+   */
   @media(min-width:1180px){
-    .toc-sidebar{position:fixed;right:max(1rem,calc((100vw - 1000px)/2));top:96px;width:min(260px,18vw);max-height:72vh;overflow-y:auto;margin:0;z-index:500;font-size:.85rem;}
-    .page-wrap{max-width:1180px;margin:0 auto;padding-left:10px;}
+    .page-wrap{
+      max-width:1180px;
+      margin:0 auto;
+      padding-left:10px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 240px;   /* 正文列 + 目录列 */
+      column-gap:2rem;
+      align-items:start;                          /* 让 sticky 有活动空间 */
+    }
+    .page-wrap > article{grid-column:1;}          /* 正文在左 */
+    .page-wrap > .toc-sidebar{grid-column:2;}     /* 目录在右 */
+    .toc-sidebar{
+      position:sticky;
+      top:96px;
+      width:auto;
+      max-height:80vh;
+      overflow-y:auto;
+      margin:0;
+      z-index:auto;
+      font-size:.85rem;
+    }
   }
   @media(max-width:600px){
     .site-nav .nav-links{font-size:.78rem;gap:.6rem;}
