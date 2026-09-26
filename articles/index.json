@@ -1,5 +1,26 @@
 [
   {
+    "title": "Company Brain 的能力构成与边界：兼论台新脑落地样本对银行智能风控的六项启示与五条不可自动化红线",
+    "slug": "company-brain-bank-risk-control",
+    "url": "/articles/company-brain-bank-risk-control.md",
+    "description": "以 NTT DATA 观点文章、三星 SDS 韩文洞察报告、Jinba 厂商博客、工商时报对台新银行数位科技长李正国的报道及 supermemoryai/company-brain 开源说明为全部素材，拆解 Company Brain 针对 Context Silo 与组织记忆依赖个人的痛点、其共享上下文基础设施定位与功能形态，并以台新脑“查算核写、单独量测单独回退”的落地范式为对照，提出银行智能风控的六项启示与五条不可自动化边界。厂商量化口径均标注未经独立核实。",
+    "date": "2026-09-26",
+    "tags": [
+      "金融科技",
+      "AI治理",
+      "大模型",
+      "智能体",
+      "风险管理",
+      "银行AI",
+      "金融监管",
+      "模型风险管理",
+      "知识管理",
+      "数据治理",
+      "信贷风控"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "把上海 AI 新政读成一张合规义务清单：16 条中的 10 项硬性义务与三阶段落地路径",
     "slug": "shanghai-ai-finance-measures-implementation",
     "url": "/articles/shanghai-ai-finance-measures-implementation.md",
