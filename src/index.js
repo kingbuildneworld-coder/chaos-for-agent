@@ -936,6 +936,53 @@ function detectDefinitions(html) {
  * 对读者和 AI 引擎都没有可溯源性。现在如果捕获内容里含 URL，会真的渲染成链接。
  * 括号内只有文字、没有 URL 时保持原有的 <cite> 标注（没有 URL 可链）。
  */
+/**
+ * 把正文里的裸 URL 自动转成可点击链接。
+ *
+ * 背景（重要）：站内不少文章以"来源清单"形式列出一手出处，但写成**裸 URL**，
+ * 例如：
+ *     - OCC 新闻稿《OCC Issues Updated Model Risk Management Guidance》，
+ *       https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-29.html
+ * Markdown 标准并不自动链接裸 URL，本站的 md2html 也不链接，于是这些一手来源
+ * 在页面上**全是不可点击的纯文本** —— 读者点不了，AI 引擎也不把它当作可溯源引用。
+ *
+ * 实测规模：11 篇文章共 47 条来源 URL 处于该状态（最多的两篇分别有 14 与 12 条）。
+ * 这是"引用体系空转"里**纯代码可修**的那一半，与"作者没写来源"是两回事。
+ *
+ * 安全性：按标签切分逐段扫描，跳过
+ *   - 标签内部（即 HTML 属性值，避免把 href="..." 再包一层）
+ *   - <a> … </a> 已链接区域
+ *   - <code> / <pre> 代码区域
+ * 并剥离 URL 末尾的 ASCII 标点（避免把句号、逗号吃进链接）。
+ */
+function autolinkBareUrls(html) {
+  const parts = html.split(/(<[^>]+>)/);
+  let inAnchor = 0, inCode = 0;
+  // 前导分隔符保证不会从单词中间切开；URL 字符集排除中英文收尾标点
+  const URL_RE = /(^|[\s（(【\[>：:，,、；;])(https?:\/\/[^\s<>"'）)】\]，。；：、]+)/g;
+
+  for (let i = 0; i < parts.length; i++) {
+    const seg = parts[i];
+    if (seg.startsWith('<')) {
+      const t = seg.toLowerCase();
+      if (/^<a[\s>]/.test(t)) inAnchor++;
+      else if (t.startsWith('</a>')) inAnchor = Math.max(0, inAnchor - 1);
+      else if (/^<(code|pre)[\s>]/.test(t)) inCode++;
+      else if (/^<\/(code|pre)>/.test(t)) inCode = Math.max(0, inCode - 1);
+      continue;
+    }
+    if (inAnchor > 0 || inCode > 0 || !seg.includes('http')) continue;
+    parts[i] = seg.replace(URL_RE, (m, pre, raw) => {
+      // 剥离 URL 末尾的 ASCII 标点，留在链接之外
+      const mm = raw.match(/^(.*?)([.,;:!?]+)?$/);
+      const url = mm[1];
+      const tail = mm[2] || '';
+      return `${pre}<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>${tail}`;
+    });
+  }
+  return parts.join('');
+}
+
 function detectDataCitations(html) {
   // 避免对已有 HTML 实体二次转义
   const escCite = (s) => s
@@ -1180,6 +1227,9 @@ async function renderArticle(pathname, request, explicitMd) {
     let contentHtml = injectHeadingIds(md2html(body));
     contentHtml = detectDefinitions(contentHtml);
     contentHtml = detectDataCitations(contentHtml);   // B2: 行内数据引用标记
+    // 顺序很重要：必须在 detectDataCitations 之后。否则裸 URL 会先被包成 <a>，
+    // 接着 detectDataCitations 再套一层 <cite>，产生嵌套锚点。
+    contentHtml = autolinkBareUrls(contentHtml);      // 裸 URL → 可点击的一手来源链接
     contentHtml = injectInternalLinks(contentHtml, articles, slug);
     const tocHtml = generateTOC(body);
     const prevNextHtml = getPrevNext(articles, slug);
