@@ -28,6 +28,7 @@
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -132,6 +133,24 @@ function report(name, ok, detail) {
   const repoHasLastmod = /<lastmod>/.test(repo);
   console.log(`  ℹ lastmod：Worker=${liveHasLastmod ? '有' : '无'} / Python=${repoHasLastmod ? '有' : '无'}`
     + (liveHasLastmod !== repoHasLastmod ? '（既存差异：线上 sitemap 缺少 lastmod，属可改进项）' : ''));
+
+  // faq.json 新鲜度
+  // /faq 页面运行时只读这一个预生成文件（否则会因逐篇抓取超出 Workers 50 个子请求上限）。
+  // 它的生成依赖 Node 复用 Worker 逻辑，因此必须在 CI 里显式校验，否则会静默变旧：
+  // 新增了带 FAQ 的文章、而 faq.json 未重生成时，/faq 页面会悄悄少内容。
+  try {
+    const gen = spawnSync('node', [join(ROOT, 'scripts', 'generate_faq_index.mjs')], {
+      cwd: ROOT, encoding: 'utf8', timeout: 300000,
+    });
+    if (gen.error || gen.status !== 0) {
+      console.log(`  ℹ faq.json：跳过新鲜度校验（生成器不可用：${(gen.error && gen.error.message) || ('exit ' + gen.status)}）`);
+    } else {
+      const out = (gen.stdout || '').trim();
+      report('faq.json 与当前文章一致（非陈旧）', /faq\.json: unchanged/.test(out), out.split('\n').pop());
+    }
+  } catch (e) {
+    console.log(`  ℹ faq.json：跳过新鲜度校验（${e && e.message}）`);
+  }
 }
 
 console.log();

@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from collections import Counter
 from datetime import datetime, timezone
@@ -419,6 +420,43 @@ def validate(articles: list[dict]) -> None:
         assert not t or t == p.stem, f"{p.name} has a title but was dropped"
 
 
+def gen_faq_index() -> int:
+    """调用 Node 生成 faq.json —— 让 /faq 页面只需 1 个子请求即可全量覆盖。
+
+    为什么要预生成：Worker 侧的 renderFaqPage() 原先会顺序抓取**全部**文章的
+    markdown（86 篇 = 86 个 subrequest），而 Cloudflare Workers 免费版单个请求
+    最多 **50 个 subrequest** —— 必然超限抛错，所以 /faq 在线上长期是坏的。
+    改为构建期扫描一次、运行时只读这一个静态文件。
+
+    为什么用 Node 而不是在 Python 里重写：scripts/generate_faq_index.mjs 直接
+    import src/index.js（线上那个 Worker）逐篇渲染再抽取 FAQPage，因此 FAQ 检测
+    逻辑**只有一份**，不会出现双实现漂移 —— 这正是本仓库历史上的重复踩坑点
+    （见审计报告 G-24）。
+
+    node 不可用时静默跳过：faq.json 保持上次提交的内容，Worker 侧另有兜底扫描
+    路径，不会因此报错。
+    """
+    script = ROOT / "scripts" / "generate_faq_index.mjs"
+    if not script.exists():
+        return 0
+    try:
+        r = subprocess.run(
+            ["node", str(script)],
+            cwd=str(ROOT), capture_output=True, text=True, timeout=300,
+        )
+    except (OSError, subprocess.SubprocessError) as e:
+        print(f"faq.json: skipped (node unavailable: {e})")
+        return 0
+    for line in (r.stdout or "").strip().splitlines():
+        print(f"  {line}")
+    if r.returncode != 0:
+        print(f"faq.json: generator failed (exit {r.returncode}); keeping existing file")
+        if r.stderr:
+            print(f"  stderr: {r.stderr.strip()[:300]}")
+        return 0
+    return 1 if "updated" in (r.stdout or "") else 0
+
+
 def main() -> int:
     articles = load_articles()
     validate(articles)
@@ -436,6 +474,8 @@ def main() -> int:
             path.write_text(text, encoding="utf-8")
             written += 1
         print(f"{rel}: {'updated' if before != text else 'unchanged'}")
+    # faq.json 由 Node 复用 Worker 逻辑生成（见 gen_faq_index 说明）
+    written += gen_faq_index()
     print(f"articles={len(articles)} effective_date={edate} files_changed={written}")
     return 0
 

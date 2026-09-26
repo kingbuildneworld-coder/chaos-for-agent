@@ -2114,16 +2114,53 @@ async function renderFaqPage() {
   try {
     const articles = await getArticles();
     const allFaqs = [];
+    let scanned = 0;
 
-    // 依次获取每篇文章并检测 FAQ
-    for (const a of articles) {
-      const mdResp = await fetch(`${REPO_RAW}/articles/${a.slug}.md`);
-      if (!mdResp.ok) continue;
-      const mdText = await mdResp.text();
-      const { body } = parseFrontMatter(mdText);
-      const faqItems = detectFAQ(body);
-      if (faqItems && faqItems.length) {
-        allFaqs.push({ article: a, faqs: faqItems });
+    // 首选：构建期预生成的 faq.json —— **只需 1 个子请求**，且全量覆盖。
+    // 生成器 scripts/generate_faq_index.mjs 直接 import 本 Worker 并逐篇渲染、
+    // 抽取 FAQPage JSON-LD，因此 FAQ 检测逻辑**只有一份**，不存在双实现漂移。
+    try {
+      const r = await fetchUpstream('/faq.json', { freshMs: 300_000 });
+      if (r.ok) {
+        const d = JSON.parse(r.text);
+        if (d && Array.isArray(d.items)) {
+          for (const it of d.items) {
+            const a = findArticle(articles, it.slug) || { slug: it.slug, title: it.title, date: it.date };
+            if (it.faqs && it.faqs.length) allFaqs.push({ article: a, faqs: it.faqs });
+          }
+          scanned = d.scanned_articles || articles.length;
+        }
+      }
+    } catch (_) { /* 落到下面的兜底扫描 */ }
+
+    // 兜底：faq.json 尚未生成或不可用时，只扫最近 FAQ_SCAN_LIMIT 篇。
+    // 背景（这是个既存的生产故障）：Cloudflare Workers 免费版每个请求最多 **50 个
+    // subrequest**。原实现顺序抓取**全部**文章（86 篇 → 86 个 subrequest 再加 1 个
+    // index），必然超限抛错 —— 即 /faq 在线上长期是坏的。旧代码返回 500 并回显内部
+    // 错误，加了上游容错后被转成 503，只是**暴露**了它，并非新引入。
+    // 注意：仅"取最近 N 篇"不足以覆盖 —— 实测全站含 FAQ 的文章全部是旧文，
+    // 按日期取最近 40 篇一篇都覆盖不到。这正是首选 faq.json 的原因。
+    if (!allFaqs.length) {
+      const FAQ_SCAN_LIMIT = 40;
+      const scanList = [...articles]
+        .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+        .slice(0, FAQ_SCAN_LIMIT);
+      scanned = scanList.length;
+
+      for (const a of scanList) {
+        let mdText;
+        try {
+          const mdResp = await fetch(`${REPO_RAW}/articles/${a.slug}.md`);
+          if (!mdResp.ok) continue;
+          mdText = await mdResp.text();
+        } catch (_) {
+          continue;   // 单篇失败不影响整页
+        }
+        const { body } = parseFrontMatter(mdText);
+        const faqItems = detectFAQ(body);
+        if (faqItems && faqItems.length) {
+          allFaqs.push({ article: a, faqs: faqItems });
+        }
       }
     }
 
@@ -2184,7 +2221,7 @@ async function renderFaqPage() {
 </style>
 </head><body>
 <h1>常见问题 FAQ</h1>
-<p class="stats">共收录 ${allFaqs.length} 篇文章中的 ${totalFaq} 个问答</p>
+<p class="stats">共收录 ${allFaqs.length} 篇文章中的 ${totalFaq} 个问答（全站 ${articles.length} 篇，本次扫描 ${scanned} 篇）</p>
 ${groupsHtml}
 <a class="back" href="/">← 返回首页</a>
 </body></html>`;
