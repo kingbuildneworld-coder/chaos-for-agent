@@ -35,23 +35,6 @@
     "schema_type": "Article"
   },
   {
-    "title": "预算身份即治理身份：摩根大通 198 亿美元技术预算，与已被纳入例行检查的 AI",
-    "slug": "jpmorgan-ai-core-infrastructure-banking-governance",
-    "url": "/articles/jpmorgan-ai-core-infrastructure-banking-governance.md",
-    "description": "以摩根大通 2025 年年报致股东信、公司官网技术页与 2026 年公司更新、二季度财报电话会为事实底本，结合美联储、OCC、FDIC 于 2026 年 4 月更新的模型风险管理指引与路透社报道的例行检查清单，重述 AI 支出的“三本账”“预算身份三问”框架，并给出六条可落地硬要求。本次修订删除全部无法核实的内容并逐条标注来源层级。",
-    "date": "2026-09-24",
-    "tags": [
-      "人工智能",
-      "银行业",
-      "AI治理",
-      "科技投入",
-      "模型风险",
-      "监管检查",
-      "成本管理"
-    ],
-    "schema_type": "Article"
-  },
-  {
     "title": "智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界",
     "slug": "ai-agent-breach-australia-bank-ai-governance",
     "url": "/articles/ai-agent-breach-australia-bank-ai-governance.md",
@@ -65,6 +48,23 @@
       "银行业",
       "AI安全",
       "事件报送"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "预算身份即治理身份：摩根大通 198 亿美元技术预算，与已被纳入例行检查的 AI",
+    "slug": "jpmorgan-ai-core-infrastructure-banking-governance",
+    "url": "/articles/jpmorgan-ai-core-infrastructure-banking-governance.md",
+    "description": "以摩根大通 2025 年年报致股东信、公司官网技术页与 2026 年公司更新、二季度财报电话会为事实底本，结合美联储、OCC、FDIC 于 2026 年 4 月更新的模型风险管理指引与路透社报道的例行检查清单，重述 AI 支出的“三本账”“预算身份三问”框架，并给出六条可落地硬要求。本次修订删除全部无法核实的内容并逐条标注来源层级。",
+    "date": "2026-09-24",
+    "tags": [
+      "人工智能",
+      "银行业",
+      "AI治理",
+      "科技投入",
+      "模型风险",
+      "监管检查",
+      "成本管理"
     ],
     "schema_type": "Article"
   },

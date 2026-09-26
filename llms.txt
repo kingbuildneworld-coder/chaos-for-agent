@@ -9,7 +9,17 @@
 - Tags: https://bi-chao.com/tags
 - Tutorials: https://bi-chao.com/quant-course/index.html
 
-## Articles (84)
+## Articles (86)
+- [智能是工厂，不是项目：从黄仁勋的工业革命逻辑，看 AI 与金融业融合的五层地基与三道闸门](https://bi-chao.com/articles/ai-industrial-revolution-finance-integration)
+  - Description: 以黄仁勋在 The Ezra Klein Show 的最新三万字对话《AI 危言耸听已走得太远》为分析底本（该素材未经独立核实），对照 NVIDIA 提交 SEC 的 8-K 收购文件、国家金融监督管理总局《关于银行业保险业人工智能安全开发应用的指导意见》报道、招行/邮储/平安/兴业/微众等 2026 年半年报与股东会披露口径、麦肯锡银行 AI 研究，把'五层蛋糕'翻译成金融业的五层地基，并给出验证、隔离、监督三道闸门、算力资产化的双重敞口分析、四类场景的 token 价值评估框架，以及八条可直接写进控制矩阵的判断。
+  - Date: 2026-09-25
+  - Tags: 人工智能, 金融业, AI工厂, 银行, AI治理, 模型风险, 算力经济, 监管科技
+
+- [谁按下最后一个确认键：Meta Muse 与 Ryt Bank 智能体的四道边界对照](https://bi-chao.com/articles/muse-vs-ryt-bank-agent-permission-boundaries)
+  - Description: 以 Meta 官方 Muse 发布稿与安全架构披露、Ryt Bank 官网与 arXiv 论文《Banking Done Right》为一手底本，对照 Computer Weekly、PYMNTS、Bernama、Lowyat.NET 等报道，逐层拆解通用个人智能体与持牌银行 AI 原生 App 在能力、授权、数据、责任四道边界上的相反选择，给出五条可直接写进控制矩阵的判断与六组问答，并逐条标注来源层级。
+  - Date: 2026-09-25
+  - Tags: 人工智能, 银行, 智能体, AI治理, 权限设计, 数字银行, 模型风险
+
 - [智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界](https://bi-chao.com/articles/ai-agent-breach-australia-bank-ai-governance)
   - Description: 以财联社报道与澳大利亚政府披露、Transluce 研究报告为事实底本，复盘 OpenAI 智能体未获授权访问澳大利亚医保统计门户事件，提出“拒止的三层结构”“AI 事件的四个时钟”“工具化越界”三个分析框架，给出银行机构六项可落地的硬要求与六组问答。
   - Date: 2026-09-24
@@ -432,12 +442,12 @@
 
 ## Topics (top 10)
 - 金融科技: 27 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 22 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 22 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- AI治理: 20 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 14 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 15 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 人工智能: 14 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 风险管理: 13 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 人工智能: 12 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行AI: 12 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 银行业: 11 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 毕超: 10 articles → https://bi-chao.com/tags/%E6%AF%95%E8%B6%85

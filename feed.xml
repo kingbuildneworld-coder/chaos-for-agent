@@ -18,30 +18,31 @@
     <title>智能是工厂，不是项目：从黄仁勋的工业革命逻辑，看 AI 与金融业融合的五层地基与三道闸门</title>
     <updated>2026-09-25T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/ai-industrial-revolution-finance-integration" rel="alternate" type="text/html"/>
-    <summary>以黄仁勋在 The Ezra Klein Show 的最新三万字对话《AI 危言耸听已走得太远》为分析底本（该素材未经独立核实），对照 NVIDIA 提交 SEC 的 8-K 收购文件、国家金融监督管理总局《关于银行业保险业人工智能安全开发应用的指导意见》报道、招行/邮储/平安/兴业/微众等 2026 年半年报与股东会披露口径、麦肯锡银行 AI 研究，把&#x27;五层蛋糕&#x27;翻译成金融业的五层地基，并给出验证、隔离、监督三道闸门、算力资产化的双重敞口分析、四类场景的 token 价值评估框架，以及八条可直接写进控制矩阵的判断。</summary>
+    <summary>以黄仁勋在 The Ezra Klein Show 的最新三万字对话《AI 危言耸听已走得太远》为分析底本（该素材未经独立核实），对照 NVIDIA 提交 SEC 的 8-K 收购文件、国家金融监督管理总局《关于银行业保险业人工智能安全开发应用的指导意见》报道、招行/邮储/平安/兴业/微众等 2026 年半年报与股东会披露口径、麦肯锡银行 AI 研究，把&apos;五层蛋糕&apos;翻译成金融业的五层地基，并给出验证、隔离、监督三道闸门、算力资产化的双重敞口分析、四类场景的 token 价值评估框架，以及八条可直接写进控制矩阵的判断。</summary>
     <category term="人工智能"/>
+    <category term="金融业"/>
+    <category term="AI工厂"/>
+    <category term="银行"/>
     <category term="AI治理"/>
-    <category term="Agent"/>
-    <category term="网络安全"/>
-    <category term="银行业"/>
-    <category term="AI安全"/>
-    <category term="事件报送"/>
+    <category term="模型风险"/>
+    <category term="算力经济"/>
+    <category term="监管科技"/>
   </entry>
-<entry>
+  <entry>
     <id>https://bi-chao.com/articles/muse-vs-ryt-bank-agent-permission-boundaries</id>
     <title>谁按下最后一个确认键：Meta Muse 与 Ryt Bank 智能体的四道边界对照</title>
     <updated>2026-09-25T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/muse-vs-ryt-bank-agent-permission-boundaries" rel="alternate" type="text/html"/>
     <summary>以 Meta 官方 Muse 发布稿与安全架构披露、Ryt Bank 官网与 arXiv 论文《Banking Done Right》为一手底本，对照 Computer Weekly、PYMNTS、Bernama、Lowyat.NET 等报道，逐层拆解通用个人智能体与持牌银行 AI 原生 App 在能力、授权、数据、责任四道边界上的相反选择，给出五条可直接写进控制矩阵的判断与六组问答，并逐条标注来源层级。</summary>
     <category term="人工智能"/>
+    <category term="银行"/>
+    <category term="智能体"/>
     <category term="AI治理"/>
-    <category term="Agent"/>
-    <category term="网络安全"/>
-    <category term="银行业"/>
-    <category term="AI安全"/>
-    <category term="事件报送"/>
+    <category term="权限设计"/>
+    <category term="数字银行"/>
+    <category term="模型风险"/>
   </entry>
-<entry>
+  <entry>
     <id>https://bi-chao.com/articles/ai-agent-breach-australia-bank-ai-governance</id>
     <title>智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界</title>
     <updated>2026-09-24T00:00:00Z</updated>
