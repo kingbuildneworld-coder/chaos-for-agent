@@ -7882,6 +7882,20 @@ date: "2026-09-05"
 description: "以arXiv最新论文《Agentic Software: How AI Agents Are Restructuring the Software Paradigm》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版'双内核'结论与四类新兴角色定义。"
 tags: ["银行科技","软件工程","Agentic Engineering","智能体","AI编程","核心系统","金融监管","软件工程师","数字化转型","可信AI"]
 schema_type: "Article"
+# 核验补充（2026-09-26）：正文"附：主要事实来源"已点名论文与 arXiv 编号，却没有可点击出处。
+# 下方两条均经实测打开 arXiv 页面确认存在。
+#
+# 关于 2603.13428 的标题变更（重要，避免误判）：该论文 v1–v3 名为
+# 《EvoClaw: Evaluating AI Agents on Continuous Software Evolution》，v4（2026-07-21）改名为
+# 《SWE-Milestone: Evaluating AI Agents on Continuous Software Evolution》。arXiv 默认页显示的是
+# v4 新名，因此**只看默认页会误以为正文的"EvoClaw"标注有误**；查版本历史可知正文的称呼是准确的。
+references:
+  - title: "Agentic Software: How AI Agents Are Restructuring the Software Paradigm（arXiv:2606.05608，Zhenfeng Cao）"
+    url: "https://arxiv.org/abs/2606.05608"
+    source: "arXiv"
+  - title: "EvoClaw / SWE-Milestone: Evaluating AI Agents on Continuous Software Evolution（arXiv:2603.13428；v1–v3 名 EvoClaw，v4 起改名）"
+    url: "https://arxiv.org/abs/2603.13428"
+    source: "arXiv"
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
@@ -10548,6 +10562,15 @@ schema:
   "author": {"@type": "Person", "name": "毕超"}
   "datePublished": "2026-07-01"
   "publisher": {"@type": "Organization", "name": "bi-chao.com"}
+# 核验补充（2026-09-26）：正文尾部只写了"政策文件来源：…农业农村部《全国智慧农业行动计划
+# (2024-2028年)》"，无可点击出处。下方 URL 经实测打开，页面标题为《农业农村部关于印发
+# 〈全国智慧农业行动计划(2024—2028年)〉的通知》，域名属农业农村部系统（agri.cn），故收录。
+# 同段提到的市场规模来源（中商产业研究院、弗若斯特沙利文、pmarketresearch）为商业研究机构
+# 报告，未检索到可稳定引用的公开全文，故不收录；如你能提供报告链接，可随时补。
+references:
+  - title: "农业农村部关于印发《全国智慧农业行动计划(2024—2028年)》的通知"
+    url: "https://natesc.agri.cn/news/des?Category=%E5%85%AC%E5%BC%80&CategoryId=d00be10c-6b4f-478b-be40-39fab99f9710&id=102b3bb2-cf5b-417d-b96c-855f962db0eb"
+    source: "农业农村部"
 ---
 
 > 这是毕超在《农业发展与金融》杂志2026年第7期发表的同名文章基础上，加入更多一手数据、产业案例和个人判断后形成的深度版本。
@@ -12432,6 +12455,12 @@ policy_context: ["《关于深入实施'人工智能+'行动的意见》（2025�
 tags: ["数据治理", "人工智能+", "智能体", "AI安全", "大模型", "预训练", "微调", "RAG", "数据质量", "全生命周期", "以数据为中心"]
 schema_type: "AcademicPaper"
 related_books: ["《AI大模型重塑现代银行》（研究出版社，2025年6月）", "《人工智能+现代银行》（中国金融出版社，2025年11月）"]
+# 核验补充（2026-09-26）：正文此前只写"论文全文来源于《大数据》2025年第1期"，没有可点击出处。
+# 下方 URL 经实测解析到 DOI 10.11959/j.issn.2096-0271.2025004，落地页标题为《面向人工智能的数据治理框架》，与本文所述论文一致。
+references:
+  - title: "面向人工智能的数据治理框架（《大数据》2025年第1期，第3-20页）"
+    url: "https://www.j-bigdataresearch.com.cn/zh/article/doi/10.11959/j.issn.2096-0271.2025004/"
+    source: "大数据（Big Data Research）"
 ---
 
 # 面向人工智能的数据治理框架：深入实施"人工智能+"行动、推动智能体安全有序发展的数据基座
