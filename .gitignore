@@ -1,3 +1,14 @@
+# Python
 __pycache__/
 *.pyc
 .venv/
+
+# Wrangler / Cloudflare 本地产物（不应入库）
+# 注：这几条来自仓库里两个 Cloudflare 自动生成的 PR（#1/#2）中**有价值的部分**。
+# 那两个 PR 的另一部分——把 wrangler.jsonc 改成 assets 模式——会破坏动态 Worker，
+# 故未采纳，详见审计报告 G-26。
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
