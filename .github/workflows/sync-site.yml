@@ -22,6 +22,8 @@ on:
       - 'about.md'
       - 'src/index.js'
       - 'scripts/generate_site.py'
+      - 'scripts/generate_og_images.py'
+      - 'scripts/check_rendered_artifacts.mjs'
   workflow_dispatch:
 
 # 串行执行：重叠的 push 排队，避免两个 run 同时 push 互相抢占。
@@ -40,6 +42,19 @@ jobs:
         with:
           fetch-depth: 0   # generate_site.py 的 git_date() 需要完整历史
 
+      # OG 分享图需要 Pillow + CJK 字体。venv 放在 /tmp 以避免污染工作区
+      # （循环里有 git reset --hard，未跟踪文件会干扰 git status 判断）。
+      - name: Prepare OG image toolchain
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk
+          python3 -m venv /tmp/ogvenv
+          # 固定版本：Pillow 的 PNG 编码在不同版本间可能产生不同字节，
+          # 那样 CI 每次都会重写全部图片、制造无意义的二进制 diff。
+          /tmp/ogvenv/bin/pip install --quiet --disable-pip-version-check "Pillow==12.3.0"
+          echo "OG_PYTHON=/tmp/ogvenv/bin/python" >> "$GITHUB_ENV"
+
       - name: Regenerate & commit derived artifacts
         env:
           PUSH_BRANCH: ${{ github.ref_name }}
@@ -48,7 +63,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          DERIVED="articles/index.json feed.xml sitemap.xml ai-manifest.json llms-full.txt llms.txt"
+          DERIVED="articles/index.json feed.xml sitemap.xml ai-manifest.json llms-full.txt llms.txt faq.json assets/og"
 
           pushed=0
           for attempt in 1 2 3 4 5; do
@@ -58,6 +73,18 @@ jobs:
 
             # 在最新基线上重新生成派生文件
             python3 scripts/generate_site.py
+
+            # 站点分享图（PNG）。og:image 必须指向位图 —— SVG 在 X/Facebook/
+            # LinkedIn/微信等平台一律不显示（这正是修复前的状况）。
+            # 刻意做成**非致命**：字体或 Pillow 出问题时应只降级分享图，
+            # 绝不能连带拖垮已经验证可用的内容同步管线。
+            if [ -n "${OG_PYTHON:-}" ] && [ -x "${OG_PYTHON}" ]; then
+              if ! "${OG_PYTHON}" scripts/generate_og_images.py --force; then
+                echo "::warning::OG 图片生成失败，本次跳过（内容同步不受影响）"
+              fi
+            else
+              echo "::warning::OG_PYTHON 不可用，跳过 OG 图片生成"
+            fi
 
             git add ${DERIVED}
             if git diff --cached --quiet; then
@@ -83,6 +110,50 @@ jobs:
           fi
 
           git log -1 --oneline
+
+      # 漂移守卫：/llms.txt、/robots.txt、/sitemap.xml 同时由 Worker（src/index.js）
+      # 动态生成、又由 scripts/generate_site.py 写入仓库。两套实现一旦不同步，
+      # 就会出现"仓库版与线上版不一致"——这正是本仓库历史上 G-06 的表现
+      # （线上 llms.txt 已 86 篇、仓库版却停在 84 篇）。
+      # 放在"重新生成并提交"**之后**，比对的是即将生效的产物。
+      # 做成非致命：漂移应当被看见并修复，但不该阻塞内容发布。
+      - name: Check Worker/generator consistency (non-blocking)
+        if: always()
+        run: |
+          if ! node scripts/check_rendered_artifacts.mjs; then
+            echo "::warning::检测到 Worker 输出与仓库产物漂移 —— 请同步 src/index.js 的 render*() 与 scripts/generate_site.py 的 gen_*()"
+          fi
+
+      # IndexNow：把本次新增/变更的文章 URL 主动推送给 Bing / Yandex / Naver / Seznam。
+      #
+      # 为什么值得做：审计发现站点**零收录**（site:bi-chao.com 检索 0 命中）。
+      # IndexNow 是最快的新内容收录通道，且 Bing 驱动 Copilot 检索 —— 属 AI 引用链路。
+      #
+      # ⚠️ 边界（据一手来源核实）：
+      #   - IndexNow **不被 Google 支持**。Google 侧只能靠 sitemap + URL Inspection，
+      #     且 Google Indexing API 官方仅支持 JobPosting 与 BroadcastEvent。
+      #   - 百度也不在 IndexNow 参与方之列（需用其搜索资源平台，见报告 G-04）。
+      #
+      # 前置条件：密钥文件 {key}.txt 必须已随仓库提交**并部署上线**可访问，
+      # 否则引擎校验失败（403/422）。脚本默认 dry-run，此处显式加 --submit。
+      - name: Submit changed URLs to IndexNow (non-blocking)
+        if: always()
+        run: |
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+          case "${BEFORE}" in
+            '' | 0000000000000000000000000000000000000000) BEFORE="HEAD~1" ;;
+          esac
+          git fetch --quiet origin main || true
+          git diff --name-only "${BEFORE}" "${AFTER}" -- 'articles/*.md' > /tmp/changed.txt 2>/dev/null || true
+          if [ ! -s /tmp/changed.txt ]; then
+            echo "本次无 articles/*.md 变更，跳过 IndexNow 提交。"
+            exit 0
+          fi
+          echo "本次变更的文章："; cat /tmp/changed.txt
+          if ! python3 scripts/indexnow_submit.py --urls-file /tmp/changed.txt --submit; then
+            echo "::warning::IndexNow 提交失败（不影响站点内容与部署）—— 最常见原因是密钥文件尚未部署上线"
+          fi
 
       - name: Purge Cloudflare cache
         # 可选：在 Settings > Secrets and variables > Actions 添加
