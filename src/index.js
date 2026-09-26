@@ -1158,11 +1158,81 @@ function injectInternalLinks(html, articles, currentSlug) {
 }
 
 // ========== 数据获取 ==========
+//
+// 上游容错（G-08）
+// ---------------
+// 问题：本站**所有**渲染都依赖 raw.githubusercontent.com —— getArticles() 位于每一条
+// 渲染路径上，文章正文也从该域名逐篇获取。原实现没有兜底：上游一旦抖动、限流或短时
+// 不可达，**每一页都会失败**（getArticles 抛错 → 500）。对搜索引擎与 AI 爬虫而言，
+// 可用性就是可抓取性，这是 GEO 的前置条件，比任何 schema 调整都更底层。
+//
+// 方案：内存态"最后一次成功"缓存 + 失败兜底。
+//   · 内存缓存只作**兜底与去抖**，不当主缓存（主缓存仍是 Cloudflare 的 cf.cacheTtl）
+//   · freshMs 默认 0：文章正文仍每次回源，**不引入任何新的内容延迟**
+//   · index.json 用 30s 新鲜窗口 —— 它本来就有 300s 边缘缓存，故不增加可见延迟
+//   · 内存有条数上限，避免 isolate 内存膨胀
+const UPSTREAM_MAX_KEYS = 80;
+const _upstreamCache = new Map();
+
+function upstreamCacheSet(key, text) {
+  if (_upstreamCache.size >= UPSTREAM_MAX_KEYS) {
+    const oldest = _upstreamCache.keys().next().value;
+    if (oldest !== undefined) _upstreamCache.delete(oldest);
+  }
+  _upstreamCache.set(key, { text, at: Date.now() });
+}
+
+/**
+ * 带容错的上游获取。返回 { ok, text, stale? }；ok=false 时附带 status。
+ * 区分两类失败（这点很关键）：
+ *   · 网络异常 / 5xx / 载荷无效 → 视为**故障**，可用历史值兜底
+ *   · 404 / 410                  → 视为**明确答案**，如实返回，不用历史值
+ *                                 （否则已删除的文章会继续可访问）
+ */
+async function fetchUpstream(path, { freshMs = 0, validate = null } = {}) {
+  const hit = _upstreamCache.get(path);
+  if (hit && freshMs > 0 && Date.now() - hit.at < freshMs) {
+    return { ok: true, text: hit.text, cached: true };
+  }
+
+  let resp;
+  try {
+    resp = await fetch(`${REPO_RAW}${path}`, { cf: { cacheTtl: 300 } });
+  } catch (e) {
+    if (hit) return { ok: true, text: hit.text, cached: true, stale: true };
+    throw e;
+  }
+
+  if (!resp.ok) {
+    if (resp.status === 404 || resp.status === 410) return { ok: false, status: resp.status };
+    if (hit) return { ok: true, text: hit.text, cached: true, stale: true };
+    return { ok: false, status: resp.status };
+  }
+
+  const text = await resp.text();
+  if (validate && !validate(text)) {
+    if (hit) return { ok: true, text: hit.text, cached: true, stale: true };
+    return { ok: false, status: 502 };
+  }
+  upstreamCacheSet(path, text);
+  return { ok: true, text };
+}
 
 async function getArticles() {
-  const resp = await fetch(`${REPO_RAW}/articles/index.json`, { cf: { cacheTtl: 300 } });
-  if (!resp.ok) throw new Error('Failed to fetch index');
-  return resp.json();
+  const r = await fetchUpstream('/articles/index.json', {
+    freshMs: 30_000,
+    // 校验载荷：非数组或空数组一律视为无效，避免坏数据进缓存并渲染出空站
+    validate: (t) => {
+      try {
+        const d = JSON.parse(t);
+        return Array.isArray(d) && d.length > 0;
+      } catch (_) {
+        return false;
+      }
+    },
+  });
+  if (!r.ok) throw new Error(`Failed to fetch index (status ${r.status})`);
+  return JSON.parse(r.text);
 }
 
 function findArticle(articles, slug) {
@@ -1201,11 +1271,11 @@ async function renderArticle(pathname, request, explicitMd) {
     // （审计中的路由全覆盖扫描发现的遗漏：通用兜底已改，这两处没跟着改）
     if (!article) return renderNotFound(`/articles/${slug}`);
 
-    // 获取 markdown 原文
-    const mdResp = await fetch(`${REPO_RAW}${pathname}`);
-    if (!mdResp.ok) return renderNotFound(`/articles/${slug}`);
+    // 获取 markdown 原文（走上游容错：404 视为明确不存在，网络故障才用历史值兜底）
+    const md = await fetchUpstream(pathname);
+    if (!md.ok) return renderNotFound(`/articles/${slug}`);
 
-    const mdText = await mdResp.text();
+    const mdText = md.text;
 
     // 真正返回 Markdown（此前无论 .md 还是裸 URL 都渲染 HTML）。
     // 注意：仓库里的 _headers 声明了 text/markdown，但脚本型 Worker 不读取
@@ -1416,7 +1486,12 @@ async function renderArticle(pathname, request, explicitMd) {
       }
     });
   } catch (e) {
-    return new Response(`Error rendering article: ${e.message}`, { status: 500 });
+    // 不把内部异常文本回显给访客（原先会输出 `Error rendering article: ...`，
+    // 既泄漏实现细节，对爬虫也是低质页面）。改用 503 + 可读提示：
+    // 走到这里通常是上游内容源短时不可用，属**暂时性**故障，503 比 500 语义更准，
+    // 也提示爬虫稍后重试而不是判定页面永久失效。
+    console.error('renderArticle failed:', e && e.message);
+    return upstreamDegraded();
   }
 }
 
@@ -1987,10 +2062,9 @@ Sitemap: ${DOMAIN}/sitemap.xml
 
 async function renderAbout() {
   try {
-    const resp = await fetch(`${REPO_RAW}/about.md`);
-    if (resp.ok) {
-      const md = await resp.text();
-      const contentHtml = md2html(md);
+    const up = await fetchUpstream('/about.md');
+    if (up.ok) {
+      const contentHtml = md2html(up.text);
       const html = fillTpl(ABOUT_TEMPLATE_PART, { CONTENT: contentHtml });
       return new Response(html, {
         headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=600' }
@@ -2086,7 +2160,8 @@ ${groupsHtml}
       headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' }
     });
   } catch (e) {
-    return new Response(`Error: ${e.message}`, { status: 500 });
+    console.error('renderFaqPage failed:', e && e.message);
+    return upstreamDegraded();
   }
 }
 
@@ -2255,6 +2330,46 @@ ${body}
  * 人和爬虫走进来都是死胡同。
  * 关键：HTTP 状态码必须保持 404 —— 用 200 会变成"软 404"，比裸文本更糟。
  */
+/**
+ * 上游内容源短时不可用时的降级响应。
+ * 用 503（暂时不可用）+ Retry-After，而不是 500、也不回显异常文本：
+ * 既不让访客看到内部错误，也让爬虫理解这是**临时**故障、稍后重试即可，
+ * 而不是把页面判定为永久失效（对收录有实质差别）。
+ */
+function upstreamDegraded() {
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,follow">
+<title>内容暂时不可用（503） | chaos-for-agent</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#222;}
+  h1{font-size:1.5em;border-bottom:2px solid #eee;padding-bottom:8px;}
+  a{color:#2563eb;text-decoration:none;}a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<h1>内容暂时不可用</h1>
+<p style="color:#555;">内容源短时不可用，本页稍后重试即可。</p>
+<ul>
+  <li><a href="/">返回首页</a></li>
+  <li><a href="/sitemap.xml">sitemap</a></li>
+  <li><a href="/llms.txt">llms.txt</a></li>
+</ul>
+</body>
+</html>`;
+  return new Response(html, {
+    status: 503,
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
+      'Retry-After': '60',
+      'Cache-Control': 'no-store'
+    }
+  });
+}
+
 async function renderNotFound(path) {
   let recent = '';
   try {
