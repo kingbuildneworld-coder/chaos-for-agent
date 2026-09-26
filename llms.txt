@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (86)
+## Articles (87)
 
+- [把上海 AI 新政读成一张合规义务清单：16 条中的 10 项硬性义务与三阶段落地路径](https://bi-chao.com/articles/shanghai-ai-finance-measures-implementation)
+  - Description: 以国家金融监督管理总局上海监管局《推动上海银行业保险业人工智能应用的若干措施》（沪金发〔2026〕19号）16 条原文为唯一事实来源，剥离“鼓励”与“应当”，拎出第（十）至（十三）条的 10 项新增硬性义务：生成式模型备案登记覆盖自研、微调、私有化部署、API 调用四种情形，高…
+  - Date: 2026-09-26
+  - Tags: 金融科技, AI治理, 大模型, 智能体, 风险管理, 银行AI, 金融监管, 模型风险管理, 合规管理, 外包风险, 数据安全
 - [智能是工厂，不是项目：从黄仁勋的工业革命逻辑，看 AI 与金融业融合的五层地基与三道闸门](https://bi-chao.com/articles/ai-industrial-revolution-finance-integration)
   - Description: 以黄仁勋在 The Ezra Klein Show 的最新三万字对话《AI 危言耸听已走得太远》为分析底本（该素材未经独立核实），对照 NVIDIA 提交 SEC 的 8-K 收购文件、国家金融监督管理总局《关于银行业保险业人工智能安全开发应用的指导意见》报道、招行/邮储/平安…
   - Date: 2026-09-25
@@ -361,14 +365,14 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 27 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 22 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 大模型: 22 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 15 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 金融科技: 28 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 23 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 大模型: 23 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 智能体: 16 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 风险管理: 14 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 人工智能: 14 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 风险管理: 13 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 银行AI: 13 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
-- 银行AI: 12 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 银行业: 11 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 毕超: 10 articles → https://bi-chao.com/tags/%E6%AF%95%E8%B6%85
 

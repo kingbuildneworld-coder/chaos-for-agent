@@ -1,5 +1,26 @@
 [
   {
+    "title": "把上海 AI 新政读成一张合规义务清单：16 条中的 10 项硬性义务与三阶段落地路径",
+    "slug": "shanghai-ai-finance-measures-implementation",
+    "url": "/articles/shanghai-ai-finance-measures-implementation.md",
+    "description": "以国家金融监督管理总局上海监管局《推动上海银行业保险业人工智能应用的若干措施》（沪金发〔2026〕19号）16 条原文为唯一事实来源，剥离“鼓励”与“应当”，拎出第（十）至（十三）条的 10 项新增硬性义务：生成式模型备案登记覆盖自研、微调、私有化部署、API 调用四种情形，高风险场景须经风险管理委员会批准，面客场景上线前报告，外包名单制与风险隔离“防火墙”，并给出 30、90、180 天落地清单。",
+    "date": "2026-09-26",
+    "tags": [
+      "金融科技",
+      "AI治理",
+      "大模型",
+      "智能体",
+      "风险管理",
+      "银行AI",
+      "金融监管",
+      "模型风险管理",
+      "合规管理",
+      "外包风险",
+      "数据安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "智能是工厂，不是项目：从黄仁勋的工业革命逻辑，看 AI 与金融业融合的五层地基与三道闸门",
     "slug": "ai-industrial-revolution-finance-integration",
     "url": "/articles/ai-industrial-revolution-finance-integration.md",
