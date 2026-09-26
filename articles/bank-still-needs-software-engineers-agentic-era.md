@@ -4,16 +4,19 @@ date: "2026-09-05"
 description: "以arXiv最新论文《Agentic Software: How AI Agents Are Restructuring the Software Paradigm》为切入点，论证银行并不会因AI智能体而淘汰软件工程师：核心账务与风控需要更厚的传统工程内核，外围业务才能交给智能体。本文给出银行版'双内核'结论与四类新兴角色定义。"
 tags: ["银行科技","软件工程","Agentic Engineering","智能体","AI编程","核心系统","金融监管","软件工程师","数字化转型","可信AI"]
 schema_type: "Article"
-# 核验补充（2026-09-26）：正文"附：主要事实来源"已点名论文与 arXiv 编号，但没有可点击出处。
-# 下方 URL 经实测打开 arXiv 页面，标题为《Agentic Software: How AI Agents Are Restructuring the
-# Software Paradigm》、作者 Zhenfeng Cao，与本文所述一致。
+# 核验补充（2026-09-26）：正文"附：主要事实来源"已点名论文与 arXiv 编号，却没有可点击出处。
+# 下方两条均经实测打开 arXiv 页面确认存在。
 #
-# ⚠️ 未收录同段的另一个编号：正文把 arXiv:2603.13428 标注为"EvoClaw"，但实测该编号的真实标题是
-# 《SWE-Milestone: Evaluating AI Agents on Continuous Software Evolution》，页面中不含
-# "EvoClaw" 字样。该处归属疑有误，需作者核实后再决定是否链接，故此处不收录。
+# 关于 2603.13428 的标题变更（重要，避免误判）：该论文 v1–v3 名为
+# 《EvoClaw: Evaluating AI Agents on Continuous Software Evolution》，v4（2026-07-21）改名为
+# 《SWE-Milestone: Evaluating AI Agents on Continuous Software Evolution》。arXiv 默认页显示的是
+# v4 新名，因此**只看默认页会误以为正文的"EvoClaw"标注有误**；查版本历史可知正文的称呼是准确的。
 references:
   - title: "Agentic Software: How AI Agents Are Restructuring the Software Paradigm（arXiv:2606.05608，Zhenfeng Cao）"
     url: "https://arxiv.org/abs/2606.05608"
+    source: "arXiv"
+  - title: "EvoClaw / SWE-Milestone: Evaluating AI Agents on Continuous Software Evolution（arXiv:2603.13428；v1–v3 名 EvoClaw，v4 起改名）"
+    url: "https://arxiv.org/abs/2603.13428"
     source: "arXiv"
 AIGC:
     Label: "1"
