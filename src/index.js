@@ -337,7 +337,7 @@ __SPEAKABLE_JSONLD__
   }
 </style>
 </head>
-<body data-article-slug="__SLUG__" data-article-title="__TITLE__" data-article-date="__DATE__">
+<body data-article-slug="__SLUG__" data-article-title="__TITLE__" data-article-date="__DATE__" data-aigc-label="__AIGC_LABEL__" data-aigc-content-producer="__AIGC_PRODUCER__">
 <div class="reading-progress" id="readingProgress"></div>
 <nav class="site-nav">
   <a class="brand" href="https://bi-chao.com/">智能体的知识库</a>
@@ -353,6 +353,7 @@ __SPEAKABLE_JSONLD__
   <aside class="toc-sidebar">__TOC__</aside>
   <article>
     <h1>__TITLE__</h1>
+    __AIGC_NOTICE__
     <div class="article-meta">__AUTHOR__ &nbsp;|&nbsp; __DATE__ &nbsp;|&nbsp; __READING_TIME__ &nbsp;|&nbsp; <a href="https://bi-chao.com/">chaos-for-agent</a> &nbsp; __TAGS__</div>
     <div class="article-actions">
       <button type="button" id="copyCiteBtn">引用</button>
@@ -557,10 +558,18 @@ function parseFrontMatter(md) {
       continue;
     }
 
-    // 列表项 map 下的续行键值（缩进更深）
+    // 缩进更深的「键: 值」行，两种可能：
+    //   a) 列表项 map 的续行（currentObj 已存在）→ 追加到该对象
+    //   b) 该顶层键其实是个**嵌套 map**（如 AIGC: / schema:）→ 就地升级为对象
+    // 此前一律丢弃（b），导致 AIGC 合规标识块虽然写在文件里，渲染层完全读不到。
     const contKv = line.match(/^\s+([\w-]+):\s*(.*)$/);
-    if (currentKey && listMode && currentObj && contKv) {
-      currentObj[contKv[1]] = parseYamlValue(contKv[2]);
+    if (currentKey && listMode && contKv) {
+      if (currentObj) {
+        currentObj[contKv[1]] = parseYamlValue(contKv[2]);
+      } else if (!Array.isArray(meta[currentKey]) || meta[currentKey].length === 0) {
+        if (Array.isArray(meta[currentKey])) meta[currentKey] = {};
+        meta[currentKey][contKv[1]] = parseYamlValue(contKv[2]);
+      }
       continue;
     }
 
@@ -1330,6 +1339,27 @@ async function renderArticle(pathname, request, explicitMd) {
     // `Disallow: /og` 是**前缀匹配**，会连带屏蔽 /og-img/... 这类路径。
     const ogImage = meta.og_image || article.og_image || `${DOMAIN}/assets/og/${article.slug}.png`;
 
+    // AIGC 标识（G-10）
+    // 25/86 篇文章的 front matter 里**作者已声明** AIGC 标识块
+    // （Label / ContentProducer / ProduceID / ReservedCode），但此前解析器有意丢弃嵌套 map，
+    // 页面上一字不渲染 —— 又一处"声明了但没接上"。
+    // 这里只**如实呈现作者自己声明的字段**，不新增任何判断、不解读 Label 的取值含义。
+    // 注：《人工智能生成合成内容标识办法》对显式标识的形式另有具体要求，
+    //     上线前建议对照法规确认呈现形式；此处给出的是可见提示 + data-* 机器可读载体。
+    const aigc = (meta.AIGC && typeof meta.AIGC === 'object' && !Array.isArray(meta.AIGC)) ? meta.AIGC : null;
+    const aigcLabel = aigc && aigc.Label !== undefined ? String(aigc.Label) : '';
+    const aigcProducer = aigc && aigc.ContentProducer ? String(aigc.ContentProducer) : '';
+    const aigcProduceId = aigc && aigc.ProduceID ? String(aigc.ProduceID) : '';
+    const aigcNotice = aigcLabel
+      ? `<div class="aigc-notice" role="note" data-aigc-label="${escHtml(aigcLabel)}"`
+        + (aigcProducer ? ` data-aigc-content-producer="${escHtml(aigcProducer)}"` : '')
+        + (aigcProduceId ? ` data-aigc-produce-id="${escHtml(aigcProduceId)}"` : '')
+        + ` style="margin:.6rem 0 1rem;padding:.5rem .75rem;border-left:3px solid #94a3b8;background:#f1f5f9;color:#475569;font-size:.8rem;line-height:1.6;border-radius:0 4px 4px 0;">`
+        + `本内容带有 AI 生成合成内容标识（Label: ${escHtml(aigcLabel)}`
+        + (aigcProducer ? `；生成服务提供者编号: ${escHtml(aigcProducer)}` : '')
+        + `）</div>`
+      : '';
+
     // 转换正文 + 定义块检测 + 内链注入
     let contentHtml = injectHeadingIds(md2html(body));
     contentHtml = detectDefinitions(contentHtml);
@@ -1473,6 +1503,9 @@ async function renderArticle(pathname, request, explicitMd) {
       REFERENCES: refHtml,
       READING_TIME: `约 ${readTime} 分钟`,
       ROBOTS: ROBOTS_META,
+      AIGC_NOTICE: aigcNotice,
+      AIGC_LABEL: escHtml(aigcLabel),
+      AIGC_PRODUCER: escHtml(aigcProducer),
       OG_IMAGE: ogImage
     });
 
