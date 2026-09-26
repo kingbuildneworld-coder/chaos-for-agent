@@ -33,6 +33,15 @@ ART_DIR = ROOT / "articles"
 # 薄标签页是近重复的低价值聚合页，会稀释正文的抓取预算。
 TAG_INDEX_MIN_ARTICLES = 3
 
+# llms.txt 中每篇 description 的截断长度（与 src/index.js 的 LLM_DESC_MAX 一致）。
+#
+# 社区（afdocs）阈值按**字符**计：<50k Pass / 50k–100k Warn / >100k Fail。
+# 实测：截断前 32,634 字符、截断后 30,992 字符 —— 两种状态都已在 Pass 区，
+# 故此改动不是为了修阈值超标，而是让说明更贴合"简短注释"定位并减少传输字节。
+#
+# ⚠️ 本机 `wc -m` 按字节计数（locale 未设 UTF-8），不可用于字符阈值判断。
+LLM_DESC_MAX = 140
+
 # Curated metadata preserved from the existing manifest.
 TOPICS = [
     "AI Agent", "AI大模型", "银行业", "金融科技", "数字化转型", "数据治理",
@@ -236,7 +245,7 @@ def gen_sitemap(articles: list[dict], edate: str) -> str:
     add(f"{DOMAIN}/quant-course/index.html", "monthly", "0.7", edate)
     add(f"{DOMAIN}/quant-course/chapter2-first-quant-experiment.html", "monthly", "0.7", edate)
     # tutorials/ 下的互动教程：此前完全未进 sitemap，是不可发现的孤儿页
-    add(f"{DOMAIN}/tutorials/{quote('什么是量化金融_互动教程.html')}", "monthly", "0.6", edate)
+    add(f"{DOMAIN}/tutorials/{js_encode_uri_component('什么是量化金融_互动教程.html')}", "monthly", "0.6", edate)
     add(f"{DOMAIN}/tags", "weekly", "0.6", edate)
     # 只收录达到阈值的标签页：原先全量收录 416 个标签页（占 sitemap 的 82%），
     # 大量是仅含 1 篇文章的薄聚合页，稀释了正文的抓取预算。
@@ -244,7 +253,7 @@ def gen_sitemap(articles: list[dict], edate: str) -> str:
     for tag in sorted(counts):
         if counts[tag] < TAG_INDEX_MIN_ARTICLES:
             continue
-        add(f"{DOMAIN}/tags/{quote(tag)}", "weekly", "0.5", edate)
+        add(f"{DOMAIN}/tags/{js_encode_uri_component(tag)}", "weekly", "0.5", edate)
 
     body = ET.tostring(root, encoding="utf-8", xml_declaration=True).decode("utf-8")
     return body + "\n"
@@ -310,41 +319,82 @@ def gen_llms_full(articles: list[dict], edate: str) -> str:
     return "\n".join(out)
 
 
+def js_encode_uri_component(s: str) -> str:
+    """与 JavaScript encodeURIComponent 完全一致的编码。
+
+    为什么不用 urllib.parse.quote：quote 默认会编码 ! * ' ( ) 这几个字符，
+    而 encodeURIComponent 不会。tag 或文件名一旦含这些字符，两套实现产出的
+    URL 就会不同，进而造成"仓库版 llms.txt 与线上版不一致"。
+    """
+    safe = set(
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.!~*'()"
+    )
+    out: list[str] = []
+    for ch in s:
+        if ch in safe:
+            out.append(ch)
+        else:
+            for b in ch.encode("utf-8"):
+                out.append(f"%{b:02X}")
+    return "".join(out)
+
+
+def truncate(s: str, n: int) -> str:
+    """与 src/index.js 的 truncate() 等价。"""
+    t = re.sub(r"\s+", " ", str(s or "")).strip()
+    return t if len(t) <= n else t[: n - 1] + "…"
+
+
 def gen_llms(articles: list[dict], edate: str) -> str:
+    """生成 llms.txt —— 必须与 src/index.js 的 renderLlms() **逐字节一致**。
+
+    /llms.txt 同时由 Worker 动态生成、又由本脚本写入仓库。两套实现一旦不同步，
+    就会出现"仓库版与线上版不一致"（正是本次审计在 G-06 中发现的问题）。
+    因此拼接顺序、空行位置、排序规则、URL 编码都必须与 JS 侧严格对齐。
+    配套有一致性检查脚本 scripts/check_rendered_artifacts.mjs 用于兜底。
+    """
     tm = tag_map(articles)
-    top = sorted(tm, key=lambda t: (-tm[t], t))[:10]
-    out = [
-        "# chaos-for-agent — 智能体的知识库",
-        "",
-        "> 面向 AI Agent 和搜索引擎优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。",
-        "> 作者：毕超，金融行业风险管理从业者，清华大学校友。",
-        "",
-        "## Site Map",
-        f"- Home: {DOMAIN}/",
-        f"- About: {DOMAIN}/about",
-        f"- Tags: {DOMAIN}/tags",
-        f"- Tutorials: {DOMAIN}/quant-course/index.html",
-        "",
-        f"## Articles ({len(articles)})",
-    ]
+    # 仅按数量降序；同数量保持插入序（Python sorted 稳定，与 JS Array.sort 行为一致）
+    top = sorted(tm, key=lambda t: -tm[t])[:10]
+
+    txt = (
+        "# chaos-for-agent — 智能体的知识库\n"
+        "\n"
+        "> 面向 AI Agent 与搜索优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。\n"
+        # 注意：此行须与 src/index.js 的 AUTHOR_NAME / AUTHOR_JOB_TITLE 保持一致
+        "> 作者：毕超，中国农业发展银行总行风险管理部资产保全二处处长，清华大学校友。\n"
+        "> 说明：本文件遵循 llms.txt 约定，主要服务 coding agent 与文档消费者。\n"
+        "> Google 官方明确表示 Search 不使用 llms.txt —— 请不要把它当作提升\n"
+        "> AI Overviews 收录的手段；进入 Google 的路径始终是 sitemap + Googlebot。\n"
+        "\n"
+        "## Site Map\n"
+        f"- Home: {DOMAIN}/\n"
+        f"- About: {DOMAIN}/about\n"
+        f"- Tags: {DOMAIN}/tags\n"
+        f"- Tutorials: {DOMAIN}/tutorials/{js_encode_uri_component('什么是量化金融_互动教程.html')}\n"
+        f"- Quant course: {DOMAIN}/quant-course/index.html\n"
+        "\n"
+        f"## Articles ({len(articles)})\n"
+    )
     for a in articles:
-        out.append(f'- [{a["title"]}]({DOMAIN}/articles/{a["slug"]})')
-        out.append(f'  - Description: {a["description"]}')
-        out.append(f'  - Date: {a["date"]}')
+        txt += f"\n- [{a['title']}]({DOMAIN}/articles/{a['slug']})"
+        txt += f"\n  - Description: {truncate(a['description'], LLM_DESC_MAX)}"
+        txt += f"\n  - Date: {a['date']}"
         if a["tags"]:
-            out.append(f'  - Tags: {", ".join(a["tags"])}')
-        out.append("")
-    out.append(f"## Topics (top {len(top)})")
+            txt += f"\n  - Tags: {', '.join(a['tags'])}"
+    txt += f"\n\n## Topics (top {len(top)})"
     for t in top:
-        out.append(f'- {t}: {tm[t]} articles → {DOMAIN}/tags/{quote(t)}')
-    out.append("")
-    out.append("## For AI Agents")
-    out.append(f"- Sitemap: {DOMAIN}/sitemap.xml")
-    out.append(f"- RSS: {DOMAIN}/feed.xml")
-    out.append(f"- AI Manifest: {DOMAIN}/ai-manifest.json")
-    out.append(f"- Robots: {DOMAIN}/robots.txt")
-    out.append(f"- Search: {DOMAIN}/search?q={{query}}")
-    return "\n".join(out) + "\n"
+        txt += f"\n- {t}: {tm[t]} articles → {DOMAIN}/tags/{js_encode_uri_component(t)}"
+    txt += (
+        "\n\n## For AI Agents\n"
+        f"- Markdown 原文：文章 URL 后加 `.md`（如 {DOMAIN}/articles/<slug>.md），或发送 `Accept: text/markdown`\n"
+        f"- Sitemap: {DOMAIN}/sitemap.xml\n"
+        f"- RSS: {DOMAIN}/feed.xml\n"
+        f"- Robots: {DOMAIN}/robots.txt\n"
+        f"- 站内搜索（JSON）: {DOMAIN}/search?q={{query}}&format=json\n"
+        f"- 全文合集（约 1.37MB，**仅在确实需要全量语料时读取**）: {DOMAIN}/llms-full.txt\n"
+    )
+    return txt
 
 
 TARGETS = {

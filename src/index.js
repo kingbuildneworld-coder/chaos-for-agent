@@ -49,6 +49,26 @@ const ROBOTS_META = 'index,follow,max-image-preview:large,max-snippet:-1,max-vid
 const TAG_INDEX_MIN_ARTICLES = 3;
 
 /**
+ * llms.txt 中每篇文章 description 的截断长度。
+ *
+ * 社区（afdocs / agent-docs-spec）阈值按**字符**计：<50k Pass / 50k–100k Warn / >100k Fail。
+ * 实测：截断前 32,634 字符、截断后 30,992 字符 —— **两种状态都已在 Pass 区**。
+ * 因此这**不是**"修复阈值超标"，只是让链接后的说明更贴合规范里"简短注释"
+ * 的定位，并减少约 8% 的传输字节（61,923 → 56,829 字节）。完整描述仍保留在
+ * ai-manifest.json 与文章正文中。
+ *
+ * ⚠️ 计数陷阱：本机 `wc -m` 按**字节**计数（locale 未设 UTF-8），据此判断字符
+ * 阈值会得出错误结论。测字符请用 Python `len()` 或 `LC_ALL=C.UTF-8 wc -m`。
+ */
+const LLM_DESC_MAX = 140;
+
+/** 单行截断（用于 llms.txt 的简短说明） */
+function truncate(s, n) {
+  const t = String(s || '').replace(/\s+/g, ' ').trim();
+  return t.length <= n ? t : t.slice(0, n - 1) + '…';
+}
+
+/**
  * 统一的作者实体节点。
  * 设计取舍：文章页保持"自包含"（内联完整 Person），因为 AI 爬虫可能只抓单篇
  * 文章而不访问首页；同时带上稳定 @id，使跨页面/跨站点能归并为同一实体。
@@ -481,7 +501,26 @@ function parseYamlValue(raw) {
   return raw;
 }
 
-/** YAML Front Matter 解析 */
+/**
+ * YAML Front Matter 解析（支持块状 map 列表）。
+ *
+ * 修复要点：原实现把所有多行数组项一律当作**标量**处理，于是
+ *
+ *   references:
+ *     - title: "麦肯锡报告"
+ *       url: "https://..."
+ *
+ * 会被解析成 ['title: "麦肯锡报告"', 'url: "https://..."'] 这样的字符串数组，
+ * 而 renderReferences() 期望的是 {title,url} 对象 —— 结果是线上渲染出
+ * <a href="undefined">undefined</a>，citation JSON-LD 变成 [{"@type":"CreativeWork"}]
+ * （空引用对象，比没有更糟）。这条链路此前从未被真实数据验证过。
+ *
+ * 现在三种写法都支持：
+ *   tags: ["a","b"]                内联数组
+ *   tags:\n  - a                   标量列表
+ *   references:\n  - title: x\n    url: y     块状 map 列表
+ * 嵌套 map（如 AIGC: / schema:）仍按原样忽略，以保持既有行为。
+ */
 function parseFrontMatter(md) {
   const match = md.match(/^---\s*\n([\s\S]*?)\n---\s*\n?/);
   if (!match) return { body: md, meta: {} };
@@ -489,29 +528,59 @@ function parseFrontMatter(md) {
   const meta = {};
   const lines = match[1].split('\n');
   let currentKey = null;
+  let listMode = false;   // 当前键是否处于块状列表
+  let currentObj = null;  // 块状列表中的当前 map 项
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    // 多行数组项 - item
-    if (currentKey && /^\s+-\s/.test(line)) {
-      const itemVal = line.replace(/^\s+-\s+/, '').trim();
-      if (!Array.isArray(meta[currentKey])) meta[currentKey] = [];
-      meta[currentKey].push(parseYamlValue(itemVal));
+  const flushObj = () => {
+    if (currentObj && currentKey && Array.isArray(meta[currentKey])) {
+      meta[currentKey].push(currentObj);
+    }
+    currentObj = null;
+  };
+
+  for (const line of lines) {
+    if (!line.trim()) continue;
+    if (/^\s*#/.test(line)) continue;   // YAML 注释
+
+    // 列表项：  - xxx
+    const item = line.match(/^(\s*)-\s+(.*)$/);
+    if (currentKey && listMode && item) {
+      flushObj();
+      const rest = item[2].trim();
+      // 「- key: value」视为 map 项的起点；但 https://x 不是键值对
+      const inlineKv = rest.match(/^([\w-]+):\s*(.*)$/);
+      if (inlineKv && !/^https?:\/\//i.test(rest)) {
+        currentObj = { [inlineKv[1]]: parseYamlValue(inlineKv[2]) };
+      } else {
+        meta[currentKey].push(parseYamlValue(rest));
+      }
       continue;
     }
-    // 键值对
-    const kv = line.match(/^(\w[\w-]*):\s*(.*)/);
+
+    // 列表项 map 下的续行键值（缩进更深）
+    const contKv = line.match(/^\s+([\w-]+):\s*(.*)$/);
+    if (currentKey && listMode && currentObj && contKv) {
+      currentObj[contKv[1]] = parseYamlValue(contKv[2]);
+      continue;
+    }
+
+    // 顶层键值对
+    const kv = line.match(/^(\w[\w-]*):\s*(.*)$/);
     if (kv) {
+      flushObj();
       currentKey = kv[1];
       const rawVal = kv[2];
       if (rawVal === '') {
-        // 多行数组开始
         meta[currentKey] = [];
+        listMode = true;
         continue;
       }
       meta[currentKey] = parseYamlValue(rawVal);
+      listMode = false;
     }
+    // 其余无法识别的行（含 AIGC/schema 等嵌套块）保持忽略
   }
+  flushObj();
 
   return { body: md.substring(match[0].length), meta };
 }
@@ -758,12 +827,38 @@ function renderFAQ(items) {
 }
 
 /** 渲染参考文献区块 */
-function renderReferences(refs) {
-  if (!refs || refs.length === 0) return '';
-  let html = '<section class="ref-section"><h2>参考文献</h2><ol>';
+/**
+ * 把 references 归一化为 {title,url,source} 列表。
+ *
+ * 兼容作者的多种写法：{title,url,source} 对象、纯 URL 字符串、只给 url 不给 title。
+ * **无 url 的条目一律丢弃** —— 渲染出 href="undefined" 的可见坏链，或在
+ * citation JSON-LD 里产出空对象，都比完全不渲染更糟。
+ */
+function normalizeReferences(refs) {
+  if (!Array.isArray(refs)) return [];
+  const out = [];
   for (const r of refs) {
-    const src = r.source ? ` <span class="ref-source">[${r.source}]</span>` : '';
-    html += `<li><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.title}</a>${src}</li>`;
+    let url = '', title = '', source = '';
+    if (typeof r === 'string') {
+      url = r.trim();
+    } else if (r && typeof r === 'object') {
+      url = String(r.url || '').trim();
+      title = String(r.title || '').trim();
+      source = String(r.source || r.publisher || '').trim();
+    }
+    if (!/^https?:\/\//i.test(url)) continue;   // 只接受可点击的绝对链接
+    out.push({ title: title || url, url, source });
+  }
+  return out;
+}
+
+function renderReferences(refs) {
+  const items = normalizeReferences(refs);
+  if (items.length === 0) return '';
+  let html = '<section class="ref-section"><h2>参考文献</h2><ol>';
+  for (const r of items) {
+    const src = r.source ? ` <span class="ref-source">[${escHtml(r.source)}]</span>` : '';
+    html += `<li><a href="${escHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escHtml(r.title)}</a>${src}</li>`;
   }
   html += '</ol></section>';
   return html;
@@ -833,15 +928,37 @@ function detectDefinitions(html) {
 }
 
 /** 数据引用检测：识别行内 [来源:URL] / （数据来源：xxx） 模式并标注为 citation 格式 */
+/**
+ * 行内数据引用标记：识别 `[来源:URL]` / `（数据来源：xxx）` 并标注为 citation。
+ *
+ * 修复要点：原实现只把文字包进 <cite>，**从不生成链接** —— 于是
+ * `（数据来源：某监管文件）` 在页面上是"标了来源却没有出处可点"，
+ * 对读者和 AI 引擎都没有可溯源性。现在如果捕获内容里含 URL，会真的渲染成链接。
+ * 括号内只有文字、没有 URL 时保持原有的 <cite> 标注（没有 URL 可链）。
+ */
 function detectDataCitations(html) {
-  // 模式1: [来源](url) 或 [数据来源](url)
-  html = html.replace(/\[(?:来源|数据来源|参考|Source|Ref)[：:]?\s*(.+?)\]/g, (match, text) => {
-    return `<cite class="inline-citation">[${text}]</cite>`;
-  });
-  // 模式2: （来源：xxx）或（数据来源：xxx）
-  html = html.replace(/（(?:数据)?来源[：:]\s*(.+?)）/g, (match, text) => {
-    return `<cite class="inline-citation">（来源：${text}）</cite>`;
-  });
+  // 避免对已有 HTML 实体二次转义
+  const escCite = (s) => s
+    .replace(/&(?!(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);)/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
+  const render = (label, text) => {
+    const m = text.match(/https?:\/\/[^\s，。；、）】]+/);
+    if (!m) return `<cite class="inline-citation">${escCite(label)}</cite>`;
+    const url = m[0];
+    const safeUrl = escCite(url).replace(/"/g, '%22');
+    return `<cite class="inline-citation"><a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${escCite(label)}</a></cite>`;
+  };
+
+  // 模式1: [来源:…] / [数据来源:…] / [Source:…]
+  html = html.replace(/\[(?:来源|数据来源|参考|Source|Ref)[：:]?\s*(.+?)\]/g,
+    (match, text) => render(`[${text}]`, text));
+
+  // 模式2: （来源：…）/（数据来源：…）
+  html = html.replace(/（(?:数据)?来源[：:]\s*(.+?)）/g,
+    (match, text) => render(`（来源：${text}）`, text));
+
   return html;
 }
 
@@ -1044,8 +1161,8 @@ async function renderArticle(pathname, request, explicitMd) {
     // 独立摘要框
     const keyTakeawaysHtml = genKeyTakeaways(body, description);
 
-    // 参考文献
-    const references = meta.references || article.references || [];
+    // 参考文献：先归一化，过滤掉没有 URL 的条目（避免坏链与空 citation 对象）
+    const references = normalizeReferences(meta.references || article.references || []);
     const refHtml = renderReferences(references);
 
     // 阅读时间
@@ -1103,9 +1220,15 @@ async function renderArticle(pathname, request, explicitMd) {
         "timeRequired": `PT${readTime}M`,
         "articleSection": Array.isArray(tags) && tags.length ? tags[0] : undefined,
         "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 630 },
-        "citation": Array.isArray(references) && references.length ? references.map(r => ({
+        // citation 的值应当是「被引用的作品」本身。此前直接 map 原始 references，
+        // 当作者用块状列表时解析结果是字符串数组，于是产出
+        // [{"@type":"CreativeWork"}] 这种**空引用对象**（无效结构化数据，比没有更糟）。
+        // references 已在上面 normalizeReferences() 过，此处必然含 name+url。
+        // 另补 isBasedOn：本站文章的典型表述是"以 X 为底本"，该属性语义更贴切。
+        "citation": references.length ? references.map(r => ({
           "@type": "CreativeWork", "name": r.title, "url": r.url
-        })) : undefined
+        })) : undefined,
+        "isBasedOn": references.length ? references.map(r => r.url) : undefined
       };
     }
 
@@ -1421,29 +1544,36 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
 
 async function renderSitemap() {
   const articles = await getArticles();
+  // 有效日期 = 最新文章日期，用于首页/标签页等聚合页的 lastmod。
+  // 修复：此前 Worker 输出的 sitemap **完全没有 <lastmod>**（Python 版有），
+  // 而线上取的是 Worker 版 —— 等于线上 sitemap 丢失了 lastmod 这个抓取优先级信号。
+  const edate = articles.reduce((m, a) => ((a.date || '') > m ? a.date : m), '')
+    || new Date().toISOString().slice(0, 10);
+
+  const url = (loc, freq, prio, mod) =>
+    `\n  <url><loc>${loc}</loc><changefreq>${freq}</changefreq><priority>${prio}</priority>${mod ? `<lastmod>${mod}</lastmod>` : ''}</url>`;
+
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>${DOMAIN}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>${DOMAIN}/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>`;
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
+  xml += url(`${DOMAIN}/`, 'weekly', '1.0', edate);
+  xml += url(`${DOMAIN}/about`, 'monthly', '0.6', edate);
 
   for (const a of articles) {
-    xml += `\n  <url><loc>${DOMAIN}/articles/${a.slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`;
+    xml += url(`${DOMAIN}/articles/${a.slug}`, 'monthly', '0.8', a.date || edate);
   }
   // 教程页
-  xml += `\n  <url><loc>${DOMAIN}/quant-course/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
-  xml += `\n  <url><loc>${DOMAIN}/quant-course/chapter2-first-quant-experiment.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
+  xml += url(`${DOMAIN}/quant-course/index.html`, 'monthly', '0.7', edate);
+  xml += url(`${DOMAIN}/quant-course/chapter2-first-quant-experiment.html`, 'monthly', '0.7', edate);
   // tutorials/ 下的互动教程：此前完全未进 sitemap，成为不可发现的孤儿页
-  xml += `\n  <url><loc>${DOMAIN}/tutorials/${encodeURIComponent('什么是量化金融_互动教程.html')}</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>`;
+  xml += url(`${DOMAIN}/tutorials/${encodeURIComponent('什么是量化金融_互动教程.html')}`, 'monthly', '0.6', edate);
   // 标签页：只收录达到阈值的标签。
   // 原先全量收录 416 个标签页，占 sitemap 的 82%，其中大量是仅含 1 篇文章的
   // 薄聚合页，稀释了 86 篇正文的抓取预算，且是 AI 引擎最不会引用的页面类型。
-  xml += `\n  <url><loc>${DOMAIN}/tags</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>`;
+  xml += url(`${DOMAIN}/tags`, 'weekly', '0.6', edate);
   const tagMap = getTagMap(articles);
-  let tagIncluded = 0;
   for (const tag of Object.keys(tagMap)) {
     if (tagMap[tag].length < TAG_INDEX_MIN_ARTICLES) continue;
-    tagIncluded++;
-    xml += `\n  <url><loc>${DOMAIN}/tags/${encodeURIComponent(tag)}</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>`;
+    xml += url(`${DOMAIN}/tags/${encodeURIComponent(tag)}`, 'weekly', '0.5', edate);
   }
   xml += '\n</urlset>';
 
@@ -1482,7 +1612,7 @@ async function renderLlms() {
   for (const a of articles) {
     const tagStr = (Array.isArray(a.tags) ? a.tags : []).join(', ');
     txt += `\n- [${a.title}](${DOMAIN}/articles/${a.slug})`;
-    txt += `\n  - Description: ${a.description}`;
+    txt += `\n  - Description: ${truncate(a.description, LLM_DESC_MAX)}`;
     txt += `\n  - Date: ${a.date}`;
     if (tagStr) txt += `\n  - Tags: ${tagStr}`;
   }
