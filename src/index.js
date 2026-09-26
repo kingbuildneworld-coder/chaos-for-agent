@@ -1197,11 +1197,13 @@ async function renderArticle(pathname, request, explicitMd) {
   try {
     const articles = await getArticles();
     const article = findArticle(articles, slug);
-    if (!article) return new Response('Not Found', { status: 404 });
+    // 用统一的 HTML 404 页，而非裸文本 —— 否则这两条路径会绕过 404 页
+    // （审计中的路由全覆盖扫描发现的遗漏：通用兜底已改，这两处没跟着改）
+    if (!article) return renderNotFound(`/articles/${slug}`);
 
     // 获取 markdown 原文
     const mdResp = await fetch(`${REPO_RAW}${pathname}`);
-    if (!mdResp.ok) return new Response('Not Found', { status: 404 });
+    if (!mdResp.ok) return renderNotFound(`/articles/${slug}`);
 
     const mdText = await mdResp.text();
 
@@ -1791,7 +1793,7 @@ async function renderTagPage(tagParam) {
   const tagMap = getTagMap(articles);
   const matched = tagMap[tag] || [];
 
-  if (matched.length === 0) return new Response('Not Found', { status: 404 });
+  if (matched.length === 0) return renderNotFound(`/tags/${tag}`);
 
   let listItems = '';
   for (const a of matched) {
@@ -1995,7 +1997,7 @@ async function renderAbout() {
       });
     }
   } catch (_) {}
-  return new Response('Not Found', { status: 404 });
+  return renderNotFound('/about');
 }
 
 // ========== FAQ 聚合页 (B3) ==========
@@ -2134,6 +2136,9 @@ async function proxyFile(path, contentType, maxAge) {
       });
     }
   } catch (_) {}
+  // 这里刻意保留裸文本 404：本函数只服务 /ai-manifest.json、/feed.xml 这类
+  // **机器端点**，返回带导航的 HTML 404 页对机器消费者没有意义。
+  // 面向人类的 404（文章/标签/关于/通用兜底）均走 renderNotFound()。
   return new Response('Not Found', { status: 404 });
 }
 
