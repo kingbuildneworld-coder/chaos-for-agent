@@ -219,7 +219,7 @@ __JSONLD__
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bi-chao.com/"},
-    {"@type": "ListItem", "position": 2, "name": "__TITLE__", "item": "https://bi-chao.com/articles/__SLUG__"}
+    {"@type": "ListItem", "position": 2, "name": "__JSON_TITLE__", "item": "https://bi-chao.com/articles/__SLUG__"}
   ]
 }
 </script>
@@ -595,6 +595,25 @@ function parseFrontMatter(md) {
 }
 
 /** Markdown → HTML 转换 */
+/**
+ * 行内格式：加粗 / 斜体 / 链接。
+ *
+ * 抽成独立函数，是因为**表格单元格此前拿不到任何行内格式**：
+ * md2html 里表格在「加粗/斜体/链接」规则**之前**就被渲染并抽进 tables[] ，
+ * 单元格内容是原样 `${c.trim()}` 输出，之后再也不会被处理 ——
+ * 于是作者写的 `**加粗**` 在页面上直接显示为字面星号。
+ *
+ * 实测影响面：全站 14 篇文章、77 个表格行（含多条核心文章的对照表），
+ * 属既存渲染缺陷，非本次新增内容引入。
+ */
+function inlineFmt(s) {
+  return String(s)
+    .replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+}
+
 function md2html(md) {
   // 代码块保护
   const codeBlocks = [];
@@ -602,6 +621,19 @@ function md2html(md) {
     const idx = codeBlocks.length;
     codeBlocks.push(`<pre><code>${code.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').trim()}</code></pre>`);
     return `\x00CB${idx}\x00`;
+  });
+
+  // 原始 HTML 块保护（作者手写的 <script type="application/ld+json"> 等）
+  //
+  // 此前 md2html **不识别 <script>**：它不在下方「已是 HTML」白名单里，于是被当普通行
+  // **逐行包成 <p>**，JSON 被撕成 `</p><p>{</p><p>  "@context"…`，产出**非法 JSON-LD**
+  // （实测约 25 篇文章各有一个）。搜索引擎读到的是坏的结构化数据。
+  // 这里按原样透传，既修好存量，也让作者今后写原始 HTML 不再被破坏。
+  const rawBlocks = [];
+  md = md.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (m) => {
+    const idx = rawBlocks.length;
+    rawBlocks.push(m);
+    return `\x00RB${idx}\x00`;
   });
 
   // 行内代码
@@ -615,11 +647,11 @@ function md2html(md) {
     const idx = tables.length;
     let html = '<table>';
     // Header
-    html += '<thead><tr>' + lines[0].split('|').filter(Boolean).map(c => `<th>${c.trim()}</th>`).join('') + '</tr></thead>';
+    html += '<thead><tr>' + lines[0].split('|').filter(Boolean).map(c => `<th>${inlineFmt(c.trim())}</th>`).join('') + '</tr></thead>';
     // Body (skip separator line)
     html += '<tbody>';
     for (let i = 2; i < lines.length; i++) {
-      html += '<tr>' + lines[i].split('|').filter(Boolean).map(c => `<td>${c.trim()}</td>`).join('') + '</tr>';
+      html += '<tr>' + lines[i].split('|').filter(Boolean).map(c => `<td>${inlineFmt(c.trim())}</td>`).join('') + '</tr>';
     }
     html += '</tbody></table>';
     tables.push(html);
@@ -660,15 +692,18 @@ function md2html(md) {
   const lines = md.split('\n');
   const result = [];
   for (const line of lines) {
-    if (line.startsWith('\x00CB') || line.startsWith('\x00TB')) {
-      const match = line.match(/\x00(CB|TB)(\d+)\x00/);
+    if (line.startsWith('\x00CB') || line.startsWith('\x00TB') || line.startsWith('\x00RB')) {
+      const match = line.match(/\x00(CB|TB|RB)(\d+)\x00/);
       if (match) {
-        result.push(match[1] === 'CB' ? codeBlocks[parseInt(match[2])] : tables[parseInt(match[2])]);
+        const kind = match[1];
+        result.push(kind === 'CB' ? codeBlocks[parseInt(match[2])]
+          : kind === 'TB' ? tables[parseInt(match[2])]
+          : rawBlocks[parseInt(match[2])]);
       }
       continue;
     }
     if (!line.trim()) { result.push(''); continue; }
-    if (/^<(h[1-4]|ul|ol|li|blockquote|pre|code|table|thead|tbody|tr|th|td|hr|\/?(ul|ol|table|thead|tbody|blockquote))/.test(line.trim())) {
+    if (/^<(h[1-4]|ul|ol|li|blockquote|pre|code|table|thead|tbody|tr|th|td|hr|script|\/?(ul|ol|table|thead|tbody|blockquote|script))/.test(line.trim())) {
       result.push(line);
     } else {
       result.push(`<p>${line}</p>`);
@@ -680,6 +715,18 @@ function md2html(md) {
 /** HTML 安全转义 */
 function escHtml(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+/**
+ * JSON 字符串内联转义 —— 用于把动态值插进手写的 JSON-LD 文本。
+ *
+ * 为什么需要：JSON-LD 是模板字符串手写拼接的，动态值（尤其文章标题）直接插入。
+ * 标题里只要出现一个直引号 `"`，整段 JSON 就会被截断成**非法结构**
+ * （实测 3 篇中招，标题形如 `JEV：当 AI 学会"只决策、不聊天"，…`）。
+ * 用 JSON.stringify 后再剥掉外层引号，即得可安全内联的转义结果。
+ */
+function jsonStr(s) {
+  return JSON.stringify(String(s ?? '')).slice(1, -1);
 }
 
 /** 用 __KEY__ 占位符填充模板（安全，不依赖正则替换值） */
@@ -814,7 +861,11 @@ function detectFAQ(body) {
     const m = line.match(qRe);
     if (m) {
       if (currentQ && currentA) blocks.push({ question: currentQ, answer: currentA.trim() });
-      currentQ = m[1].trim();
+      // 清理问题文本尾部残留的 Markdown 强调标记。
+      // 原文常写作 `**Q1：……？**`，qRe 只吃掉开头的 `**Q1：`，结尾的 `**`
+      // 会留在问题里、页面上直接显示成字面星号
+      // （实测 local-llm-deployment-data-sovereignty 有 5 处）。
+      currentQ = m[1].trim().replace(/\*{1,3}\s*$/, '').trim();
       currentA = '';
     } else if (currentQ) {
       currentA += line + '\n';
@@ -1503,6 +1554,7 @@ async function renderArticle(pathname, request, explicitMd) {
       REFERENCES: refHtml,
       READING_TIME: `约 ${readTime} 分钟`,
       ROBOTS: ROBOTS_META,
+      JSON_TITLE: jsonStr(meta.title || article.title),   // JSON-LD 内联安全：转义引号
       AIGC_NOTICE: aigcNotice,
       AIGC_LABEL: escHtml(aigcLabel),
       AIGC_PRODUCER: escHtml(aigcProducer),
@@ -2114,16 +2166,53 @@ async function renderFaqPage() {
   try {
     const articles = await getArticles();
     const allFaqs = [];
+    let scanned = 0;
 
-    // 依次获取每篇文章并检测 FAQ
-    for (const a of articles) {
-      const mdResp = await fetch(`${REPO_RAW}/articles/${a.slug}.md`);
-      if (!mdResp.ok) continue;
-      const mdText = await mdResp.text();
-      const { body } = parseFrontMatter(mdText);
-      const faqItems = detectFAQ(body);
-      if (faqItems && faqItems.length) {
-        allFaqs.push({ article: a, faqs: faqItems });
+    // 首选：构建期预生成的 faq.json —— **只需 1 个子请求**，且全量覆盖。
+    // 生成器 scripts/generate_faq_index.mjs 直接 import 本 Worker 并逐篇渲染、
+    // 抽取 FAQPage JSON-LD，因此 FAQ 检测逻辑**只有一份**，不存在双实现漂移。
+    try {
+      const r = await fetchUpstream('/faq.json', { freshMs: 300_000 });
+      if (r.ok) {
+        const d = JSON.parse(r.text);
+        if (d && Array.isArray(d.items)) {
+          for (const it of d.items) {
+            const a = findArticle(articles, it.slug) || { slug: it.slug, title: it.title, date: it.date };
+            if (it.faqs && it.faqs.length) allFaqs.push({ article: a, faqs: it.faqs });
+          }
+          scanned = d.scanned_articles || articles.length;
+        }
+      }
+    } catch (_) { /* 落到下面的兜底扫描 */ }
+
+    // 兜底：faq.json 尚未生成或不可用时，只扫最近 FAQ_SCAN_LIMIT 篇。
+    // 背景（这是个既存的生产故障）：Cloudflare Workers 免费版每个请求最多 **50 个
+    // subrequest**。原实现顺序抓取**全部**文章（86 篇 → 86 个 subrequest 再加 1 个
+    // index），必然超限抛错 —— 即 /faq 在线上长期是坏的。旧代码返回 500 并回显内部
+    // 错误，加了上游容错后被转成 503，只是**暴露**了它，并非新引入。
+    // 注意：仅"取最近 N 篇"不足以覆盖 —— 实测全站含 FAQ 的文章全部是旧文，
+    // 按日期取最近 40 篇一篇都覆盖不到。这正是首选 faq.json 的原因。
+    if (!allFaqs.length) {
+      const FAQ_SCAN_LIMIT = 40;
+      const scanList = [...articles]
+        .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+        .slice(0, FAQ_SCAN_LIMIT);
+      scanned = scanList.length;
+
+      for (const a of scanList) {
+        let mdText;
+        try {
+          const mdResp = await fetch(`${REPO_RAW}/articles/${a.slug}.md`);
+          if (!mdResp.ok) continue;
+          mdText = await mdResp.text();
+        } catch (_) {
+          continue;   // 单篇失败不影响整页
+        }
+        const { body } = parseFrontMatter(mdText);
+        const faqItems = detectFAQ(body);
+        if (faqItems && faqItems.length) {
+          allFaqs.push({ article: a, faqs: faqItems });
+        }
       }
     }
 
@@ -2184,7 +2273,7 @@ async function renderFaqPage() {
 </style>
 </head><body>
 <h1>常见问题 FAQ</h1>
-<p class="stats">共收录 ${allFaqs.length} 篇文章中的 ${totalFaq} 个问答</p>
+<p class="stats">共收录 ${allFaqs.length} 篇文章中的 ${totalFaq} 个问答（全站 ${articles.length} 篇，本次扫描 ${scanned} 篇）</p>
 ${groupsHtml}
 <a class="back" href="/">← 返回首页</a>
 </body></html>`;
