@@ -29,6 +29,10 @@ DOMAIN = "https://bi-chao.com"
 ROOT = Path.cwd()
 ART_DIR = ROOT / "articles"
 
+# 低于此文章数的标签页不进 sitemap（与 src/index.js 的 TAG_INDEX_MIN_ARTICLES 保持一致）。
+# 薄标签页是近重复的低价值聚合页，会稀释正文的抓取预算。
+TAG_INDEX_MIN_ARTICLES = 3
+
 # Curated metadata preserved from the existing manifest.
 TOPICS = [
     "AI Agent", "AI大模型", "银行业", "金融科技", "数字化转型", "数据治理",
@@ -231,8 +235,15 @@ def gen_sitemap(articles: list[dict], edate: str) -> str:
         add(f'{DOMAIN}/articles/{a["slug"]}', "monthly", "0.8", a["date"] or edate)
     add(f"{DOMAIN}/quant-course/index.html", "monthly", "0.7", edate)
     add(f"{DOMAIN}/quant-course/chapter2-first-quant-experiment.html", "monthly", "0.7", edate)
+    # tutorials/ 下的互动教程：此前完全未进 sitemap，是不可发现的孤儿页
+    add(f"{DOMAIN}/tutorials/{quote('什么是量化金融_互动教程.html')}", "monthly", "0.6", edate)
     add(f"{DOMAIN}/tags", "weekly", "0.6", edate)
-    for tag in sorted(tag_map(articles)):
+    # 只收录达到阈值的标签页：原先全量收录 416 个标签页（占 sitemap 的 82%），
+    # 大量是仅含 1 篇文章的薄聚合页，稀释了正文的抓取预算。
+    counts = tag_map(articles)
+    for tag in sorted(counts):
+        if counts[tag] < TAG_INDEX_MIN_ARTICLES:
+            continue
         add(f"{DOMAIN}/tags/{quote(tag)}", "weekly", "0.5", edate)
 
     body = ET.tostring(root, encoding="utf-8", xml_declaration=True).decode("utf-8")

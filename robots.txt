@@ -1,16 +1,61 @@
+# chaos-for-agent — https://bi-chao.com
+#
+# ⚠️ 一致性要求：线上实际返回的是 src/index.js 中 renderRobots() 的输出，
+#    本文件是同一内容的仓库副本（便于人工审阅与版本追溯）。
+#    修改 robots 策略时请**同时**改这两处，否则仓库与线上会漂移 ——
+#    这正是本次审计发现的问题模式（"声明了但未生效/两处不一致"）。
+#    修复前本文件的 Sitemap 指向 ...workers.dev，而线上指向 bi-chao.com。
+#
+# 关于本文件的两个要点（避免误判）：
+# 1) 首条 `User-agent: *` + `Allow: /` 已经放行全部合规爬虫，
+#    因此下面逐个列出名称**不是**为了"解锁"谁，而是为了：
+#    · 显式声明欢迎检索/引用（政策收紧趋势下更可靠）
+#    · 可审计性
+# 2) robots.txt 只约束守规矩的**自动**抓取。用户触发型抓取器
+#    （ChatGPT-User、Perplexity-User、Claude-User、meta-externalfetcher、
+#    Amzn-User）官方明确可能不遵循 robots.txt —— 对它们的真正控制点是
+#    Cloudflare WAF / Bot Management，而不是本文件。
+
 User-agent: *
 Allow: /
+# 动态 OG 生成端点：无价值抓取，且消耗 Worker CPU。静态分享图在 /assets/og/
+Disallow: /og
+# 站内搜索结果页：避免近重复页面被索引
+Disallow: /search
 
-User-agent: GPTBot
+# ---------- 检索/引用类 AI 爬虫（决定内容能否被 AI 检索并引用） ----------
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: meta-webindexer
+Allow: /
+
+User-agent: Amzn-SearchBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ---------- 训练/语料类爬虫 ----------
+User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -19,7 +64,39 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+# 注：Google-Extended 不是爬虫、没有 UA，它是纯 robots.txt 令牌，
+# 控制的是 Gemini 模型训练与 Gemini Apps/Vertex AI 的 grounding，
+# 不影响 Google Search 收录、也不是排名信号。进入 AI Overviews 的
+# 唯一爬虫控制点始终是 Googlebot。
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://chaos-for-agent.kingbuildneworld.workers.dev/sitemap.xml
+User-agent: Amazonbot
+Allow: /
+
+# ---------- 传统搜索引擎 ----------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ---------- Content Signals Policy ----------
+# Cloudflare 于 2025-09-24 推出、并由其边缘实际执行的策略声明。
+# 本站内容以 CC BY-NC-ND 4.0 发布。是否声明 AI 训练许可属于**站点政策决定**，
+# 故此处仅预留位置、默认不表态；若决定明确授权训练，取消下面一行的注释即可：
+# Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://bi-chao.com/sitemap.xml

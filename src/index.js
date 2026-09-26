@@ -15,65 +15,77 @@
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
 const DOMAIN = 'https://bi-chao.com';
 const AUTHOR_NAME = '毕超';
-const AUTHOR_JOB_TITLE = '金融行业风险管理从业者';
-const AUTHOR_ORG = '金融行业';
+const AUTHOR_JOB_TITLE = '中国农业发展银行总行风险管理部资产保全二处处长';
+const AUTHOR_ORG = '中国农业发展银行';
+
+// ========== 实体锚点（GEO） ==========
+// 用稳定的 @id 让 AI 引擎/搜索引擎能把本站与第三方权威落点归并到同一实体，
+// 而不是每个页面重复内联一份 Person 定义。"毕超"是高频同名（另有北京化工大学
+// 副教授、陕西师范大学教师、CSDN 博主等），实体消歧是权威性归因的前提。
+const PERSON_ID = `${DOMAIN}/#person`;
+const ORG_ID = `${DOMAIN}/#organization`;
+
+/**
+ * 第三方可核实的权威落点，用于 Person.sameAs。
+ * 以下 URL 均于 2026-09-26 逐一实测返回 HTTP 200 后才收录；
+ * 未验证或不可达的来源（如维普）一律不放，避免结构化数据里出现死链。
+ */
+const PERSON_SAME_AS = [
+  'https://book.douban.com/subject/37397035/',
+  'https://www.j-bigdataresearch.com.cn/zh/article/doi/10.11959/j.issn.2096-0271.2025004/',
+  'https://opaj.napstic.cn/periodicalArticle/0120250200890414',
+  'https://m.wanfangdata.com.cn/jewelbox/search/toArticleDetails.html?id=yhj202409009&type=perio_artical',
+  'https://sem.ucas.ac.cn/article/article_xq_time/eyJhcnRpY2xlX3d6X2lkIjoxOTM4OSwidGl0bGUxIjoi5a2m5pyv6K6m5bqnIiwidHlwZV9pZCI6MjksImluZGV4IjoyfQ==',
+  'https://github.com/kingbuildneworld-coder'
+];
+
+/** 所有 Person 节点统一引用此 @id，全站实体唯一 */
+const AUTHOR_REF = { '@id': PERSON_ID };
+
+/** 文章页 robots meta：放开大图与大摘要预览（默认 standard 会限制 AI 摘要与 Discover 的图） */
+const ROBOTS_META = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1';
+
+/** 标签页收录阈值：文章数低于此值的标签页输出 noindex 且不进 sitemap，避免薄内容稀释抓取预算 */
+const TAG_INDEX_MIN_ARTICLES = 3;
+
+/**
+ * 统一的作者实体节点。
+ * 设计取舍：文章页保持"自包含"（内联完整 Person），因为 AI 爬虫可能只抓单篇
+ * 文章而不访问首页；同时带上稳定 @id，使跨页面/跨站点能归并为同一实体。
+ */
+function buildPersonNode() {
+  return {
+    '@type': 'Person',
+    '@id': PERSON_ID,
+    'name': AUTHOR_NAME,
+    'url': `${DOMAIN}/about`,
+    'jobTitle': AUTHOR_JOB_TITLE,
+    'alumniOf': { '@type': 'CollegeOrUniversity', 'name': '清华大学' },
+    'memberOf': [
+      { '@type': 'Organization', 'name': '中国人工智能学会' },
+      { '@type': 'Organization', 'name': '中国计算机学会' }
+    ],
+    'sameAs': PERSON_SAME_AS
+  };
+}
 
 // ========== JSON-LD Schema 模板 ==========
 
-const SCHEMA_ARTICLE = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "__TITLE__",
-  "description": "__DESCRIPTION__",
-  "author": {
-    "@type": "Person",
-    "name": "__AUTHOR__",
-    "url": "https://bi-chao.com/about",
-    "jobTitle": "金融行业风险管理从业者",
-    "alumniOf": "清华大学",
-    "memberOf": [
-      {"@type": "Organization", "name": "中国人工智能学会"},
-      {"@type": "Organization", "name": "中国计算机学会"}
-    ]
-  },
-  "datePublished": "__DATE__",
-  "dateModified": "__DATE__",
-  "publisher": {
-    "@type": "Organization",
-    "name": "chaos-for-agent",
-    "url": "https://bi-chao.com"
-  },
-  "inLanguage": "zh-CN",
-  "isAccessibleForFree": true,
-  "about": {"@type": "Thing", "name": "__TOPIC__"},
-  "keywords": "__TAGS__"
-};
-
-const SCHEMA_BOOK = {
-  "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "__TITLE__",
-  "description": "__DESCRIPTION__",
-  "author": {
-    "@type": "Person",
-    "name": "__AUTHOR__",
-    "url": "https://bi-chao.com/about",
-    "jobTitle": "金融行业风险管理从业者"
-  },
-  "publisher": {"@type": "Organization", "name": "中国金融出版社"},
-  "datePublished": "__PUB_DATE__",
-  "numberOfPages": "__PAGES__",
-  "inLanguage": "zh-CN"
-};
+// 注意：原先此处有 SCHEMA_ARTICLE / SCHEMA_BOOK 两个常量，属于**死代码**
+// （定义后从未被任何代码引用）。真正生效的 JSON-LD 在 renderArticle() 内联构造。
+// 保留两套 schema 定义曾导致"以为改了 schema、其实改的是死代码"的维护陷阱，
+// 故移除；如需文章/图书的结构化数据模板，请统一在 renderArticle() 中维护。
 
 const SCHEMA_PERSON = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": PERSON_ID,
   "name": "毕超",
   "alternateName": "Bi Chao",
-  "description": "博士、高级工程师（计算机技术专业），金融行业风险管理从业者。清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。研究方向为大语言模型、数字金融、金融科技。",
+  "description": "博士、高级工程师（计算机技术专业），中国农业发展银行总行风险管理部资产保全二处处长。清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。研究方向为大语言模型、数字金融、金融科技。",
   "url": "https://bi-chao.com/about",
-  "jobTitle": "金融行业风险管理从业者",
+  "jobTitle": AUTHOR_JOB_TITLE,
+  "worksFor": {"@type": "Organization", "name": "中国农业发展银行"},
   "alumniOf": {"@type": "CollegeOrUniversity", "name": "清华大学"},
   "memberOf": [
     {"@type": "Organization", "name": "中国人工智能学会"},
@@ -82,20 +94,20 @@ const SCHEMA_PERSON = {
   ],
   "award": "北京市西城区'西融计划'第一批青年拔尖人才（2024年）",
   "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理"],
-  "sameAs": ["https://bi-chao.com/about"]
+  "sameAs": PERSON_SAME_AS
 };
 
 const SCHEMA_ORGANIZATION = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": ORG_ID,
   "name": "chaos-for-agent",
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
   "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
-  "founder": {"@type": "Person", "name": "毕超", "url": "https://bi-chao.com/about"},
+  "founder": {"@type": "Person", "@id": PERSON_ID, "name": "毕超", "url": "https://bi-chao.com/about"},
   "sameAs": [
-    "https://github.com/kingbuildneworld-coder",
-    "https://bi-chao.com/about"
+    "https://github.com/kingbuildneworld-coder"
   ],
   "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理",
     "词元经济", "Tokenomics", "AI Agent", "Prompt Engineering", "RAG", "向量数据库", "企业架构"],
@@ -155,6 +167,7 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta name="description" content="__DESCRIPTION__">
 <meta name="author" content="毕超">
+<meta name="robots" content="__ROBOTS__">
 <meta property="og:title" content="__TITLE__">
 <meta property="og:description" content="__DESCRIPTION__">
 <meta property="og:type" content="__OGTYPE__">
@@ -165,13 +178,17 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <meta name="twitter:title" content="__TITLE__">
 <meta name="twitter:description" content="__DESCRIPTION__">
 <meta name="twitter:image" content="__OG_IMAGE__">
+<meta name="twitter:image:alt" content="__TITLE__">
 <meta property="og:image" content="__OG_IMAGE__">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="__TITLE__">
 <meta property="article:published_time" content="__DATE__">
 <meta property="article:modified_time" content="__DATE_MODIFIED__">
 <link rel="canonical" href="https://bi-chao.com/articles/__SLUG__">
 <link rel="alternate" hreflang="zh-CN" href="https://bi-chao.com/articles/__SLUG__">
+<link rel="alternate" type="text/markdown" href="https://bi-chao.com/articles/__SLUG__.md" title="Markdown 原文">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
 __JSONLD__
@@ -186,15 +203,9 @@ __JSONLD__
   ]
 }
 </script>
-<script type="application/ld+json">
-__FAQ_JSONLD__
-</script>
-<script type="application/ld+json">
-__HOWTO_JSONLD__
-</script>
-<script type="application/ld+json">
-__IMG_SCHEMAS_JSONLD__
-</script>
+__FAQ_BLOCK__
+__HOWTO_BLOCK__
+__IMG_BLOCK__
 <script type="application/ld+json">
 __SPEAKABLE_JSONLD__
 </script>
@@ -594,6 +605,17 @@ function escHtml(s) {
 }
 
 /** 用 __KEY__ 占位符填充模板（安全，不依赖正则替换值） */
+/**
+ * 把一段 JSON-LD 字符串包成完整的 <script> 标签；内容为空时返回空串。
+ * 原先模板无条件输出 <script type="application/ld+json"> 包裹，导致
+ * FAQ / HowTo / Image 等可选 schema 缺省时留下**空脚本块**（无效 JSON），
+ * 会被 Search Console 报为"结构化数据 JSON 无效"。
+ */
+function ldBlock(json) {
+  const s = (json || '').trim();
+  return s ? `<script type="application/ld+json">\n${s}\n</script>` : '';
+}
+
 function fillTpl(tpl, vars) {
   let result = tpl;
   for (const [key, val] of Object.entries(vars)) {
@@ -950,7 +972,27 @@ function findArticle(articles, slug) {
 
 // ========== 文章渲染 ==========
 
-async function renderArticle(pathname) {
+/**
+ * 内容协商：判断请求方是否要 Markdown 原文。
+ * 依据 llms.txt v2 约定 —— 同 URL 追加 `.md`、或显式 `Accept: text/markdown`；
+ * 另支持 `?format=md|html` 便于人工调试与显式覆盖。
+ *
+ * 注意 explicitMd 必须由路由层传入原始路径判断结果，不能在 renderArticle 内部
+ * 用 pathname.endsWith('.md') 判断 —— 路由会把无后缀路径规范化成 .md 再传进来，
+ * 那样恒为真，会导致默认文章页误返回 Markdown、整站正文对浏览器失效。
+ */
+function wantsMarkdown(request, explicitMd) {
+  if (explicitMd) return true;
+  if (!request) return false;
+  try {
+    const fmt = (new URL(request.url).searchParams.get('format') || '').toLowerCase();
+    if (fmt === 'md' || fmt === 'markdown') return true;
+    if (fmt === 'html') return false;
+  } catch (_) {}
+  return /\btext\/markdown\b/i.test(request.headers.get('Accept') || '');
+}
+
+async function renderArticle(pathname, request, explicitMd) {
   const slug = (pathname.replace(/^\/articles\//, '').replace(/\.md$/, '')).trim();
 
   try {
@@ -963,6 +1005,22 @@ async function renderArticle(pathname) {
     if (!mdResp.ok) return new Response('Not Found', { status: 404 });
 
     const mdText = await mdResp.text();
+
+    // 真正返回 Markdown（此前无论 .md 还是裸 URL 都渲染 HTML）。
+    // 注意：仓库里的 _headers 声明了 text/markdown，但脚本型 Worker 不读取
+    // _headers，那些规则从未生效 —— 这也是 README/llms.txt 对外宣称的
+    // “Markdown 直读”长期未兑现的原因。
+    if (wantsMarkdown(request, explicitMd)) {
+      return new Response(mdText, {
+        headers: {
+          'Content-Type': 'text/markdown; charset=utf-8',
+          'Cache-Control': 'public, max-age=3600',
+          'Vary': 'Accept',
+          'Access-Control-Allow-Origin': '*'
+        }
+      });
+    }
+
     const { body, meta } = parseFrontMatter(mdText);
 
     // 合并元数据
@@ -993,8 +1051,13 @@ async function renderArticle(pathname) {
     // 阅读时间
     const readTime = readingTime(body);
 
-    // OG Image（优先 frontmatter，否则自动生成占位图）
-    const ogImage = meta.og_image || article.og_image || `https://bi-chao.com/og?title=${encodeURIComponent(title)}&date=${encodeURIComponent(date || '')}`;
+    // OG 图片：改为指向构建期生成的静态 PNG。
+    // 原实现指向 /og?title=... 且由 Worker 返回 image/svg+xml，而 X/Twitter、Facebook、
+    // LinkedIn、微信、Slack 等主流平台均不支持 SVG 作为 og:image —— 结果是所有分享
+    // 卡片都没有图片。静态 PNG 由 scripts/generate_og_images.py 在 CI 中预生成。
+    // 路径选择说明：静态图放 /assets/og/ 而非 /og*/，因为 robots.txt 的
+    // `Disallow: /og` 是**前缀匹配**，会连带屏蔽 /og-img/... 这类路径。
+    const ogImage = meta.og_image || article.og_image || `${DOMAIN}/assets/og/${article.slug}.png`;
 
     // 转换正文 + 定义块检测 + 内链注入
     let contentHtml = injectHeadingIds(md2html(body));
@@ -1013,7 +1076,7 @@ async function renderArticle(pathname) {
         "@type": "Book",
         "name": title,
         "description": description,
-        "author": {"@type": "Person", "name": AUTHOR_NAME, "url": "https://bi-chao.com/about"},
+        "author": buildPersonNode(),
         "publisher": {"@type": "Organization", "name": meta.publisher || "中国金融出版社"},
         "datePublished": meta.publication_date || date,
         "numberOfPages": meta.pages ? String(meta.pages) : "",
@@ -1023,13 +1086,15 @@ async function renderArticle(pathname) {
     } else {
       jsonLd = {
         "@context": "https://schema.org",
-        "@type": (schemaType === 'Article' || schemaType === 'AcademicPaper') ? 'ScholarlyArticle' : schemaType,
+        // Google 富结果只支持 Article / NewsArticle / BlogPosting。
+        // 此前用 ScholarlyArticle，属无效选择（Search Gallery 不含该类型，拿不到富结果资格）。
+        "@type": (schemaType === 'Article' || schemaType === 'AcademicPaper') ? 'BlogPosting' : schemaType,
         "headline": title,
         "description": description,
-        "author": {"@type": "Person", "name": AUTHOR_NAME, "url": "https://bi-chao.com/about", "jobTitle": AUTHOR_JOB_TITLE, "alumniOf": "清华大学"},
+        "author": buildPersonNode(),
         "datePublished": date,
         "dateModified": dateModified,
-        "publisher": {"@type": "Organization", "name": "chaos-for-agent", "url": "https://bi-chao.com"},
+        "publisher": { "@type": "Organization", "@id": ORG_ID, "name": "chaos-for-agent", "url": DOMAIN },
         "inLanguage": "zh-CN",
         "isAccessibleForFree": true,
         "about": {"@type": "Thing", "name": (Array.isArray(tags) ? tags[0] : '') || title},
@@ -1094,7 +1159,10 @@ async function renderArticle(pathname) {
       })), null, 2);
     }
 
-    // Speakable Schema（语音搜索）
+    // Speakable Schema（保留，但不作为 GEO 手段）
+    // 说明：Google 的 Speakable 仍标记为 BETA，且实际只服务「美国 + Google Home
+    // 英文 + Google Assistant 热点新闻朗读」，对中文技术博客没有投入价值。
+    // 保留它成本为零，但不要指望它带来 AI 引用。
     const speakableJsonLd = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "SpeakableSpecification",
@@ -1110,9 +1178,9 @@ async function renderArticle(pathname) {
       SLUG: article.slug,
       OGTYPE: ogType,
       JSONLD: JSON.stringify(jsonLd, null, 2),
-      FAQ_JSONLD: faqJsonLd,
-      HOWTO_JSONLD: howToJsonLd,        // C1
-      IMG_SCHEMAS_JSONLD: imgSchemasJsonLd,  // C2
+      FAQ_BLOCK: ldBlock(faqJsonLd),
+      HOWTO_BLOCK: ldBlock(howToJsonLd),           // C1
+      IMG_BLOCK: ldBlock(imgSchemasJsonLd),        // C2
       SPEAKABLE_JSONLD: speakableJsonLd,
       TAGS: tagsHtml,
       CONTENT: contentHtml,
@@ -1124,13 +1192,17 @@ async function renderArticle(pathname) {
       KEY_TAKEAWAYS: keyTakeawaysHtml,
       REFERENCES: refHtml,
       READING_TIME: `约 ${readTime} 分钟`,
+      ROBOTS: ROBOTS_META,
       OG_IMAGE: ogImage
     });
 
     return new Response(html, {
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
-        'Cache-Control': 'public, max-age=3600'
+        'Cache-Control': 'public, max-age=3600',
+        // 同一 URL 会因 Accept 头返回 HTML 或 Markdown，必须声明 Vary，
+        // 否则 CDN/代理可能把 Markdown 响应错误地喂给浏览器（或反之）。
+        'Vary': 'Accept'
       }
     });
   } catch (e) {
@@ -1178,19 +1250,23 @@ async function renderIndex() {
 <meta name="author" content="毕超">
 <meta name="google-site-verification" content="VKkZGy9h23phxHAOaQseoRl9knPfnD_HFVGfI7RSrxs">
 <meta name="baidu-site-verification" content="codeva-J4sirVAId0">
+<meta name="robots" content="${ROBOTS_META}">
 <meta property="og:title" content="智能体的知识库 — chaos-for-agent">
 <meta property="og:description" content="银行人看得懂、用得上的AI知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bi-chao.com/">
 <meta property="og:site_name" content="chaos-for-agent">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://bi-chao.com/og?title=%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
+<meta property="og:image" content="${DOMAIN}/assets/og/default.png">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="智能体的知识库 — chaos-for-agent">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="智能体的知识库 — chaos-for-agent">
 <meta name="twitter:description" content="银行人看得懂、用得上的AI知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
-<meta name="twitter:image" content="https://bi-chao.com/og?title=%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93">
+<meta name="twitter:image" content="${DOMAIN}/assets/og/default.png">
+<meta name="twitter:image:alt" content="智能体的知识库 — chaos-for-agent">
 <link rel="canonical" href="https://bi-chao.com/">
 <link rel="alternate" type="application/atom+xml" title="chaos-for-agent RSS" href="https://bi-chao.com/feed.xml">
 <script type="application/ld+json">
@@ -1356,10 +1432,17 @@ async function renderSitemap() {
   // 教程页
   xml += `\n  <url><loc>${DOMAIN}/quant-course/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
   xml += `\n  <url><loc>${DOMAIN}/quant-course/chapter2-first-quant-experiment.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
-  // 标签页
+  // tutorials/ 下的互动教程：此前完全未进 sitemap，成为不可发现的孤儿页
+  xml += `\n  <url><loc>${DOMAIN}/tutorials/${encodeURIComponent('什么是量化金融_互动教程.html')}</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>`;
+  // 标签页：只收录达到阈值的标签。
+  // 原先全量收录 416 个标签页，占 sitemap 的 82%，其中大量是仅含 1 篇文章的
+  // 薄聚合页，稀释了 86 篇正文的抓取预算，且是 AI 引擎最不会引用的页面类型。
   xml += `\n  <url><loc>${DOMAIN}/tags</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>`;
   const tagMap = getTagMap(articles);
+  let tagIncluded = 0;
   for (const tag of Object.keys(tagMap)) {
+    if (tagMap[tag].length < TAG_INDEX_MIN_ARTICLES) continue;
+    tagIncluded++;
     xml += `\n  <url><loc>${DOMAIN}/tags/${encodeURIComponent(tag)}</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>`;
   }
   xml += '\n</urlset>';
@@ -1380,14 +1463,18 @@ async function renderLlms() {
 
   let txt = `# chaos-for-agent — 智能体的知识库
 
-> 面向 AI Agent 和搜索引擎优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。
-> 作者：毕超，金融行业风险管理从业者，清华大学校友。
+> 面向 AI Agent 与搜索优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。
+> 作者：${AUTHOR_NAME}，${AUTHOR_JOB_TITLE}，清华大学校友。
+> 说明：本文件遵循 llms.txt 约定，主要服务 coding agent 与文档消费者。
+> Google 官方明确表示 Search 不使用 llms.txt —— 请不要把它当作提升
+> AI Overviews 收录的手段；进入 Google 的路径始终是 sitemap + Googlebot。
 
 ## Site Map
 - Home: ${DOMAIN}/
 - About: ${DOMAIN}/about
 - Tags: ${DOMAIN}/tags
-- Tutorials: ${DOMAIN}/quant-course/index.html
+- Tutorials: ${DOMAIN}/tutorials/${encodeURIComponent('什么是量化金融_互动教程.html')}
+- Quant course: ${DOMAIN}/quant-course/index.html
 
 ## Articles (${articles.length})
 `;
@@ -1406,11 +1493,12 @@ async function renderLlms() {
   }
 
   txt += `\n\n## For AI Agents
+- Markdown 原文：文章 URL 后加 \`.md\`（如 ${DOMAIN}/articles/<slug>.md），或发送 \`Accept: text/markdown\`
 - Sitemap: ${DOMAIN}/sitemap.xml
 - RSS: ${DOMAIN}/feed.xml
-- AI Manifest: ${DOMAIN}/ai-manifest.json
 - Robots: ${DOMAIN}/robots.txt
-- Search: ${DOMAIN}/search?q={query}
+- 站内搜索（JSON）: ${DOMAIN}/search?q={query}&format=json
+- 全文合集（约 1.37MB，**仅在确实需要全量语料时读取**）: ${DOMAIN}/llms-full.txt
 `;
 
   return new Response(txt, {
@@ -1520,14 +1608,26 @@ async function renderTagPage(tagParam) {
     }
   };
 
+  // 薄标签页（文章数低于阈值）输出 noindex,follow：保留链接权重传递，但不进索引，
+  // 避免近重复薄页面稀释整站质量判断。
+  const thinTag = matched.length < TAG_INDEX_MIN_ARTICLES;
+  const tagRobots = thinTag
+    ? '<meta name="robots" content="noindex,follow">'
+    : `<meta name="robots" content="${ROBOTS_META}">`;
+  // 修复：原模板写成 content="标签"${tag}"下的…" —— 属性值被内层双引号提前截断，
+  // 是无效 HTML（标签名含引号时更会破坏结构）。统一转义并改用中文引号。
+  const escTag = tag.replace(/&/g, '&amp;').replace(/</g, '&lt;')
+                   .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
   const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="标签"${tag}"下的${matched.length}篇深度文章。毕超知识库 — Agent-First 内容写作、AI大模型、银行业数字化转型。">
-<meta property="og:title" content="${tag} — 标签归档 | chaos-for-agent">
-<meta property="og:description" content="标签"${tag}"下的${matched.length}篇文章。">
+${tagRobots}
+<meta name="description" content="标签「${escTag}」下的 ${matched.length} 篇深度文章。毕超知识库 — Agent-First 内容写作、AI大模型、银行业数字化转型。">
+<meta property="og:title" content="${escTag} — 标签归档 | chaos-for-agent">
+<meta property="og:description" content="标签「${escTag}」下的 ${matched.length} 篇文章。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bi-chao.com/tags/${encodeURIComponent(tag)}">
 <meta property="og:site_name" content="chaos-for-agent">
@@ -1564,7 +1664,104 @@ ${JSON.stringify(collectionPageLd)}
 // ========== robots.txt ==========
 
 function renderRobots() {
-  return new Response(`User-agent: *\nAllow: /\n\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUser-agent: CCBot\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml`, {
+  const txt = `# chaos-for-agent — https://bi-chao.com
+#
+# 关于本文件的两个要点（避免误判）：
+# 1) 首条 \`User-agent: *\` + \`Allow: /\` 已经放行全部合规爬虫，
+#    因此下面逐个列出名称**不是**为了"解锁"谁，而是为了：
+#    · 显式声明欢迎检索/引用（政策收紧趋势下更可靠）
+#    · 可审计性
+# 2) robots.txt 只约束守规矩的**自动**抓取。用户触发型抓取器
+#    （ChatGPT-User、Perplexity-User、Claude-User、meta-externalfetcher、
+#    Amzn-User）官方明确可能不遵循 robots.txt —— 对它们的真正控制点是
+#    Cloudflare WAF / Bot Management，而不是本文件。
+
+User-agent: *
+Allow: /
+# 动态 OG 生成端点：无价值抓取，且消耗 Worker CPU。静态分享图在 /assets/og/
+Disallow: /og
+# 站内搜索结果页：避免近重复页面被索引
+Disallow: /search
+
+# ---------- 检索/引用类 AI 爬虫（决定内容能否被 AI 检索并引用） ----------
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: meta-webindexer
+Allow: /
+
+User-agent: Amzn-SearchBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ---------- 训练/语料类爬虫 ----------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# 注：Google-Extended 不是爬虫、没有 UA，它是纯 robots.txt 令牌，
+# 控制的是 Gemini 模型训练与 Gemini Apps/Vertex AI 的 grounding，
+# 不影响 Google Search 收录、也不是排名信号。进入 AI Overviews 的
+# 唯一爬虫控制点始终是 Googlebot。
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# ---------- 传统搜索引擎 ----------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ---------- Content Signals Policy ----------
+# Cloudflare 于 2025-09-24 推出、并由其边缘实际执行的策略声明。
+# 本站内容以 CC BY-NC-ND 4.0 发布。是否声明 AI 训练许可属于**站点政策决定**，
+# 故此处仅预留位置、默认不表态；若决定明确授权训练，取消下面一行的注释即可：
+# Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: ${DOMAIN}/sitemap.xml
+`;
+  return new Response(txt, {
     headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'public, max-age=3600' }
   });
 }
@@ -1725,6 +1922,164 @@ async function proxyFile(path, contentType, maxAge) {
   return new Response('Not Found', { status: 404 });
 }
 
+// ========== 站内搜索 ==========
+
+/**
+ * 真正的站内搜索（替代原先 302 跳 Google 的假实现）。
+ *
+ * 原实现把 /search?q= 重定向到 google.com/search?q=site:bi-chao.com，却在两处
+ * 把它当作站内能力对外宣传：
+ *   1) llms.txt 的 "For AI Agents" 段：Search: https://bi-chao.com/search?q={query}
+ *   2) 首页 WebSite 结构化数据的 SearchAction.urlTemplate
+ * 对 AI Agent 而言这是功能谎报 —— agent 按声明调用会拿到 Google 的反自动化验证页。
+ * 现在返回真实结果：HTML 给人，JSON 给 agent（Accept: application/json 或 ?format=json）。
+ */
+async function renderSearch(url, request) {
+  const q = (url.searchParams.get('q') || '').trim();
+  const fmt = (url.searchParams.get('format') || '').toLowerCase();
+  const accept = request ? (request.headers.get('Accept') || '') : '';
+  const wantJson = fmt === 'json' || /\bapplication\/json\b/i.test(accept);
+  const jsonHeaders = {
+    'Content-Type': 'application/json; charset=utf-8',
+    'Cache-Control': 'public, max-age=300',
+    'Access-Control-Allow-Origin': '*'
+  };
+
+  if (!q) {
+    if (wantJson) {
+      return new Response(JSON.stringify({
+        query: '', count: 0, results: [],
+        usage: `${DOMAIN}/search?q=关键词&format=json`
+      }, null, 2), { headers: jsonHeaders });
+    }
+    return new Response(renderSearchHtml('', []), {
+      headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' }
+    });
+  }
+
+  const articles = await getArticles();
+  const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+
+  const scored = [];
+  for (const a of articles) {
+    const title = (a.title || '').toLowerCase();
+    const desc = (a.description || '').toLowerCase();
+    const tags = (Array.isArray(a.tags) ? a.tags.join(' ') : '').toLowerCase();
+    let score = 0;
+    for (const t of terms) {
+      if (title.includes(t)) score += 10;   // 标题命中权重最高
+      if (tags.includes(t)) score += 5;
+      if (desc.includes(t)) score += 3;
+    }
+    if (score > 0) scored.push({ score, a });
+  }
+  // 同分时按日期降序，保证结果稳定
+  scored.sort((x, y) => y.score - x.score || (y.a.date || '').localeCompare(x.a.date || ''));
+
+  const results = scored.slice(0, 30).map(x => ({
+    title: x.a.title,
+    url: `${DOMAIN}/articles/${x.a.slug}`,
+    markdown: `${DOMAIN}/articles/${x.a.slug}.md`,
+    description: x.a.description,
+    date: x.a.date,
+    tags: x.a.tags
+  }));
+
+  if (wantJson) {
+    return new Response(JSON.stringify({ query: q, count: results.length, results }, null, 2), { headers: jsonHeaders });
+  }
+  return new Response(renderSearchHtml(q, results), {
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' }
+  });
+}
+
+function renderSearchHtml(q, results) {
+  const items = results.map(r =>
+    `<li><a href="${r.url}">${escHtml(r.title)}</a><span class="date">${r.date || ''}</span><p class="desc">${escHtml(r.description || '')}</p></li>`
+  ).join('');
+  const body = q
+    ? (results.length
+        ? `<p style="color:#555;margin-bottom:20px;">找到 ${results.length} 篇相关文章</p><ul>${items}</ul>`
+        : `<p style="color:#555;margin-bottom:20px;">没有匹配「${escHtml(q)}」的文章。可浏览 <a href="/tags">标签索引</a> 或 <a href="/">全部文章</a>。</p>`)
+    : `<p style="color:#555;">用法：<code>/search?q=关键词</code>；机器可读格式：<code>/search?q=关键词&amp;format=json</code></p>`;
+
+  return `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,follow">
+<title>搜索${q ? '：' + escHtml(q) : ''} | chaos-for-agent</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#222;}
+  h1{font-size:1.6em;border-bottom:2px solid #eee;padding-bottom:8px;}
+  a{color:#2563eb;text-decoration:none;}a:hover{text-decoration:underline;}
+  .date{color:#999;font-size:.85em;margin-left:12px;}
+  .desc{color:#555;font-size:.9em;margin:4px 0 0 0;}
+  li{margin-bottom:16px;}
+  code{background:#f4f4f5;padding:.15em .35em;border-radius:3px;font-size:.85em;}
+</style>
+</head>
+<body>
+<h1>站内搜索</h1>
+${body}
+<footer style="margin-top:60px;padding-top:20px;border-top:1px solid #eee;color:#999;font-size:.8em;">← <a href="/">返回首页</a> · <a href="/tags">标签索引</a> · <a href="/llms.txt">llms.txt</a></footer>
+</body>
+</html>`;
+}
+
+// ========== 404 ==========
+
+/**
+ * 带导航的 404 页面。此前返回 content-type: text/plain 的裸 "Not Found"，
+ * 人和爬虫走进来都是死胡同。
+ * 关键：HTTP 状态码必须保持 404 —— 用 200 会变成"软 404"，比裸文本更糟。
+ */
+async function renderNotFound(path) {
+  let recent = '';
+  try {
+    const articles = await getArticles();
+    recent = [...articles]
+      .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+      .slice(0, 5)
+      .map(a => `<li><a href="/articles/${a.slug}">${escHtml(a.title)}</a></li>`)
+      .join('');
+  } catch (_) {}
+
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,follow">
+<title>页面不存在（404） | chaos-for-agent</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#222;}
+  h1{font-size:1.6em;border-bottom:2px solid #eee;padding-bottom:8px;}
+  a{color:#2563eb;text-decoration:none;}a:hover{text-decoration:underline;}
+  code{background:#f4f4f5;padding:.15em .35em;border-radius:3px;font-size:.85em;}
+</style>
+</head>
+<body>
+<h1>404 — 页面不存在</h1>
+<p style="color:#555;">找不到 <code>${escHtml(path)}</code>。</p>
+<p>可以试试：</p>
+<ul>
+  <li><a href="/">首页（全部文章）</a></li>
+  <li><a href="/tags">标签索引</a></li>
+  <li><a href="/about">关于作者</a></li>
+  <li>站内搜索：<code>/search?q=关键词</code></li>
+</ul>
+${recent ? `<p>最新文章：</p><ul>${recent}</ul>` : ''}
+<footer style="margin-top:60px;padding-top:20px;border-top:1px solid #eee;color:#999;font-size:.8em;">← <a href="/">返回首页</a> · <a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></footer>
+</body>
+</html>`;
+  return new Response(html, {
+    status: 404,
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' }
+  });
+}
+
 // ========== 主路由 ==========
 
 export default {
@@ -1738,17 +2093,18 @@ export default {
     if (p === '/robots.txt') return renderRobots();
     if (p === '/tags' || p === '/tags/') return renderTagIndex();
     if (p.startsWith('/tags/')) return renderTagPage(p.replace(/^\/tags\//, ''));
-    if (p.startsWith('/search')) {
-      const q = url.searchParams.get('q') || '';
-      return Response.redirect(`https://www.google.com/search?q=site%3Abi-chao.com+${encodeURIComponent(q)}`, 302);
+    if (p === '/search' || p === '/search/') {
+      return renderSearch(url, request);
     }
     if (p === '/ai-manifest.json') return proxyFile('/ai-manifest.json', 'application/json', 300);
     if (p === '/feed.xml') return proxyFile('/feed.xml', 'application/atom+xml', 300);
     if (p === '/about' || p === '/about/') return renderAbout();
     if (p === '/faq') return renderFaqPage();  // B3: FAQ 聚合页
 
-    // OG 图片
-    if (p.startsWith('/og')) {
+    // 动态 OG 生成端点（兜底用途）。
+    // 必须是精确匹配：静态分享图位于 /assets/og/，若这里用 startsWith('/og')
+    // 会把任何以 /og 开头的路径都吞掉。
+    if (p === '/og') {
       const title = url.searchParams.get('title') || 'chaos-for-agent';
       const date = url.searchParams.get('date') || '';
       return renderOgImage(title, date);
@@ -1758,10 +2114,10 @@ export default {
       return new Response('d18be845a58e082d27ee6451330313f1', { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
     }
 
-    // 文章页
+    // 文章页（renderArticle 内部完成 HTML / Markdown 内容协商）
     if (p.startsWith('/articles/')) {
-      const targetPath = p.endsWith('.md') ? p : p + '.md';
-      return renderArticle(targetPath);
+      const explicitMd = p.endsWith('.md');
+      return renderArticle(explicitMd ? p : p + '.md', request, explicitMd);
     }
 
     // 静态资源
@@ -1785,6 +2141,6 @@ export default {
       }
     } catch (_) {}
 
-    return new Response('Not Found', { status: 404 });
+    return renderNotFound(p);
   }
 };
