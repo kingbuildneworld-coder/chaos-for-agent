@@ -329,36 +329,36 @@ __SPEAKABLE_JSONLD__
   .toc-sidebar .toc{margin-bottom:0;background:transparent;border:none;}
   html[data-theme="dark"] .toc-sidebar{background:#161a23;}
   /*
-   * 宽屏布局修复（原实现会遮挡正文）
-   * ---------------------------------
-   * 原实现：.page-wrap 满宽（max-width:1180px、右侧零留白），
-   *         而 .toc-sidebar 用 position:fixed 浮在右侧。
-   * 后果：实测在 1200px 视口下，目录左边缘 x=869、正文右边缘 x=929 ——
-   *       **水平压住正文 60px、纵向压 568px**，直接妨碍阅读。
-   * 修法：改为两列网格，把目录放成**真实的一列**（position:sticky，
-   *       随页面滚动吸附），因此它在任何宽度下都不可能覆盖正文。
-   * 窄屏（<1180px）不受影响：目录仍作为正文上方的一个普通区块。
+   * 宽屏目录布局修复（原实现会遮挡正文）
+   * -----------------------------------
+   * 原实现：
+   *     .toc-sidebar{position:fixed; right:max(1rem,calc((100vw - 1000px)/2)); width:min(260px,18vw); ...}
+   *     .page-wrap{max-width:1180px; margin:0 auto; padding-left:10px;}
+   * 这个 `calc((100vw - 1000px)/2)` **假定正文列宽 1000px**，但本模板的
+   * `body{max-width:720px}` —— 正文实际只有约 662px 宽。于是目录被放到了正文之上：
+   * 实测 1200px 视口下，正文右边缘 x=929、目录左边缘 x=869 →
+   * **水平压住正文 60px、纵向压 568px**，直接妨碍阅读。
+   *
+   * 修法（两处关键）：
+   *   1. 目录改为固定在**正文列右侧的留白**里：正文居中，其右边缘在 `50% + 331px`
+   *      （662/2），目录从 `50% + 351px` 起（留 20px 间距）。
+   *   2. 只在视口**确实容得下两者**时才启用（≥1240px：331 + 20 + 240 + 余量）；
+   *      否则目录退回为正文上方的普通区块 —— 与原窄屏行为一致。
+   * 因此**任何视口宽度下都不可能遮挡正文**。
+   *
+   * 注意：**不改 body 宽度**，正文阅读宽度保持原样（约 662px）。
+   * （曾尝试用网格把目录做成右边一列，但那会在 720px 的 body 内把正文压到 390px，
+   *   等于用一个过窄的正文换掉重叠，得不偿失，故弃用。）
    */
-  @media(min-width:1180px){
-    .page-wrap{
-      max-width:1180px;
-      margin:0 auto;
-      padding-left:10px;
-      display:grid;
-      grid-template-columns:minmax(0,1fr) 240px;   /* 正文列 + 目录列 */
-      column-gap:2rem;
-      align-items:start;                          /* 让 sticky 有活动空间 */
-    }
-    .page-wrap > article{grid-column:1;}          /* 正文在左 */
-    .page-wrap > .toc-sidebar{grid-column:2;}     /* 目录在右 */
+  @media(min-width:1240px){
     .toc-sidebar{
-      position:sticky;
+      position:fixed;
       top:96px;
-      width:auto;
+      left:calc(50% + 351px);
+      width:240px;
       max-height:80vh;
       overflow-y:auto;
       margin:0;
-      z-index:auto;
       font-size:.85rem;
     }
   }
