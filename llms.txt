@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (93)
+## Articles (94)
 
 - [资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题](https://bi-chao.com/articles/asset-preservation-agent-finetune-vs-harness)
   - Description: 面向银行资产保全专业领域，回答两个被反复混淆的问题：本地部署的大模型还需不需要微调？有了 harness 工程是否就不必微调基座？本文以三篇 arXiv 论文为一手证据（Harness-R1 报告原始 Qwen3.5-9B 成功率 44.3%→53.6%，而在目标智能体微调之后…
@@ -23,6 +23,10 @@
   - Description: 以 6 份已归档材料为唯一来源：先忠实转述一份 X 个人技术长文中 SFT 与 RFT 之路、GRPO、ART 架构与 RULER 机制，并把'小模型微调可胜过百倍大模型'标注为作者主张而非行业定论；再把资产保全的选型问题拆成六项约束，据 QLoRA 与显存档位推出规模区间与六…
   - Date: 2026-09-27
   - Tags: 金融科技, AI治理, 大模型, 智能体, 资产保全, 不良资产, 模型微调, 参数规模选型, 强化学习, 银行AI, 信息科技风险, 模型风险管理
+- [自动化研究员跑赢了28位资深研究者——兼论其治理闭环对银行AI风险管理的可移植性](https://bi-chao.com/articles/automated-alignment-researcher-banking-governance)
+  - Description: Anthropic与UC Berkeley团队在arXiv:2608.28945中报告：Claude Opus 4.8驱动的自动化对齐研究员在10类模型行为失败上收敛出训练方法，击败28位平均从业2.5年的人类研究者，且单条方法成本约为人类1/37。本文不复述其\"AI已能自我…
+  - Date: 2026-09-27
+  - Tags: AI治理, 模型风险, 自动化研究, 对齐研究, agent安全, 评测体系, 银行业AI, 治理闭环
 - [金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序](https://bi-chao.com/articles/financial-harness-design-implementation)
   - Description: 以预印本 arXiv:2607.27853《FinanceHarness》为主锚，配合代码仓库、GitHub 元数据、FinanceGym 官方基准站、Microsoft Learn、AgentScope 技术博客、MCP 金融服务兴趣组章程与一篇技术社区二手文章共 9 份归档…
   - Date: 2026-09-27
@@ -390,7 +394,7 @@
 
 ## Topics (top 10)
 - 金融科技: 34 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 28 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 29 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 智能体: 21 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI

@@ -52,6 +52,21 @@
     <category term="模型风险管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/automated-alignment-researcher-banking-governance</id>
+    <title>自动化研究员跑赢了28位资深研究者——兼论其治理闭环对银行AI风险管理的可移植性</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/automated-alignment-researcher-banking-governance" rel="alternate" type="text/html"/>
+    <summary>Anthropic与UC Berkeley团队在arXiv:2608.28945中报告：Claude Opus 4.8驱动的自动化对齐研究员在10类模型行为失败上收敛出训练方法，击败28位平均从业2.5年的人类研究者，且单条方法成本约为人类1/37。本文不复述其\&quot;AI已能自我改进安全\&quot;的表层结论，而是抽取三件真正可移植的工程机制（提交前冻结留痕、四道量化闸门、分层事后监控），并重点剖析两条被严重低估的反直觉发现——训练目标而非数据才是杠杆（天花板从4.5%抬到18.7%），以及爬到排行榜中位数就已吃掉几乎全部泛化收益。为银行AI治理提出可移植的三条硬性要求，并逐条标注该结论不能被过度外推的边界。</summary>
+    <category term="AI治理"/>
+    <category term="模型风险"/>
+    <category term="自动化研究"/>
+    <category term="对齐研究"/>
+    <category term="agent安全"/>
+    <category term="评测体系"/>
+    <category term="银行业AI"/>
+    <category term="治理闭环"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/financial-harness-design-implementation</id>
     <title>金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序</title>
     <updated>2026-09-27T00:00:00Z</updated>
