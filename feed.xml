@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-09-26T00:00:00Z</updated>
+  <updated>2026-09-27T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,25 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/asset-preservation-agent-finetune-vs-harness</id>
+    <title>资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/asset-preservation-agent-finetune-vs-harness" rel="alternate" type="text/html"/>
+    <summary>面向银行资产保全专业领域，回答两个被反复混淆的问题：本地部署的大模型还需不需要微调？有了 harness 工程是否就不必微调基座？本文以三篇 arXiv 论文为一手证据（Harness-R1 报告原始 Qwen3.5-9B 成功率 44.3%→53.6%，而在目标智能体微调之后再叠加专用 harness 工程师，仍从 59.2% 提升到 64.2%），论证两者是叠加而非替代，并以 Harness-Zero 的 harness 蒸馏说明边界可渗透；再据两份二手解读梳理 SR 26-2 的范围与治理不对称性，最后给出资产保全四类任务的分型判据、决策次序与三条线行动清单。</summary>
+    <category term="金融科技"/>
+    <category term="AI治理"/>
+    <category term="大模型"/>
+    <category term="智能体"/>
+    <category term="风险管理"/>
+    <category term="银行AI"/>
+    <category term="资产保全"/>
+    <category term="不良资产"/>
+    <category term="模型风险管理"/>
+    <category term="信息科技风险"/>
+    <category term="金融监管"/>
+    <category term="Harness工程"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/chat2db-bank-implications</id>
     <title>Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示</title>

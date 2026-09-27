@@ -1,5 +1,27 @@
 [
   {
+    "title": "资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题",
+    "slug": "asset-preservation-agent-finetune-vs-harness",
+    "url": "/articles/asset-preservation-agent-finetune-vs-harness.md",
+    "description": "面向银行资产保全专业领域，回答两个被反复混淆的问题：本地部署的大模型还需不需要微调？有了 harness 工程是否就不必微调基座？本文以三篇 arXiv 论文为一手证据（Harness-R1 报告原始 Qwen3.5-9B 成功率 44.3%→53.6%，而在目标智能体微调之后再叠加专用 harness 工程师，仍从 59.2% 提升到 64.2%），论证两者是叠加而非替代，并以 Harness-Zero 的 harness 蒸馏说明边界可渗透；再据两份二手解读梳理 SR 26-2 的范围与治理不对称性，最后给出资产保全四类任务的分型判据、决策次序与三条线行动清单。",
+    "date": "2026-09-27",
+    "tags": [
+      "金融科技",
+      "AI治理",
+      "大模型",
+      "智能体",
+      "风险管理",
+      "银行AI",
+      "资产保全",
+      "不良资产",
+      "模型风险管理",
+      "信息科技风险",
+      "金融监管",
+      "Harness工程"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示",
     "slug": "chat2db-bank-implications",
     "url": "/articles/chat2db-bank-implications.md",
