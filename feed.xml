@@ -52,6 +52,25 @@
     <category term="模型风险管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/financial-harness-design-implementation</id>
+    <title>金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/financial-harness-design-implementation" rel="alternate" type="text/html"/>
+    <summary>以预印本 arXiv:2607.27853《FinanceHarness》为主锚，配合代码仓库、GitHub 元数据、FinanceGym 官方基准站、Microsoft Learn、AgentScope 技术博客、MCP 金融服务兴趣组章程与一篇技术社区二手文章共 9 份归档来源，拆解金融深度研究 harness 的分层栈、端到端三构件与严格时点契约；据同一开源权重基座 25.3%→32.4% 的论文自报数据论证 harness 是一阶杠杆，再用五条可迁移原则与三条最易踩的坑，推出银行资产保全版落地次序。</summary>
+    <category term="金融科技"/>
+    <category term="AI治理"/>
+    <category term="大模型"/>
+    <category term="智能体"/>
+    <category term="Harness工程"/>
+    <category term="金融深度研究"/>
+    <category term="资产保全"/>
+    <category term="不良资产"/>
+    <category term="银行AI"/>
+    <category term="信息科技风险"/>
+    <category term="模型风险管理"/>
+    <category term="可审计性"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/chat2db-bank-implications</id>
     <title>Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示</title>
     <updated>2026-09-26T00:00:00Z</updated>

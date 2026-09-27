@@ -44,6 +44,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序",
+    "slug": "financial-harness-design-implementation",
+    "url": "/articles/financial-harness-design-implementation.md",
+    "description": "以预印本 arXiv:2607.27853《FinanceHarness》为主锚，配合代码仓库、GitHub 元数据、FinanceGym 官方基准站、Microsoft Learn、AgentScope 技术博客、MCP 金融服务兴趣组章程与一篇技术社区二手文章共 9 份归档来源，拆解金融深度研究 harness 的分层栈、端到端三构件与严格时点契约；据同一开源权重基座 25.3%→32.4% 的论文自报数据论证 harness 是一阶杠杆，再用五条可迁移原则与三条最易踩的坑，推出银行资产保全版落地次序。",
+    "date": "2026-09-27",
+    "tags": [
+      "金融科技",
+      "AI治理",
+      "大模型",
+      "智能体",
+      "Harness工程",
+      "金融深度研究",
+      "资产保全",
+      "不良资产",
+      "银行AI",
+      "信息科技风险",
+      "模型风险管理",
+      "可审计性"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示",
     "slug": "chat2db-bank-implications",
     "url": "/articles/chat2db-bank-implications.md",
