@@ -71,6 +71,25 @@
     <category term="可审计性"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/mckinsey-2026-global-banking-report-analysis</id>
+    <title>麦肯锡2026全球银行业报告：技术宽限期已经消失——从资产保全视角看&apos;精准提速&apos;</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/mckinsey-2026-global-banking-report-analysis" rel="alternate" type="text/html"/>
+    <summary>麦肯锡《2026全球银行业年度报告：精准提速》预览版于2026年9月发布，完整版将于10月推出。报告核心判断是：全球银行业2025年净利润达1.3万亿美元、增长7%，但AI冲击下传统银行的技术宽限期已经消失。本文从中国农业发展银行资产保全视角出发，分析报告核心数据与战略框架，区分麦肯锡观点与本文推论，探讨表内资产占比下降、客户主导权拐点、AI冲击对信贷资产质量与负债端稳定性的影响，并给出风险管理、信息科技、业务条线三条行动清单。</summary>
+    <category term="金融科技"/>
+    <category term="麦肯锡"/>
+    <category term="全球银行业"/>
+    <category term="精准提速"/>
+    <category term="人工智能"/>
+    <category term="风险管理"/>
+    <category term="银行AI"/>
+    <category term="资产保全"/>
+    <category term="不良资产"/>
+    <category term="政策性银行"/>
+    <category term="资产负债管理"/>
+    <category term="多速银行"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/chat2db-bank-implications</id>
     <title>Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示</title>
     <updated>2026-09-26T00:00:00Z</updated>
