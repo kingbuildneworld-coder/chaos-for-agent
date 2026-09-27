@@ -670,8 +670,15 @@ function md2html(md) {
   md = md.replace(/`([^`]+)`/g, '<code>$1</code>');
 
   // 表格
+  //
+  // 重要：这里的尾随空白只能用 `[ \t]*`，**不能用 `\s*`**。
+  // 原实现写作 `(?:^\|.+\|\s*\n)+`，而 `\s` 包含换行 —— 于是匹配会把表格后的
+  // **空行也一并吃掉**，替换出的占位符 `\x00TBn\x00` 就与**下一段文字并到同一行**；
+  // 而下方段落循环遇到占位符即 `continue`，把同一行后面的文字整段丢弃。
+  // 实测后果（修复前）：**89 篇中 58 篇、共 145 段内容被静默吞掉**，
+  // 包括紧邻表格后的正文段、小节标题（如 `### 3.6`）与引用块。
   const tables = [];
-  md = md.replace(/(?:^\|.+\|\s*\n)+/gm, (block) => {
+  md = md.replace(/(?:^\|.+\|[ \t]*\n)+/gm, (block) => {
     const lines = block.trim().split('\n');
     if (lines.length < 2) return block;
     const idx = tables.length;
@@ -723,12 +730,22 @@ function md2html(md) {
   const result = [];
   for (const line of lines) {
     if (line.startsWith('\x00CB') || line.startsWith('\x00TB') || line.startsWith('\x00RB')) {
-      const match = line.match(/\x00(CB|TB|RB)(\d+)\x00/);
+      // 防御性处理：占位符**后面可能还跟着同一行的文字**。
+      // 表格正则修复后本不该再出现（见上方表格处注释），但代码块/原始 HTML 占位符
+      // 若将来出现同类合并，这里必须保住后面的文字 —— 原实现只输出占位符内容并
+      // `continue`，会把同一行后面的文字整段丢弃（曾导致 58 篇、145 段内容消失）。
+      const match = line.match(/^\x00(CB|TB|RB)(\d+)\x00([\s\S]*)$/);
       if (match) {
         const kind = match[1];
         result.push(kind === 'CB' ? codeBlocks[parseInt(match[2])]
           : kind === 'TB' ? tables[parseInt(match[2])]
           : rawBlocks[parseInt(match[2])]);
+        const rest = (match[3] || '').trim();
+        if (rest) {
+          result.push(/^<(h[1-4]|ul|ol|li|blockquote|pre|code|table|thead|tbody|tr|th|td|hr|script|\/?(ul|ol|table|thead|tbody|blockquote|script))/.test(rest)
+            ? rest
+            : `<p>${rest}</p>`);
+        }
       }
       continue;
     }
