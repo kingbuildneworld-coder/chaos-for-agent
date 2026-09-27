@@ -22,6 +22,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "资产保全智能体该用多大参数的基座？——把一条社交媒体技术帖，翻译成一套可执行的微调选型规则",
+    "slug": "asset-preservation-model-scale-selection-finetune",
+    "url": "/articles/asset-preservation-model-scale-selection-finetune.md",
+    "description": "以 6 份已归档材料为唯一来源：先忠实转述一份 X 个人技术长文中 SFT 与 RFT 之路、GRPO、ART 架构与 RULER 机制，并把'小模型微调可胜过百倍大模型'标注为作者主张而非行业定论；再把资产保全的选型问题拆成六项约束，据 QLoRA 与显存档位推出规模区间与六步决策规则，并反对一上来买大卡、按榜单选规模、从全参微调起步。",
+    "date": "2026-09-27",
+    "tags": [
+      "金融科技",
+      "AI治理",
+      "大模型",
+      "智能体",
+      "资产保全",
+      "不良资产",
+      "模型微调",
+      "参数规模选型",
+      "强化学习",
+      "银行AI",
+      "信息科技风险",
+      "模型风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示",
     "slug": "chat2db-bank-implications",
     "url": "/articles/chat2db-bank-implications.md",

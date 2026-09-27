@@ -13,12 +13,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (90)
+## Articles (91)
 
 - [资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题](https://bi-chao.com/articles/asset-preservation-agent-finetune-vs-harness)
   - Description: 面向银行资产保全专业领域，回答两个被反复混淆的问题：本地部署的大模型还需不需要微调？有了 harness 工程是否就不必微调基座？本文以三篇 arXiv 论文为一手证据（Harness-R1 报告原始 Qwen3.5-9B 成功率 44.3%→53.6%，而在目标智能体微调之后…
   - Date: 2026-09-27
   - Tags: 金融科技, AI治理, 大模型, 智能体, 风险管理, 银行AI, 资产保全, 不良资产, 模型风险管理, 信息科技风险, 金融监管, Harness工程
+- [资产保全智能体该用多大参数的基座？——把一条社交媒体技术帖，翻译成一套可执行的微调选型规则](https://bi-chao.com/articles/asset-preservation-model-scale-selection-finetune)
+  - Description: 以 6 份已归档材料为唯一来源：先忠实转述一份 X 个人技术长文中 SFT 与 RFT 之路、GRPO、ART 架构与 RULER 机制，并把'小模型微调可胜过百倍大模型'标注为作者主张而非行业定论；再把资产保全的选型问题拆成六项约束，据 QLoRA 与显存档位推出规模区间与六…
+  - Date: 2026-09-27
+  - Tags: 金融科技, AI治理, 大模型, 智能体, 资产保全, 不良资产, 模型微调, 参数规模选型, 强化学习, 银行AI, 信息科技风险, 模型风险管理
 - [Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示](https://bi-chao.com/articles/chat2db-bank-implications)
   - Description: 以 Chat2DB 的 GitHub 元数据快照、README、LICENSE 与 SECURITY.md 四份原文为唯一事实来源，逐条解读这份 5.3.0 起改用修改版 Apache 2.0 的本地优先 AI 数据库客户端：它为何不是 OSI 意义上的开源许可、GitHub …
   - Date: 2026-09-26
@@ -377,16 +381,16 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 31 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 26 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 大模型: 26 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 19 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 金融科技: 32 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 27 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 大模型: 27 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 智能体: 20 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 风险管理: 17 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 16 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 银行AI: 17 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 人工智能: 14 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
+- 模型风险管理: 11 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 银行业: 11 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 模型风险管理: 10 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`

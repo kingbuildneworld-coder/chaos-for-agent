@@ -33,6 +33,25 @@
     <category term="Harness工程"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/asset-preservation-model-scale-selection-finetune</id>
+    <title>资产保全智能体该用多大参数的基座？——把一条社交媒体技术帖，翻译成一套可执行的微调选型规则</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/asset-preservation-model-scale-selection-finetune" rel="alternate" type="text/html"/>
+    <summary>以 6 份已归档材料为唯一来源：先忠实转述一份 X 个人技术长文中 SFT 与 RFT 之路、GRPO、ART 架构与 RULER 机制，并把&apos;小模型微调可胜过百倍大模型&apos;标注为作者主张而非行业定论；再把资产保全的选型问题拆成六项约束，据 QLoRA 与显存档位推出规模区间与六步决策规则，并反对一上来买大卡、按榜单选规模、从全参微调起步。</summary>
+    <category term="金融科技"/>
+    <category term="AI治理"/>
+    <category term="大模型"/>
+    <category term="智能体"/>
+    <category term="资产保全"/>
+    <category term="不良资产"/>
+    <category term="模型微调"/>
+    <category term="参数规模选型"/>
+    <category term="强化学习"/>
+    <category term="银行AI"/>
+    <category term="信息科技风险"/>
+    <category term="模型风险管理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/chat2db-bank-implications</id>
     <title>Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示</title>
     <updated>2026-09-26T00:00:00Z</updated>
