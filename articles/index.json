@@ -1,5 +1,26 @@
 [
   {
+    "title": "Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示",
+    "slug": "chat2db-bank-implications",
+    "url": "/articles/chat2db-bank-implications.md",
+    "description": "以 Chat2DB 的 GitHub 元数据快照、README、LICENSE 与 SECURITY.md 四份原文为唯一事实来源，逐条解读这份 5.3.0 起改用修改版 Apache 2.0 的本地优先 AI 数据库客户端：它为何不是 OSI 意义上的开源许可、GitHub 为何标注 NOASSERTION、行内内部使用与对外提供的分界在哪里、信任边界为何只到 127.0.0.1，并据此给出银行侧的许可证与安全模型两项尽调清单、七条风控启示，以及法务合规、信息科技、数据风控三条线的 90 天行动清单。",
+    "date": "2026-09-26",
+    "tags": [
+      "金融科技",
+      "AI治理",
+      "大模型",
+      "智能体",
+      "风险管理",
+      "银行AI",
+      "开源合规",
+      "信息科技风险",
+      "数据治理",
+      "数据库安全",
+      "供应商风险"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Company Brain 的能力构成与边界：兼论台新脑落地样本对银行智能风控的六项启示与五条不可自动化红线",
     "slug": "company-brain-bank-risk-control",
     "url": "/articles/company-brain-bank-risk-control.md",
