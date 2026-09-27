@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (94)
+## Articles (95)
 
 - [资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题](https://bi-chao.com/articles/asset-preservation-agent-finetune-vs-harness)
   - Description: 面向银行资产保全专业领域，回答两个被反复混淆的问题：本地部署的大模型还需不需要微调？有了 harness 工程是否就不必微调基座？本文以三篇 arXiv 论文为一手证据（Harness-R1 报告原始 Qwen3.5-9B 成功率 44.3%→53.6%，而在目标智能体微调之后…
@@ -35,6 +35,10 @@
   - Description: 麦肯锡《2026全球银行业年度报告：精准提速》预览版于2026年9月发布，完整版将于10月推出。报告核心判断是：全球银行业2025年净利润达1.3万亿美元、增长7%，但AI冲击下传统银行的技术宽限期已经消失。本文从资产保全视角出发，分析报告核心数据与战略框架，区分麦肯锡观点与本…
   - Date: 2026-09-27
   - Tags: 金融科技, 麦肯锡, 全球银行业, 精准提速, 人工智能, 风险管理, 银行AI, 资产保全, 不良资产, 资产负债管理, 多速银行
+- [自动化会让智能体越调越差——Google RRSI 揭示的 harness 递归进化陷阱，与给银行的四条可落地约束](https://bi-chao.com/articles/rrsi-regularized-harness-evolution-banking)
+  - Description: Google Cloud AI Research 在 arXiv:2609.24972 中提出 RRSI，用正则化约束 agent harness 的递归自我进化。真正值得银行注意的不是它的成绩，而是一个负结果：去掉全部正则后，进化集得分升到 92.8（最高），真实场景泛化均值…
+  - Date: 2026-09-27
+  - Tags: Agent评测, AI治理, harness, 模型风险, 自动化优化, 过拟合, 银行业AI, 递归自我改进
 - [Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示](https://bi-chao.com/articles/chat2db-bank-implications)
   - Description: 以 Chat2DB 的 GitHub 元数据快照、README、LICENSE 与 SECURITY.md 四份原文为唯一事实来源，逐条解读这份 5.3.0 起改用修改版 Apache 2.0 的本地优先 AI 数据库客户端：它为何不是 OSI 意义上的开源许可、GitHub …
   - Date: 2026-09-26
@@ -394,7 +398,7 @@
 
 ## Topics (top 10)
 - 金融科技: 34 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 29 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 30 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 智能体: 21 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI

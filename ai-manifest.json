@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 94,
+    "total_articles": 95,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -146,6 +146,22 @@
         "不良资产",
         "资产负债管理",
         "多速银行"
+      ]
+    },
+    {
+      "slug": "rrsi-regularized-harness-evolution-banking",
+      "title": "自动化会让智能体越调越差——Google RRSI 揭示的 harness 递归进化陷阱，与给银行的四条可落地约束",
+      "date": "2026-09-27",
+      "description": "Google Cloud AI Research 在 arXiv:2609.24972 中提出 RRSI，用正则化约束 agent harness 的递归自我进化。真正值得银行注意的不是它的成绩，而是一个负结果：去掉全部正则后，进化集得分升到 92.8（最高），真实场景泛化均值却只有 40.3，几乎等于未进化的基线 39.7——而 RRSI 是 90.5 与 43.6。由于银行只能在自有评估集上度量智能体，这类退化默认不可见。本文拆解七条正则、给出可移植的噪声地板与成本规则 ΔC≤β₀+β₁ΔS，并明确指出真正的瓶颈是金融核心业务缺少自动验证器。",
+      "tags": [
+        "Agent评测",
+        "AI治理",
+        "harness",
+        "模型风险",
+        "自动化优化",
+        "过拟合",
+        "银行业AI",
+        "递归自我改进"
       ]
     },
     {
@@ -1612,5 +1628,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-27",
   "version": "1.1",
-  "total_articles": 94
+  "total_articles": 95
 }
