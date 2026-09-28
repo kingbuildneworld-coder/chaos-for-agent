@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (95)
+## Articles (96)
 
+- [智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构](https://bi-chao.com/articles/agent-internet-payment-infrastructure)
+  - Description: 智能体支付已从概念走到生产，但基础设施仍是拼凑的。本文基于 Visa 2026年4月18日核心规则 §4.1.24 原文、EMVCo 官方新闻、英国财政部 2026年7月14日计划、美联储 SR 26-2，以及 x402 链上数据，梳理授权/身份/结算/商务/争议五层结构，指出…
+  - Date: 2026-09-27
+  - Tags: 支付基础设施, 智能体, agentic commerce, 支付协议, 监管合规, 银行数字化, 数字货币, 风险管理
 - [资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题](https://bi-chao.com/articles/asset-preservation-agent-finetune-vs-harness)
   - Description: 面向银行资产保全专业领域，回答两个被反复混淆的问题：本地部署的大模型还需不需要微调？有了 harness 工程是否就不必微调基座？本文以三篇 arXiv 论文为一手证据（Harness-R1 报告原始 Qwen3.5-9B 成功率 44.3%→53.6%，而在目标智能体微调之后…
   - Date: 2026-09-27
@@ -400,9 +404,9 @@
 - 金融科技: 34 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 30 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 21 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 22 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 风险管理: 19 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 银行AI: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 风险管理: 18 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 人工智能: 15 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86

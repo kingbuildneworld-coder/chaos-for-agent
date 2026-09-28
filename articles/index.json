@@ -1,5 +1,23 @@
 [
   {
+    "title": "智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构",
+    "slug": "agent-internet-payment-infrastructure",
+    "url": "/articles/agent-internet-payment-infrastructure.md",
+    "description": "智能体支付已从概念走到生产，但基础设施仍是拼凑的。本文基于 Visa 2026年4月18日核心规则 §4.1.24 原文、EMVCo 官方新闻、英国财政部 2026年7月14日计划、美联储 SR 26-2，以及 x402 链上数据，梳理授权/身份/结算/商务/争议五层结构，指出最不成熟的是争议层，并给出银行可落地的四条要求。核心判断：全部协议都在解付款，但没有一份回答密钥放哪、限额如何事前执行、争议时谁举证。",
+    "date": "2026-09-27",
+    "tags": [
+      "支付基础设施",
+      "智能体",
+      "agentic commerce",
+      "支付协议",
+      "监管合规",
+      "银行数字化",
+      "数字货币",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题",
     "slug": "asset-preservation-agent-finetune-vs-harness",
     "url": "/articles/asset-preservation-agent-finetune-vs-harness.md",
