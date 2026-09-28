@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 97,
+    "total_articles": 98,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -123,6 +123,22 @@
         "评测体系",
         "银行业AI",
         "治理闭环"
+      ]
+    },
+    {
+      "slug": "b2b-agentic-procurement-verification",
+      "title": "别急着让智能体替你下单——B2B 智能体采购的验证机制、职责分离重构与三条冷启动建议",
+      "date": "2026-09-27",
+      "description": "Gartner 预测 2028 年 90% 的 B2B 采购将由 AI 智能体中介、逾 15 万亿美元，但本文基于一手核实发现：该预测与其自己「40% 智能体项目将在 2027 年底前被取消」的预测分属两份不同文件，而唯一在运行的验证机制 PunchOut 恰恰是唯一保留人在环的环节。Deloitte 数据显示买方已 40% 采用而供应商仅 24%，形成采纳不对称。本文梳理 B2B 独有的三道验证机制（确定性、职责分离、对手方信任）、解释智能体如何改变采购舞弊模型，并给出银行可落地的三条冷启动建议。",
+      "tags": [
+        "B2B",
+        "智能体采购",
+        "内控",
+        "职责分离",
+        "采购舞弊",
+        "供应商管理",
+        "SOX合规",
+        "银行运营"
       ]
     },
     {
@@ -1664,5 +1680,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-27",
   "version": "1.1",
-  "total_articles": 97
+  "total_articles": 98
 }

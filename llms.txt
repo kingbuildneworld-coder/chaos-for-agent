@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (97)
+## Articles (98)
 
 - [智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构](https://bi-chao.com/articles/agent-internet-payment-infrastructure)
   - Description: 智能体支付已从概念走到生产，但基础设施仍是拼凑的。本文基于 Visa 2026年4月18日核心规则 §4.1.24 原文、EMVCo 官方新闻、英国财政部 2026年7月14日计划、美联储 SR 26-2，以及 x402 链上数据，梳理授权/身份/结算/商务/争议五层结构，指出…
@@ -31,6 +31,10 @@
   - Description: Anthropic与UC Berkeley团队在arXiv:2608.28945中报告：Claude Opus 4.8驱动的自动化对齐研究员在10类模型行为失败上收敛出训练方法，击败28位平均从业2.5年的人类研究者，且单条方法成本约为人类1/37。本文不复述其\"AI已能自我…
   - Date: 2026-09-27
   - Tags: AI治理, 模型风险, 自动化研究, 对齐研究, agent安全, 评测体系, 银行业AI, 治理闭环
+- [别急着让智能体替你下单——B2B 智能体采购的验证机制、职责分离重构与三条冷启动建议](https://bi-chao.com/articles/b2b-agentic-procurement-verification)
+  - Description: Gartner 预测 2028 年 90% 的 B2B 采购将由 AI 智能体中介、逾 15 万亿美元，但本文基于一手核实发现：该预测与其自己「40% 智能体项目将在 2027 年底前被取消」的预测分属两份不同文件，而唯一在运行的验证机制 PunchOut 恰恰是唯一保留人在环…
+  - Date: 2026-09-27
+  - Tags: B2B, 智能体采购, 内控, 职责分离, 采购舞弊, 供应商管理, SOX合规, 银行运营
 - [金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序](https://bi-chao.com/articles/financial-harness-design-implementation)
   - Description: 以预印本 arXiv:2607.27853《FinanceHarness》为主锚，配合代码仓库、GitHub 元数据、FinanceGym 官方基准站、Microsoft Learn、AgentScope 技术博客、MCP 金融服务兴趣组章程与一篇技术社区二手文章共 9 份归档…
   - Date: 2026-09-27

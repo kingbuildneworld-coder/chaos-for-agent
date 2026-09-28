@@ -82,6 +82,21 @@
     <category term="治理闭环"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/b2b-agentic-procurement-verification</id>
+    <title>别急着让智能体替你下单——B2B 智能体采购的验证机制、职责分离重构与三条冷启动建议</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/b2b-agentic-procurement-verification" rel="alternate" type="text/html"/>
+    <summary>Gartner 预测 2028 年 90% 的 B2B 采购将由 AI 智能体中介、逾 15 万亿美元，但本文基于一手核实发现：该预测与其自己「40% 智能体项目将在 2027 年底前被取消」的预测分属两份不同文件，而唯一在运行的验证机制 PunchOut 恰恰是唯一保留人在环的环节。Deloitte 数据显示买方已 40% 采用而供应商仅 24%，形成采纳不对称。本文梳理 B2B 独有的三道验证机制（确定性、职责分离、对手方信任）、解释智能体如何改变采购舞弊模型，并给出银行可落地的三条冷启动建议。</summary>
+    <category term="B2B"/>
+    <category term="智能体采购"/>
+    <category term="内控"/>
+    <category term="职责分离"/>
+    <category term="采购舞弊"/>
+    <category term="供应商管理"/>
+    <category term="SOX合规"/>
+    <category term="银行运营"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/financial-harness-design-implementation</id>
     <title>金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序</title>
     <updated>2026-09-27T00:00:00Z</updated>
