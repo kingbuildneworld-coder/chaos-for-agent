@@ -119,6 +119,25 @@
     <category term="多速银行"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/openai-research-acceleration-banking-impact</id>
+    <title>当AI开始研发AI：OpenAI&apos;研究加速&apos;内部数据解读与银行业影响前瞻</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/openai-research-acceleration-banking-impact" rel="alternate" type="text/html"/>
+    <summary>OpenAI于2026年9月6日发布内部研究报告《Research acceleration: The view inside OpenAI》，首次公开其研究部门内部Agent使用数据：每1个人类工作日对应约3.1个Agent工作日，中位数研究员每日Agent推理资源折算超600美元。本文解读这些数字的含义，分析&apos;自动化研究实习生&apos;的能力边界、安全约束进入研发节奏、RSI概念，并推演这一趋势范式对银行业IT、风险管理、人才结构、安全治理与组织架构的影响。</summary>
+    <category term="OpenAI"/>
+    <category term="研究加速"/>
+    <category term="人工智能"/>
+    <category term="智能体"/>
+    <category term="银行业"/>
+    <category term="金融科技"/>
+    <category term="风险管理"/>
+    <category term="Recursive Self-Improvement"/>
+    <category term="RSI"/>
+    <category term="银行AI"/>
+    <category term="人才战略"/>
+    <category term="科技治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/rrsi-regularized-harness-evolution-banking</id>
     <title>自动化会让智能体越调越差——Google RRSI 揭示的 harness 递归进化陷阱，与给银行的四条可落地约束</title>
     <updated>2026-09-27T00:00:00Z</updated>

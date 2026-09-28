@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (96)
+## Articles (97)
 
 - [智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构](https://bi-chao.com/articles/agent-internet-payment-infrastructure)
   - Description: 智能体支付已从概念走到生产，但基础设施仍是拼凑的。本文基于 Visa 2026年4月18日核心规则 §4.1.24 原文、EMVCo 官方新闻、英国财政部 2026年7月14日计划、美联储 SR 26-2，以及 x402 链上数据，梳理授权/身份/结算/商务/争议五层结构，指出…
@@ -39,6 +39,10 @@
   - Description: 麦肯锡《2026全球银行业年度报告：精准提速》预览版于2026年9月发布，完整版将于10月推出。报告核心判断是：全球银行业2025年净利润达1.3万亿美元、增长7%，但AI冲击下传统银行的技术宽限期已经消失。本文从资产保全视角出发，分析报告核心数据与战略框架，区分麦肯锡观点与本…
   - Date: 2026-09-27
   - Tags: 金融科技, 麦肯锡, 全球银行业, 精准提速, 人工智能, 风险管理, 银行AI, 资产保全, 不良资产, 资产负债管理, 多速银行
+- [当AI开始研发AI：OpenAI'研究加速'内部数据解读与银行业影响前瞻](https://bi-chao.com/articles/openai-research-acceleration-banking-impact)
+  - Description: OpenAI于2026年9月6日发布内部研究报告《Research acceleration: The view inside OpenAI》，首次公开其研究部门内部Agent使用数据：每1个人类工作日对应约3.1个Agent工作日，中位数研究员每日Agent推理资源折算超60…
+  - Date: 2026-09-27
+  - Tags: OpenAI, 研究加速, 人工智能, 智能体, 银行业, 金融科技, 风险管理, Recursive Self-Improvement, RSI, 银行AI, 人才战略, 科技治理
 - [自动化会让智能体越调越差——Google RRSI 揭示的 harness 递归进化陷阱，与给银行的四条可落地约束](https://bi-chao.com/articles/rrsi-regularized-harness-evolution-banking)
   - Description: Google Cloud AI Research 在 arXiv:2609.24972 中提出 RRSI，用正则化约束 agent harness 的递归自我进化。真正值得银行注意的不是它的成绩，而是一个负结果：去掉全部正则后，进化集得分升到 92.8（最高），真实场景泛化均值…
   - Date: 2026-09-27
@@ -401,16 +405,16 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 34 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 35 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 30 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 22 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 风险管理: 19 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 人工智能: 15 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
+- 智能体: 23 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 风险管理: 20 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 银行AI: 20 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行业: 11 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
+- 银行业: 12 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`

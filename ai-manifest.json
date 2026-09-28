@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 96,
+    "total_articles": 97,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -162,6 +162,26 @@
         "不良资产",
         "资产负债管理",
         "多速银行"
+      ]
+    },
+    {
+      "slug": "openai-research-acceleration-banking-impact",
+      "title": "当AI开始研发AI：OpenAI'研究加速'内部数据解读与银行业影响前瞻",
+      "date": "2026-09-27",
+      "description": "OpenAI于2026年9月6日发布内部研究报告《Research acceleration: The view inside OpenAI》，首次公开其研究部门内部Agent使用数据：每1个人类工作日对应约3.1个Agent工作日，中位数研究员每日Agent推理资源折算超600美元。本文解读这些数字的含义，分析'自动化研究实习生'的能力边界、安全约束进入研发节奏、RSI概念，并推演这一趋势范式对银行业IT、风险管理、人才结构、安全治理与组织架构的影响。",
+      "tags": [
+        "OpenAI",
+        "研究加速",
+        "人工智能",
+        "智能体",
+        "银行业",
+        "金融科技",
+        "风险管理",
+        "Recursive Self-Improvement",
+        "RSI",
+        "银行AI",
+        "人才战略",
+        "科技治理"
       ]
     },
     {
@@ -1644,5 +1664,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-27",
   "version": "1.1",
-  "total_articles": 96
+  "total_articles": 97
 }
