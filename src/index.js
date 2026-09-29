@@ -920,12 +920,18 @@ function getRelated(articles, currentSlug, currentTags) {
  */
 function detectFAQ(body) {
   const lines = body.split('\n');
-  const qRe = /^(?:>\s*)?\*{0,2}Q\s*\d{0,2}[：:]\*{0,2}\s*(.+)/i;
+  // 提问行容忍 6 种站内写法：`Q:` / `**Q1：**` / `### Q:` / `**问一：**` / `> Q:`
+  // 关键是**允许可选的引用符与标题前缀**及**中英文序号** —— 此前只容忍加粗与
+  // 半角数字，导致 `### Q:`（实测 10 篇）、`**问一：**`（1 篇）、`> Q:` 完全检不出。
+  const qRe = /^\s*(?:>\s*)?(?:#{1,6}\s*)?(?:\*+|_+)?\s*(?:Q|问)\s*(?:\d{1,2}|[一二三四五六七八九十]{1,3})?\s*[：:]\s*(?:\*+|_+)?\s*(.+)/i;
+  // 用于识别「标题形态的提问行」，使它不被误判为章节边界（见下方边界判定）
+  const qLineRe = /^\s*(?:>\s*)?(?:#{1,6}\s*)?\**\s*(?:Q|问)\s*(?:\d{1,2}|[一二三四五六七八九十]{1,3})?\s*[：:]/i;
   // 标题只需**包含**关键词：站内实际存在 `## 四、常见问题（FAQ）` 这类带序号的
   // 写法。若要求标题以关键词开头就会漏检 → start=-1 → 退化为全篇扫描 →
   // 末条答案吞掉文章自带的 JSON-LD <script> 块，而答案里的字面量 </script>
   // 会提前闭合 script 标签，产出**截断的无效 JSON-LD**（实测 8 篇）。
-  const headRe = /^#{2,3}\s*.*(?:常见问题|FAQ)/i;
+  // 「常见问」而非「常见问题」：同时覆盖 常见问题 / 常见问答 / 常见疑问。
+  const headRe = /^#{2,4}\s*.*(?:常见问|FAQ|问答)/i;
   const stopRe = /^(?:-{3,}\s*$|<script\b|\*+\s*作者)/i;
   // 无论是否找到标题，<script> 与署名行都是硬边界 —— 绝不能让它们进入答案
   const hardStopRe = /^(?:<script\b|\*+\s*作者)/i;
@@ -944,11 +950,15 @@ function detectFAQ(body) {
     if (stopRe.test(t)) { end = i; break; }
     // 仅在已定位标题时，下一个 `## ` 小节才是 FAQ 区块边界。
     // 无标题时不能按小节切，否则正文第一个小节就会把扫描截断、一篇都检不出。
-    if (hasHead && /^#{2,3}\s+\S/.test(t)) { end = i; break; }
+    // **但 H3 形态的提问行（`### Q: x`）属于区块内部**，不能当边界 ——
+    // 否则第一个 `### Q:` 就把区块截断，FAQ 恒为空（实测 10 篇因此静默丢失）。
+    if (hasHead && /^#{2,3}\s+\S/.test(t) && !qLineRe.test(t)) { end = i; break; }
   }
-  // 无标题路径额外收紧：至少要在 <script> / 署名处停下
+  // 无标题路径额外收紧：至少要在 <script> / 署名处停下。
+  // 取 min 而非直接覆盖 —— 否则会丢掉上面已找到的 `---` 边界，
+  // 使末条答案吞进分隔线与署名行（单元测试 V7 曾实测到该污染）。
   if (!hasHead) {
-    for (let i = from; i < lines.length; i++) {
+    for (let i = from; i < end; i++) {
       if (hardStopRe.test(lines[i].trim())) { end = i; break; }
     }
   }
@@ -986,9 +996,10 @@ function detectFAQ(body) {
 
   if (blocks.length < 2) return null;
 
-  // 去掉答案行首的 `A：` / `A:`，否则渲染出来是「A: 答案」这种冗余形态
+  // 去掉答案行首的 `A：` / `A:` / `> A:`，否则渲染出来是「A: 答案」这种冗余形态。
+  // 容忍引用符：blockquote 写法（`> A: …`）否则会整体带进答案里。
   for (const b of blocks) {
-    b.answer = b.answer.replace(/^\s*A[：:]\s*/, '');
+    b.answer = b.answer.replace(/^\s*(?:>\s*)?(?:\*+|_+)?\s*A\s*[：:]\s*/, '');
     // 兜底：答案里绝不能出现 <script>。FAQPage 的 JSON-LD 是字符串拼接进
     // <script> 标签的，字面量 </script> 会提前闭合标签、产出无效结构化数据。
     // 边界判定本已排除此情况，这里是最后一道防线。
