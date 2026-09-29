@@ -163,6 +163,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "当个人AI助手开始\"办事\"：Muse、TodayAI对金融消费、投资与银行App前门的冲击",
+    "slug": "personal-ai-assistant-banking-impact",
+    "url": "/articles/personal-ai-assistant-banking-impact.md",
+    "description": "Meta的Muse与齐俊元的Today AI标志着AI助手从\"回答问题\"走向\"替你办事\"、再走向\"主动替你盯着\"。本文基于6份归档来源（科技媒体报道、企业新闻稿、行业分析、权威媒体），分析统一化个人AI助手对个人金融消费决策、支付行为、存款理财、投资决策与银行App\"前门\"的影响，区分来源观点与本文推论，并从中国农业发展银行资产保全视角给出行动清单。",
+    "date": "2026-09-27",
+    "tags": [
+      "个人AI助手",
+      "Muse",
+      "Today AI",
+      "金融科技",
+      "银行AI",
+      "去中介化",
+      "风险管理",
+      "资产保全",
+      "政策性银行",
+      "智能体",
+      "支付生态",
+      "数据主权"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "自动化会让智能体越调越差——Google RRSI 揭示的 harness 递归进化陷阱，与给银行的四条可落地约束",
     "slug": "rrsi-regularized-harness-evolution-banking",
     "url": "/articles/rrsi-regularized-harness-evolution-banking.md",
