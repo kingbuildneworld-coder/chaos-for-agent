@@ -75,6 +75,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "1178人联名'踩刹车'：当AI开始监控AI，银行风险管理该做什么",
+    "slug": "ai-monitoring-ai-banking-implementation",
+    "url": "/articles/ai-monitoring-ai-banking-implementation.md",
+    "description": "OpenAI、Anthropic、Google DeepMind和Meta的1178名AI从业者联名签署'Pacing the Frontier'公开信，呼吁为自动化AI开发设定节奏。本文基于8份归档来源（权威媒体、政府文件、行业分析），分析'AI监控AI'治理趋势对银行风险管理、资产保全的落地启示，区分来源观点与本文推论，给出风险管理、信息科技、合规三条行动清单。",
+    "date": "2026-09-27",
+    "tags": [
+      "金融科技",
+      "AI监管",
+      "风险管理",
+      "银行AI",
+      "kill switch",
+      "资产保全",
+      "FINRA",
+      "独立验证组织",
+      "AI治理",
+      "智能体",
+      "合规",
+      "贷后管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题",
     "slug": "asset-preservation-agent-finetune-vs-harness",
     "url": "/articles/asset-preservation-agent-finetune-vs-harness.md",

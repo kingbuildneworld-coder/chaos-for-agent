@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-09-29",
-  "scanned_articles": 103,
-  "articles_with_faq": 69,
-  "total_questions": 299,
+  "scanned_articles": 104,
+  "articles_with_faq": 70,
+  "total_questions": 304,
   "items": [
     {
       "slug": "asset-preservation-fde-capability-challenges",
@@ -130,6 +130,34 @@
         {
           "question": "这篇文章的结论能外推到 B2B 智能体采购吗？",
           "answer": "**不能平移。** 本文证据主要来自零售与 API 微支付。而 Gartner 预测规模最大的恰恰是 B2B（2028 年 15 万亿美元、90% 采购被中介），但 B2B 的验证机制、责任分配与合规要求完全不同——尤其涉及采购合规、发票处理与供应商准入，这些在零售场景中不构成问题。规模预测那一节我引用了 B2B 数据，但那是用来说明\"基础设施先到位、价值后兑现\"这个时间差，**不是用来支撑具体做法的。**"
+        }
+      ]
+    },
+    {
+      "slug": "ai-monitoring-ai-banking-implementation",
+      "title": "1178人联名'踩刹车'：当AI开始监控AI，银行风险管理该做什么",
+      "url": "https://bi-chao.com/articles/ai-monitoring-ai-banking-implementation",
+      "date": "2026-09-27",
+      "faqs": [
+        {
+          "question": "\"Pacing the Frontier\"公开信是什么性质？可靠吗？",
+          "answer": "A1：公开信由1178名AI从业者签署（湖北日报、IT168报道），涵盖OpenAI、Anthropic、Google DeepMind、Meta等竞争对手。但**公开信本身不是监管文件，不具有法律约束力**，其价值在于凝聚行业共识。IT168指出，公开信并未明确要求停止AI开发，而是要求\"确保刹车选项随时可用\"。"
+        },
+        {
+          "question": "FINRA式监管为什么被批评为\"不是刹车\"？",
+          "answer": "A2：Forkast分析指出（来源7），FINRA历史上\"在监督的幌子下允许市场快速扩张，降低了政治摩擦，巩固了现有参与者\"；Cohere CEO Aidan Gomez将其定性为\"监管俘获\"；Meta、xAI、NVIDIA在Dreamforce上公开反对，说明这不是全行业标准而是\"战略集团\"。"
+        },
+        {
+          "question": "kill switch对银行意味着什么？银行需要kill switch吗？",
+          "answer": "A3：**本文推论**：银行需要，但形式不同于前沿AI实验室。前沿AI实验室的kill switch是\"暂停模型训练\"；银行的kill switch应是\"AI决策降级到人工\"——不是停止业务，而是在AI出现系统性异常时切换到人工通道。关键是**分级刹车**（人工复核→条线暂停→全面降级），而非\"一键关闭\"。这与《金融harness怎么设计与实施》中\"先定硬规则\"的原则一致。"
+        },
+        {
+          "question": "IVOs（独立验证组织）模式能直接移植到银行吗？",
+          "answer": "A4：**本文推论**：不能直接移植，但核心要素可借鉴——独立性+专业性+持续验证。但银行面临的约束不同：**IVOs在前沿AI行业审查的是\"模型安全性\"，在银行行业审查的应是\"模型合规性与业务风险\"**，审计维度不同。"
+        },
+        {
+          "question": "本文内容中哪些最需要人类核实？",
+          "answer": "A5：本文认为最需要核实的有两处：**其一**，来源2（知乎网）原文编码受损，关键事实（1100+签署者、Amodei为唯一签名CEO、Claude代码占比80%+）依赖来源3（IT168）交叉印证，建议人工核实原文或检索原始报道；**其二**，Forkast（来源7）中\"Amodei 9月12日文章\"\"Reuters报道Anthropic考虑发布新模型对抗GPT-6 Astra\"等细节，均为Forkast单源转述，需通过Reuters原始报道核实。"
         }
       ]
     },

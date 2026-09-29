@@ -77,6 +77,25 @@
     <category term="风险管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/ai-monitoring-ai-banking-implementation</id>
+    <title>1178人联名&apos;踩刹车&apos;：当AI开始监控AI，银行风险管理该做什么</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-monitoring-ai-banking-implementation" rel="alternate" type="text/html"/>
+    <summary>OpenAI、Anthropic、Google DeepMind和Meta的1178名AI从业者联名签署&apos;Pacing the Frontier&apos;公开信，呼吁为自动化AI开发设定节奏。本文基于8份归档来源（权威媒体、政府文件、行业分析），分析&apos;AI监控AI&apos;治理趋势对银行风险管理、资产保全的落地启示，区分来源观点与本文推论，给出风险管理、信息科技、合规三条行动清单。</summary>
+    <category term="金融科技"/>
+    <category term="AI监管"/>
+    <category term="风险管理"/>
+    <category term="银行AI"/>
+    <category term="kill switch"/>
+    <category term="资产保全"/>
+    <category term="FINRA"/>
+    <category term="独立验证组织"/>
+    <category term="AI治理"/>
+    <category term="智能体"/>
+    <category term="合规"/>
+    <category term="贷后管理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/asset-preservation-agent-finetune-vs-harness</id>
     <title>资产保全智能体：该微调基座还是只做 Harness 工程？——一个次序问题，而不是替代问题</title>
     <updated>2026-09-27T00:00:00Z</updated>

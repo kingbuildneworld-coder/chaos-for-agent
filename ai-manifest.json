@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 103,
+    "total_articles": 104,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -118,6 +118,26 @@
         "银行数字化",
         "数字货币",
         "风险管理"
+      ]
+    },
+    {
+      "slug": "ai-monitoring-ai-banking-implementation",
+      "title": "1178人联名'踩刹车'：当AI开始监控AI，银行风险管理该做什么",
+      "date": "2026-09-27",
+      "description": "OpenAI、Anthropic、Google DeepMind和Meta的1178名AI从业者联名签署'Pacing the Frontier'公开信，呼吁为自动化AI开发设定节奏。本文基于8份归档来源（权威媒体、政府文件、行业分析），分析'AI监控AI'治理趋势对银行风险管理、资产保全的落地启示，区分来源观点与本文推论，给出风险管理、信息科技、合规三条行动清单。",
+      "tags": [
+        "金融科技",
+        "AI监管",
+        "风险管理",
+        "银行AI",
+        "kill switch",
+        "资产保全",
+        "FINRA",
+        "独立验证组织",
+        "AI治理",
+        "智能体",
+        "合规",
+        "贷后管理"
       ]
     },
     {
@@ -1769,5 +1789,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-29",
   "version": "1.1",
-  "total_articles": 103
+  "total_articles": 104
 }
