@@ -130,10 +130,10 @@
   </entry>
   <entry>
     <id>https://bi-chao.com/articles/fde-bank-asset-preservation</id>
-    <title>银行资产保全智能化升级需要什么样的FDE——从Palantir模式到政策性银行资产保全的落地推演</title>
+    <title>银行资产保全智能化升级需要什么样的FDE——从Palantir模式到银行资产保全的落地推演</title>
     <updated>2026-09-27T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/fde-bank-asset-preservation" rel="alternate" type="text/html"/>
-    <summary>FDE（前沿部署工程师）模式正在从硅谷Palantir走向中国银行业。本文以7份已归档来源为锚，系统拆解FDE的核心理念、能力模型与落地挑战，从中国农业发展银行总行风险管理部资产保全二处处长的视角，推演政策性银行资产保全条线需要什么样的FDE、面临怎样的挑战、如何应对，并给出国内外经验借鉴与三条线行动清单。</summary>
+    <summary>FDE（前沿部署工程师）模式正在从硅谷Palantir走向中国银行业。本文以7份已归档来源为锚，系统拆解FDE的核心理念、能力模型与落地挑战，从银行资产保全视角，推演银行资产保全条线需要什么样的FDE、面临怎样的挑战、如何应对，并给出国内外经验借鉴与三条线行动清单。</summary>
     <category term="金融科技"/>
     <category term="FDE"/>
     <category term="前向部署工程师"/>
@@ -142,7 +142,6 @@
     <category term="银行AI"/>
     <category term="智能体"/>
     <category term="风险管理"/>
-    <category term="政策性银行"/>
     <category term="组织变革"/>
     <category term="可审计性"/>
     <category term="特殊资产经营"/>
