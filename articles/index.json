@@ -117,6 +117,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行资产保全智能化升级需要什么样的FDE——从Palantir模式到政策性银行资产保全的落地推演",
+    "slug": "fde-bank-asset-preservation",
+    "url": "/articles/fde-bank-asset-preservation.md",
+    "description": "FDE（前沿部署工程师）模式正在从硅谷Palantir走向中国银行业。本文以7份已归档来源为锚，系统拆解FDE的核心理念、能力模型与落地挑战，从中国农业发展银行总行风险管理部资产保全二处处长的视角，推演政策性银行资产保全条线需要什么样的FDE、面临怎样的挑战、如何应对，并给出国内外经验借鉴与三条线行动清单。",
+    "date": "2026-09-27",
+    "tags": [
+      "金融科技",
+      "FDE",
+      "前向部署工程师",
+      "资产保全",
+      "不良资产",
+      "银行AI",
+      "智能体",
+      "风险管理",
+      "政策性银行",
+      "组织变革",
+      "可审计性",
+      "特殊资产经营"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序",
     "slug": "financial-harness-design-implementation",
     "url": "/articles/financial-harness-design-implementation.md",

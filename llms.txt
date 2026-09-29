@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (100)
+## Articles (101)
 
 - [DeepSeek Harness 能不能直接用在银行资产保全上——官方安全通告划的红线，与三处结构性错配](https://bi-chao.com/articles/deepseek-harness-bank-asset-preservation)
   - Description: DeepSeek Harness 是 DeepSeek AI 于 2026-08-13 开源的官方 agent harness（MIT、239,580 star、基于 Cordis 的 everything-is-a-plugin 架构），但其官方 SAFETY.md 自述『未…
@@ -39,6 +39,10 @@
   - Description: Gartner 预测 2028 年 90% 的 B2B 采购将由 AI 智能体中介、逾 15 万亿美元，但本文基于一手核实发现：该预测与其自己「40% 智能体项目将在 2027 年底前被取消」的预测分属两份不同文件，而唯一在运行的验证机制 PunchOut 恰恰是唯一保留人在环…
   - Date: 2026-09-27
   - Tags: B2B, 智能体采购, 内控, 职责分离, 采购舞弊, 供应商管理, SOX合规, 银行运营
+- [银行资产保全智能化升级需要什么样的FDE——从Palantir模式到政策性银行资产保全的落地推演](https://bi-chao.com/articles/fde-bank-asset-preservation)
+  - Description: FDE（前沿部署工程师）模式正在从硅谷Palantir走向中国银行业。本文以7份已归档来源为锚，系统拆解FDE的核心理念、能力模型与落地挑战，从中国农业发展银行总行风险管理部资产保全二处处长的视角，推演政策性银行资产保全条线需要什么样的FDE、面临怎样的挑战、如何应对，并给出国…
+  - Date: 2026-09-27
+  - Tags: 金融科技, FDE, 前向部署工程师, 资产保全, 不良资产, 银行AI, 智能体, 风险管理, 政策性银行, 组织变革, 可审计性, 特殊资产经营
 - [金融 harness 怎么设计与实施：从 FinanceHarness 的分层栈、时点契约与五条可迁移原则，到银行资产保全的落地次序](https://bi-chao.com/articles/financial-harness-design-implementation)
   - Description: 以预印本 arXiv:2607.27853《FinanceHarness》为主锚，配合代码仓库、GitHub 元数据、FinanceGym 官方基准站、Microsoft Learn、AgentScope 技术博客、MCP 金融服务兴趣组章程与一篇技术社区二手文章共 9 份归档…
   - Date: 2026-09-27
@@ -417,12 +421,12 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 36 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 37 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 30 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 25 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 风险管理: 21 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 21 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 智能体: 26 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 风险管理: 22 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 银行AI: 22 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
