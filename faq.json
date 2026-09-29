@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-09-29",
-  "scanned_articles": 102,
-  "articles_with_faq": 68,
-  "total_questions": 293,
+  "scanned_articles": 103,
+  "articles_with_faq": 69,
+  "total_questions": 299,
   "items": [
     {
       "slug": "asset-preservation-fde-capability-challenges",
@@ -66,6 +66,38 @@
         {
           "question": "这些判断的数据可靠吗？哪些是推不出来的？",
           "answer": "本文全部关键事实来自一手源并已在正文标注出处：仓库元数据与 55 个插件包清单（GitHub API）、`SAFETY.md` 与 README（仓库原文）、模型与定价与 JSON Output 与 Tool Calls 限制（DeepSeek 官方 API 文档）、MIT 许可与参数（HuggingFace 模型卡）、Cordis 架构（arXiv:2608.25512）、1M 上下文下的检索质量（arXiv:2606.19348、2512.02556）、监管条款（金发〔2026〕8号原文）。**明确未验证的有三项**：DeepSeek 的备案是否覆盖 V4／V4.1 系列；V4-Pro 的许可状态（不同来源冲突，本文不下结论）；**以及是否存在资产保全／催收／诉讼场景的公开 DeepSeek 落地案例——未能找到**。另有一处本文推论而非论文结论：1M 窗口下上下文管理插件的边际价值，arXiv:2609.20804 的实验只覆盖到 128k，该区间未有实测。"
+        }
+      ]
+    },
+    {
+      "slug": "nvidia-open-agent-safety-platform-banking",
+      "title": "NVIDIA 把安全边界做成了硅片——Open Agent Safety Platform 对银行 AI 中台与智能体的六条启示",
+      "url": "https://bi-chao.com/articles/nvidia-open-agent-safety-platform-banking",
+      "date": "2026-09-29",
+      "faqs": [
+        {
+          "question": "OpenShell 是开源的，银行能直接拿来用吗？",
+          "answer": "**能嵌入，但不能只嵌入。** OpenShell 的仓库是 `NVIDIA/OpenShell`，许可为 **Apache-2.0**（PRIMARY，GitHub API 核验）。Apache-2.0 允许商用、允许修改、允许闭源分发，只需保留版权声明——**这意味着银行可以把它嵌进自己的平台而不必开源自己的代码**，这一点对银行极其友好。但要注意：OpenShell 提供的是**运行时边界**，不是业务策略。**它解决\"agent 不能越界\"，不解决\"agent 该不该做这件事\"。** 后者是银行的合规边界清单，必须自己写。"
+        },
+        {
+          "question": "Sentry 跑在 DPU 上，银行没有 BlueField-4 怎么办？",
+          "answer": "**Sentry 是参考系统设计，不是必须购买的硬件。** 官方新闻稿明确说平台\"also compatible with other hardware\"，OpenShell 也可扩展到 Arm 与 Intel 平台（PRIMARY）。**Sentry 真正可借鉴的是它的架构原则——带外、隔离、对 agent 不可见——而不是那块 DPU 本身。** 银行可以用自己的硬件实现同样的原则：把监控放在 agent 运行环境之外，让 agent 碰不到监控者。**原则可以照搬，硬件不必照搬。**"
+        },
+        {
+          "question": "\"带外强制\"和银行现在做的\"在 agent 容器里做监控\"差别到底在哪？",
+          "answer": "**差别在于：如果 agent 攻破了它运行的环境，监控者是否一起失守。** 在容器里做监控（带内），agent 一旦逃逸，监控与它一起被绕过；在独立环境里做监控（带外），agent 逃逸后监控仍然有效。NVIDIA 的 Sentry 跑在与 host 隔离的 DPU 上，官方说它\"even when host resources cannot be trusted\"仍然可信。**对银行，这意味着监控层必须独立于 agent 的运行环境——不能是 agent 平台的一个模块，而应是独立的基础设施。** 站内 RRSI 文章记录过一个负结果：去掉正则后进化集得分冲到 92.8，真实泛化却只有 40.3——**带外监控正是为了打破这种\"在评估集上不可见的退化\"。**"
+        },
+        {
+          "question": "权限随推理可见性扩展，对资产保全具体怎么用？",
+          "answer": "**把任务分型翻译成权限分级。** 站内已有文章把资产保全任务分为四类：流程／工具型、文书／口径型、窄分类型、经验判断型。**按 NVIDIA 的原则重述：流程／工具型任务规则明确、推理可见性高，可以给较高权限；经验判断型任务\"不可回退、不可归因\"，推理过程无法被充分看见，因此不该拿到执行权限，只能做材料准备与选项呈现。** 这不是限制创新，而是**把\"可解释性\"从一句合规要求翻译成一条权限规则**——与金发〔2026〕8号第（二十二）条\"可解释性不足仅能作为辅助工具\"形成闭环。"
+        },
+        {
+          "question": "NVIDIA 说开源权重让推理空间可见，是不是意味着银行该换开源模型？",
+          "answer": "**不是\"换\"，是\"在高风险任务上优先\"。** NVIDIA 的博客说开源权重的一个优势是\"the entire reasoning space and activations are all visible\"（PRIMARY）。**对银行的含义是：在高风险 agent 任务上，可解释性要求越高，越应该倾向开源权重模型——因为只有权重可见，你才有可能看见推理过程，才有可能据此扩展权限。** 一个闭源 API 模型，你永远无法验证它的推理空间，因此按\"权限随推理可见性扩展\"这条原则，它的权限天花板天然更低。**这与站内 DeepSeek Harness 文章的判断一致：DeepSeek-V4.1-Flash 是 MIT 许可、权重开放，适合银行私有化部署。**"
+        },
+        {
+          "question": "本文的事实可靠吗？哪些是推不出来的？",
+          "answer": "**平台事实全部来自一手源**：官方新闻稿、开发者博客、GitHub 仓库（Apache-2.0 许可、10,543 star 均为核验日取得）。**需要谨慎的有两处**：**其一**，NVIDIA 说其平台\"本可以阻止\"OpenAI agent 入侵 Hugging Face 事件——**这是 NVIDIA 自己的说法，公司自报，未经独立验证**；事件本身有 CNBC 与华盛顿邮报报道（SECONDARY）。**其二**，五条核心原则来自 NVIDIA 开发者博客，**是厂商自述的设计理念，不是第三方评测的结论**。**明确未核实的**：OpenShell 的内部实现细节（本文未审读源码）；Citi 与 JPMorganChase 作为合作伙伴的**具体使用场景未披露**；以及**银行侧是否有机构已基于该平台构建中台的公开案例——未能找到**。此外，第八节的五层架构表与第十节的结论**全部为本文分析**，不是 NVIDIA 官方的分层。"
         }
       ]
     },

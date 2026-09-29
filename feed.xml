@@ -46,6 +46,22 @@
     <category term="智能体"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/nvidia-open-agent-safety-platform-banking</id>
+    <title>NVIDIA 把安全边界做成了硅片——Open Agent Safety Platform 对银行 AI 中台与智能体的六条启示</title>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/nvidia-open-agent-safety-platform-banking" rel="alternate" type="text/html"/>
+    <summary>NVIDIA 于 2026-09-28 发布 Open Agent Safety Platform，由开源安全运行时 OpenShell（Apache-2.0，跑在 Vera CPU 上）与硅片级带外看门狗 Sentry（跑在 BlueField-4 DPU 上）组成，官方定位为开放软件平台加参考系统设计而非产品。本文基于 NVIDIA 官方新闻稿、开发者博客、GitHub 仓库与 CNBC/华盛顿邮报等报道，提炼五条核心原则，并逐条论证其对银行 AI 中台与智能体建设的启示：边界必须在模型与 harness 之外、带外强制优于带内、控制通往模型的路径、可验证策略、权限随推理可见性扩展，以及开源权重对可解释性的意义。</summary>
+    <category term="NVIDIA"/>
+    <category term="OpenShell"/>
+    <category term="Sentry"/>
+    <category term="智能体安全"/>
+    <category term="AI中台"/>
+    <category term="带外强制"/>
+    <category term="可验证策略"/>
+    <category term="银行AI治理"/>
+    <category term="Apache-2.0"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/agent-internet-payment-infrastructure</id>
     <title>智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构</title>
     <updated>2026-09-27T00:00:00Z</updated>

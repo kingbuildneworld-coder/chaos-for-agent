@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (102)
+## Articles (103)
 
 - [资产保全的智能化升级需要什么样的 FDE——当监管边界比模型能力更早决定自动化的上限](https://bi-chao.com/articles/asset-preservation-fde-capability-challenges)
   - Description: 国标 GB/T 45251-2025 第 5.3.1.8 条明确授权金融机构与第三方催收机构可使用人工智能技术开展催收作业，同时规定告知式语音催收（含智能语音）对单一债务人每日合计不超过 3 次；金发〔2026〕8号要求人工智能高风险应用须经风险管理委员会批准；银保监办发〔20…
@@ -23,6 +23,10 @@
   - Description: DeepSeek Harness 是 DeepSeek AI 于 2026-08-13 开源的官方 agent harness（MIT、239,580 star、基于 Cordis 的 everything-is-a-plugin 架构），但其官方 SAFETY.md 自述『未…
   - Date: 2026-09-29
   - Tags: DeepSeek, agent harness, 资产保全, 不良资产, 押品管理, 安全审计, 私有化部署, 银行AI治理, 智能体
+- [NVIDIA 把安全边界做成了硅片——Open Agent Safety Platform 对银行 AI 中台与智能体的六条启示](https://bi-chao.com/articles/nvidia-open-agent-safety-platform-banking)
+  - Description: NVIDIA 于 2026-09-28 发布 Open Agent Safety Platform，由开源安全运行时 OpenShell（Apache-2.0，跑在 Vera CPU 上）与硅片级带外看门狗 Sentry（跑在 BlueField-4 DPU 上）组成，官方定位…
+  - Date: 2026-09-29
+  - Tags: NVIDIA, OpenShell, Sentry, 智能体安全, AI中台, 带外强制, 可验证策略, 银行AI治理, Apache-2.0
 - [智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构](https://bi-chao.com/articles/agent-internet-payment-infrastructure)
   - Description: 智能体支付已从概念走到生产，但基础设施仍是拼凑的。本文基于 Visa 2026年4月18日核心规则 §4.1.24 原文、EMVCo 官方新闻、英国财政部 2026年7月14日计划、美联储 SR 26-2，以及 x402 链上数据，梳理授权/身份/结算/商务/争议五层结构，指出…
   - Date: 2026-09-27
