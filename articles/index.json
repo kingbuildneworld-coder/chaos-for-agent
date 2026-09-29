@@ -1,5 +1,24 @@
 [
   {
+    "title": "资产保全的智能化升级需要什么样的 FDE——当监管边界比模型能力更早决定自动化的上限",
+    "slug": "asset-preservation-fde-capability-challenges",
+    "url": "/articles/asset-preservation-fde-capability-challenges.md",
+    "description": "国标 GB/T 45251-2025 第 5.3.1.8 条明确授权金融机构与第三方催收机构可使用人工智能技术开展催收作业，同时规定告知式语音催收（含智能语音）对单一债务人每日合计不超过 3 次；金发〔2026〕8号要求人工智能高风险应用须经风险管理委员会批准；银保监办发〔2022〕2号则确立管理责任与核心能力不外包、模型管理核心环节自主掌控。本文结合金融监管总局监管指标、Palantir 十年 10-K 中 FDE 标签的消失、以及海安农商银行以规则模板而非智能体取得实效的案例，论证资产保全 FDE 的第一个交付物是合规边界清单而非系统，并给出能力差异、六个落地挑战与一条现实路径。",
+    "date": "2026-09-29",
+    "tags": [
+      "FDE",
+      "前线部署工程师",
+      "资产保全",
+      "不良资产处置",
+      "催收合规",
+      "GB-T45251",
+      "押品管理",
+      "银行AI治理",
+      "组织建制"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "DeepSeek Harness 能不能直接用在银行资产保全上——官方安全通告划的红线，与三处结构性错配",
     "slug": "deepseek-harness-bank-asset-preservation",
     "url": "/articles/deepseek-harness-bank-asset-preservation.md",

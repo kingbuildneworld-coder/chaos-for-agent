@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (101)
+## Articles (102)
 
+- [资产保全的智能化升级需要什么样的 FDE——当监管边界比模型能力更早决定自动化的上限](https://bi-chao.com/articles/asset-preservation-fde-capability-challenges)
+  - Description: 国标 GB/T 45251-2025 第 5.3.1.8 条明确授权金融机构与第三方催收机构可使用人工智能技术开展催收作业，同时规定告知式语音催收（含智能语音）对单一债务人每日合计不超过 3 次；金发〔2026〕8号要求人工智能高风险应用须经风险管理委员会批准；银保监办发〔20…
+  - Date: 2026-09-29
+  - Tags: FDE, 前线部署工程师, 资产保全, 不良资产处置, 催收合规, GB-T45251, 押品管理, 银行AI治理, 组织建制
 - [DeepSeek Harness 能不能直接用在银行资产保全上——官方安全通告划的红线，与三处结构性错配](https://bi-chao.com/articles/deepseek-harness-bank-asset-preservation)
   - Description: DeepSeek Harness 是 DeepSeek AI 于 2026-08-13 开源的官方 agent harness（MIT、239,580 star、基于 Cordis 的 everything-is-a-plugin 架构），但其官方 SAFETY.md 自述『未…
   - Date: 2026-09-29
