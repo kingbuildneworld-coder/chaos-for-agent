@@ -1,10 +1,42 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-09-27",
-  "scanned_articles": 99,
-  "articles_with_faq": 65,
-  "total_questions": 276,
+  "updated": "2026-09-29",
+  "scanned_articles": 100,
+  "articles_with_faq": 66,
+  "total_questions": 282,
   "items": [
+    {
+      "slug": "deepseek-harness-bank-asset-preservation",
+      "title": "DeepSeek Harness 能不能直接用在银行资产保全上——官方安全通告划的红线，与三处结构性错配",
+      "url": "https://bi-chao.com/articles/deepseek-harness-bank-asset-preservation",
+      "date": "2026-09-29",
+      "faqs": [
+        {
+          "question": "DeepSeek Harness 到底是什么？是不是就是个壳？",
+          "answer": "它是 DeepSeek AI 于 2026-08-13 开源的**官方 agent harness**，MIT 许可，基于 Cordis 框架，官方描述是\"Everything is a Plugin\"，核验日 star 数 239,580。**不是壳**——它有 55 个官方插件包，覆盖文件、命令执行、上下文压缩、计划、子智能体、sandbox、guard、hooks、凭据、身份、会话、遥测等。**但它的能力全部指向软件工程任务**（官方示例任务是总结一个代码仓库），没有案件、押品、诉讼节点这类业务工具——那些必须自己写。"
+        },
+        {
+          "question": "既然官方自己说没做安全审计，是不是就不能用了？",
+          "answer": "**不能作为生产运行时直接用，但可以借它的插件机制。** 关键在于读懂官方警告的适用范围：它说的是\"不要把它当作不可信工作负载的**唯一**安全控制\"，而不是\"不可使用\"。**正确的姿势是：安全边界由银行自建一层工具网关承担，dsh 只拿到调用网关的权限，不直接接触业务系统与数据。** 官方推荐用一次性虚拟机或容器、最小权限运行，这个建议本身是合理的。"
+        },
+        {
+          "question": "最容易被忽略的运维风险是什么？",
+          "answer": "**模型标识会静默漂移。** 官方定价页至今并列列出 `deepseek-flash` 与 `deepseek-v4-pro`，但公告写明自 2026-09-14 04:00 UTC 起，**所有 `deepseek-v4-pro` 请求转发到 V4.1-Flash 并按其费率计费**，直至 V4.1-Pro 发布。此前 `deepseek-v4-flash` 等旧名同样被下线重定向，更早的 `deepseek-chat`／`deepseek-reasoner` 已于 2026-07-24 停用。**把别名写死在配置文件里，等于把基线交给公告的更新节奏。** 适配方案里必须包含模型 ID 的漂移检测。"
+        },
+        {
+          "question": "Files API 只支持图片，会带来多大麻烦？",
+          "answer": "**这是资产保全的硬墙。** 官方 Files API 支持 JPEG／PNG／GIF／WebP，而资产保全的原始材料是法律文书、借款与担保合同、判决书、卷宗、评估报告，绝大多数是 PDF 或 DOCX，必须先 OCR 或转档。**问题不止是麻烦，而是错误可归因性**：材料完整性判断原本是站内分型里最值得做微调的窄分类型（可度量、有稳定标注、可回退、可归因四项判据同时成立），但一旦转档有损，错误就无法区分是\"模型判错\"还是\"材料没读出来\"，**第四项判据直接失效**。所以必须自建摄取层，并保留原件到结论的逐项回指链路。"
+        },
+        {
+          "question": "为什么说\"thinking 默认开启\"是个陷阱？",
+          "answer": "因为关掉它这件事在不同路径上行为不同。官方两个模型都是默认 thinking，而思考模式下**不支持 `temperature`／`presence_penalty`／`frequency_penalty`**，`top_p` 被钳制在 0.95–1.0。想让批处理可复现就得显式关思考——**但走 OpenAI 兼容网关时，把 `reasoningEfforts.off` 留空等于什么都不发，模型照样思考**。官方为此给了 `compat.thinkingFormat: deepseek`，设置后 `off` 才会真正发出 `thinking: {type: disabled}`。**这是一个会导致\"明明关了思考、账单仍按思考模式走\"的真实事故源。** 另有一条连带坑：带 `tools` 时 `reasoning_content` 必须完整回传，否则 API 返回 400，任何做会话裁剪的中间层都会踩到。"
+        },
+        {
+          "question": "这些判断的数据可靠吗？哪些是推不出来的？",
+          "answer": "本文全部关键事实来自一手源并已在正文标注出处：仓库元数据与 55 个插件包清单（GitHub API）、`SAFETY.md` 与 README（仓库原文）、模型与定价与 JSON Output 与 Tool Calls 限制（DeepSeek 官方 API 文档）、MIT 许可与参数（HuggingFace 模型卡）、Cordis 架构（arXiv:2608.25512）、1M 上下文下的检索质量（arXiv:2606.19348、2512.02556）、监管条款（金发〔2026〕8号原文）。**明确未验证的有三项**：DeepSeek 的备案是否覆盖 V4／V4.1 系列；V4-Pro 的许可状态（不同来源冲突，本文不下结论）；**以及是否存在资产保全／催收／诉讼场景的公开 DeepSeek 落地案例——未能找到**。另有一处本文推论而非论文结论：1M 窗口下上下文管理插件的边际价值，arXiv:2609.20804 的实验只覆盖到 128k，该区间未有实测。"
+        }
+      ]
+    },
     {
       "slug": "agent-internet-payment-infrastructure",
       "title": "智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构",

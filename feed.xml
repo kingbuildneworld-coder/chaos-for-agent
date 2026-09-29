@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-09-27T00:00:00Z</updated>
+  <updated>2026-09-29T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,22 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/deepseek-harness-bank-asset-preservation</id>
+    <title>DeepSeek Harness 能不能直接用在银行资产保全上——官方安全通告划的红线，与三处结构性错配</title>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deepseek-harness-bank-asset-preservation" rel="alternate" type="text/html"/>
+    <summary>DeepSeek Harness 是 DeepSeek AI 于 2026-08-13 开源的官方 agent harness（MIT、239,580 star、基于 Cordis 的 everything-is-a-plugin 架构），但其官方 SAFETY.md 自述『未经过安全审计，不得视为安全或生产就绪』。本文基于 GitHub API、官方 API 文档、HuggingFace 模型卡、arXiv 论文与金发〔2026〕8号监管原文，论证银行资产保全不能直接使用该 harness，拆解三处结构性错配（抽象层、输入形态、确定性），并给出五步适配清单与一条合规红线清单。</summary>
+    <category term="DeepSeek"/>
+    <category term="agent harness"/>
+    <category term="资产保全"/>
+    <category term="不良资产"/>
+    <category term="押品管理"/>
+    <category term="安全审计"/>
+    <category term="私有化部署"/>
+    <category term="银行AI治理"/>
+    <category term="智能体"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/agent-internet-payment-infrastructure</id>
     <title>智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构</title>

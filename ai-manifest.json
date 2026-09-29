@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 99,
+    "total_articles": 100,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,23 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "deepseek-harness-bank-asset-preservation",
+      "title": "DeepSeek Harness 能不能直接用在银行资产保全上——官方安全通告划的红线，与三处结构性错配",
+      "date": "2026-09-29",
+      "description": "DeepSeek Harness 是 DeepSeek AI 于 2026-08-13 开源的官方 agent harness（MIT、239,580 star、基于 Cordis 的 everything-is-a-plugin 架构），但其官方 SAFETY.md 自述『未经过安全审计，不得视为安全或生产就绪』。本文基于 GitHub API、官方 API 文档、HuggingFace 模型卡、arXiv 论文与金发〔2026〕8号监管原文，论证银行资产保全不能直接使用该 harness，拆解三处结构性错配（抽象层、输入形态、确定性），并给出五步适配清单与一条合规红线清单。",
+      "tags": [
+        "DeepSeek",
+        "agent harness",
+        "资产保全",
+        "不良资产",
+        "押品管理",
+        "安全审计",
+        "私有化部署",
+        "银行AI治理",
+        "智能体"
+      ]
+    },
     {
       "slug": "agent-internet-payment-infrastructure",
       "title": "智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构",
@@ -1697,7 +1714,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-09-29",
   "version": "1.1",
-  "total_articles": 99
+  "total_articles": 100
 }
