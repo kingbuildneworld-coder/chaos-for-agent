@@ -897,121 +897,29 @@ function getRelated(articles, currentSlug, currentTags) {
 
 // ========== FAQ 检测与渲染 ==========
 
-/** 从正文自动检测 FAQ 模式：匹配 Q: / Q：/ Q1：/ **Q1：** / > Q: 等写法
- *
- *  v2.13 修两处：
- *
- *  1) 编号写法此前**完全不匹配**。qRe 要求 `Q` 后紧跟冒号，而站内 46 篇文章
- *     写作 `**Q1：……？**`，中间的数字使正则失配 —— 这 46 篇从未进入
- *     faq.json，/faq 页只覆盖 7/98。现允许可选数字与可选空格。
- *
- *  2) 检测到 FAQ 后，**原文的 `Q:` / `A:` 段落仍留在正文里**，与下方生成的
- *     <section class="faq-section"> 重复渲染同一内容（实测每篇重复 2 遍：
- *     JSON-LD 一次、生成区块一次、正文裸 `<p>Q: …</p>` 一次）。
- *     现改为解析的同时把 FAQ 区块从正文剔除，只保留生成区块。
- *
- *  区块边界：以 `## 常见问题` / `## FAQ` 标题起，到下一个 `---` 分隔线、
- *  下一个 `## ` 标题、署名行或 `<script>` 为止 —— 否则末条答案会把
- *  作者署名与 JSON-LD 一并吞进去。
- *
- *  @param {string} body 正文 Markdown
- *  @returns {{faqs: Array<{question: string, answer: string}>, body: string}|null}
- *          检出时返回问答与剔除后的正文；未检出返回 null
- */
+/** 从正文自动检测 FAQ 模式：匹配 Q: 或 **Q:** 或 > Q: 格式 */
 function detectFAQ(body) {
-  const lines = body.split('\n');
-  // 提问行容忍 6 种站内写法：`Q:` / `**Q1：**` / `### Q:` / `**问一：**` / `> Q:`
-  // 关键是**允许可选的引用符与标题前缀**及**中英文序号** —— 此前只容忍加粗与
-  // 半角数字，导致 `### Q:`（实测 10 篇）、`**问一：**`（1 篇）、`> Q:` 完全检不出。
-  const qRe = /^\s*(?:>\s*)?(?:#{1,6}\s*)?(?:\*+|_+)?\s*(?:Q|问)\s*(?:\d{1,2}|[一二三四五六七八九十]{1,3})?\s*[：:]\s*(?:\*+|_+)?\s*(.+)/i;
-  // 用于识别「标题形态的提问行」，使它不被误判为章节边界（见下方边界判定）
-  const qLineRe = /^\s*(?:>\s*)?(?:#{1,6}\s*)?\**\s*(?:Q|问)\s*(?:\d{1,2}|[一二三四五六七八九十]{1,3})?\s*[：:]/i;
-  // 标题只需**包含**关键词：站内实际存在 `## 四、常见问题（FAQ）` 这类带序号的
-  // 写法。若要求标题以关键词开头就会漏检 → start=-1 → 退化为全篇扫描 →
-  // 末条答案吞掉文章自带的 JSON-LD <script> 块，而答案里的字面量 </script>
-  // 会提前闭合 script 标签，产出**截断的无效 JSON-LD**（实测 8 篇）。
-  // 「常见问」而非「常见问题」：同时覆盖 常见问题 / 常见问答 / 常见疑问。
-  const headRe = /^#{2,4}\s*.*(?:常见问|FAQ|问答)/i;
-  const stopRe = /^(?:-{3,}\s*$|<script\b|\*+\s*作者)/i;
-  // 无论是否找到标题，<script> 与署名行都是硬边界 —— 绝不能让它们进入答案
-  const hardStopRe = /^(?:<script\b|\*+\s*作者)/i;
-
-  let start = -1;
-  for (let i = 0; i < lines.length; i++) {
-    if (headRe.test(lines[i].trim())) { start = i; break; }
-  }
-
-  const hasHead = start >= 0;
-  const from = hasHead ? start + 1 : 0;
-
-  let end = lines.length;
-  for (let i = from; i < lines.length; i++) {
-    const t = lines[i].trim();
-    if (stopRe.test(t)) { end = i; break; }
-    // 仅在已定位标题时，下一个 `## ` 小节才是 FAQ 区块边界。
-    // 无标题时不能按小节切，否则正文第一个小节就会把扫描截断、一篇都检不出。
-    // **但 H3 形态的提问行（`### Q: x`）属于区块内部**，不能当边界 ——
-    // 否则第一个 `### Q:` 就把区块截断，FAQ 恒为空（实测 10 篇因此静默丢失）。
-    if (hasHead && /^#{2,3}\s+\S/.test(t) && !qLineRe.test(t)) { end = i; break; }
-  }
-  // 无标题路径额外收紧：至少要在 <script> / 署名处停下。
-  // 取 min 而非直接覆盖 —— 否则会丢掉上面已找到的 `---` 边界，
-  // 使末条答案吞进分隔线与署名行（单元测试 V7 曾实测到该污染）。
-  if (!hasHead) {
-    for (let i = from; i < end; i++) {
-      if (hardStopRe.test(lines[i].trim())) { end = i; break; }
-    }
-  }
-
-  const drop = new Set();
-  if (hasHead) for (let i = start; i < end; i++) drop.add(i);
-
-  const to = end;
-
   const blocks = [];
-  let currentQ = null;
-  let currentA = [];
+  const lines = body.split('\n');
+  let currentQ = null, currentA = '';
+  const qRe = /^(?:>\s*)?\*{0,2}Q[：:]\*{0,2}\s*(.+)/i;
 
-  for (let i = from; i < to; i++) {
-    const line = lines[i];
+  for (const line of lines) {
     const m = line.match(qRe);
     if (m) {
-      if (currentQ && currentA.join('').trim()) {
-        blocks.push({ question: currentQ, answer: currentA.join('\n').trim() });
-      }
-      // 清理问题文本尾部残留的 Markdown 强调标记：`(**Q1：……？**)`
-      // 结尾的 `**` 会留在问题里、页面上直接显示成字面星号
+      if (currentQ && currentA) blocks.push({ question: currentQ, answer: currentA.trim() });
+      // 清理问题文本尾部残留的 Markdown 强调标记。
+      // 原文常写作 `**Q1：……？**`，qRe 只吃掉开头的 `**Q1：`，结尾的 `**`
+      // 会留在问题里、页面上直接显示成字面星号
       // （实测 local-llm-deployment-data-sovereignty 有 5 处）。
       currentQ = m[1].trim().replace(/\*{1,3}\s*$/, '').trim();
-      currentA = [];
-      drop.add(i);
+      currentA = '';
     } else if (currentQ) {
-      currentA.push(line);
-      if (line.trim()) drop.add(i);   // 保留空行以维持段落分隔
+      currentA += line + '\n';
     }
   }
-  if (currentQ && currentA.join('').trim()) {
-    blocks.push({ question: currentQ, answer: currentA.join('\n').trim() });
-  }
-
-  if (blocks.length < 2) return null;
-
-  // 去掉答案行首的 `A：` / `A:` / `> A:`，否则渲染出来是「A: 答案」这种冗余形态。
-  // 容忍引用符：blockquote 写法（`> A: …`）否则会整体带进答案里。
-  for (const b of blocks) {
-    b.answer = b.answer.replace(/^\s*(?:>\s*)?(?:\*+|_+)?\s*A\s*[：:]\s*/, '');
-    // 兜底：答案里绝不能出现 <script>。FAQPage 的 JSON-LD 是字符串拼接进
-    // <script> 标签的，字面量 </script> 会提前闭合标签、产出无效结构化数据。
-    // 边界判定本已排除此情况，这里是最后一道防线。
-    const si = b.answer.search(/<script\b/i);
-    if (si !== -1) b.answer = b.answer.slice(0, si).trim();
-  }
-
-  const cleaned = lines
-    .filter((_, i) => !drop.has(i))
-    .join('\n')
-    .replace(/\n{3,}/g, '\n\n');
-  return { faqs: blocks, body: cleaned };
+  if (currentQ && currentA) blocks.push({ question: currentQ, answer: currentA.trim() });
+  return blocks.length >= 2 ? blocks : null;
 }
 
 /** 渲染 FAQ HTML 区块 */
@@ -1071,42 +979,32 @@ function readingTime(text) {
 
 /** 生成核心摘要框：从正文提取关键句（加粗语句 + 首段关键句） */
 function genKeyTakeaways(body, description) {
+  // 只从正文正文提取：先剥离引用块（> …，含"素材说明"等元数据段）与水平线，
+  // 再加粗短语才是候选关键句；旧实现直接扫描前 800 字符 markdown，
+  // 会把引用块里加粗的来源名（如 "TahawulTech"）误当成摘要条目。
+  const text = body
+    .split('\n')
+    .filter(l => !/^\s*>/.test(l) && !/^\s*---\s*$/.test(l))
+    .join('\n')
+    .trim();
   const items = [];
-
-  // 1. 提取加粗语句 **text**（前 800 字符范围内，限 4 条）
-  const boldRe = /\*\*(.+?)\*\*/g;
-  const earlyBody = body.slice(0, 800);
+  const boldRe = /\*\*([^*\n]+?)\*\*/g;   // 单个加粗段（不跨行）
+  const early = text.slice(0, 1000);
   let bm;
-  while ((bm = boldRe.exec(earlyBody)) !== null && items.length < 4) {
-    const t = bm[1].trim();
-    if (t.length >= 8 && t.length <= 80 && !items.includes(t)) {
+  while ((bm = boldRe.exec(early)) !== null && items.length < 4) {
+    const t = bm[1].trim().replace(/^[\s:：、]+/, '').replace(/[。．]$/, '');
+    if (t.length >= 12 && t.length <= 140 && !items.includes(t)) {
       items.push(t);
     }
   }
-
-  // 2. 首段纯文本句（20~120 字普通句，非标题、非列表）
-  if (items.length < 3) {
-    const plainText = body.replace(/[#*>\-`\[\]()!_~|]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
-    const sentences = plainText.split(/[。；\n]/).filter(s => {
-      const len = s.trim().length;
-      return len >= 15 && len <= 120;
-    });
-    for (const s of sentences) {
-      const t = s.trim();
-      if (items.length >= 4) break;
-      if (!items.includes(t)) items.push(t);
-    }
-  }
-
-  // 3. 兜底：使用 description
-  if (items.length === 0 && description) {
-    items.push(description);
-  }
-
+  // 兜底：摘要框至少 2 条 —— 不足时用 description 补足，保证信息量
+  const d = String(description || '').trim();
+  if (d && !items.includes(d) && items.length < 2) items.push(d);
   if (items.length === 0) return '';
+  const esc = t => String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   let html = '<div class="key-takeaways"><h3>核心摘要</h3><ul>';
   for (const item of items.slice(0, 4)) {
-    html += `<li>${item}</li>`;
+    html += `<li>${esc(item)}</li>`;
   }
   html += '</ul></div>';
   return html;
@@ -1505,17 +1403,9 @@ async function renderArticle(pathname, request, explicitMd) {
     const schemaType = meta.schema_type || article.schema_type || 'Article';
 
     // FAQ: 优先从前置元数据读取，否则从正文自动检测
-    // detectFAQ 返回剔除后的正文 —— 原始 `Q:` / `A:` 段落若留在正文里，会与
-    // 下方生成的 faq-section 重复渲染同一内容。仅**渲染路径**用 renderBody，
-    // wordCount / readTime / keyTakeaways 仍按全文计算。
     let faqItems = meta.faq || article.faq || null;
-    let renderBody = body;
     if (!faqItems) {
-      const detected = detectFAQ(body);
-      if (detected) {
-        faqItems = detected.faqs;
-        renderBody = detected.body;
-      }
+      faqItems = detectFAQ(body);
     }
     const faqHtml = renderFAQ(faqItems);
 
@@ -1559,16 +1449,14 @@ async function renderArticle(pathname, request, explicitMd) {
       : '';
 
     // 转换正文 + 定义块检测 + 内链注入
-    let contentHtml = injectHeadingIds(md2html(renderBody));
+    let contentHtml = injectHeadingIds(md2html(body));
     contentHtml = detectDefinitions(contentHtml);
     contentHtml = detectDataCitations(contentHtml);   // B2: 行内数据引用标记
     // 顺序很重要：必须在 detectDataCitations 之后。否则裸 URL 会先被包成 <a>，
     // 接着 detectDataCitations 再套一层 <cite>，产生嵌套锚点。
     contentHtml = autolinkBareUrls(contentHtml);      // 裸 URL → 可点击的一手来源链接
     contentHtml = injectInternalLinks(contentHtml, articles, slug);
-    // TOC 与 contentHtml 同源：FAQ 区块已从 renderBody 剔除，若仍按全文生成
-    // 目录，会留下一条指向已不存在标题的死锚点。
-    const tocHtml = generateTOC(renderBody);
+    const tocHtml = generateTOC(body);
     const prevNextHtml = getPrevNext(articles, slug);
     const relatedHtml = getRelated(articles, slug, tags);
 
