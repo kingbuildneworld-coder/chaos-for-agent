@@ -201,6 +201,27 @@
     <category term="可审计性"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/general-agent-wave-banking-impact</id>
+    <title>General Agent 浪潮：当 AI 从&quot;助手&quot;变成&quot;同事&quot;，银行面临入口、对手方与内部工作流三重冲击</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/general-agent-wave-banking-impact" rel="alternate" type="text/html"/>
+    <summary>2026年9月，Grok Bot、Muse、Dots、Claude Tag 等 General Agent 产品密集发布。它们同时拥有 coding、work、personal assistant 能力，不再只是聊天机器人，而是能自主推进任务的&quot;数字同事&quot;。本文基于6份归档来源（权威媒体、通讯社、英文科技媒体、社区实测、编译评论），分析 General Agent 作为新物种的共性、&quot;一层一层&quot;的堆叠逻辑、入口之争，以及银行 App 入口截流、agent 作为支付对手方、银行内部多智能体协作与可靠性治理三重影响，给出风险管理、信息科技、零售/对公三条行动清单。</summary>
+    <category term="General Agent"/>
+    <category term="智能体"/>
+    <category term="金融科技"/>
+    <category term="银行AI"/>
+    <category term="入口之争"/>
+    <category term="Grok Bot"/>
+    <category term="Muse"/>
+    <category term="Dots"/>
+    <category term="Claude Tag"/>
+    <category term="API-first"/>
+    <category term="风险管理"/>
+    <category term="资产保全"/>
+    <category term="支付清算"/>
+    <category term="多智能体协作"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/mckinsey-2026-global-banking-report-analysis</id>
     <title>麦肯锡2026全球银行业报告：技术宽限期已经消失——从资产保全视角看&apos;精准提速&apos;</title>
     <updated>2026-09-27T00:00:00Z</updated>

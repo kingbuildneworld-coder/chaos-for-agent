@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 104,
+    "total_articles": 105,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -249,6 +249,28 @@
         "信息科技风险",
         "模型风险管理",
         "可审计性"
+      ]
+    },
+    {
+      "slug": "general-agent-wave-banking-impact",
+      "title": "General Agent 浪潮：当 AI 从\"助手\"变成\"同事\"，银行面临入口、对手方与内部工作流三重冲击",
+      "date": "2026-09-27",
+      "description": "2026年9月，Grok Bot、Muse、Dots、Claude Tag 等 General Agent 产品密集发布。它们同时拥有 coding、work、personal assistant 能力，不再只是聊天机器人，而是能自主推进任务的\"数字同事\"。本文基于6份归档来源（权威媒体、通讯社、英文科技媒体、社区实测、编译评论），分析 General Agent 作为新物种的共性、\"一层一层\"的堆叠逻辑、入口之争，以及银行 App 入口截流、agent 作为支付对手方、银行内部多智能体协作与可靠性治理三重影响，给出风险管理、信息科技、零售/对公三条行动清单。",
+      "tags": [
+        "General Agent",
+        "智能体",
+        "金融科技",
+        "银行AI",
+        "入口之争",
+        "Grok Bot",
+        "Muse",
+        "Dots",
+        "Claude Tag",
+        "API-first",
+        "风险管理",
+        "资产保全",
+        "支付清算",
+        "多智能体协作"
       ]
     },
     {
@@ -1789,5 +1811,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-29",
   "version": "1.1",
-  "total_articles": 104
+  "total_articles": 105
 }

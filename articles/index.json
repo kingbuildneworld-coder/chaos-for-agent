@@ -220,6 +220,30 @@
     "schema_type": "Article"
   },
   {
+    "title": "General Agent 浪潮：当 AI 从\"助手\"变成\"同事\"，银行面临入口、对手方与内部工作流三重冲击",
+    "slug": "general-agent-wave-banking-impact",
+    "url": "/articles/general-agent-wave-banking-impact.md",
+    "description": "2026年9月，Grok Bot、Muse、Dots、Claude Tag 等 General Agent 产品密集发布。它们同时拥有 coding、work、personal assistant 能力，不再只是聊天机器人，而是能自主推进任务的\"数字同事\"。本文基于6份归档来源（权威媒体、通讯社、英文科技媒体、社区实测、编译评论），分析 General Agent 作为新物种的共性、\"一层一层\"的堆叠逻辑、入口之争，以及银行 App 入口截流、agent 作为支付对手方、银行内部多智能体协作与可靠性治理三重影响，给出风险管理、信息科技、零售/对公三条行动清单。",
+    "date": "2026-09-27",
+    "tags": [
+      "General Agent",
+      "智能体",
+      "金融科技",
+      "银行AI",
+      "入口之争",
+      "Grok Bot",
+      "Muse",
+      "Dots",
+      "Claude Tag",
+      "API-first",
+      "风险管理",
+      "资产保全",
+      "支付清算",
+      "多智能体协作"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "麦肯锡2026全球银行业报告：技术宽限期已经消失——从资产保全视角看'精准提速'",
     "slug": "mckinsey-2026-global-banking-report-analysis",
     "url": "/articles/mckinsey-2026-global-banking-report-analysis.md",
