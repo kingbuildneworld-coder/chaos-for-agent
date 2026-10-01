@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (106)
+## Articles (107)
 
 - [资产保全的智能化升级需要什么样的 FDE——当监管边界比模型能力更早决定自动化的上限](https://bi-chao.com/articles/asset-preservation-fde-capability-challenges)
   - Description: 国标 GB/T 45251-2025 第 5.3.1.8 条明确授权金融机构与第三方催收机构可使用人工智能技术开展催收作业，同时规定告知式语音催收（含智能语音）对单一债务人每日合计不超过 3 次；金发〔2026〕8号要求人工智能高风险应用须经风险管理委员会批准；银保监办发〔20…
@@ -83,6 +83,10 @@
   - Description: Google Cloud AI Research 在 arXiv:2609.24972 中提出 RRSI，用正则化约束 agent harness 的递归自我进化。真正值得银行注意的不是它的成绩，而是一个负结果：去掉全部正则后，进化集得分升到 92.8（最高），真实场景泛化均值…
   - Date: 2026-09-27
   - Tags: Agent评测, AI治理, harness, 模型风险, 自动化优化, 过拟合, 银行业AI, 递归自我改进
+- [白宫把AI改名为SI：60天后的联邦定义才是真正会'咬人'的——全球AI治理与金融业应对分析](https://bi-chao.com/articles/super-intelligence-executive-order-banking-response)
+  - Description: 2026年9月29日，特朗普签署行政令《开创超级智能时代》，以'超级智能'(SI)取代'人工智能'(AI)，要求总统科技顾问60天内提交SI联邦定义立法建议稿；同日与六家AI公司签署《白宫超级智能协议》建立四层控制。本文基于8份归档来源，分析改名背后的术语政治化、60天定义对全…
+  - Date: 2026-09-27
+  - Tags: 超级智能, SI行政令, 人工智能治理, 金融科技, 银行AI, AI合规, 术语政治化, 四层控制, 风险管理, 资产保全, 中美AI对话, 联邦定义
 - [Chat2DB 尽调笔记：一份附加条件的许可证、一条只到 127.0.0.1 的信任边界，以及 AI 接入数据库控制面后的七条风控启示](https://bi-chao.com/articles/chat2db-bank-implications)
   - Description: 以 Chat2DB 的 GitHub 元数据快照、README、LICENSE 与 SECURITY.md 四份原文为唯一事实来源，逐条解读这份 5.3.0 起改用修改版 Apache 2.0 的本地优先 AI 数据库客户端：它为何不是 OSI 意义上的开源许可、GitHub …
   - Date: 2026-09-26
@@ -441,16 +445,16 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 39 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 40 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 31 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 28 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 风险管理: 24 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 24 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 风险管理: 25 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 银行AI: 25 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
+- 资产保全: 12 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行业: 12 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
