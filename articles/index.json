@@ -1,5 +1,25 @@
 [
   {
+    "title": "同一个权重、同一张卡，答案却不一样：本地部署大模型的精度风险与银行验证清单",
+    "slug": "local-llm-inference-precision-banking",
+    "url": "/articles/local-llm-inference-precision-banking.md",
+    "description": "Level1Techs 论坛上一篇实测帖给出了本地部署大模型最反直觉的结论：同一份权重、同一张 GPU、同一个驱动与 vLLM，仅切换 attention backend 这一个配置项，就能让模型在工具调用中把 Cisco 接口号从 GigabitEthernet0/0/1.201 写成 GigabitEthernet0/1/4，并重复执行错误命令；且该偏移可 bit-identical 复现。本文解读该帖的三组实验（attention backend、KV cache 量化、五种权重量化对比）、拓扑与硬件差异、以及作者对 KLD 方法论的重要纠偏，并逐条分析对中国银行业本地部署大模型的启示：配置漂移即静默的行为变更、量化选型是正确性问题而非成本问题、长上下文与精度直接冲突、工具调用必须前置确定性校验、扩缩容即模型变更。文中给出一份可落地的三层验证清单，并明确标注本文哪些是原帖事实、哪些是机制推论。",
+    "date": "2026-10-01",
+    "tags": [
+      "本地部署",
+      "大模型",
+      "推理精度",
+      "量化",
+      "vLLM",
+      "工具调用",
+      "模型治理",
+      "Agent",
+      "中国银行业",
+      "技术风险"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "资产保全的智能化升级需要什么样的 FDE——当监管边界比模型能力更早决定自动化的上限",
     "slug": "asset-preservation-fde-capability-challenges",
     "url": "/articles/asset-preservation-fde-capability-challenges.md",
