@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (108)
+## Articles (109)
 
+- [同一个权重、同一张卡，答案却不一样：本地部署大模型的精度风险与银行验证清单](https://bi-chao.com/articles/local-llm-inference-precision-banking)
+  - Description: Level1Techs 论坛上一篇实测帖给出了本地部署大模型最反直觉的结论：同一份权重、同一张 GPU、同一个驱动与 vLLM，仅切换 attention backend 这一个配置项，就能让模型在工具调用中把 Cisco 接口号从 GigabitEthernet0/0/1.2…
+  - Date: 2026-10-01
+  - Tags: 本地部署, 大模型, 推理精度, 量化, vLLM, 工具调用, 模型治理, Agent, 中国银行业, 技术风险
 - [资产保全的智能化升级需要什么样的 FDE——当监管边界比模型能力更早决定自动化的上限](https://bi-chao.com/articles/asset-preservation-fde-capability-challenges)
   - Description: 国标 GB/T 45251-2025 第 5.3.1.8 条明确授权金融机构与第三方催收机构可使用人工智能技术开展催收作业，同时规定告知式语音催收（含智能语音）对单一债务人每日合计不超过 3 次；金发〔2026〕8号要求人工智能高风险应用须经风险管理委员会批准；银保监办发〔20…
   - Date: 2026-09-29
@@ -451,8 +455,8 @@
 ## Topics (top 10)
 - 金融科技: 41 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 32 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 大模型: 29 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 智能体: 28 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 26 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 银行AI: 26 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
