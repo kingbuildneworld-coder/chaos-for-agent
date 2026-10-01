@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-09-29",
-  "scanned_articles": 107,
-  "articles_with_faq": 73,
-  "total_questions": 319,
+  "scanned_articles": 108,
+  "articles_with_faq": 74,
+  "total_questions": 324,
   "items": [
     {
       "slug": "asset-preservation-fde-capability-challenges",
@@ -382,6 +382,34 @@
         {
           "question": "本文哪些内容最需要人类核实？",
           "answer": "A5：**本文认为最需要人类核实的有两处：**\n**其一**，来源5（Toolin AI）中\"Anthropic 内部 65% 代码由 Claude Tag 完成\"\"底层是 Claude Opus 4.8\"\"Karpathy 称第三次重构\"等数据与观点，均来自社区实测转述，未经 Anthropic 官方确认，建议通过官方渠道核实。\n**其二**，来源6（36Kr God Translation Bureau 编译）中\"agent 数量将达到人类员工100倍甚至1000倍\"\"万亿智能体\"等预测为编译自英文原文的二手观点汇编，原文出处与作者信息不完整（仅提到 Paul Graham 和 Jared Friedman 的引述），建议追溯英文原始文章核实。"
+        }
+      ]
+    },
+    {
+      "slug": "june-2-ai-executive-order-banking-impact",
+      "title": "白宫6月2日AI行政令：90天到30天的政治博弈与金融业的新安全边界",
+      "url": "https://bi-chao.com/articles/june-2-ai-executive-order-banking-impact",
+      "date": "2026-09-27",
+      "faqs": [
+        {
+          "question": "行政令现在是否仍在执行？",
+          "answer": "A1：是。Digital Policy Alert三个追踪条目（来源1、2、3）均显示\"No related interventions found\"，行政令尚未被撤销或取代。6月2日行政令与9月29日《开创超级智能时代》行政令是两份独立文件——前者关于安全测试自愿框架，后者关于术语改名与四层控制协议。"
+        },
+        {
+          "question": "为什么是30天而不是90天或14天？",
+          "answer": "A2：90天是政府早期草案，14天是企业方主张，30天是最终折中。来源6记载特朗普临阵叫停的理由是\"不想做任何会妨碍美国领先的事\"；Jones Walker（来源7）批评这是\"从90天压缩到30天是一种暗示\"——削减三分之二，是对安全工作的实质性让步。"
+        },
+        {
+          "question": "行政令对银行有直接法律义务吗？",
+          "answer": "A3：来源4、7均指出，行政令强制义务主要指向政府机构与开发者，对部署方无新增直接义务。第4节执法条款是唯一\"向外指向\"的部分，其执法优先级覆盖\"AI代理非法访问\"——部署方需关注代理权限边界合规。欧盟AI法案7%营业额罚款是另一条路径。"
+        },
+        {
+          "question": "Mythos模型是否真的能自主发现漏洞？",
+          "answer": "A4：来源8明确指出\"上述能力描述与漏洞数据主要来自Anthropic自身披露与合作方反馈，第三方独立核验有限，仍需审慎看待\"。来源6转述南华早报：Mythos\"具备识别并利用政府机构、医院、银行和关键基础设施系统中的安全漏洞的能力\"。银行应审慎评估。"
+        },
+        {
+          "question": "本文哪些内容最需要人类核实？",
+          "answer": "A5：**其一**，Mythos模型能力与\"逾1万个高危漏洞\"数据均出自Anthropic自身披露与合作方反馈（来源8明确标注\"第三方独立核验有限\"），建议通过独立研究报告或权威媒体交叉核实；**其二**，来源6中马斯克、扎克伯格是否参与游说一节，来源6记载马斯克和Meta随后否认，来源9亦未确认，本文以来源6记载为准，建议通过《华尔街日报》、《华盛顿邮报》原始报道核实。"
         }
       ]
     },

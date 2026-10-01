@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 107,
+    "total_articles": 108,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -288,6 +288,26 @@
         "资产保全",
         "支付清算",
         "多智能体协作"
+      ]
+    },
+    {
+      "slug": "june-2-ai-executive-order-banking-impact",
+      "title": "白宫6月2日AI行政令：90天到30天的政治博弈与金融业的新安全边界",
+      "date": "2026-09-27",
+      "description": "2026年6月2日特朗普签署《促进先进人工智能创新与安全》行政令，以自愿框架取代强制许可，让政府最多30天访问前沿模型；90天到30天的博弈折射美国AI监管的克制与回摆。本文基于9份归档来源，梳理行政令三条线、Mythos模型诱因与自愿边界，并分析其对金融业系统性风险、财政部漏洞扫描与银行合规的启示。",
+      "tags": [
+        "AI行政令",
+        "金融科技",
+        "银行AI",
+        "AI治理",
+        "自愿框架",
+        "前沿模型",
+        "Mythos模型",
+        "风险管理",
+        "资产保全",
+        "AI合规",
+        "30天审查",
+        "中美AI"
       ]
     },
     {
@@ -1848,5 +1868,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-29",
   "version": "1.1",
-  "total_articles": 107
+  "total_articles": 108
 }

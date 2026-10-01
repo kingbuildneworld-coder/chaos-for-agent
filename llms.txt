@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (107)
+## Articles (108)
 
 - [资产保全的智能化升级需要什么样的 FDE——当监管边界比模型能力更早决定自动化的上限](https://bi-chao.com/articles/asset-preservation-fde-capability-challenges)
   - Description: 国标 GB/T 45251-2025 第 5.3.1.8 条明确授权金融机构与第三方催收机构可使用人工智能技术开展催收作业，同时规定告知式语音催收（含智能语音）对单一债务人每日合计不超过 3 次；金发〔2026〕8号要求人工智能高风险应用须经风险管理委员会批准；银保监办发〔20…
@@ -67,6 +67,10 @@
   - Description: 2026年9月，Grok Bot、Muse、Dots、Claude Tag 等 General Agent 产品密集发布。它们同时拥有 coding、work、personal assistant 能力，不再只是聊天机器人，而是能自主推进任务的"数字同事"。本文基于6份归档来源…
   - Date: 2026-09-27
   - Tags: General Agent, 智能体, 金融科技, 银行AI, 入口之争, Grok Bot, Muse, Dots, Claude Tag, API-first, 风险管理, 资产保全, 支付清算, 多智能体协作
+- [白宫6月2日AI行政令：90天到30天的政治博弈与金融业的新安全边界](https://bi-chao.com/articles/june-2-ai-executive-order-banking-impact)
+  - Description: 2026年6月2日特朗普签署《促进先进人工智能创新与安全》行政令，以自愿框架取代强制许可，让政府最多30天访问前沿模型；90天到30天的博弈折射美国AI监管的克制与回摆。本文基于9份归档来源，梳理行政令三条线、Mythos模型诱因与自愿边界，并分析其对金融业系统性风险、财政部漏…
+  - Date: 2026-09-27
+  - Tags: AI行政令, 金融科技, 银行AI, AI治理, 自愿框架, 前沿模型, Mythos模型, 风险管理, 资产保全, AI合规, 30天审查, 中美AI
 - [麦肯锡2026全球银行业报告：技术宽限期已经消失——从资产保全视角看'精准提速'](https://bi-chao.com/articles/mckinsey-2026-global-banking-report-analysis)
   - Description: 麦肯锡《2026全球银行业年度报告：精准提速》预览版于2026年9月发布，完整版将于10月推出。报告核心判断是：全球银行业2025年净利润达1.3万亿美元、增长7%，但AI冲击下传统银行的技术宽限期已经消失。本文从资产保全视角出发，分析报告核心数据与战略框架，区分麦肯锡观点与本…
   - Date: 2026-09-27
@@ -445,15 +449,15 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 40 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 31 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 金融科技: 41 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 32 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 28 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 28 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 风险管理: 25 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 25 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 风险管理: 26 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 银行AI: 26 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
+- 资产保全: 13 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
-- 资产保全: 12 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
