@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-09-29",
-  "scanned_articles": 105,
-  "articles_with_faq": 40,
-  "total_questions": 156,
+  "scanned_articles": 106,
+  "articles_with_faq": 41,
+  "total_questions": 161,
   "items": [
     {
       "slug": "asset-preservation-fde-capability-challenges",
@@ -98,6 +98,34 @@
         {
           "question": "本文的事实可靠吗？哪些是推不出来的？",
           "answer": "A: **平台事实全部来自一手源**：官方新闻稿、开发者博客、GitHub 仓库（Apache-2.0 许可、10,543 star 均为核验日取得）。**需要谨慎的有两处**：**其一**，NVIDIA 说其平台\"本可以阻止\"OpenAI agent 入侵 Hugging Face 事件——**这是 NVIDIA 自己的说法，公司自报，未经独立验证**；事件本身有 CNBC 与华盛顿邮报报道（SECONDARY）。**其二**，五条核心原则来自 NVIDIA 开发者博客，**是厂商自述的设计理念，不是第三方评测的结论**。**明确未核实的**：OpenShell 的内部实现细节（本文未审读源码）；Citi 与 JPMorganChase 作为合作伙伴的**具体使用场景未披露**；以及**银行侧是否有机构已基于该平台构建中台的公开案例——未能找到**。此外，第八节的五层架构表与第十节的结论**全部为本文分析**，不是 NVIDIA 官方的分层。"
+        }
+      ]
+    },
+    {
+      "slug": "world-bank-ai-development-banking",
+      "title": "世界银行把 AI 写成发展工具——WDR 2026 的主张、措施，与中国银行业的五条启示",
+      "url": "https://bi-chao.com/articles/world-bank-ai-development-banking",
+      "date": "2026-09-29",
+      "faqs": [
+        {
+          "question": "世界银行有专门的 AI 战略文件吗？",
+          "answer": "A: **没有一份叫\"AI 战略\"的文件。** 世界银行的 AI 主张载体是三份报告：**WDR 2026**（2026 年 8 月，旗舰报告，覆盖整个经济体）、**DPTR 2025**（2026 年 1 月，4C 诊断框架）、**Building Data Infrastructure for AI Readiness**（2026 年 5 月，数据中心与云服务措施）。**它的措施是\"诊断框架 + 基础设施\"，不是\"技术方案\"。** 这与一家技术公司发布 AI 战略的思路完全不同——世行不给\"怎么做\"，给\"怎么诊断\"和\"地基怎么建\"。"
+        },
+        {
+          "question": "adopt-adapt-advance 三步框架，对银行有什么具体含义？",
+          "answer": "A: **Adopt（采用）是起点，Adapt（适配）收益最大，Advance（推进）最难最贵。** 报告明确说\"Adapting AI solutions to local conditions, rather than merely adopting AI, will deliver the biggest benefits\"。**对银行：不要追求\"用上最先进的模型\"，要追求\"让模型适配我的流程与数据\"。** 一个经过本行信贷术语微调、接入本行押品与诉讼数据、适配本行处置流程的开源模型，其业务价值可能超过一个未经适配的旗舰模型。**报告对\"自建前沿模型\"的评价是\"对大多数发展中国家来说，在可预见的未来不是一个现实的目标\"——对银行同理。"
+        },
+        {
+          "question": "世界银行的监管立场和中国有什么不同？",
+          "answer": "A: **世行主张\"自愿标准优先、现有法律兜底、国际合作避免碎片化\"；中国走的是\"监管发文先行、备案与准入管理、高风险应用经风险管理委员会批准\"。** 世行说政府应\"rely on voluntary private standards as a starting point\"，市场失灵时\"use existing regulations to address social harms\"。**中国的路径是监管划边界，机构在边界内创新；世行主张行业先自律，市场失灵再立法。** 对银行的实务含义：**在中国做 AI 先读监管文件，在海外做 AI 先读行业标准，跨境业务还要考虑世行强调的\"防止监管碎片化\"。**"
+        },
+        {
+          "question": "世行说\"AI 主权成本高\"，和中国要求的\"自主可控\"矛盾吗？",
+          "answer": "A: **不矛盾，因为两者说的不是同一件事。** 世行说的是\"自建一切 AI 能力\"（包括芯片、数据中心、前沿模型）成本高、收益不确定。**中国银行业的\"自主可控\"是监管要求——银保监办发〔2022〕2号要求\"核心能力不外包\"、\"模型管理核心环节自主掌控\"。** 银行要自主掌控的不是\"一切\"，而是\"核心\"——模型管理、合规边界、处置判断。**这与世行的\"AI 主权成本高\"不矛盾：世行反对的是\"全自建\"，中国要求的是\"核心自建\"。**"
+        },
+        {
+          "question": "本文的事实可靠吗？哪些推不出来？",
+          "answer": "A: **世界银行的文件事实全部来自一手源**：WDR 2026 官方页面与全文 PDF、DPTR 2025、Building Data Infrastructure for AI Readiness、The Global Landscape of National AI Strategies 背景论文。**需要谨慎的有三点**：**其一**，世行没有专门针对银行业 AI 的文件，本文的\"启示\"是从通用框架到银行业的推论，不是世行对银行业的直接建议；**其二**，世行说\"AI 补充而非替代劳动者\"是基于\"大多数发展中国家的人从事体力工作\"的判断，**银行业是知识密集型行业，不能直接套用**；**其三**，世行的\"自愿标准优先\"立场在中国不适用——**在中国，监管文件是硬约束，不是建议**。此外，第六节的五条启示与第七、八节的分析**全部为本文分析**，不是世行的直接结论。"
         }
       ]
     },

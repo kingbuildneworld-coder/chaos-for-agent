@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 105,
+    "total_articles": 106,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -102,6 +102,23 @@
         "可验证策略",
         "银行AI治理",
         "Apache-2.0"
+      ]
+    },
+    {
+      "slug": "world-bank-ai-development-banking",
+      "title": "世界银行把 AI 写成发展工具——WDR 2026 的主张、措施，与中国银行业的五条启示",
+      "date": "2026-09-29",
+      "description": "世界银行 2026 年 8 月发布《世界发展报告 2026：人工智能的承诺》，这是世行第一份全面评估 AI 对发展中经济体影响的旗舰报告。本文基于 WDR 2026 全文、Digital Progress and Trends Report 2025、Building Data Infrastructure for AI Readiness 等一手文件，总结世界银行在 AI 方面的主要观点（adopt-adapt-advance 三步框架、small AI、4C、政府三重角色）与具体措施（数据基础设施、三机构协同），并逐条分析其对中国银行业的启示，特别对比了世行'自愿标准优先'的监管立场与中国'监管发文+备案+准入'路径的差异。",
+      "tags": [
+        "世界银行",
+        "WDR2026",
+        "AI发展",
+        "数字金融",
+        "监管框架",
+        "small AI",
+        "4C框架",
+        "中国银行业",
+        "国际比较"
       ]
     },
     {
@@ -1811,5 +1828,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-09-29",
   "version": "1.1",
-  "total_articles": 105
+  "total_articles": 106
 }

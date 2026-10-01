@@ -62,6 +62,22 @@
     <category term="Apache-2.0"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/world-bank-ai-development-banking</id>
+    <title>世界银行把 AI 写成发展工具——WDR 2026 的主张、措施，与中国银行业的五条启示</title>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/world-bank-ai-development-banking" rel="alternate" type="text/html"/>
+    <summary>世界银行 2026 年 8 月发布《世界发展报告 2026：人工智能的承诺》，这是世行第一份全面评估 AI 对发展中经济体影响的旗舰报告。本文基于 WDR 2026 全文、Digital Progress and Trends Report 2025、Building Data Infrastructure for AI Readiness 等一手文件，总结世界银行在 AI 方面的主要观点（adopt-adapt-advance 三步框架、small AI、4C、政府三重角色）与具体措施（数据基础设施、三机构协同），并逐条分析其对中国银行业的启示，特别对比了世行&apos;自愿标准优先&apos;的监管立场与中国&apos;监管发文+备案+准入&apos;路径的差异。</summary>
+    <category term="世界银行"/>
+    <category term="WDR2026"/>
+    <category term="AI发展"/>
+    <category term="数字金融"/>
+    <category term="监管框架"/>
+    <category term="small AI"/>
+    <category term="4C框架"/>
+    <category term="中国银行业"/>
+    <category term="国际比较"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/agent-internet-payment-infrastructure</id>
     <title>智能体互联网需要怎样的支付基础设施——从协议战争、责任真空与银行可抄的五层结构</title>
     <updated>2026-09-27T00:00:00Z</updated>
