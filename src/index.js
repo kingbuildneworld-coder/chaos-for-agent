@@ -899,27 +899,99 @@ function getRelated(articles, currentSlug, currentTags) {
 
 /** 从正文自动检测 FAQ 模式：匹配 Q: 或 **Q:** 或 > Q: 格式 */
 function detectFAQ(body) {
-  const blocks = [];
   const lines = body.split('\n');
-  let currentQ = null, currentA = '';
-  const qRe = /^(?:>\s*)?\*{0,2}Q[：:]\*{0,2}\s*(.+)/i;
+  // 提问行容忍 6 种站内写法：`Q:` / `**Q1：**` / `### Q:` / `**问一：**` / `> Q:`
+  // 关键是**允许可选的引用符与标题前缀**及**中英文序号** —— 此前只容忍加粗与
+  // 半角数字，导致 `### Q:`（实测 10 篇）、`**问一：**`（1 篇）、`> Q:` 完全检不出。
+  const qRe = /^\s*(?:>\s*)?(?:#{1,6}\s*)?(?:\*+|_+)?\s*(?:Q|问)\s*(?:\d{1,2}|[一二三四五六七八九十]{1,3})?\s*[：:]\s*(?:\*+|_+)?\s*(.+)/i;
+  // 用于识别「标题形态的提问行」，使它不被误判为章节边界（见下方边界判定）
+  const qLineRe = /^\s*(?:>\s*)?(?:#{1,6}\s*)?\**\s*(?:Q|问)\s*(?:\d{1,2}|[一二三四五六七八九十]{1,3})?\s*[：:]/i;
+  // 标题只需**包含**关键词：站内实际存在 `## 四、常见问题（FAQ）` 这类带序号的
+  // 写法。若要求标题以关键词开头就会漏检 → start=-1 → 退化为全篇扫描 →
+  // 末条答案吞掉文章自带的 JSON-LD <script> 块，而答案里的字面量 </script>
+  // 会提前闭合 script 标签，产出**截断的无效 JSON-LD**（实测 8 篇）。
+  // 「常见问」而非「常见问题」：同时覆盖 常见问题 / 常见问答 / 常见疑问。
+  const headRe = /^#{2,4}\s*.*(?:常见问|FAQ|问答)/i;
+  const stopRe = /^(?:-{3,}\s*$|<script\b|\*+\s*作者)/i;
+  // 无论是否找到标题，<script> 与署名行都是硬边界 —— 绝不能让它们进入答案
+  const hardStopRe = /^(?:<script\b|\*+\s*作者)/i;
 
-  for (const line of lines) {
-    const m = line.match(qRe);
-    if (m) {
-      if (currentQ && currentA) blocks.push({ question: currentQ, answer: currentA.trim() });
-      // 清理问题文本尾部残留的 Markdown 强调标记。
-      // 原文常写作 `**Q1：……？**`，qRe 只吃掉开头的 `**Q1：`，结尾的 `**`
-      // 会留在问题里、页面上直接显示成字面星号
-      // （实测 local-llm-deployment-data-sovereignty 有 5 处）。
-      currentQ = m[1].trim().replace(/\*{1,3}\s*$/, '').trim();
-      currentA = '';
-    } else if (currentQ) {
-      currentA += line + '\n';
+  let start = -1;
+  for (let i = 0; i < lines.length; i++) {
+    if (headRe.test(lines[i].trim())) { start = i; break; }
+  }
+
+  const hasHead = start >= 0;
+  const from = hasHead ? start + 1 : 0;
+
+  let end = lines.length;
+  for (let i = from; i < lines.length; i++) {
+    const t = lines[i].trim();
+    if (stopRe.test(t)) { end = i; break; }
+    // 仅在已定位标题时，下一个 `## ` 小节才是 FAQ 区块边界。
+    // 无标题时不能按小节切，否则正文第一个小节就会把扫描截断、一篇都检不出。
+    // **但 H3 形态的提问行（`### Q: x`）属于区块内部**，不能当边界 ——
+    // 否则第一个 `### Q:` 就把区块截断，FAQ 恒为空（实测 10 篇因此静默丢失）。
+    if (hasHead && /^#{2,3}\s+\S/.test(t) && !qLineRe.test(t)) { end = i; break; }
+  }
+  // 无标题路径额外收紧：至少要在 <script> / 署名处停下。
+  // 取 min 而非直接覆盖 —— 否则会丢掉上面已找到的 `---` 边界，
+  // 使末条答案吞进分隔线与署名行（单元测试 V7 曾实测到该污染）。
+  if (!hasHead) {
+    for (let i = from; i < end; i++) {
+      if (hardStopRe.test(lines[i].trim())) { end = i; break; }
     }
   }
-  if (currentQ && currentA) blocks.push({ question: currentQ, answer: currentA.trim() });
-  return blocks.length >= 2 ? blocks : null;
+
+  const drop = new Set();
+  if (hasHead) for (let i = start; i < end; i++) drop.add(i);
+
+  const to = end;
+
+  const blocks = [];
+  let currentQ = null;
+  let currentA = [];
+
+  for (let i = from; i < to; i++) {
+    const line = lines[i];
+    const m = line.match(qRe);
+    if (m) {
+      if (currentQ && currentA.join('').trim()) {
+        blocks.push({ question: currentQ, answer: currentA.join('\n').trim() });
+      }
+      // 清理问题文本尾部残留的 Markdown 强调标记：`(**Q1：……？**)`
+      // 结尾的 `**` 会留在问题里、页面上直接显示成字面星号
+      // （实测 local-llm-deployment-data-sovereignty 有 5 处）。
+      currentQ = m[1].trim().replace(/\*{1,3}\s*$/, '').trim();
+      currentA = [];
+      drop.add(i);
+    } else if (currentQ) {
+      currentA.push(line);
+      if (line.trim()) drop.add(i);   // 保留空行以维持段落分隔
+    }
+  }
+  if (currentQ && currentA.join('').trim()) {
+    blocks.push({ question: currentQ, answer: currentA.join('\n').trim() });
+  }
+
+  if (blocks.length < 2) return null;
+
+  // 去掉答案行首的 `A：` / `A:` / `> A:`，否则渲染出来是「A: 答案」这种冗余形态。
+  // 容忍引用符：blockquote 写法（`> A: …`）否则会整体带进答案里。
+  for (const b of blocks) {
+    b.answer = b.answer.replace(/^\s*(?:>\s*)?(?:\*+|_+)?\s*A\s*[：:]\s*/, '');
+    // 兜底：答案里绝不能出现 <script>。FAQPage 的 JSON-LD 是字符串拼接进
+    // <script> 标签的，字面量 </script> 会提前闭合标签、产出无效结构化数据。
+    // 边界判定本已排除此情况，这里是最后一道防线。
+    const si = b.answer.search(/<script\b/i);
+    if (si !== -1) b.answer = b.answer.slice(0, si).trim();
+  }
+
+  const cleaned = lines
+    .filter((_, i) => !drop.has(i))
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n');
+  return { faqs: blocks, body: cleaned };
 }
 
 /** 渲染 FAQ HTML 区块 */
@@ -1403,9 +1475,17 @@ async function renderArticle(pathname, request, explicitMd) {
     const schemaType = meta.schema_type || article.schema_type || 'Article';
 
     // FAQ: 优先从前置元数据读取，否则从正文自动检测
+    // detectFAQ 返回剔除后的正文 —— 原始 `Q:`/`A:` 段落若留在正文里，会与
+    // 下方生成的 faq-section 重复渲染同一内容。仅**渲染路径**用 renderBody，
+    // wordCount / readTime / keyTakeaways 仍按全文计算。
     let faqItems = meta.faq || article.faq || null;
+    let renderBody = body;
     if (!faqItems) {
-      faqItems = detectFAQ(body);
+      const detected = detectFAQ(body);
+      if (detected) {
+        faqItems = detected.faqs;
+        renderBody = detected.body;
+      }
     }
     const faqHtml = renderFAQ(faqItems);
 
@@ -1449,14 +1529,16 @@ async function renderArticle(pathname, request, explicitMd) {
       : '';
 
     // 转换正文 + 定义块检测 + 内链注入
-    let contentHtml = injectHeadingIds(md2html(body));
+    let contentHtml = injectHeadingIds(md2html(renderBody));
     contentHtml = detectDefinitions(contentHtml);
     contentHtml = detectDataCitations(contentHtml);   // B2: 行内数据引用标记
     // 顺序很重要：必须在 detectDataCitations 之后。否则裸 URL 会先被包成 <a>，
     // 接着 detectDataCitations 再套一层 <cite>，产生嵌套锚点。
     contentHtml = autolinkBareUrls(contentHtml);      // 裸 URL → 可点击的一手来源链接
     contentHtml = injectInternalLinks(contentHtml, articles, slug);
-    const tocHtml = generateTOC(body);
+    // TOC 与 contentHtml 同源：FAQ 区块已从 renderBody 剔除，若仍按全文生成
+    // 目录，会留下一条指向已不存在标题的死锚点。
+    const tocHtml = generateTOC(renderBody);
     const prevNextHtml = getPrevNext(articles, slug);
     const relatedHtml = getRelated(articles, slug, tags);
 
