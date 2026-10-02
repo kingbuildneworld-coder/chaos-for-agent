@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (109)
+## Articles (110)
 
+- [FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱](https://bi-chao.com/articles/fibo-asset-preservation-ontology)
+  - Description: 『用 EDM Council FIBO 做资产保全本体建模』是一个不成立的命题。本文对 edmcouncil/fibo 仓库全部 295 个本体做逐词核查，给出可复用的确切边界（FND/FBC 基础层、Collateral 及其两个子类、CollateralValueAsOfD…
+  - Date: 2026-10-02
+  - Tags: FIBO, EDMCouncil, 本体建模, 知识图谱, 资产保全, 不良处置, 押品管理, 数据标准, ASD-STE100, 技术风险
 - [同一个权重、同一张卡，答案却不一样：本地部署大模型的精度风险与银行验证清单](https://bi-chao.com/articles/local-llm-inference-precision-banking)
   - Description: Level1Techs 论坛上一篇实测帖给出了本地部署大模型最反直觉的结论：同一份权重、同一张 GPU、同一个驱动与 vLLM，仅切换 attention backend 这一个配置项，就能让模型在工具调用中把 Cisco 接口号从 GigabitEthernet0/0/1.2…
   - Date: 2026-10-01
@@ -460,7 +464,7 @@
 - 风险管理: 26 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 银行AI: 26 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 资产保全: 13 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 资产保全: 14 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 

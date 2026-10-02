@@ -1,10 +1,42 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-10-01",
-  "scanned_articles": 109,
-  "articles_with_faq": 75,
-  "total_questions": 330,
+  "updated": "2026-10-02",
+  "scanned_articles": 110,
+  "articles_with_faq": 76,
+  "total_questions": 336,
   "items": [
+    {
+      "slug": "fibo-asset-preservation-ontology",
+      "title": "FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱",
+      "url": "https://bi-chao.com/articles/fibo-asset-preservation-ontology",
+      "date": "2026-10-02",
+      "faqs": [
+        {
+          "question": "既然 FIBO 覆盖不到，那银行做资产保全本体还有什么意义？",
+          "answer": "**意义在基础层，不在业务层。** FIBO 的 FND 与 FBC 提供当事方、协议、法律能力、地点、合同第三方等概念，这套基础对齐了才能与行内其他系统打通，避免每套系统各造一套「客户」「账户」「合同」。**真正需要判断的是投入产出：基础层的复用有独立价值，业务层（违约分级、催收、止赎、核销）无论用不用 FIBO 都要自建。** 所以正确的问题不是「用不用 FIBO」，而是「哪些层值得复用」。按本文的三层方案，第一层直接引用，第二层继承扩展，第三层自建。"
+        },
+        {
+          "question": "网上说 FIBO 有 Collateral 模块，可以直接用吗？",
+          "answer": "**FIBO 没有 Collateral 模块，这是一个需要纠正的流传说法。** 抵押品概念散落在四个本体中，不构成独立模块。更关键的是覆盖度：`Collateral` 的子类只有 `PhysicalCollateral` 与 `NonPhysicalCollateral` 两个互斥值，这是全部押品类型体系。**留置权顺位只有两个具名值（`PrimaryLienPosition`、`SubordinateLienPosition`），银行实务的第三、第四顺位和跨债权人顺位瀑布都没有。查封登记与完善（perfection）、blanket lien、negative pledge 在全库出现次数为零。** 所以「有 Collateral 类」不等于「有押品管理模型」——前者是资产分类的二元切分，后者是银行业的核心能力。"
+        },
+        {
+          "question": "FIBO 里的 default 能不能直接用来建违约分级？",
+          "answer": "**不能，会建错。** FIBO 的 default 指 ISDA 信用事件，用于 CDS 与债券触发机制，相关概念包括 failure to pay、bankruptcy、moratorium、repudiation、obligation acceleration。同一文件里的 grace period、default threshold amount、default interest compounding basis 都是 CDS 触发参数，**与银行信贷的违约认定标准（逾期天数、还款困难、风险分类下调）不是同一套东西。** FIBO 唯一的银行违约类 `LoanDefaultProceeding` 是未完成的桩，定义为空的。**结论：违约分级必须完全自建，不能从 FIBO 派生。**"
+        },
+        {
+          "question": "用 grep 搜 FIBO 源码判断覆盖度可靠吗？",
+          "answer": "**不可靠，本次核查给出了两个实例。** 第一，全库有 100 个文件命中 collections，核查后确认全部是 OMG Commons 的 SKOS `Collections` 词汇，与催收完全无关——若据此判断「FIBO 覆盖催收」，结论会完全错误。第二，FIBO 本体文件扩展名是 `.rdf` 而非 `.owl`，用 `.owl` 做通配搜索会对全部词汇返回零命中，包括 guarantor 这种必然存在的词。**正确做法是核对文件格式、逐条读 `skos:definition` 实际内容、并区分真概念与命名空间碰撞。搜索命中不等于概念存在。**"
+        },
+        {
+          "question": "把资产保全模型挂到 FIBO 上，会不会因为本体不完整而引入错误推理？",
+          "answer": "**会，所以必须显式书写跨层映射。** FIBO 的本体尚不完整——`LoanEvents.rdf` 是 Provisional 成熟度，`LoanDefaultProceeding` 定义为空，还有 `isLienOn` 这类无定义域、无值域、无定义的属性。在这样的本体上依赖推理机自动推出层级，会产生错误结论。**建议做法是三层分离：第一层直接引用不修改，第二层以 FIBO 类为父类显式声明子类，第三层完全自建；层间关系写成显式映射而非交给推理机。** 这样即使 FIBO 后续演进或退役（四个 OMG 规格已在退役流程中），你的自建层也不受影响。"
+        },
+        {
+          "question": "听说 FIBO 是 OMG 标准，可以直接作为监管报送的报送口径？",
+          "answer": "**不能，这个说法不准确。** OMG 正式标准只有四个 FIBO 规格——Business Entities v1.1、Financial Business and Commerce v1.0、Foundations v1.2、Indices and Indicators v1.0，全部发布于 2017 至 2018 年，且**这四个在 2026 年 6 月已全部进入 Pending Request for Retirement（退役申请流程）**。**Loans 领域从来不是 OMG 标准**，只存在于 EDMA 的季度 GitHub 发布，成熟度 Provisional 占 36 个。**许可上也要分层：OWL 源码是 MIT，但 FIB-DM 数据模型是独立商业许可且明确管辖衍生作品。** 若要用 FIBO 作为监管报送口径，需先解决标准状态、成熟度与许可三个问题，而不是直接引用 OMG 这个名号。"
+        }
+      ]
+    },
     {
       "slug": "local-llm-inference-precision-banking",
       "title": "同一个权重、同一张卡，答案却不一样：本地部署大模型的精度风险与银行验证清单",
