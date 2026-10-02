@@ -82,7 +82,9 @@ FIBO 不提供资产保全本体。银行必须自建大部分模型。FIBO 只�
 
 **抵押品估值。** `CollateralValueAsOfDate` 是 AppraisedValue 的子类，表示某一日期的抵押品评估值。`CollateralValuation` 表示由 Appraiser 提供的评估活动，仅覆盖不动产，成熟度为 Provisional。
 
-**担保结构。** `CollateralAgreement`、`SecuredLoan`、`CollateralizedLoan`、`CollateralizedGuaranty` 均可用。
+**担保结构。** `SecuredLoan`、`CollateralizedLoan`、`CollateralizedGuaranty` 可用。
+
+**但 `CollateralAgreement` 不可用。** 它恰好在 2025Q3 到 Q4 的命名空间迁移中被移除。更麻烦的是它在两个命名空间下各有一个定义：`FND/Agreements/Contracts/CollateralAgreement`（有定义与注解）与 `FBC/DebtAndEquities/Debt/CollateralAgreement`（无定义，仅两条限制）。这不是公理累积，是FIBO 自身的建模分歧，银行必须二选一，且不应以继承方式引用。
 
 **留置权顺位。** `LenderLienPosition` 是 Classifier，定义为标记贷款人是否对用作抵押的资产享有优先留置权的分类器。其具名值只有两个：`PrimaryLienPosition` 与 `SubordinateLienPosition`。
 
@@ -108,7 +110,9 @@ FIBO 不提供资产保全本体。银行必须自建大部分模型。FIBO 只�
 
 **第一层，复用。** 直接引用 FIBO 类，不修改。范围是基础层、Collateral、CollateralValueAsOfDate、SecuredLoan、LenderLienPosition、LegalProceeding、Servicer、ACTUS。
 
-**第二层，扩展。** 以 FIBO 类为父类，添加银行口径子类。例如 BankCollateral 继承 Collateral，SeniorLienPosition 继承 LenderLienPosition，Senior 是新增值。
+**第二层，映射。** **不要以 FIBO 类为父类。** 理由见下节：FIBO 的类 IRI 在单季度内移除 145 个，且旧 IRI 保留为带 `owl:equivalentClass` 跳转的 deprecated 桩——继承它不会报错，而是静默绑死在已废弃的分类轴上。
+
+正确做法是照抄 FIBO 自己接 ACTUS 的范式：银行码表条目声明为 `owl:NamedIndividual`，用 `cmns-dsg:denotes someValuesFrom <FIBO 概念>` 限制做桥接。押品分类因需多维分面，用 SKOS Concept Scheme 而非类树。顺位编码由银行自有 Classifier 表达序数，不继承 FIBO 无序的 `LenderLienPosition`。**详见另文《别继承 FIBO 的类：银行资产保全扩展层的可落地设计》。**
 
 **第三层，本地。** FIBO 无对应，全部自建。违约分级、处置流程、押品运营、监管报送映射都放这里。
 
@@ -122,11 +126,13 @@ OMG 正式标准只有四个：Business Entities v1.1、Financial Business and C
 
 2026 年 6 月，这四个标准全部进入 Pending Request for Retirement。Loans 只存在于 EDMA 的季度 GitHub 发布。FIBO v2 终结工作组已于 2020 年 12 月解散。
 
-**其二，许可分层容易误判。**
+**其二，许可要分三层看清。**
 
-FIBO 的 OWL 源码是 MIT 许可。FIB-DM 数据模型是独立商业许可，且明确管辖衍生作品。OWL 压缩包下载需要 EDMConnect 会员身份，尽管许可本身是 MIT。
+FIBO 的 OWL 源码是 MIT 许可，明确授予使用、复制、修改、合并、发布、分发、再许可、销售，无 copyleft，无领域限制。唯一义务是保留版权与许可声明。**从 OWL 派生专有模型是允许的。**
 
-若银行要产出专有衍生模型，需向 EDMA 确认许可边界。仅凭 MIT 不足以自证。
+**GPL-3.0 附加在 FIB-DM core 上，不附加在 FIBO 上。** FIB-DM 是 Jayzed Data Models 用专利 CODT 流程从 FIBO 机械转换出的 PowerDesigner 概念数据模型，是下游衍生作品，不同的东西。银行从 OWL 派生完全不触碰 GPL-3.0。若改用 FIB-DM core，copyleft 问题才是实质性的。
+
+另有两点。其一，**"FIBO" 是注册商标，MIT 不授予商标权**，银行不能把 FIBO 用进自己的产品名或品牌。其二，**存在一个未解冲突**：Jayzed 的 IPLA 对 MIT 范围做了超出 MIT 文本的解释性主张，而 Jayzed 是 FIBO 版权的第三方，无权单方面限缩 EDMC 授出的权利。**该问题应由银行法务向 EDMA 索取书面认定，不要依赖任何二手描述。**
 
 **其三，成熟度不均。**
 
@@ -147,6 +153,22 @@ State Street 的 PoC 是利率互换，用途是抵押品集中度分析，从�
 STEMG 自己说明，检查工具无法判断段落首句是否为主题句。同时 STEMG 不认可、不认证、不授权任何检查工具。
 
 所以这个合规比例只在自动子集内成立。不要对外声明整体合规。
+
+## 替代基础的评估
+
+若要评估换基础，这是独立的选型问题。以下状态经核查。
+
+**CDM（Common Data Model，FINOS）** 是值得优先评估的候选。它是 FINOS 下的 Apache 2.0 开源项目，维护方包括 ISDA、ISLA、ICMA、JPMorganChase、REGnosys、TradeHeader。它有 `Loan extends InstrumentBase` 的类结构，有证券融资与押品覆盖。**关键差别在于它的发布说明含显式的向后不兼容变更章节，逐项给迁移指引**——这正是 FIBO 完全没有的。它是 FINOS 项目而非 OMG 规格，因此不受 OMG 退役机制影响。它承载的是厂商与依赖方风险，即 REGnosys 与 ISDA。
+
+**SBVR 不要采纳。** SBVR 1.6 已在 OMG 的退役清单上，暴露比 FIBO 更大。
+
+**FOM（Financial Object Model）不存在这个标准。** 检索到的全部是无关同名物：FINOS 一个 2016 年就停摆的工作组、WM Datenservice 2004 年的内部系统。**不要对银行引用。**
+
+**Commons 1.3 是正式标准（2026 年 6 月），但 1.4 也在退役清单上。**
+
+还有一层结构性风险需要知道：**EDMC 于 2025-10-01 收购了 OMG。** 退役 FIBO v1 的机构与每季度发布 FIBO 的机构，此后是同一法人实体。**所以"改用另一个 OMG 标准"不构成对冲，只有离开 OMG 与 EDMA 家族（即走 FINOS）才是。**
+
+最后一点很重要：FIBO 不会消失。退役流程只撤销 OMG 的标准地位，不动代码本身，EDMC 给出的替代指引就是"改用持续更新的 GitHub 版 FIBO"。所以风险不是消失，是**无版本保证的持续变动**。框架应当是"不要绑定 FIBO"，而不是"不要用 FIBO"。
 
 ## 本文结论的边界
 
