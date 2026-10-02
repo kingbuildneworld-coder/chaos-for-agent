@@ -1,5 +1,25 @@
 [
   {
+    "title": "FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱",
+    "slug": "fibo-asset-preservation-ontology",
+    "url": "/articles/fibo-asset-preservation-ontology.md",
+    "description": "『用 EDM Council FIBO 做资产保全本体建模』是一个不成立的命题。本文对 edmcouncil/fibo 仓库全部 295 个本体做逐词核查，给出可复用的确切边界（FND/FBC 基础层、Collateral 及其两个子类、CollateralValueAsOfDate、SecuredLoan、LenderLienPosition 的两个具名值、LegalProceeding、Servicer 角色、ECB ACTUS 监管分类映射），以及必须自建的完整清单（违约分级、催收、展期重组、止赎收回、核销、押品运营、查封完善与顺位瀑布）。文中给出 FIBO 委员会自己留下的书面证据——LoanDefaultProceeding 类的 skos:definition 字面写着『[no definition]』，并注明需要领域专家与流程建模；并拆解两个会导致错误结论的陷阱：FIBO 的 default 实为 ISDA 信用事件（CDS 触发机制，非银行信贷违约），以及全库 100 个文件命中的 collections 全部是 OMG Commons 的 SKOS 词汇假阳性。另附四个治理陷阱：Loans 从来不是 OMG 标准（仅四个 FIBO 规格在 2017–2018 年达到正式状态，且 2026 年 6 月全部进入 Pending Request for Retirement）、MIT 与 FIB-DM 商业许可的分层、Provisional 成熟度不可作稳定接口、以及公开案例全部与不良处置无关。",
+    "date": "2026-10-02",
+    "tags": [
+      "FIBO",
+      "EDMCouncil",
+      "本体建模",
+      "知识图谱",
+      "资产保全",
+      "不良处置",
+      "押品管理",
+      "数据标准",
+      "ASD-STE100",
+      "技术风险"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "同一个权重、同一张卡，答案却不一样：本地部署大模型的精度风险与银行验证清单",
     "slug": "local-llm-inference-precision-banking",
     "url": "/articles/local-llm-inference-precision-banking.md",
