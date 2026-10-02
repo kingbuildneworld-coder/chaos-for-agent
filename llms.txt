@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (110)
+## Articles (111)
 
 - [FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱](https://bi-chao.com/articles/fibo-asset-preservation-ontology)
   - Description: 『用 EDM Council FIBO 做资产保全本体建模』是一个不成立的命题。本文对 edmcouncil/fibo 仓库全部 295 个本体做逐词核查，给出可复用的确切边界（FND/FBC 基础层、Collateral 及其两个子类、CollateralValueAsOfD…
@@ -95,6 +95,10 @@
   - Description: Google Cloud AI Research 在 arXiv:2609.24972 中提出 RRSI，用正则化约束 agent harness 的递归自我进化。真正值得银行注意的不是它的成绩，而是一个负结果：去掉全部正则后，进化集得分升到 92.8（最高），真实场景泛化均值…
   - Date: 2026-09-27
   - Tags: Agent评测, AI治理, harness, 模型风险, 自动化优化, 过拟合, 银行业AI, 递归自我改进
+- [稳定币智能支付浪潮：Visa、Mastercard 的布局与银行的三重冲击](https://bi-chao.com/articles/stablecoin-intelligent-payment-banking-impact)
+  - Description: Visa 已支持 160+ 稳定币关联卡片项目，Mastercard 以 18 亿美元收购 BVNK，两大卡组织完成结算层布局。劳埃德-Visa 7 天 75 万美元 USDC 试点证明跨境结算可行；BIS 指出稳定币缺乏可靠性、代币化存款更优。本文基于 10 份归档来源分析稳…
+  - Date: 2026-09-27
+  - Tags: 稳定币, 智能支付, 智能体支付, Visa, Mastercard, BVNK, 代理支付联盟, 跨境结算, 金融科技, 银行AI, 风险管理, 资产保全
 - [白宫把AI改名为SI：60天后的联邦定义才是真正会'咬人'的——全球AI治理与金融业应对分析](https://bi-chao.com/articles/super-intelligence-executive-order-banking-response)
   - Description: 2026年9月29日，特朗普签署行政令《开创超级智能时代》，以'超级智能'(SI)取代'人工智能'(AI)，要求总统科技顾问60天内提交SI联邦定义立法建议稿；同日与六家AI公司签署《白宫超级智能协议》建立四层控制。本文基于8份归档来源，分析改名背后的术语政治化、60天定义对全…
   - Date: 2026-09-27
@@ -457,14 +461,14 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 41 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 42 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 32 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 29 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 智能体: 28 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 风险管理: 26 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 26 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 风险管理: 27 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 银行AI: 27 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 资产保全: 14 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 资产保全: 15 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 

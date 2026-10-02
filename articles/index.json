@@ -407,6 +407,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "稳定币智能支付浪潮：Visa、Mastercard 的布局与银行的三重冲击",
+    "slug": "stablecoin-intelligent-payment-banking-impact",
+    "url": "/articles/stablecoin-intelligent-payment-banking-impact.md",
+    "description": "Visa 已支持 160+ 稳定币关联卡片项目，Mastercard 以 18 亿美元收购 BVNK，两大卡组织完成结算层布局。劳埃德-Visa 7 天 75 万美元 USDC 试点证明跨境结算可行；BIS 指出稳定币缺乏可靠性、代币化存款更优。本文基于 10 份归档来源分析稳定币优劣、全球双轨监管格局及与智能支付、智能体支付的融合对银行三重冲击。",
+    "date": "2026-09-27",
+    "tags": [
+      "稳定币",
+      "智能支付",
+      "智能体支付",
+      "Visa",
+      "Mastercard",
+      "BVNK",
+      "代理支付联盟",
+      "跨境结算",
+      "金融科技",
+      "银行AI",
+      "风险管理",
+      "资产保全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "白宫把AI改名为SI：60天后的联邦定义才是真正会'咬人'的——全球AI治理与金融业应对分析",
     "slug": "super-intelligence-executive-order-banking-response",
     "url": "/articles/super-intelligence-executive-order-banking-response.md",
