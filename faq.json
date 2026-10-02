@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-02",
-  "scanned_articles": 111,
-  "articles_with_faq": 77,
-  "total_questions": 341,
+  "scanned_articles": 112,
+  "articles_with_faq": 78,
+  "total_questions": 348,
   "items": [
     {
       "slug": "fibo-asset-preservation-ontology",
@@ -34,6 +34,42 @@
         {
           "question": "听说 FIBO 是 OMG 标准，可以直接作为监管报送的报送口径？",
           "answer": "**不能，这个说法不准确。** OMG 正式标准只有四个 FIBO 规格——Business Entities v1.1、Financial Business and Commerce v1.0、Foundations v1.2、Indices and Indicators v1.0，全部发布于 2017 至 2018 年，且**这四个在 2026 年 6 月已全部进入 Pending Request for Retirement（退役申请流程）**。**Loans 领域从来不是 OMG 标准**，只存在于 EDMA 的季度 GitHub 发布，成熟度 Provisional 占 36 个。**许可上也要分层：OWL 源码是 MIT，但 FIB-DM 数据模型是独立商业许可且明确管辖衍生作品。** 若要用 FIBO 作为监管报送口径，需先解决标准状态、成熟度与许可三个问题，而不是直接引用 OMG 这个名号。"
+        }
+      ]
+    },
+    {
+      "slug": "fibo-extension-layer-design",
+      "title": "别继承 FIBO 的类：银行资产保全扩展层的可落地设计",
+      "url": "https://bi-chao.com/articles/fibo-extension-layer-design",
+      "date": "2026-10-02",
+      "faqs": [
+        {
+          "question": "为什么不直接继承 FIBO 的类？那样不是更省事？",
+          "answer": "**因为 FIBO 的类 IRI 会漂移，而且漂移是静默的。** 2025Q3 到 Q4 一个季度移除 145 个类 IRI，包括 `CollateralAgreement`、`LegalEntity`、`JointStockCompany` 等基础类。旧 IRI 保留为带 `owl:equivalentClass` 跳转的 deprecated 桩，全库 89 处，HTTP 仍返回 200。**`owl:equivalentClass` 让新旧 IRI 逻辑上同一类，所以继承一个 deprecated IRI 不会报错——推理机正常解析，然后把你的类绑死在一条被维护者标记为\"不应复用\"的轴上。** 加上类 IRI 不带版本号、`owl:versionInfo` 为空、仓库无 CHANGELOG 无向后兼容承诺，你无法把模型钉在任何一个版本上。平行码表加显式映射把这些影响限制在映射表内部。"
+        },
+        {
+          "question": "FIBO 自己接 ACTUS 的时候用了什么机制？能照抄吗？",
+          "answer": "**能，而且这正是本设计的模板。** FIBO 把 ACTUS 顶层域与FIBO 并列，建 `ACTUS/ACTUSContractTermMapping.rdf` 专门映射模块，`owl:imports` 双向依赖，然后把 48 个 ACTUS 数据字典条目声明为 `owl:NamedIndividual`，用 `cmns-dsg:denotes someValuesFrom <FIBO 概念>` 的匿名限制做桥接。**全部不使用 `rdfs:subClassOf`，也不使用任何 SKOS 匹配属性**——`skos:exactMatch`、`skos:closeMatch`、`skos:broadMatch` 等在 ACTUS 模块中零命中。方向也很关键：ACTUS 模块不被 LOAN 导入，核心 FIBO 模块不导入 ACTUS，依赖是外部指向内部，核心不受影响。"
+        },
+        {
+          "question": "押品分类为什么不用 OWL 类树而用 SKOS？",
+          "answer": "**因为 FIBO 的类树表达不了银行需要的维度。** FIBO 的 `Collateral` 只有 `PhysicalCollateral` 与 `NonPhysicalCollateral` 两个互斥子类，这就是全部押品类型体系。而银行需要按法律性质、登记状态、估值方式、处置难度四个维度同时分类，一个押品在四个维度上各有一个值。**单继承树无论怎么挂都只能选一个主轴**，要加维度就得造组合类，很快退化成不可维护的深树。SKOS Concept Scheme 正是为多维码表设计的。注意这不是\"SKOS 用错地方\"：FIBO 不用 SKOS 是因为它要类层级断言；银行要多维码表，用 SKOS 才对。"
+        },
+        {
+          "question": "`ContractThirdParty` 和 `ContractParty` 有什么区别？该用哪个？",
+          "answer": "**用 `ContractParty`。** `ContractThirdParty` 的定义原文是 \"party that is indirectly involved in, **but not a counterparty to**, an agreement\"——明确排除缔约方。拿它承载银行对手方是定义级矛盾。`ContractParty` 的定义是 \"legally competent party that has entered into a binding agreement, accepting and conceding obligations, responsibilities, and benefits as specified\"，语义正确。`ContractPrincipal` 也不要随便用——它编码\"发起方/第一方\"，只在合同明确指定第一方时才成立，用作通用对手方槽位会破坏对称性。这三个类在 `Contracts.rdf` 里紧邻（357–363 行与 366–370 行），极易误选。另外 `PartyToContract` 这个类在 FIBO 中不存在。"
+        },
+        {
+          "question": "从 FIBO 派生专有模型，MIT 许可够用吗？",
+          "answer": "**从 OWL 派生够用，但有三处必须写进决策文档。** MIT 明确授予 use、copy、modify、merge、publish、distribute、sublicense、sell，无 copyleft、无领域限制，唯一义务是保留版权与许可声明。**但要注意**：GPL-3.0 附加在 FIB-DM core 上，不附加在 FIBO 上——FIB-DM 是 Jayzed 用专利 CODT 流程转换出的下游衍生作品，从 OWL 派生不触碰 GPL-3.0，改用 FIB-DM core 才有copyleft 问题。第二，\"FIBO\" 是注册商标，MIT 不授予商标权，不能用进自己的产品名。第三，Jayzed 的 IPLA 对 MIT 范围做了超出 MIT 文本的解释性主张，而 Jayzed 是第三方，无权单方面限缩 EDMC 授出的权利——**这一个问题应由法务向 EDMC 索取书面认定，不要依赖二手描述。**"
+        },
+        {
+          "question": "顺位编码怎么和 FIBO 的两个值对齐？",
+          "answer": "**不要把银行的顺位继承 FIBO 的 `LenderLienPosition`。** 那个类是个 `Classifier`，无序，且只有两个具名个体 `PrimaryLienPosition` 与 `SubordinateLienPosition`，没有第三、第四顺位，也没有跨债权人顺位瀑布。银行需要序数，所以自建 `LienPriorityClass`（或用 SKOS `skos:notation` 表达序数），**不继承**。映射是有损的：第 3、4 顺位全部塌缩到 `SubordinateLienPosition`。**这条映射必须显式标注损失**，例如加 `mappingLoss` 注记说明\"序数信息在 FIBO 中不可表达\"，并记录映射依据与日期。静默应用有损映射是这套设计最容易出的事故——推理与应用至少要知道这里丢过信息。"
+        },
+        {
+          "question": "有没有更稳的替代基础？FIBO 会不会消失？",
+          "answer": "**FIBO 不会消失，但会持续漂移，所以不要绑定它。** OMG 的退役流程只撤销 OMG 的标准地位，不动代码本身——退役流程的最后一步是\"从 OMG 已采纳技术清单中移除\"。EDMA 自己给出的替代指引是\"改用持续更新的 GitHub 版 FIBO\"。所以风险不是消失，是**无版本保证的持续变动**。需要评估替代基础（如 FINOS 的 CDM，Apache 2.0，有 `Loan extends InstrumentBase` 与证券融资押品覆盖，其发布说明含显式的向后不兼容变更章节）是独立的选型问题，本文不展开。有一点须注意：**FIBO 的四个 OMG 规格已进入退役流程，而退役方与季度发布方在 2025-10-01 后是同一法人实体**——所以\"改用另一个 OMG 标准\"不构成对冲。"
         }
       ]
     },

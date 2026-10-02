@@ -31,6 +31,23 @@
     <category term="技术风险"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/fibo-extension-layer-design</id>
+    <title>别继承 FIBO 的类：银行资产保全扩展层的可落地设计</title>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/fibo-extension-layer-design" rel="alternate" type="text/html"/>
+    <summary>上一版文章建议『以 FIBO 类为父类添加银行口径子类』。本文用源码证据推翻该建议并给出替代设计。核心依据：FIBO 类 IRI 在 2025Q3→2025Q4 一个季度内移除 145 个（含CollateralAgreement 本身），旧 IRI 保留为带 owl:equivalentClass 跳转的 deprecated 桩——继承它不会报错，而是静默绑死在已废弃的分类轴上；且 FIBO 对 Release 级类无任何向后兼容承诺，类 IRI 不带版本号。本文给出三段式可落地设计：押品分类用 SKOS 分面 Concept Scheme（因FIBO 的 Collateral 只有物理/非物理二叉，单继承无法表达银行需要的法律性质、登记状态、估值方式、处置难度四个维度）；映射沿用 FIBO 自己的 ACTUS 范式（owl:imports + owl:NamedIndividual + cmns-dsg:denotes someValuesFrom 限制，全文不使用 rdfs:subClassOf）；顺位编码由银行自有，并显式声明映射有损。文中给出全部可落地 OWL 片段与经核实的 FIBO 精确 IRI，并标注三个必须避开的语义陷阱：CollateralAgreement 在两个命名空间下重复定义且其中一个已被移除、ContractThirdParty 的定义明确排除缔约方、AppraisedValue 是金额而非评估活动因而不含日期语义。</summary>
+    <category term="FIBO"/>
+    <category term="本体建模"/>
+    <category term="知识图谱"/>
+    <category term="SKOS"/>
+    <category term="资产保全"/>
+    <category term="押品管理"/>
+    <category term="不良处置"/>
+    <category term="数据标准"/>
+    <category term="语义web"/>
+    <category term="技术风险"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/local-llm-inference-precision-banking</id>
     <title>同一个权重、同一张卡，答案却不一样：本地部署大模型的精度风险与银行验证清单</title>
     <updated>2026-10-01T00:00:00Z</updated>
