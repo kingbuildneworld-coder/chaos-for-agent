@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY pres-av "https://bank.example/ontology/preservation/AnnotationVocabulary/">
+	<!ENTITY dct "http://purl.org/dc/terms/">
+]>
+
+<rdf:RDF
+	xmlns:pres-av="https://bank.example/ontology/preservation/AnnotationVocabulary/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<!-- ==================================================================
+     AnnotationVocabulary — 银行资产保全本体共用注记词
+     ==================================================================
+     这三个注记属性是本设计的关键：
+       hasMaturityLevel  FIBO 的 14 项必备元数据之一
+       mappingLoss       强制标注有损映射，防止静默丢信息
+       mappingBasis      记录映射依据与决策日期，供审计追溯
+     ================================================================== -->
+
+<owl:Ontology rdf:about="https://bank.example/ontology/preservation/AnnotationVocabulary/">
+	<rdfs:label>Bank Asset Preservation Annotation Vocabulary</rdfs:label>
+	<dct:abstract>Shared annotation vocabulary for the bank asset preservation ontologies. Provides the maturity level marker and the two annotations that make lossy FIBO mappings auditable.</dct:abstract>
+	<dct:license>Copyright (c) 2026 Example Bank. Provided as an importable template. No warranty.</dct:license>
+	<owl:versionIRI rdf:resource="https://bank.example/ontology/preservation/20261002/AnnotationVocabulary/"/>
+	<owl:versionInfo>0.1.0-draft</owl:versionInfo>
+</owl:Ontology>
+
+<owl:AnnotationProperty rdf:about="&pres-av;hasMaturityLevel">
+	<rdfs:label>has maturity level</rdfs:label>
+	<rdfs:comment>Maturity level of the ontology as a whole. FIBO assigns maturity per ontology, not per class; the bank follows the same convention. Required metadata item 14.</rdfs:comment>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="&pres-av;mappingLoss">
+	<rdfs:label>mapping loss</rdfs:label>
+	<rdfs:comment>REQUIRED on every FIBO mapping that cannot be represented losslessly. States exactly what information the target vocabulary cannot express. A mapping asserted without this annotation is treated as lossy by default and fails the bank review checklist.</rdfs:comment>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="&pres-av;mappingBasis">
+	<rdfs:label>mapping basis</rdfs:label>
+	<rdfs:comment>Provenance of a mapping decision: which policy or committee decision authorised it, and on what date.</rdfs:comment>
+</owl:AnnotationProperty>
+
+<owl:NamedIndividual rdf:about="&pres-av;Release">
+	<rdfs:label>Release</rdfs:label>
+	<rdfs:comment>Reviewed, load-bearing, and covered by regression tests. Safe to build automated reporting on.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-av;Provisional">
+	<rdfs:label>Provisional</rdfs:label>
+	<rdfs:comment>Draft. Load-bearing structure may still change. Do not build automated reporting on without pinning a version.</rdfs:comment>
+</owl:NamedIndividual>
+
+</rdf:RDF>

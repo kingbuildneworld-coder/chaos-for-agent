@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY pres-av "https://bank.example/ontology/preservation/AnnotationVocabulary/">
+	<!ENTITY pres-lc "https://bank.example/ontology/preservation/Lifecycle/">
+	<!ENTITY pres-sc "https://bank.example/ontology/preservation/CollateralScheme/">
+	<!ENTITY fibo-fbc-dae-dbt "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/">
+	<!ENTITY fibo-fnd-agr-ctr "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/">
+	<!ENTITY fibo-fnd-law-cor "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCore/">
+	<!ENTITY fibo-loan-ln-ln "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/">
+	<!ENTITY fibo-loan-ln-ev "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/">
+	<!ENTITY cmns-dsg "https://www.omg.org/spec/Commons/Designators/">
+	<!ENTITY dct "http://purl.org/dc/terms/">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+]>
+
+<rdf:RDF
+	xmlns:pres-av="https://bank.example/ontology/preservation/AnnotationVocabulary/"
+	xmlns:pres-lc="https://bank.example/ontology/preservation/Lifecycle/"
+	xmlns:pres-sc="https://bank.example/ontology/preservation/CollateralScheme/"
+	xmlns:fibo-fbc-dae-dbt="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"
+	xmlns:fibo-fnd-agr-ctr="https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/"
+	xmlns:fibo-fnd-law-cor="https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCore/"
+	xmlns:fibo-loan-ln-ln="https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/"
+	xmlns:fibo-loan-ln-ev="https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/"
+	xmlns:cmns-dsg="https://www.omg.org/spec/Commons/Designators/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<!-- ==================================================================
+     Mapping — 银行概念到 FIBO 概念的映射
+     ==================================================================
+     机制完全照抄 FIBO 自己接 ACTUS 的先例：
+       owl:imports 双向依赖 + owl:NamedIndividual
+       + cmns-dsg:denotes someValuesFrom <FIBO 概念> 匿名限制
+     本文件不含任何指向 FIBO 类的 rdfs:subClassOf。
+
+     为什么不用继承：FIBO 类 IRI 会漂移。2025Q3 到 Q4 一个季度移除 145 个
+     类 IRI，旧 IRI 保留为带 owl:equivalentClass 跳转的 deprecated 桩。
+     继承 deprecated IRI 不报错，而是静默绑死在已废弃的分类轴上。
+     用 denotes 限制则把耦合限制在映射语句内，映射失效不影响银行类层级。
+
+     FIBO 源版本：edmcouncil/fibo @ 9a7b90ccc64ef9df0762121ff058c9d27fd46037
+     映射基准日：2026-10-02。FIBO 季度更新，导入前须复核该 SHA。
+     ================================================================== -->
+
+<owl:Ontology rdf:about="https://bank.example/ontology/preservation/Mapping/">
+	<rdfs:label>Bank Asset Preservation Mapping to FIBO</rdfs:label>
+	<dct:abstract>Explicit lossy mapping from bank asset preservation concepts to EDM Council FIBO concepts. Uses the denotation restriction pattern that FIBO itself applies to the ECB ACTUS taxonomy. Contains no rdfs:subClassOf edge to any FIBO class.</dct:abstract>
+	<dct:abstract xml:lang="zh">银行资产保全概念到 EDM Council FIBO 概念的显式有损映射。采用 FIBO 自己接 ECB ACTUS 时使用的 denotes 限制范式。本文件不含任何指向 FIBO 类的 rdfs:subClassOf。</dct:abstract>
+	<dct:license>Copyright (c) 2026 Example Bank. Provided as an importable template. No warranty.</dct:license>
+	<owl:imports rdf:resource="https://bank.example/ontology/preservation/AnnotationVocabulary/"/>
+	<owl:imports rdf:resource="https://bank.example/ontology/preservation/Lifecycle/"/>
+	<owl:imports rdf:resource="https://bank.example/ontology/preservation/CollateralScheme/"/>
+	<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+	<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/"/>
+	<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCore/"/>
+	<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/"/>
+	<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanEvents/"/>
+	<owl:imports rdf:resource="https://www.omg.org/spec/Commons/Designators/"/>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+	<owl:versionIRI rdf:resource="https://bank.example/ontology/preservation/20261002/Mapping/"/>
+	<owl:versionInfo>0.1.0-draft</owl:versionInfo>
+	<pres-av:hasMaturityLevel rdf:resource="&pres-av;Provisional"/>
+</owl:Ontology>
+
+<!-- ============================================================
+     映射一：押品码表条目 → FIBO 物理 / 非物理二分
+     有损：FIBO 只有两值，银行四个分面中的三个在此丢失。
+     ============================================================ -->
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/realEstate">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;PhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>FIBO Collateral offers only a physical/non-physical binary split. The legal nature, registration status, valuation method and disposal difficulty facets have no FIBO equivalent and are lost in translation.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10. Reviewed against FIBO 9a7b90c.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/vehicle">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;PhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>Registration status and disposal difficulty are lost; FIBO keeps only physical/non-physical.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10. Reviewed against FIBO 9a7b90c.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/inventory">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;PhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>Registration status and valuation method are lost.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/securities">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;NonPhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>FIBO NonPhysicalCollateral is defined as a financial asset. Securities pledge therefore maps, but pledge perfection and custody arrangement are not represented.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/equity">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;NonPhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>Shareholder-level pledge mechanics and control implications are lost.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/intellectualProperty">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;NonPhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>FIBO NonPhysicalCollateral is defined as a financial asset. IP rights are arguably not a financial asset, so this mapping is a deliberate stretch and should be revisited if FIBO narrows the definition.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10. Flagged as a candidate for reassessment.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/receivables">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;NonPhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>Assignment versus pledge is not distinguished. FIBO has no receivables finance structure.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/ruralReceivable">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;NonPhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>Assignment versus pledge is not distinguished.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/deposit">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;NonPhysicalCollateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>Deposit pledge mechanics are lost.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank collateral taxonomy standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-sc;c/guarantee">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>DECISION: a guarantee pledges no asset, so it maps to Collateral only as a legal fiction. An unsecured guarantee is not collateral in any real sense. Kept explicit rather than dropped, so that the bank record is never silently merged into the secured population.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank policy decision 2026-10. Review annually.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<!-- ============================================================
+     映射二：留置权顺位 → FIBO 两个具名值
+     第一顺位无损失。第二至第六顺位全部塌缩为 SubordinateLienPosition。
+     ============================================================ -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/1">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ln;PrimaryLienPosition"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>Lossless for rank 1. Bank lien priority standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/2">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ln;SubordinateLienPosition"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. Rank 2 is represented as SubordinateLienPosition. FIBO cannot distinguish rank 2 from rank 6.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank lien priority standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/3">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ln;SubordinateLienPosition"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. FIBO has no third lien position. Bank rank 3 collapses into SubordinateLienPosition together with ranks 2, 4, 5 and 6.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank lien priority standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/4">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ln;SubordinateLienPosition"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. No FIBO equivalent for rank 4.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank lien priority standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/5">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ln;SubordinateLienPosition"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. No FIBO equivalent for rank 5.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank lien priority standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/6">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ln;SubordinateLienPosition"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. No FIBO equivalent for rank 6.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank lien priority standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<!-- ============================================================
+     映射三：逾期阶段 → FIBO inDefault 布尔标记
+     这是损失最大的一条：银行六个阶段全部塌缩为 true/false。
+     ============================================================ -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Normal">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;inDefault"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. FIBO inDefault is xsd:boolean on Loan. Normal and SpecialMention both map to false. The distinction between normal and special mention does not survive.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank five category loan classification standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/SpecialMention">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;inDefault"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. Special mention is not default under the five category classification, yet maps to the same xsd:boolean as Normal. Consumers of the FIBO view will overstate the default population.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank five category loan classification standard, adopted 2026-10. This is the highest-risk mapping in this file.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Substandard">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;inDefault"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. Substandard maps to true, identically to Doubtful, Stage1, Stage2 and Stage3Plus. Five distinct bank stages collapse to one boolean value.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank five category loan classification standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Doubtful">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;inDefault"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. Collapses to true together with four other bank stages.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank five category loan classification standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Stage1">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;inDefault"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. FIBO has no arrears staging and no days-past-due concept anywhere in the repository. The 1 to 30 day band is entirely lost.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank arrears banding standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Stage2">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;inDefault"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. The 31 to 90 day band is entirely lost.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank arrears banding standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Stage3Plus">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;inDefault"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. The over 90 day band is entirely lost.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank arrears banding standard, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<!-- ============================================================
+     映射四：保全措施 → FIBO 法律程序骨架
+     ============================================================ -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Litigation">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;LegalProceeding"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>FIBO LegalProceeding is defined as a legal step taken by or under the authority of a court or agency. The definition is broad enough to cover bank-initiated preservation litigation.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Enforcement">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;LegalProceeding"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>Enforcement is a legal proceeding in FIBO terms. Note FIBO LegalProceeding sits under Occurrence, not under a proceeding class.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/JudgmentObtained">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ev;CourtJudgment"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>Not every litigation action yields a judgment. This individual represents only the subset of cases that produced an enforceable judgment.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank preservation action taxonomy, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<!-- ============================================================
+     映射五：当事方角色 → FIBO 合同当事方与服务方
+     ============================================================ -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Borrower">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fnd-agr-ctr;ContractParty"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>ContractParty is the correct parent. Do NOT use ContractThirdParty: its definition explicitly excludes counterparties.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Guarantor">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fnd-agr-ctr;ContractParty"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>A guarantor is a counterparty to the guarantee contract. ContractParty, not ContractPrincipal: the guarantee contract need not designate a first party.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Pledgor">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fnd-agr-ctr;ContractParty"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>The pledgor is a counterparty to the collateral agreement.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Pledgee">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fnd-agr-ctr;ContractParty"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>The pledgee is the beneficiary of the collateral agreement.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Court">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fnd-law-cor;CourtOfLaw"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingBasis>Direct match. FIBO CourtOfLaw is defined as a person or body of persons having judicial authority.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/AssetManager">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-loan-ln-ln;Servicer"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. FIBO Servicer is defined narrowly as a party that collects principal and interest on behalf of the lender. It does not cover distressed asset management, recovery strategy or disposal execution.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank preservation service model, adopted 2026-10.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+<!-- ============================================================
+     映射六：估值记录 → FIBO 押品估值日
+     陷阱：FIBO AppraisedValue 是 MonetaryAmount 子类，本身不含日期。
+     日期语义只存在于 CollateralValueAsOfDate 的额外限制上。
+     ============================================================ -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;CollateralValuationRecord">
+	<rdf:type>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cmns-dsg;denotes"/>
+			<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;CollateralValueAsOfDate"/>
+		</owl:Restriction>
+	</rdf:type>
+	<pres-av:mappingLoss>LOSSY. The bank record is an activity plus an amount plus a method; FIBO CollateralValueAsOfDate is only a value at a date. Valuation method and appraisal activity are not carried by the target concept.</pres-av:mappingLoss>
+	<pres-av:mappingBasis>Bank valuation policy, adopted 2026-10. Note FIBO splits valuation into CollateralValuation (activity) and CollateralValueAsOfDate (amount); the bank record corresponds to the latter.</pres-av:mappingBasis>
+</owl:NamedIndividual>
+
+</rdf:RDF>

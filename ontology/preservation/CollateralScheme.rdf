@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY pres-av "https://bank.example/ontology/preservation/AnnotationVocabulary/">
+	<!ENTITY dct "http://purl.org/dc/terms/">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY pres-sc "https://bank.example/ontology/preservation/CollateralScheme/">
+]>
+
+<rdf:RDF
+	xmlns:pres-sc="https://bank.example/ontology/preservation/CollateralScheme/"
+	xmlns:pres-av="https://bank.example/ontology/preservation/AnnotationVocabulary/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<!-- ==================================================================
+     CollateralScheme — 银行押品分面码表
+     ==================================================================
+     依赖：仅 SKOS。不导入任何 FIBO 本体。
+     因此本文件不承担任何第三方类 IRI 的漂移风险，可独立长期演进。
+     ================================================================== -->
+
+<owl:Ontology rdf:about="&pres-sc;">
+	<rdfs:label>Bank Collateral Faceted Code Scheme</rdfs:label>
+	<dct:abstract>Faceted collateral code scheme for bank asset preservation use. Four orthogonal facets: legal nature, registration status, valuation method, disposal difficulty. Contains no OWL class hierarchy and imports no external ontology.</dct:abstract>
+	<dct:abstract xml:lang="zh">银行押品分面码表。四个正交分面：法律性质、登记状态、估值方式、处置难度。不含 OWL 类层级，不导入任何外部本体。</dct:abstract>
+	<dct:license>Copyright (c) 2026 Example Bank. Provided as an importable template. No warranty.</dct:license>
+	<dct:source>Bank-internal asset preservation standard. Follows the W3C SKOS Concept Scheme pattern for faceted classification.</dct:source>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+	<owl:imports rdf:resource="https://bank.example/ontology/preservation/AnnotationVocabulary/"/>
+	<owl:versionIRI rdf:resource="https://bank.example/ontology/preservation/20261002/CollateralScheme/"/>
+	<owl:versionInfo>0.1.0-draft</owl:versionInfo>
+	<pres-av:hasMaturityLevel rdf:resource="&pres-av;Provisional"/>
+</owl:Ontology>
+
+<!-- ============================ 分面定义 ============================ -->
+
+<skos:ConceptProperty rdf:about="&pres-sc;facet/legalNature">
+	<rdfs:label>legal nature</rdfs:label>
+	<skos:definition>Legal character of the collateral asset as recognised under the governing jurisdiction. Orthogonal to all other facets.</skos:definition>
+</skos:ConceptProperty>
+
+<skos:ConceptProperty rdf:about="&pres-sc;facet/registrationStatus">
+	<rdfs:label>registration status</rdfs:label>
+	<skos:definition>Whether the security interest has been perfected, and whether the asset or the claim is subject to competing claims.</skos:definition>
+</skos:ConceptProperty>
+
+<skos:ConceptProperty rdf:about="&pres-sc;facet/valuationMethod">
+	<rdfs:label>valuation method</rdfs:label>
+	<skos:definition>Basis on which the collateral value is determined for provisioning and disposal purposes.</skos:definition>
+</skos:ConceptProperty>
+
+<skos:ConceptProperty rdf:about="&pres-sc;facet/disposalDifficulty">
+	<rdfs:label>disposal difficulty</rdfs:label>
+	<skos:definition>Operational difficulty and elapsed time expected to realise the collateral through enforcement.</skos:definition>
+</skos:ConceptProperty>
+
+<skos:ConceptScheme rdf:about="&pres-sc;scheme">
+	<skos:prefLabel xml:lang="zh">银行押品分面码表</skos:prefLabel>
+	<skos:prefLabel>Bank collateral faceted code scheme</skos:prefLabel>
+	<skos:hasTopConcept rdf:resource="&pres-sc;legalNature/realProperty"/>
+	<skos:hasTopConcept rdf:resource="&pres-sc;legalNature/movableProperty"/>
+	<skos:hasTopConcept rdf:resource="&pres-sc;legalNature/intangible"/>
+	<skos:hasTopConcept rdf:resource="&pres-sc;legalNature/receivable"/>
+	<skos:hasTopConcept rdf:resource="&pres-sc;legalNature/guarantee"/>
+	<skos:hasTopConcept rdf:resource="&pres-sc;legalNature/cash"/>
+</skos:ConceptScheme>
+
+<!-- ==================== 分面一：法律性质 ==================== -->
+
+<skos:Concept rdf:about="&pres-sc;legalNature/realProperty">
+	<skos:prefLabel xml:lang="zh">不动产</skos:prefLabel>
+	<skos:definition>Land and buildings, including factory, warehouse and office premises.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;legalNature/movableProperty">
+	<skos:prefLabel xml:lang="zh">动产</skos:prefLabel>
+	<skos:definition>Physical movables such as vehicles, equipment, inventory and goods.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;legalNature/intangible">
+	<skos:prefLabel xml:lang="zh">权利</skos:prefLabel>
+	<skos:definition>Financial and intellectual property rights, such as securities, equity and claims to royalties.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;legalNature/receivable">
+	<skos:prefLabel xml:lang="zh">应收类</skos:prefLabel>
+	<skos:definition>Claims against third parties, such as account receivables and rural credit claims.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;legalNature/guarantee">
+	<skos:prefLabel xml:lang="zh">保证类</skos:prefLabel>
+	<skos:definition>Unsecured assurance of payment by a third party, with no asset pledged.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;legalNature/cash">
+	<skos:prefLabel xml:lang="zh">现金</skos:prefLabel>
+	<skos:definition>Cash on deposit, including certificates of deposit used as security.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<!-- ==================== 分面二：登记状态 ==================== -->
+
+<skos:Concept rdf:about="&pres-sc;registrationStatus/perfected">
+	<skos:prefLabel xml:lang="zh">已完善</skos:prefLabel>
+	<skos:definition>Security interest perfected by registration or possession, with no known competing claim.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;registrationStatus/registered">
+	<skos:prefLabel xml:lang="zh">已登记</skos:prefLabel>
+	<skos:definition>Asset or right is registered in a public register, but perfection of the security interest is not asserted.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;registrationStatus/unperfected">
+	<skos:prefLabel xml:lang="zh">未完善</skos:prefLabel>
+	<skos:definition>Security interest asserted contractually but not perfected.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;registrationStatus/disputed">
+	<skos:prefLabel xml:lang="zh">权属争议</skos:prefLabel>
+	<skos:definition>Ownership or priority is contested by another party.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<!-- ==================== 分面三：估值方式 ==================== -->
+
+<skos:Concept rdf:about="&pres-sc;valuationMethod/appraisal">
+	<skos:prefLabel xml:lang="zh">评估法</skos:prefLabel>
+	<skos:definition>Value determined by independent appraisal against comparable market evidence.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;valuationMethod/market">
+	<skos:prefLabel xml:lang="zh">市场法</skos:prefLabel>
+	<skos:definition>Value taken from observable market prices for the same or equivalent instrument.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;valuationMethod/income">
+	<skos:prefLabel xml:lang="zh">收益法</skos:prefLabel>
+	<skos:definition>Value derived from expected future cash flows, discounted.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;valuationMethod/discountedClaim">
+	<skos:prefLabel xml:lang="zh">贴现法</skos:prefLabel>
+	<skos:definition>Value derived from the debtor's repayment capacity, discounted at a risk-adjusted rate.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;valuationMethod/nominal">
+	<skos:prefLabel xml:lang="zh">名义值</skos:prefLabel>
+	<skos:definition>Carried at face or agreed value, with no independent valuation performed.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<!-- ==================== 分面四：处置难度 ==================== -->
+
+<skos:Concept rdf:about="&pres-sc;disposalDifficulty/low">
+	<skos:prefLabel xml:lang="zh">低</skos:prefLabel>
+	<skos:definition>Standard market with multiple buyers; realisation typically within three months.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;disposalDifficulty/medium">
+	<skos:prefLabel xml:lang="zh">中</skos:prefLabel>
+	<skos:definition>Auction or portfolio sale; realisation typically takes three to twelve months.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;disposalDifficulty/high">
+	<skos:prefLabel xml:lang="zh">高</skos:prefLabel>
+	<skos:definition>Specialised or distressed market; realisation typically exceeds twelve months.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;disposalDifficulty/impractical">
+	<skos:prefLabel xml:lang="zh">无实际处置价值</skos:prefLabel>
+	<skos:definition>Legal or practical barriers make enforcement uneconomic; write-off is the expected outcome.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+</skos:Concept>
+
+<!-- ================== 押品条目（组合概念） ==================
+     每个条目在四个分面上各取一个值。这是 OWL 单继承树无法表达的结构：
+     若用类树，要么只能选一个主轴，要么退化成组合类的深树。
+     ========================================================== -->
+
+<skos:Concept rdf:about="&pres-sc;c/realEstate">
+	<skos:prefLabel xml:lang="zh">不动产</skos:prefLabel>
+	<skos:definition>Commercial or residential real property securing a loan.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/realProperty"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/registered"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/appraisal"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/low"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/vehicle">
+	<skos:prefLabel xml:lang="zh">车辆抵押</skos:prefLabel>
+	<skos:definition>Vehicle securing a loan, typically held under possession-based security.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/movableProperty"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/perfected"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/appraisal"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/low"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/securities">
+	<skos:prefLabel xml:lang="zh">证券质押</skos:prefLabel>
+	<skos:definition>Listed or unlisted securities pledged under a custody or pledge arrangement.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/intangible"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/perfected"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/market"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/low"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/receivables">
+	<skos:prefLabel xml:lang="zh">应收账款保理</skos:prefLabel>
+	<skos:definition>Account receivables assigned or pledged as security for a working capital facility.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/receivable"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/registered"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/discountedClaim"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/medium"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/equity">
+	<skos:prefLabel xml:lang="zh">股权质押</skos:prefLabel>
+	<skos:definition>Corporate equity interest pledged by the controlling shareholder.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/intangible"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/registered"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/market"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/medium"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/inventory">
+	<skos:prefLabel xml:lang="zh">存货质押</skos:prefLabel>
+	<skos:definition>Inventory or goods pledged under a floating charge arrangement.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/movableProperty"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/perfected"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/discountedClaim"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/medium"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/guarantee">
+	<skos:prefLabel xml:lang="zh">保证担保</skos:prefLabel>
+	<skos:definition>Unsecured guarantee by a third party. Carried at face value; no asset is pledged.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/guarantee"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/unperfected"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/nominal"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/low"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/deposit">
+	<skos:prefLabel xml:lang="zh">存单质押</skos:prefLabel>
+	<skos:definition>Bank deposit or certificate of deposit pledged, in cash and equivalent form.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/cash"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/perfected"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/nominal"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/low"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/intellectualProperty">
+	<skos:prefLabel xml:lang="zh">知识产权质押</skos:prefLabel>
+	<skos:definition>Patent, trademark or copyright rights pledged. Valuation is uncertain and disposal depends on finding an assignee.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/intangible"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/registered"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/income"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/high"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="&pres-sc;c/ruralReceivable">
+	<skos:prefLabel xml:lang="zh">农户应收账款</skos:prefLabel>
+	<skos:definition>Smallholder agricultural receivables. Recovery depends on local collection networks and enforcement capacity.</skos:definition>
+	<skos:inScheme rdf:resource="&pres-sc;scheme"/>
+	<skos:related rdf:resource="&pres-sc;legalNature/receivable"/>
+	<skos:related rdf:resource="&pres-sc;registrationStatus/unperfected"/>
+	<skos:related rdf:resource="&pres-sc;valuationMethod/discountedClaim"/>
+	<skos:related rdf:resource="&pres-sc;disposalDifficulty/impractical"/>
+</skos:Concept>
+
+</rdf:RDF>

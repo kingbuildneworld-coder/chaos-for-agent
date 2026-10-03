@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY pres-lc "https://bank.example/ontology/preservation/Lifecycle/">
+	<!ENTITY pres-sc "https://bank.example/ontology/preservation/CollateralScheme/">
+	<!ENTITY dct "http://purl.org/dc/terms/">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY pres-av "https://bank.example/ontology/preservation/AnnotationVocabulary/">
+]>
+
+<rdf:RDF
+	xmlns:pres-av="https://bank.example/ontology/preservation/AnnotationVocabulary/"
+	xmlns:pres-lc="https://bank.example/ontology/preservation/Lifecycle/"
+	xmlns:pres-sc="https://bank.example/ontology/preservation/CollateralScheme/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<!-- ==================================================================
+     Lifecycle — 银行自建的不良处置生命周期
+     ==================================================================
+     本文件不导入任何 FIBO 本体。全部概念为行内自有定义。
+     FIBO 侧的对应关系全部放在 Mapping.rdf 中，以 denotes 限制表达，
+     不使用 rdfs:subClassOf 指向 FIBO 类。
+     ================================================================== -->
+
+<owl:Ontology rdf:about="&pres-lc;">
+	<rdfs:label>Bank Asset Preservation Lifecycle</rdfs:label>
+	<dct:abstract>Bank-native asset preservation lifecycle: preservation cases, arrears stages, preservation actions, lien priority, collateral valuations and party roles. Imports no third-party ontology, so no third-party class IRI can break this file.</dct:abstract>
+	<dct:abstract xml:lang="zh">银行自建资产保全生命周期：保全案件、逾期阶段、保全措施、留置权顺位、押品估值与当事方角色。不导入任何第三方本体，因此不会有第三方类 IRI 使本文件失效。</dct:abstract>
+	<dct:license>Copyright (c) 2026 Example Bank. Provided as an importable template. No warranty.</dct:license>
+	<owl:imports rdf:resource="https://bank.example/ontology/preservation/AnnotationVocabulary/"/>
+	<owl:imports rdf:resource="https://bank.example/ontology/preservation/CollateralScheme/"/>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+	<owl:versionIRI rdf:resource="https://bank.example/ontology/preservation/20261002/Lifecycle/"/>
+	<owl:versionInfo>0.1.0-draft</owl:versionInfo>
+	<pres-av:hasMaturityLevel rdf:resource="&pres-av;Provisional"/>
+</owl:Ontology>
+
+<!-- ============================ 核心类 ============================ -->
+
+<owl:Class rdf:about="&pres-lc;PreservationCase">
+	<rdfs:label>preservation case</rdfs:label>
+	<rdfs:comment>A single asset preservation case, opened when a loan enters arrears and closed on full recovery, write-off or transfer.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="&pres-lc;PreservationStage">
+	<rdfs:label>preservation stage</rdfs:label>
+	<rdfs:comment>Bank-defined stage in the preservation lifecycle. Ordinal position is carried by the individual, not by the class.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="&pres-lc;ArrearsStage">
+	<rdfs:subClassOf rdf:resource="&pres-lc;PreservationStage"/>
+	<rdfs:label>arrears stage</rdfs:label>
+	<rdfs:comment>Arrears classification. FIBO has no equivalent: its only loan default marker is an xsd:boolean with no staging. Mapping is therefore lossy and is declared lossy in Mapping.rdf.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="&pres-lc;PreservationAction">
+	<rdfs:label>preservation action</rdfs:label>
+	<rdfs:comment>A discrete recovery or enforcement step within a preservation case.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="&pres-lc;LienPriorityClass">
+	<rdfs:label>lien priority class</rdfs:label>
+	<rdfs:comment>Ordinal seniority of the bank's secured claim against a specific asset. Ordinal value is carried by skos:notation. FIBO's LenderLienPosition is an unordered Classifier with only two named individuals, so it cannot carry bank rank 3 and above; this class therefore does not subclass it.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="&pres-lc;CollateralValuationRecord">
+	<rdfs:label>collateral valuation record</rdfs:label>
+	<rdfs:comment>A dated bank valuation of a specific collateral item under a specific valuation method. Carries its own valuation date and valuation method explicitly, because FIBO's AppraisedValue is a MonetaryAmount subclass and carries no date on its own.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="&pres-lc;PreservationPartyRole">
+	<rdfs:label>preservation party role</rdfs:label>
+	<rdfs:comment>A role played by a party within a preservation case. Bank-native; mappings to FIBO party classes are in Mapping.rdf.</rdfs:comment>
+</owl:Class>
+
+<!-- ====================== 属性 ====================== -->
+
+<owl:DatatypeProperty rdf:about="&pres-lc;stageCode">
+	<rdfs:label>stage code</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationStage"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:comment>Bank internal stage code, for example M1 or N2.</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="&pres-lc;stageOrdinal">
+	<rdfs:label>stage ordinal</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationStage"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:comment>Monotonic position of the stage within the lifecycle. Lower is earlier.</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="&pres-lc;actionCode">
+	<rdfs:label>action code</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationAction"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="&pres-lc;valuationDate">
+	<rdfs:label>valuation date</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;CollateralValuationRecord"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+	<rdfs:comment>The date the valuation was determined. Held explicitly on the record, not inherited from a value class.</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="&pres-lc;valuationAmount">
+	<rdfs:label>valuation amount</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;CollateralValuationRecord"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="&pres-lc;valuationMethodCode">
+	<rdfs:label>valuation method code</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;CollateralValuationRecord"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:comment>Points at a concept in the CollateralScheme valuationMethod facet.</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:ObjectProperty rdf:about="&pres-lc;hasStage">
+	<rdfs:label>has stage</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationCase"/>
+	<rdfs:range rdf:resource="&pres-lc;PreservationStage"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pres-lc;hasAction">
+	<rdfs:label>has action</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationCase"/>
+	<rdfs:range rdf:resource="&pres-lc;PreservationAction"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pres-lc;hasCollateral">
+	<rdfs:label>has collateral</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationCase"/>
+	<rdfs:range rdf:resource="&pres-sc;scheme"/>
+	<rdfs:comment>Range is the collateral code scheme, so the case links to code table entries rather than to a class hierarchy.</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pres-lc;hasLienPriority">
+	<rdfs:label>has lien priority</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationCase"/>
+	<rdfs:range rdf:resource="&pres-lc;LienPriorityClass"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pres-lc;hasValuation">
+	<rdfs:label>has valuation</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationCase"/>
+	<rdfs:range rdf:resource="&pres-lc;CollateralValuationRecord"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pres-lc;hasPartyRole">
+	<rdfs:label>has party role</rdfs:label>
+	<rdfs:domain rdf:resource="&pres-lc;PreservationCase"/>
+	<rdfs:range rdf:resource="&pres-lc;PreservationPartyRole"/>
+</owl:ObjectProperty>
+
+<!-- ==================== 逾期阶段个体 ====================
+     FIBO 侧的 inDefault 是 xsd:boolean，无分级、无日期、无阈值。
+     所以 M1 到 N3 六个阶段映射过去必然有损，须在 Mapping.rdf 声明。
+     ========================================================== -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Normal">
+	<rdf:type rdf:resource="&pres-lc;ArrearsStage"/>
+	<skos:notation>N0</skos:notation>
+	<skos:prefLabel xml:lang="zh">正常</skos:prefLabel>
+	<pres-lc:stageCode>N0</pres-lc:stageCode>
+	<pres-lc:stageOrdinal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</pres-lc:stageOrdinal>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/SpecialMention">
+	<rdf:type rdf:resource="&pres-lc;ArrearsStage"/>
+	<skos:notation>N1</skos:notation>
+	<skos:prefLabel xml:lang="zh">关注</skos:prefLabel>
+	<pres-lc:stageCode>N1</pres-lc:stageCode>
+	<pres-lc:stageOrdinal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</pres-lc:stageOrdinal>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Substandard">
+	<rdf:type rdf:resource="&pres-lc;ArrearsStage"/>
+	<skos:notation>N2</skos:notation>
+	<skos:prefLabel xml:lang="zh">次级</skos:prefLabel>
+	<pres-lc:stageCode>N2</pres-lc:stageCode>
+	<pres-lc:stageOrdinal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pres-lc:stageOrdinal>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Doubtful">
+	<rdf:type rdf:resource="&pres-lc;ArrearsStage"/>
+	<skos:notation>N3</skos:notation>
+	<skos:prefLabel xml:lang="zh">可疑</skos:prefLabel>
+	<pres-lc:stageCode>N3</pres-lc:stageCode>
+	<pres-lc:stageOrdinal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</pres-lc:stageOrdinal>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Stage1">
+	<rdf:type rdf:resource="&pres-lc;ArrearsStage"/>
+	<skos:notation>M1</skos:notation>
+	<skos:prefLabel xml:lang="zh">逾期 1 至 30 天</skos:prefLabel>
+	<pres-lc:stageCode>M1</pres-lc:stageCode>
+	<pres-lc:stageOrdinal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</pres-lc:stageOrdinal>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Stage2">
+	<rdf:type rdf:resource="&pres-lc;ArrearsStage"/>
+	<skos:notation>M2</skos:notation>
+	<skos:prefLabel xml:lang="zh">逾期 31 至 90 天</skos:prefLabel>
+	<pres-lc:stageCode>M2</pres-lc:stageCode>
+	<pres-lc:stageOrdinal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</pres-lc:stageOrdinal>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;stage/Stage3Plus">
+	<rdf:type rdf:resource="&pres-lc;ArrearsStage"/>
+	<skos:notation>M3</skos:notation>
+	<skos:prefLabel xml:lang="zh">逾期 90 天以上</skos:prefLabel>
+	<pres-lc:stageCode>M3</pres-lc:stageCode>
+	<pres-lc:stageOrdinal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</pres-lc:stageOrdinal>
+</owl:NamedIndividual>
+
+<!-- ==================== 保全措施个体 ==================== -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Collection">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>COL</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">催收</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Restructure">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>RES</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">展期重组</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Litigation">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>LIT</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">诉讼</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Enforcement">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>ENF</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">强制执行</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Repossession">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>REP</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">押品收回</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Disposal">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>DIS</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">押品处置</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/JudgmentObtained">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>JDG</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">取得判决</skos:prefLabel>
+	<skos:comment>A sub-case of litigation that produced an enforceable judgment. Modelled separately because only this subset maps to FIBO CourtJudgment.</skos:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/WriteOff">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>WOF</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">核销</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;action/Transfer">
+	<rdf:type rdf:resource="&pres-lc;PreservationAction"/>
+	<pres-lc:actionCode>TRF</pres-lc:actionCode>
+	<skos:prefLabel xml:lang="zh">移交资产经营</skos:prefLabel>
+</owl:NamedIndividual>
+
+<!-- ============ 留置权顺位个体（序数 1 至 6） ============
+     FIBO 只有 PrimaryLienPosition 与 SubordinateLienPosition 两个值，
+     无序，且无第三顺位及以下。1 至 6 的映射全部有损。
+     ================================================== -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/1">
+	<rdf:type rdf:resource="&pres-lc;LienPriorityClass"/>
+	<skos:notation>1</skos:notation>
+	<skos:prefLabel xml:lang="zh">第一顺位</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/2">
+	<rdf:type rdf:resource="&pres-lc;LienPriorityClass"/>
+	<skos:notation>2</skos:notation>
+	<skos:prefLabel xml:lang="zh">第二顺位</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/3">
+	<rdf:type rdf:resource="&pres-lc;LienPriorityClass"/>
+	<skos:notation>3</skos:notation>
+	<skos:prefLabel xml:lang="zh">第三顺位</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/4">
+	<rdf:type rdf:resource="&pres-lc;LienPriorityClass"/>
+	<skos:notation>4</skos:notation>
+	<skos:prefLabel xml:lang="zh">第四顺位</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/5">
+	<rdf:type rdf:resource="&pres-lc;LienPriorityClass"/>
+	<skos:notation>5</skos:notation>
+	<skos:prefLabel xml:lang="zh">第五顺位</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;priority/6">
+	<rdf:type rdf:resource="&pres-lc;LienPriorityClass"/>
+	<skos:notation>6</skos:notation>
+	<skos:prefLabel xml:lang="zh">第六顺位</skos:prefLabel>
+</owl:NamedIndividual>
+
+<!-- ==================== 当事方角色个体 ==================== -->
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Borrower">
+	<rdf:type rdf:resource="&pres-lc;PreservationPartyRole"/>
+	<skos:prefLabel xml:lang="zh">债务人</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Guarantor">
+	<rdf:type rdf:resource="&pres-lc;PreservationPartyRole"/>
+	<skos:prefLabel xml:lang="zh">保证人</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Pledgor">
+	<rdf:type rdf:resource="&pres-lc;PreservationPartyRole"/>
+	<skos:prefLabel xml:lang="zh">出质人</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Pledgee">
+	<rdf:type rdf:resource="&pres-lc;PreservationPartyRole"/>
+	<skos:prefLabel xml:lang="zh">质权人</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/Court">
+	<rdf:type rdf:resource="&pres-lc;PreservationPartyRole"/>
+	<skos:prefLabel xml:lang="zh">法院</skos:prefLabel>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&pres-lc;role/AssetManager">
+	<rdf:type rdf:resource="&pres-lc;PreservationPartyRole"/>
+	<skos:prefLabel xml:lang="zh">资产管理方</skos:prefLabel>
+</owl:NamedIndividual>
+
+</rdf:RDF>
