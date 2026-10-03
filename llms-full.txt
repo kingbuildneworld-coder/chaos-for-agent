@@ -4441,15 +4441,15 @@ The math rests on a graph Laplacian. The graph Laplacian converges to the genera
 
 **The pipeline in detail.**
 
-1. **Data set.** The data set has two streams. The first stream is the covariates. The second stream is the response. The covariates are macroeconomic and financial variables. The response is the portfolio return. The data set must be long enough. The data set must cover a crisis period. The data set must have both calm and stressed states.
+- **Data set.** The data set has two streams. The first stream is the covariates. The second stream is the response. The covariates are macroeconomic and financial variables. The response is the portfolio return. The data set must be long enough. The data set must cover a crisis period. The data set must have both calm and stressed states.
 
-2. **Embedding.** Anisotropic diffusion maps learn the embedding. The embedding is a low-dimensional vector. The vector keeps the curved geometry. The vector keeps the link to the response. The vector is the state of the market. The state moves over time.
+- **Embedding.** Anisotropic diffusion maps learn the embedding. The embedding is a low-dimensional vector. The vector keeps the curved geometry. The vector keeps the link to the response. The vector is the state of the market. The state moves over time.
 
-3. **Dynamics.** The graph Laplacian gives the eigenvalues. The eigenvalues set the drift of the linear model. The linear model runs in the embedding space. The model is linear. The market is nonlinear. The linear model tracks the nonlinear market. It works because the embedding keeps the shape.
+- **Dynamics.** The graph Laplacian gives the eigenvalues. The eigenvalues set the drift of the linear model. The linear model runs in the embedding space. The model is linear. The market is nonlinear. The linear model tracks the nonlinear market. It works because the embedding keeps the shape.
 
-4. **Filter.** The Kalman filter predicts the next state. It works in the embedding space. It uses both streams. It keeps the link to the response. The filter is the predictor. The filter is the core of the method.
+- **Filter.** The Kalman filter predicts the next state. It works in the embedding space. It uses both streams. It keeps the link to the response. The filter is the predictor. The filter is the core of the method.
 
-5. **Sampling.** Conditional sampling generates scenario paths. The paths start from a stress scenario. The paths end at a portfolio return. The sampling is the stress-test step. The sampling is where the bank sees the loss.
+- **Sampling.** Conditional sampling generates scenario paths. The paths start from a stress scenario. The paths end at a portfolio return. The sampling is the stress-test step. The sampling is where the bank sees the loss.
 
 **The application.** Baker et al. apply the method to equity-portfolio stress testing. The data set uses macroeconomic and financial variables from Federal Reserve supervisory scenarios. The method beats two benchmarks.
 
@@ -4470,11 +4470,11 @@ arXiv 2602.00383 (source 2) studies market complexity. It uses persistence lands
 
 **The method in three steps.**
 
-1. **Delay embedding.** The paper builds a sliding-window delay embedding. The window is the look-back period. The embedding is a point in a higher space. The point captures the local shape of the market.
+- **Delay embedding.** The paper builds a sliding-window delay embedding. The window is the look-back period. The embedding is a point in a higher space. The point captures the local shape of the market.
 
-2. **Persistence landscape.** The paper computes the persistence landscape of the embedding. The landscape is a set of numbers. The numbers measure the topology of the embedding.
+- **Persistence landscape.** The paper computes the persistence landscape of the embedding. The landscape is a function. The function measures the shape of the data. The shape changes over time.
 
-3. **L1 norm.** The paper sums the absolute values. The sum is the L1 norm. The L1 norm is a single number. The number measures the overall complexity of the market state.
+- **L1 norm.** The paper takes the L1 norm of the landscape. The L1 norm is a single number. The number is the complexity score. The score co-moves with stochastic volatility under stress.
 
 **The result.** The L1 norm co-moves strongly with stochastic volatility. The co-movement shows up during market stress. The relationship is not stable. It changes over time. It also differs between the two markets. Bitcoin is a high-volatility market. The S&P 500 is a broad equity market. The L1 norm behaves differently in each.
 
@@ -4518,10 +4518,10 @@ This article infers a fourth limit. The source does not name it. It is **estimat
 
 **The four limits, in order of impact.**
 
-1. **Estimation risk.** The biggest risk. The embedding is a model. The model has an error. The error is the gap between the predicted return and the true return. The bank must track the error.
-2. **Non-stationarity.** The market changes. The embedding must follow. The bank must refit the embedding. The refit must be on a schedule.
-3. **Noise.** The data has noise. The embedding can follow the noise. The bank must smooth the data. The bank must use a longer window.
-4. **Parameter sensitivity.** The choice of method matters. The bank must pick the method. The bank must document the choice. The bank must show the reason.
+- **Estimation risk.** The biggest risk. The embedding is a model. The model has an error. The error is the gap between the predicted return and the true return. The bank must track the error.
+- **Non-stationarity.** The market changes. The embedding must follow. The bank must refit the embedding. The refit must be on a schedule.
+- **Noise.** The data has noise. The embedding can follow the noise. The bank must smooth the data. The bank must use a longer window.
+- **Parameter sensitivity.** The choice of method matters. The bank must pick the method. The bank must document the choice. The bank must show the reason.
 
 **The monitoring numbers.** A bank that uses a manifold must track three numbers.
 
@@ -4561,9 +4561,9 @@ This article argues the points below. The points build on the facts in sources 1
 
 **The three bank use-cases.** This article names three use-cases for the bank.
 
-1. **Stress testing.** The bank uses the curved pipeline. The bank runs the pipeline on its own factors. The bank reports the result to the regulator.
-2. **Regime monitoring.** The bank uses the L1 norm. The bank tracks the norm on a daily basis. The bank alerts the risk team when the norm moves.
-3. **Portfolio optimization.** The bank uses the 3D efficient frontier. The bank plots its own portfolio. The bank watches the curve shift. The bank adjusts the portfolio when the curve shifts.
+- **Stress testing.** The bank uses the curved pipeline. The bank runs the pipeline on its own factors. The bank reports the result to the regulator.
+- **Regime monitoring.** The bank uses the L1 norm. The bank tracks the norm on a daily basis. The bank alerts the risk team when the norm moves.
+- **Portfolio optimization.** The bank uses the 3D efficient frontier. The bank plots its own portfolio. The bank watches the curve shift. The bank adjusts the portfolio when the curve shifts.
 
 The three use-cases share one pipeline. The pipeline is the diffusion map plus the Kalman filter. The bank runs the pipeline once. The bank uses the output in three ways. The output is the state of the market. The state feeds the three use-cases.
 
@@ -4571,24 +4571,24 @@ The three use-cases share one pipeline. The pipeline is the diffusion map plus t
 
 **Risk-management lane.**
 
-1. Adopt a curved stress-test pipeline. Start with the anisotropic diffusion-map method (source 1). Use the FRED variables as the first test set.
-2. Set a regime indicator. Use the L1 norm of the persistence landscape (source 2). Set the trigger value with your own backtest.
-3. Track three numbers. MAE of the predictions. L1 norm. Refit interval. Pause when one moves. Degrade when two move.
-4. Document the mapping. Map each eigenvalue to a business factor. The audit trail must name the business meaning.
+- Adopt a curved stress-test pipeline. Start with the anisotropic diffusion-map method (source 1). Use the FRED variables as the first test set.
+- Set a regime indicator. Use the L1 norm of the persistence landscape (source 2). Set the trigger value with your own backtest.
+- Track three numbers. MAE of the predictions. L1 norm. Refit interval. Pause when one moves. Degrade when two move.
+- Document the mapping. Map each eigenvalue to a business factor. The audit trail must name the business meaning.
 
 **Technology lane.**
 
-5. Build the Kalman filter. Use the diffusion-map coordinates. Refit on a fixed window. Track the burn-in period.
-6. Document the parameter choices. Name the kernel bandwidth. Name the embedding dimension. Name the refit window. The audit trail must show the choice.
-7. Set the compute budget. The Kalman refit takes time. The bank must know the cost before it goes live.
+- Build the Kalman filter. Use the diffusion-map coordinates. Refit on a fixed window. Track the burn-in period.
+- Document the parameter choices. Name the kernel bandwidth. Name the embedding dimension. Name the refit window. The audit trail must show the choice.
+- Set the compute budget. The Kalman refit takes time. The bank must know the cost before it goes live.
 
 **Compliance lane.**
 
-8. File the model with the internal model review. Name the method. Name the data set. Name the MAE result. The review must sign off before the model runs in production.
-9. Set a manual-override path. The risk officer can pause the pipeline. The pause must be one click. The log must record the pause.
-10. Track the regulatory stress-test calendar. The Federal Reserve supervisory scenarios are one benchmark (source 1). The bank must map the same scenarios to its own factors.
+- File the model with the internal model review. Name the method. Name the data set. Name the MAE result. The review must sign off before the model runs in production.
+- Set a manual-override path. The risk officer can pause the pipeline. The pause must be one click. The log must record the pause.
+- Track the regulatory stress-test calendar. The Federal Reserve supervisory scenarios are one benchmark (source 1). The bank must map the same scenarios to its own factors.
 
-**The order of steps.** The steps run in order. Step 1 first. Step 2 second. Step 3 third. The bank must not skip a step. The bank must not run step 8 before step 5. The compliance sign-off must come after the model is live. The risk tracking must come after the regime indicator.
+**The order of steps.** The risk-management steps run first. Then the technology steps. Then the compliance steps. The bank must not skip a step. The compliance sign-off must come after the model is live. The risk tracking must come after the regime indicator.
 
 ## 8. FAQ
 
