@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (113)
+## Articles (114)
 
 - [FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱](https://bi-chao.com/articles/fibo-asset-preservation-ontology)
   - Description: 『用 EDM Council FIBO 做资产保全本体建模』是一个不成立的命题。本文对 edmcouncil/fibo 仓库全部 295 个本体做逐词核查，给出可复用的确切边界（FND/FBC 基础层、Collateral 及其两个子类、CollateralValueAsOfD…
@@ -23,6 +23,10 @@
   - Description: 上一版文章建议『以 FIBO 类为父类添加银行口径子类』。本文用源码证据推翻该建议并给出替代设计。核心依据：FIBO 类 IRI 在 2025Q3→2025Q4 一个季度内移除 145 个（含CollateralAgreement 本身），旧 IRI 保留为带 owl:equi…
   - Date: 2026-10-02
   - Tags: FIBO, 本体建模, 知识图谱, SKOS, 资产保全, 押品管理, 不良处置, 数据标准, 语义web, 技术风险
+- [本体构建方法论综述：Talisman 六阶段管线与 LLM 参与构建的实证，以及银行场景仍缺的三块](https://bi-chao.com/articles/ontology-pipeline-llm-review)
+  - Description: 本文综述两篇 2025–2026 年的本体构建方法论文，并对照我们已交付的银行资产保全本体骨架，找出三处仍然缺失的环节。第一篇是 Jessica Talisman 的 Ontology Pipeline 框架（六阶段：受控词表、元数据标准、分类法、叙词表、本体、知识图谱，每阶段…
+  - Date: 2026-10-02
+  - Tags: 本体建模, 知识图谱, SKOS, SHACL, 能力问题, LLM, FIBO, 语义层, 技术风险, 方法论
 - [同一个权重、同一张卡，答案却不一样：本地部署大模型的精度风险与银行验证清单](https://bi-chao.com/articles/local-llm-inference-precision-banking)
   - Description: Level1Techs 论坛上一篇实测帖给出了本地部署大模型最反直觉的结论：同一份权重、同一张 GPU、同一个驱动与 vLLM，仅切换 attention backend 这一个配置项，就能让模型在工具调用中把 Cisco 接口号从 GigabitEthernet0/0/1.2…
   - Date: 2026-10-01
