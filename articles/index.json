@@ -345,6 +345,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "Manifold Theory in Quantitative Investing: A Review",
+    "slug": "manifold-theory-quantitative-investing",
+    "url": "/articles/manifold-theory-quantitative-investing.md",
+    "description": "A review of manifold theory in quantitative investing: diffusion maps, topological signatures, and Kalman-filtered stress testing, with 55 percent MAE gains over scenario analysis. Action checklists for banks.",
+    "date": "2026-09-27",
+    "tags": [
+      "manifold learning",
+      "quantitative finance",
+      "diffusion maps",
+      "Kalman filter",
+      "stress testing",
+      "topology",
+      "dynamic factor models",
+      "risk management",
+      "market regimes",
+      "persistence landscapes",
+      "principal component analysis",
+      "banks"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "麦肯锡2026全球银行业报告：技术宽限期已经消失——从资产保全视角看'精准提速'",
     "slug": "mckinsey-2026-global-banking-report-analysis",
     "url": "/articles/mckinsey-2026-global-banking-report-analysis.md",

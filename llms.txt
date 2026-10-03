@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (112)
+## Articles (113)
 
 - [FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱](https://bi-chao.com/articles/fibo-asset-preservation-ontology)
   - Description: 『用 EDM Council FIBO 做资产保全本体建模』是一个不成立的命题。本文对 edmcouncil/fibo 仓库全部 295 个本体做逐词核查，给出可复用的确切边界（FND/FBC 基础层、Collateral 及其两个子类、CollateralValueAsOfD…
@@ -83,6 +83,10 @@
   - Description: 2026年6月2日特朗普签署《促进先进人工智能创新与安全》行政令，以自愿框架取代强制许可，让政府最多30天访问前沿模型；90天到30天的博弈折射美国AI监管的克制与回摆。本文基于9份归档来源，梳理行政令三条线、Mythos模型诱因与自愿边界，并分析其对金融业系统性风险、财政部漏…
   - Date: 2026-09-27
   - Tags: AI行政令, 金融科技, 银行AI, AI治理, 自愿框架, 前沿模型, Mythos模型, 风险管理, 资产保全, AI合规, 30天审查, 中美AI
+- [Manifold Theory in Quantitative Investing: A Review](https://bi-chao.com/articles/manifold-theory-quantitative-investing)
+  - Description: A review of manifold theory in quantitative investing: diffusion maps, topological signatures, and Kalman-filtered stress testing, with 55 …
+  - Date: 2026-09-27
+  - Tags: manifold learning, quantitative finance, diffusion maps, Kalman filter, stress testing, topology, dynamic factor models, risk management, market regimes, persistence landscapes, principal component analysis, banks
 - [麦肯锡2026全球银行业报告：技术宽限期已经消失——从资产保全视角看'精准提速'](https://bi-chao.com/articles/mckinsey-2026-global-banking-report-analysis)
   - Description: 麦肯锡《2026全球银行业年度报告：精准提速》预览版于2026年9月发布，完整版将于10月推出。报告核心判断是：全球银行业2025年净利润达1.3万亿美元、增长7%，但AI冲击下传统银行的技术宽限期已经消失。本文从资产保全视角出发，分析报告核心数据与战略框架，区分麦肯锡观点与本…
   - Date: 2026-09-27

@@ -308,6 +308,25 @@
     <category term="中美AI"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/manifold-theory-quantitative-investing</id>
+    <title>Manifold Theory in Quantitative Investing: A Review</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/manifold-theory-quantitative-investing" rel="alternate" type="text/html"/>
+    <summary>A review of manifold theory in quantitative investing: diffusion maps, topological signatures, and Kalman-filtered stress testing, with 55 percent MAE gains over scenario analysis. Action checklists for banks.</summary>
+    <category term="manifold learning"/>
+    <category term="quantitative finance"/>
+    <category term="diffusion maps"/>
+    <category term="Kalman filter"/>
+    <category term="stress testing"/>
+    <category term="topology"/>
+    <category term="dynamic factor models"/>
+    <category term="risk management"/>
+    <category term="market regimes"/>
+    <category term="persistence landscapes"/>
+    <category term="principal component analysis"/>
+    <category term="banks"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/mckinsey-2026-global-banking-report-analysis</id>
     <title>麦肯锡2026全球银行业报告：技术宽限期已经消失——从资产保全视角看&apos;精准提速&apos;</title>
     <updated>2026-09-27T00:00:00Z</updated>
