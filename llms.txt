@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (116)
+## Articles (117)
 
 - [指标算得对≠机器能推理：上下文图、本体与银行 AI 的真实缺口](https://bi-chao.com/articles/semantic-layer-vs-context-graph-banking)
   - Description: Atlan 联合创始人 Prukalpa Sankar 推广的一篇长文提出：语义层（指标定义、计算逻辑、原始数据）没有推理能力，而大模型需要上下文图，因此指标优先的范式正在终结。本文完整解读其技术主张——YAML 能声明度量却无法声明逆属性、属性链、对称属性与传递推理，这是能力…
@@ -91,6 +91,10 @@
   - Description: 2026年9月，Grok Bot、Muse、Dots、Claude Tag 等 General Agent 产品密集发布。它们同时拥有 coding、work、personal assistant 能力，不再只是聊天机器人，而是能自主推进任务的"数字同事"。本文基于6份归档来源…
   - Date: 2026-09-27
   - Tags: General Agent, 智能体, 金融科技, 银行AI, 入口之争, Grok Bot, Muse, Dots, Claude Tag, API-first, 风险管理, 资产保全, 支付清算, 多智能体协作
+- [Jev 能否用于银行数据分类分级？从决策模型到语义特征层](https://bi-chao.com/articles/jev-bank-data-classification-feasibility)
+  - Description: Jev 三原语 Choice/Score/Noul 输出类型化概率；$0.042/百万 token、百万条≈$19、AUROC 0.886。结合《办法》三级与 JR/T 0197 五级，分析 Jev 承接分类、初判、合规校验的可行性，给出 Semantic Feature Pr…
+  - Date: 2026-09-27
+  - Tags: Jev, System One, TypeSafe, 数据分类分级, JR/T 0197, JR/T 0358, 银行保险机构数据安全管理办法, Semantic Feature Provider, Shadow Mode, RLCDAlignBench, 数据治理, 合规前置
 - [白宫6月2日AI行政令：90天到30天的政治博弈与金融业的新安全边界](https://bi-chao.com/articles/june-2-ai-executive-order-banking-impact)
   - Description: 2026年6月2日特朗普签署《促进先进人工智能创新与安全》行政令，以自愿框架取代强制许可，让政府最多30天访问前沿模型；90天到30天的博弈折射美国AI监管的克制与回摆。本文基于9份归档来源，梳理行政令三条线、Mythos模型诱因与自愿边界，并分析其对金融业系统性风险、财政部漏…
   - Date: 2026-09-27

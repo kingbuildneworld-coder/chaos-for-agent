@@ -384,6 +384,28 @@
     "schema_type": "Article"
   },
   {
+    "title": "Jev 能否用于银行数据分类分级？从决策模型到语义特征层",
+    "slug": "jev-bank-data-classification-feasibility",
+    "url": "/articles/jev-bank-data-classification-feasibility.md",
+    "description": "Jev 三原语 Choice/Score/Noul 输出类型化概率；$0.042/百万 token、百万条≈$19、AUROC 0.886。结合《办法》三级与 JR/T 0197 五级，分析 Jev 承接分类、初判、合规校验的可行性，给出 Semantic Feature Provider 定位与 Shadow Mode 落地路径。",
+    "date": "2026-09-27",
+    "tags": [
+      "Jev",
+      "System One",
+      "TypeSafe",
+      "数据分类分级",
+      "JR/T 0197",
+      "JR/T 0358",
+      "银行保险机构数据安全管理办法",
+      "Semantic Feature Provider",
+      "Shadow Mode",
+      "RLCDAlignBench",
+      "数据治理",
+      "合规前置"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "白宫6月2日AI行政令：90天到30天的政治博弈与金融业的新安全边界",
     "slug": "june-2-ai-executive-order-banking-impact",
     "url": "/articles/june-2-ai-executive-order-banking-impact.md",

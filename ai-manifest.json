@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 116,
+    "total_articles": 117,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -397,6 +397,26 @@
         "资产保全",
         "支付清算",
         "多智能体协作"
+      ]
+    },
+    {
+      "slug": "jev-bank-data-classification-feasibility",
+      "title": "Jev 能否用于银行数据分类分级？从决策模型到语义特征层",
+      "date": "2026-09-27",
+      "description": "Jev 三原语 Choice/Score/Noul 输出类型化概率；$0.042/百万 token、百万条≈$19、AUROC 0.886。结合《办法》三级与 JR/T 0197 五级，分析 Jev 承接分类、初判、合规校验的可行性，给出 Semantic Feature Provider 定位与 Shadow Mode 落地路径。",
+      "tags": [
+        "Jev",
+        "System One",
+        "TypeSafe",
+        "数据分类分级",
+        "JR/T 0197",
+        "JR/T 0358",
+        "银行保险机构数据安全管理办法",
+        "Semantic Feature Provider",
+        "Shadow Mode",
+        "RLCDAlignBench",
+        "数据治理",
+        "合规前置"
       ]
     },
     {
@@ -2017,5 +2037,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-03",
   "version": "1.1",
-  "total_articles": 116
+  "total_articles": 117
 }

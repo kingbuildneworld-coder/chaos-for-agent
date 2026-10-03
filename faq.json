@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-03",
-  "scanned_articles": 116,
-  "articles_with_faq": 80,
-  "total_questions": 360,
+  "scanned_articles": 117,
+  "articles_with_faq": 81,
+  "total_questions": 366,
   "items": [
     {
       "slug": "semantic-layer-vs-context-graph-banking",
@@ -546,6 +546,38 @@
         {
           "question": "本文哪些内容最需要人类核实？",
           "answer": "A5：**本文认为最需要人类核实的有两处：**\n**其一**，来源5（Toolin AI）中\"Anthropic 内部 65% 代码由 Claude Tag 完成\"\"底层是 Claude Opus 4.8\"\"Karpathy 称第三次重构\"等数据与观点，均来自社区实测转述，未经 Anthropic 官方确认，建议通过官方渠道核实。\n**其二**，来源6（36Kr God Translation Bureau 编译）中\"agent 数量将达到人类员工100倍甚至1000倍\"\"万亿智能体\"等预测为编译自英文原文的二手观点汇编，原文出处与作者信息不完整（仅提到 Paul Graham 和 Jared Friedman 的引述），建议追溯英文原始文章核实。"
+        }
+      ]
+    },
+    {
+      "slug": "jev-bank-data-classification-feasibility",
+      "title": "Jev 能否用于银行数据分类分级？从决策模型到语义特征层",
+      "url": "https://bi-chao.com/articles/jev-bank-data-classification-feasibility",
+      "date": "2026-09-27",
+      "faqs": [
+        {
+          "question": "Jev 能直接完成\"给数据定级\"吗？",
+          "answer": "A1：**本文建议**：不能。Jev 只能作为 Semantic Feature Provider 输出\"定级建议 + 概率\"，最终定级必须由人工在审批环节确认。来源3 原文定性：\"Jev 更适合成为一个 Semantic Feature Provider / Semantic Decision Engine，而不是整个风控体系的最终裁决者。\""
+        },
+        {
+          "question": "Jev 说 0.8，我就有 80% 的把握对吗？",
+          "answer": "A2：不是。来源1 明确：\"它说 0.8，就在该类回答上大约 80% 的时候是对的——但只在大量样本的均值意义上成立，单次回答仍然可能错。\" 而且 confidence ≠ 正确率：confidence 是概率分布的\"集中度\"，来自分布形状而非正确性。极端情况：全部权重压在一个选项上 → confidence = 1.0。"
+        },
+        {
+          "question": "Jev 会不会输出选项外的答案？",
+          "answer": "A3：不会输出结构外的文本，因为 Jev 是\"类型化决策\"，不生成文本（来源1）。但\"结构保证 ≠ 事实正确\"——它只能从固定选项集选一个，选错的时候照样是错的。"
+        },
+        {
+          "question": "非开源的 Jev 能用于银行吗？",
+          "answer": "A4：**本文建议**：可以做，但只能做合规前置之后的场景。来源1 明确\"TypeSafe 没有公布 Jev 的权重，也没有发表 Jev 的论文；所有用户调用的是同一个托管模型\"。按《办法》关于\"委托处理、共同处理、转移\"的安全评估要求（来源6），需要先做数据出境与保密评估，且核心/重要数据不得直接送外部托管模型，仅使用脱敏后样本。"
+        },
+        {
+          "question": "为什么必须把 Jev 的输出进分级台账？",
+          "answer": "A5：**本文分析**：因为 Jev 产出的语义特征（如\"还款意愿 HIGH\"、\"投诉倾向 MEDIUM\"）本身就是对客户的行为推断，按 JR/T 0197 默认值规则（来源7），个人行为相关的敏感信息很可能属于 3 级。来源3 的催收示例本身就包含这些字段。所以 Jev 用于\"分类分级\"和 Jev 的\"输出被分类分级\"是同一件事——形成闭环。"
+        },
+        {
+          "question": "本文哪些内容最需要人类核实？",
+          "answer": "A6：**本文认为最需要人类核实的有两处**：\n\n- **来源3（阿里云）与来源4（腾讯云）中的催收、信贷场景概率值**，如 `repayment_intent: High 0.83 / Medium 0.14 / Low 0.03`、`PTP_reliability: High 0.71 / Medium 0.23 / Low 0.06` 等，均为\"该文示例值\"，非实测数据。来源4 原文明确\"文中对比为基于实测口径的方案性测算，非某机构真实数据\"。\n- **成本推算\"一百万条 ≈ $19\"**，是按来源1 官方单价 $0.042 / 百万 token 与平均 400–500 token / 条的算术推算，非某机构实测。"
         }
       ]
     },
