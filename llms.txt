@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (115)
+## Articles (116)
 
+- [指标算得对≠机器能推理：上下文图、本体与银行 AI 的真实缺口](https://bi-chao.com/articles/semantic-layer-vs-context-graph-banking)
+  - Description: Atlan 联合创始人 Prukalpa Sankar 推广的一篇长文提出：语义层（指标定义、计算逻辑、原始数据）没有推理能力，而大模型需要上下文图，因此指标优先的范式正在终结。本文完整解读其技术主张——YAML 能声明度量却无法声明逆属性、属性链、对称属性与传递推理，这是能力…
+  - Date: 2026-10-03
+  - Tags: 语义层, 知识图谱, 上下文工程, 本体, 指标平台, 大模型, 银行AI, 数据治理, 技术风险
 - [FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱](https://bi-chao.com/articles/fibo-asset-preservation-ontology)
   - Description: 『用 EDM Council FIBO 做资产保全本体建模』是一个不成立的命题。本文对 edmcouncil/fibo 仓库全部 295 个本体做逐词核查，给出可复用的确切边界（FND/FBC 基础层、Collateral 及其两个子类、CollateralValueAsOfD…
   - Date: 2026-10-02
@@ -479,10 +483,10 @@
 ## Topics (top 10)
 - 金融科技: 42 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 32 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 大模型: 29 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 大模型: 30 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 银行AI: 28 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 智能体: 28 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 风险管理: 27 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 27 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 资产保全: 16 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
