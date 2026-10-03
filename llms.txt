@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (114)
+## Articles (115)
 
 - [FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱](https://bi-chao.com/articles/fibo-asset-preservation-ontology)
   - Description: 『用 EDM Council FIBO 做资产保全本体建模』是一个不成立的命题。本文对 edmcouncil/fibo 仓库全部 295 个本体做逐词核查，给出可复用的确切边界（FND/FBC 基础层、Collateral 及其两个子类、CollateralValueAsOfD…
@@ -71,6 +71,10 @@
   - Description: Gartner 预测 2028 年 90% 的 B2B 采购将由 AI 智能体中介、逾 15 万亿美元，但本文基于一手核实发现：该预测与其自己「40% 智能体项目将在 2027 年底前被取消」的预测分属两份不同文件，而唯一在运行的验证机制 PunchOut 恰恰是唯一保留人在环…
   - Date: 2026-09-27
   - Tags: B2B, 智能体采购, 内控, 职责分离, 采购舞弊, 供应商管理, SOX合规, 银行运营
+- [Utopia (deeplethe/utopia): An Enterprise World Model — A Review](https://bi-chao.com/articles/deeplethe-utopia-enterprise-world-model-review)
+  - Description: Utopia is an open-source enterprise world model: one Rust binary, one Postgres, a bitemporal knowledge graph with ontology at the base laye…
+  - Date: 2026-09-27
+  - Tags: world model, knowledge graph, bitemporal, ontology, Rust, PostgreSQL, pgvector, RAG, LLM, MCP, enterprise, self-hosted
 - [银行资产保全智能化升级需要什么样的FDE——从Palantir模式到银行资产保全的落地推演](https://bi-chao.com/articles/fde-bank-asset-preservation)
   - Description: FDE（前沿部署工程师）模式正在从硅谷Palantir走向中国银行业。本文以7份已归档来源为锚，系统拆解FDE的核心理念、能力模型与落地挑战，从银行资产保全视角，推演银行资产保全条线需要什么样的FDE、面临怎样的挑战、如何应对，并给出国内外经验借鉴与三条线行动清单。
   - Date: 2026-09-27

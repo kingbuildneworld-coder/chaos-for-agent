@@ -248,6 +248,25 @@
     <category term="银行运营"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/deeplethe-utopia-enterprise-world-model-review</id>
+    <title>Utopia (deeplethe/utopia): An Enterprise World Model — A Review</title>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deeplethe-utopia-enterprise-world-model-review" rel="alternate" type="text/html"/>
+    <summary>Utopia is an open-source enterprise world model: one Rust binary, one Postgres, a bitemporal knowledge graph with ontology at the base layer. 8,031 stars. Review with a banking lens.</summary>
+    <category term="world model"/>
+    <category term="knowledge graph"/>
+    <category term="bitemporal"/>
+    <category term="ontology"/>
+    <category term="Rust"/>
+    <category term="PostgreSQL"/>
+    <category term="pgvector"/>
+    <category term="RAG"/>
+    <category term="LLM"/>
+    <category term="MCP"/>
+    <category term="enterprise"/>
+    <category term="self-hosted"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/fde-bank-asset-preservation</id>
     <title>银行资产保全智能化升级需要什么样的FDE——从Palantir模式到银行资产保全的落地推演</title>
     <updated>2026-09-27T00:00:00Z</updated>

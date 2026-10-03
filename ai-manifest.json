@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 114,
+    "total_articles": 115,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -299,6 +299,26 @@
         "供应商管理",
         "SOX合规",
         "银行运营"
+      ]
+    },
+    {
+      "slug": "deeplethe-utopia-enterprise-world-model-review",
+      "title": "Utopia (deeplethe/utopia): An Enterprise World Model — A Review",
+      "date": "2026-09-27",
+      "description": "Utopia is an open-source enterprise world model: one Rust binary, one Postgres, a bitemporal knowledge graph with ontology at the base layer. 8,031 stars. Review with a banking lens.",
+      "tags": [
+        "world model",
+        "knowledge graph",
+        "bitemporal",
+        "ontology",
+        "Rust",
+        "PostgreSQL",
+        "pgvector",
+        "RAG",
+        "LLM",
+        "MCP",
+        "enterprise",
+        "self-hosted"
       ]
     },
     {
@@ -1980,5 +2000,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-02",
   "version": "1.1",
-  "total_articles": 114
+  "total_articles": 115
 }
