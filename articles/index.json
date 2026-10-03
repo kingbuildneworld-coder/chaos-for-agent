@@ -1,5 +1,25 @@
 [
   {
+    "title": "本体构建方法论综述：Talisman 六阶段管线与 LLM 参与构建的实证，以及银行场景仍缺的三块",
+    "slug": "ontology-pipeline-llm-review",
+    "url": "/articles/ontology-pipeline-llm-review.md",
+    "description": "本文综述两篇 2025–2026 年的本体构建方法论文，并对照我们已交付的银行资产保全本体骨架，找出三处仍然缺失的环节。第一篇是 Jessica Talisman 的 Ontology Pipeline 框架（六阶段：受控词表、元数据标准、分类法、叙词表、本体、知识图谱，每阶段绑定具体 W3C 标准），第二篇是 ICEIS 2025 的《Pipeline for Ontology Construction Using a Large Language Model》，它把 ChatGPT 塞进 Noy & McGuinness 的 Ontology Development 101 七步法做经验报告，记录了每一步的失效模式。两篇都不提供 SHACL 形状的可复用模板，也不涉及能力问题。对照我们 657 三元组的银行本体骨架，识别出三块缺口：能力问题缺失、SHACL 约束缺失（我们的 mappingLoss 校验规则目前只是注释而非机器约束）、以及元数据标准与叙词表两层被跳过。本文同时说明我们为什么不用 LLM 生成 FIBO 映射——论文实证了 ChatGPT 会编造不存在的本体。",
+    "date": "2026-10-02",
+    "tags": [
+      "本体建模",
+      "知识图谱",
+      "SKOS",
+      "SHACL",
+      "能力问题",
+      "LLM",
+      "FIBO",
+      "语义层",
+      "技术风险",
+      "方法论"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "FIBO 没有资产保全本体：银行不良处置建模的复用边界、自建清单与治理陷阱",
     "slug": "fibo-asset-preservation-ontology",
     "url": "/articles/fibo-asset-preservation-ontology.md",
