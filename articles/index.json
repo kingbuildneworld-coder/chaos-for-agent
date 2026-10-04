@@ -1,5 +1,32 @@
 [
   {
+    "title": "大模型能训练出 Jev 吗？银行数据分类分级的四个事件、七个实测与一条分层路径",
+    "slug": "llm-rlcd-jev-agent-bank-data-grading",
+    "url": "/articles/llm-rlcd-jev-agent-bank-data-grading.md",
+    "description": "综述大模型进入银行数据分类分级的四个标志性事件与罚单态势，逐一核验 RLCD 训练方法的公开可得性，用七个可复现实测发现回答\"能否用 RLCD 训练一个大模型与 Jev 结合\"，给出 LLM 语义层 + Jev 决策门控 + 标准硬约束 + 人工闸的分层方案与三栏行动清单。",
+    "date": "2026-10-04",
+    "tags": [
+      "大模型",
+      "RLCD",
+      "Jev",
+      "TypeSafe",
+      "数据分类分级",
+      "银行保险机构数据安全管理办法",
+      "JR/T 0197",
+      "金融监管总局8号文",
+      "FinRAG-12B",
+      "GRPO",
+      "RLCR",
+      "校准概率",
+      "Shadow Mode",
+      "Semantic Feature Provider",
+      "人工干预",
+      "数据治理",
+      "智能体"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "指标算得对≠机器能推理：上下文图、本体与银行 AI 的真实缺口",
     "slug": "semantic-layer-vs-context-graph-banking",
     "url": "/articles/semantic-layer-vs-context-graph-banking.md",

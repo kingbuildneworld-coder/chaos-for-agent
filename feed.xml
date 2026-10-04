@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-03T00:00:00Z</updated>
+  <updated>2026-10-04T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,30 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/llm-rlcd-jev-agent-bank-data-grading</id>
+    <title>大模型能训练出 Jev 吗？银行数据分类分级的四个事件、七个实测与一条分层路径</title>
+    <updated>2026-10-04T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/llm-rlcd-jev-agent-bank-data-grading" rel="alternate" type="text/html"/>
+    <summary>综述大模型进入银行数据分类分级的四个标志性事件与罚单态势，逐一核验 RLCD 训练方法的公开可得性，用七个可复现实测发现回答&quot;能否用 RLCD 训练一个大模型与 Jev 结合&quot;，给出 LLM 语义层 + Jev 决策门控 + 标准硬约束 + 人工闸的分层方案与三栏行动清单。</summary>
+    <category term="大模型"/>
+    <category term="RLCD"/>
+    <category term="Jev"/>
+    <category term="TypeSafe"/>
+    <category term="数据分类分级"/>
+    <category term="银行保险机构数据安全管理办法"/>
+    <category term="JR/T 0197"/>
+    <category term="金融监管总局8号文"/>
+    <category term="FinRAG-12B"/>
+    <category term="GRPO"/>
+    <category term="RLCR"/>
+    <category term="校准概率"/>
+    <category term="Shadow Mode"/>
+    <category term="Semantic Feature Provider"/>
+    <category term="人工干预"/>
+    <category term="数据治理"/>
+    <category term="智能体"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/semantic-layer-vs-context-graph-banking</id>
     <title>指标算得对≠机器能推理：上下文图、本体与银行 AI 的真实缺口</title>
