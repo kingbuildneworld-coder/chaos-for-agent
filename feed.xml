@@ -38,6 +38,45 @@
     <category term="智能体"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/startlux-decision-bank-risk-and-data-grading</id>
+    <title>深度分析 StartLux-Decision：它是银行的第几种小模型？风控决策、本地微调与数据分级三条路的可行性核验</title>
+    <updated>2026-10-04T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/startlux-decision-bank-risk-and-data-grading" rel="alternate" type="text/html"/>
+    <summary>逐个文件核验 StartLuxLabs 开源决策模型的 README、四份文档、评测脚本与原始 CSV，用 40 项基准的原始数据回答三个问题：它和银行的评分卡、XGBoost、决策树有什么本质区别；能不能进入银行风控决策链；本地部署微调后能不能用于银行数据分级分类治理。结论是技术上三条路都通、许可上有一条硬门槛、定位上它不是替代者而是中信 AI 天盾式大小模型双轮驱动中缺失的中间层，并给出四道硬门槛与三栏行动清单。</summary>
+    <category term="StartLux-Decision"/>
+    <category term="类型化决策模型"/>
+    <category term="Jev"/>
+    <category term="TypeSafe"/>
+    <category term="系统一模型"/>
+    <category term="银行风控"/>
+    <category term="评分卡"/>
+    <category term="逻辑回归"/>
+    <category term="XGBoost"/>
+    <category term="决策树"/>
+    <category term="WOE分箱"/>
+    <category term="可解释性"/>
+    <category term="API-Bank"/>
+    <category term="BANKING77"/>
+    <category term="Decision Index"/>
+    <category term="JevBench"/>
+    <category term="ECE"/>
+    <category term="Brier"/>
+    <category term="温度校准"/>
+    <category term="LoRA微调"/>
+    <category term="GGUF量化"/>
+    <category term="CC BY-NC"/>
+    <category term="Apache-2.0"/>
+    <category term="商用授权"/>
+    <category term="数据分级分类"/>
+    <category term="JR/T 0197"/>
+    <category term="金融监管总局8号文"/>
+    <category term="AI天盾"/>
+    <category term="人工监督"/>
+    <category term="256K上下文"/>
+    <category term="多模态"/>
+    <category term="智能体"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/semantic-layer-vs-context-graph-banking</id>
     <title>指标算得对≠机器能推理：上下文图、本体与银行 AI 的真实缺口</title>
     <updated>2026-10-03T00:00:00Z</updated>

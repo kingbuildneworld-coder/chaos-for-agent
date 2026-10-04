@@ -13,12 +13,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (118)
+## Articles (119)
 
 - [大模型能训练出 Jev 吗？银行数据分类分级的四个事件、七个实测与一条分层路径](https://bi-chao.com/articles/llm-rlcd-jev-agent-bank-data-grading)
   - Description: 综述大模型进入银行数据分类分级的四个标志性事件与罚单态势，逐一核验 RLCD 训练方法的公开可得性，用七个可复现实测发现回答"能否用 RLCD 训练一个大模型与 Jev 结合"，给出 LLM 语义层 + Jev 决策门控 + 标准硬约束 + 人工闸的分层方案与三栏行动清单。
   - Date: 2026-10-04
   - Tags: 大模型, RLCD, Jev, TypeSafe, 数据分类分级, 银行保险机构数据安全管理办法, JR/T 0197, 金融监管总局8号文, FinRAG-12B, GRPO, RLCR, 校准概率, Shadow Mode, Semantic Feature Provider, 人工干预, 数据治理, 智能体
+- [深度分析 StartLux-Decision：它是银行的第几种小模型？风控决策、本地微调与数据分级三条路的可行性核验](https://bi-chao.com/articles/startlux-decision-bank-risk-and-data-grading)
+  - Description: 逐个文件核验 StartLuxLabs 开源决策模型的 README、四份文档、评测脚本与原始 CSV，用 40 项基准的原始数据回答三个问题：它和银行的评分卡、XGBoost、决策树有什么本质区别；能不能进入银行风控决策链；本地部署微调后能不能用于银行数据分级分类治理。结论是…
+  - Date: 2026-10-04
+  - Tags: StartLux-Decision, 类型化决策模型, Jev, TypeSafe, 系统一模型, 银行风控, 评分卡, 逻辑回归, XGBoost, 决策树, WOE分箱, 可解释性, API-Bank, BANKING77, Decision Index, JevBench, ECE, Brier, 温度校准, LoRA微调, GGUF量化, CC BY-NC, Apache-2.0, 商用授权, 数据分级分类, JR/T 0197, 金融监管总局8号文, AI天盾, 人工监督, 256K上下文, 多模态, 智能体
 - [指标算得对≠机器能推理：上下文图、本体与银行 AI 的真实缺口](https://bi-chao.com/articles/semantic-layer-vs-context-graph-banking)
   - Description: Atlan 联合创始人 Prukalpa Sankar 推广的一篇长文提出：语义层（指标定义、计算逻辑、原始数据）没有推理能力，而大模型需要上下文图，因此指标优先的范式正在终结。本文完整解读其技术主张——YAML 能声明度量却无法声明逆属性、属性链、对称属性与传递推理，这是能力…
   - Date: 2026-10-03
@@ -492,7 +496,7 @@
 - 金融科技: 42 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 32 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 31 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 29 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 30 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 28 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 27 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 16 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
