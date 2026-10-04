@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 119,
+    "total_articles": 120,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,36 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "asset-preservation-agent-ontology-knowledge-graph",
+      "title": "资产保全智能体的本体论与知识图谱怎么配套建：两个真实业务场景的路径设计、自动化管线与快速落地清单",
+      "date": "2026-10-05",
+      "description": "以保全全套方案路径设计与核销转让项目审查两个真实业务场景为锚，用三份现行监管文件（财金〔2012〕6号、财金〔2013〕146号、银保监办便函〔2021〕26号及 2025 年延期通知）把业务流程拆成可建模的阶段与材料清单，给出场景导向本体的四层划分与知识图谱的三类边，并回答三个工程问题：自动化管线有哪些（pySHACL/RDFLib/OWL-RL 已核实版本与许可，LLM 参与构建的七条实证失效模式）、本体怎么快速落地（能力问题驱动、SHACL 把散文规则变成机器约束、账销案存给追踪闭环）、以及智能体自动运行与辅助决策的边界划在哪里（财金〔2013〕146 号的 20% 检查覆盖面与监管新增的自查审计要求）。",
+      "tags": [
+        "资产保全",
+        "本体论",
+        "知识图谱",
+        "场景导向本体",
+        "不良资产处置",
+        "呆账核销",
+        "财金2012-6号",
+        "财金2013-146号",
+        "银保监办便函2021-26号",
+        "批量转让",
+        "账销案存",
+        "SHACL",
+        "SKOS",
+        "能力问题",
+        "pySHACL",
+        "RDFLib",
+        "LLM本体构建",
+        "Rich AIBox",
+        "社交图谱",
+        "智能体",
+        "银行AI治理",
+        "押品管理"
+      ]
+    },
     {
       "slug": "llm-rlcd-jev-agent-bank-data-grading",
       "title": "大模型能训练出 Jev 吗？银行数据分类分级的四个事件、七个实测与一条分层路径",
@@ -2100,7 +2130,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-04",
+  "last_updated": "2026-10-05",
   "version": "1.1",
-  "total_articles": 119
+  "total_articles": 120
 }

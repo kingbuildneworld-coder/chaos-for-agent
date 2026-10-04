@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-04T00:00:00Z</updated>
+  <updated>2026-10-05T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,35 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/asset-preservation-agent-ontology-knowledge-graph</id>
+    <title>资产保全智能体的本体论与知识图谱怎么配套建：两个真实业务场景的路径设计、自动化管线与快速落地清单</title>
+    <updated>2026-10-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/asset-preservation-agent-ontology-knowledge-graph" rel="alternate" type="text/html"/>
+    <summary>以保全全套方案路径设计与核销转让项目审查两个真实业务场景为锚，用三份现行监管文件（财金〔2012〕6号、财金〔2013〕146号、银保监办便函〔2021〕26号及 2025 年延期通知）把业务流程拆成可建模的阶段与材料清单，给出场景导向本体的四层划分与知识图谱的三类边，并回答三个工程问题：自动化管线有哪些（pySHACL/RDFLib/OWL-RL 已核实版本与许可，LLM 参与构建的七条实证失效模式）、本体怎么快速落地（能力问题驱动、SHACL 把散文规则变成机器约束、账销案存给追踪闭环）、以及智能体自动运行与辅助决策的边界划在哪里（财金〔2013〕146 号的 20% 检查覆盖面与监管新增的自查审计要求）。</summary>
+    <category term="资产保全"/>
+    <category term="本体论"/>
+    <category term="知识图谱"/>
+    <category term="场景导向本体"/>
+    <category term="不良资产处置"/>
+    <category term="呆账核销"/>
+    <category term="财金2012-6号"/>
+    <category term="财金2013-146号"/>
+    <category term="银保监办便函2021-26号"/>
+    <category term="批量转让"/>
+    <category term="账销案存"/>
+    <category term="SHACL"/>
+    <category term="SKOS"/>
+    <category term="能力问题"/>
+    <category term="pySHACL"/>
+    <category term="RDFLib"/>
+    <category term="LLM本体构建"/>
+    <category term="Rich AIBox"/>
+    <category term="社交图谱"/>
+    <category term="智能体"/>
+    <category term="银行AI治理"/>
+    <category term="押品管理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/llm-rlcd-jev-agent-bank-data-grading</id>
     <title>大模型能训练出 Jev 吗？银行数据分类分级的四个事件、七个实测与一条分层路径</title>

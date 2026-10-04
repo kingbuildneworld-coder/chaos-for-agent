@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (119)
+## Articles (120)
 
+- [资产保全智能体的本体论与知识图谱怎么配套建：两个真实业务场景的路径设计、自动化管线与快速落地清单](https://bi-chao.com/articles/asset-preservation-agent-ontology-knowledge-graph)
+  - Description: 以保全全套方案路径设计与核销转让项目审查两个真实业务场景为锚，用三份现行监管文件（财金〔2012〕6号、财金〔2013〕146号、银保监办便函〔2021〕26号及 2025 年延期通知）把业务流程拆成可建模的阶段与材料清单，给出场景导向本体的四层划分与知识图谱的三类边，并回答三…
+  - Date: 2026-10-05
+  - Tags: 资产保全, 本体论, 知识图谱, 场景导向本体, 不良资产处置, 呆账核销, 财金2012-6号, 财金2013-146号, 银保监办便函2021-26号, 批量转让, 账销案存, SHACL, SKOS, 能力问题, pySHACL, RDFLib, LLM本体构建, Rich AIBox, 社交图谱, 智能体, 银行AI治理, 押品管理
 - [大模型能训练出 Jev 吗？银行数据分类分级的四个事件、七个实测与一条分层路径](https://bi-chao.com/articles/llm-rlcd-jev-agent-bank-data-grading)
   - Description: 综述大模型进入银行数据分类分级的四个标志性事件与罚单态势，逐一核验 RLCD 训练方法的公开可得性，用七个可复现实测发现回答"能否用 RLCD 训练一个大模型与 Jev 结合"，给出 LLM 语义层 + Jev 决策门控 + 标准硬约束 + 人工闸的分层方案与三栏行动清单。
   - Date: 2026-10-04
@@ -495,11 +499,11 @@
 ## Topics (top 10)
 - 金融科技: 42 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 32 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 智能体: 31 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 31 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 30 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 28 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 27 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 资产保全: 16 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 资产保全: 17 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
