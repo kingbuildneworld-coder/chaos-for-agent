@@ -43,6 +43,37 @@
     <category term="押品管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/kyoto-vision-golden-age-of-science</id>
+    <title>全面解读《科学黄金时代的京都愿景》：一份 17 国联署的 AI for Science 宣言，与它没有说出口的三件事</title>
+    <updated>2026-10-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/kyoto-vision-golden-age-of-science" rel="alternate" type="text/html"/>
+    <summary>2026 年 10 月 4 日，美国白宫科技政策局局长 Michael Kratsios 在京都举行的第 23 届 STS 论坛上发布《Kyoto Vision for a Golden Age of Science》，美国与 16 国共 17 国联署。本文以宣言 PDF 原文（从德国研究部存档 PDF 的内嵌字体映射解码）、白宫新闻稿、德国 BMFTR 声明、日本 JST CRDS 解读四份一手来源交叉核验，拆解它的三大支柱（发现机构、面向科学的超级智能、科研人才）与其母报告《Science: A New Golden Age》的四支柱、Genesis Mission、Metascience、FRO 与 X-Labs。同时指出它没有说出口的三件事：德国明确声明它只是一份讨论基础而非有约束力的宣言；它回避了 NSF 预算减半与宣言主张的张力；它对超级智能的治理边界几乎一言未发。</summary>
+    <category term="京都愿景"/>
+    <category term="Kyoto Vision"/>
+    <category term="黄金时代"/>
+    <category term="STS论坛"/>
+    <category term="AI for Science"/>
+    <category term="超级智能"/>
+    <category term="SI"/>
+    <category term="Metascience"/>
+    <category term="元科学"/>
+    <category term="Science of Science"/>
+    <category term="Genesis Mission"/>
+    <category term="Science A New Golden Age"/>
+    <category term="Vannevar Bush"/>
+    <category term="Endless Frontier"/>
+    <category term="FRO"/>
+    <category term="X-Labs"/>
+    <category term="Gold Standard Science"/>
+    <category term="科研资助"/>
+    <category term="科研治理"/>
+    <category term="国际科技政策"/>
+    <category term="白宫"/>
+    <category term="OSTP"/>
+    <category term="Kratsios"/>
+    <category term="科学外交"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/ontology-asset-rag-or-skill</id>
     <title>本体资产是 RAG 知识库还是 skill？资产保全智能体的三种用法与一个判据</title>
     <updated>2026-10-05T00:00:00Z</updated>
