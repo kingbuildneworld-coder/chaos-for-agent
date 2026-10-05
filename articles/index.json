@@ -32,6 +32,33 @@
     "schema_type": "Article"
   },
   {
+    "title": "本体资产是 RAG 知识库还是 skill？资产保全智能体的三种用法与一个判据",
+    "slug": "ontology-asset-rag-or-skill",
+    "url": "/articles/ontology-asset-rag-or-skill.md",
+    "description": "接续《资产保全智能体的本体论与知识图谱怎么配套建》，回答被反复追问的架构问题：本体论形成的资产究竟该作为智能体的 RAG 知识库，还是 skill？本文的答案都不是——本体资产有三种用法，对应知识在生成链上的三个不同作用点：作为检索的骨架（OG-RAG 实证召回率 +55%、正确率 +40%）、作为校验的约束（SHACL 形状是唯一能承载监管硬约束的层）、作为能力的目录（Knowledge-as-Skill 指出传统知识库把文档暴露为匿名文本块、智能体根本不知道库里有什么）。给出一个三问判据判断每项知识该放哪一层，并把两个业务场景各自的三层配比算清楚：保全方案路径设计是生成型任务，骨架与目录占大头；核销转让审查是判断型任务，校验层占大头。",
+    "date": "2026-10-05",
+    "tags": [
+      "本体论",
+      "知识图谱",
+      "RAG",
+      "OG-RAG",
+      "Knowledge-as-Skill",
+      "skill",
+      "SHACL",
+      "资产保全",
+      "智能体",
+      "金发2026-8号",
+      "知识工程",
+      "检索增强",
+      "语义层",
+      "银行AI治理",
+      "技术风险",
+      "押品管理",
+      "不良资产处置"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "大模型能训练出 Jev 吗？银行数据分类分级的四个事件、七个实测与一条分层路径",
     "slug": "llm-rlcd-jev-agent-bank-data-grading",
     "url": "/articles/llm-rlcd-jev-agent-bank-data-grading.md",
