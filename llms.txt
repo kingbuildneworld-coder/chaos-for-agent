@@ -20,7 +20,7 @@
   - Date: 2026-10-05
   - Tags: 资产保全, 本体论, 知识图谱, 场景导向本体, 不良资产处置, 呆账核销, 财金2012-6号, 财金2013-146号, 银保监办便函2021-26号, 批量转让, 账销案存, SHACL, SKOS, 能力问题, pySHACL, RDFLib, LLM本体构建, Rich AIBox, 社交图谱, 智能体, 银行AI治理, 押品管理
 - [全面解读《科学黄金时代的京都愿景》：一份 17 国联署的 AI for Science 宣言，与它没有说出口的三件事](https://bi-chao.com/articles/kyoto-vision-golden-age-of-science)
-  - Description: 2026 年 10 月 4 日，美国白宫科技政策局局长 Michael Kratsios 在京都举行的第 23 届 STS 论坛上发布《Kyoto Vision for a Golden Age of Science》，美国与 16 国共 17 国联署。本文以宣言 PDF 原文…
+  - Description: 2026 年 10 月 4 日，美国白宫科技政策局局长 Michael Kratsios 在京都举行的第 23 届 STS 论坛上发布《Kyoto Vision for a Golden Age of Science》，美国与 16 国共 17 国联署。本文以宣言官方文本、白宫…
   - Date: 2026-10-05
   - Tags: 京都愿景, Kyoto Vision, 黄金时代, STS论坛, AI for Science, 超级智能, SI, Metascience, 元科学, Science of Science, Genesis Mission, Science A New Golden Age, Vannevar Bush, Endless Frontier, FRO, X-Labs, Gold Standard Science, 科研资助, 科研治理, 国际科技政策, 白宫, OSTP, Kratsios, 科学外交
 - [本体资产是 RAG 知识库还是 skill？资产保全智能体的三种用法与一个判据](https://bi-chao.com/articles/ontology-asset-rag-or-skill)
