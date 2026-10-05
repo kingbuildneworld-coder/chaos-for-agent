@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 122,
+    "total_articles": 123,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,29 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "altar-open-weight-security-model-bank",
+      "title": "4 张 H200 与 60.4% 召回：开源安全大模型 Aikido Altar 的银行内网适配性",
+      "date": "2026-10-05",
+      "description": "Aikido 发布了首个开源权重安全模型 Altar，由 GLM-5.3 经 AWQ INT4 量化与 REAP 专家剪枝压缩至 328 GB，可部署在 4 张 H200 上完全运行于银行内网。本文逐层拆解其技术构造与压缩构成，指出 86.4% 的体积下降来自量化而非剪枝、剪枝不改变推理延迟、KL 0.506 nats 只证明未改坏而不证明未损失能力；核验其基准测试口径——60.4% 召回是对 32 个已知漏洞的定向复现，且 96 次试验下 1.1pp 差异落在抽样噪声内；逐条分析 GLM-5.3 许可证，澄清 MaaS 一亿美元门槛的常见误读，判定银行纯自用不触发安全审查；同时标注厂商自述、不可独立复现的部分，并给出按机构规模分档的部署门槛判断。",
+      "tags": [
+        "安全大模型",
+        "Aikido",
+        "Altar",
+        "GLM-5.3",
+        "REAP",
+        "AWQ",
+        "模型剪枝",
+        "量化",
+        "私有化部署",
+        "AI渗透测试",
+        "代码安全",
+        "AppSec",
+        "银行AI",
+        "技术风险",
+        "数据不出域"
+      ]
+    },
     {
       "slug": "asset-preservation-agent-ontology-knowledge-graph",
       "title": "资产保全智能体的本体论与知识图谱怎么配套建：两个真实业务场景的路径设计、自动化管线与快速落地清单",
@@ -2189,5 +2212,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-05",
   "version": "1.1",
-  "total_articles": 122
+  "total_articles": 123
 }
