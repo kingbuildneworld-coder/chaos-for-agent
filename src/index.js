@@ -60,7 +60,7 @@ const TAG_INDEX_MIN_ARTICLES = 3;
  * ⚠️ 计数陷阱：本机 `wc -m` 按**字节**计数（locale 未设 UTF-8），据此判断字符
  * 阈值会得出错误结论。测字符请用 Python `len()` 或 `LC_ALL=C.UTF-8 wc -m`。
  */
-const LLM_DESC_MAX = 140;
+const LLM_DESC_MAX = 400;
 
 /** 单行截断（用于 llms.txt 的简短说明） */
 function truncate(s, n) {

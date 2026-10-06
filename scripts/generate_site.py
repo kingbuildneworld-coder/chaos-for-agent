@@ -41,7 +41,7 @@ TAG_INDEX_MIN_ARTICLES = 3
 # 故此改动不是为了修阈值超标，而是让说明更贴合"简短注释"定位并减少传输字节。
 #
 # ⚠️ 本机 `wc -m` 按字节计数（locale 未设 UTF-8），不可用于字符阈值判断。
-LLM_DESC_MAX = 140
+LLM_DESC_MAX = 400
 
 # Curated metadata preserved from the existing manifest.
 TOPICS = [
