@@ -29,6 +29,21 @@
     <category term="金融科技"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/hithink-financial-api-analysis</id>
+    <title>官方数据源的&quot;AI 时代接口&quot;：同花顺 Financial-API 服务模式对量化投资与个人投资者的价值分析</title>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/hithink-financial-api-analysis" rel="alternate" type="text/html"/>
+    <summary>同花顺官方发布 Financial-API（hithink-finance）：统一 API Key 即可查询 A 股行情、财报、估值、涨停龙虎榜、公募基金与期货期权数据，通过 REST、MCP、CLI、Python SDK、本地 DuckDB 与 Agent Skill 六种入口接入，不设累计调用上限。本文拆解这一服务模式的四个特征——官方权威源、多协议一 Key、本地优先数仓、边界诚实——并分别评估其对量化投资分析（数据链路、回测一致性、特色因子）与个人投资者（零门槛官方数据、AI 助手化投研、能力边界）的价值与局限，与 Tushare、AkShare 及机构终端做横向对比。</summary>
+    <category term="同花顺"/>
+    <category term="Financial-API"/>
+    <category term="金融数据"/>
+    <category term="量化投资"/>
+    <category term="个人投资者"/>
+    <category term="MCP"/>
+    <category term="AI Agent"/>
+    <category term="数据服务"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/lecun-hinton-ai-divergence-finance</id>
     <title>辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示</title>
     <updated>2026-10-06T00:00:00Z</updated>
