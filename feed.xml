@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-06T00:00:00Z</updated>
+  <updated>2026-10-07T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/a16z-state-of-markets-china</id>
+    <title>&quot;科技即周期&quot;的中国回响：用 a16z《State of Markets II》的六个维度检验中国市场</title>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/a16z-state-of-markets-china" rel="alternate" type="text/html"/>
+    <summary>a16z 发布 90 页《State of Markets II》提出&apos;科技即一切周期&apos;，但图表普遍剔除中国。本文沿其六个核心维度——科技盈利主导、算力资本开支、落地宽而浅、VC 资金集中、从比特到原子、软件再定价——用中国数据逐一对照检验，并落到金融业启示。</summary>
+    <category term="a16z"/>
+    <category term="State of Markets"/>
+    <category term="AI资本周期"/>
+    <category term="算力"/>
+    <category term="中国科技股"/>
+    <category term="一级市场"/>
+    <category term="人形机器人"/>
+    <category term="金融科技"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/lecun-hinton-ai-divergence-finance</id>
     <title>辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示</title>

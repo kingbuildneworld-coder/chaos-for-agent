@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 125,
+    "total_articles": 126,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "a16z-state-of-markets-china",
+      "title": "\"科技即周期\"的中国回响：用 a16z《State of Markets II》的六个维度检验中国市场",
+      "date": "2026-10-07",
+      "description": "a16z 发布 90 页《State of Markets II》提出'科技即一切周期'，但图表普遍剔除中国。本文沿其六个核心维度——科技盈利主导、算力资本开支、落地宽而浅、VC 资金集中、从比特到原子、软件再定价——用中国数据逐一对照检验，并落到金融业启示。",
+      "tags": [
+        "a16z",
+        "State of Markets",
+        "AI资本周期",
+        "算力",
+        "中国科技股",
+        "一级市场",
+        "人形机器人",
+        "金融科技"
+      ]
+    },
     {
       "slug": "lecun-hinton-ai-divergence-finance",
       "title": "辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示",
@@ -2241,7 +2257,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "version": "1.1",
-  "total_articles": 125
+  "total_articles": 126
 }

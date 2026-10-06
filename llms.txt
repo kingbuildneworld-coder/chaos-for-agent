@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (125)
+## Articles (126)
 
+- ["科技即周期"的中国回响：用 a16z《State of Markets II》的六个维度检验中国市场](https://bi-chao.com/articles/a16z-state-of-markets-china)
+  - Description: a16z 发布 90 页《State of Markets II》提出'科技即一切周期'，但图表普遍剔除中国。本文沿其六个核心维度——科技盈利主导、算力资本开支、落地宽而浅、VC 资金集中、从比特到原子、软件再定价——用中国数据逐一对照检验，并落到金融业启示。
+  - Date: 2026-10-07
+  - Tags: a16z, State of Markets, AI资本周期, 算力, 中国科技股, 一级市场, 人形机器人, 金融科技
 - [辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示](https://bi-chao.com/articles/lecun-hinton-ai-divergence-finance)
   - Description: 2024 年诺贝尔物理学奖得主辛顿与图灵奖得主杨立昆，在 AI 路径与风险判断上针锋相对：一个警告 10% 的灭绝概率'不算离谱'、呼吁为超级智能装上方向盘；一个断言大语言模型是'死路一条'、对灭绝担忧称'零'。本文梳理两位大家的观点谱系与分歧本质，结合金融监管总局 2026 …
   - Date: 2026-10-06
@@ -517,7 +521,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 44 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 45 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 33 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 智能体: 32 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
