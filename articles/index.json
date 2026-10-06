@@ -1,5 +1,40 @@
 [
   {
+    "title": "辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示",
+    "slug": "lecun-hinton-ai-divergence-finance",
+    "url": "/articles/lecun-hinton-ai-divergence-finance.md",
+    "description": "2024 年诺贝尔物理学奖得主辛顿与图灵奖得主杨立昆，在 AI 路径与风险判断上针锋相对：一个警告 10% 的灭绝概率'不算离谱'、呼吁为超级智能装上方向盘；一个断言大语言模型是'死路一条'、对灭绝担忧称'零'。本文梳理两位大家的观点谱系与分歧本质，结合金融监管总局 2026 年《指导意见》32 项要求，给出金融业'不站队、分级用、双轨走'的落地框架。",
+    "date": "2026-10-06",
+    "tags": [
+      "AI治理",
+      "杨立昆",
+      "辛顿",
+      "LeCun",
+      "Hinton",
+      "大模型",
+      "金融科技",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当银行客服跑在客户手机上：端侧小参数大模型的现状、银发适配与未来趋势",
+    "slug": "on-device-small-model-bank-customer-service",
+    "url": "/articles/on-device-small-model-bank-customer-service.md",
+    "description": "从成本、延迟、隐私合规与离线可靠性四个维度，分析端侧小参数大模型对银行对客服务的战略价值；梳理 Apple、Google 与国内银行（工行、中信、平安、招行、上海银行、徽商等）的落地现状；结合 3.23 亿老年人口与金融适老化政策，论证端侧模型对银发客户'听得懂、敢开口、不泄密'的适配优势；最后给出端云协同、场景分级选型的趋势判断与落地路径。",
+    "date": "2026-10-06",
+    "tags": [
+      "端侧大模型",
+      "小参数模型",
+      "银行智能客服",
+      "银发客户",
+      "适老化",
+      "金融科技",
+      "数据安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "4 张 H200 与 60.4% 召回：开源安全大模型 Aikido Altar 的银行内网适配性",
     "slug": "altar-open-weight-security-model-bank",
     "url": "/articles/altar-open-weight-security-model-bank.md",

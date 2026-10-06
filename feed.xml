@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-05T00:00:00Z</updated>
+  <updated>2026-10-06T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,35 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/lecun-hinton-ai-divergence-finance</id>
+    <title>辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示</title>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/lecun-hinton-ai-divergence-finance" rel="alternate" type="text/html"/>
+    <summary>2024 年诺贝尔物理学奖得主辛顿与图灵奖得主杨立昆，在 AI 路径与风险判断上针锋相对：一个警告 10% 的灭绝概率&apos;不算离谱&apos;、呼吁为超级智能装上方向盘；一个断言大语言模型是&apos;死路一条&apos;、对灭绝担忧称&apos;零&apos;。本文梳理两位大家的观点谱系与分歧本质，结合金融监管总局 2026 年《指导意见》32 项要求，给出金融业&apos;不站队、分级用、双轨走&apos;的落地框架。</summary>
+    <category term="AI治理"/>
+    <category term="杨立昆"/>
+    <category term="辛顿"/>
+    <category term="LeCun"/>
+    <category term="Hinton"/>
+    <category term="大模型"/>
+    <category term="金融科技"/>
+    <category term="风险管理"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/on-device-small-model-bank-customer-service</id>
+    <title>当银行客服跑在客户手机上：端侧小参数大模型的现状、银发适配与未来趋势</title>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/on-device-small-model-bank-customer-service" rel="alternate" type="text/html"/>
+    <summary>从成本、延迟、隐私合规与离线可靠性四个维度，分析端侧小参数大模型对银行对客服务的战略价值；梳理 Apple、Google 与国内银行（工行、中信、平安、招行、上海银行、徽商等）的落地现状；结合 3.23 亿老年人口与金融适老化政策，论证端侧模型对银发客户&apos;听得懂、敢开口、不泄密&apos;的适配优势；最后给出端云协同、场景分级选型的趋势判断与落地路径。</summary>
+    <category term="端侧大模型"/>
+    <category term="小参数模型"/>
+    <category term="银行智能客服"/>
+    <category term="银发客户"/>
+    <category term="适老化"/>
+    <category term="金融科技"/>
+    <category term="数据安全"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/altar-open-weight-security-model-bank</id>
     <title>4 张 H200 与 60.4% 召回：开源安全大模型 Aikido Altar 的银行内网适配性</title>
