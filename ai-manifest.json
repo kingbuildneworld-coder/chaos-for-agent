@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 136,
+    "total_articles": 137,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "post-quantum-cryptography-banking-migration",
+      "title": "量子时钟滴答作响：后量子密码（PQC）大迁移与银行业的\"密码长城\"重构",
+      "date": "2026-10-08",
+      "description": "量子计算威胁已从理论走向监管指令：美国 EO 14412 强制联邦系统限期迁移后量子密码（PQC），G7 发布金融业迁移关键考量，香港金管局量子准备度指数首评仅 2.3/10。本文梳理 NIST FIPS 203/204/205 标准、BIS Project Leap 央行实测、HKMA/FINMA/德国银行业监管动向与中国抗量子方案，并从银行风险管理视角给出落地五件事与智能体时代的特殊考量。",
+      "tags": [
+        "后量子密码",
+        "量子计算",
+        "PQC迁移",
+        "金融安全",
+        "密码学",
+        "风险管理",
+        "网络韧性",
+        "银行业数字化转型"
+      ]
+    },
     {
       "slug": "a16z-state-of-markets-china",
       "title": "\"科技即周期\"的中国回响：用六个维度检验中国市场",
@@ -2414,7 +2430,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "version": "1.1",
-  "total_articles": 136
+  "total_articles": 137
 }

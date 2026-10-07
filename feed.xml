@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-07T00:00:00Z</updated>
+  <updated>2026-10-08T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/post-quantum-cryptography-banking-migration</id>
+    <title>量子时钟滴答作响：后量子密码（PQC）大迁移与银行业的&quot;密码长城&quot;重构</title>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/post-quantum-cryptography-banking-migration" rel="alternate" type="text/html"/>
+    <summary>量子计算威胁已从理论走向监管指令：美国 EO 14412 强制联邦系统限期迁移后量子密码（PQC），G7 发布金融业迁移关键考量，香港金管局量子准备度指数首评仅 2.3/10。本文梳理 NIST FIPS 203/204/205 标准、BIS Project Leap 央行实测、HKMA/FINMA/德国银行业监管动向与中国抗量子方案，并从银行风险管理视角给出落地五件事与智能体时代的特殊考量。</summary>
+    <category term="后量子密码"/>
+    <category term="量子计算"/>
+    <category term="PQC迁移"/>
+    <category term="金融安全"/>
+    <category term="密码学"/>
+    <category term="风险管理"/>
+    <category term="网络韧性"/>
+    <category term="银行业数字化转型"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/a16z-state-of-markets-china</id>
     <title>&quot;科技即周期&quot;的中国回响：用六个维度检验中国市场</title>
