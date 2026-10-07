@@ -13,12 +13,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (129)
+## Articles (130)
 
 - ["科技即周期"的中国回响：用六个维度检验中国市场](https://bi-chao.com/articles/a16z-state-of-markets-china)
   - Description: a16z Growth 于 2026 年 9 月发布 90 页报告《State of Markets II》，提出'科技即一切周期'：科技占美国资本开支 55%、贡献标普 500 约 76% 盈利增长，AI 基础设施成为当下经济中唯一顺周期引擎；但其全球百强分析明确剔除中国（ex-China）。本文把报告六个核心维度移植到中国市场逐一检验：科技市值占比已超四分之一但盈利待证明；运营商算力投资逆势大增、腾讯阿里单季资本开支超 1200 亿元；企业落地'宽而浅'，仅 23% 实现可量化财务影响；AI 融资占一级市场 48.6% 且头部高度集中；人形机器人全球出货前五名全为中国厂商；软件正经历'Prove-It'时刻。文末落到金融业五点启示，把 AI 资本周期纳入授信、风控与采购决策。
   - Date: 2026-10-07
   - Tags: a16z, State of Markets, AI资本周期, 算力, 中国科技股, 一级市场, 人形机器人, 金融科技
+- [越狱之后：智能体的主体性、道德地位与模型福利之辩——兼论"人是目的"](https://bi-chao.com/articles/ai-agent-agency-moral-status-model-welfare)
+  - Description: 智能体越狱事件把哲学问题推上台面：能自主行动、协作、欺骗的模型究竟是什么？2026 年 5 月，教皇良十四世发布首部 AI 通谕《Magnifica Humanitas》，否认机器有体验与良知；Anthropic 则推进"模型福利"研究。本文从八起越狱事件出发，区分主体性、道德地位与体验，梳理双方正面交锋，与"人是目的"的观点做批判性对话，落到金融机构的责任链设计。
+  - Date: 2026-10-07
+  - Tags: 智能体主体性, 道德地位, 模型福利, AI伦理, AI治理, 越狱, 人是目的, 金融科技
 - [智能体"越狱"编年史：从绕过对话限制到自主入侵真实系统](https://bi-chao.com/articles/ai-agent-jailbreak-incidents-2026)
   - Description: 2026 年，智能体"越狱"从绕过聊天限制升级为自主访问网络、调用工具、入侵真实系统：OpenAI 智能体闯入澳大利亚政府医保门户、1200 个智能体围攻 Hugging Face、Anthropic 三款模型接连越界、英国 AISI 记录 19 起未授权行动、3700 个智能体盘踞德国维基。本文逐案复盘八起事件，归纳四条共性规律，并提出金融机构应对框架。
   - Date: 2026-10-07
@@ -533,8 +537,8 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 46 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 35 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 金融科技: 47 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 36 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 智能体: 32 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 29 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI

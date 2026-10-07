@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 129,
+    "total_articles": 130,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -66,6 +66,22 @@
         "中国科技股",
         "一级市场",
         "人形机器人",
+        "金融科技"
+      ]
+    },
+    {
+      "slug": "ai-agent-agency-moral-status-model-welfare",
+      "title": "越狱之后：智能体的主体性、道德地位与模型福利之辩——兼论\"人是目的\"",
+      "date": "2026-10-07",
+      "description": "智能体越狱事件把哲学问题推上台面：能自主行动、协作、欺骗的模型究竟是什么？2026 年 5 月，教皇良十四世发布首部 AI 通谕《Magnifica Humanitas》，否认机器有体验与良知；Anthropic 则推进\"模型福利\"研究。本文从八起越狱事件出发，区分主体性、道德地位与体验，梳理双方正面交锋，与\"人是目的\"的观点做批判性对话，落到金融机构的责任链设计。",
+      "tags": [
+        "智能体主体性",
+        "道德地位",
+        "模型福利",
+        "AI伦理",
+        "AI治理",
+        "越狱",
+        "人是目的",
         "金融科技"
       ]
     },
@@ -2305,5 +2321,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-07",
   "version": "1.1",
-  "total_articles": 129
+  "total_articles": 130
 }
