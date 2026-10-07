@@ -33,7 +33,7 @@
     <title>银行智能体的下半场：从&quot;数量竞赛&quot;到&quot;日活价值&quot;的度量与治理</title>
     <updated>2026-10-07T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/bank-ai-agents-daa-governance" rel="alternate" type="text/html"/>
-    <summary>2026 年上市银行半年报显示，银行 AI 竞赛从&quot;场景数&quot;升级到&quot;Token 量与智能体数&quot;：平安上线 140 个运营审核类智能体、微众 80 余位数字员工上岗。但 Token 衡量不了产出——IDC 提出以日活智能体数（DAA）穿透 AI 真实生产能力。本文结合 Sibos 2026&quot;智能体干活、人做判断&quot;的国际实践与金监总局《指导意见》32 项要求，讨论银行智能体的度量、治理与人机协同框架。</summary>
+    <summary>2026 年上市银行半年报收官，银行 AI 竞赛的度量从&quot;场景数&quot;升级到&quot;Token 量与智能体数&quot;：招商银行日均 Token 吞吐量同比增 78%、带来 1388 万小时等效人工工时；平安银行上线 140 个运营审核类智能体、覆盖 55 个业务场景；微众银行 80 余位数字员工 7×24 上岗；江苏银行日均 Token 半年增长 18 倍。但 Token 只能衡量消耗、衡量不了产出——IDC 提出以日活智能体数（DAA）作为穿透 AI 真实生产能力、衔接算力投入与业务价值的核心中间指标。文章对照 Sibos 2026 国际大行&quot;智能体干活、人做判断&quot;的实践（BNY 支付修复、BNP 邮件分拣、德银一天放款），结合金监总局《指导意见》32 项要求，从度量升级、算力治理、风险底线与组织升维四个层面讨论银行智能体从&quot;数量竞赛&quot;走向&quot;价值深耕&quot;的路径。</summary>
     <category term="银行智能体"/>
     <category term="DAA"/>
     <category term="AI治理"/>
