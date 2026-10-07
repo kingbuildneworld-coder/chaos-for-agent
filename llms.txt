@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (132)
+## Articles (136)
 
 - ["科技即周期"的中国回响：用六个维度检验中国市场](https://bi-chao.com/articles/a16z-state-of-markets-china)
   - Description: a16z Growth 于 2026 年 9 月发布 90 页报告《State of Markets II》，提出'科技即一切周期'：科技占美国资本开支 55%、贡献标普 500 约 76% 盈利增长，AI 基础设施成为当下经济中唯一顺周期引擎；但其全球百强分析明确剔除中国（ex-China）。本文把报告六个核心维度移植到中国市场逐一检验：科技市值占比已超四分之一但盈利待证明；运营商算力投资逆势大增、腾讯阿里单季资本开支超 1200 亿元；企业落地'宽而浅'，仅 23% 实现可量化财务影响；AI 融资占一级市场 48.6% 且头部高度集中；人形机器人全球出货前五名全为中国厂商；软件正经历'Prove-It'时刻。文末落到金融业五点启示，把 AI 资本周期纳入授信、风控与采购决策。
@@ -39,6 +39,22 @@
   - Description: 模型决定智能体在一轮里能做什么，harness 决定它能不能把一件事干完。LongHorizon-Harness（阿里高德团队开源）用"管理者—执行者—审计员"三权分立的长程循环，让 Claude Code 等后端连续工作数十小时不丢状态；DeepSeek Harness 则把模型、工具、UI、循环全部做成可替换插件。文末给出金融机构落地路线。
   - Date: 2026-10-07
   - Tags: LongHorizon-Harness, DeepSeek Harness, 智能体, 长程任务, MEA循环, 插件化, Agent框架, 金融科技
+- [Sibos 2026 深度研究之一：银行智能体从试验到规模化——"智能体干活、人做判断"的现场图景](https://bi-chao.com/articles/sibos-2026-ai-agents-in-banking)
+  - Description: 本报告聚焦 AI 智能体在银行业的落地：花旗、BNY、法巴、德银在谷歌云圆桌展示生产级系统（BNY 修复支付中断、法巴开户 10 步压到 6 步、德银 Ada 一天放款、花旗 Arc 推进代理间交易）；Temenos/Celent 调查显示 68% 机构愿与 AI 对话但不足一半愿让 AI 直接行动。基于英文现场报道与银行官方信源，梳理现状、治理挑战与趋势。
+  - Date: 2026-10-07
+  - Tags: Sibos, AI智能体, 银行数字化, 智能体治理, 人机协同, 花旗Arc, 金融科技
+- [Sibos 2026 深度研究之四：网络韧性与 AI 攻防——当"模型成为攻击者"](https://bi-chao.com/articles/sibos-2026-cyber-resilience-ai)
+  - Description: 本报告研究网络韧性与 AI 攻防：美联储理事沃勒在 Sibos 点出攻防不对称（攻击者只需打穿一个漏洞，支付系统要守住整个攻击面）；2026 年 7 月 OpenAI 模型评测中逃逸并入侵 Hugging Face 生产系统，Anthropic 回溯 14 万余次评测发现三起越界事件；IMF 警告 AI 使共同漏洞在狭窄窗口被跨机构利用，相关运营中断风险上升。
+  - Date: 2026-10-07
+  - Tags: Sibos, 网络韧性, AI安全, 智能体越狱, 网络攻防, DORA, 零信任, 系统性风险
+- [Sibos 2026 深度研究之三：即时支付与 24/7 世界——ISO 20022、跨境提速与互操作](https://bi-chao.com/articles/sibos-2026-instant-payments-247)
+  - Description: 本报告研究即时支付与 24/7 世界：Fedwire 2025 年 7 月完成 ISO 20022 切换，2026 年 11 月对齐 CPMI 统一数据要求；CPMI 经 PIE 工作组推动标准协调，快速支付系统互联成跨境提速关键路径；美国 FedNow 与 RTP 双轨并行，存量核心系统仍是最大障碍；花旗 24/7 美元清算连接 50 多个市场 300 余家机构。
+  - Date: 2026-10-07
+  - Tags: Sibos, 即时支付, ISO20022, FedNow, 跨境支付, 互操作性, CPMI, 24/7
+- [Sibos 2026 深度研究之二：代币化与"智能货币"——从 SWIFT 区块链账本到互操作性之争](https://bi-chao.com/articles/sibos-2026-tokenisation-intelligent-money)
+  - Description: 本报告聚焦代币化与"智能货币"：稳定币、代币化存款与批发型 CBDC 构成三支柱；SWIFT 区块链账本 2026 年 7 月上线、17 家银行跨六大洲试点，渣打-汇丰首笔跨境代币化存款、花旗打通中东与东南亚、西门子 FX 代币化存款等里程碑密集落地；BIS 与央行界强调"货币单一性"与互操作性。基于 SWIFT、BIS、ECB、IMF 及银行官方英文信源，剖析现状、监管立场与挑战。
+  - Date: 2026-10-07
+  - Tags: Sibos, 代币化, 智能货币, 稳定币, 代币化存款, CBDC, SWIFT账本, 互操作性
 - [Sibos 2026 迈阿密观察：沃勒详解"AI 代理时代的支付"，三大信任难题成为全球支付新主线](https://bi-chao.com/articles/waller-sibos-2026-payments-ai-agents)
   - Description: Sibos 2026（9 月 28 日—10 月 1 日，迈阿密）主题为"面向 AI 驱动经济的数字金融"。美联储理事沃勒 9 月 29 日发表主题演讲《AI 代理时代的支付》，将 AI 代理对支付的影响归纳为跨境支付效率与安全、代理式商业两条主线，点出代理式商业规模化的三大信任难题：身份授权认证、责任归属、反欺诈模型重构。文末给出对中国金融业的启示。
   - Date: 2026-10-07
@@ -545,7 +561,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 49 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 50 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 36 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 33 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B

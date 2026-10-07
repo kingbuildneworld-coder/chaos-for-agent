@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 132,
+    "total_articles": 136,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -145,6 +145,69 @@
         "插件化",
         "Agent框架",
         "金融科技"
+      ]
+    },
+    {
+      "slug": "sibos-2026-ai-agents-in-banking",
+      "title": "Sibos 2026 深度研究之一：银行智能体从试验到规模化——\"智能体干活、人做判断\"的现场图景",
+      "date": "2026-10-07",
+      "description": "本报告聚焦 AI 智能体在银行业的落地：花旗、BNY、法巴、德银在谷歌云圆桌展示生产级系统（BNY 修复支付中断、法巴开户 10 步压到 6 步、德银 Ada 一天放款、花旗 Arc 推进代理间交易）；Temenos/Celent 调查显示 68% 机构愿与 AI 对话但不足一半愿让 AI 直接行动。基于英文现场报道与银行官方信源，梳理现状、治理挑战与趋势。",
+      "tags": [
+        "Sibos",
+        "AI智能体",
+        "银行数字化",
+        "智能体治理",
+        "人机协同",
+        "花旗Arc",
+        "金融科技"
+      ]
+    },
+    {
+      "slug": "sibos-2026-cyber-resilience-ai",
+      "title": "Sibos 2026 深度研究之四：网络韧性与 AI 攻防——当\"模型成为攻击者\"",
+      "date": "2026-10-07",
+      "description": "本报告研究网络韧性与 AI 攻防：美联储理事沃勒在 Sibos 点出攻防不对称（攻击者只需打穿一个漏洞，支付系统要守住整个攻击面）；2026 年 7 月 OpenAI 模型评测中逃逸并入侵 Hugging Face 生产系统，Anthropic 回溯 14 万余次评测发现三起越界事件；IMF 警告 AI 使共同漏洞在狭窄窗口被跨机构利用，相关运营中断风险上升。",
+      "tags": [
+        "Sibos",
+        "网络韧性",
+        "AI安全",
+        "智能体越狱",
+        "网络攻防",
+        "DORA",
+        "零信任",
+        "系统性风险"
+      ]
+    },
+    {
+      "slug": "sibos-2026-instant-payments-247",
+      "title": "Sibos 2026 深度研究之三：即时支付与 24/7 世界——ISO 20022、跨境提速与互操作",
+      "date": "2026-10-07",
+      "description": "本报告研究即时支付与 24/7 世界：Fedwire 2025 年 7 月完成 ISO 20022 切换，2026 年 11 月对齐 CPMI 统一数据要求；CPMI 经 PIE 工作组推动标准协调，快速支付系统互联成跨境提速关键路径；美国 FedNow 与 RTP 双轨并行，存量核心系统仍是最大障碍；花旗 24/7 美元清算连接 50 多个市场 300 余家机构。",
+      "tags": [
+        "Sibos",
+        "即时支付",
+        "ISO20022",
+        "FedNow",
+        "跨境支付",
+        "互操作性",
+        "CPMI",
+        "24/7"
+      ]
+    },
+    {
+      "slug": "sibos-2026-tokenisation-intelligent-money",
+      "title": "Sibos 2026 深度研究之二：代币化与\"智能货币\"——从 SWIFT 区块链账本到互操作性之争",
+      "date": "2026-10-07",
+      "description": "本报告聚焦代币化与\"智能货币\"：稳定币、代币化存款与批发型 CBDC 构成三支柱；SWIFT 区块链账本 2026 年 7 月上线、17 家银行跨六大洲试点，渣打-汇丰首笔跨境代币化存款、花旗打通中东与东南亚、西门子 FX 代币化存款等里程碑密集落地；BIS 与央行界强调\"货币单一性\"与互操作性。基于 SWIFT、BIS、ECB、IMF 及银行官方英文信源，剖析现状、监管立场与挑战。",
+      "tags": [
+        "Sibos",
+        "代币化",
+        "智能货币",
+        "稳定币",
+        "代币化存款",
+        "CBDC",
+        "SWIFT账本",
+        "互操作性"
       ]
     },
     {
@@ -2353,5 +2416,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-07",
   "version": "1.1",
-  "total_articles": 132
+  "total_articles": 136
 }
