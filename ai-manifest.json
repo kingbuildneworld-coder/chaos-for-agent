@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 127,
+    "total_articles": 128,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -67,6 +67,21 @@
         "一级市场",
         "人形机器人",
         "金融科技"
+      ]
+    },
+    {
+      "slug": "bank-ai-agents-daa-governance",
+      "title": "银行智能体的下半场：从\"数量竞赛\"到\"日活价值\"的度量与治理",
+      "date": "2026-10-07",
+      "description": "2026 年上市银行半年报显示，银行 AI 竞赛从\"场景数\"升级到\"Token 量与智能体数\"：平安上线 140 个运营审核类智能体、微众 80 余位数字员工上岗。但 Token 衡量不了产出——IDC 提出以日活智能体数（DAA）穿透 AI 真实生产能力。本文结合 Sibos 2026\"智能体干活、人做判断\"的国际实践与金监总局《指导意见》32 项要求，讨论银行智能体的度量、治理与人机协同框架。",
+      "tags": [
+        "银行智能体",
+        "DAA",
+        "AI治理",
+        "人机协同",
+        "Token",
+        "银行半年报",
+        "金监总局"
       ]
     },
     {
@@ -2275,5 +2290,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-07",
   "version": "1.1",
-  "total_articles": 127
+  "total_articles": 128
 }
