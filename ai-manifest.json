@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 131,
+    "total_articles": 132,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -144,6 +144,22 @@
         "MEA循环",
         "插件化",
         "Agent框架",
+        "金融科技"
+      ]
+    },
+    {
+      "slug": "waller-sibos-2026-payments-ai-agents",
+      "title": "Sibos 2026 迈阿密观察：沃勒详解\"AI 代理时代的支付\"，三大信任难题成为全球支付新主线",
+      "date": "2026-10-07",
+      "description": "Sibos 2026（9 月 28 日—10 月 1 日，迈阿密）主题为\"面向 AI 驱动经济的数字金融\"。美联储理事沃勒 9 月 29 日发表主题演讲《AI 代理时代的支付》，将 AI 代理对支付的影响归纳为跨境支付效率与安全、代理式商业两条主线，点出代理式商业规模化的三大信任难题：身份授权认证、责任归属、反欺诈模型重构。文末给出对中国金融业的启示。",
+      "tags": [
+        "Sibos",
+        "美联储",
+        "沃勒",
+        "AI代理",
+        "支付",
+        "代理式商业",
+        "跨境支付",
         "金融科技"
       ]
     },
@@ -2337,5 +2353,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-07",
   "version": "1.1",
-  "total_articles": 131
+  "total_articles": 132
 }
