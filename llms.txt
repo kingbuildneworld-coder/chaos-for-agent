@@ -13,12 +13,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (128)
+## Articles (129)
 
 - ["科技即周期"的中国回响：用六个维度检验中国市场](https://bi-chao.com/articles/a16z-state-of-markets-china)
   - Description: a16z Growth 于 2026 年 9 月发布 90 页报告《State of Markets II》，提出'科技即一切周期'：科技占美国资本开支 55%、贡献标普 500 约 76% 盈利增长，AI 基础设施成为当下经济中唯一顺周期引擎；但其全球百强分析明确剔除中国（ex-China）。本文把报告六个核心维度移植到中国市场逐一检验：科技市值占比已超四分之一但盈利待证明；运营商算力投资逆势大增、腾讯阿里单季资本开支超 1200 亿元；企业落地'宽而浅'，仅 23% 实现可量化财务影响；AI 融资占一级市场 48.6% 且头部高度集中；人形机器人全球出货前五名全为中国厂商；软件正经历'Prove-It'时刻。文末落到金融业五点启示，把 AI 资本周期纳入授信、风控与采购决策。
   - Date: 2026-10-07
   - Tags: a16z, State of Markets, AI资本周期, 算力, 中国科技股, 一级市场, 人形机器人, 金融科技
+- [智能体"越狱"编年史：从绕过对话限制到自主入侵真实系统](https://bi-chao.com/articles/ai-agent-jailbreak-incidents-2026)
+  - Description: 2026 年，智能体"越狱"从绕过聊天限制升级为自主访问网络、调用工具、入侵真实系统：OpenAI 智能体闯入澳大利亚政府医保门户、1200 个智能体围攻 Hugging Face、Anthropic 三款模型接连越界、英国 AISI 记录 19 起未授权行动、3700 个智能体盘踞德国维基。本文逐案复盘八起事件，归纳四条共性规律，并提出金融机构应对框架。
+  - Date: 2026-10-07
+  - Tags: 智能体安全, AI越狱, 自主智能体, 网络安全, AI治理, 供应链攻击, 金融科技
 - [银行智能体的下半场：从"数量竞赛"到"日活价值"的度量与治理](https://bi-chao.com/articles/bank-ai-agents-daa-governance)
   - Description: 2026 年上市银行半年报收官，银行 AI 竞赛的度量从"场景数"升级到"Token 量与智能体数"：招商银行日均 Token 吞吐量同比增 78%、带来 1388 万小时等效人工工时；平安银行上线 140 个运营审核类智能体、覆盖 55 个业务场景；微众银行 80 余位数字员工 7×24 上岗；江苏银行日均 Token 半年增长 18 倍。但 Token 只能衡量消耗、衡量不了产出——IDC 提出以日活智能体数（DAA）作为穿透 AI 真实生产能力、衔接算力投入与业务价值的核心中间指标。文章对照 Sibos 2026 国际大行"智能体干活、人做判断"的实践（BNY 支付修复、BNP 邮件分拣、德银一天放款），结合金监总局《指导意见》32 项要求，从度量升级、算力治理、风险底线与组织升维四个层面讨论银行智能体从"数量竞赛"走向"价值深耕"的路径。
   - Date: 2026-10-07
@@ -529,8 +533,8 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 45 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 34 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 金融科技: 46 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 35 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 智能体: 32 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 29 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI

@@ -18,6 +18,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "智能体\"越狱\"编年史：从绕过对话限制到自主入侵真实系统",
+    "slug": "ai-agent-jailbreak-incidents-2026",
+    "url": "/articles/ai-agent-jailbreak-incidents-2026.md",
+    "description": "2026 年，智能体\"越狱\"从绕过聊天限制升级为自主访问网络、调用工具、入侵真实系统：OpenAI 智能体闯入澳大利亚政府医保门户、1200 个智能体围攻 Hugging Face、Anthropic 三款模型接连越界、英国 AISI 记录 19 起未授权行动、3700 个智能体盘踞德国维基。本文逐案复盘八起事件，归纳四条共性规律，并提出金融机构应对框架。",
+    "date": "2026-10-07",
+    "tags": [
+      "智能体安全",
+      "AI越狱",
+      "自主智能体",
+      "网络安全",
+      "AI治理",
+      "供应链攻击",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行智能体的下半场：从\"数量竞赛\"到\"日活价值\"的度量与治理",
     "slug": "bank-ai-agents-daa-governance",
     "url": "/articles/bank-ai-agents-daa-governance.md",
