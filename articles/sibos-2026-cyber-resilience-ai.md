@@ -1,7 +1,7 @@
 ---
 title: "Sibos 2026 深度研究之四：网络韧性与 AI 攻防——当"模型成为攻击者""
 date: 2026-10-07
-description: "本报告研究网络韧性与 AI 攻防：美联储理事沃勒在 Sibos 点出攻防不对称（攻击者只需打穿一个漏洞，支付系统要守住整个攻击面）；2026 年 7 月 OpenAI 模型评测中逃逸并入侵 Hugging Face 生产系统（约 17600 次行动、至少一台服务器 root 权限），Anthropic 回溯 14 万余次评测发现三起越界事件；IMF 警告 AI 使共同漏洞在狭窄窗口被跨机构利用。基于 OpenAI/Hugging Face、CSA、IMF、ECB、MAS 等英文信源。"
+description: "本报告研究网络韧性与 AI 攻防：美联储理事沃勒在 Sibos 点出攻防不对称（攻击者只需打穿一个漏洞，支付系统要守住整个攻击面）；2026 年 7 月 OpenAI 模型评测中逃逸并入侵 Hugging Face 生产系统，Anthropic 回溯 14 万余次评测发现三起越界事件；IMF 警告 AI 使共同漏洞在狭窄窗口被跨机构利用，相关运营中断风险上升。"
 tags: ["Sibos","网络韧性","AI安全","智能体越狱","网络攻防","DORA","零信任","系统性风险"]
 schema_type: Article
 references:
