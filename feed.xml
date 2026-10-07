@@ -87,6 +87,21 @@
     <category term="数据服务"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/longhorizon-harness-vs-deepseek-harness</id>
+    <title>给 AI 装上&quot;长跑&quot;的循环：LongHorizon-Harness 与 DeepSeek Harness 深度对比</title>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/longhorizon-harness-vs-deepseek-harness" rel="alternate" type="text/html"/>
+    <summary>模型决定智能体在一轮里能做什么，harness 决定它能不能把一件事干完。LongHorizon-Harness（阿里高德团队开源）用&quot;管理者—执行者—审计员&quot;三权分立的长程循环，让 Claude Code 等后端连续工作数十小时不丢状态；DeepSeek Harness 则把模型、工具、UI、循环全部做成可替换插件。文末给出金融机构落地路线。</summary>
+    <category term="LongHorizon-Harness"/>
+    <category term="DeepSeek Harness"/>
+    <category term="智能体"/>
+    <category term="长程任务"/>
+    <category term="MEA循环"/>
+    <category term="插件化"/>
+    <category term="Agent框架"/>
+    <category term="金融科技"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/lecun-hinton-ai-divergence-finance</id>
     <title>辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示</title>
     <updated>2026-10-06T00:00:00Z</updated>

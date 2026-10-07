@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (130)
+## Articles (131)
 
 - ["科技即周期"的中国回响：用六个维度检验中国市场](https://bi-chao.com/articles/a16z-state-of-markets-china)
   - Description: a16z Growth 于 2026 年 9 月发布 90 页报告《State of Markets II》，提出'科技即一切周期'：科技占美国资本开支 55%、贡献标普 500 约 76% 盈利增长，AI 基础设施成为当下经济中唯一顺周期引擎；但其全球百强分析明确剔除中国（ex-China）。本文把报告六个核心维度移植到中国市场逐一检验：科技市值占比已超四分之一但盈利待证明；运营商算力投资逆势大增、腾讯阿里单季资本开支超 1200 亿元；企业落地'宽而浅'，仅 23% 实现可量化财务影响；AI 融资占一级市场 48.6% 且头部高度集中；人形机器人全球出货前五名全为中国厂商；软件正经历'Prove-It'时刻。文末落到金融业五点启示，把 AI 资本周期纳入授信、风控与采购决策。
@@ -35,6 +35,10 @@
   - Description: 同花顺官方发布 Financial-API（hithink-finance）：统一 API Key 即可查询 A 股行情、财报、估值、涨停龙虎榜、公募基金与期货期权数据，通过 REST、MCP、CLI、Python SDK、本地 DuckDB 与 Agent Skill 六种入口接入，不设累计调用上限。本文拆解这一服务模式的四个特征——官方权威源、多协议一 Key、本地优先数仓、边界诚实——并分别评估其对量化投资分析（数据链路、回测一致性、特色因子）与个人投资者（零门槛官方数据、AI 助手化投研、能力边界）的价值与局限，与 Tushare、AkShare 及机构终端做横向对比。
   - Date: 2026-10-07
   - Tags: 同花顺, Financial-API, 金融数据, 量化投资, 个人投资者, MCP, AI Agent, 数据服务
+- [给 AI 装上"长跑"的循环：LongHorizon-Harness 与 DeepSeek Harness 深度对比](https://bi-chao.com/articles/longhorizon-harness-vs-deepseek-harness)
+  - Description: 模型决定智能体在一轮里能做什么，harness 决定它能不能把一件事干完。LongHorizon-Harness（阿里高德团队开源）用"管理者—执行者—审计员"三权分立的长程循环，让 Claude Code 等后端连续工作数十小时不丢状态；DeepSeek Harness 则把模型、工具、UI、循环全部做成可替换插件。文末给出金融机构落地路线。
+  - Date: 2026-10-07
+  - Tags: LongHorizon-Harness, DeepSeek Harness, 智能体, 长程任务, MEA循环, 插件化, Agent框架, 金融科技
 - [辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示](https://bi-chao.com/articles/lecun-hinton-ai-divergence-finance)
   - Description: 2024 年诺贝尔物理学奖得主辛顿与图灵奖得主杨立昆，在 AI 路径与风险判断上针锋相对：一个警告 10% 的灭绝概率'不算离谱'、呼吁为超级智能装上方向盘；一个断言大语言模型是'死路一条'、对灭绝担忧称'零'。本文梳理两位大家的观点谱系与分歧本质，结合金融监管总局 2026 年《指导意见》32 项要求，给出金融业'不站队、分级用、双轨走'的落地框架。
   - Date: 2026-10-06
@@ -537,10 +541,10 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 47 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 48 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 36 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 智能体: 33 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 智能体: 32 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 29 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 28 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 18 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8

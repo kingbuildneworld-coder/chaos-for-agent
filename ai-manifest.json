@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 130,
+    "total_articles": 131,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -129,6 +129,22 @@
         "MCP",
         "AI Agent",
         "数据服务"
+      ]
+    },
+    {
+      "slug": "longhorizon-harness-vs-deepseek-harness",
+      "title": "给 AI 装上\"长跑\"的循环：LongHorizon-Harness 与 DeepSeek Harness 深度对比",
+      "date": "2026-10-07",
+      "description": "模型决定智能体在一轮里能做什么，harness 决定它能不能把一件事干完。LongHorizon-Harness（阿里高德团队开源）用\"管理者—执行者—审计员\"三权分立的长程循环，让 Claude Code 等后端连续工作数十小时不丢状态；DeepSeek Harness 则把模型、工具、UI、循环全部做成可替换插件。文末给出金融机构落地路线。",
+      "tags": [
+        "LongHorizon-Harness",
+        "DeepSeek Harness",
+        "智能体",
+        "长程任务",
+        "MEA循环",
+        "插件化",
+        "Agent框架",
+        "金融科技"
       ]
     },
     {
@@ -2321,5 +2337,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-07",
   "version": "1.1",
-  "total_articles": 130
+  "total_articles": 131
 }

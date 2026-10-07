@@ -88,6 +88,24 @@
     "schema_type": "Article"
   },
   {
+    "title": "给 AI 装上\"长跑\"的循环：LongHorizon-Harness 与 DeepSeek Harness 深度对比",
+    "slug": "longhorizon-harness-vs-deepseek-harness",
+    "url": "/articles/longhorizon-harness-vs-deepseek-harness.md",
+    "description": "模型决定智能体在一轮里能做什么，harness 决定它能不能把一件事干完。LongHorizon-Harness（阿里高德团队开源）用\"管理者—执行者—审计员\"三权分立的长程循环，让 Claude Code 等后端连续工作数十小时不丢状态；DeepSeek Harness 则把模型、工具、UI、循环全部做成可替换插件。文末给出金融机构落地路线。",
+    "date": "2026-10-07",
+    "tags": [
+      "LongHorizon-Harness",
+      "DeepSeek Harness",
+      "智能体",
+      "长程任务",
+      "MEA循环",
+      "插件化",
+      "Agent框架",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "辛顿与杨立昆的 AI 分歧，金融业该如何吸收：风险敬畏与技术多元的双轨启示",
     "slug": "lecun-hinton-ai-divergence-finance",
     "url": "/articles/lecun-hinton-ai-divergence-finance.md",
