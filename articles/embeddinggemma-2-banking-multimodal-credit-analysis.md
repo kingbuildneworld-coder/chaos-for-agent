@@ -125,5 +125,3 @@ EmbeddingGemma 2 的关键事实（全部来自官方博客与模型卡，2026-1
 ## 结语
 
 EmbeddingGemma 2 的发布，把"统一嵌入"从闭源 API 的专有能力变成了 Apache 2.0 的开源资产：**开源性解决数据主权，微调能力解决领域适配，五模态统一空间解决信贷资料的"拼图"难题。** 对银行而言，这不是又一个需要追逐的模型名词，而是一个可以把"文本、影像、录音、流水"装进同一坐标系、在本地完成向量化的工程底座——接下来比的是谁的评测做得扎实，谁的微调数据治理得干净，谁先把第一个真实场景跑通。
-
-["https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/","https://www.unite.ai/deepmind-debuts-embeddinggemma-2-mapping-five-modalities-into-one-space/","https://ai.google.dev/gemini-api/docs/embeddings","https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/embeddings"]
