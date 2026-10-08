@@ -44,6 +44,21 @@
     <category term="银行业数字化转型"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/vera-verifiable-environments-asset-preservation-agents</id>
+    <title>给资产保全智能体装上“可验证的训练场”：VERA 论文解读与银行设计启示</title>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/vera-verifiable-environments-asset-preservation-agents" rel="alternate" type="text/html"/>
+    <summary>arXiv:2610.05923 论文提出：长时程智能体的瓶颈不在算法而在环境。VERA 把工作流切成计划/准备/验证/执行/提交五阶段沙箱，用可执行 Rubric 评分、Agent Judge 核验证据、模型与技能库交替演化并配验收回退，9B 模型在两个领域超最强单轴基线 10.3 与 13.0 分。本文解读其机制，并映射到银行资产保全智能体的设计开发。</summary>
+    <category term="VERA"/>
+    <category term="可验证环境"/>
+    <category term="智能体协同演化"/>
+    <category term="资产保全"/>
+    <category term="银行智能体"/>
+    <category term="自改进"/>
+    <category term="GRPO"/>
+    <category term="Rubric"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/what-does-a-harness-buy-arxiv-2610-04433</id>
     <title>Harness 买到的是什么？主要是 Token——arXiv 实证：换框架≈重跑噪声，换模型才是真变量，成本差 3 倍</title>
     <updated>2026-10-08T00:00:00Z</updated>

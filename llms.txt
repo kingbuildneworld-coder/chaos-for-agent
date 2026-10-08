@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (139)
+## Articles (140)
 
 - [统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”](https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis)
   - Description: 2026年10月6日，谷歌发布 EmbeddingGemma 2：Apache 2.0 开源的 740M 统一嵌入模型，把文本、代码、图像、视频、音频映射进同一 768 维空间，量化后全模态仅约 567MB 内存，官方支持 Unsloth 微调。本文核验其开源与微调能力，并分析对银行信贷资料拼图式语义分析、多模态语义图谱关联、风险预警检测的价值与落地路线。
@@ -23,6 +23,10 @@
   - Description: 量子计算威胁已从理论走向监管指令：美国 EO 14412 强制联邦系统限期迁移后量子密码（PQC），G7 发布金融业迁移关键考量，香港金管局量子准备度指数首评仅 2.3/10。本文梳理 NIST FIPS 203/204/205 标准、BIS Project Leap 央行实测、HKMA/FINMA/德国银行业监管动向与中国抗量子方案，并从银行风险管理视角给出落地五件事与智能体时代的特殊考量。
   - Date: 2026-10-08
   - Tags: 后量子密码, 量子计算, PQC迁移, 金融安全, 密码学, 风险管理, 网络韧性, 银行业数字化转型
+- [给资产保全智能体装上“可验证的训练场”：VERA 论文解读与银行设计启示](https://bi-chao.com/articles/vera-verifiable-environments-asset-preservation-agents)
+  - Description: arXiv:2610.05923 论文提出：长时程智能体的瓶颈不在算法而在环境。VERA 把工作流切成计划/准备/验证/执行/提交五阶段沙箱，用可执行 Rubric 评分、Agent Judge 核验证据、模型与技能库交替演化并配验收回退，9B 模型在两个领域超最强单轴基线 10.3 与 13.0 分。本文解读其机制，并映射到银行资产保全智能体的设计开发。
+  - Date: 2026-10-08
+  - Tags: VERA, 可验证环境, 智能体协同演化, 资产保全, 银行智能体, 自改进, GRPO, Rubric
 - [Harness 买到的是什么？主要是 Token——arXiv 实证：换框架≈重跑噪声，换模型才是真变量，成本差 3 倍](https://bi-chao.com/articles/what-does-a-harness-buy-arxiv-2610-04433)
   - Description: arXiv:2610.04433 论文用 5 个模型 × 3 个生产级 Harness × SWE-bench Verified 447+45 任务，以重跑校准噪声、统一价格表核算成本，实证回答：换 Harness 对通过率的影响约等于重跑噪声，换模型翻转 22% 任务、换框架仅 13%；Harness 真正决定的是最多 3 倍的 Token 账单。并给出金融业选型、成本与评测纪律启示。
   - Date: 2026-10-08
@@ -579,7 +583,7 @@
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 29 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 银行AI: 29 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 资产保全: 18 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 - 模型风险管理: 12 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
