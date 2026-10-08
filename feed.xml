@@ -29,6 +29,21 @@
     <category term="银行业数字化转型"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/what-does-a-harness-buy-arxiv-2610-04433</id>
+    <title>Harness 买到的是什么？主要是 Token——arXiv 实证：换框架≈重跑噪声，换模型才是真变量，成本差 3 倍</title>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/what-does-a-harness-buy-arxiv-2610-04433" rel="alternate" type="text/html"/>
+    <summary>arXiv:2610.04433 论文用 5 个模型 × 3 个生产级 Harness × SWE-bench Verified 447+45 任务，以重跑校准噪声、统一价格表核算成本，实证回答：换 Harness 对通过率的影响约等于重跑噪声，换模型翻转 22% 任务、换框架仅 13%；Harness 真正决定的是最多 3 倍的 Token 账单。并给出金融业选型、成本与评测纪律启示。</summary>
+    <category term="arXiv"/>
+    <category term="Harness"/>
+    <category term="智能体评测"/>
+    <category term="模型选型"/>
+    <category term="成本工程"/>
+    <category term="AI治理"/>
+    <category term="SWE-bench"/>
+    <category term="金融科技"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/a16z-state-of-markets-china</id>
     <title>&quot;科技即周期&quot;的中国回响：用六个维度检验中国市场</title>
     <updated>2026-10-07T00:00:00Z</updated>

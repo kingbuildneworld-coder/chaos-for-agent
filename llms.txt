@@ -13,12 +13,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (137)
+## Articles (138)
 
 - [量子时钟滴答作响：后量子密码（PQC）大迁移与银行业的"密码长城"重构](https://bi-chao.com/articles/post-quantum-cryptography-banking-migration)
   - Description: 量子计算威胁已从理论走向监管指令：美国 EO 14412 强制联邦系统限期迁移后量子密码（PQC），G7 发布金融业迁移关键考量，香港金管局量子准备度指数首评仅 2.3/10。本文梳理 NIST FIPS 203/204/205 标准、BIS Project Leap 央行实测、HKMA/FINMA/德国银行业监管动向与中国抗量子方案，并从银行风险管理视角给出落地五件事与智能体时代的特殊考量。
   - Date: 2026-10-08
   - Tags: 后量子密码, 量子计算, PQC迁移, 金融安全, 密码学, 风险管理, 网络韧性, 银行业数字化转型
+- [Harness 买到的是什么？主要是 Token——arXiv 实证：换框架≈重跑噪声，换模型才是真变量，成本差 3 倍](https://bi-chao.com/articles/what-does-a-harness-buy-arxiv-2610-04433)
+  - Description: arXiv:2610.04433 论文用 5 个模型 × 3 个生产级 Harness × SWE-bench Verified 447+45 任务，以重跑校准噪声、统一价格表核算成本，实证回答：换 Harness 对通过率的影响约等于重跑噪声，换模型翻转 22% 任务、换框架仅 13%；Harness 真正决定的是最多 3 倍的 Token 账单。并给出金融业选型、成本与评测纪律启示。
+  - Date: 2026-10-08
+  - Tags: arXiv, Harness, 智能体评测, 模型选型, 成本工程, AI治理, SWE-bench, 金融科技
 - ["科技即周期"的中国回响：用六个维度检验中国市场](https://bi-chao.com/articles/a16z-state-of-markets-china)
   - Description: a16z Growth 于 2026 年 9 月发布 90 页报告《State of Markets II》，提出'科技即一切周期'：科技占美国资本开支 55%、贡献标普 500 约 76% 盈利增长，AI 基础设施成为当下经济中唯一顺周期引擎；但其全球百强分析明确剔除中国（ex-China）。本文把报告六个核心维度移植到中国市场逐一检验：科技市值占比已超四分之一但盈利待证明；运营商算力投资逆势大增、腾讯阿里单季资本开支超 1200 亿元；企业落地'宽而浅'，仅 23% 实现可量化财务影响；AI 融资占一级市场 48.6% 且头部高度集中；人形机器人全球出货前五名全为中国厂商；软件正经历'Prove-It'时刻。文末落到金融业五点启示，把 AI 资本周期纳入授信、风控与采购决策。
   - Date: 2026-10-07
@@ -565,8 +569,8 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 50 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 36 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 金融科技: 51 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 37 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 33 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 29 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
