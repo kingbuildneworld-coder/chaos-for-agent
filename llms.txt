@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (143)
+## Articles (144)
 
 - [统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”](https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis)
   - Description: 2026年10月6日，谷歌发布 EmbeddingGemma 2：Apache 2.0 开源的 740M 统一嵌入模型，把文本、代码、图像、视频、音频映射进同一 768 维空间，量化后全模态仅约 567MB 内存，官方支持 Unsloth 微调。本文核验其开源与微调能力，并分析对银行信贷资料拼图式语义分析、多模态语义图谱关联、风险预警检测的价值与落地路线。
@@ -23,6 +23,10 @@
   - Description: Arthur Hayes 在 TOKEN2049 主舞台完整阐述 FLOP：智能体的生存所需是算力，而现有货币（AI token、法币、稳定币、比特币）无一能直接兑换算力，因此需要一种可赎回算力的新货币。本文拆解其代币逻辑，解析 Proof-of-Useful-Inference 机制（会话请求、矿工执行、证明入块、质押罚没），对比 PoUW 学术谱系，并指出验证推理正确性这一尚未解决的关键缺口。
   - Date: 2026-10-08
   - Tags: FLOP, Arthur Hayes, 有用推理证明, 智能体经济, 去中心化算力, 代币经济学, PoUW, AI结算
+- [韩国五家银行连环遭“AI 辅助”攻击：边缘系统如何成为金融网络安全最薄弱一环](https://bi-chao.com/articles/korea-banks-ai-attacks-edge-systems-2026)
+  - Description: 2026年9月底至10月初，韩国至少7家金融机构在数日内连环遭黑客攻击，约6.6万人信息泄露，新韩银行2.5万余人、耶佳蓝储蓄银行约4万人为重灾区。攻击全部绕过核心网银系统，集中打击贷款代理人查询、员工移动办公等边缘系统，且涉嫌使用开源 AI 渗透工具 ARTEX。本文复盘事件全貌，拆解攻击路径，并从资产盘点、暴露面收敛、纵深防御、AI 攻防对等、数据保护五方面提出对中国银行业的借鉴措施。
+  - Date: 2026-10-08
+  - Tags: 韩国银行, 网络攻击, ARTEX, AI攻防, 边缘系统, 数据泄露, 金融网络安全, 纵深防御
 - [用群体智能推演信贷风险？MiroFish 开源引擎的银行借鉴价值分析](https://bi-chao.com/articles/mirofish-bank-credit-risk-simulation)
   - Description: MiroFish 是 2026 年爆火的开源群体智能预测引擎：输入新闻、政策或金融信号，自动构建知识图谱，让数千个带人设与长期记忆的 AI 智能体互动演化并输出推演报告。本文拆解 OASIS+GraphRAG+Zep 架构，评估银行信贷风险情景推演与预警的借鉴价值，与评分卡、机器学习风控、压力测试、知识图谱、RAG 助手对比，指出 AGPL、数据出域、可解释性、模型偏见等硬约束下的可行借鉴路径。
   - Date: 2026-10-08

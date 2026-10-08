@@ -36,6 +36,24 @@
     "schema_type": "Article"
   },
   {
+    "title": "韩国五家银行连环遭“AI 辅助”攻击：边缘系统如何成为金融网络安全最薄弱一环",
+    "slug": "korea-banks-ai-attacks-edge-systems-2026",
+    "url": "/articles/korea-banks-ai-attacks-edge-systems-2026.md",
+    "description": "2026年9月底至10月初，韩国至少7家金融机构在数日内连环遭黑客攻击，约6.6万人信息泄露，新韩银行2.5万余人、耶佳蓝储蓄银行约4万人为重灾区。攻击全部绕过核心网银系统，集中打击贷款代理人查询、员工移动办公等边缘系统，且涉嫌使用开源 AI 渗透工具 ARTEX。本文复盘事件全貌，拆解攻击路径，并从资产盘点、暴露面收敛、纵深防御、AI 攻防对等、数据保护五方面提出对中国银行业的借鉴措施。",
+    "date": "2026-10-08",
+    "tags": [
+      "韩国银行",
+      "网络攻击",
+      "ARTEX",
+      "AI攻防",
+      "边缘系统",
+      "数据泄露",
+      "金融网络安全",
+      "纵深防御"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "用群体智能推演信贷风险？MiroFish 开源引擎的银行借鉴价值分析",
     "slug": "mirofish-bank-credit-risk-simulation",
     "url": "/articles/mirofish-bank-credit-risk-simulation.md",
