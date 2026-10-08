@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 140,
+    "total_articles": 141,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -83,6 +83,22 @@
         "风险管理",
         "网络韧性",
         "银行业数字化转型"
+      ]
+    },
+    {
+      "slug": "token2049-singapore-2026-review",
+      "title": "TOKEN2049 新加坡 2026 全记录：机构 DeFi、代币化美股与 AI 智能体经济的三重奏",
+      "date": "2026-10-08",
+      "description": "TOKEN2049 新加坡 2026 于 10 月 7-8 日在滨海湾金沙举行，25,000 名参会者来自 160 个国家，规模创历史之最。首日三大重磅：Arthur Hayes 发布 AI 智能体算力网络 FLOP、OKX 联手纽交所母公司 ICE 申请代币化 63 只美股、BitMine 自设以太坊持仓 5% 上限；Polymarket 未确认发币。本文按议程逐项复盘并解读三大趋势信号。",
+      "tags": [
+        "TOKEN2049",
+        "新加坡",
+        "机构DeFi",
+        "代币化",
+        "RWA",
+        "AI智能体",
+        "稳定币",
+        "加密货币"
       ]
     },
     {
@@ -2480,5 +2496,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-08",
   "version": "1.1",
-  "total_articles": 140
+  "total_articles": 141
 }

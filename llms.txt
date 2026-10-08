@@ -13,7 +13,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (140)
+## Articles (141)
 
 - [统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”](https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis)
   - Description: 2026年10月6日，谷歌发布 EmbeddingGemma 2：Apache 2.0 开源的 740M 统一嵌入模型，把文本、代码、图像、视频、音频映射进同一 768 维空间，量化后全模态仅约 567MB 内存，官方支持 Unsloth 微调。本文核验其开源与微调能力，并分析对银行信贷资料拼图式语义分析、多模态语义图谱关联、风险预警检测的价值与落地路线。
@@ -23,6 +23,10 @@
   - Description: 量子计算威胁已从理论走向监管指令：美国 EO 14412 强制联邦系统限期迁移后量子密码（PQC），G7 发布金融业迁移关键考量，香港金管局量子准备度指数首评仅 2.3/10。本文梳理 NIST FIPS 203/204/205 标准、BIS Project Leap 央行实测、HKMA/FINMA/德国银行业监管动向与中国抗量子方案，并从银行风险管理视角给出落地五件事与智能体时代的特殊考量。
   - Date: 2026-10-08
   - Tags: 后量子密码, 量子计算, PQC迁移, 金融安全, 密码学, 风险管理, 网络韧性, 银行业数字化转型
+- [TOKEN2049 新加坡 2026 全记录：机构 DeFi、代币化美股与 AI 智能体经济的三重奏](https://bi-chao.com/articles/token2049-singapore-2026-review)
+  - Description: TOKEN2049 新加坡 2026 于 10 月 7-8 日在滨海湾金沙举行，25,000 名参会者来自 160 个国家，规模创历史之最。首日三大重磅：Arthur Hayes 发布 AI 智能体算力网络 FLOP、OKX 联手纽交所母公司 ICE 申请代币化 63 只美股、BitMine 自设以太坊持仓 5% 上限；Polymarket 未确认发币。本文按议程逐项复盘并解读三大趋势信号。
+  - Date: 2026-10-08
+  - Tags: TOKEN2049, 新加坡, 机构DeFi, 代币化, RWA, AI智能体, 稳定币, 加密货币
 - [给资产保全智能体装上“可验证的训练场”：VERA 论文解读与银行设计启示](https://bi-chao.com/articles/vera-verifiable-environments-asset-preservation-agents)
   - Description: arXiv:2610.05923 论文提出：长时程智能体的瓶颈不在算法而在环境。VERA 把工作流切成计划/准备/验证/执行/提交五阶段沙箱，用可执行 Rubric 评分、Agent Judge 核验证据、模型与技能库交替演化并配验收回退，9B 模型在两个领域超最强单轴基线 10.3 与 13.0 分。本文解读其机制，并映射到银行资产保全智能体的设计开发。
   - Date: 2026-10-08
