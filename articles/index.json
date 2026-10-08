@@ -1,5 +1,23 @@
 [
   {
+    "title": "统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”",
+    "slug": "embeddinggemma-2-banking-multimodal-credit-analysis",
+    "url": "/articles/embeddinggemma-2-banking-multimodal-credit-analysis.md",
+    "description": "2026年10月6日，谷歌发布 EmbeddingGemma 2：Apache 2.0 开源的 740M 统一嵌入模型，把文本、代码、图像、视频、音频映射进同一 768 维空间，量化后全模态仅约 567MB 内存，官方支持 Unsloth 微调。本文核验其开源与微调能力，并分析对银行信贷资料拼图式语义分析、多模态语义图谱关联、风险预警检测的价值与落地路线。",
+    "date": "2026-10-08",
+    "tags": [
+      "EmbeddingGemma 2",
+      "统一嵌入",
+      "多模态",
+      "银行信贷",
+      "风险预警",
+      "开源模型",
+      "语义检索",
+      "RAG"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "量子时钟滴答作响：后量子密码（PQC）大迁移与银行业的\"密码长城\"重构",
     "slug": "post-quantum-cryptography-banking-migration",
     "url": "/articles/post-quantum-cryptography-banking-migration.md",

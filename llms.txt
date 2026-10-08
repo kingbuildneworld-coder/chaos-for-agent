@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (138)
+## Articles (139)
 
+- [统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”](https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis)
+  - Description: 2026年10月6日，谷歌发布 EmbeddingGemma 2：Apache 2.0 开源的 740M 统一嵌入模型，把文本、代码、图像、视频、音频映射进同一 768 维空间，量化后全模态仅约 567MB 内存，官方支持 Unsloth 微调。本文核验其开源与微调能力，并分析对银行信贷资料拼图式语义分析、多模态语义图谱关联、风险预警检测的价值与落地路线。
+  - Date: 2026-10-08
+  - Tags: EmbeddingGemma 2, 统一嵌入, 多模态, 银行信贷, 风险预警, 开源模型, 语义检索, RAG
 - [量子时钟滴答作响：后量子密码（PQC）大迁移与银行业的"密码长城"重构](https://bi-chao.com/articles/post-quantum-cryptography-banking-migration)
   - Description: 量子计算威胁已从理论走向监管指令：美国 EO 14412 强制联邦系统限期迁移后量子密码（PQC），G7 发布金融业迁移关键考量，香港金管局量子准备度指数首评仅 2.3/10。本文梳理 NIST FIPS 203/204/205 标准、BIS Project Leap 央行实测、HKMA/FINMA/德国银行业监管动向与中国抗量子方案，并从银行风险管理视角给出落地五件事与智能体时代的特殊考量。
   - Date: 2026-10-08
