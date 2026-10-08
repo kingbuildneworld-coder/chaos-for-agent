@@ -1,7 +1,7 @@
 ---
 title: "Harness 买到的是什么？主要是 Token——arXiv 实证：换框架≈重跑噪声，换模型才是真变量，成本差 3 倍"
 date: 2026-10-08
-description: "arXiv:2610.04433《What Does a Harness Buy? Tokens, Mostly》用 5 个模型 × 3 个生产级 Harness × SWE-bench Verified 447+45 任务，以重跑校准噪声、统一价格表核算成本，实证回答：换 Harness 对通过率的影响约等于重跑噪声，换模型翻转 22% 任务、换框架仅 13%；Harness 真正决定的是最多 3 倍的 Token 账单。并给出金融业选型、成本与评测纪律启示。"
+description: "arXiv:2610.04433 论文用 5 个模型 × 3 个生产级 Harness × SWE-bench Verified 447+45 任务，以重跑校准噪声、统一价格表核算成本，实证回答：换 Harness 对通过率的影响约等于重跑噪声，换模型翻转 22% 任务、换框架仅 13%；Harness 真正决定的是最多 3 倍的 Token 账单。并给出金融业选型、成本与评测纪律启示。"
 tags: ["arXiv","Harness","智能体评测","模型选型","成本工程","AI治理","SWE-bench","金融科技"]
 schema_type: Article
 references:
