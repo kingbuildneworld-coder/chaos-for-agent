@@ -45,6 +45,18 @@ const AUTHOR_REF = { '@id': PERSON_ID };
 /** 文章页 robots meta：放开大图与大摘要预览（默认 standard 会限制 AI 摘要与 Discover 的图） */
 const ROBOTS_META = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1';
 
+/**
+ * 非文章页面的真实最后修改日期（sitemap lastmod 用）。
+ * Worker 拿不到 git 历史，所以这里写死；修改对应文件时请同步更新日期。
+ * Python 版 generate_site.py 用 git log 计算同样的值。
+ */
+const STATIC_LASTMOD = {
+  'about': '2026-10-09',
+  'quant-course/index.html': '2026-06-17',
+  'quant-course/chapter2-first-quant-experiment.html': '2026-06-22',
+  'tutorials/什么是量化金融_互动教程.html': '2026-06-16'
+};
+
 /** 标签页收录阈值：文章数低于此值的标签页输出 noindex 且不进 sitemap，避免薄内容稀释抓取预算 */
 const TAG_INDEX_MIN_ARTICLES = 3;
 
@@ -161,14 +173,6 @@ const SCHEMA_WEBSITE = {
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
   "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://bi-chao.com/search?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  },
   "hasPart": [
     {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "毕超博士的个人简介与学术背景"},
     {"@type": "WebPage", "name": "标签索引", "url": "https://bi-chao.com/tags", "description": "按主题标签浏览全部文章"},
@@ -483,7 +487,13 @@ const ABOUT_TEMPLATE_PART = `<!DOCTYPE html>
 <meta property="og:url" content="https://bi-chao.com/about">
 <meta property="og:site_name" content="chaos-for-agent">
 <meta property="og:locale" content="zh_CN">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bi-chao.com/assets/og/default.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="毕超 — 关于作者">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bi-chao.com/assets/og/default.png">
 <link rel="canonical" href="https://bi-chao.com/about">
 <script type="application/ld+json">
 ${JSON.stringify(SCHEMA_PERSON)}
@@ -644,7 +654,12 @@ function inlineFmt(s) {
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
 }
 
-function md2html(md) {
+/** 去掉正文首个非空行的 "# 标题"（模板已经渲染了 <h1>） */
+function stripLeadingTitle(md) {
+  return md.replace(/^\s*# [^\n]*\n?/, '');
+}
+
+function md2html(md, opts = {}) {
   // 代码块保护
   const codeBlocks = [];
   md = md.replace(/```(\w*)\n([\s\S]*?)```/g, (_, lang, code) => {
@@ -699,7 +714,7 @@ function md2html(md) {
   md = md.replace(/^#### (.+)$/gm, '<h4>$1</h4>');
   md = md.replace(/^### (.+)$/gm, '<h3>$1</h3>');
   md = md.replace(/^## (.+)$/gm, '<h2>$1</h2>');
-  md = md.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+  md = md.replace(/^# (.+)$/gm, opts.demoteH1 ? '<h2>$1</h2>' : '<h1>$1</h1>');
 
   // 分割线
   md = md.replace(/^---+$/gm, '<hr>');
@@ -1479,7 +1494,9 @@ async function renderArticle(pathname, request, explicitMd) {
     // 下方生成的 faq-section 重复渲染同一内容。仅**渲染路径**用 renderBody，
     // wordCount / readTime / keyTakeaways 仍按全文计算。
     let faqItems = meta.faq || article.faq || null;
-    let renderBody = body;
+    // 去掉正文开头与模板 <h1> 重复的 "# 标题"；正文里其余的 "# " 一级标题降为二级，
+    // 保证每个文章页只有一个 <h1>（代码块内的 # 注释不受影响，见下方 demote 处理）。
+    let renderBody = stripLeadingTitle(body);
     if (!faqItems) {
       const detected = detectFAQ(body);
       if (detected) {
@@ -1529,7 +1546,7 @@ async function renderArticle(pathname, request, explicitMd) {
       : '';
 
     // 转换正文 + 定义块检测 + 内链注入
-    let contentHtml = injectHeadingIds(md2html(renderBody));
+    let contentHtml = injectHeadingIds(md2html(renderBody, { demoteH1: true }));
     contentHtml = detectDefinitions(contentHtml);
     contentHtml = detectDataCitations(contentHtml);   // B2: 行内数据引用标记
     // 顺序很重要：必须在 detectDataCitations 之后。否则裸 URL 会先被包成 <a>，
@@ -1922,24 +1939,29 @@ async function renderSitemap() {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
   xml += url(`${DOMAIN}/`, 'weekly', '1.0', edate);
-  xml += url(`${DOMAIN}/about`, 'monthly', '0.6', edate);
+  xml += url(`${DOMAIN}/about`, 'monthly', '0.6', STATIC_LASTMOD['about'] || edate);
 
   for (const a of articles) {
-    xml += url(`${DOMAIN}/articles/${a.slug}`, 'monthly', '0.8', a.date || edate);
+    xml += url(`${DOMAIN}/articles/${a.slug}`, 'monthly', '0.8', a.updated || a.date || edate);
   }
-  // 教程页
-  xml += url(`${DOMAIN}/quant-course/index.html`, 'monthly', '0.7', edate);
-  xml += url(`${DOMAIN}/quant-course/chapter2-first-quant-experiment.html`, 'monthly', '0.7', edate);
+  // 教程页：lastmod 用文件真实最后修改日期（见 STATIC_LASTMOD），
+  // 不再跟随"最新文章日期"——否则每发一篇文章它们都会被误报为当天更新。
+  xml += url(`${DOMAIN}/quant-course/index.html`, 'monthly', '0.7', STATIC_LASTMOD['quant-course/index.html'] || edate);
+  xml += url(`${DOMAIN}/quant-course/chapter2-first-quant-experiment.html`, 'monthly', '0.7', STATIC_LASTMOD['quant-course/chapter2-first-quant-experiment.html'] || edate);
   // tutorials/ 下的互动教程：此前完全未进 sitemap，成为不可发现的孤儿页
-  xml += url(`${DOMAIN}/tutorials/${encodeURIComponent('什么是量化金融_互动教程.html')}`, 'monthly', '0.6', edate);
-  // 标签页：只收录达到阈值的标签。
+  xml += url(`${DOMAIN}/tutorials/${encodeURIComponent('什么是量化金融_互动教程.html')}`, 'monthly', '0.6', STATIC_LASTMOD['tutorials/什么是量化金融_互动教程.html'] || edate);
+  // 标签页：只收录达到阈值的标签；lastmod = 该标签下最新一篇文章的日期。
   // 原先全量收录 416 个标签页，占 sitemap 的 82%，其中大量是仅含 1 篇文章的
   // 薄聚合页，稀释了 86 篇正文的抓取预算，且是 AI 引擎最不会引用的页面类型。
   xml += url(`${DOMAIN}/tags`, 'weekly', '0.6', edate);
   const tagMap = getTagMap(articles);
   for (const tag of Object.keys(tagMap)) {
     if (tagMap[tag].length < TAG_INDEX_MIN_ARTICLES) continue;
-    xml += url(`${DOMAIN}/tags/${encodeURIComponent(tag)}`, 'weekly', '0.5', edate);
+    const latest = tagMap[tag].reduce((m, a) => {
+      const d = a.updated || a.date || '';
+      return d > m ? d : m;
+    }, '');
+    xml += url(`${DOMAIN}/tags/${encodeURIComponent(tag)}`, 'weekly', '0.5', latest || edate);
   }
   xml += '\n</urlset>';
 
@@ -2268,7 +2290,24 @@ async function renderAbout() {
   try {
     const up = await fetchUpstream('/about.md');
     if (up.ok) {
-      const contentHtml = md2html(up.text);
+      // 先剥离 front matter：此前整段原文直接进 md2html，AIGC 标识块
+      // （ProduceID / ReservedCode 等长串）被当成正文渲染给读者和爬虫。
+      // 标识本身属合规要求，保留为与文章页一致的简短提示 + data-* 机器可读字段。
+      const { body, meta } = parseFrontMatter(up.text);
+      const aigc = (meta.AIGC && typeof meta.AIGC === 'object' && !Array.isArray(meta.AIGC)) ? meta.AIGC : null;
+      const lbl = aigc && aigc.Label !== undefined ? String(aigc.Label) : '';
+      const prod = aigc && aigc.ContentProducer ? String(aigc.ContentProducer) : '';
+      const pid = aigc && aigc.ProduceID ? String(aigc.ProduceID) : '';
+      const notice = lbl
+        ? `<div class="aigc-notice" role="note" data-aigc-label="${escHtml(lbl)}"`
+          + (prod ? ` data-aigc-content-producer="${escHtml(prod)}"` : '')
+          + (pid ? ` data-aigc-produce-id="${escHtml(pid)}"` : '')
+          + ` style="margin:2rem 0 0;padding:.5rem .75rem;border-left:3px solid #94a3b8;background:#f1f5f9;color:#475569;font-size:.8rem;line-height:1.6;">`
+          + `本内容带有 AI 生成合成内容标识（Label: ${escHtml(lbl)}`
+          + (prod ? `；生成服务提供者编号: ${escHtml(prod)}` : '')
+          + `）</div>`
+        : '';
+      const contentHtml = md2html(body) + notice;
       const html = fillTpl(ABOUT_TEMPLATE_PART, { CONTENT: contentHtml });
       return new Response(html, {
         headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=600' }
