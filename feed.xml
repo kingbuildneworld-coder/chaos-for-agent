@@ -63,7 +63,7 @@
     <title>为什么智能体需要自己的货币？FLOP 与“有用推理证明”的底层逻辑</title>
     <updated>2026-10-08T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/flop-proof-of-useful-inference-agent-currency" rel="alternate" type="text/html"/>
-    <summary>Arthur Hayes 在 TOKEN2049 主舞台完整阐述 FLOP：智能体的生存所需是算力，而现有货币（AI token、法币、稳定币、比特币）无一能直接兑换算力，因此需要一种可赎回算力的新货币。本文拆解其代币逻辑，解析 Proof-of-Useful-Inference 机制（会话请求、矿工执行、证明入块、质押罚没），对比 PoUW 学术谱系，并指出验证推理正确性这一尚未解决的关键缺口。</summary>
+    <summary>Arthur Hayes 在 TOKEN2049 阐述 FLOP：智能体生存所需是算力，现有货币无一能直接兑换算力，故需可赎回算力的新货币。本文拆解代币逻辑，解析 Proof-of-Useful-Inference 机制（请求、执行、证明入块、质押罚没），对比 PoUW 谱系，指出验证推理正确性这一尚未解决的关键缺口。</summary>
     <category term="FLOP"/>
     <category term="Arthur Hayes"/>
     <category term="有用推理证明"/>
@@ -93,7 +93,7 @@
     <title>用群体智能推演信贷风险？MiroFish 开源引擎的银行借鉴价值分析</title>
     <updated>2026-10-08T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/mirofish-bank-credit-risk-simulation" rel="alternate" type="text/html"/>
-    <summary>MiroFish 是 2026 年爆火的开源群体智能预测引擎：输入新闻、政策或金融信号，自动构建知识图谱，让数千个带人设与长期记忆的 AI 智能体互动演化并输出推演报告。本文拆解 OASIS+GraphRAG+Zep 架构，评估银行信贷风险情景推演与预警的借鉴价值，与评分卡、机器学习风控、压力测试、知识图谱、RAG 助手对比，指出 AGPL、数据出域、可解释性、模型偏见等硬约束下的可行借鉴路径。</summary>
+    <summary>MiroFish 是2026年爆火的开源群体智能预测引擎：输入新闻、政策或金融信号，自动构建知识图谱，让数千个带人设与记忆的 AI 智能体互动演化并输出推演报告。本文拆解 OASIS+GraphRAG+Zep 架构，评估银行信贷风险推演与预警的借鉴价值，与评分卡、机器学习风控、压力测试、知识图谱、RAG对比，指出 AGPL、数据出域、可解释性、模型偏见等约束下的可行路径。</summary>
     <category term="MiroFish"/>
     <category term="群体智能"/>
     <category term="信贷风险"/>
@@ -168,7 +168,7 @@
     <title>&quot;科技即周期&quot;的中国回响：用六个维度检验中国市场</title>
     <updated>2026-10-07T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/a16z-state-of-markets-china" rel="alternate" type="text/html"/>
-    <summary>a16z Growth 于 2026 年 9 月发布 90 页报告《State of Markets II》，提出&apos;科技即一切周期&apos;：科技占美国资本开支 55%、贡献标普 500 约 76% 盈利增长，AI 基础设施成为当下经济中唯一顺周期引擎；但其全球百强分析明确剔除中国（ex-China）。本文把报告六个核心维度移植到中国市场逐一检验：科技市值占比已超四分之一但盈利待证明；运营商算力投资逆势大增、腾讯阿里单季资本开支超 1200 亿元；企业落地&apos;宽而浅&apos;，仅 23% 实现可量化财务影响；AI 融资占一级市场 48.6% 且头部高度集中；人形机器人全球出货前五名全为中国厂商；软件正经历&apos;Prove-It&apos;时刻。文末落到金融业五点启示，把 AI 资本周期纳入授信、风控与采购决策。</summary>
+    <summary>a16z 2026年9月发布90页《State of Markets II》，提出“科技即一切周期”：科技占美国资本开支55%、贡献标普约76%盈利增长，AI基建是唯一顺周期引擎，百强分析剔除中国。六维度中国检验：科技市值超四分之一、算力投资逆势大增、落地宽而浅（仅23%可量化）、AI融资占48.6%、人形机器人出货前五全为中国厂商、软件迎Prove-It；落到金融业五点启示。</summary>
     <category term="a16z"/>
     <category term="State of Markets"/>
     <category term="AI资本周期"/>
@@ -212,7 +212,7 @@
     <title>银行智能体的下半场：从&quot;数量竞赛&quot;到&quot;日活价值&quot;的度量与治理</title>
     <updated>2026-10-07T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/bank-ai-agents-daa-governance" rel="alternate" type="text/html"/>
-    <summary>2026 年上市银行半年报收官，银行 AI 竞赛的度量从&quot;场景数&quot;升级到&quot;Token 量与智能体数&quot;：招商银行日均 Token 吞吐量同比增 78%、带来 1388 万小时等效人工工时；平安银行上线 140 个运营审核类智能体、覆盖 55 个业务场景；微众银行 80 余位数字员工 7×24 上岗；江苏银行日均 Token 半年增长 18 倍。但 Token 只能衡量消耗、衡量不了产出——IDC 提出以日活智能体数（DAA）作为穿透 AI 真实生产能力、衔接算力投入与业务价值的核心中间指标。文章对照 Sibos 2026 国际大行&quot;智能体干活、人做判断&quot;的实践（BNY 支付修复、BNP 邮件分拣、德银一天放款），结合金监总局《指导意见》32 项要求，从度量升级、算力治理、风险底线与组织升维四个层面讨论银行智能体从&quot;数量竞赛&quot;走向&quot;价值深耕&quot;的路径。</summary>
+    <summary>上市银行半年报显示，银行 AI 度量从“场景数”升级到“Token 量与智能体数”：招行 Token 增78%、1388万工时；平安上线140个审核智能体；微众80余数字员工；江苏银行 Token 半年增18倍。但 Token 只衡量消耗、衡量不了产出——IDC 提出以日活智能体数（DAA）穿透生产力。对照 Sibos 2026 与金监总局32项要求，从度量、算力、风险、组织四层讨论走向价值深耕。</summary>
     <category term="银行智能体"/>
     <category term="DAA"/>
     <category term="AI治理"/>
@@ -226,7 +226,7 @@
     <title>官方数据源的&quot;AI 时代接口&quot;：同花顺 Financial-API 服务模式对量化投资与个人投资者的价值分析</title>
     <updated>2026-10-07T00:00:00Z</updated>
     <link href="https://bi-chao.com/articles/hithink-financial-api-analysis" rel="alternate" type="text/html"/>
-    <summary>同花顺官方发布 Financial-API（hithink-finance）：统一 API Key 即可查询 A 股行情、财报、估值、涨停龙虎榜、公募基金与期货期权数据，通过 REST、MCP、CLI、Python SDK、本地 DuckDB 与 Agent Skill 六种入口接入，不设累计调用上限。本文拆解这一服务模式的四个特征——官方权威源、多协议一 Key、本地优先数仓、边界诚实——并分别评估其对量化投资分析（数据链路、回测一致性、特色因子）与个人投资者（零门槛官方数据、AI 助手化投研、能力边界）的价值与局限，与 Tushare、AkShare 及机构终端做横向对比。</summary>
+    <summary>同花顺官方发布 Financial-API：一个 API Key 查询 A 股行情、财报、估值、龙虎榜、公募基金与期货期权，提供 REST、MCP、CLI、SDK、本地 DuckDB 与 Agent Skill 六种入口、不设调用上限。本文拆解官方源、多协议一Key、本地数仓、边界诚实四特征，评估其对量化与个人投资者的价值局限，并与 Tushare、AkShare、机构终端对比。</summary>
     <category term="同花顺"/>
     <category term="Financial-API"/>
     <category term="金融数据"/>
