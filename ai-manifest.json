@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 145,
+    "total_articles": 146,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -67,6 +67,22 @@
         "金融监管",
         "智能体治理",
         "自主可控"
+      ]
+    },
+    {
+      "slug": "yunqi-2026-finance-ai-native-trusted-intelligence",
+      "title": "云栖大会 2026 金融观察：从“AI 原生金融”到“可信智能”，三条主线重塑银行业技术栈",
+      "date": "2026-10-09",
+      "description": "2026 云栖大会（9月22-24日杭州）以 Agentic AI 为核心。本文梳理金融内容三条主线：严骏驰提出的“AI 原生金融”范式转移、恒生聚源提出的数据消费主体从人迁移到 Agent（AI-Ready）、蚂蚁密算发布“密算一号”（密态计算耗时仅明文1.21倍、HOP 智能体探索与提交分离）。结合汇正财经投研双模型样本，分析其对银行业技术栈重构、数据与智能体治理的启示与风险。",
+      "tags": [
+        "云栖大会",
+        "AI原生金融",
+        "可信智能",
+        "蚂蚁密算",
+        "密态计算",
+        "HOP",
+        "金融大模型",
+        "智能体治理"
       ]
     },
     {
@@ -2560,5 +2576,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-09",
   "version": "1.1",
-  "total_articles": 145
+  "total_articles": 146
 }

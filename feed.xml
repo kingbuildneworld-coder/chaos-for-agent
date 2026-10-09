@@ -29,6 +29,21 @@
     <category term="自主可控"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/yunqi-2026-finance-ai-native-trusted-intelligence</id>
+    <title>云栖大会 2026 金融观察：从“AI 原生金融”到“可信智能”，三条主线重塑银行业技术栈</title>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/yunqi-2026-finance-ai-native-trusted-intelligence" rel="alternate" type="text/html"/>
+    <summary>2026 云栖大会（9月22-24日杭州）以 Agentic AI 为核心。本文梳理金融内容三条主线：严骏驰提出的“AI 原生金融”范式转移、恒生聚源提出的数据消费主体从人迁移到 Agent（AI-Ready）、蚂蚁密算发布“密算一号”（密态计算耗时仅明文1.21倍、HOP 智能体探索与提交分离）。结合汇正财经投研双模型样本，分析其对银行业技术栈重构、数据与智能体治理的启示与风险。</summary>
+    <category term="云栖大会"/>
+    <category term="AI原生金融"/>
+    <category term="可信智能"/>
+    <category term="蚂蚁密算"/>
+    <category term="密态计算"/>
+    <category term="HOP"/>
+    <category term="金融大模型"/>
+    <category term="智能体治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis</id>
     <title>统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”</title>
     <updated>2026-10-08T00:00:00Z</updated>

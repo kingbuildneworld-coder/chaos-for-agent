@@ -13,12 +13,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (145)
+## Articles (146)
 
 - [从“狂奔”到“立规”：上市银行首份 AI 管理办法的制度信号与落地启示](https://bi-chao.com/articles/pingan-bank-ai-management-measures-2026)
   - Description: 平安银行董事会审议通过《人工智能管理办法（1.0版，2026年）》，为上市银行首部公开披露的 AI 管理办法。本文核验其三维度制度安排（董事会战略委员会统筹、全生命周期管理、AI 风险纳入全面风险管理），追溯金融监管总局金发〔2026〕8号文 32 项意见与四原则，结合上海弹性监管配套及行业规模化落地数据，提出银行 AI 治理清单化、台账化、可审计化的落地建议。
   - Date: 2026-10-09
   - Tags: AI治理, 平安银行, 人工智能管理办法, 金发8号文, 全面风险管理, 金融监管, 智能体治理, 自主可控
+- [云栖大会 2026 金融观察：从“AI 原生金融”到“可信智能”，三条主线重塑银行业技术栈](https://bi-chao.com/articles/yunqi-2026-finance-ai-native-trusted-intelligence)
+  - Description: 2026 云栖大会（9月22-24日杭州）以 Agentic AI 为核心。本文梳理金融内容三条主线：严骏驰提出的“AI 原生金融”范式转移、恒生聚源提出的数据消费主体从人迁移到 Agent（AI-Ready）、蚂蚁密算发布“密算一号”（密态计算耗时仅明文1.21倍、HOP 智能体探索与提交分离）。结合汇正财经投研双模型样本，分析其对银行业技术栈重构、数据与智能体治理的启示与风险。
+  - Date: 2026-10-09
+  - Tags: 云栖大会, AI原生金融, 可信智能, 蚂蚁密算, 密态计算, HOP, 金融大模型, 智能体治理
 - [统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”](https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis)
   - Description: 2026年10月6日，谷歌发布 EmbeddingGemma 2：Apache 2.0 开源的 740M 统一嵌入模型，把文本、代码、图像、视频、音频映射进同一 768 维空间，量化后全模态仅约 567MB 内存，官方支持 Unsloth 微调。本文核验其开源与微调能力，并分析对银行信贷资料拼图式语义分析、多模态语义图谱关联、风险预警检测的价值与落地路线。
   - Date: 2026-10-08
