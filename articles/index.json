@@ -2447,6 +2447,7 @@
     "url": "/articles/ai-payment-risk-governance.md",
     "description": "AI正在把支付从'交易环节'推向'智能决策环节'。本文提出AI支付六大风险维度（主体/意图/授权/模型/数据/平台）和八条治理路径，构建从'资金安全'到'意图真实'的下一代支付安全范式。",
     "date": "2026-07-04",
+    "updated": "2026-07-04",
     "tags": [
       "AI前瞻",
       "金融科技",
@@ -2463,6 +2464,7 @@
     "url": "/articles/local-llm-deployment-data-sovereignty.md",
     "description": "阿里禁用国外大模型工具只是冰山一角。本文从Palantir CEO Alex Karp的'Token税'诊断框架出发，提出'双通道数据流失模型'，深度论证企业（尤其是银行）本地部署大模型的战略必要性：防止敏感数据外流形成数据闭环、避免核心业务流程被蒸馏自毁长城。",
     "date": "2026-07-03",
+    "updated": "2026-07-03",
     "tags": [
       "AI前瞻",
       "数据安全",
