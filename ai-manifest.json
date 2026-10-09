@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 144,
+    "total_articles": 145,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "pingan-bank-ai-management-measures-2026",
+      "title": "从“狂奔”到“立规”：上市银行首份 AI 管理办法的制度信号与落地启示",
+      "date": "2026-10-09",
+      "description": "平安银行董事会审议通过《人工智能管理办法（1.0版，2026年）》，为上市银行首部公开披露的 AI 管理办法。本文核验其三维度制度安排（董事会战略委员会统筹、全生命周期管理、AI 风险纳入全面风险管理），追溯金融监管总局金发〔2026〕8号文 32 项意见与四原则，结合上海弹性监管配套及行业规模化落地数据，提出银行 AI 治理清单化、台账化、可审计化的落地建议。",
+      "tags": [
+        "AI治理",
+        "平安银行",
+        "人工智能管理办法",
+        "金发8号文",
+        "全面风险管理",
+        "金融监管",
+        "智能体治理",
+        "自主可控"
+      ]
+    },
     {
       "slug": "embeddinggemma-2-banking-multimodal-credit-analysis",
       "title": "统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”",
@@ -2542,7 +2558,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-09",
   "version": "1.1",
-  "total_articles": 144
+  "total_articles": 145
 }

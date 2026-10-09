@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-08T00:00:00Z</updated>
+  <updated>2026-10-09T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/pingan-bank-ai-management-measures-2026</id>
+    <title>从“狂奔”到“立规”：上市银行首份 AI 管理办法的制度信号与落地启示</title>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/pingan-bank-ai-management-measures-2026" rel="alternate" type="text/html"/>
+    <summary>平安银行董事会审议通过《人工智能管理办法（1.0版，2026年）》，为上市银行首部公开披露的 AI 管理办法。本文核验其三维度制度安排（董事会战略委员会统筹、全生命周期管理、AI 风险纳入全面风险管理），追溯金融监管总局金发〔2026〕8号文 32 项意见与四原则，结合上海弹性监管配套及行业规模化落地数据，提出银行 AI 治理清单化、台账化、可审计化的落地建议。</summary>
+    <category term="AI治理"/>
+    <category term="平安银行"/>
+    <category term="人工智能管理办法"/>
+    <category term="金发8号文"/>
+    <category term="全面风险管理"/>
+    <category term="金融监管"/>
+    <category term="智能体治理"/>
+    <category term="自主可控"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis</id>
     <title>统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”</title>

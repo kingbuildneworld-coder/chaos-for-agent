@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (144)
+## Articles (145)
 
+- [从“狂奔”到“立规”：上市银行首份 AI 管理办法的制度信号与落地启示](https://bi-chao.com/articles/pingan-bank-ai-management-measures-2026)
+  - Description: 平安银行董事会审议通过《人工智能管理办法（1.0版，2026年）》，为上市银行首部公开披露的 AI 管理办法。本文核验其三维度制度安排（董事会战略委员会统筹、全生命周期管理、AI 风险纳入全面风险管理），追溯金融监管总局金发〔2026〕8号文 32 项意见与四原则，结合上海弹性监管配套及行业规模化落地数据，提出银行 AI 治理清单化、台账化、可审计化的落地建议。
+  - Date: 2026-10-09
+  - Tags: AI治理, 平安银行, 人工智能管理办法, 金发8号文, 全面风险管理, 金融监管, 智能体治理, 自主可控
 - [统一嵌入模型的开源时刻：EmbeddingGemma 2 与银行信贷资料的“多模态拼图”](https://bi-chao.com/articles/embeddinggemma-2-banking-multimodal-credit-analysis)
   - Description: 2026年10月6日，谷歌发布 EmbeddingGemma 2：Apache 2.0 开源的 740M 统一嵌入模型，把文本、代码、图像、视频、音频映射进同一 768 维空间，量化后全模态仅约 567MB 内存，官方支持 Unsloth 微调。本文核验其开源与微调能力，并分析对银行信贷资料拼图式语义分析、多模态语义图谱关联、风险预警检测的价值与落地路线。
   - Date: 2026-10-08
@@ -594,7 +598,7 @@
 
 ## Topics (top 10)
 - 金融科技: 51 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 37 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 38 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 33 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 29 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
