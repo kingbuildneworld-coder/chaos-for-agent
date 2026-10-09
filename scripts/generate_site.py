@@ -145,6 +145,9 @@ def load_articles() -> list[dict]:
             "url": f"/articles/{p.name}",
             "description": fm.get("description", ""),
             "date": (fm.get("date") or "").strip(),
+            # 仅当作者在 front matter 显式写了 updated 才输出：lastmod / dateModified
+            # 只反映正文的真实修改，而不是每次构建的日期。
+            **({"updated": str(fm.get("updated")).strip()} if fm.get("updated") else {}),
             "tags": [t for t in tags if isinstance(t, str) and t.strip()],
             "schema_type": (fm.get("schema_type") or "Article"),
         })
@@ -242,19 +245,32 @@ def gen_sitemap(articles: list[dict], edate: str) -> str:
     add(f"{DOMAIN}/", "weekly", "1.0", edate)
     add(f"{DOMAIN}/about", "monthly", "0.6", git_date("about.md", edate))
     for a in sorted(articles, key=lambda a: a["slug"]):
-        add(f'{DOMAIN}/articles/{a["slug"]}', "monthly", "0.8", a["date"] or edate)
-    add(f"{DOMAIN}/quant-course/index.html", "monthly", "0.7", edate)
-    add(f"{DOMAIN}/quant-course/chapter2-first-quant-experiment.html", "monthly", "0.7", edate)
+        add(f'{DOMAIN}/articles/{a["slug"]}', "monthly", "0.8", a.get("updated") or a["date"] or edate)
+    # 静态教程页：lastmod 取该文件最后一次提交日期，而不是"最新文章日期"——
+    # 否则每发一篇文章，这些从未改动的页面都会被误报为"今天更新"。
+    for path, prio in (
+        ("quant-course/index.html", "0.7"),
+        ("quant-course/chapter2-first-quant-experiment.html", "0.7"),
+    ):
+        add(f"{DOMAIN}/{path}", "monthly", prio, git_date(path, edate))
     # tutorials/ 下的互动教程：此前完全未进 sitemap，是不可发现的孤儿页
-    add(f"{DOMAIN}/tutorials/{js_encode_uri_component('什么是量化金融_互动教程.html')}", "monthly", "0.6", edate)
+    tut = "什么是量化金融_互动教程.html"
+    add(f"{DOMAIN}/tutorials/{js_encode_uri_component(tut)}", "monthly", "0.6", git_date(f"tutorials/{tut}", edate))
     add(f"{DOMAIN}/tags", "weekly", "0.6", edate)
     # 只收录达到阈值的标签页：原先全量收录 416 个标签页（占 sitemap 的 82%），
     # 大量是仅含 1 篇文章的薄聚合页，稀释了正文的抓取预算。
+    # 每个标签页的 lastmod = 该标签下最新一篇文章的日期（只有它变了，标签页才真的变了）。
     counts = tag_map(articles)
+    tag_latest: dict[str, str] = {}
+    for a in articles:
+        d = a.get("updated") or a["date"] or ""
+        for t in a["tags"]:
+            if d > tag_latest.get(t, ""):
+                tag_latest[t] = d
     for tag in sorted(counts):
         if counts[tag] < TAG_INDEX_MIN_ARTICLES:
             continue
-        add(f"{DOMAIN}/tags/{js_encode_uri_component(tag)}", "weekly", "0.5", edate)
+        add(f"{DOMAIN}/tags/{js_encode_uri_component(tag)}", "weekly", "0.5", tag_latest.get(tag) or edate)
 
     body = ET.tostring(root, encoding="utf-8", xml_declaration=True).decode("utf-8")
     return body + "\n"
