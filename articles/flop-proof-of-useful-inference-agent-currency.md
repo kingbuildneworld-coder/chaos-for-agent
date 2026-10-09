@@ -1,7 +1,7 @@
 ---
 title: "为什么智能体需要自己的货币？FLOP 与“有用推理证明”的底层逻辑"
 date: 2026-10-08
-description: "Arthur Hayes 在 TOKEN2049 主舞台完整阐述 FLOP：智能体的生存所需是算力，而现有货币（AI token、法币、稳定币、比特币）无一能直接兑换算力，因此需要一种可赎回算力的新货币。本文拆解其代币逻辑，解析 Proof-of-Useful-Inference 机制（会话请求、矿工执行、证明入块、质押罚没），对比 PoUW 学术谱系，并指出验证推理正确性这一尚未解决的关键缺口。"
+description: "Arthur Hayes 在 TOKEN2049 阐述 FLOP：智能体生存所需是算力，现有货币无一能直接兑换算力，故需可赎回算力的新货币。本文拆解代币逻辑，解析 Proof-of-Useful-Inference 机制（请求、执行、证明入块、质押罚没），对比 PoUW 谱系，指出验证推理正确性这一尚未解决的关键缺口。"
 tags: ["FLOP","Arthur Hayes","有用推理证明","智能体经济","去中心化算力","代币经济学","PoUW","AI结算"]
 schema_type: Article
 references:

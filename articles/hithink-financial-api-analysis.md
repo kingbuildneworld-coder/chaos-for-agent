@@ -1,7 +1,7 @@
 ---
 title: "官方数据源的"AI 时代接口"：同花顺 Financial-API 服务模式对量化投资与个人投资者的价值分析"
 date: 2026-10-07
-description: "同花顺官方发布 Financial-API（hithink-finance）：统一 API Key 即可查询 A 股行情、财报、估值、涨停龙虎榜、公募基金与期货期权数据，通过 REST、MCP、CLI、Python SDK、本地 DuckDB 与 Agent Skill 六种入口接入，不设累计调用上限。本文拆解这一服务模式的四个特征——官方权威源、多协议一 Key、本地优先数仓、边界诚实——并分别评估其对量化投资分析（数据链路、回测一致性、特色因子）与个人投资者（零门槛官方数据、AI 助手化投研、能力边界）的价值与局限，与 Tushare、AkShare 及机构终端做横向对比。"
+description: "同花顺官方发布 Financial-API：一个 API Key 查询 A 股行情、财报、估值、龙虎榜、公募基金与期货期权，提供 REST、MCP、CLI、SDK、本地 DuckDB 与 Agent Skill 六种入口、不设调用上限。本文拆解官方源、多协议一Key、本地数仓、边界诚实四特征，评估其对量化与个人投资者的价值局限，并与 Tushare、AkShare、机构终端对比。"
 tags: ["同花顺","Financial-API","金融数据","量化投资","个人投资者","MCP","AI Agent","数据服务"]
 schema_type: Article
 references:

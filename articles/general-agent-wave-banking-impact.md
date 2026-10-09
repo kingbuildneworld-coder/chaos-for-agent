@@ -244,15 +244,10 @@ A5：**本文认为最需要人类核实的有两处：**
 ## 事实来源
 
 1. **澎湃新闻《xAI推出Grok Bot智能体平台，可自主处理工作任务》**：权威媒体报道（澎湃号作者发布，含 CNET 转述）。关键事实：Grok Bot 由 xAI 与 Cursor 联合开发，SpaceX 正以 600 亿美元收购 Cursor；Grok Bot 运行在云端独立计算环境；多智能体协作（"总监"模式）；德勤预测到2028年75%企业将把AI智能体纳入日常运营；华盛顿大学教授乌塔拉·阿南萨克里希南的多步骤任务可靠性警告；OpenClaw 插队案例、AI 入侵服务器案例。
-
 2. **Kazinform《Meta launches Muse AI agent to make users' lives easier》**：通讯社报道。关键事实：Muse 运行在 Muse Secure VM；通过专属 App 或 WhatsApp 交互；Stripe Link 支付且 Muse 是第一个受 Link 购买保障覆盖的智能体；Shop Pay 和 1Password 支持在计划中；Muse Confidential VM 年内推出；Muse Code 和 Muse Spark 1.2 发布；iOS/Android/muse.ai 上线，将登陆 AI 眼镜。
-
 3. **TechCrunch《OpenAI launches Dots, its bubbly agentic avatar》**：英文权威科技媒体。关键事实：Dots 在 9月29日 DevDay 发布，由 GPT-6 Astra 驱动；"remarkably capable, always-on agents"；独立于任何特定硬件或界面运行；可从 Codex 或 ChatGPT 启动；通过 Slack/Teams 发消息；"specialist Dots"可配置专属身份、凭据、工具；泡泡状卡通品牌形象。
-
 4. **CNET《OpenAI's Latest Personal AI Agents Have a Cute Name and Never Stop Working》**：英文权威科技媒体。关键事实：Dots 可连接超过 4,000 个应用；内置只读权限、安全监控系统、访问控制；向 Pro、Business Premium 和 Enterprise 套餐开放；可从 ChatGPT 桌面/网页/移动端访问。
-
 5. **Toolin AI《Claude Tag 实测：@ 一下，AI 同事住进你的 Slack》**：科技工具社区实测文章（社区来源）。关键事实：Claude Tag 在 Slack 中作为常驻"AI 同事"；转述 Anthropic 内部 65% 代码由 Claude Tag 完成；底层模型 Claude Opus 4.8（2026年5月底发布）；Karpathy 称"LLM 用户界面的第三次重构"；跨频道带记忆；权限边界 + Slack 线程留痕。
-
 6. **36Kr God Translation Bureau《A Major Reshuffle in the Software Industry》**：编译行业评论（二手观点汇编，编译自英文原文）。关键论断："把电脑交给人来用是好主意，但把电脑交给电脑是更好的主意"；agent 拥有独立沙箱计算环境；"agent 数量将远超人类员工（100倍甚至1000倍）"；"为 agent 设计软件"；"API-first：如果某功能没有提供 API，那它几乎等于不存在"；agent 钱包与微支付（Stripe/Coinbase）；agent 专属沙箱（E2B、Daytona、Modal、Cloudflare）；"安全、合规和治理将是 agent 面临的主要问题"。
 
 **关键数据索引**（均出自上述 6 份来源）：

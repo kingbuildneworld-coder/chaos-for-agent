@@ -200,15 +200,10 @@ A5：本文严格区分来源观点与本文推论。来源观点包括：Muse�
 ## 事实来源
 
 1. **TechCrunch《Everything new coming to Meta's AI agent Muse》（2026年9月23日）**：科技媒体报道（二手）。关键事实：Muse于2026年9月初推出；由Meta多模态AI模型驱动；跨设备和数字账户交互；Zuckerberg宣布免费大量token、交易抽成；数字分身Jolly；智能眼镜；Stripe/Shopify/PayPal合作；1,500+连接器申请。
-
 2. **品玩《DEMO | 齐俊元重启12年前的Today.ai：它可能是当下最主动的Personal AI》**：科技媒体报道（二手）。关键事实：齐俊元（Teambition创始人、前豆包PC端负责人）；2026年公测；能"记得"你、替你做事、持续盯着变化；Memory管理（主动遗忘、压缩、更新）；Proactive；Morning Brief；免费Beta，Pro 20美元/月、Ultra 200美元/月。
-
 3. **智源社区《豆包PC端前负责人，创业Agent操作系统》**：科技媒体报道（二手）。关键事实：齐俊元履历（Teambition→阿里云盘→飞书→豆包PC）；Living Memory；Connector；Task Execution；Cloud Computer（24小时在线）；跨设备协作；Skill生态。
-
 4. **Visa《Visa Introduces AI Financial Assistant, Helping Banks Guide Customers from Insight to Action》（2026年7月13日，Nasdaq）**：企业新闻稿（发布方自述）。关键事实：AI Financial Assistant；66%受访美国人使用生成式AI后转向AI寻求财务咨询（Credit Karma）；消费者将银行视为最信任机构（Oliver Wyman）；85%愿意分享更多数据；3000亿笔年交易基准洞察；白标部署。
-
 5. **Instadesk《The 200 Million Question – Why ChatGPT's Personal Finance Feature Is Reshaping Banking's Front Door》**：行业分析文章（含产品推广）。关键事实：超过2亿人每月向ChatGPT询问个人理财问题（OpenAI 2026年5月15日发布）；ChatGPT已集成个人理财功能；目前不能直接操作账户；Capco合伙人Daniela Hawkins警告去中介化和存款流动性风险；Spade联合创始人Oban McTavish持保留态度。
-
 6. **中国金融信息网《从"对话"到"办事" 银行业AI竞争重心在哪里》**：新华社旗下权威媒体。关键事实：银行业AI从"能对话"到"能办事"；2026年二季度商业银行净息差1.41%（国家金融监督管理总局数据）；三重压力（息差收窄、人力成本上升、同业竞争）；三大挑战（可解释性、责任归属、数据质量）；2026年6月《关于银行业保险业人工智能安全开发应用的指导意见》；标普全球评级：AI应用程度将影响信用评级；不足1/3机构用AI开发新产品新服务。
 
 **本文推论部分（非来源表述）**：第三节（对个人金融消费的影响）、第四节（对个人投资的影响）、第五节（对银行App服务的影响）、第七节（对资产保全/风险管理的特别启示）、第八节行动清单、FAQ中标为本文分析的部分、各节中标注"本文分析/本文推论"的段落。
