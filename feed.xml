@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — 毕超的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-09T00:00:00Z</updated>
+  <updated>2026-10-10T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -13,6 +13,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/state-of-ai-2026-financial-industry-analysis</id>
+    <title>State of AI 2026 的金融读法：当“推理”成为一门生意，银行业要重算的七笔账</title>
+    <updated>2026-10-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/state-of-ai-2026-financial-industry-analysis" rel="alternate" type="text/html"/>
+    <summary>第九届《State of AI Report 2026》10月8日发布（244页）。报告显示Anthropic、OpenAI、Google三强、基准饱和，两家合计年化收入1050亿美元、固定性能年降约13倍、harness影响比模型大7.8倍、开源模型处理62.7%的token。本文从金融行业角度重算成本、建设、路线、自主、客户、采购估值、安全合规七笔账，并给出落地建议。</summary>
+    <category term="StateofAI"/>
+    <category term="推理经济"/>
+    <category term="智能体"/>
+    <category term="Harness"/>
+    <category term="开源模型"/>
+    <category term="金融科技"/>
+    <category term="AI治理"/>
+    <category term="银行业"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/pingan-bank-ai-management-measures-2026</id>
     <title>从“狂奔”到“立规”：上市银行首份 AI 管理办法的制度信号与落地启示</title>

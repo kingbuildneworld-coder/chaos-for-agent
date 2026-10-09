@@ -1,5 +1,23 @@
 [
   {
+    "title": "State of AI 2026 的金融读法：当“推理”成为一门生意，银行业要重算的七笔账",
+    "slug": "state-of-ai-2026-financial-industry-analysis",
+    "url": "/articles/state-of-ai-2026-financial-industry-analysis.md",
+    "description": "第九届《State of AI Report 2026》10月8日发布（244页）。报告显示Anthropic、OpenAI、Google三强、基准饱和，两家合计年化收入1050亿美元、固定性能年降约13倍、harness影响比模型大7.8倍、开源模型处理62.7%的token。本文从金融行业角度重算成本、建设、路线、自主、客户、采购估值、安全合规七笔账，并给出落地建议。",
+    "date": "2026-10-10",
+    "tags": [
+      "StateofAI",
+      "推理经济",
+      "智能体",
+      "Harness",
+      "开源模型",
+      "金融科技",
+      "AI治理",
+      "银行业"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "从“狂奔”到“立规”：上市银行首份 AI 管理办法的制度信号与落地启示",
     "slug": "pingan-bank-ai-management-measures-2026",
     "url": "/articles/pingan-bank-ai-management-measures-2026.md",
