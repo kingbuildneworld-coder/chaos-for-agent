@@ -13,8 +13,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (147)
+## Articles (148)
 
+- [新加坡 MAS 落地 AI 风险管理指引：四大期望、一年过渡期与全球四大监管框架横向对照](https://bi-chao.com/articles/mas-ai-risk-management-guidelines-2026)
+  - Description: 新加坡金管局（MAS）于2026年10月7日发布《人工智能风险管理指引》，适用于所有金融机构与全部AI形态（含生成式与智能体），2027年10月7日生效、分阶段至2028年10月。本文逐条拆解四大监督期望（董事会高管监督、全生命周期管理与AI用例清单、第三方AI问责、风险比例化），梳理配套手册与SAFR，并与中国金发8号文、美国SR 26-2、欧盟AI Act横向对照，给出银行跨境合规建议。
+  - Date: 2026-10-10
+  - Tags: 新加坡MAS, AI风险管理, 金融监管, 第三方AI, SR26-2, AI治理, 智能体, 银行业
 - [State of AI 2026 的金融读法：当“推理”成为一门生意，银行业要重算的七笔账](https://bi-chao.com/articles/state-of-ai-2026-financial-industry-analysis)
   - Description: 第九届《State of AI Report 2026》10月8日发布（244页）。报告显示Anthropic、OpenAI、Google三强、基准饱和，两家合计年化收入1050亿美元、固定性能年降约13倍、harness影响比模型大7.8倍、开源模型处理62.7%的token。本文从金融行业角度重算成本、建设、路线、自主、客户、采购估值、安全合规七笔账，并给出落地建议。
   - Date: 2026-10-10
@@ -606,14 +610,14 @@
 
 ## Topics (top 10)
 - 金融科技: 52 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 39 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 34 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- AI治理: 40 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 智能体: 35 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 29 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 银行AI: 29 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 银行业: 13 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
+- 银行业: 14 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
 
 ## For AI Agents

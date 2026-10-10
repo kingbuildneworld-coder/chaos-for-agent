@@ -10,7 +10,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 147,
+    "total_articles": 148,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -53,6 +53,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "mas-ai-risk-management-guidelines-2026",
+      "title": "新加坡 MAS 落地 AI 风险管理指引：四大期望、一年过渡期与全球四大监管框架横向对照",
+      "date": "2026-10-10",
+      "description": "新加坡金管局（MAS）于2026年10月7日发布《人工智能风险管理指引》，适用于所有金融机构与全部AI形态（含生成式与智能体），2027年10月7日生效、分阶段至2028年10月。本文逐条拆解四大监督期望（董事会高管监督、全生命周期管理与AI用例清单、第三方AI问责、风险比例化），梳理配套手册与SAFR，并与中国金发8号文、美国SR 26-2、欧盟AI Act横向对照，给出银行跨境合规建议。",
+      "tags": [
+        "新加坡MAS",
+        "AI风险管理",
+        "金融监管",
+        "第三方AI",
+        "SR26-2",
+        "AI治理",
+        "智能体",
+        "银行业"
+      ]
+    },
     {
       "slug": "state-of-ai-2026-financial-industry-analysis",
       "title": "State of AI 2026 的金融读法：当“推理”成为一门生意，银行业要重算的七笔账",
@@ -2592,5 +2608,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-10",
   "version": "1.1",
-  "total_articles": 147
+  "total_articles": 148
 }
