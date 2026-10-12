@@ -252,7 +252,7 @@ A6：有用，而且用的方式更直接。中小机构不必关心架构，但
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "description": "金融行业风险管理从业者"
+    "description": "前沿人工智能探索者"
   },
   "about": [
     "人工智能",
