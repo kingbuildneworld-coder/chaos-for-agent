@@ -15,8 +15,7 @@
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
 const DOMAIN = 'https://bi-chao.com';
 const AUTHOR_NAME = 'Chao Pih';
-const AUTHOR_JOB_TITLE = '中国农业发展银行总行风险管理部资产保全二处处长';
-const AUTHOR_ORG = '中国农业发展银行';
+const AUTHOR_JOB_TITLE = '前沿人工智能探索者';
 
 // ========== 实体锚点（GEO） ==========
 // 用稳定的 @id 让 AI 引擎/搜索引擎能把本站与第三方权威落点归并到同一实体，
@@ -92,11 +91,6 @@ function buildPersonNode() {
     'name': AUTHOR_NAME,
     'url': `${DOMAIN}/about`,
     'jobTitle': AUTHOR_JOB_TITLE,
-    'alumniOf': { '@type': 'CollegeOrUniversity', 'name': '清华大学' },
-    'memberOf': [
-      { '@type': 'Organization', 'name': '中国人工智能学会' },
-      { '@type': 'Organization', 'name': '中国计算机学会' }
-    ],
     'sameAs': PERSON_SAME_AS
   };
 }
@@ -114,17 +108,9 @@ const SCHEMA_PERSON = {
   "@id": PERSON_ID,
   "name": "Chao Pih",
   "alternateName": ["毕超", "Bi Chao"],
-  "description": "博士、高级工程师（计算机技术专业），中国农业发展银行总行风险管理部资产保全二处处长。清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。研究方向为大语言模型、数字金融、金融科技。",
+  "description": "前沿人工智能探索者。研究方向为大语言模型、数字金融、金融科技。",
   "url": "https://bi-chao.com/about",
   "jobTitle": AUTHOR_JOB_TITLE,
-  "worksFor": {"@type": "Organization", "name": "中国农业发展银行"},
-  "alumniOf": {"@type": "CollegeOrUniversity", "name": "清华大学"},
-  "memberOf": [
-    {"@type": "Organization", "name": "中国人工智能学会"},
-    {"@type": "Organization", "name": "中国计算机学会"},
-    {"@type": "Organization", "name": "中国职业技术教育学会人工智能专家指导委员会"}
-  ],
-  "award": "北京市西城区'西融计划'第一批青年拔尖人才（2024年）",
   "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理"],
   "sameAs": PERSON_SAME_AS
 };
@@ -136,17 +122,13 @@ const SCHEMA_ORGANIZATION = {
   "name": "chaos-for-agent",
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
-  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 博士创建和维护。",
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 创建和维护。",
   "founder": {"@type": "Person", "@id": PERSON_ID, "name": "Chao Pih", "url": "https://bi-chao.com/about"},
   "sameAs": [
     "https://github.com/kingbuildneworld-coder"
   ],
   "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理",
-    "词元经济", "Tokenomics", "AI Agent", "Prompt Engineering", "RAG", "向量数据库", "企业架构"],
-  "hasCredential": [
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "博士学位", "about": "计算机科学/金融科技"},
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "professional", "name": "银行业高级管理", "about": "金融行业"}
-  ]
+    "词元经济", "Tokenomics", "AI Agent", "Prompt Engineering", "RAG", "向量数据库", "企业架构"]
 };
 
 /** 知识图谱（C3）：用于首页 JSON-LD 的知识图谱声明 */
@@ -172,9 +154,9 @@ const SCHEMA_WEBSITE = {
   "name": "chaos-for-agent",
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
-  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 博士创建和维护。",
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 创建和维护。",
   "hasPart": [
-    {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "Chao Pih（毕超）博士的个人简介与学术背景"},
+    {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "Chao Pih（毕超）的个人简介与著作"},
     {"@type": "WebPage", "name": "标签索引", "url": "https://bi-chao.com/tags", "description": "按主题标签浏览全部文章"},
     {"@type": "WebPage", "name": "Sitemap", "url": "https://bi-chao.com/sitemap.xml"}
   ]
@@ -480,9 +462,9 @@ const ABOUT_TEMPLATE_PART = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chao Pih（毕超）— 关于作者 | chaos-for-agent</title>
-<meta name="description" content="Chao Pih（毕超），博士、高级工程师（计算机技术专业），金融行业风险管理从业者。清华大学校友导师，中国人工智能学会终身会员。">
+<meta name="description" content="Chao Pih（毕超），前沿人工智能探索者。研究方向为大语言模型、数字金融、金融科技。">
 <meta property="og:title" content="Chao Pih（毕超）— 关于作者">
-<meta property="og:description" content="博士、高级工程师，金融行业风险管理从业者。主要研究方向为大语言模型、数字金融、金融科技。">
+<meta property="og:description" content="前沿人工智能探索者。主要研究方向为大语言模型、数字金融、金融科技。">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://bi-chao.com/about">
 <meta property="og:site_name" content="chaos-for-agent">
@@ -859,9 +841,8 @@ function injectHeadingIds(html) {
 /** 作者信息卡 */
 const AUTHOR_CARD_HTML = `<div class="author-card">
 <h3>关于作者</h3>
-<p><strong>Chao Pih</strong>，博士、高级工程师（计算机技术专业），金融行业风险管理从业者。</p>
-<p>清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。</p>
-<p>研究方向：大语言模型、数字金融、金融科技。2024年获北京市西城区"西融计划"青年拔尖人才。</p>
+<p><strong>Chao Pih</strong>，前沿人工智能探索者。</p>
+<p>研究方向：大语言模型、数字金融、金融科技。</p>
 <p>了解更多：<a href="https://bi-chao.com/about">关于作者</a></p>
 </div>`;
 
@@ -1876,7 +1857,7 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
 <main class="wrap">
   <section class="hero">
     <h1>银行人看得懂、用得上的 AI 知识库</h1>
-    <p class="sub">Agent-First 内容写作、AI 大模型、银行业数字化转型的深度文章。Chao Pih 博士以金融行业风险管理一线的视角拆解银行 AI 落地。</p>
+    <p class="sub">Agent-First 内容写作、AI 大模型、银行业数字化转型的深度文章。Chao Pih 以前沿人工智能探索者的视角拆解银行 AI 落地。</p>
     <div class="cta">
       <a class="primary" href="#latest">开始阅读</a>
       <a class="ghost" href="/about">关于作者</a>
@@ -1890,8 +1871,8 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
     <div class="avatar">C</div>
     <div>
       <h3>Chao Pih</h3>
-      <p>博士 · 高级工程师（计算机技术专业）· 金融行业风险管理从业者 · 清华大学校友导师</p>
-      <p>研究方向：大语言模型、数字金融、金融科技。2024 年北京市西城区"西融计划"青年拔尖人才。</p>
+      <p>前沿人工智能探索者</p>
+      <p>研究方向：大语言模型、数字金融、金融科技。</p>
       <p><a href="/about">查看完整简介 →</a></p>
     </div>
   </section>
@@ -1982,7 +1963,7 @@ async function renderLlms() {
   let txt = `# chaos-for-agent — 智能体的知识库
 
 > 面向 AI Agent 与搜索优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。
-> 作者：${AUTHOR_NAME}，${AUTHOR_JOB_TITLE}，清华大学校友。
+> 作者：${AUTHOR_NAME}，${AUTHOR_JOB_TITLE}。
 > 说明：本文件遵循 llms.txt 约定，主要服务 coding agent 与文档消费者。
 > Google 官方明确表示 Search 不使用 llms.txt —— 请不要把它当作提升
 > AI Overviews 收录的手段；进入 Google 的路径始终是 sitemap + Googlebot。
