@@ -306,7 +306,7 @@ semantic_models:
 
 **立场声明**：本文解读的长文作者之一同时是 Atlan（一家销售上下文层产品的公司）的联合创始人，且文中列出的五个视角含其本人主张的"Universal Context Layer"。本文已核验其引用的技术文献与实测数据，并在第二部分对其路线性论断提出了三处校正。
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 <script type="application/ld+json">
 {
@@ -329,7 +329,7 @@ semantic_models:
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "jobTitle": "金融行业风险管理从业者"
+    "jobTitle": "前沿人工智能探索者"
   }
 }
 </script>
