@@ -148,11 +148,11 @@ Q: 现有的外包团队能否直接转型为FDE？
   "description": "以埃森哲与Google Cloud成立Gemini Enterprise业务集团并组建1000人FDE队伍为镜像，分析中国金融业在'人工智能+'行动下打造与用好前向部署工程师的方向与落地路径。",
   "datePublished": "2026-09-09",
   "author": [
-    {"@type": "Person", "name": "金融行业风险管理从业者"}
+    {"@type": "Person", "name": "Chao Pih", "jobTitle": "前沿人工智能探索者"}
   ],
   "keywords": "人工智能+, 前向部署工程师, FDE, 智能体, 银行科技, 数字化转型"
 }
 </script>
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何机构立场。*
 *本文基于外部公开信息与媒体报道（含 Google Cloud Press Corner 于2026年9月8日发布的《Accenture and Google Cloud Deepen Partnership with Formation of New Accenture Gemini Enterprise Business Group》新闻稿，兼引作者此前关于德勤Open Model Engineering与Datawhale FDE案例100的分析）撰写的分析文章，观点以公开信息为准，不构成任何机构建议。*
