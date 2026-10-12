@@ -112,7 +112,7 @@ Q: 显式引文会不会限制模型能力、让输出变啰嗦？
 
 回到那句话：**后训练数据不是"填鸭喂饭"，而是给模型设计一套"注意力体操"**——通过设计 Query 与 Context 的关联难度、强制显式引文、混合长短程依赖，让模型学会在推理时动态且精准地分配它宝贵的注意力预算。理解了 Attention 的原理，数据团队就从"搬运工"变成了"导演"：你编排的不是答案，而是注意力每一次该落在哪里。
 
-**作者：金融行业风险管理从业者**
+**作者：前沿人工智能探索者**
 
 > 附：主要事实来源——《Understanding Attention》手册关于 QKV、RoPE、因果掩码、密集/稀疏注意力、MQA/GQA/MLA、注意力可解释性等要义的梳理（用户提供蓝本，未检索到官方对外链接，概念均已对照原始文献复核）；RoPE（旋转位置编码，Su et al., 2021）；Longformer 稀疏注意力（Beltagy et al., 2020）；MQA（Shazeer, 2019）、GQA（Ainslie et al., 2023）、MLA（DeepSeek-V2, 2024）；"Attention is not Explanation"（Jain & Wallace, NAACL 2019）。
 *（内容由AI生成，仅供参考）*
