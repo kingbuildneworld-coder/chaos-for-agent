@@ -133,7 +133,7 @@ Q: 这套机制对银行最直接的落地收益是什么？
   "description": "核实Anthropic Labs约20人团队两周评审、七成押注被砍却孵化出Claude Code的机制，论证金融业银行业能借鉴的内核与不可照搬的边界，及隔离验证区落地路径。",
   "datePublished": "2026-09-09",
   "author": [
-    {"@type": "Person", "name": "金融行业风险管理从业者"}
+    {"@type": "Person", "name": "Chao Pih", "jobTitle": "前沿人工智能探索者"}
   ],
   "keywords": "Anthropic, Claude Code, Labs, 快速验证, 银行科技开发, 创新孵化, 风险评估"
 }
@@ -143,5 +143,5 @@ Q: 这套机制对银行最直接的落地收益是什么？
 
 **事实来源说明**：本文机制事实基于 Business Insider 对 Anthropic 联合创始人 Ben Mann 的专访，并经新浪财经、腾讯新闻（编译褚杏娟）等媒体交叉核实；补充背景参考 Google Area 120 与 X Moonshot Factory 的公开资料。所有判断、借鉴论证与落地建议为作者基于机制的合理推演，不构成对 Anthropic 或任何银行的管理建议。外部网页信息仅作素材与事实参考，不代表本站立场。
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何投资或管理建议。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何投资或管理建议。*
 *（内容由AI生成，仅供参考）*

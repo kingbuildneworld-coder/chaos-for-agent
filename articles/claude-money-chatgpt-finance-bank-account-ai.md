@@ -6,7 +6,7 @@ tags: ["Claude Money", "ChatGPT Finance", "个人财务", "银行账户连接", 
 schema_type: Article
 ---
 
-> 作者：金融行业风险管理从业者
+> 作者：前沿人工智能探索者
 > 发布日期：2026-09-14
 > 素材说明：Claude Money 信息源自 TestingCatalog 爆料并经 AGI Hunt 报道转载（2026-09-14），属未经 Anthropic 官方证实的产品传闻，分析以其为假设前提；ChatGPT Finance 为 OpenAI 官方博客（2026）已发布信息，权限、支持机构数等以其官方说明为准；PicPay 集成案例源自 PYMNTS 报道（2026-09）。Anthropic 既有金融连接器（Era Context、PocketSmith 等）信息来自公开报道，以各公司官方材料为准。
 

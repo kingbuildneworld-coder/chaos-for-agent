@@ -161,11 +161,11 @@ A: 不能给出个股或具体行业判断，但能把"要素回报方向"讲清
   "description": "拆解Anthropic经济研究所《Economic Scenarios for Transformative AI》的三情景模型：温和（GDP+1.6%）、实质（+8.3%）、极端（+32.4%），从资本回报、劳动份额、认知失业率三组数字落到金融业四重含义与模型边界。",
   "datePublished": "2026-09-10",
   "author": [
-    {"@type": "Person", "name": "金融行业风险管理从业者"}
+    {"@type": "Person", "name": "Chao Pih", "jobTitle": "前沿人工智能探索者"}
   ],
   "keywords": "Anthropic, 变革性AI, 经济情景, 劳动份额, 认知工作者, 失业率, GDP预测, 宏观模型, 资本回报, 金融风险管理"
 }
 </script>
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何机构立场。*
 *本文基于Anthropic经济研究所工作论文《Economic Scenarios for Transformative AI》（Working Paper No.2026-02，2026年9月）及文中引用的Morning Consult调查数据进行分析，观点以原文数据为准，不构成任何投资建议。*

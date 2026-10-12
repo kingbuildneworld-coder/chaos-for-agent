@@ -105,7 +105,7 @@ A4：关注四点：进化范围是否可配置（哪些层能改、哪些层锁
 
 Datawhale 长文给技术界的结论是：有界、可测量的自我改进闭环已经出现，递归增益仍待证明，闭环合上的方式比是否合上更重要。金融业从这篇长文里应读出更具体的答案：**要，但要的是有界的 RSI。** 金融业需要的不是一台更会改进自己的机器，而是一个在人类划定的边界内持续改进、每一步改进都可验证、可解释、可回滚、可审计的受控系统。当改进能力与验证能力、控制能力同步增长时，RSI 才会从前沿实验室的争议话题，变成金融业真实可用的进化能力。
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 > 注：本文素材来源为 Datawhale 干货文章《RSI 从 0 理一遍》（作者赵志民，Datawhale 成员、加拿大皇后大学博士，发布于微信公众号），其中 GPT-5.6 RSI 指数、四层标准、五次推进、EURISKO/Reflexion/STaR/SPIN/Constitutional AI/Self-Rewarding/Meta-Rewarding/OPRO/ADAS/AFlow/Self-Harness/DGM/MetaClaw/SEAL/WebEvolver/Motus2/AIDE²/AI4AI-Bench/KernelBench 等事实与数据均引自该文及其参考文献；金融业分层采用、四道门映射与治理建议为作者基于行业实践的分析，具体适用需结合机构实际情况与监管要求独立评估。
 
@@ -118,7 +118,7 @@ Datawhale 长文给技术界的结论是：有界、可测量的自我改进闭�
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "description": "金融行业风险管理从业者"
+    "description": "前沿人工智能探索者"
   },
   "about": ["RSI", "递归自我改进", "金融AI", "银行AI", "模型风险管理", "AI治理", "奖励黑客", "可解释性"],
   "description": "基于 Datawhale 长文《RSI 从 0 理一遍》，拆解递归自我改进的四层标准与五次推进，提出金融 RSI 分层采用模型（F-RSI），回答金融业需要哪一层 RSI、不需要哪一层及边界所在。"

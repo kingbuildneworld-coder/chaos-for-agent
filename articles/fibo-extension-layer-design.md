@@ -432,7 +432,7 @@ FIBO 的本体文件是 RDF/XML，扩展名是 `.rdf`，**不是 `.owl`**。
 
 **未做的事。** 没有推荐替代基础。若需要评估 CDM（FINOS，Apache 2.0）或确认 SBVR、Commons 的退役状态，那是独立的技术选型问题，本文不涉及。
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 <script type="application/ld+json">
 {
@@ -456,7 +456,7 @@ FIBO 的本体文件是 RDF/XML，扩展名是 `.rdf`，**不是 `.owl`**。
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "jobTitle": "金融行业风险管理从业者"
+    "jobTitle": "前沿人工智能探索者"
   }
 }
 </script>

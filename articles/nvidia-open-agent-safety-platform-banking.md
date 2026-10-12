@@ -183,7 +183,7 @@ NVIDIA 的开发者博客给出了平台的五条核心原则（PRIMARY，开发
 
 ---
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 <script type="application/ld+json">
 {
@@ -196,7 +196,7 @@ NVIDIA 的开发者博客给出了平台的五条核心原则（PRIMARY，开发
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "jobTitle": "金融行业风险管理从业者"
+    "jobTitle": "前沿人工智能探索者"
   }
 }
 </script>

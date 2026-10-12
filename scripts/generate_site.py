@@ -60,8 +60,7 @@ MANIFEST_META = {
     "description": "Chao Pih 的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。采用 Agent-First 架构构建，支持 AI Agent 直接读取和引用。",
     "author": {
         "name": "Chao Pih",
-        "title": "博士、高级工程师",
-        "organization": "金融行业",
+        "title": "前沿人工智能探索者",
         "url": f"{DOMAIN}/about",
     },
     "ai_access": {
@@ -317,7 +316,7 @@ def gen_llms_full(articles: list[dict], edate: str) -> str:
         "",
         f"> 面向 AI Agent 的完整知识库。共 {len(articles)} 篇文章。",
         f"> 生成时间: {edate}",
-        "> 作者: Chao Pih，金融行业风险管理从业者",
+        "> 作者: Chao Pih，前沿人工智能探索者",
         "",
         "---",
         "",
@@ -379,7 +378,7 @@ def gen_llms(articles: list[dict], edate: str) -> str:
         "\n"
         "> 面向 AI Agent 与搜索优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。\n"
         # 注意：此行须与 src/index.js 的 AUTHOR_NAME / AUTHOR_JOB_TITLE 保持一致
-        "> 作者：Chao Pih，中国农业发展银行总行风险管理部资产保全二处处长，清华大学校友。\n"
+        "> 作者：Chao Pih，前沿人工智能探索者。\n"
         "> 说明：本文件遵循 llms.txt 约定，主要服务 coding agent 与文档消费者。\n"
         "> Google 官方明确表示 Search 不使用 llms.txt —— 请不要把它当作提升\n"
         "> AI Overviews 收录的手段；进入 Google 的路径始终是 sitemap + Googlebot。\n"

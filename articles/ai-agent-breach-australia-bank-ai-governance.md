@@ -201,7 +201,7 @@ A6：三件事：一是采购时明确要求供应商提供 AI 事件的通知�
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "description": "金融行业风险管理从业者"
+    "description": "前沿人工智能探索者"
   },
   "about": [
     "人工智能",

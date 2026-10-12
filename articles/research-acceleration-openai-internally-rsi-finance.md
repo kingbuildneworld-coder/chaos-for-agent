@@ -6,7 +6,7 @@ tags: ["OpenAI", "Research Agents", "RSI", "AI治理", "金融科技"]
 schema_type: Article
 ---
 
-> 作者：金融行业风险管理从业者
+> 作者：前沿人工智能探索者
 > 发布日期：2026-09-13
 
 2026 年 9 月 6 日，OpenAI 在一天之内发布了两篇基调截然相反的博客：一篇是《Research acceleration: The view inside OpenAI》（下称《研究加速》），用一整套内部数据展示 agent 如何成倍改写研究生产力；另一篇是首席科学家 Jakub Pachocki 的《An Alien Mind》（下称《异类心智》），以罕见的坦诚承认对齐与监控远未解决，甚至可能在逼近递归自我改进（RSI）。
