@@ -6,7 +6,7 @@ tags: ["AI Agent", "机构知识管理", "组织记忆", "Meta", "金融科技"]
 schema_type: Article
 ---
 
-> 作者：金融行业风险管理从业者
+> 作者：前沿人工智能探索者
 > 发布日期：2026-09-14
 
 > 素材说明：本文基于 Meta 工程博客 2026-09-02 发布的《An Organizational Second Brain: Building an AI That Learns From Experts》撰写，外部关键事实（Meta 部署架构、Andrej Karpathy LLM Wiki、Google Open Knowledge Format）均经联网交叉核实；文中"6 周 3 迭代"等结果数据为 Meta 原文口径，引用时请注意其工程实验语境。
