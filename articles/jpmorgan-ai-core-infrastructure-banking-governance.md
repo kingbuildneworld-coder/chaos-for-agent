@@ -214,7 +214,7 @@ A6：补“证据链”这一块。具体而言，先把模型清单与分级做
   "datePublished": "2026-09-24",
   "author": {
     "@type": "Person",
-    "name": "毕超",
+    "name": "Chao Pih",
     "description": "金融行业风险管理从业者"
   },
   "about": [

@@ -134,7 +134,7 @@ A4：论文实验显示，相比固定单一入口（如只用RAG），开放RAG
   "datePublished": "2026-09-03",
   "author": {
     "@type": "Person",
-    "name": "毕超"
+    "name": "Chao Pih"
   },
   "publisher": {
     "@type": "Organization",
@@ -144,4 +144,4 @@ A4：论文实验显示，相比固定单一入口（如只用RAG），开放RAG
 }
 </script>
 
-*作者毕超，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*

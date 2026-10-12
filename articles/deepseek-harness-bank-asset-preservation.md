@@ -212,7 +212,7 @@ references:
 
 ---
 
-*作者毕超，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 <script type="application/ld+json">
 {
@@ -224,7 +224,7 @@ references:
   "keywords": ["DeepSeek", "agent harness", "资产保全", "不良资产", "押品管理", "安全审计", "私有化部署", "银行AI治理", "智能体"],
   "author": {
     "@type": "Person",
-    "name": "毕超",
+    "name": "Chao Pih",
     "jobTitle": "金融行业风险管理从业者"
   }
 }

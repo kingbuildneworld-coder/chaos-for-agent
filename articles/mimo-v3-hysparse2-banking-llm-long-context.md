@@ -251,7 +251,7 @@ A6：有用，而且用的方式更直接。中小机构不必关心架构，但
   "datePublished": "2026-09-24",
   "author": {
     "@type": "Person",
-    "name": "毕超",
+    "name": "Chao Pih",
     "description": "金融行业风险管理从业者"
   },
   "about": [

@@ -215,7 +215,7 @@ references:
 
 ---
 
-*作者毕超，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 <script type="application/ld+json">
 {
@@ -227,7 +227,7 @@ references:
   "keywords": ["FDE", "前线部署工程师", "资产保全", "不良资产处置", "催收合规", "押品管理", "银行AI治理", "组织建制", "现场交付"],
   "author": {
     "@type": "Person",
-    "name": "毕超",
+    "name": "Chao Pih",
     "jobTitle": "金融行业风险管理从业者"
   }
 }

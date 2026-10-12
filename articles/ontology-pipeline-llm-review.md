@@ -209,7 +209,7 @@ ICEIS 那篇给了直接依据。ChatGPT 在步骤 2 会**编造不存在的本�
 
 **一处待确认。** Talisman 的书名在官网与出版商页面不一致（Building Knowledge Infrastructures vs Knowledge Engineering），疑为 2026 年改名，未找到公告。引用请以版权页为准。
 
-*作者毕超，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 <script type="application/ld+json">
 {
@@ -232,7 +232,7 @@ ICEIS 那篇给了直接依据。ChatGPT 在步骤 2 会**编造不存在的本�
   ],
   "author": {
     "@type": "Person",
-    "name": "毕超",
+    "name": "Chao Pih",
     "jobTitle": "金融行业风险管理从业者"
   }
 }

@@ -167,5 +167,5 @@ A: 不能给出个股或具体行业判断，但能把"要素回报方向"讲清
 }
 </script>
 
-*作者毕超，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
 *本文基于Anthropic经济研究所工作论文《Economic Scenarios for Transformative AI》（Working Paper No.2026-02，2026年9月）及文中引用的Morning Consult调查数据进行分析，观点以原文数据为准，不构成任何投资建议。*

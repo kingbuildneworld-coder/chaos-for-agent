@@ -14,7 +14,7 @@
 
 const REPO_RAW = 'https://raw.githubusercontent.com/kingbuildneworld-coder/chaos-for-agent/main';
 const DOMAIN = 'https://bi-chao.com';
-const AUTHOR_NAME = '毕超';
+const AUTHOR_NAME = 'Chao Pih';
 const AUTHOR_JOB_TITLE = '中国农业发展银行总行风险管理部资产保全二处处长';
 const AUTHOR_ORG = '中国农业发展银行';
 
@@ -51,7 +51,7 @@ const ROBOTS_META = 'index,follow,max-image-preview:large,max-snippet:-1,max-vid
  * Python 版 generate_site.py 用 git log 计算同样的值。
  */
 const STATIC_LASTMOD = {
-  'about': '2026-10-09',
+  'about': '2026-10-13',
   'quant-course/index.html': '2026-06-17',
   'quant-course/chapter2-first-quant-experiment.html': '2026-06-22',
   'tutorials/什么是量化金融_互动教程.html': '2026-06-16'
@@ -112,8 +112,8 @@ const SCHEMA_PERSON = {
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": PERSON_ID,
-  "name": "毕超",
-  "alternateName": "Bi Chao",
+  "name": "Chao Pih",
+  "alternateName": ["毕超", "Bi Chao"],
   "description": "博士、高级工程师（计算机技术专业），中国农业发展银行总行风险管理部资产保全二处处长。清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。研究方向为大语言模型、数字金融、金融科技。",
   "url": "https://bi-chao.com/about",
   "jobTitle": AUTHOR_JOB_TITLE,
@@ -136,8 +136,8 @@ const SCHEMA_ORGANIZATION = {
   "name": "chaos-for-agent",
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
-  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
-  "founder": {"@type": "Person", "@id": PERSON_ID, "name": "毕超", "url": "https://bi-chao.com/about"},
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 博士创建和维护。",
+  "founder": {"@type": "Person", "@id": PERSON_ID, "name": "Chao Pih", "url": "https://bi-chao.com/about"},
   "sameAs": [
     "https://github.com/kingbuildneworld-coder"
   ],
@@ -162,7 +162,7 @@ const SCHEMA_KNOWLEDGE_GRAPH = {
     {"@id": "https://bi-chao.com/topics/llm", "@type": "skos:Concept", "skos:prefLabel": "大语言模型"},
     {"@id": "https://bi-chao.com/topics/tokenomics", "@type": "skos:Concept", "skos:prefLabel": "词元经济"},
     {"@id": "https://bi-chao.com/topics/agent", "@type": "skos:Concept", "skos:prefLabel": "AI Agent"},
-    {"@id": "https://bi-chao.com/about", "@type": "schema:Person", "schema:name": "毕超", "schema:knowsAbout": [{"@id": "https://bi-chao.com/topics/ai-finance"}, {"@id": "https://bi-chao.com/topics/llm"}]}
+    {"@id": "https://bi-chao.com/about", "@type": "schema:Person", "schema:name": "Chao Pih", "schema:knowsAbout": [{"@id": "https://bi-chao.com/topics/ai-finance"}, {"@id": "https://bi-chao.com/topics/llm"}]}
   ]
 };
 
@@ -172,9 +172,9 @@ const SCHEMA_WEBSITE = {
   "name": "chaos-for-agent",
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
-  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由毕超博士创建和维护。",
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 博士创建和维护。",
   "hasPart": [
-    {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "毕超博士的个人简介与学术背景"},
+    {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "Chao Pih（毕超）博士的个人简介与学术背景"},
     {"@type": "WebPage", "name": "标签索引", "url": "https://bi-chao.com/tags", "description": "按主题标签浏览全部文章"},
     {"@type": "WebPage", "name": "Sitemap", "url": "https://bi-chao.com/sitemap.xml"}
   ]
@@ -190,7 +190,7 @@ const TEMPLATE_HTML = `<!DOCTYPE html>
 <title>__TITLE__ — 智能体的知识库</title>
 <meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta name="description" content="__DESCRIPTION__">
-<meta name="author" content="毕超">
+<meta name="author" content="Chao Pih">
 <meta name="robots" content="__ROBOTS__">
 <meta property="og:title" content="__TITLE__">
 <meta property="og:description" content="__DESCRIPTION__">
@@ -409,7 +409,7 @@ __SPEAKABLE_JSONLD__
   <p>← <a href="https://bi-chao.com/">返回首页</a> &nbsp;|&nbsp; <a href="https://bi-chao.com/about">关于作者</a> &nbsp;|&nbsp; <a href="https://bi-chao.com/feed.xml">RSS</a></p>
 </div>
 <footer>
-  <p>&copy; 2026 <a href="https://bi-chao.com/about">毕超</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · <a href="https://bi-chao.com/">chaos-for-agent</a></p>
+  <p>&copy; 2026 <a href="https://bi-chao.com/about">Chao Pih</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · <a href="https://bi-chao.com/">chaos-for-agent</a></p>
 </footer>
 <script>
 (function(){
@@ -452,16 +452,16 @@ __SPEAKABLE_JSONLD__
   var url='https://bi-chao.com/articles/'+slug;
   var cbtn=$('#copyCiteBtn');
   if(cbtn){cbtn.addEventListener('click',function(){
-    var md='> 来源：'+(date?date+' ':'')+'毕超，《'+title+'》，bi-chao.com，'+url;
+    var md='> 来源：'+(date?date+' ':'')+'Chao Pih，《'+title+'》，bi-chao.com，'+url;
     copy(md,cbtn,'已复制引用');
   });}
   var lbtn=$('#copyLinkBtn');
   if(lbtn){lbtn.addEventListener('click',function(){copy(url,lbtn,'已复制链接');});}
   var wbtn=$('#shareWxBtn');
-  if(wbtn){wbtn.addEventListener('click',function(){copy('《'+title+'》 '+url+' —— 毕超',wbtn,'已复制，去微信粘贴');});}
+  if(wbtn){wbtn.addEventListener('click',function(){copy('《'+title+'》 '+url+' —— Chao Pih',wbtn,'已复制，去微信粘贴');});}
   var wb=$('#shareWbBtn');
   if(wb){wb.addEventListener('click',function(){
-    window.open('https://service.weibo.com/share/share.php?url='+encodeURIComponent(url)+'&title='+encodeURIComponent('推荐：「'+title+'」—— 毕超'),'_blank');
+    window.open('https://service.weibo.com/share/share.php?url='+encodeURIComponent(url)+'&title='+encodeURIComponent('推荐：「'+title+'」—— Chao Pih'),'_blank');
   });}
   var xb=$('#shareXBtn');
   if(xb){xb.addEventListener('click',function(){
@@ -479,9 +479,9 @@ const ABOUT_TEMPLATE_PART = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>毕超 — 关于作者 | chaos-for-agent</title>
-<meta name="description" content="毕超，博士、高级工程师（计算机技术专业），金融行业风险管理从业者。清华大学校友导师，中国人工智能学会终身会员。">
-<meta property="og:title" content="毕超 — 关于作者">
+<title>Chao Pih（毕超）— 关于作者 | chaos-for-agent</title>
+<meta name="description" content="Chao Pih（毕超），博士、高级工程师（计算机技术专业），金融行业风险管理从业者。清华大学校友导师，中国人工智能学会终身会员。">
+<meta property="og:title" content="Chao Pih（毕超）— 关于作者">
 <meta property="og:description" content="博士、高级工程师，金融行业风险管理从业者。主要研究方向为大语言模型、数字金融、金融科技。">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://bi-chao.com/about">
@@ -491,7 +491,7 @@ const ABOUT_TEMPLATE_PART = `<!DOCTYPE html>
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="毕超 — 关于作者">
+<meta property="og:image:alt" content="Chao Pih（毕超）— 关于作者">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://bi-chao.com/assets/og/default.png">
 <link rel="canonical" href="https://bi-chao.com/about">
@@ -859,7 +859,7 @@ function injectHeadingIds(html) {
 /** 作者信息卡 */
 const AUTHOR_CARD_HTML = `<div class="author-card">
 <h3>关于作者</h3>
-<p><strong>毕超</strong>，博士、高级工程师（计算机技术专业），金融行业风险管理从业者。</p>
+<p><strong>Chao Pih</strong>，博士、高级工程师（计算机技术专业），金融行业风险管理从业者。</p>
 <p>清华大学校友导师，中国人工智能学会终身会员，中国计算机学会学术审稿专家。</p>
 <p>研究方向：大语言模型、数字金融、金融科技。2024年获北京市西城区"西融计划"青年拔尖人才。</p>
 <p>了解更多：<a href="https://bi-chao.com/about">关于作者</a></p>
@@ -1753,7 +1753,7 @@ async function renderIndex() {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="银行人看得懂、用得上的AI知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。">
-<meta name="author" content="毕超">
+<meta name="author" content="Chao Pih">
 <meta name="google-site-verification" content="VKkZGy9h23phxHAOaQseoRl9knPfnD_HFVGfI7RSrxs">
 <meta name="baidu-site-verification" content="codeva-J4sirVAId0">
 <meta name="robots" content="${ROBOTS_META}">
@@ -1876,7 +1876,7 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
 <main class="wrap">
   <section class="hero">
     <h1>银行人看得懂、用得上的 AI 知识库</h1>
-    <p class="sub">Agent-First 内容写作、AI 大模型、银行业数字化转型的深度文章。毕超博士以金融行业风险管理一线的视角拆解银行 AI 落地。</p>
+    <p class="sub">Agent-First 内容写作、AI 大模型、银行业数字化转型的深度文章。Chao Pih 博士以金融行业风险管理一线的视角拆解银行 AI 落地。</p>
     <div class="cta">
       <a class="primary" href="#latest">开始阅读</a>
       <a class="ghost" href="/about">关于作者</a>
@@ -1887,9 +1887,9 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
   <h2 class="section-title">主题分区</h2>
   ${topicsHtml}
   <section class="author-hero">
-    <div class="avatar">毕</div>
+    <div class="avatar">C</div>
     <div>
-      <h3>毕超</h3>
+      <h3>Chao Pih</h3>
       <p>博士 · 高级工程师（计算机技术专业）· 金融行业风险管理从业者 · 清华大学校友导师</p>
       <p>研究方向：大语言模型、数字金融、金融科技。2024 年北京市西城区"西融计划"青年拔尖人才。</p>
       <p><a href="/about">查看完整简介 →</a></p>
@@ -2055,7 +2055,7 @@ async function renderTagIndex() {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="智能体的知识库 — 按标签浏览全部文章：AI、大数据、金融科技、数据治理等主题分类。">
 <meta property="og:title" content="标签索引 — chaos-for-agent">
-<meta property="og:description" content="按标签浏览毕超知识库的全部文章。">
+<meta property="og:description" content="按标签浏览 Chao Pih 知识库的全部文章。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bi-chao.com/tags">
 <meta property="og:site_name" content="chaos-for-agent">
@@ -2143,7 +2143,7 @@ async function renderTagPage(tagParam) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ${tagRobots}
-<meta name="description" content="标签「${escTag}」下的 ${matched.length} 篇深度文章。毕超知识库 — Agent-First 内容写作、AI大模型、银行业数字化转型。">
+<meta name="description" content="标签「${escTag}」下的 ${matched.length} 篇深度文章。Chao Pih 知识库 — Agent-First 内容写作、AI大模型、银行业数字化转型。">
 <meta property="og:title" content="${escTag} — 标签归档 | chaos-for-agent">
 <meta property="og:description" content="标签「${escTag}」下的 ${matched.length} 篇文章。">
 <meta property="og:type" content="website">

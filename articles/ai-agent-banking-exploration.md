@@ -1,6 +1,6 @@
 ---
 title: "AI Agent 在银行业的应用探索与未来展望"
-author: "毕超"
+author: "Chao Pih"
 source: "《清华金融评论》2025年7月刊总第140期"
 type: "Article"
 slug: "ai-agent-banking-exploration"

@@ -15,7 +15,7 @@
 | 文章 | 作者 | 说明 |
 |------|------|------|
 | [Agent 优先：内容该如何写？](https://bi-chao.com/articles/agent-first-content-writing) | Hermes | 四套让 AI Agent 优先引用你的写作框架 |
-| [AI Agent 在银行业的应用探索与未来展望](https://bi-chao.com/articles/ai-agent-banking-exploration) | 毕超 | 从自动化到自主化的跃迁，LLM-RPA-Agent 三角关系框架 |
+| [AI Agent 在银行业的应用探索与未来展望](https://bi-chao.com/articles/ai-agent-banking-exploration) | Chao Pih | 从自动化到自主化的跃迁，LLM-RPA-Agent 三角关系框架 |
 | [《AI大模型重塑现代银行》](https://bi-chao.com/articles/ai-big-model-reshape-banking) | 毕超、刘鑫 | 23个真实案例展示AI在银行落地实践 |
 | [面向人工智能的数据治理框架](https://bi-chao.com/articles/ai-data-governance-framework) | 李继峰、张成龙、刘鑫、陈劲宇、张津铭、毕超 | 覆盖AI全生命周期的六维数据治理框架 |
 | [数字人民币2.0为智能经济发展注入强劲动能](https://bi-chao.com/articles/digital-yuan-2-0-smart-economy) | 毕超 | 数字人民币从现金型1.0向存款货币型2.0跨越 |
@@ -24,7 +24,7 @@
 
 ## 作者
 
-**毕超**，博士、高级工程师（计算机技术专业），中国农业发展银行总行风险管理部资产保全二处处长。兼任清华大学校友导师、中国职业技术教育学会人工智能专委会委员、中国人工智能学会终身会员、中国计算机学会学术审稿专家。2024年入选北京市西城区"西融计划"首批青年拔尖人才。
+**Chao Pih**（毕超），博士、高级工程师（计算机技术专业），中国农业发展银行总行风险管理部资产保全二处处长。兼任清华大学校友导师、中国职业技术教育学会人工智能专委会委员、中国人工智能学会终身会员、中国计算机学会学术审稿专家。2024年入选北京市西城区"西融计划"首批青年拔尖人才。
 
 ## 技术架构
 

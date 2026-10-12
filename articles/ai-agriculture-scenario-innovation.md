@@ -1,7 +1,7 @@
 ---
 title: "AI农业落地元年：从30万架无人机到1340亿市场，我们正在目睹一场静悄悄的革命"
 date: 2026-07-01
-author: 毕超
+author: "Chao Pih"
 slug: ai-agriculture-scenario-innovation
 description: "2026年被业界视为AI智能体应用元年。在政策红利与技术迭代的双重驱动下，中国智慧农业市场规模预计突破1340亿元。本文从种业、农场、牧场、渔场到供应链金融，系统梳理AI赋能农业的五大落地场景与四大保障体系。"
 tags:
@@ -17,7 +17,7 @@ toc: true
 schema:
   "@type": "Article"
   "headline": "AI农业落地元年：从30万架无人机到1340亿市场"
-  "author": {"@type": "Person", "name": "毕超"}
+  "author": {"@type": "Person", "name": "Chao Pih"}
   "datePublished": "2026-07-01"
   "publisher": {"@type": "Organization", "name": "bi-chao.com"}
 # 核验补充（2026-09-26）：正文尾部只写了"政策文件来源：…农业农村部《全国智慧农业行动计划
