@@ -1,9 +1,9 @@
 {
   "name": "chaos-for-agent",
   "domain": "bi-chao.com",
-  "description": "毕超的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。采用 Agent-First 架构构建，支持 AI Agent 直接读取和引用。",
+  "description": "Chao Pih 的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。采用 Agent-First 架构构建，支持 AI Agent 直接读取和引用。",
   "author": {
-    "name": "毕超",
+    "name": "Chao Pih",
     "title": "博士、高级工程师",
     "organization": "金融行业",
     "url": "https://bi-chao.com/about"

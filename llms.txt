@@ -1,7 +1,7 @@
 # chaos-for-agent — 智能体的知识库
 
 > 面向 AI Agent 与搜索优化的知识站点。主题：Agent-First 内容写作、AI大模型、银行业数字化转型。
-> 作者：毕超，中国农业发展银行总行风险管理部资产保全二处处长，清华大学校友。
+> 作者：Chao Pih，中国农业发展银行总行风险管理部资产保全二处处长，清华大学校友。
 > 说明：本文件遵循 llms.txt 约定，主要服务 coding agent 与文档消费者。
 > Google 官方明确表示 Search 不使用 llms.txt —— 请不要把它当作提升
 > AI Overviews 收录的手段；进入 Google 的路径始终是 sitemap + Googlebot。
