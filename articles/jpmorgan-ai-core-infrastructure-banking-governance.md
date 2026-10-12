@@ -204,7 +204,7 @@ A6：补“证据链”这一块。具体而言，先把模型清单与分级做
 - 《智能体爬过那道篱笆：首例 AI 自主入侵政府网站事件，给银行 AI 治理划出三条硬边界》，https://bi-chao.com/articles/ai-agent-breach-australia-bank-ai-governance
 - 《判断力前移十年：AI 接管基础工作后，金融风险管理先迎来的不是替代而是断代》，https://bi-chao.com/articles/ai-judgment-scarcity-financial-risk
 
-（作者：金融行业风险管理从业者）
+（作者：前沿人工智能探索者）
 
 <script type="application/ld+json">
 {
@@ -215,7 +215,7 @@ A6：补“证据链”这一块。具体而言，先把模型清单与分级做
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "description": "金融行业风险管理从业者"
+    "description": "前沿人工智能探索者"
   },
   "about": [
     "人工智能",
