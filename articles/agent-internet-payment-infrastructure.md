@@ -208,7 +208,7 @@ A: **不能平移。** 本文证据主要来自零售与 API 微支付。而 Gar
 
 ---
 
-*作者 Chao Pih，金融行业风险管理从业者。本文仅代表作者个人观点，不构成任何机构立场。*
+*作者 Chao Pih，前沿人工智能探索者。本文仅代表作者个人观点，不构成任何机构立场。*
 
 <script type="application/ld+json">
 {
@@ -221,7 +221,7 @@ A: **不能平移。** 本文证据主要来自零售与 API 微支付。而 Gar
   "author": {
     "@type": "Person",
     "name": "Chao Pih",
-    "jobTitle": "金融行业风险管理从业者"
+    "jobTitle": "前沿人工智能探索者"
   }
 }
 </script>
