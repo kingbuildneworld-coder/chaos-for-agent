@@ -135,7 +135,7 @@ Q: 银行现在应该怎么起步？
 
 "银行还需要软件工程师吗"的答案，既不是"需要"也不是"不需要"，而是"需要一种双内核的工程师"：**传统工程纪律（确定性、可审计、可回滚）做底座，智能体杠杆（意图工程、编排、可观测、治理）做放大器**。论文说对了新范式与新角色，但它对金融级系统真正有用的启示只剩一句：变的是外围 30% 的方法与工具，核心 70% 的工程本质，在银行反而前所未有地重要。
 
-**作者：金融行业风险管理从业者**
+**作者：前沿人工智能探索者**
 
 > 附：主要事实来源——论文《Agentic Software: How AI Agents Are Restructuring the Software Paradigm》，arXiv:2606.05608（v2，2026-06-10，Zhenfeng Cao）；SWE-bench Verified、EvoClaw（arXiv:2603.13428）、LangChain《Agentic Engineering: How Swarms of AI Agents Are Redefining Software Engineering》（2026-04）等论文内引用基准。本文分析基于论文公开全文，银行侧论断为作者基于行业公开实践的分析推断，非论文结论。
 *（内容由AI生成，仅供参考）*
