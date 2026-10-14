@@ -89,7 +89,6 @@ function buildPersonNode() {
     '@type': 'Person',
     '@id': PERSON_ID,
     'name': AUTHOR_NAME,
-    'url': `${DOMAIN}/about`,
     'jobTitle': AUTHOR_JOB_TITLE,
     'sameAs': PERSON_SAME_AS
   };
@@ -109,7 +108,6 @@ const SCHEMA_PERSON = {
   "name": "Chao Pih",
   "alternateName": ["毕超", "Bi Chao"],
   "description": "前沿人工智能探索者。研究方向为大语言模型、数字金融、金融科技。",
-  "url": "https://bi-chao.com/about",
   "jobTitle": AUTHOR_JOB_TITLE,
   "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理"],
   "sameAs": PERSON_SAME_AS
@@ -122,8 +120,7 @@ const SCHEMA_ORGANIZATION = {
   "name": "chaos-for-agent",
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
-  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 创建和维护。",
-  "founder": {"@type": "Person", "@id": PERSON_ID, "name": "Chao Pih", "url": "https://bi-chao.com/about"},
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。采用 Agent-First 架构构建。",
   "sameAs": [
     "https://github.com/kingbuildneworld-coder"
   ],
@@ -143,8 +140,7 @@ const SCHEMA_KNOWLEDGE_GRAPH = {
     {"@id": "https://bi-chao.com/topics/fintech", "@type": "skos:Concept", "skos:prefLabel": "金融科技"},
     {"@id": "https://bi-chao.com/topics/llm", "@type": "skos:Concept", "skos:prefLabel": "大语言模型"},
     {"@id": "https://bi-chao.com/topics/tokenomics", "@type": "skos:Concept", "skos:prefLabel": "词元经济"},
-    {"@id": "https://bi-chao.com/topics/agent", "@type": "skos:Concept", "skos:prefLabel": "AI Agent"},
-    {"@id": "https://bi-chao.com/about", "@type": "schema:Person", "schema:name": "Chao Pih", "schema:knowsAbout": [{"@id": "https://bi-chao.com/topics/ai-finance"}, {"@id": "https://bi-chao.com/topics/llm"}]}
+    {"@id": "https://bi-chao.com/topics/agent", "@type": "skos:Concept", "skos:prefLabel": "AI Agent"}
   ]
 };
 
@@ -154,9 +150,8 @@ const SCHEMA_WEBSITE = {
   "name": "chaos-for-agent",
   "alternateName": "智能体的知识库",
   "url": "https://bi-chao.com",
-  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。由 Chao Pih 创建和维护。",
+  "description": "Agent-First 内容写作、AI大模型、银行业数字化转型深度文章知识库。采用 Agent-First 架构构建。",
   "hasPart": [
-    {"@type": "WebPage", "name": "关于作者", "url": "https://bi-chao.com/about", "description": "Chao Pih（毕超）的个人简介与著作"},
     {"@type": "WebPage", "name": "标签索引", "url": "https://bi-chao.com/tags", "description": "按主题标签浏览全部文章"},
     {"@type": "WebPage", "name": "Sitemap", "url": "https://bi-chao.com/sitemap.xml"}
   ]
@@ -361,7 +356,6 @@ __SPEAKABLE_JSONLD__
     <a href="https://bi-chao.com/">首页</a>
     <a href="https://bi-chao.com/tags">标签</a>
     <a href="https://bi-chao.com/faq">FAQ</a>
-    <a href="https://bi-chao.com/about">关于</a>
     <button class="theme-toggle" id="themeToggle" type="button">主题</button>
   </div>
 </nav>
@@ -388,10 +382,10 @@ __SPEAKABLE_JSONLD__
 <div class="related-nav">
   __PREV_NEXT__
   __RELATED__
-  <p>← <a href="https://bi-chao.com/">返回首页</a> &nbsp;|&nbsp; <a href="https://bi-chao.com/about">关于作者</a> &nbsp;|&nbsp; <a href="https://bi-chao.com/feed.xml">RSS</a></p>
+  <p>← <a href="https://bi-chao.com/">返回首页</a> &nbsp;|&nbsp; <a href="https://bi-chao.com/feed.xml">RSS</a></p>
 </div>
 <footer>
-  <p>&copy; 2026 <a href="https://bi-chao.com/about">Chao Pih</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · <a href="https://bi-chao.com/">chaos-for-agent</a></p>
+  <p>&copy; 2026 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · <a href="https://bi-chao.com/">chaos-for-agent</a></p>
 </footer>
 <script>
 (function(){
@@ -838,13 +832,6 @@ function injectHeadingIds(html) {
   });
 }
 
-/** 作者信息卡 */
-const AUTHOR_CARD_HTML = `<div class="author-card">
-<h3>关于作者</h3>
-<p><strong>Chao Pih</strong>，前沿人工智能探索者。</p>
-<p>研究方向：大语言模型、数字金融、金融科技。</p>
-<p>了解更多：<a href="https://bi-chao.com/about">关于作者</a></p>
-</div>`;
 
 /** 上/下篇导航 */
 function getPrevNext(articles, currentSlug) {
@@ -1663,7 +1650,7 @@ async function renderArticle(pathname, request, explicitMd) {
       TAGS: tagsHtml,
       CONTENT: contentHtml,
       TOC: tocHtml,
-      AUTHOR_CARD: AUTHOR_CARD_HTML,
+      AUTHOR_CARD: '',
       PREV_NEXT: prevNextHtml,
       RELATED: relatedHtml,
       FAQ: faqHtml,
@@ -1849,7 +1836,6 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
     <a href="/tags">标签</a>
     <a href="/faq">FAQ</a>
     <a href="/quant-course/index.html">教程</a>
-    <a href="/about">关于</a>
     <a href="/feed.xml">RSS</a>
     <button class="theme-toggle" id="themeToggle" type="button">主题</button>
   </div>
@@ -1857,28 +1843,18 @@ ${JSON.stringify(SCHEMA_KNOWLEDGE_GRAPH)}
 <main class="wrap">
   <section class="hero">
     <h1>银行人看得懂、用得上的 AI 知识库</h1>
-    <p class="sub">Agent-First 内容写作、AI 大模型、银行业数字化转型的深度文章。Chao Pih 以前沿人工智能探索者的视角拆解银行 AI 落地。</p>
+    <p class="sub">Agent-First 内容写作、AI 大模型、银行业数字化转型的深度文章，拆解银行 AI 落地。</p>
     <div class="cta">
       <a class="primary" href="#latest">开始阅读</a>
-      <a class="ghost" href="/about">关于作者</a>
     </div>
   </section>
   <h2 class="section-title" id="latest">最新文章</h2>
   <div class="grid">${featured}</div>
   <h2 class="section-title">主题分区</h2>
   ${topicsHtml}
-  <section class="author-hero">
-    <div class="avatar">C</div>
-    <div>
-      <h3>Chao Pih</h3>
-      <p>前沿人工智能探索者</p>
-      <p>研究方向：大语言模型、数字金融、金融科技。</p>
-      <p><a href="/about">查看完整简介 →</a></p>
-    </div>
-  </section>
 </main>
 <footer class="wrap">
-  共 ${articles.length} 篇文章 · <a href="/tags/AI%E5%89%8D%E7%9E%BB">AI前瞻</a> · <a href="/about">关于作者</a> · <a href="/feed.xml">RSS</a> · <a href="/ai-manifest.json">AI Manifest</a>
+  共 ${articles.length} 篇文章 · <a href="/tags/AI%E5%89%8D%E7%9E%BB">AI前瞻</a> · <a href="/feed.xml">RSS</a> · <a href="/ai-manifest.json">AI Manifest</a>
 </footer>
 <script>
 (function(){
@@ -1920,7 +1896,6 @@ async function renderSitemap() {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
   xml += url(`${DOMAIN}/`, 'weekly', '1.0', edate);
-  xml += url(`${DOMAIN}/about`, 'monthly', '0.6', STATIC_LASTMOD['about'] || edate);
 
   for (const a of articles) {
     xml += url(`${DOMAIN}/articles/${a.slug}`, 'monthly', '0.8', a.updated || a.date || edate);
@@ -1970,7 +1945,6 @@ async function renderLlms() {
 
 ## Site Map
 - Home: ${DOMAIN}/
-- About: ${DOMAIN}/about
 - Tags: ${DOMAIN}/tags
 - Tutorials: ${DOMAIN}/tutorials/${encodeURIComponent('什么是量化金融_互动教程.html')}
 - Quant course: ${DOMAIN}/quant-course/index.html
@@ -2060,7 +2034,7 @@ ${JSON.stringify(SCHEMA_WEBSITE)}
 <h1>标签索引</h1>
 <p style="color:#555;margin-bottom:24px;">共 ${tagNames.length} 个标签，${articles.length} 篇文章</p>
 <ul>${tagList}</ul>
-<footer>← <a href="/">返回首页</a> · <a href="/about">关于作者</a> · <a href="/feed.xml">RSS</a></footer>
+<footer>← <a href="/">返回首页</a> · <a href="/feed.xml">RSS</a></footer>
 </body>
 </html>`;
 
@@ -2151,7 +2125,7 @@ ${JSON.stringify(collectionPageLd)}
 <h1>标签：${tag}</h1>
 <p style="color:#555;margin-bottom:24px;">共 ${matched.length} 篇文章</p>
 <ul>${listItems}</ul>
-<footer>← <a href="/">返回首页</a> · <a href="/tags">标签索引</a> · <a href="/about">关于作者</a></footer>
+<footer>← <a href="/">返回首页</a> · <a href="/tags">标签索引</a></footer>
 </body>
 </html>`;
 
@@ -2663,7 +2637,6 @@ async function renderNotFound(path) {
 <ul>
   <li><a href="/">首页（全部文章）</a></li>
   <li><a href="/tags">标签索引</a></li>
-  <li><a href="/about">关于作者</a></li>
   <li>站内搜索：<code>/search?q=关键词</code></li>
 </ul>
 ${recent ? `<p>最新文章：</p><ul>${recent}</ul>` : ''}
@@ -2694,7 +2667,7 @@ export default {
     }
     if (p === '/ai-manifest.json') return proxyFile('/ai-manifest.json', 'application/json', 300);
     if (p === '/feed.xml') return proxyFile('/feed.xml', 'application/atom+xml', 300);
-    if (p === '/about' || p === '/about/') return renderAbout();
+    if (p === '/about' || p === '/about/' || p === '/about.md') return Response.redirect(`${DOMAIN}/`, 301);
     if (p === '/faq') return renderFaqPage();  // B3: FAQ 聚合页
 
     // 动态 OG 生成端点（兜底用途）。
