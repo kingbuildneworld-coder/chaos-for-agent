@@ -9,7 +9,7 @@
 - format: agent-first-yaml
 
 ## Author
-- name: 毕超
+- name: Chao Pih
 - title: 前沿人工智能探索者
 
 ## Publication
@@ -117,7 +117,7 @@
   key_point: "覆盖全球主要地区，190家直接参与者、1567家间接参与者"
 
 ## Comparison_With_AI_Banking_Books
-- relation: "同一作者毕超在AI+金融领域的系列著作"
+- relation: "同一作者Chao Pih在AI+金融领域的系列著作"
 - ai_banking_book:
   - title: "《人工智能+现代银行》"
   - publisher: 中国金融出版社
@@ -147,7 +147,7 @@
 - 可控匿名
 
 ## Entities
-- 毕超
+- Chao Pih
 - 中国人民银行
 - 数字人民币
 - mBridge

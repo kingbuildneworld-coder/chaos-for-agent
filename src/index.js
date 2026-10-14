@@ -106,8 +106,7 @@ const SCHEMA_PERSON = {
   "@type": "Person",
   "@id": PERSON_ID,
   "name": "Chao Pih",
-  "alternateName": ["毕超", "Bi Chao"],
-  "description": "前沿人工智能探索者。研究方向为大语言模型、数字金融、金融科技。",
+    "description": "前沿人工智能探索者。研究方向为大语言模型、数字金融、金融科技。",
   "jobTitle": AUTHOR_JOB_TITLE,
   "knowsAbout": ["大语言模型", "数字金融", "金融科技", "人工智能", "银行业数字化转型", "数据治理"],
   "sameAs": PERSON_SAME_AS
@@ -455,9 +454,9 @@ const ABOUT_TEMPLATE_PART = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chao Pih（毕超）— 关于作者 | chaos-for-agent</title>
-<meta name="description" content="Chao Pih（毕超），前沿人工智能探索者。研究方向为大语言模型、数字金融、金融科技。">
-<meta property="og:title" content="Chao Pih（毕超）— 关于作者">
+<title>Chao Pih— 关于作者 | chaos-for-agent</title>
+<meta name="description" content="Chao Pih，前沿人工智能探索者。研究方向为大语言模型、数字金融、金融科技。">
+<meta property="og:title" content="Chao Pih— 关于作者">
 <meta property="og:description" content="前沿人工智能探索者。主要研究方向为大语言模型、数字金融、金融科技。">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://bi-chao.com/about">
@@ -467,7 +466,7 @@ const ABOUT_TEMPLATE_PART = `<!DOCTYPE html>
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Chao Pih（毕超）— 关于作者">
+<meta property="og:image:alt" content="Chao Pih— 关于作者">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://bi-chao.com/assets/og/default.png">
 <link rel="canonical" href="https://bi-chao.com/about">
