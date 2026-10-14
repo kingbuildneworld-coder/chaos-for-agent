@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (148)
+## Articles (149)
 
+- [DeepSeek Harness 解析：插件化智能体运行时如何用于银行风险管理](https://bi-chao.com/articles/deepseek-harness-bank-risk-management)
+  - Description: DeepSeek 于 2026 年 8 月 13 日开源智能体运行时 DeepSeek Harness（dsh），以“万物皆插件”架构把模型、工具、会话日志与智能体循环都做成可替换插件，并以“模型可见即已记录”保证可审计。本文梳理其功能与特点，分析在信贷、反洗钱、合规、市场风险与模型风险管理中的落地场景，并提出银行部署前必须完成的改造与优化。
+  - Date: 2026-10-14
+  - Tags: DeepSeek Harness, 智能体, 银行风险管理, 反洗钱, 模型风险管理, 金融科技, 银行AI, 数据安全
 - [新加坡 MAS 落地 AI 风险管理指引：四大期望、一年过渡期与全球四大监管框架横向对照](https://bi-chao.com/articles/mas-ai-risk-management-guidelines-2026)
   - Description: 新加坡金管局（MAS）于2026年10月7日发布《人工智能风险管理指引》，适用于所有金融机构与全部AI形态（含生成式与智能体），2027年10月7日生效、分阶段至2028年10月。本文逐条拆解四大监督期望（董事会高管监督、全生命周期管理与AI用例清单、第三方AI问责、风险比例化），梳理配套手册与SAFR，并与中国金发8号文、美国SR 26-2、欧盟AI Act横向对照，给出银行跨境合规建议。
   - Date: 2026-10-10
@@ -608,16 +612,16 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 52 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 40 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 35 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 36 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 银行AI: 30 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 29 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 银行AI: 29 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 14 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 数字化转型: 13 articles → https://bi-chao.com/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B
+- 模型风险管理: 13 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
