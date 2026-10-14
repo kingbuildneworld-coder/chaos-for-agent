@@ -18,6 +18,77 @@
     "schema_type": "Article"
   },
   {
+    "title": "大额支付系统今起延长运行时间：当清算窗口向夜间再开一个半小时，银行要补齐的智能风控、流动性与运维短板",
+    "slug": "hvps-extended-hours-intelligent-clearing-bank-risk",
+    "url": "/articles/hvps-extended-hours-intelligent-clearing-bank-risk.md",
+    "description": "据央行清算总中心通知（银办发〔2026〕108号），2026年10月17日起大额支付系统运行时间由5×21+12小时延长至5×22.5+13.5小时，工作日开窗由前一日20:30提前至19:00。本文厘清此次延长的是逐笔全额结算的大额系统、非零售支付7×24，从银行风险管理视角分析对夜间流动性、大额反欺诈、清算运维与跨境互操作的压力，提出智能头寸、7×24实时风控、AIOps与自动对账的落地清单。",
+    "date": "2026-10-14",
+    "tags": [
+      "大额支付系统",
+      "支付清算",
+      "智能运维",
+      "流动性管理",
+      "反欺诈",
+      "智能体",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "微软 Maia 300 与推理算力的自造时代：当每兆瓦 token 成为新硬通货，银行的算力战略要重算什么",
+    "slug": "microsoft-maia-300-inference-chip-banking-compute-strategy",
+    "url": "/articles/microsoft-maia-300-inference-chip-banking-compute-strategy.md",
+    "description": "微软2026年10月12日在OCP峰会发布第三代自研AI芯片Maia 300，专为推理优化，称每兆瓦token产出比主流GPU高40%（预期值、尚无独立验证）、96加速器机架吞吐为上代7倍，计划2027年起多吉瓦部署并作为主要推理系统、以自用为主。本文分析算力竞争从训练转向推理、指标转向tokens/兆瓦的产业含义，以及云厂商自研芯片对银行的供应商锁定、自主可控、能效与采购SLA的影响和应对。",
+    "date": "2026-10-13",
+    "tags": [
+      "Maia300",
+      "自研芯片",
+      "AI推理",
+      "算力",
+      "tokens每兆瓦",
+      "供应商锁定",
+      "自主可控",
+      "银行业"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "51% 的企业 AI 预算正在超支：美国合众银行秋季 CFO 调查里的三本账，与银行的 AI 投入治理",
+    "slug": "usbank-cfo-ai-budget-overrun-bank-finops",
+    "url": "/articles/usbank-cfo-ai-budget-overrun-bank-finops.md",
+    "description": "美国合众银行2026秋季CFO调查（8月调研千名企业财务高管）：69%认为AI投资带来机会、67%称已获正面影响，但51%的组织AI支出超预算（多按用量/token计费），平均仅对41%的AI投资衡量ROI；智能体进入现金预测、反诈等后台，采用率随规模从23%到74%分化。本文从银行作为AI使用方与服务商双重身份，给出FinOps、ROI度量与嵌入式金融的落地建议。",
+    "date": "2026-10-12",
+    "tags": [
+      "AI预算",
+      "FinOps",
+      "智能体",
+      "ROI",
+      "CFO",
+      "现金流预测",
+      "反欺诈",
+      "银行业"
+    ],
+    "schema_type": "Article"
+  },
+  {
+    "title": "当 AI 替你下单：万事达卡 Agent Pay 信任层上线，全球支付业从 KYC 走向 KYA",
+    "slug": "mastercard-agent-pay-kya-bank-payment-risk",
+    "url": "/articles/mastercard-agent-pay-kya-bank-payment-risk.md",
+    "description": "万事达卡2026年9月30日为智能体支付方案Agent Pay上线信任与情报服务，整合身份、意图、行为、欺诈四类信号，推出判断交易是否由AI智能体发起的概率分（现仅美国测试），并以五层信任框架与可验证意图应对授权举证。本文对照中国支付清算协会8月《智能体支付应用自律公约》的了解你的智能体（KYA）机制及英美支付法律，分析银行发卡、收单、反欺诈与争议处理的风控改造。",
+    "date": "2026-10-11",
+    "tags": [
+      "智能体支付",
+      "Agent Pay",
+      "KYA",
+      "万事达卡",
+      "反欺诈",
+      "支付清算",
+      "授权管理",
+      "银行业"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "新加坡 MAS 落地 AI 风险管理指引：四大期望、一年过渡期与全球四大监管框架横向对照",
     "slug": "mas-ai-risk-management-guidelines-2026",
     "url": "/articles/mas-ai-risk-management-guidelines-2026.md",

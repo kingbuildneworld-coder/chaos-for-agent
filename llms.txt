@@ -12,12 +12,28 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (149)
+## Articles (153)
 
 - [DeepSeek Harness 解析：插件化智能体运行时如何用于银行风险管理](https://bi-chao.com/articles/deepseek-harness-bank-risk-management)
   - Description: DeepSeek 于 2026 年 8 月 13 日开源智能体运行时 DeepSeek Harness（dsh），以“万物皆插件”架构把模型、工具、会话日志与智能体循环都做成可替换插件，并以“模型可见即已记录”保证可审计。本文梳理其功能与特点，分析在信贷、反洗钱、合规、市场风险与模型风险管理中的落地场景，并提出银行部署前必须完成的改造与优化。
   - Date: 2026-10-14
   - Tags: DeepSeek Harness, 智能体, 银行风险管理, 反洗钱, 模型风险管理, 金融科技, 银行AI, 数据安全
+- [大额支付系统今起延长运行时间：当清算窗口向夜间再开一个半小时，银行要补齐的智能风控、流动性与运维短板](https://bi-chao.com/articles/hvps-extended-hours-intelligent-clearing-bank-risk)
+  - Description: 据央行清算总中心通知（银办发〔2026〕108号），2026年10月17日起大额支付系统运行时间由5×21+12小时延长至5×22.5+13.5小时，工作日开窗由前一日20:30提前至19:00。本文厘清此次延长的是逐笔全额结算的大额系统、非零售支付7×24，从银行风险管理视角分析对夜间流动性、大额反欺诈、清算运维与跨境互操作的压力，提出智能头寸、7×24实时风控、AIOps与自动对账的落地清单。
+  - Date: 2026-10-14
+  - Tags: 大额支付系统, 支付清算, 智能运维, 流动性管理, 反欺诈, 智能体, 风险管理
+- [微软 Maia 300 与推理算力的自造时代：当每兆瓦 token 成为新硬通货，银行的算力战略要重算什么](https://bi-chao.com/articles/microsoft-maia-300-inference-chip-banking-compute-strategy)
+  - Description: 微软2026年10月12日在OCP峰会发布第三代自研AI芯片Maia 300，专为推理优化，称每兆瓦token产出比主流GPU高40%（预期值、尚无独立验证）、96加速器机架吞吐为上代7倍，计划2027年起多吉瓦部署并作为主要推理系统、以自用为主。本文分析算力竞争从训练转向推理、指标转向tokens/兆瓦的产业含义，以及云厂商自研芯片对银行的供应商锁定、自主可控、能效与采购SLA的影响和应对。
+  - Date: 2026-10-13
+  - Tags: Maia300, 自研芯片, AI推理, 算力, tokens每兆瓦, 供应商锁定, 自主可控, 银行业
+- [51% 的企业 AI 预算正在超支：美国合众银行秋季 CFO 调查里的三本账，与银行的 AI 投入治理](https://bi-chao.com/articles/usbank-cfo-ai-budget-overrun-bank-finops)
+  - Description: 美国合众银行2026秋季CFO调查（8月调研千名企业财务高管）：69%认为AI投资带来机会、67%称已获正面影响，但51%的组织AI支出超预算（多按用量/token计费），平均仅对41%的AI投资衡量ROI；智能体进入现金预测、反诈等后台，采用率随规模从23%到74%分化。本文从银行作为AI使用方与服务商双重身份，给出FinOps、ROI度量与嵌入式金融的落地建议。
+  - Date: 2026-10-12
+  - Tags: AI预算, FinOps, 智能体, ROI, CFO, 现金流预测, 反欺诈, 银行业
+- [当 AI 替你下单：万事达卡 Agent Pay 信任层上线，全球支付业从 KYC 走向 KYA](https://bi-chao.com/articles/mastercard-agent-pay-kya-bank-payment-risk)
+  - Description: 万事达卡2026年9月30日为智能体支付方案Agent Pay上线信任与情报服务，整合身份、意图、行为、欺诈四类信号，推出判断交易是否由AI智能体发起的概率分（现仅美国测试），并以五层信任框架与可验证意图应对授权举证。本文对照中国支付清算协会8月《智能体支付应用自律公约》的了解你的智能体（KYA）机制及英美支付法律，分析银行发卡、收单、反欺诈与争议处理的风控改造。
+  - Date: 2026-10-11
+  - Tags: 智能体支付, Agent Pay, KYA, 万事达卡, 反欺诈, 支付清算, 授权管理, 银行业
 - [新加坡 MAS 落地 AI 风险管理指引：四大期望、一年过渡期与全球四大监管框架横向对照](https://bi-chao.com/articles/mas-ai-risk-management-guidelines-2026)
   - Description: 新加坡金管局（MAS）于2026年10月7日发布《人工智能风险管理指引》，适用于所有金融机构与全部AI形态（含生成式与智能体），2027年10月7日生效、分阶段至2028年10月。本文逐条拆解四大监督期望（董事会高管监督、全生命周期管理与AI用例清单、第三方AI问责、风险比例化），梳理配套手册与SAFR，并与中国金发8号文、美国SR 26-2、欧盟AI Act横向对照，给出银行跨境合规建议。
   - Date: 2026-10-10
@@ -614,13 +630,13 @@
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 40 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 36 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 38 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 银行AI: 30 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 风险管理: 29 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 风险管理: 30 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 银行业: 17 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 银行业: 14 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 模型风险管理: 13 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
