@@ -57,11 +57,10 @@ SCHEMA_TYPES = [
 MANIFEST_META = {
     "name": "chaos-for-agent",
     "domain": "bi-chao.com",
-    "description": "Chao Pih 的知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。采用 Agent-First 架构构建，支持 AI Agent 直接读取和引用。",
+    "description": "AI 知识库：Agent-First 内容写作、AI大模型、银行业数字化转型深度文章。采用 Agent-First 架构构建，支持 AI Agent 直接读取和引用。",
     "author": {
         "name": "Chao Pih",
         "title": "前沿人工智能探索者",
-        "url": f"{DOMAIN}/about",
     },
     "ai_access": {
         "llms_txt": f"{DOMAIN}/llms.txt",
@@ -205,7 +204,6 @@ def gen_feed(articles: list[dict], edate: str) -> str:
         f'  <link href="{DOMAIN}/feed.xml" rel="self" type="application/atom+xml"/>',
         "  <author>",
         "    <name>Chao Pih</name>",
-        f"    <uri>{DOMAIN}/about</uri>",
         "  </author>",
         f'  <generator uri="{DOMAIN}/">chaos-for-agent</generator>',
         "  <rights>CC BY-NC-ND 4.0</rights>",
@@ -242,7 +240,6 @@ def gen_sitemap(articles: list[dict], edate: str) -> str:
         ET.SubElement(u, q("lastmod")).text = mod
 
     add(f"{DOMAIN}/", "weekly", "1.0", edate)
-    add(f"{DOMAIN}/about", "monthly", "0.6", git_date("about.md", edate))
     for a in sorted(articles, key=lambda a: a["slug"]):
         add(f'{DOMAIN}/articles/{a["slug"]}', "monthly", "0.8", a.get("updated") or a["date"] or edate)
     # 静态教程页：lastmod 取该文件最后一次提交日期，而不是"最新文章日期"——
@@ -385,7 +382,6 @@ def gen_llms(articles: list[dict], edate: str) -> str:
         "\n"
         "## Site Map\n"
         f"- Home: {DOMAIN}/\n"
-        f"- About: {DOMAIN}/about\n"
         f"- Tags: {DOMAIN}/tags\n"
         f"- Tutorials: {DOMAIN}/tutorials/{js_encode_uri_component('什么是量化金融_互动教程.html')}\n"
         f"- Quant course: {DOMAIN}/quant-course/index.html\n"
