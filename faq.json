@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-10-10",
-  "scanned_articles": 148,
-  "articles_with_faq": 87,
-  "total_questions": 403,
+  "updated": "2026-10-14",
+  "scanned_articles": 149,
+  "articles_with_faq": 88,
+  "total_questions": 407,
   "items": [
+    {
+      "slug": "deepseek-harness-bank-risk-management",
+      "title": "DeepSeek Harness 解析：插件化智能体运行时如何用于银行风险管理",
+      "url": "https://bi-chao.com/articles/deepseek-harness-bank-risk-management",
+      "date": "2026-10-14",
+      "faqs": [
+        {
+          "question": "DeepSeek Harness 和 DeepSeek 大模型是什么关系？",
+          "answer": "DeepSeek Harness 是包在模型外面的运行时，负责智能体循环、工具、沙箱、会话和界面；模型通过可替换的适配器接入。它既可以接 DeepSeek 官方 API，也可以接第三方模型或本地模型（来源2、来源5）。"
+        },
+        {
+          "question": "银行现在能把 DeepSeek Harness 用在生产环境吗？",
+          "answer": "不建议。官方安全声明明确它尚未接受安全审计，不得视为可用于生产环境的软件（来源4）。本文分析认为，现阶段适合在隔离环境中试点，或作为设计行内智能体平台的架构参照。"
+        },
+        {
+          "question": "它的哪项设计对银行风险管理最有价值？",
+          "answer": "本文分析认为是可审计性：会话日志只追加，且模型看到的一切都必须能从日志重建（来源2）；每次审批都写入一对审计事件，失败一律拒绝（来源3）。这为智能体参与风险研判提供了完整的留痕基础。"
+        },
+        {
+          "question": "部署前最需要先改哪几项默认配置？",
+          "answer": "至少四项：关闭使用官方 API 时默认开启的会话日志上传；补齐读取与网络访问的隔离；不要使用无审批的 `sdk-minimal` Profile；移除会调用外部 API 的 Web 搜索工具（来源5）。"
+        }
+      ]
+    },
     {
       "slug": "altar-open-weight-security-model-bank",
       "title": "4 张 H200 与 60.4% 召回：开源安全大模型 Aikido Altar 的银行内网适配性",
