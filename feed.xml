@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-10T00:00:00Z</updated>
+  <updated>2026-10-14T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/deepseek-harness-bank-risk-management</id>
+    <title>DeepSeek Harness 解析：插件化智能体运行时如何用于银行风险管理</title>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deepseek-harness-bank-risk-management" rel="alternate" type="text/html"/>
+    <summary>DeepSeek 于 2026 年 8 月 13 日开源智能体运行时 DeepSeek Harness（dsh），以“万物皆插件”架构把模型、工具、会话日志与智能体循环都做成可替换插件，并以“模型可见即已记录”保证可审计。本文梳理其功能与特点，分析在信贷、反洗钱、合规、市场风险与模型风险管理中的落地场景，并提出银行部署前必须完成的改造与优化。</summary>
+    <category term="DeepSeek Harness"/>
+    <category term="智能体"/>
+    <category term="银行风险管理"/>
+    <category term="反洗钱"/>
+    <category term="模型风险管理"/>
+    <category term="金融科技"/>
+    <category term="银行AI"/>
+    <category term="数据安全"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/mas-ai-risk-management-guidelines-2026</id>
     <title>新加坡 MAS 落地 AI 风险管理指引：四大期望、一年过渡期与全球四大监管框架横向对照</title>
