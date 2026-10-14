@@ -16,15 +16,15 @@
 |------|------|------|
 | [Agent 优先：内容该如何写？](https://bi-chao.com/articles/agent-first-content-writing) | Hermes | 四套让 AI Agent 优先引用你的写作框架 |
 | [AI Agent 在银行业的应用探索与未来展望](https://bi-chao.com/articles/ai-agent-banking-exploration) | Chao Pih | 从自动化到自主化的跃迁，LLM-RPA-Agent 三角关系框架 |
-| [《AI大模型重塑现代银行》](https://bi-chao.com/articles/ai-big-model-reshape-banking) | 毕超、刘鑫 | 23个真实案例展示AI在银行落地实践 |
-| [面向人工智能的数据治理框架](https://bi-chao.com/articles/ai-data-governance-framework) | 李继峰、张成龙、刘鑫、陈劲宇、张津铭、毕超 | 覆盖AI全生命周期的六维数据治理框架 |
-| [数字人民币2.0为智能经济发展注入强劲动能](https://bi-chao.com/articles/digital-yuan-2-0-smart-economy) | 毕超 | 数字人民币从现金型1.0向存款货币型2.0跨越 |
+| [《AI大模型重塑现代银行》](https://bi-chao.com/articles/ai-big-model-reshape-banking) | Chao Pih、刘鑫 | 23个真实案例展示AI在银行落地实践 |
+| [面向人工智能的数据治理框架](https://bi-chao.com/articles/ai-data-governance-framework) | 李继峰、张成龙、刘鑫、陈劲宇、张津铭、Chao Pih | 覆盖AI全生命周期的六维数据治理框架 |
+| [数字人民币2.0为智能经济发展注入强劲动能](https://bi-chao.com/articles/digital-yuan-2-0-smart-economy) | Chao Pih | 数字人民币从现金型1.0向存款货币型2.0跨越 |
 
 全部文章见 https://bi-chao.com/ 或 https://bi-chao.com/sitemap.xml
 
 ## 作者
 
-**Chao Pih**（毕超），前沿人工智能探索者。
+**Chao Pih**（Chao Pih），前沿人工智能探索者。
 
 ## 技术架构
 
