@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (153)
+## Articles (154)
 
+- [逐段通读新加坡 MAS《人工智能风险管理指引》：六章结构、十三类生命周期控制与草案到终稿的关键转向](https://bi-chao.com/articles/mas-airg-deep-analysis)
+  - Description: 新加坡金管局 2026 年 10 月 7 日发布的《人工智能风险管理指引》共六章。本文逐段通读终稿正文及其脚注，对照 2025 年 11 月咨询稿与意见反馈答复，拆解 AI 定义与“影响测试”、董事会与高管职责、识别—清单—重要性评估三件套、十三类生命周期控制及智能体条款，归纳监管取舍逻辑，并给出银行可执行的落地清单。
+  - Date: 2026-10-15
+  - Tags: 新加坡MAS, AI风险管理, 金融监管, 模型风险管理, 第三方AI, 智能体, 银行AI, 风险管理
 - [DeepSeek Harness 解析：插件化智能体运行时如何用于银行风险管理](https://bi-chao.com/articles/deepseek-harness-bank-risk-management)
   - Description: DeepSeek 于 2026 年 8 月 13 日开源智能体运行时 DeepSeek Harness（dsh），以“万物皆插件”架构把模型、工具、会话日志与智能体循环都做成可替换插件，并以“模型可见即已记录”保证可审计。本文梳理其功能与特点，分析在信贷、反洗钱、合规、市场风险与模型风险管理中的落地场景，并提出银行部署前必须完成的改造与优化。
   - Date: 2026-10-14
@@ -630,14 +634,14 @@
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 40 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 38 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 39 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 大模型: 32 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 银行AI: 30 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 风险管理: 30 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 银行AI: 31 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 风险管理: 31 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 银行业: 17 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 模型风险管理: 13 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 模型风险管理: 14 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
