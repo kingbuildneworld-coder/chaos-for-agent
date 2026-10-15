@@ -1,5 +1,23 @@
 [
   {
+    "title": "逐段通读新加坡 MAS《人工智能风险管理指引》：六章结构、十三类生命周期控制与草案到终稿的关键转向",
+    "slug": "mas-airg-deep-analysis",
+    "url": "/articles/mas-airg-deep-analysis.md",
+    "description": "新加坡金管局 2026 年 10 月 7 日发布的《人工智能风险管理指引》共六章。本文逐段通读终稿正文及其脚注，对照 2025 年 11 月咨询稿与意见反馈答复，拆解 AI 定义与“影响测试”、董事会与高管职责、识别—清单—重要性评估三件套、十三类生命周期控制及智能体条款，归纳监管取舍逻辑，并给出银行可执行的落地清单。",
+    "date": "2026-10-15",
+    "tags": [
+      "新加坡MAS",
+      "AI风险管理",
+      "金融监管",
+      "模型风险管理",
+      "第三方AI",
+      "智能体",
+      "银行AI",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "DeepSeek Harness 解析：插件化智能体运行时如何用于银行风险管理",
     "slug": "deepseek-harness-bank-risk-management",
     "url": "/articles/deepseek-harness-bank-risk-management.md",
