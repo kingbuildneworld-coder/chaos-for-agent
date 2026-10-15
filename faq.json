@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-10-14",
-  "scanned_articles": 153,
-  "articles_with_faq": 88,
-  "total_questions": 407,
+  "updated": "2026-10-15",
+  "scanned_articles": 154,
+  "articles_with_faq": 89,
+  "total_questions": 411,
   "items": [
+    {
+      "slug": "mas-airg-deep-analysis",
+      "title": "逐段通读新加坡 MAS《人工智能风险管理指引》：六章结构、十三类生命周期控制与草案到终稿的关键转向",
+      "url": "https://bi-chao.com/articles/mas-airg-deep-analysis",
+      "date": "2026-10-15",
+      "faqs": [
+        {
+          "question": "MAS 指引什么时候开始适用？",
+          "answer": "指引于 2027 年 10 月 7 日生效。第 3、4 章（治理、识别、清单、重要性评估）自该日起适用，第 5、6 章（生命周期控制、能力建设）须于 2028 年 10 月 7 日前达到（¶1.8）。MAS 同时提示高风险用例的控制应尽早落实（来源5）。"
+        },
+        {
+          "question": "哪些机构可以只执行基础治理政策？",
+          "answer": "只有当所用 AI 表现不佳或不可用，不太可能对机构、客户或其他利益相关方造成重大不利影响时（¶2.3）。典型例子是仅供内部参考、经人工复核后才使用的起草、总结、制图等辅助用途（¶2.4）。"
+        },
+        {
+          "question": "外购的 AI 出了问题，责任在供应商还是银行？",
+          "answer": "指引明确使用第三方 AI 是机构自己的决定，机构承担首要责任（¶5.11）。供应商的自我声明不能替代独立评估；剩余风险超出风险偏好时，机构应限制、暂停或更换供应商。"
+        },
+        {
+          "question": "加了人工复核，能把高风险用例降为低风险吗？",
+          "answer": "不能。据来源5 记载的 MAS 答复，专属于高重要性 AI 的控制按固有风险触发；人工复核影响的是剩余风险能否接受，而不是该用例是否需要独立验证、应急预案等高风险控制。"
+        }
+      ]
+    },
     {
       "slug": "deepseek-harness-bank-risk-management",
       "title": "DeepSeek Harness 解析：插件化智能体运行时如何用于银行风险管理",
