@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-15T00:00:00Z</updated>
+  <updated>2026-10-16T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,34 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/fsb-hkma-agentic-ai-governance-agent-id-kill-switch</id>
+    <title>给每个金融智能体发一张工牌：FSB 12 条稳健实践与香港 ART 框架同日落定，银行如何装上急停键</title>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/fsb-hkma-agentic-ai-governance-agent-id-kill-switch" rel="alternate" type="text/html"/>
+    <summary>2026年10月15日，金融稳定理事会（FSB）发布负责任采用AI的12条稳健实践最终报告，最大升级集中在智能体：每个agent要有唯一标识、行为全程可追溯、风险随权限乘法式放大，配备可一键停机或交还人工的急停键，坚持人类掌控；同日香港金管局推出ART框架（问责、韧性、信任），将建重大智能体登记册、意图锚定问责与干预机制。本文核验两份文件，梳理智能体特有风险与分级监督，结合金发8号文给出落地清单。</summary>
+    <category term="FSB"/>
+    <category term="香港金管局"/>
+    <category term="智能体治理"/>
+    <category term="人类监督"/>
+    <category term="急停键"/>
+    <category term="AI风险管理"/>
+    <category term="金融监管"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/agentic-os-financial-agent-bank-entry-strategy</id>
+    <title>当金融智能体住进手机操作系统：STEPX Neo 与 AI 小财神背后，银行的入口、合规与数据三关</title>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/agentic-os-financial-agent-bank-entry-strategy" rel="alternate" type="text/html"/>
+    <summary>2026年10月13日晚，阶跃终端发布首款大模型原生智能体手机STEPX Neo（Step AOS 1.0加个人智能体Amoo），金融智能体AI小财神同日接入，金融服务从App走向OS级入口。本文从银行风险管理视角分析入口被终端智能体重构后的渠道脱媒，拆解荐股、收益承诺、价格预测、操作时机五类合规红线及境内部署、租户隔离、数据不训练安排，给出能力Agent化、护栏可植入与数据主权的应对清单。</summary>
+    <category term="智能体手机"/>
+    <category term="Agentic OS"/>
+    <category term="金融智能体"/>
+    <category term="银行渠道"/>
+    <category term="合规护栏"/>
+    <category term="数据安全"/>
+    <category term="入口之争"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/mas-airg-deep-analysis</id>
     <title>逐段通读新加坡 MAS《人工智能风险管理指引》：六章结构、十三类生命周期控制与草案到终稿的关键转向</title>
