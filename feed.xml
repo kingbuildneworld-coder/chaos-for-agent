@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-16T00:00:00Z</updated>
+  <updated>2026-10-17T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/banks-lock-out-third-party-ai-agents-deposit-defense-liability</id>
+    <title>银行集体给第三方 AI 智能体上锁：摩根大通、花旗、美银关闭账户入口，背后是 1.6 万亿美元无息存款保卫战与责任真空</title>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banks-lock-out-third-party-ai-agents-deposit-defense-liability" rel="alternate" type="text/html"/>
+    <summary>摩根大通、花旗、美银、嘉信一周内相继限制第三方AI智能体登录客户账户、动钱交易，只保留开放银行只读数据访问。摩根大通全面封锁外部智能体，花旗用Arc平台把智能体追溯到人，嘉信每周拦截数十次。深层动机是AI可能自动把活期（约0.1%）资金搬到3.3%-5%账户，威胁三家大行1.6万亿美元无息存款，FT测算潜在成本约470亿美元。本文核验事件脉络，拆解读写权限分离与支付责任，并给出中资银行启示。</summary>
+    <category term="AI智能体"/>
+    <category term="银行账户"/>
+    <category term="存款保卫"/>
+    <category term="支付责任"/>
+    <category term="开放银行"/>
+    <category term="人类授权"/>
+    <category term="智能体治理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/fsb-hkma-agentic-ai-governance-agent-id-kill-switch</id>
     <title>给每个金融智能体发一张工牌：FSB 12 条稳健实践与香港 ART 框架同日落定，银行如何装上急停键</title>

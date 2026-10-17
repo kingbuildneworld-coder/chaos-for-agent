@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (156)
+## Articles (157)
 
+- [银行集体给第三方 AI 智能体上锁：摩根大通、花旗、美银关闭账户入口，背后是 1.6 万亿美元无息存款保卫战与责任真空](https://bi-chao.com/articles/banks-lock-out-third-party-ai-agents-deposit-defense-liability)
+  - Description: 摩根大通、花旗、美银、嘉信一周内相继限制第三方AI智能体登录客户账户、动钱交易，只保留开放银行只读数据访问。摩根大通全面封锁外部智能体，花旗用Arc平台把智能体追溯到人，嘉信每周拦截数十次。深层动机是AI可能自动把活期（约0.1%）资金搬到3.3%-5%账户，威胁三家大行1.6万亿美元无息存款，FT测算潜在成本约470亿美元。本文核验事件脉络，拆解读写权限分离与支付责任，并给出中资银行启示。
+  - Date: 2026-10-17
+  - Tags: AI智能体, 银行账户, 存款保卫, 支付责任, 开放银行, 人类授权, 智能体治理
 - [给每个金融智能体发一张工牌：FSB 12 条稳健实践与香港 ART 框架同日落定，银行如何装上急停键](https://bi-chao.com/articles/fsb-hkma-agentic-ai-governance-agent-id-kill-switch)
   - Description: 2026年10月15日，金融稳定理事会（FSB）发布负责任采用AI的12条稳健实践最终报告，最大升级集中在智能体：每个agent要有唯一标识、行为全程可追溯、风险随权限乘法式放大，配备可一键停机或交还人工的急停键，坚持人类掌控；同日香港金管局推出ART框架（问责、韧性、信任），将建重大智能体登记册、意图锚定问责与干预机制。本文核验两份文件，梳理智能体特有风险与分级监督，结合金发8号文给出落地清单。
   - Date: 2026-10-16
