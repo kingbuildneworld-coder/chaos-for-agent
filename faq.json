@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-10-18",
-  "scanned_articles": 161,
-  "articles_with_faq": 91,
-  "total_questions": 419,
+  "updated": "2026-10-19",
+  "scanned_articles": 162,
+  "articles_with_faq": 92,
+  "total_questions": 423,
   "items": [
+    {
+      "slug": "epistemology-bank-knowledge-assets-ai",
+      "title": "“存得多”不如“证得住”：用知识论六个透镜，看银行如何经营知识资产为 AI 提供知识保障",
+      "url": "https://bi-chao.com/articles/epistemology-bank-knowledge-assets-ai",
+      "date": "2026-10-19",
+      "faqs": [
+        {
+          "question": "什么是知识的“证成”，和银行 AI 有什么关系？",
+          "answer": "证成指一个信念有充分的理由支持。对银行 AI 来说，就是每个回答和动作都能追溯到有效、权威的依据，例如现行制度条款或监管原文。幻觉和引用失效制度，都是证成失败的表现。"
+        },
+        {
+          "question": "为什么 AI 答对了还可能有问题？",
+          "answer": "这就是盖梯尔问题：答案可能碰巧正确，但依据是错的，比如引用了已废止的制度。依据一旦错误，换个场景就会出错，所以评测要同时看引用忠实度和依据有效性。"
+        },
+        {
+          "question": "RAG 和智能体需要的知识有什么不同？",
+          "answer": "RAG 主要用命题知识（制度条款、产品要素），智能体还需要程序知识（办理步骤、审批路径、异常处理）。后者要整理成带权限和限额的技能库，并随制度同步更新。"
+        },
+        {
+          "question": "AI 生成的内容可以放进知识库吗？",
+          "answer": "可以，但必须经人工认可后才能入库。自动回灌会让系统用自己的输出证明自己，形成知识污染。"
+        }
+      ]
+    },
     {
       "slug": "alignbase-full-factor-model-bank-modeling",
       "title": "让 AI 自己画出业务流程再去寻优：基点起源“全要素大模型”的建模思路，与银行风险建模的六条边界",
