@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 159,
+    "total_articles": 160,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "alignbase-full-factor-model-bank-modeling",
+      "title": "让 AI 自己画出业务流程再去寻优：基点起源“全要素大模型”的建模思路，与银行风险建模的六条边界",
+      "date": "2026-10-18",
+      "description": "基点起源（AlignBase）是一家 2025 年 3 月成立的工业 AI 公司，主张由 AI 直接读取企业原始数据、自动识别生产要素、拼成 DAG 模型网络并在数字孪生上用强化学习寻优。本文依据创始人访谈、融资稿与两项专利还原其三层架构、三步流程与数据原则，区分可核实事实与自述效果，并结合新加坡 MAS 与台湾金管会的最新要求，分析这套范式对银行风险建模与模型风险管理的借鉴价值和边界。",
+      "tags": [
+        "基点起源",
+        "AlignBase",
+        "工业大模型",
+        "数字孪生",
+        "强化学习",
+        "模型风险管理",
+        "风险建模",
+        "银行AI"
+      ]
+    },
     {
       "slug": "fis-aml-agent-bank-compliance-human-in-the-loop",
       "title": "反洗钱智能体走进美国银行核心：FIS 向全美开放 AML 调查智能体，“90% 提速”背后是“取证自主、定案归人”的合规范式",
@@ -2767,5 +2783,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-18",
   "version": "1.1",
-  "total_articles": 159
+  "total_articles": 160
 }
