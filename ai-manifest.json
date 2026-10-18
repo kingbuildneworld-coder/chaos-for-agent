@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 157,
+    "total_articles": 158,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "fis-aml-agent-bank-compliance-human-in-the-loop",
+      "title": "反洗钱智能体走进美国银行核心：FIS 向全美开放 AML 调查智能体，“90% 提速”背后是“取证自主、定案归人”的合规范式",
+      "date": "2026-10-18",
+      "description": "2026年10月15日，FIS宣布与Anthropic合作的AML反洗钱调查智能体正式商业可用，向全美银行开放，设计伙伴Amalgamated银行已部署。该行测算一级预警审查、二级案件调查、SAR叙述撰写时间分别有望下降超90%、约98%、超80%（属预测口径，非实测）。智能体负责取证与解释，每个输出都是建议、结案必须分析师确认、全程留痕。本文拆解反洗钱痛点、人机分工与治理架构，给出中资银行启示。",
+      "tags": [
+        "AI智能体",
+        "反洗钱",
+        "合规科技",
+        "人类在环",
+        "可疑交易报告",
+        "金融犯罪",
+        "智能体治理"
+      ]
+    },
     {
       "slug": "banks-lock-out-third-party-ai-agents-deposit-defense-liability",
       "title": "银行集体给第三方 AI 智能体上锁：摩根大通、花旗、美银关闭账户入口，背后是 1.6 万亿美元无息存款保卫战与责任真空",
@@ -2734,7 +2749,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-18",
   "version": "1.1",
-  "total_articles": 157
+  "total_articles": 158
 }

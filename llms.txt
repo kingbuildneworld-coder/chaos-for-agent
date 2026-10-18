@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (157)
+## Articles (158)
 
+- [反洗钱智能体走进美国银行核心：FIS 向全美开放 AML 调查智能体，“90% 提速”背后是“取证自主、定案归人”的合规范式](https://bi-chao.com/articles/fis-aml-agent-bank-compliance-human-in-the-loop)
+  - Description: 2026年10月15日，FIS宣布与Anthropic合作的AML反洗钱调查智能体正式商业可用，向全美银行开放，设计伙伴Amalgamated银行已部署。该行测算一级预警审查、二级案件调查、SAR叙述撰写时间分别有望下降超90%、约98%、超80%（属预测口径，非实测）。智能体负责取证与解释，每个输出都是建议、结案必须分析师确认、全程留痕。本文拆解反洗钱痛点、人机分工与治理架构，给出中资银行启示。
+  - Date: 2026-10-18
+  - Tags: AI智能体, 反洗钱, 合规科技, 人类在环, 可疑交易报告, 金融犯罪, 智能体治理
 - [银行集体给第三方 AI 智能体上锁：摩根大通、花旗、美银关闭账户入口，背后是 1.6 万亿美元无息存款保卫战与责任真空](https://bi-chao.com/articles/banks-lock-out-third-party-ai-agents-deposit-defense-liability)
   - Description: 摩根大通、花旗、美银、嘉信一周内相继限制第三方AI智能体登录客户账户、动钱交易，只保留开放银行只读数据访问。摩根大通全面封锁外部智能体，花旗用Arc平台把智能体追溯到人，嘉信每周拦截数十次。深层动机是AI可能自动把活期（约0.1%）资金搬到3.3%-5%账户，威胁三家大行1.6万亿美元无息存款，FT测算潜在成本约470亿美元。本文核验事件脉络，拆解读写权限分离与支付责任，并给出中资银行启示。
   - Date: 2026-10-17
