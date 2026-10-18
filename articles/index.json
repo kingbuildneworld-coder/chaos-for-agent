@@ -1,5 +1,23 @@
 [
   {
+    "title": "“存得多”不如“证得住”：用知识论六个透镜，看银行如何经营知识资产为 AI 提供知识保障",
+    "slug": "epistemology-bank-knowledge-assets-ai",
+    "url": "/articles/epistemology-bank-knowledge-assets-ai.md",
+    "description": "大模型幻觉、RAG 引用失效制度、智能体依据过时流程办业务，本质都是知识的证成问题。本文借用知识论的六个经典理论——得到证成的真信念（JTB）、盖梯尔问题、可靠论、默会知识与 SECI、赖尔的“知道是什么/知道怎么做”、社会知识论与可谬论——逐一映射到银行知识资产的入库、分级、转化、使用与修正，提出一套为 AI 赋能提供知识保障的经营框架。",
+    "date": "2026-10-19",
+    "tags": [
+      "知识论",
+      "知识管理",
+      "知识资产",
+      "RAG",
+      "智能体",
+      "银行AI",
+      "AI治理",
+      "默会知识"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让 AI 自己画出业务流程再去寻优：基点起源“全要素大模型”的建模思路，与银行风险建模的六条边界",
     "slug": "alignbase-full-factor-model-bank-modeling",
     "url": "/articles/alignbase-full-factor-model-bank-modeling.md",
