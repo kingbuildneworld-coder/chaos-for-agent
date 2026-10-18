@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 158,
+    "total_articles": 159,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,22 @@
         "可疑交易报告",
         "金融犯罪",
         "智能体治理"
+      ]
+    },
+    {
+      "slug": "taiwan-fsc-agentic-ai-security-consultation",
+      "title": "把代理 AI 当“数字员工”管：台湾金管会《金融业运用代理AI安全咨询文件》逐章解读——三轴分级、59 项零信任控制与五个“可”",
+      "date": "2026-10-18",
+      "description": "台湾金管会 2026 年 10 月 13 日发布 45 页《金融业运用代理AI安全咨询文件》，征询意见 30 天。本文通读全文，拆解适用范围、六类角色与四个护栏控制点、资料敏感度／动作影响／能力边界三轴 L1–L4 分级、七个面向 59 项控制与“可观测、可限制、可阻断、可复原、可回溯”五项目标，以及 OWASP 十大威胁金融案例和五个场景示例，并与 FSB、香港 ART、新加坡 MAS 对照，给出银行落地建议。",
+      "tags": [
+        "台湾金管会",
+        "代理AI",
+        "智能体治理",
+        "零信任",
+        "风险分级",
+        "AI安全",
+        "金融监管",
+        "银行AI"
       ]
     },
     {
@@ -2751,5 +2767,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-18",
   "version": "1.1",
-  "total_articles": 158
+  "total_articles": 159
 }
