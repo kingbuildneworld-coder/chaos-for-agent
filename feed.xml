@@ -27,6 +27,21 @@
     <category term="智能体治理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/taiwan-fsc-agentic-ai-security-consultation</id>
+    <title>把代理 AI 当“数字员工”管：台湾金管会《金融业运用代理AI安全咨询文件》逐章解读——三轴分级、59 项零信任控制与五个“可”</title>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/taiwan-fsc-agentic-ai-security-consultation" rel="alternate" type="text/html"/>
+    <summary>台湾金管会 2026 年 10 月 13 日发布 45 页《金融业运用代理AI安全咨询文件》，征询意见 30 天。本文通读全文，拆解适用范围、六类角色与四个护栏控制点、资料敏感度／动作影响／能力边界三轴 L1–L4 分级、七个面向 59 项控制与“可观测、可限制、可阻断、可复原、可回溯”五项目标，以及 OWASP 十大威胁金融案例和五个场景示例，并与 FSB、香港 ART、新加坡 MAS 对照，给出银行落地建议。</summary>
+    <category term="台湾金管会"/>
+    <category term="代理AI"/>
+    <category term="智能体治理"/>
+    <category term="零信任"/>
+    <category term="风险分级"/>
+    <category term="AI安全"/>
+    <category term="金融监管"/>
+    <category term="银行AI"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/banks-lock-out-third-party-ai-agents-deposit-defense-liability</id>
     <title>银行集体给第三方 AI 智能体上锁：摩根大通、花旗、美银关闭账户入口，背后是 1.6 万亿美元无息存款保卫战与责任真空</title>
     <updated>2026-10-17T00:00:00Z</updated>
