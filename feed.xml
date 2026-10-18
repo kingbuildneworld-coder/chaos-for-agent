@@ -42,6 +42,20 @@
     <category term="智能体治理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/opencode-console-api-key-breach-agent-credential-governance</id>
+    <title>OpenCode 密钥泄露敲响警钟：1.4% 用户的大模型 API 密钥为何从一套“本该下线”的系统流出——AI 编程智能体时代，银行如何守住凭证这道新闸门</title>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/opencode-console-api-key-breach-agent-credential-governance" rel="alternate" type="text/html"/>
+    <summary>2026年10月17日，OpenCode披露安全事件：约1.4%的Console用户存在工作区的OpenAI、Anthropic、Google等第三方API密钥，因一套正在停用的旧系统遭未授权访问而可能泄露，官方将其与“大规模蒸馏攻击”关联，Anthropic已吊销受影响密钥，有用户称账单先于通知。本文核验事件、辨析定性争议，从密钥托管、AI网关、旧系统下线给出银行启示。</summary>
+    <category term="AI智能体"/>
+    <category term="供应链安全"/>
+    <category term="API密钥"/>
+    <category term="凭证管理"/>
+    <category term="第三方风险"/>
+    <category term="编码智能体"/>
+    <category term="智能体治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/taiwan-fsc-agentic-ai-security-consultation</id>
     <title>把代理 AI 当“数字员工”管：台湾金管会《金融业运用代理AI安全咨询文件》逐章解读——三轴分级、59 项零信任控制与五个“可”</title>
     <updated>2026-10-18T00:00:00Z</updated>

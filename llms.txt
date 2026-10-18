@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (160)
+## Articles (161)
 
 - [让 AI 自己画出业务流程再去寻优：基点起源“全要素大模型”的建模思路，与银行风险建模的六条边界](https://bi-chao.com/articles/alignbase-full-factor-model-bank-modeling)
   - Description: 基点起源（AlignBase）是一家 2025 年 3 月成立的工业 AI 公司，主张由 AI 直接读取企业原始数据、自动识别生产要素、拼成 DAG 模型网络并在数字孪生上用强化学习寻优。本文依据创始人访谈、融资稿与两项专利还原其三层架构、三步流程与数据原则，区分可核实事实与自述效果，并结合新加坡 MAS 与台湾金管会的最新要求，分析这套范式对银行风险建模与模型风险管理的借鉴价值和边界。
@@ -22,6 +22,10 @@
   - Description: 2026年10月15日，FIS宣布与Anthropic合作的AML反洗钱调查智能体正式商业可用，向全美银行开放，设计伙伴Amalgamated银行已部署。该行测算一级预警审查、二级案件调查、SAR叙述撰写时间分别有望下降超90%、约98%、超80%（属预测口径，非实测）。智能体负责取证与解释，每个输出都是建议、结案必须分析师确认、全程留痕。本文拆解反洗钱痛点、人机分工与治理架构，给出中资银行启示。
   - Date: 2026-10-18
   - Tags: AI智能体, 反洗钱, 合规科技, 人类在环, 可疑交易报告, 金融犯罪, 智能体治理
+- [OpenCode 密钥泄露敲响警钟：1.4% 用户的大模型 API 密钥为何从一套“本该下线”的系统流出——AI 编程智能体时代，银行如何守住凭证这道新闸门](https://bi-chao.com/articles/opencode-console-api-key-breach-agent-credential-governance)
+  - Description: 2026年10月17日，OpenCode披露安全事件：约1.4%的Console用户存在工作区的OpenAI、Anthropic、Google等第三方API密钥，因一套正在停用的旧系统遭未授权访问而可能泄露，官方将其与“大规模蒸馏攻击”关联，Anthropic已吊销受影响密钥，有用户称账单先于通知。本文核验事件、辨析定性争议，从密钥托管、AI网关、旧系统下线给出银行启示。
+  - Date: 2026-10-18
+  - Tags: AI智能体, 供应链安全, API密钥, 凭证管理, 第三方风险, 编码智能体, 智能体治理
 - [把代理 AI 当“数字员工”管：台湾金管会《金融业运用代理AI安全咨询文件》逐章解读——三轴分级、59 项零信任控制与五个“可”](https://bi-chao.com/articles/taiwan-fsc-agentic-ai-security-consultation)
   - Description: 台湾金管会 2026 年 10 月 13 日发布 45 页《金融业运用代理AI安全咨询文件》，征询意见 30 天。本文通读全文，拆解适用范围、六类角色与四个护栏控制点、资料敏感度／动作影响／能力边界三轴 L1–L4 分级、七个面向 59 项控制与“可观测、可限制、可阻断、可复原、可回溯”五项目标，以及 OWASP 十大威胁金融案例和五个场景示例，并与 FSB、香港 ART、新加坡 MAS 对照，给出银行落地建议。
   - Date: 2026-10-18
