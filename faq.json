@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-18",
-  "scanned_articles": 158,
-  "articles_with_faq": 89,
-  "total_questions": 411,
+  "scanned_articles": 159,
+  "articles_with_faq": 90,
+  "total_questions": 415,
   "items": [
+    {
+      "slug": "taiwan-fsc-agentic-ai-security-consultation",
+      "title": "把代理 AI 当“数字员工”管：台湾金管会《金融业运用代理AI安全咨询文件》逐章解读——三轴分级、59 项零信任控制与五个“可”",
+      "url": "https://bi-chao.com/articles/taiwan-fsc-agentic-ai-security-consultation",
+      "date": "2026-10-18",
+      "faqs": [
+        {
+          "question": "这份文件管哪些 AI？",
+          "answer": "主要管能介接、操作、异动或触发金融机构营运系统的代理 AI。在使用者既有权限内做资讯整理、草拟、会议摘要或代码建议的个人 AI 助理，可依既有内控办理；但一旦能自主调用工具、写入系统或对外传送，就要重新评估（来源2，卷首）。"
+        },
+        {
+          "question": "三轴风险分级怎么判定？",
+          "answer": "按资料敏感度、动作影响、能力边界／可扩散性三轴评估，任一轴较高即取较高等级；能力边界按工具、技能、委派可形成的最高组合能力判定，不能靠拆分场景降低等级（来源2，第 4.1 节）。"
+        },
+        {
+          "question": "加了人工复核，能把 L4 场景降为 L3 吗？",
+          "answer": "不能。文件规定风险等级不因控制措施已建置而降低；控制成熟度只决定该等级的场景能否上线或提高自动化程度（来源2，第 4.4 节）。"
+        },
+        {
+          "question": "控制服务故障时代理可以继续执行吗？",
+          "answer": "高风险动作不行。政策引擎、闸道、授权或验证服务逾时、不可用或无法给出明确结果时，原则上应拒绝、降级或转人工，不应直接放行（来源2，第 3.5 节）。"
+        }
+      ]
+    },
     {
       "slug": "mas-airg-deep-analysis",
       "title": "逐段通读新加坡 MAS《人工智能风险管理指引》：六章结构、十三类生命周期控制与草案到终稿的关键转向",
