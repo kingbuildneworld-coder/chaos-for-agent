@@ -1,5 +1,22 @@
 [
   {
+    "title": "DeepSeek“崩后上新”：V4.1-Flash-1017 权重开源、搜索 API 开放，把“性能-费用”帕累托再往前推——国产开源模型的智能体化与降本双引擎，银行该怎么接",
+    "slug": "deepseek-v41-flash-1017-open-model-agent-cost-bank",
+    "url": "/articles/deepseek-v41-flash-1017-open-model-agent-cost-bank.md",
+    "description": "2026年10月17日，DeepSeek上线V4.1-Flash-1017并全端切换。新模型在多项智能体与编程基准上提升，同时缩短任务运行时间与输出、降低单位成本，称在多个Harness下达到新的性能-费用帕累托最优；强化“许愿式”端到端开发；权重开源并开放Search/Fetch搜索接口。本文核验事件，拆解模型与Harness协同、搜索工具化对银行的价值、风险与落地启示。",
+    "date": "2026-10-19",
+    "tags": [
+      "DeepSeek",
+      "开源大模型",
+      "AI智能体",
+      "Harness",
+      "智能体研发",
+      "模型成本",
+      "银行数字化转型"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "“存得多”不如“证得住”：用知识论六个透镜，看银行如何经营知识资产为 AI 提供知识保障",
     "slug": "epistemology-bank-knowledge-assets-ai",
     "url": "/articles/epistemology-bank-knowledge-assets-ai.md",

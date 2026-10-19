@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (162)
+## Articles (163)
 
+- [DeepSeek“崩后上新”：V4.1-Flash-1017 权重开源、搜索 API 开放，把“性能-费用”帕累托再往前推——国产开源模型的智能体化与降本双引擎，银行该怎么接](https://bi-chao.com/articles/deepseek-v41-flash-1017-open-model-agent-cost-bank)
+  - Description: 2026年10月17日，DeepSeek上线V4.1-Flash-1017并全端切换。新模型在多项智能体与编程基准上提升，同时缩短任务运行时间与输出、降低单位成本，称在多个Harness下达到新的性能-费用帕累托最优；强化“许愿式”端到端开发；权重开源并开放Search/Fetch搜索接口。本文核验事件，拆解模型与Harness协同、搜索工具化对银行的价值、风险与落地启示。
+  - Date: 2026-10-19
+  - Tags: DeepSeek, 开源大模型, AI智能体, Harness, 智能体研发, 模型成本, 银行数字化转型
 - [“存得多”不如“证得住”：用知识论六个透镜，看银行如何经营知识资产为 AI 提供知识保障](https://bi-chao.com/articles/epistemology-bank-knowledge-assets-ai)
   - Description: 大模型幻觉、RAG 引用失效制度、智能体依据过时流程办业务，本质都是知识的证成问题。本文借用知识论的六个经典理论——得到证成的真信念（JTB）、盖梯尔问题、可靠论、默会知识与 SECI、赖尔的“知道是什么/知道怎么做”、社会知识论与可谬论——逐一映射到银行知识资产的入库、分级、转化、使用与修正，提出一套为 AI 赋能提供知识保障的经营框架。
   - Date: 2026-10-19
