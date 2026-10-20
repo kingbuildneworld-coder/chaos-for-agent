@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-19T00:00:00Z</updated>
+  <updated>2026-10-20T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/digital-rmb-from-cash-to-deposit-bank</id>
+    <title>数字人民币从现金变存款</title>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/digital-rmb-from-cash-to-deposit-bank" rel="alternate" type="text/html"/>
+    <summary>2026年10月19日，央行行长潘功胜在金融街论坛演讲确认，今年初已平稳切换数字人民币新计量框架，其定位由现金切换为存款货币；数字人民币运营机构从10家扩至30家、覆盖全部系统重要性银行。这意味着数字人民币从央行负债变为商业银行负债，实名钱包余额按活期存款利率付息、计入相应货币层次、纳入存款保险，银行可自主开展资产负债经营。本文核验事件，拆解1.0到2.0变化及对银行的影响。</summary>
+    <category term="数字人民币"/>
+    <category term="存款货币"/>
+    <category term="银行负债"/>
+    <category term="智能合约"/>
+    <category term="存款保险"/>
+    <category term="货币政策"/>
+    <category term="银行数字化转型"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/deepseek-v41-flash-1017-open-model-agent-cost-bank</id>
     <title>DeepSeek“崩后上新”：V4.1-Flash-1017 权重开源、搜索 API 开放，把“性能-费用”帕累托再往前推——国产开源模型的智能体化与降本双引擎，银行该怎么接</title>
