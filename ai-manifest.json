@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 169,
+    "total_articles": 170,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -124,6 +124,21 @@
         "AI研发",
         "金融监管",
         "人工智能"
+      ]
+    },
+    {
+      "slug": "kpmg-2026-ceo-outlook-cybersecurity-ai-governance-bank",
+      "title": "网络安全成CEO头号风险",
+      "date": "2026-10-21",
+      "description": "毕马威第12届《2026全球首席执行官展望》（2026年10月15日发布，1400位CEO，覆盖中国及银行、保险、资管等13行业）显示，网络与数据安全以31%首次成为增长头号风险，45%据此增加网络安全投资；79%仍将AI列为首要投资，但伦理（57%）、安全（52%）、成本（51%）、数据主权（50%）成为主要障碍。本文分析其对银行网络安全、AI治理、数据主权与人才的启示。",
+      "tags": [
+        "毕马威",
+        "CEO展望",
+        "网络安全",
+        "AI治理",
+        "风险管理",
+        "数据主权",
+        "银行业"
       ]
     },
     {
@@ -2919,5 +2934,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-21",
   "version": "1.1",
-  "total_articles": 169
+  "total_articles": 170
 }
