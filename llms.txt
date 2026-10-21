@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (168)
+## Articles (169)
 
+- [让AI撬开AI黑箱](https://bi-chao.com/articles/ai-open-ai-black-box-interpretability-cammarata)
+  - Description: 2026年10月15日，前OpenAI研究员Nick Cammarata发表《Neural Networks Are Already Clean》，用AI Agent分析神经元，估计Qwen3-32B约90%神经元各有一项主导功能。他认为过去“叠加”的混乱证据多源于观察工具局限，提出“观察—假说—盲测—反例—干预”的可证伪方法。本文分析其思路转变与局限，并落到银行模型审查与可解释性合规。
+  - Date: 2026-10-21
+  - Tags: 可解释性, 机制可解释性, AI安全, 模型风险, 黑箱, 银行风控, 智能体
 - [银行自建推理的新底座](https://bi-chao.com/articles/deepinfer-open-source-bank-inference-foundation)
   - Description: 2026年10月20日，DeepSeek全面开源内部核心推理框架DeepInfer（Apache 2.0）及Token编解码组件deepseek-recipe（MIT），支持英伟达SM100与华为昇腾950。官方数据显示首字平均400毫秒、96%输入命中缓存。本文核验PD分离、KV缓存、专家并行等机制，分析其对银行私有化、信创、降本的价值及开源仅离线、64卡门槛等边界。
   - Date: 2026-10-21
@@ -690,7 +694,7 @@
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 45 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 41 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 42 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 34 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 31 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86

@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/ai-open-ai-black-box-interpretability-cammarata</id>
+    <title>让AI撬开AI黑箱</title>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-open-ai-black-box-interpretability-cammarata" rel="alternate" type="text/html"/>
+    <summary>2026年10月15日，前OpenAI研究员Nick Cammarata发表《Neural Networks Are Already Clean》，用AI Agent分析神经元，估计Qwen3-32B约90%神经元各有一项主导功能。他认为过去“叠加”的混乱证据多源于观察工具局限，提出“观察—假说—盲测—反例—干预”的可证伪方法。本文分析其思路转变与局限，并落到银行模型审查与可解释性合规。</summary>
+    <category term="可解释性"/>
+    <category term="机制可解释性"/>
+    <category term="AI安全"/>
+    <category term="模型风险"/>
+    <category term="黑箱"/>
+    <category term="银行风控"/>
+    <category term="智能体"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/deepinfer-open-source-bank-inference-foundation</id>
     <title>银行自建推理的新底座</title>
     <updated>2026-10-21T00:00:00Z</updated>
