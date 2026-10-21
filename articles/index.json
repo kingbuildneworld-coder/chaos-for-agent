@@ -18,6 +18,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "PHP大漏洞，个人怎么防",
+    "slug": "php2shell-personal-security-bank",
+    "url": "/articles/php2shell-personal-security-bank.md",
+    "description": "2026年10月21日，PHP官方发布8.5.12、8.4.27、8.3.36、8.2.35，修复被称为php2shell的两个关键漏洞CVE-2026-109618、CVE-2026-109619，CVSS 9.2。攻击者无需登录、在应用代码运行前就可能远程执行代码、接管服务器。漏洞由Calif、OpenAI、Wiz等借助AI发现。本文讲清对个人数据、支付与账号的影响和防护，分析对银行的启示。",
+    "date": "2026-10-22",
+    "tags": [
+      "PHP",
+      "php2shell",
+      "网络安全",
+      "个人信息保护",
+      "远程代码执行",
+      "供应链安全",
+      "银行业"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让AI撬开AI黑箱",
     "slug": "ai-open-ai-black-box-interpretability-cammarata",
     "url": "/articles/ai-open-ai-black-box-interpretability-cammarata.md",
