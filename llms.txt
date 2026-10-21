@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (170)
+## Articles (171)
 
+- [把一亿 token 装进模型的“记忆”里：EverMind 开源 MSA 能干什么、不能干什么，以及对银行知识库的启示](https://bi-chao.com/articles/evermind-msa-memory-sparse-attention-bank)
+  - Description: MSA（Memory Sparse Attention）是盛大集团旗下 EverMind 团队开源的长记忆框架，主张把检索和生成合进一个端到端可训练的稀疏注意力层，在 2 张 A800 上支撑 1 亿 token 的记忆推理。本文依据 GitHub 仓库、arXiv 论文与 Hugging Face 模型卡，拆解其架构、三阶段推理与 Memory Interleave 多跳机制，梳理实测数据与局限，并分析它对银行 RAG 知识库、长历史智能体和数据合规的意义。
+  - Date: 2026-10-22
+  - Tags: MSA, 长上下文, 稀疏注意力, RAG, 长期记忆, 开源模型, 银行AI, 知识库
 - [让AI撬开AI黑箱](https://bi-chao.com/articles/ai-open-ai-black-box-interpretability-cammarata)
   - Description: 2026年10月15日，前OpenAI研究员Nick Cammarata发表《Neural Networks Are Already Clean》，用AI Agent分析神经元，估计Qwen3-32B约90%神经元各有一项主导功能。他认为过去“叠加”的混乱证据多源于观察工具局限，提出“观察—假说—盲测—反例—干预”的可证伪方法。本文分析其思路转变与局限，并落到银行模型审查与可解释性合规。
   - Date: 2026-10-21
@@ -699,7 +703,7 @@
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 46 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 42 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 银行AI: 34 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 银行AI: 35 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 32 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
