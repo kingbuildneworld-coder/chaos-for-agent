@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/deepinfer-open-source-bank-inference-foundation</id>
+    <title>银行自建推理的新底座</title>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deepinfer-open-source-bank-inference-foundation" rel="alternate" type="text/html"/>
+    <summary>2026年10月20日，DeepSeek全面开源内部核心推理框架DeepInfer（Apache 2.0）及Token编解码组件deepseek-recipe（MIT），支持英伟达SM100与华为昇腾950。官方数据显示首字平均400毫秒、96%输入命中缓存。本文核验PD分离、KV缓存、专家并行等机制，分析其对银行私有化、信创、降本的价值及开源仅离线、64卡门槛等边界。</summary>
+    <category term="DeepSeek"/>
+    <category term="DeepInfer"/>
+    <category term="推理框架"/>
+    <category term="私有化部署"/>
+    <category term="信创"/>
+    <category term="银行算力"/>
+    <category term="AI治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/flash-twin-stars-bank-agent-model-selection</id>
     <title>Flash双子星，银行怎么选</title>
     <updated>2026-10-21T00:00:00Z</updated>

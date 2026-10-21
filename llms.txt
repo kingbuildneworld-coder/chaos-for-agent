@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (165)
+## Articles (166)
 
+- [银行自建推理的新底座](https://bi-chao.com/articles/deepinfer-open-source-bank-inference-foundation)
+  - Description: 2026年10月20日，DeepSeek全面开源内部核心推理框架DeepInfer（Apache 2.0）及Token编解码组件deepseek-recipe（MIT），支持英伟达SM100与华为昇腾950。官方数据显示首字平均400毫秒、96%输入命中缓存。本文核验PD分离、KV缓存、专家并行等机制，分析其对银行私有化、信创、降本的价值及开源仅离线、64卡门槛等边界。
+  - Date: 2026-10-21
+  - Tags: DeepSeek, DeepInfer, 推理框架, 私有化部署, 信创, 银行算力, AI治理
 - [Flash双子星，银行怎么选](https://bi-chao.com/articles/flash-twin-stars-bank-agent-model-selection)
   - Description: 2026年10月19日，MiniMax发布高速大模型M3.1 Flash，推理速度提升近3倍、成本降70%，输出可达200+ TPS，定价0.15/0.60美元每百万Token，权重稍后开源。它与DeepSeek V4.1 Flash并称国产“Flash双子星”，在银行专属BankerToolBench等基准把旗舰成绩打到一两元。本文核验参数与成本，分析银行如何做模型选型、路由与成本治理。
   - Date: 2026-10-21
@@ -677,7 +681,7 @@
 
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 42 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 43 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 41 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 34 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
