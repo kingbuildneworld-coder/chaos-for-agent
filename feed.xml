@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-20T00:00:00Z</updated>
+  <updated>2026-10-21T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/flash-twin-stars-bank-agent-model-selection</id>
+    <title>Flash双子星，银行怎么选</title>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/flash-twin-stars-bank-agent-model-selection" rel="alternate" type="text/html"/>
+    <summary>2026年10月19日，MiniMax发布高速大模型M3.1 Flash，推理速度提升近3倍、成本降70%，输出可达200+ TPS，定价0.15/0.60美元每百万Token，权重稍后开源。它与DeepSeek V4.1 Flash并称国产“Flash双子星”，在银行专属BankerToolBench等基准把旗舰成绩打到一两元。本文核验参数与成本，分析银行如何做模型选型、路由与成本治理。</summary>
+    <category term="MiniMax"/>
+    <category term="DeepSeek"/>
+    <category term="智能体"/>
+    <category term="模型选型"/>
+    <category term="银行成本治理"/>
+    <category term="大模型"/>
+    <category term="AI治理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/digital-rmb-from-cash-to-deposit-bank</id>
     <title>数字人民币从现金变存款</title>

@@ -1,5 +1,22 @@
 [
   {
+    "title": "Flash双子星，银行怎么选",
+    "slug": "flash-twin-stars-bank-agent-model-selection",
+    "url": "/articles/flash-twin-stars-bank-agent-model-selection.md",
+    "description": "2026年10月19日，MiniMax发布高速大模型M3.1 Flash，推理速度提升近3倍、成本降70%，输出可达200+ TPS，定价0.15/0.60美元每百万Token，权重稍后开源。它与DeepSeek V4.1 Flash并称国产“Flash双子星”，在银行专属BankerToolBench等基准把旗舰成绩打到一两元。本文核验参数与成本，分析银行如何做模型选型、路由与成本治理。",
+    "date": "2026-10-21",
+    "tags": [
+      "MiniMax",
+      "DeepSeek",
+      "智能体",
+      "模型选型",
+      "银行成本治理",
+      "大模型",
+      "AI治理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "数字人民币从现金变存款",
     "slug": "digital-rmb-from-cash-to-deposit-bank",
     "url": "/articles/digital-rmb-from-cash-to-deposit-bank.md",
