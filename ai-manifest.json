@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 166,
+    "total_articles": 167,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -79,6 +79,21 @@
         "银行成本治理",
         "大模型",
         "AI治理"
+      ]
+    },
+    {
+      "slug": "intelligence-explosion-ai-rnd-automation-bank",
+      "title": "当AI能自己造AI",
+      "date": "2026-10-21",
+      "description": "2026年9月28日，Hinton、Bengio、Pachocki、Horvitz、Jack Clark、Dawn Song、Korinek等22位顶级学者联名发表论文，指出AI已编写前沿公司内部大部分代码，Anthropic的AI代码占比一年内升至80%以上，智能爆炸或在数年内发生，一年进展可能压缩到约五周。本文通俗讲清机制、证据与风险，并落到银行的模型风险、智能体安全与市场波动应对。",
+      "tags": [
+        "智能爆炸",
+        "AI治理",
+        "模型风险",
+        "智能体安全",
+        "AI研发",
+        "金融监管",
+        "人工智能"
       ]
     },
     {
@@ -2874,5 +2889,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-21",
   "version": "1.1",
-  "total_articles": 166
+  "total_articles": 167
 }

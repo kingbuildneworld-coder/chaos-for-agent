@@ -41,6 +41,20 @@
     <category term="AI治理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/intelligence-explosion-ai-rnd-automation-bank</id>
+    <title>当AI能自己造AI</title>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/intelligence-explosion-ai-rnd-automation-bank" rel="alternate" type="text/html"/>
+    <summary>2026年9月28日，Hinton、Bengio、Pachocki、Horvitz、Jack Clark、Dawn Song、Korinek等22位顶级学者联名发表论文，指出AI已编写前沿公司内部大部分代码，Anthropic的AI代码占比一年内升至80%以上，智能爆炸或在数年内发生，一年进展可能压缩到约五周。本文通俗讲清机制、证据与风险，并落到银行的模型风险、智能体安全与市场波动应对。</summary>
+    <category term="智能爆炸"/>
+    <category term="AI治理"/>
+    <category term="模型风险"/>
+    <category term="智能体安全"/>
+    <category term="AI研发"/>
+    <category term="金融监管"/>
+    <category term="人工智能"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/digital-rmb-from-cash-to-deposit-bank</id>
     <title>数字人民币从现金变存款</title>
     <updated>2026-10-20T00:00:00Z</updated>

@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (166)
+## Articles (167)
 
 - [银行自建推理的新底座](https://bi-chao.com/articles/deepinfer-open-source-bank-inference-foundation)
   - Description: 2026年10月20日，DeepSeek全面开源内部核心推理框架DeepInfer（Apache 2.0）及Token编解码组件deepseek-recipe（MIT），支持英伟达SM100与华为昇腾950。官方数据显示首字平均400毫秒、96%输入命中缓存。本文核验PD分离、KV缓存、专家并行等机制，分析其对银行私有化、信创、降本的价值及开源仅离线、64卡门槛等边界。
@@ -22,6 +22,10 @@
   - Description: 2026年10月19日，MiniMax发布高速大模型M3.1 Flash，推理速度提升近3倍、成本降70%，输出可达200+ TPS，定价0.15/0.60美元每百万Token，权重稍后开源。它与DeepSeek V4.1 Flash并称国产“Flash双子星”，在银行专属BankerToolBench等基准把旗舰成绩打到一两元。本文核验参数与成本，分析银行如何做模型选型、路由与成本治理。
   - Date: 2026-10-21
   - Tags: MiniMax, DeepSeek, 智能体, 模型选型, 银行成本治理, 大模型, AI治理
+- [当AI能自己造AI](https://bi-chao.com/articles/intelligence-explosion-ai-rnd-automation-bank)
+  - Description: 2026年9月28日，Hinton、Bengio、Pachocki、Horvitz、Jack Clark、Dawn Song、Korinek等22位顶级学者联名发表论文，指出AI已编写前沿公司内部大部分代码，Anthropic的AI代码占比一年内升至80%以上，智能爆炸或在数年内发生，一年进展可能压缩到约五周。本文通俗讲清机制、证据与风险，并落到银行的模型风险、智能体安全与市场波动应对。
+  - Date: 2026-10-21
+  - Tags: 智能爆炸, AI治理, 模型风险, 智能体安全, AI研发, 金融监管, 人工智能
 - [数字人民币从现金变存款](https://bi-chao.com/articles/digital-rmb-from-cash-to-deposit-bank)
   - Description: 2026年10月19日，央行行长潘功胜在金融街论坛演讲确认，今年初已平稳切换数字人民币新计量框架，其定位由现金切换为存款货币；数字人民币运营机构从10家扩至30家、覆盖全部系统重要性银行。这意味着数字人民币从央行负债变为商业银行负债，实名钱包余额按活期存款利率付息、计入相应货币层次、纳入存款保险，银行可自主开展资产负债经营。本文核验事件，拆解1.0到2.0变化及对银行的影响。
   - Date: 2026-10-20
@@ -681,15 +685,15 @@
 
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 43 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 44 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 41 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 34 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 31 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 人工智能: 17 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 17 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 人工智能: 16 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 模型风险管理: 15 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 金融监管: 15 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
