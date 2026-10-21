@@ -1,5 +1,23 @@
 [
   {
+    "title": "把一亿 token 装进模型的“记忆”里：EverMind 开源 MSA 能干什么、不能干什么，以及对银行知识库的启示",
+    "slug": "evermind-msa-memory-sparse-attention-bank",
+    "url": "/articles/evermind-msa-memory-sparse-attention-bank.md",
+    "description": "MSA（Memory Sparse Attention）是盛大集团旗下 EverMind 团队开源的长记忆框架，主张把检索和生成合进一个端到端可训练的稀疏注意力层，在 2 张 A800 上支撑 1 亿 token 的记忆推理。本文依据 GitHub 仓库、arXiv 论文与 Hugging Face 模型卡，拆解其架构、三阶段推理与 Memory Interleave 多跳机制，梳理实测数据与局限，并分析它对银行 RAG 知识库、长历史智能体和数据合规的意义。",
+    "date": "2026-10-22",
+    "tags": [
+      "MSA",
+      "长上下文",
+      "稀疏注意力",
+      "RAG",
+      "长期记忆",
+      "开源模型",
+      "银行AI",
+      "知识库"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让AI撬开AI黑箱",
     "slug": "ai-open-ai-black-box-interpretability-cammarata",
     "url": "/articles/ai-open-ai-black-box-interpretability-cammarata.md",

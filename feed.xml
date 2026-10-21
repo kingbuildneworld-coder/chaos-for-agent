@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-21T00:00:00Z</updated>
+  <updated>2026-10-22T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/evermind-msa-memory-sparse-attention-bank</id>
+    <title>把一亿 token 装进模型的“记忆”里：EverMind 开源 MSA 能干什么、不能干什么，以及对银行知识库的启示</title>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/evermind-msa-memory-sparse-attention-bank" rel="alternate" type="text/html"/>
+    <summary>MSA（Memory Sparse Attention）是盛大集团旗下 EverMind 团队开源的长记忆框架，主张把检索和生成合进一个端到端可训练的稀疏注意力层，在 2 张 A800 上支撑 1 亿 token 的记忆推理。本文依据 GitHub 仓库、arXiv 论文与 Hugging Face 模型卡，拆解其架构、三阶段推理与 Memory Interleave 多跳机制，梳理实测数据与局限，并分析它对银行 RAG 知识库、长历史智能体和数据合规的意义。</summary>
+    <category term="MSA"/>
+    <category term="长上下文"/>
+    <category term="稀疏注意力"/>
+    <category term="RAG"/>
+    <category term="长期记忆"/>
+    <category term="开源模型"/>
+    <category term="银行AI"/>
+    <category term="知识库"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/ai-open-ai-black-box-interpretability-cammarata</id>
     <title>让AI撬开AI黑箱</title>
