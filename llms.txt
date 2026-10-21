@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (167)
+## Articles (168)
 
 - [银行自建推理的新底座](https://bi-chao.com/articles/deepinfer-open-source-bank-inference-foundation)
   - Description: 2026年10月20日，DeepSeek全面开源内部核心推理框架DeepInfer（Apache 2.0）及Token编解码组件deepseek-recipe（MIT），支持英伟达SM100与华为昇腾950。官方数据显示首字平均400毫秒、96%输入命中缓存。本文核验PD分离、KV缓存、专家并行等机制，分析其对银行私有化、信创、降本的价值及开源仅离线、64卡门槛等边界。
   - Date: 2026-10-21
   - Tags: DeepSeek, DeepInfer, 推理框架, 私有化部署, 信创, 银行算力, AI治理
+- [AI能给银行知识吗](https://bi-chao.com/articles/epistemology-ai-knowledge-bank-risk)
+  - Description: 2026年10月16日，斯坦福哲学百科首次发布《人工智能的知识论》词条，把AI界定为“知识技术”，系统追问：人凭AI输出形成的信念是否得到证成、能否算知识、AI更像证人还是仪器、不透明性如何分类、AI能否带来理解。本文用通俗语言讲清证言与仪器之辨、三种不透明、计算可靠主义、知识与理解的区别，以及“产出更多、理解更少”的警示，并落到银行模型验证、黑箱治理、归纳局限、过度依赖与阈值伦理等实操问题。
+  - Date: 2026-10-21
+  - Tags: 知识论, AI治理, 模型风险, 可解释性, 黑箱, 银行风控, 人工智能
 - [Flash双子星，银行怎么选](https://bi-chao.com/articles/flash-twin-stars-bank-agent-model-selection)
   - Description: 2026年10月19日，MiniMax发布高速大模型M3.1 Flash，推理速度提升近3倍、成本降70%，输出可达200+ TPS，定价0.15/0.60美元每百万Token，权重稍后开源。它与DeepSeek V4.1 Flash并称国产“Flash双子星”，在银行专属BankerToolBench等基准把旗舰成绩打到一两元。本文核验参数与成本，分析银行如何做模型选型、路由与成本治理。
   - Date: 2026-10-21
@@ -685,13 +689,13 @@
 
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 44 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 45 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 41 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 34 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 31 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
-- 人工智能: 17 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
+- 人工智能: 18 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 17 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 金融监管: 15 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 

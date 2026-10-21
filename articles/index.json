@@ -17,6 +17,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "AI能给银行知识吗",
+    "slug": "epistemology-ai-knowledge-bank-risk",
+    "url": "/articles/epistemology-ai-knowledge-bank-risk.md",
+    "description": "2026年10月16日，斯坦福哲学百科首次发布《人工智能的知识论》词条，把AI界定为“知识技术”，系统追问：人凭AI输出形成的信念是否得到证成、能否算知识、AI更像证人还是仪器、不透明性如何分类、AI能否带来理解。本文用通俗语言讲清证言与仪器之辨、三种不透明、计算可靠主义、知识与理解的区别，以及“产出更多、理解更少”的警示，并落到银行模型验证、黑箱治理、归纳局限、过度依赖与阈值伦理等实操问题。",
+    "date": "2026-10-21",
+    "tags": [
+      "知识论",
+      "AI治理",
+      "模型风险",
+      "可解释性",
+      "黑箱",
+      "银行风控",
+      "人工智能"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Flash双子星，银行怎么选",
     "slug": "flash-twin-stars-bank-agent-model-selection",
     "url": "/articles/flash-twin-stars-bank-agent-model-selection.md",
