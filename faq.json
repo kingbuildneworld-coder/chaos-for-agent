@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-10-21",
-  "scanned_articles": 170,
-  "articles_with_faq": 92,
-  "total_questions": 423,
+  "updated": "2026-10-22",
+  "scanned_articles": 171,
+  "articles_with_faq": 93,
+  "total_questions": 427,
   "items": [
+    {
+      "slug": "evermind-msa-memory-sparse-attention-bank",
+      "title": "把一亿 token 装进模型的“记忆”里：EverMind 开源 MSA 能干什么、不能干什么，以及对银行知识库的启示",
+      "url": "https://bi-chao.com/articles/evermind-msa-memory-sparse-attention-bank",
+      "date": "2026-10-22",
+      "faqs": [
+        {
+          "question": "MSA 和 RAG 有什么区别？",
+          "answer": "RAG 由独立的检索器和生成器组成，两者分开训练；MSA 把检索和生成合进同一个稀疏注意力层，端到端训练，检索在模型内部完成（来源1、2）。"
+        },
+        {
+          "question": "跑 1 亿 token 需要什么硬件？",
+          "answer": "论文称 2 张 NVIDIA A800 即可，路由键放在显存，内容缓存放在主机内存；1 亿 token 的压缩缓存约 169GB，因此还需要大容量主机内存（来源3）。"
+        },
+        {
+          "question": "可以直接用 MSA 训练自己的模型吗？",
+          "answer": "目前不行。仓库开源了 MSA-4B 模型、推理和评测代码，但论文中的持续预训练和 SFT 训练流程不在仓库中（来源1）。"
+        },
+        {
+          "question": "银行适合用 MSA 做什么？",
+          "answer": "较适合监管文件、行内制度、产品条款等体量大、相对稳定的知识库问答试点；用于客户数据前，需要先解决可追溯、权限分库和数据删除问题（本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "epistemology-bank-knowledge-assets-ai",
       "title": "“存得多”不如“证得住”：用知识论六个透镜，看银行如何经营知识资产为 AI 提供知识保障",
