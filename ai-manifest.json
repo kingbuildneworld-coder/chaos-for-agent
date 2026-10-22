@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 172,
+    "total_articles": 173,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "claude-duet-proactive-agent-bank",
+      "title": "智能体开始主动上班",
+      "date": "2026-10-22",
+      "description": "2026年10月21日，Anthropic开放主动智能体Claude Duet，基于Opus 5.5，拥有独立云虚拟机与浏览器，设备关机也能后台运行，每天主动汇总跨应用事项、异常时通知、在付款签约等关键动作前请求人工确认。它接入6000多个连接器，凭证不直接可见、敏感信息分级拦截。本文分析其从“被动应答”到“主动值守”的范式转变与安全设计，提出对银行主动预警、权限分级、人在环与落地路径的启示。",
+      "tags": [
+        "主动智能体",
+        "Claude",
+        "智能体",
+        "银行风控",
+        "人机协同",
+        "权限管理",
+        "AI安全"
+      ]
+    },
     {
       "slug": "evermind-msa-memory-sparse-attention-bank",
       "title": "把一亿 token 装进模型的“记忆”里：EverMind 开源 MSA 能干什么、不能干什么，以及对银行知识库的启示",
@@ -2965,5 +2980,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-22",
   "version": "1.1",
-  "total_articles": 172
+  "total_articles": 173
 }
