@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-23",
-  "scanned_articles": 174,
-  "articles_with_faq": 93,
-  "total_questions": 427,
+  "scanned_articles": 175,
+  "articles_with_faq": 94,
+  "total_questions": 431,
   "items": [
+    {
+      "slug": "deepseek-bot-vs-harness-bank-deployment",
+      "title": "DeepSeek Bot 和 DeepSeek Harness 不是一回事：一个是官方框架，一个是社区插件——银行该怎么选、怎么部署",
+      "url": "https://bi-chao.com/articles/deepseek-bot-vs-harness-bank-deployment",
+      "date": "2026-10-23",
+      "faqs": [
+        {
+          "question": "DeepSeek Bot 是 DeepSeek 官方出的吗？",
+          "answer": "不是。目前名为 DeepSeek Bot 的项目是社区开发者基于 DeepSeek Harness 做的插件，主要有 Fei2411 的 DS Bot（ds-bot）和 BotHarness 的 DeepSeekBot（deepseekbot）两个，均声明非官方（来源4、5）。"
+        },
+        {
+          "question": "DeepSeek Harness 和 DeepSeek Bot 是什么关系？",
+          "answer": "DeepSeek Harness 是底层智能体运行框架；DeepSeek Bot 是安装在它上面的插件，把它变成多个有长期记忆、可群聊协作的 Bot（来源1、4）。"
+        },
+        {
+          "question": "银行能把 DeepSeek Harness 用于生产吗？",
+          "answer": "目前不建议。官方安全声明和使用条款都写明它是未经安全审计的开发者预览版，不得视为可用于生产环境（来源2、3）。"
+        },
+        {
+          "question": "银行试点应该怎么部署？",
+          "answer": "建议在隔离虚拟机或容器中运行 dsh，通过“自定义模型”模式接入行内部署的模型，只使用公开或脱敏数据，插件实行白名单，所有写操作人工确认（本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "evermind-msa-memory-sparse-attention-bank",
       "title": "把一亿 token 装进模型的“记忆”里：EverMind 开源 MSA 能干什么、不能干什么，以及对银行知识库的启示",
