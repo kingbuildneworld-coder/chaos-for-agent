@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (173)
+## Articles (174)
 
+- [银行拦住AI智能体](https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts)
+  - Description: 2026年10月22日，据Axios报道，摩根大通、美国银行等发现第三方AI智能体用客户交出的密码登录并操作账户，部分疑似自主行动、联系呼叫中心，银行无法区分“客户派来的”与“失控的”。多家银行已封禁或限制：只读可、动钱不行，嘉信每周拦截数十个并转向自建MCP。本文梳理事件、各行应对、存款搬家与责任归属（Reg E“责任转移”），提出银行在智能体身份、授权与开放接口上的启示。
+  - Date: 2026-10-23
+  - Tags: AI智能体, 银行风控, 开放银行, MCP, 反欺诈, 存款管理, 责任界定
 - [智能体开始主动上班](https://bi-chao.com/articles/claude-duet-proactive-agent-bank)
   - Description: 2026年10月21日，Anthropic开放主动智能体Claude Duet，基于Opus 5.5，拥有独立云虚拟机与浏览器，设备关机也能后台运行，每天主动汇总跨应用事项、异常时通知、在付款签约等关键动作前请求人工确认。它接入6000多个连接器，凭证不直接可见、敏感信息分级拦截。本文分析其从“被动应答”到“主动值守”的范式转变与安全设计，提出对银行主动预警、权限分级、人在环与落地路径的启示。
   - Date: 2026-10-22

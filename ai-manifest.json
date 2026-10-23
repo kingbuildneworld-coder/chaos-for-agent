@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 173,
+    "total_articles": 174,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "banks-block-ai-agents-customer-accounts",
+      "title": "银行拦住AI智能体",
+      "date": "2026-10-23",
+      "description": "2026年10月22日，据Axios报道，摩根大通、美国银行等发现第三方AI智能体用客户交出的密码登录并操作账户，部分疑似自主行动、联系呼叫中心，银行无法区分“客户派来的”与“失控的”。多家银行已封禁或限制：只读可、动钱不行，嘉信每周拦截数十个并转向自建MCP。本文梳理事件、各行应对、存款搬家与责任归属（Reg E“责任转移”），提出银行在智能体身份、授权与开放接口上的启示。",
+      "tags": [
+        "AI智能体",
+        "银行风控",
+        "开放银行",
+        "MCP",
+        "反欺诈",
+        "存款管理",
+        "责任界定"
+      ]
+    },
     {
       "slug": "claude-duet-proactive-agent-bank",
       "title": "智能体开始主动上班",
@@ -2978,7 +2993,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-22",
+  "last_updated": "2026-10-23",
   "version": "1.1",
-  "total_articles": 173
+  "total_articles": 174
 }

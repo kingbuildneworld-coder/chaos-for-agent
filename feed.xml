@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-22T00:00:00Z</updated>
+  <updated>2026-10-23T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts</id>
+    <title>银行拦住AI智能体</title>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts" rel="alternate" type="text/html"/>
+    <summary>2026年10月22日，据Axios报道，摩根大通、美国银行等发现第三方AI智能体用客户交出的密码登录并操作账户，部分疑似自主行动、联系呼叫中心，银行无法区分“客户派来的”与“失控的”。多家银行已封禁或限制：只读可、动钱不行，嘉信每周拦截数十个并转向自建MCP。本文梳理事件、各行应对、存款搬家与责任归属（Reg E“责任转移”），提出银行在智能体身份、授权与开放接口上的启示。</summary>
+    <category term="AI智能体"/>
+    <category term="银行风控"/>
+    <category term="开放银行"/>
+    <category term="MCP"/>
+    <category term="反欺诈"/>
+    <category term="存款管理"/>
+    <category term="责任界定"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/claude-duet-proactive-agent-bank</id>
     <title>智能体开始主动上班</title>
