@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (174)
+## Articles (175)
 
 - [银行拦住AI智能体](https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts)
   - Description: 2026年10月22日，据Axios报道，摩根大通、美国银行等发现第三方AI智能体用客户交出的密码登录并操作账户，部分疑似自主行动、联系呼叫中心，银行无法区分“客户派来的”与“失控的”。多家银行已封禁或限制：只读可、动钱不行，嘉信每周拦截数十个并转向自建MCP。本文梳理事件、各行应对、存款搬家与责任归属（Reg E“责任转移”），提出银行在智能体身份、授权与开放接口上的启示。
   - Date: 2026-10-23
   - Tags: AI智能体, 银行风控, 开放银行, MCP, 反欺诈, 存款管理, 责任界定
+- [DeepSeek Bot 和 DeepSeek Harness 不是一回事：一个是官方框架，一个是社区插件——银行该怎么选、怎么部署](https://bi-chao.com/articles/deepseek-bot-vs-harness-bank-deployment)
+  - Description: DeepSeek Harness（dsh）是 DeepSeek 官方于 2026 年 8 月开源的智能体运行框架；“DeepSeek Bot”则是社区开发者基于它做的多 Bot 团队插件，且同名项目至少有两个（Fei2411 的 ds-bot 与 BotHarness 的 deepseekbot），均非官方产品。本文依据两者的官方仓库、安全声明与使用条款，厘清层级关系、能力差异与风险边界，梳理银行可用场景，并给出按场景、数据等级和部署形态选择的决策框架。
+  - Date: 2026-10-23
+  - Tags: DeepSeek Harness, DeepSeek Bot, 智能体, 多智能体, 银行AI, 部署选型, 数据安全, 开源治理
 - [智能体开始主动上班](https://bi-chao.com/articles/claude-duet-proactive-agent-bank)
   - Description: 2026年10月21日，Anthropic开放主动智能体Claude Duet，基于Opus 5.5，拥有独立云虚拟机与浏览器，设备关机也能后台运行，每天主动汇总跨应用事项、异常时通知、在付款签约等关键动作前请求人工确认。它接入6000多个连接器，凭证不直接可见、敏感信息分级拦截。本文分析其从“被动应答”到“主动值守”的范式转变与安全设计，提出对银行主动预警、权限分级、人在环与落地路径的启示。
   - Date: 2026-10-22
@@ -714,8 +718,8 @@
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 46 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 43 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 银行AI: 35 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 智能体: 44 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 银行AI: 36 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 32 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
