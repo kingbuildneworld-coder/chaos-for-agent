@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 174,
+    "total_articles": 175,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,22 @@
         "反欺诈",
         "存款管理",
         "责任界定"
+      ]
+    },
+    {
+      "slug": "deepseek-bot-vs-harness-bank-deployment",
+      "title": "DeepSeek Bot 和 DeepSeek Harness 不是一回事：一个是官方框架，一个是社区插件——银行该怎么选、怎么部署",
+      "date": "2026-10-23",
+      "description": "DeepSeek Harness（dsh）是 DeepSeek 官方于 2026 年 8 月开源的智能体运行框架；“DeepSeek Bot”则是社区开发者基于它做的多 Bot 团队插件，且同名项目至少有两个（Fei2411 的 ds-bot 与 BotHarness 的 deepseekbot），均非官方产品。本文依据两者的官方仓库、安全声明与使用条款，厘清层级关系、能力差异与风险边界，梳理银行可用场景，并给出按场景、数据等级和部署形态选择的决策框架。",
+      "tags": [
+        "DeepSeek Harness",
+        "DeepSeek Bot",
+        "智能体",
+        "多智能体",
+        "银行AI",
+        "部署选型",
+        "数据安全",
+        "开源治理"
       ]
     },
     {
@@ -2995,5 +3011,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-23",
   "version": "1.1",
-  "total_articles": 174
+  "total_articles": 175
 }
