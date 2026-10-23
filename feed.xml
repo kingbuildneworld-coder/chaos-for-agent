@@ -27,6 +27,21 @@
     <category term="责任界定"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/deepseek-bot-vs-harness-bank-deployment</id>
+    <title>DeepSeek Bot 和 DeepSeek Harness 不是一回事：一个是官方框架，一个是社区插件——银行该怎么选、怎么部署</title>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deepseek-bot-vs-harness-bank-deployment" rel="alternate" type="text/html"/>
+    <summary>DeepSeek Harness（dsh）是 DeepSeek 官方于 2026 年 8 月开源的智能体运行框架；“DeepSeek Bot”则是社区开发者基于它做的多 Bot 团队插件，且同名项目至少有两个（Fei2411 的 ds-bot 与 BotHarness 的 deepseekbot），均非官方产品。本文依据两者的官方仓库、安全声明与使用条款，厘清层级关系、能力差异与风险边界，梳理银行可用场景，并给出按场景、数据等级和部署形态选择的决策框架。</summary>
+    <category term="DeepSeek Harness"/>
+    <category term="DeepSeek Bot"/>
+    <category term="智能体"/>
+    <category term="多智能体"/>
+    <category term="银行AI"/>
+    <category term="部署选型"/>
+    <category term="数据安全"/>
+    <category term="开源治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/claude-duet-proactive-agent-bank</id>
     <title>智能体开始主动上班</title>
     <updated>2026-10-22T00:00:00Z</updated>
