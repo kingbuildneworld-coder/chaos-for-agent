@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 176,
+    "total_articles": 177,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "anthropic-hg-european-ai-consultancy",
+      "title": "Anthropic下场做咨询",
+      "date": "2026-10-24",
+      "description": "2026年10月23日FT报道，Anthropic与伦敦私募股权公司Hg达成协议，共同成立一家独立欧洲AI咨询公司，向企业派驻AI顾问和工程师，伦敦、柏林设中心，年底前启动。Anthropic以自有资产负债表出资，Hg通过旗下基金投资。这是继7月联合黑石等成立15亿美元美国服务公司Ode之后，三个月内第二家落地服务公司，直接对标埃森哲和四大。本文梳理交易结构、行业逻辑与对银行AI落地供应链的启示。",
+      "tags": [
+        "Anthropic",
+        "AI服务",
+        "私募股权",
+        "咨询业",
+        "金融科技",
+        "银行IT",
+        "智能体"
+      ]
+    },
     {
       "slug": "openai-offline-world-frontier-model-training",
       "title": "OpenAI断网炼模型",
@@ -3026,5 +3041,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-24",
   "version": "1.1",
-  "total_articles": 176
+  "total_articles": 177
 }
