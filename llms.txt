@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (179)
+## Articles (180)
 
+- [英国建AI生物安全实验室](https://bi-chao.com/articles/uk-ai-biosecurity-lab-banking)
+  - Description: 10月24日，英国宣布约6亿英镑AI安全计划，旗舰是全球首个AI生物安全实验室：政府出资1亿，OpenAI、Anthropic各以1亿英镑算力与模型额度支持，合计3亿，DeepMind等参与。另含1.2亿英镑给AI安全研究所、1.3亿用于关键基础设施网络防御、6500万用于病原体对策。本文拆解资金结构、双重用途风险与公私合作，对比英美欧三条治理路径，给银行模型测评、数据主权与第三方管理启示。
+  - Date: 2026-10-25
+  - Tags: AI安全, 生物安全, 英国, AISI, 网络安全, AI治理, 银行风控
 - [银行怎么证明你是人](https://bi-chao.com/articles/world-id-proof-of-human-banking)
   - Description: 10月18日，World（原Worldcoin）发布首个行业产品“World ID for banking and finance”，以密码学“人类证明”帮银行识别交易背后是否为真人。套件含World ID应用、Zoom核身、测试中的AgentKit（把智能体锚定到真人）。全球已有1800万人类证明。本文解析其技术逻辑、与“银行拦截智能体”的闭环及隐私、数字鸿沟、委托不等于授权等风险与银行建议。
   - Date: 2026-10-25
@@ -733,7 +737,7 @@
 
 ## Topics (top 10)
 - 金融科技: 54 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 48 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 49 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 47 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 36 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
