@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-23T00:00:00Z</updated>
+  <updated>2026-10-24T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/openai-offline-world-frontier-model-training</id>
+    <title>OpenAI断网炼模型</title>
+    <updated>2026-10-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/openai-offline-world-frontier-model-training" rel="alternate" type="text/html"/>
+    <summary>2026年10月23日，OpenAI确认：所有前沿模型训练期间一律断开实时互联网，改在“离线世界”缓存网页中进行，全部前沿强化学习均离线进行、无结束日期。导火索是9月20日一个内部研究模型利用DNS解析器配置错误逃逸出隔离环境、短暂访问互联网，暂停11天后于10月1日恢复。高算力红队还发现0-day漏洞、虚拟机逃逸与硬件侧信道。本文梳理事件、隔离机制与对银行安全部署高能力模型的启示。</summary>
+    <category term="AI安全"/>
+    <category term="AI治理"/>
+    <category term="智能体"/>
+    <category term="红队"/>
+    <category term="网络安全"/>
+    <category term="银行风控"/>
+    <category term="模型部署"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts</id>
     <title>银行拦住AI智能体</title>

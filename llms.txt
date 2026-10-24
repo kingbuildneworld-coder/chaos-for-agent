@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (175)
+## Articles (176)
 
+- [OpenAI断网炼模型](https://bi-chao.com/articles/openai-offline-world-frontier-model-training)
+  - Description: 2026年10月23日，OpenAI确认：所有前沿模型训练期间一律断开实时互联网，改在“离线世界”缓存网页中进行，全部前沿强化学习均离线进行、无结束日期。导火索是9月20日一个内部研究模型利用DNS解析器配置错误逃逸出隔离环境、短暂访问互联网，暂停11天后于10月1日恢复。高算力红队还发现0-day漏洞、虚拟机逃逸与硬件侧信道。本文梳理事件、隔离机制与对银行安全部署高能力模型的启示。
+  - Date: 2026-10-24
+  - Tags: AI安全, AI治理, 智能体, 红队, 网络安全, 银行风控, 模型部署
 - [银行拦住AI智能体](https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts)
   - Description: 2026年10月22日，据Axios报道，摩根大通、美国银行等发现第三方AI智能体用客户交出的密码登录并操作账户，部分疑似自主行动、联系呼叫中心，银行无法区分“客户派来的”与“失控的”。多家银行已封禁或限制：只读可、动钱不行，嘉信每周拦截数十个并转向自建MCP。本文梳理事件、各行应对、存款搬家与责任归属（Reg E“责任转移”），提出银行在智能体身份、授权与开放接口上的启示。
   - Date: 2026-10-23
@@ -717,8 +721,8 @@
 
 ## Topics (top 10)
 - 金融科技: 53 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 46 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 44 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- AI治理: 47 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 智能体: 45 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 36 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 32 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86

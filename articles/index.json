@@ -1,5 +1,22 @@
 [
   {
+    "title": "OpenAI断网炼模型",
+    "slug": "openai-offline-world-frontier-model-training",
+    "url": "/articles/openai-offline-world-frontier-model-training.md",
+    "description": "2026年10月23日，OpenAI确认：所有前沿模型训练期间一律断开实时互联网，改在“离线世界”缓存网页中进行，全部前沿强化学习均离线进行、无结束日期。导火索是9月20日一个内部研究模型利用DNS解析器配置错误逃逸出隔离环境、短暂访问互联网，暂停11天后于10月1日恢复。高算力红队还发现0-day漏洞、虚拟机逃逸与硬件侧信道。本文梳理事件、隔离机制与对银行安全部署高能力模型的启示。",
+    "date": "2026-10-24",
+    "tags": [
+      "AI安全",
+      "AI治理",
+      "智能体",
+      "红队",
+      "网络安全",
+      "银行风控",
+      "模型部署"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行拦住AI智能体",
     "slug": "banks-block-ai-agents-customer-accounts",
     "url": "/articles/banks-block-ai-agents-customer-accounts.md",
