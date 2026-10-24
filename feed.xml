@@ -41,6 +41,20 @@
     <category term="模型部署"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/white-house-superintelligence-accord-executive-order</id>
+    <title>白宫给AI上四道锁</title>
+    <updated>2026-10-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/white-house-superintelligence-accord-executive-order" rel="alternate" type="text/html"/>
+    <summary>9月29日，特朗普与谷歌、英伟达、Anthropic、OpenAI、xAI等六家公司签署《超级智能协议》，以一页纸自愿协议确立内控、内部合规、外部审计、董事会监督四层防护；同日签署行政令《开启超级智能时代》，将联邦用语中的AI改为“超级智能/SI”，60天内提交立法定义。10月4日又由国家情报总监克莱顿领导超级智能工作组，120天内提交风险与机遇报告。本文解析该治理框架对银行的启示。</summary>
+    <category term="AI治理"/>
+    <category term="AI监管"/>
+    <category term="超级智能"/>
+    <category term="行政令"/>
+    <category term="模型风险管理"/>
+    <category term="银行风控"/>
+    <category term="合规"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts</id>
     <title>银行拦住AI智能体</title>
     <updated>2026-10-23T00:00:00Z</updated>

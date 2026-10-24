@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (177)
+## Articles (178)
 
 - [Anthropic下场做咨询](https://bi-chao.com/articles/anthropic-hg-european-ai-consultancy)
   - Description: 2026年10月23日FT报道，Anthropic与伦敦私募股权公司Hg达成协议，共同成立一家独立欧洲AI咨询公司，向企业派驻AI顾问和工程师，伦敦、柏林设中心，年底前启动。Anthropic以自有资产负债表出资，Hg通过旗下基金投资。这是继7月联合黑石等成立15亿美元美国服务公司Ode之后，三个月内第二家落地服务公司，直接对标埃森哲和四大。本文梳理交易结构、行业逻辑与对银行AI落地供应链的启示。
@@ -22,6 +22,10 @@
   - Description: 2026年10月23日，OpenAI确认：所有前沿模型训练期间一律断开实时互联网，改在“离线世界”缓存网页中进行，全部前沿强化学习均离线进行、无结束日期。导火索是9月20日一个内部研究模型利用DNS解析器配置错误逃逸出隔离环境、短暂访问互联网，暂停11天后于10月1日恢复。高算力红队还发现0-day漏洞、虚拟机逃逸与硬件侧信道。本文梳理事件、隔离机制与对银行安全部署高能力模型的启示。
   - Date: 2026-10-24
   - Tags: AI安全, AI治理, 智能体, 红队, 网络安全, 银行风控, 模型部署
+- [白宫给AI上四道锁](https://bi-chao.com/articles/white-house-superintelligence-accord-executive-order)
+  - Description: 9月29日，特朗普与谷歌、英伟达、Anthropic、OpenAI、xAI等六家公司签署《超级智能协议》，以一页纸自愿协议确立内控、内部合规、外部审计、董事会监督四层防护；同日签署行政令《开启超级智能时代》，将联邦用语中的AI改为“超级智能/SI”，60天内提交立法定义。10月4日又由国家情报总监克莱顿领导超级智能工作组，120天内提交风险与机遇报告。本文解析该治理框架对银行的启示。
+  - Date: 2026-10-24
+  - Tags: AI治理, AI监管, 超级智能, 行政令, 模型风险管理, 银行风控, 合规
 - [银行拦住AI智能体](https://bi-chao.com/articles/banks-block-ai-agents-customer-accounts)
   - Description: 2026年10月22日，据Axios报道，摩根大通、美国银行等发现第三方AI智能体用客户交出的密码登录并操作账户，部分疑似自主行动、联系呼叫中心，银行无法区分“客户派来的”与“失控的”。多家银行已封禁或限制：只读可、动钱不行，嘉信每周拦截数十个并转向自建MCP。本文梳理事件、各行应对、存款搬家与责任归属（Reg E“责任转移”），提出银行在智能体身份、授权与开放接口上的启示。
   - Date: 2026-10-23
@@ -725,7 +729,7 @@
 
 ## Topics (top 10)
 - 金融科技: 54 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 47 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 48 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 46 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 36 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
@@ -733,7 +737,7 @@
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 18 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
-- 金融监管: 15 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
+- 模型风险管理: 16 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
