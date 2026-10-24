@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 178,
+    "total_articles": 179,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "world-id-proof-of-human-banking",
+      "title": "银行怎么证明你是人",
+      "date": "2026-10-25",
+      "description": "10月18日，World（原Worldcoin）发布首个行业产品“World ID for banking and finance”，以密码学“人类证明”帮银行识别交易背后是否为真人。套件含World ID应用、Zoom核身、测试中的AgentKit（把智能体锚定到真人）。全球已有1800万人类证明。本文解析其技术逻辑、与“银行拦截智能体”的闭环及隐私、数字鸿沟、委托不等于授权等风险与银行建议。",
+      "tags": [
+        "人类证明",
+        "数字身份",
+        "World",
+        "智能体",
+        "反欺诈",
+        "银行风控",
+        "生物识别"
+      ]
+    },
     {
       "slug": "anthropic-hg-european-ai-consultancy",
       "title": "Anthropic下场做咨询",
@@ -3054,7 +3069,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-25",
   "version": "1.1",
-  "total_articles": 178
+  "total_articles": 179
 }

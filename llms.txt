@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (178)
+## Articles (179)
 
+- [银行怎么证明你是人](https://bi-chao.com/articles/world-id-proof-of-human-banking)
+  - Description: 10月18日，World（原Worldcoin）发布首个行业产品“World ID for banking and finance”，以密码学“人类证明”帮银行识别交易背后是否为真人。套件含World ID应用、Zoom核身、测试中的AgentKit（把智能体锚定到真人）。全球已有1800万人类证明。本文解析其技术逻辑、与“银行拦截智能体”的闭环及隐私、数字鸿沟、委托不等于授权等风险与银行建议。
+  - Date: 2026-10-25
+  - Tags: 人类证明, 数字身份, World, 智能体, 反欺诈, 银行风控, 生物识别
 - [Anthropic下场做咨询](https://bi-chao.com/articles/anthropic-hg-european-ai-consultancy)
   - Description: 2026年10月23日FT报道，Anthropic与伦敦私募股权公司Hg达成协议，共同成立一家独立欧洲AI咨询公司，向企业派驻AI顾问和工程师，伦敦、柏林设中心，年底前启动。Anthropic以自有资产负债表出资，Hg通过旗下基金投资。这是继7月联合黑石等成立15亿美元美国服务公司Ode之后，三个月内第二家落地服务公司，直接对标埃森哲和四大。本文梳理交易结构、行业逻辑与对银行AI落地供应链的启示。
   - Date: 2026-10-24
@@ -730,7 +734,7 @@
 ## Topics (top 10)
 - 金融科技: 54 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 48 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 智能体: 46 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 47 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 银行AI: 36 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 32 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86

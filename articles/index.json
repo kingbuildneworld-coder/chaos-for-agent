@@ -1,5 +1,22 @@
 [
   {
+    "title": "银行怎么证明你是人",
+    "slug": "world-id-proof-of-human-banking",
+    "url": "/articles/world-id-proof-of-human-banking.md",
+    "description": "10月18日，World（原Worldcoin）发布首个行业产品“World ID for banking and finance”，以密码学“人类证明”帮银行识别交易背后是否为真人。套件含World ID应用、Zoom核身、测试中的AgentKit（把智能体锚定到真人）。全球已有1800万人类证明。本文解析其技术逻辑、与“银行拦截智能体”的闭环及隐私、数字鸿沟、委托不等于授权等风险与银行建议。",
+    "date": "2026-10-25",
+    "tags": [
+      "人类证明",
+      "数字身份",
+      "World",
+      "智能体",
+      "反欺诈",
+      "银行风控",
+      "生物识别"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Anthropic下场做咨询",
     "slug": "anthropic-hg-european-ai-consultancy",
     "url": "/articles/anthropic-hg-european-ai-consultancy.md",
