@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (180)
+## Articles (181)
 
+- [数据要素迎来国家队](https://bi-chao.com/articles/national-data-group-property-registration-bank)
+  - Description: 10月20日，国家数据集团在河北雄安揭牌，央企名录第28位，为数据领域首家央企（央企增至100家），定位数据要素服务国家队、数据基建互联互通引领者、数据科技创新战略力量。此前7月1日国家数据局印发数据产权登记指引（6章42条），9月11日国家登记服务系统上线、首日56份凭证公示，北、上、深三家数据交易所首批入选。本文梳理制度、主体、市场闭环，厘清登记不等于确权，给银行数据资产入表与质押融资启示。
+  - Date: 2026-10-25
+  - Tags: 数据要素, 国家数据集团, 数据产权登记, 数据资产入表, 数据治理, 银行风控, 公共数据
 - [英国建AI生物安全实验室](https://bi-chao.com/articles/uk-ai-biosecurity-lab-banking)
   - Description: 10月24日，英国宣布约6亿英镑AI安全计划，旗舰是全球首个AI生物安全实验室：政府出资1亿，OpenAI、Anthropic各以1亿英镑算力与模型额度支持，合计3亿，DeepMind等参与。另含1.2亿英镑给AI安全研究所、1.3亿用于关键基础设施网络防御、6500万用于病原体对策。本文拆解资金结构、双重用途风险与公私合作，对比英美欧三条治理路径，给银行模型测评、数据主权与第三方管理启示。
   - Date: 2026-10-25
