@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-25",
-  "scanned_articles": 183,
-  "articles_with_faq": 95,
-  "total_questions": 435,
+  "scanned_articles": 184,
+  "articles_with_faq": 96,
+  "total_questions": 439,
   "items": [
+    {
+      "slug": "agentic-world-action-models-aw0-bank-agents",
+      "title": "让世界模型先“写代码”再动手：AW-0 智能体世界动作模型深度解读与银行智能体的四点启示",
+      "url": "https://bi-chao.com/articles/agentic-world-action-models-aw0-bank-agents",
+      "date": "2026-10-25",
+      "faqs": [
+        {
+          "question": "AW-0 是什么？",
+          "answer": "AW-0 是 UC Berkeley、NVIDIA 和宾夕法尼亚大学团队提出的智能体世界动作模型，在一个三专家混合 Transformer 中联合生成技能代码、未来视频和机器人动作（来源1、2）。"
+        },
+        {
+          "question": "代码流对 AW-0 的效果影响有多大？",
+          "answer": "在 8 项真机任务中，完整的 C→V→A 架构平均 71.1 分，去掉代码流的 V→A 版本只有 32.9 分，而推理延迟从 0.19 秒增加到 0.23 秒（来源2）。"
+        },
+        {
+          "question": "AW-0 的技能库是怎么来的？",
+          "answer": "由 Gemini 3.1 Pro 基于原语 API 为演示编写子任务程序，Claude Code 作为协调者把反复出现的套路蒸馏成技能，冻结后得到 50 个技能，再用缓存复用标注全部语料（来源2）。"
+        },
+        {
+          "question": "AW-0 对银行智能体有什么启示？",
+          "answer": "把计划写成可校验的技能调用代码；从历史案例中蒸馏并冻结技能库；执行前做阶段、依赖、白名单等检查，不通过就转人工或只给建议；关键参数另设独立复核（本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "subagents-single-loop-bank-asset-preservation",
       "title": "别把组织架构图搬进智能体：从“子智能体回收进主循环”看银行资产保全智能体的架构选择",
