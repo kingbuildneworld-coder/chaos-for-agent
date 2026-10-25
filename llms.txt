@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (185)
+## Articles (186)
 
 - [让智能体看不见密码](https://bi-chao.com/articles/agent-zero-exposure-credentials-bank)
   - Description: 2026年7月1Password与Anthropic推出1Password for Claude，让智能体不接触密码即可登录，称零暴露。密码经Noise协议端到端加密、AES-256-GCM内存暂存后直接填入网页，填充时智能体停止读取，密码不进模型上下文；每次释放需生物识别、逐会话授权、无常驻权限。但不解决DOM明文、会话令牌、提示注入风险。给银行提出身份委托、令牌化、独立保险库与动作级复核建议。
@@ -22,6 +22,10 @@
   - Description: UC Berkeley、NVIDIA 与宾夕法尼亚大学团队于 2026-10-21 发布 arXiv:2610.30136《Agentic World Action Models》，提出 AW-0：在一个三专家混合 Transformer 中联合去噪生成技能代码、未来视频和机器人动作，并用编码智能体自动把 2913 小时机器人与人类视频标注成程序、蒸馏出 50 个可复用技能。AW-0 在 RoboTwin 2.0 平均成功率 50.7%、8 项真机任务平均 71.1 分，比最强基线高 25.1 分；去掉代码流后降到 32.9 分。本文拆解其架构、数据管线、实验与局限，并讨论“代码即计划”“技能蒸馏与缓存”“校验后再执行的混合模式”对银行业务智能体（以资产保全为例）的启示。
   - Date: 2026-10-25
   - Tags: AW-0, 世界动作模型, 具身智能, 代码即策略, 技能库, 智能体, 论文解读, 资产保全
+- [密码不进模型的两条路](https://bi-chao.com/articles/credentials-bypass-model-local-cloud-bank)
+  - Description: 密码不进模型有两种实现。本地路线以1Password for Claude为代表，用本地信任锚与Noise加密，填充时让智能体闭眼；云端路线以Claude Duet为代表，一次性密钥加密密码、仅在云浏览器机解密，令牌用占位符加机器外代理注入，浏览器Cookie不外泄。本文对比两条路线的信任假设，并分析1Password for Agents跨厂商信任层，给银行凭据隔离、令牌代理与动作禁区建议。
+  - Date: 2026-10-25
+  - Tags: AI智能体, 凭据安全, 云端智能体, 虚拟机隔离, 令牌化, 零信任, 银行风控
 - [数据要素迎来国家队](https://bi-chao.com/articles/national-data-group-property-registration-bank)
   - Description: 10月20日，国家数据集团在河北雄安揭牌，央企名录第28位，为数据领域首家央企（央企增至100家），定位数据要素服务国家队、数据基建互联互通引领者、数据科技创新战略力量。此前7月1日国家数据局印发数据产权登记指引（6章42条），9月11日国家登记服务系统上线、首日56份凭证公示，北、上、深三家数据交易所首批入选。本文梳理制度、主体、市场闭环，厘清登记不等于确权，给银行数据资产入表与质押融资启示。
   - Date: 2026-10-25

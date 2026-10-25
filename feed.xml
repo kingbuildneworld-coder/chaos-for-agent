@@ -42,6 +42,20 @@
     <category term="资产保全"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/credentials-bypass-model-local-cloud-bank</id>
+    <title>密码不进模型的两条路</title>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/credentials-bypass-model-local-cloud-bank" rel="alternate" type="text/html"/>
+    <summary>密码不进模型有两种实现。本地路线以1Password for Claude为代表，用本地信任锚与Noise加密，填充时让智能体闭眼；云端路线以Claude Duet为代表，一次性密钥加密密码、仅在云浏览器机解密，令牌用占位符加机器外代理注入，浏览器Cookie不外泄。本文对比两条路线的信任假设，并分析1Password for Agents跨厂商信任层，给银行凭据隔离、令牌代理与动作禁区建议。</summary>
+    <category term="AI智能体"/>
+    <category term="凭据安全"/>
+    <category term="云端智能体"/>
+    <category term="虚拟机隔离"/>
+    <category term="令牌化"/>
+    <category term="零信任"/>
+    <category term="银行风控"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/national-data-group-property-registration-bank</id>
     <title>数据要素迎来国家队</title>
     <updated>2026-10-25T00:00:00Z</updated>
