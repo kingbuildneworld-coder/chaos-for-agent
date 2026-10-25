@@ -1,5 +1,22 @@
 [
   {
+    "title": "让智能体看不见密码",
+    "slug": "agent-zero-exposure-credentials-bank",
+    "url": "/articles/agent-zero-exposure-credentials-bank.md",
+    "description": "2026年7月1Password与Anthropic推出1Password for Claude，让智能体不接触密码即可登录，称零暴露。密码经Noise协议端到端加密、AES-256-GCM内存暂存后直接填入网页，填充时智能体停止读取，密码不进模型上下文；每次释放需生物识别、逐会话授权、无常驻权限。但不解决DOM明文、会话令牌、提示注入风险。给银行提出身份委托、令牌化、独立保险库与动作级复核建议。",
+    "date": "2026-10-25",
+    "tags": [
+      "AI智能体",
+      "凭据安全",
+      "零信任",
+      "密码管理器",
+      "浏览器智能体",
+      "提示注入",
+      "银行风控"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让世界模型先“写代码”再动手：AW-0 智能体世界动作模型深度解读与银行智能体的四点启示",
     "slug": "agentic-world-action-models-aw0-bank-agents",
     "url": "/articles/agentic-world-action-models-aw0-bank-agents.md",
