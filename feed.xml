@@ -27,6 +27,20 @@
     <category term="公共数据"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/open-weight-data-asset-post-training-trade</id>
+    <title>开源权重能交易吗</title>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/open-weight-data-asset-post-training-trade" rel="alternate" type="text/html"/>
+    <summary>开源大模型权重是否算数据资产、后训练能否交易，取决于会计、知识产权、许可证三关。中国层面，权重属数据资源，符合条件可入表，浙江已把算法、参数、模型纳入数据知识产权登记；但开源权重本身仅被许可使用，可入表的是合法使用权与衍生成果。MIT、Apache宽松许可允许商用与闭源衍生，Llama等定制许可有规模与同协议约束。本文比较中国登记、美国出口管制、欧盟AI Act规则，给银行尽调、入表与交易建议。</summary>
+    <category term="开源大模型"/>
+    <category term="模型权重"/>
+    <category term="数据资产"/>
+    <category term="数据知识产权"/>
+    <category term="开源许可证"/>
+    <category term="后训练"/>
+    <category term="银行合规"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/subagents-single-loop-bank-asset-preservation</id>
     <title>别把组织架构图搬进智能体：从“子智能体回收进主循环”看银行资产保全智能体的架构选择</title>
     <updated>2026-10-25T00:00:00Z</updated>
