@@ -1,5 +1,23 @@
 [
   {
+    "title": "让世界模型先“写代码”再动手：AW-0 智能体世界动作模型深度解读与银行智能体的四点启示",
+    "slug": "agentic-world-action-models-aw0-bank-agents",
+    "url": "/articles/agentic-world-action-models-aw0-bank-agents.md",
+    "description": "UC Berkeley、NVIDIA 与宾夕法尼亚大学团队于 2026-10-21 发布 arXiv:2610.30136《Agentic World Action Models》，提出 AW-0：在一个三专家混合 Transformer 中联合去噪生成技能代码、未来视频和机器人动作，并用编码智能体自动把 2913 小时机器人与人类视频标注成程序、蒸馏出 50 个可复用技能。AW-0 在 RoboTwin 2.0 平均成功率 50.7%、8 项真机任务平均 71.1 分，比最强基线高 25.1 分；去掉代码流后降到 32.9 分。本文拆解其架构、数据管线、实验与局限，并讨论“代码即计划”“技能蒸馏与缓存”“校验后再执行的混合模式”对银行业务智能体（以资产保全为例）的启示。",
+    "date": "2026-10-25",
+    "tags": [
+      "AW-0",
+      "世界动作模型",
+      "具身智能",
+      "代码即策略",
+      "技能库",
+      "智能体",
+      "论文解读",
+      "资产保全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "数据要素迎来国家队",
     "slug": "national-data-group-property-registration-bank",
     "url": "/articles/national-data-group-property-registration-bank.md",
