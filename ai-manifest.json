@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 181,
+    "total_articles": 182,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,22 @@
         "数据治理",
         "银行风控",
         "公共数据"
+      ]
+    },
+    {
+      "slug": "subagents-single-loop-bank-asset-preservation",
+      "title": "别把组织架构图搬进智能体：从“子智能体回收进主循环”看银行资产保全智能体的架构选择",
+      "date": "2026-10-25",
+      "description": "Anthropic 于 2026-10-22 发文指出，多个企业部署把路由器、规划器和领域子智能体折回主循环、改用按需加载的技能与工具后，质量更好、成本和延迟更低；LangChain 2026-01-14 的文章则把多智能体归纳为子智能体、技能、交接、路由四种模式并给出调用次数与 token 对比。本文把两篇文章的判断标准落到银行资产保全业务：以“案件”为中心的单一主循环承载尽调、保全、诉讼、执行、处置的连续推理，只在财产线索并行排查、独立复核、直接面对债务人对话三类环节保留子智能体或交接，并给出评测、权限、技能治理和分阶段迁移方案。",
+      "tags": [
+        "资产保全",
+        "智能体架构",
+        "子智能体",
+        "多智能体",
+        "技能",
+        "渐进式披露",
+        "银行AI",
+        "评测"
       ]
     },
     {
@@ -3101,5 +3117,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-25",
   "version": "1.1",
-  "total_articles": 181
+  "total_articles": 182
 }

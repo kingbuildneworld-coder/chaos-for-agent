@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-25",
-  "scanned_articles": 181,
-  "articles_with_faq": 94,
-  "total_questions": 431,
+  "scanned_articles": 182,
+  "articles_with_faq": 95,
+  "total_questions": 435,
   "items": [
+    {
+      "slug": "subagents-single-loop-bank-asset-preservation",
+      "title": "别把组织架构图搬进智能体：从“子智能体回收进主循环”看银行资产保全智能体的架构选择",
+      "url": "https://bi-chao.com/articles/subagents-single-loop-bank-asset-preservation",
+      "date": "2026-10-25",
+      "faqs": [
+        {
+          "question": "资产保全智能体应该用多智能体还是单智能体？",
+          "answer": "建议以单一主循环为主：一个案件一个上下文，条线经验写成技能、系统操作写成工具；只在财产线索并行排查、独立复核、面向债务人对话三类环节保留子智能体或交接（本文分析，依据来源1、2）。"
+        },
+        {
+          "question": "什么情况下 Anthropic 认为仍应使用子智能体？",
+          "answer": "单一循环出现可测量的上下文膨胀导致性能下降；需要用可丢弃的干净上下文并行处理多个任务；单一智能体难以选对工具或系统提示词存在冲突指令（来源1）。"
+        },
+        {
+          "question": "子智能体模式和技能模式的成本差在哪里？",
+          "answer": "LangChain 示意测算显示，单次请求子智能体模式需 4 次模型调用，技能模式 3 次；但在多领域、资料较大的并行查询中，子智能体约 9K token，技能约 15K token，因为技能会在对话中累积上下文（来源2）。"
+        },
+        {
+          "question": "银行用本地部署的模型也适合单一主循环吗？",
+          "answer": "不宜照搬。来源1 的前提是前沿模型能力增强，本地中小模型可承载的工具和上下文有限，应以评测为准，先在只读、可复核环节试点，逐步折回子智能体（本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "deepseek-bot-vs-harness-bank-deployment",
       "title": "DeepSeek Bot 和 DeepSeek Harness 不是一回事：一个是官方框架，一个是社区插件——银行该怎么选、怎么部署",

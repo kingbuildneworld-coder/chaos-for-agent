@@ -27,6 +27,21 @@
     <category term="公共数据"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/subagents-single-loop-bank-asset-preservation</id>
+    <title>别把组织架构图搬进智能体：从“子智能体回收进主循环”看银行资产保全智能体的架构选择</title>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/subagents-single-loop-bank-asset-preservation" rel="alternate" type="text/html"/>
+    <summary>Anthropic 于 2026-10-22 发文指出，多个企业部署把路由器、规划器和领域子智能体折回主循环、改用按需加载的技能与工具后，质量更好、成本和延迟更低；LangChain 2026-01-14 的文章则把多智能体归纳为子智能体、技能、交接、路由四种模式并给出调用次数与 token 对比。本文把两篇文章的判断标准落到银行资产保全业务：以“案件”为中心的单一主循环承载尽调、保全、诉讼、执行、处置的连续推理，只在财产线索并行排查、独立复核、直接面对债务人对话三类环节保留子智能体或交接，并给出评测、权限、技能治理和分阶段迁移方案。</summary>
+    <category term="资产保全"/>
+    <category term="智能体架构"/>
+    <category term="子智能体"/>
+    <category term="多智能体"/>
+    <category term="技能"/>
+    <category term="渐进式披露"/>
+    <category term="银行AI"/>
+    <category term="评测"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/uk-ai-biosecurity-lab-banking</id>
     <title>英国建AI生物安全实验室</title>
     <updated>2026-10-25T00:00:00Z</updated>

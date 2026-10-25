@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (181)
+## Articles (182)
 
 - [数据要素迎来国家队](https://bi-chao.com/articles/national-data-group-property-registration-bank)
   - Description: 10月20日，国家数据集团在河北雄安揭牌，央企名录第28位，为数据领域首家央企（央企增至100家），定位数据要素服务国家队、数据基建互联互通引领者、数据科技创新战略力量。此前7月1日国家数据局印发数据产权登记指引（6章42条），9月11日国家登记服务系统上线、首日56份凭证公示，北、上、深三家数据交易所首批入选。本文梳理制度、主体、市场闭环，厘清登记不等于确权，给银行数据资产入表与质押融资启示。
   - Date: 2026-10-25
   - Tags: 数据要素, 国家数据集团, 数据产权登记, 数据资产入表, 数据治理, 银行风控, 公共数据
+- [别把组织架构图搬进智能体：从“子智能体回收进主循环”看银行资产保全智能体的架构选择](https://bi-chao.com/articles/subagents-single-loop-bank-asset-preservation)
+  - Description: Anthropic 于 2026-10-22 发文指出，多个企业部署把路由器、规划器和领域子智能体折回主循环、改用按需加载的技能与工具后，质量更好、成本和延迟更低；LangChain 2026-01-14 的文章则把多智能体归纳为子智能体、技能、交接、路由四种模式并给出调用次数与 token 对比。本文把两篇文章的判断标准落到银行资产保全业务：以“案件”为中心的单一主循环承载尽调、保全、诉讼、执行、处置的连续推理，只在财产线索并行排查、独立复核、直接面对债务人对话三类环节保留子智能体或交接，并给出评测、权限、技能治理和分阶段迁移方案。
+  - Date: 2026-10-25
+  - Tags: 资产保全, 智能体架构, 子智能体, 多智能体, 技能, 渐进式披露, 银行AI, 评测
 - [英国建AI生物安全实验室](https://bi-chao.com/articles/uk-ai-biosecurity-lab-banking)
   - Description: 10月24日，英国宣布约6亿英镑AI安全计划，旗舰是全球首个AI生物安全实验室：政府出资1亿，OpenAI、Anthropic各以1亿英镑算力与模型额度支持，合计3亿，DeepMind等参与。另含1.2亿英镑给AI安全研究所、1.3亿用于关键基础设施网络防御、6500万用于病原体对策。本文拆解资金结构、双重用途风险与公私合作，对比英美欧三条治理路径，给银行模型测评、数据主权与第三方管理启示。
   - Date: 2026-10-25
@@ -743,11 +747,11 @@
 - 金融科技: 54 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 49 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 47 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 银行AI: 36 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 银行AI: 37 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 32 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 资产保全: 20 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 资产保全: 19 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 18 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 模型风险管理: 16 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
