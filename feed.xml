@@ -27,6 +27,22 @@
     <category term="银行风控"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/tiny-tapeout-github-tapeout-pipeline-agents</id>
+    <title>把流片做成一次 git push：Tiny Tapeout 的 GitHub 流水线深度解读，以及它对智能体工程化的启示</title>
+    <updated>2026-10-26T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/tiny-tapeout-github-tapeout-pipeline-agents" rel="alternate" type="text/html"/>
+    <summary>Tiny Tapeout 是 Matt Venn 发起的开源拼车流片平台，它在 GitHub 组织 TinyTapeout 下维护 420 个仓库：设计者用模板仓库提交 Verilog 或 Wokwi 设计，GitHub Actions 调用 LibreLane 自动生成 GDS 版图、跑测试和文档，再由平台把数百个小设计拼进同一颗芯片。截至 2026 年 9 月，它已制造 4000 个项目、完成 24 颗芯片，社区 Discord 5000 人，预计 2026 年 10 个班次约 3000 个项目、2027 年 17 个班次约 4000 个项目；2025 年 Efabless 倒闭后，它转向 IHP、GF180（wafer.space）和 SkyWater 等多条产线。本文拆解其仓库结构、提交流水线、多工厂策略与风险，并讨论“模板 + CI 闸门 + 拼车共享”对 AI 智能体写硬件、以及企业智能体工程化的启示。</summary>
+    <category term="Tiny Tapeout"/>
+    <category term="开源芯片"/>
+    <category term="流片"/>
+    <category term="GitHub Actions"/>
+    <category term="LibreLane"/>
+    <category term="IHP"/>
+    <category term="GF180"/>
+    <category term="智能体"/>
+    <category term="工程化"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/world-bank-wdr2026-ai-banking-inclusion</id>
     <title>世界银行的AI银行启示</title>
     <updated>2026-10-26T00:00:00Z</updated>

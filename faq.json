@@ -1,10 +1,38 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-26",
-  "scanned_articles": 188,
-  "articles_with_faq": 96,
-  "total_questions": 439,
+  "scanned_articles": 189,
+  "articles_with_faq": 97,
+  "total_questions": 444,
   "items": [
+    {
+      "slug": "tiny-tapeout-github-tapeout-pipeline-agents",
+      "title": "把流片做成一次 git push：Tiny Tapeout 的 GitHub 流水线深度解读，以及它对智能体工程化的启示",
+      "url": "https://bi-chao.com/articles/tiny-tapeout-github-tapeout-pipeline-agents",
+      "date": "2026-10-26",
+      "faqs": [
+        {
+          "question": "Tiny Tapeout 是什么？",
+          "answer": "Tiny Tapeout 是一个开源拼车流片平台，把数百个小型数字或模拟设计拼进同一颗芯片制造，设计者通过 GitHub 模板仓库提交设计，GitHub Actions 自动生成版图（来源2、3、4）。"
+        },
+        {
+          "question": "提交一个 Tiny Tapeout 设计需要哪些步骤？",
+          "answer": "复制对应工艺的模板仓库，把 Verilog 放进 src、填写 info.yaml 和 docs/info.md、改写测试平台；GitHub Actions 用 LibreLane 生成 GDS，工作流通过后在 app.tinytapeout.com 提交到班次（来源3、4）。"
+        },
+        {
+          "question": "多久能拿到芯片？",
+          "answer": "制造约需 6 到 9 个月，加上组装、测试和发货，最长约 1 年；例如 TTIHP26b 预计 2027 年 6 月 25 日到货、8 月 16 日发货（来源3、6）。"
+        },
+        {
+          "question": "Efabless 倒闭后 Tiny Tapeout 怎么样了？",
+          "answer": "2025 年 3 月 Efabless 停业后，Tiny Tapeout 作为独立公司继续运营，转向 IHP 130nm、wafer.space 的 GF180 和 SkyWater 130nm 等产线（来源8、9、2）。"
+        },
+        {
+          "question": "Tiny Tapeout 对企业智能体有什么启示？",
+          "answer": "用模板仓库限定智能体的边界，用机器可判定的 CI 闸门决定产出能否进入人工审批，把不可逆的昂贵步骤放到最后并人工确认，共享昂贵基础设施并避免绑定单一供应商（本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "agentic-world-action-models-aw0-bank-agents",
       "title": "让世界模型先“写代码”再动手：AW-0 智能体世界动作模型深度解读与银行智能体的四点启示",
