@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (187)
+## Articles (188)
 
 - [银行能停掉智能体吗](https://bi-chao.com/articles/bank-ai-agent-kill-switch-controllability)
   - Description: 2026年10月13日路透社报道，美联储、OCC、FDIC向大中小银行问询：能否追踪审计智能体决策、如何把智能体约束在权限内、关键决策是否有人参与、如何关停自主系统。背景是4月SR 26-2模型风险管理指引明确把生成式与智能体AI排除在外，相关信息征询截至10月24日尚未落地，约三分之一银行认为关停开关最薄弱。本文梳理可关停、可审计、可恢复的技术骨架，并对照FSB十二项实践与国内监管给出落地清单。
   - Date: 2026-10-26
   - Tags: 智能体, 模型风险管理, 银行监管, 熔断机制, 可审计性, FSB, 银行风控
+- [世界银行的AI银行启示](https://bi-chao.com/articles/world-bank-wdr2026-ai-banking-inclusion)
+  - Description: 世界银行《2026年世界发展报告：人工智能的承诺》是首份面向全球中低收入人口的AI评估，提出采用—适配—推进三路径与能力、集中、互补三要素。金融普惠专栏显示：替代数据评分让巴西Nubank同类借款人风险降约70%、肯尼亚M-PESA触达1800万无银行账户用户、KYC从数周压缩到分钟、合规成本降50%-70%。本文从银行视角拆解报告，给出中小银行本地适配、小模型离线、防算力集中与可审计治理清单。
+  - Date: 2026-10-26
+  - Tags: 世界银行, 金融普惠, 人工智能, 信用评分, 数字金融, AI治理, 中小银行
 - [让智能体看不见密码](https://bi-chao.com/articles/agent-zero-exposure-credentials-bank)
   - Description: 2026年7月1Password与Anthropic推出1Password for Claude，让智能体不接触密码即可登录，称零暴露。密码经Noise协议端到端加密、AES-256-GCM内存暂存后直接填入网页，填充时智能体停止读取，密码不进模型上下文；每次释放需生物识别、逐会话授权、无常驻权限。但不解决DOM明文、会话令牌、提示注入风险。给银行提出身份委托、令牌化、独立保险库与动作级复核建议。
   - Date: 2026-10-25
@@ -765,14 +769,14 @@
 
 ## Topics (top 10)
 - 金融科技: 54 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 50 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 49 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 49 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 37 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 32 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 人工智能: 19 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 人工智能: 18 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 模型风险管理: 17 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents

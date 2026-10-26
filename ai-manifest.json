@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 187,
+    "total_articles": 188,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,21 @@
         "可审计性",
         "FSB",
         "银行风控"
+      ]
+    },
+    {
+      "slug": "world-bank-wdr2026-ai-banking-inclusion",
+      "title": "世界银行的AI银行启示",
+      "date": "2026-10-26",
+      "description": "世界银行《2026年世界发展报告：人工智能的承诺》是首份面向全球中低收入人口的AI评估，提出采用—适配—推进三路径与能力、集中、互补三要素。金融普惠专栏显示：替代数据评分让巴西Nubank同类借款人风险降约70%、肯尼亚M-PESA触达1800万无银行账户用户、KYC从数周压缩到分钟、合规成本降50%-70%。本文从银行视角拆解报告，给出中小银行本地适配、小模型离线、防算力集中与可审计治理清单。",
+      "tags": [
+        "世界银行",
+        "金融普惠",
+        "人工智能",
+        "信用评分",
+        "数字金融",
+        "AI治理",
+        "中小银行"
       ]
     },
     {
@@ -3193,5 +3208,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-26",
   "version": "1.1",
-  "total_articles": 187
+  "total_articles": 188
 }

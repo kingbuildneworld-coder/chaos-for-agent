@@ -27,6 +27,20 @@
     <category term="银行风控"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/world-bank-wdr2026-ai-banking-inclusion</id>
+    <title>世界银行的AI银行启示</title>
+    <updated>2026-10-26T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/world-bank-wdr2026-ai-banking-inclusion" rel="alternate" type="text/html"/>
+    <summary>世界银行《2026年世界发展报告：人工智能的承诺》是首份面向全球中低收入人口的AI评估，提出采用—适配—推进三路径与能力、集中、互补三要素。金融普惠专栏显示：替代数据评分让巴西Nubank同类借款人风险降约70%、肯尼亚M-PESA触达1800万无银行账户用户、KYC从数周压缩到分钟、合规成本降50%-70%。本文从银行视角拆解报告，给出中小银行本地适配、小模型离线、防算力集中与可审计治理清单。</summary>
+    <category term="世界银行"/>
+    <category term="金融普惠"/>
+    <category term="人工智能"/>
+    <category term="信用评分"/>
+    <category term="数字金融"/>
+    <category term="AI治理"/>
+    <category term="中小银行"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/agent-zero-exposure-credentials-bank</id>
     <title>让智能体看不见密码</title>
     <updated>2026-10-25T00:00:00Z</updated>
