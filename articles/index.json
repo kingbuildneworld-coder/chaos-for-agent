@@ -1,5 +1,22 @@
 [
   {
+    "title": "银行能停掉智能体吗",
+    "slug": "bank-ai-agent-kill-switch-controllability",
+    "url": "/articles/bank-ai-agent-kill-switch-controllability.md",
+    "description": "2026年10月13日路透社报道，美联储、OCC、FDIC向大中小银行问询：能否追踪审计智能体决策、如何把智能体约束在权限内、关键决策是否有人参与、如何关停自主系统。背景是4月SR 26-2模型风险管理指引明确把生成式与智能体AI排除在外，相关信息征询截至10月24日尚未落地，约三分之一银行认为关停开关最薄弱。本文梳理可关停、可审计、可恢复的技术骨架，并对照FSB十二项实践与国内监管给出落地清单。",
+    "date": "2026-10-26",
+    "tags": [
+      "智能体",
+      "模型风险管理",
+      "银行监管",
+      "熔断机制",
+      "可审计性",
+      "FSB",
+      "银行风控"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让智能体看不见密码",
     "slug": "agent-zero-exposure-credentials-bank",
     "url": "/articles/agent-zero-exposure-credentials-bank.md",
