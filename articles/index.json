@@ -1,5 +1,22 @@
 [
   {
+    "title": "银行给智能体开只读通道",
+    "slug": "hsbc-nio-mcp-read-only-bank-data",
+    "url": "/articles/hsbc-nio-mcp-read-only-bank-data.md",
+    "description": "汇丰2026年9月在Sibos发布HSBCnio，企业客户授权AI工具可经MCP读取许可的账户与交易数据，复用HSBCnet权限，覆盖余额、支付、贸易贷款、外汇。MCP是开放标准，由Anthropic推出、2025年底捐赠Linux基金会。这是银行继封堵、关停后的第三条路：受控开放。当前为只读，写操作与Ask HSBC未上线，令牌范围、数据驻留、留存、提示注入防护未披露。本文拆解其安全边界和清单。",
+    "date": "2026-10-27",
+    "tags": [
+      "MCP",
+      "汇丰",
+      "开放银行",
+      "智能体",
+      "企业财资",
+      "数据安全",
+      "银行API"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行能停掉智能体吗",
     "slug": "bank-ai-agent-kill-switch-controllability",
     "url": "/articles/bank-ai-agent-kill-switch-controllability.md",

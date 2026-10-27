@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-26T00:00:00Z</updated>
+  <updated>2026-10-27T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/hsbc-nio-mcp-read-only-bank-data</id>
+    <title>银行给智能体开只读通道</title>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/hsbc-nio-mcp-read-only-bank-data" rel="alternate" type="text/html"/>
+    <summary>汇丰2026年9月在Sibos发布HSBCnio，企业客户授权AI工具可经MCP读取许可的账户与交易数据，复用HSBCnet权限，覆盖余额、支付、贸易贷款、外汇。MCP是开放标准，由Anthropic推出、2025年底捐赠Linux基金会。这是银行继封堵、关停后的第三条路：受控开放。当前为只读，写操作与Ask HSBC未上线，令牌范围、数据驻留、留存、提示注入防护未披露。本文拆解其安全边界和清单。</summary>
+    <category term="MCP"/>
+    <category term="汇丰"/>
+    <category term="开放银行"/>
+    <category term="智能体"/>
+    <category term="企业财资"/>
+    <category term="数据安全"/>
+    <category term="银行API"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/bank-ai-agent-kill-switch-controllability</id>
     <title>银行能停掉智能体吗</title>
