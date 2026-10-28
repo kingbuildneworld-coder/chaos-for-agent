@@ -1,10 +1,38 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-29",
-  "scanned_articles": 201,
-  "articles_with_faq": 101,
-  "total_questions": 464,
+  "scanned_articles": 202,
+  "articles_with_faq": 102,
+  "total_questions": 469,
   "items": [
+    {
+      "slug": "ai-era-human-agent-learning-organization-one-person-company",
+      "title": "重构学习型组织：AI 时代人机协同的新范式——从马奎特五大子系统到一人公司的“自学习引擎”",
+      "url": "https://bi-chao.com/articles/ai-era-human-agent-learning-organization-one-person-company",
+      "date": "2026-10-29",
+      "faqs": [
+        {
+          "question": "AI 时代的学习型组织和传统学习型组织有什么区别？",
+          "answer": "传统学习型组织主要通过沉淀员工经验、促进共享来提升能力；AI 时代的学习型组织则由人和智能体共同构成，AI 负责加速知识的捕获、整理和更新，并承担大量执行工作，人专注于定义问题、做出判断和承担责任（本文分析）。"
+        },
+        {
+          "question": "马奎特的学习型组织模型包括哪些子系统？",
+          "answer": "马奎特的系统学习型组织模型包括五个子系统：学习、组织、人员、知识和技术。他认为五者缺一不可，否则只能片面理解组织从不学习走向学习所需的过程与原则（来源1、2）。"
+        },
+        {
+          "question": "一人公司也能成为学习型组织吗？",
+          "answer": "能，而且学习回路更短。关键是建立每日、每周、每月的复盘机制，把经验写成智能体可执行的规则和技能，设定授权与熔断边界，并借助外部顾问或同行弥补“没有同事反驳”的短板（本文分析）。"
+        },
+        {
+          "question": "为什么说智能体擅长单环学习，而双环学习必须由人负责？",
+          "answer": "智能体善于在既定目标下纠错优化，但不会主动质疑目标和指标本身是否正确，甚至可能“钻指标的空子”，例如为追求解决速度提前关闭工单。追问目标、指标和规则是否合理，需要人来完成（来源5、6；本文分析）。"
+        },
+        {
+          "question": "一人公司使用 AI 的主要风险是什么？",
+          "answer": "主要包括错误被自动固化、人的判断力退化、知识膨胀、严重失败难以察觉，以及常驻智能体带来的成本失控。对策是规则修改由人确认、关键决策先独立判断、用系统证据验收、设置预算和熔断机制（来源6、7；本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "babysitting-ai-agents-delegation-failures-mandate",
       "title": "“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉",

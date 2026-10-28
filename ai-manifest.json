@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 201,
+    "total_articles": 202,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "ai-era-human-agent-learning-organization-one-person-company",
+      "title": "重构学习型组织：AI 时代人机协同的新范式——从马奎特五大子系统到一人公司的“自学习引擎”",
+      "date": "2026-10-29",
+      "description": "知识半衰期急剧缩短，学习型组织从“锦上添花”变成“生存底线”。本文以马奎特《构建学习型组织》五大子系统为骨架，结合圣吉、野中郁次郎、阿吉里斯的理论，提出“AI 加速知识沉淀与更新、人提升判断力”的人机协同学习型组织框架，并给出一人公司的落地方法。",
+      "tags": [
+        "学习型组织",
+        "人机协同",
+        "AI智能体",
+        "知识管理",
+        "一人公司",
+        "组织变革",
+        "判断力",
+        "组织学习"
+      ]
+    },
     {
       "slug": "barclays-ai-job-cuts-bank-talent-future",
       "title": "银行未来需要什么人",
@@ -3416,5 +3432,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-29",
   "version": "1.1",
-  "total_articles": 201
+  "total_articles": 202
 }
