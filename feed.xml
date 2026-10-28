@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-28T00:00:00Z</updated>
+  <updated>2026-10-29T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/hibp-china-breach-notification-bank</id>
+    <title>国内需要泄露查询吗</title>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/hibp-china-breach-notification-bank" rel="alternate" type="text/html"/>
+    <summary>HIBP是Troy Hunt创建的数据泄露查询服务，已收录1048起泄露、178亿条地址，提供邮箱、密码查询、域名监控和API，半数以上财富500强在用。其密码查询采用k匿名设计，只发哈希前缀，不回显明文。国内有12387报告和漏洞平台，却没有面向个人的泄露查询，法律上采取处理者主动通知模式。本文分析国内是否需要、如何防止其异化为社工库，以及银行在撞库防护、弱密码拦截和泄露监测上的机会与路径。</summary>
+    <category term="数据泄露"/>
+    <category term="个人信息保护"/>
+    <category term="身份认证"/>
+    <category term="网络安全"/>
+    <category term="反欺诈"/>
+    <category term="账户接管"/>
+    <category term="金融科技"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate</id>
     <title>“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉</title>

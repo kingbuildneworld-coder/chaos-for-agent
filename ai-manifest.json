@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 199,
+    "total_articles": 200,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "hibp-china-breach-notification-bank",
+      "title": "国内需要泄露查询吗",
+      "date": "2026-10-29",
+      "description": "HIBP是Troy Hunt创建的数据泄露查询服务，已收录1048起泄露、178亿条地址，提供邮箱、密码查询、域名监控和API，半数以上财富500强在用。其密码查询采用k匿名设计，只发哈希前缀，不回显明文。国内有12387报告和漏洞平台，却没有面向个人的泄露查询，法律上采取处理者主动通知模式。本文分析国内是否需要、如何防止其异化为社工库，以及银行在撞库防护、弱密码拦截和泄露监测上的机会与路径。",
+      "tags": [
+        "数据泄露",
+        "个人信息保护",
+        "身份认证",
+        "网络安全",
+        "反欺诈",
+        "账户接管",
+        "金融科技"
+      ]
+    },
     {
       "slug": "babysitting-ai-agents-delegation-failures-mandate",
       "title": "“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉",
@@ -3384,7 +3399,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-10-29",
   "version": "1.1",
-  "total_articles": 199
+  "total_articles": 200
 }

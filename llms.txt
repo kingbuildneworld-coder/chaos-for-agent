@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (199)
+## Articles (200)
 
+- [国内需要泄露查询吗](https://bi-chao.com/articles/hibp-china-breach-notification-bank)
+  - Description: HIBP是Troy Hunt创建的数据泄露查询服务，已收录1048起泄露、178亿条地址，提供邮箱、密码查询、域名监控和API，半数以上财富500强在用。其密码查询采用k匿名设计，只发哈希前缀，不回显明文。国内有12387报告和漏洞平台，却没有面向个人的泄露查询，法律上采取处理者主动通知模式。本文分析国内是否需要、如何防止其异化为社工库，以及银行在撞库防护、弱密码拦截和泄露监测上的机会与路径。
+  - Date: 2026-10-29
+  - Tags: 数据泄露, 个人信息保护, 身份认证, 网络安全, 反欺诈, 账户接管, 金融科技
 - [“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉](https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate)
   - Description: 微软研究院等 2026 年 10 月 26 日发布论文，分析 163,487 条 Reddit 帖子，提出 MANDATE 智能体委托失败分类：7 组 23 类。73 名用户研究发现：越严重的失败越难察觉；最常见的空转失败几乎没人研究。本文梳理其发现、方法局限，并给出银行部署智能体的监督设计建议。
   - Date: 2026-10-28
@@ -812,7 +816,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 金融科技: 55 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 56 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 智能体: 55 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 51 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 38 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
