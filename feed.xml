@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/doe-scac-quantum-roadmap-bank</id>
+    <title>量子拐点的美国路线图</title>
+    <updated>2026-10-28T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/doe-scac-quantum-roadmap-bank" rel="alternate" type="text/html"/>
+    <summary>2026年9月，美国能源部量子分委员会发布《SCAC量子委员会报告：通向集成量子未来》。报告把2028年演示科学相关、纠错量子计算机作为硬目标，提出量子大挑战、量子计算用户设施、全企业集成三阶段路线图和科学、硬件、技术三维里程碑，强调以科学效用而非量子比特数衡量、技术中立、多路线并行，并明确提到金融数据加速。本文解读其逻辑与对银行量子就绪、后量子密码迁移的启示。</summary>
+    <category term="量子计算"/>
+    <category term="量子加密"/>
+    <category term="后量子密码"/>
+    <category term="金融科技"/>
+    <category term="风险管理"/>
+    <category term="技术路线图"/>
+    <category term="AI治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/visa-bill-billtrust-agentic-b2b-payment</id>
     <title>智能体开始替企业付款</title>
     <updated>2026-10-28T00:00:00Z</updated>
