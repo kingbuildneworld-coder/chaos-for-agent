@@ -1,10 +1,38 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-28",
-  "scanned_articles": 192,
-  "articles_with_faq": 97,
-  "total_questions": 444,
+  "scanned_articles": 193,
+  "articles_with_faq": 98,
+  "total_questions": 449,
   "items": [
+    {
+      "slug": "genie-4-world-model-comparison-deep-research",
+      "title": "Genie 4 深度研究：当世界模型请来一位“导演”——与 Genie 3、Runway、Odyssey、Decart、World Labs、Cosmos 的全面对比",
+      "url": "https://bi-chao.com/articles/genie-4-world-model-comparison-deep-research",
+      "date": "2026-10-28",
+      "faqs": [
+        {
+          "question": "Genie 4 是什么？",
+          "answer": "Genie 4 是 Google DeepMind 于 2026 年 10 月 27 日发布的实时交互世界模型，用户可通过键盘导航和文本提示实时塑造世界，并首次原生生成环境音和互动对话；目前以研究预览形式向受信测试者开放（来源1、2）。"
+        },
+        {
+          "question": "Genie 4 与 Genie 3 有什么不同？",
+          "answer": "Genie 4 增加了原生音频与互动对话、更逼真的物理与人物，并由 Gemini 3.8 Flash 作为回路中的引导智能体拆解目标、核验画面；但世界一致性仍只能维持几分钟，与 Genie 3 相同（来源1、2、3、4）。"
+        },
+        {
+          "question": "Genie 4 的技术原理是什么？",
+          "answer": "DeepMind 未公开架构细节。已知它逐帧实时生成世界，由 Gemini Omni 锚定真实外观、由 Gemini 3.8 Flash 规划和核验进度、由 Gemini 4 Argon 为机器人任务生成步骤字幕；其生成器形态可能与 Runway 公开的自回归扩散加缓存结构相似，但这是本文推断（来源1、5）。"
+        },
+        {
+          "question": "Genie 4 与 Runway、World Labs、NVIDIA Cosmos 有什么区别？",
+          "answer": "Runway GWM Worlds 2 同为实时视频流并原生生成音频，无预设时长；World Labs Marble 生成可导出的持久 3D 资产；NVIDIA Cosmos 3 是可在自有硬件上后训练的开放权重物理 AI 底座。Genie 4 的特点是把大语言模型放入生成回路做规划与核验（来源1、5、6、7）。"
+        },
+        {
+          "question": "Genie 4 有哪些局限？",
+          "answer": "官方承认：细节和物体会随时间漂移，只支持几分钟连续交互，多智能体交互、真实地点还原、文字渲染和实时音频准确性仍待改进（来源1、2）。"
+        }
+      ]
+    },
     {
       "slug": "tiny-tapeout-github-tapeout-pipeline-agents",
       "title": "把流片做成一次 git push：Tiny Tapeout 的 GitHub 流水线深度解读，以及它对智能体工程化的启示",
