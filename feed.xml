@@ -44,6 +44,23 @@
     <category term="物理AI"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/openai-eth-exponential-time-hypothesis-explained</id>
+    <title>OpenAI“证伪 ETH”到底意味着什么？一篇讲清楚的深度研究：不是以太坊，不是 P=NP，也不是密码学末日</title>
+    <updated>2026-10-28T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/openai-eth-exponential-time-hypothesis-explained" rel="alternate" type="text/html"/>
+    <summary>2026 年 10 月 26 日，OpenAI 宣布其内部模型证伪了指数时间假设（Exponential Time Hypothesis，ETH）——一个由 Impagliazzo、Paturi 与 Zane 于 1999 年前后提出、被数百篇论文当作前提的计算复杂性猜想。模型于 10 月 16 日给出自然语言反证，10 月 17 日完成 Lean 形式化；论文给出一个确定性算法，能在亚指数时间、多项式空间内精确计数固定宽度 CNF 公式的满足赋值，取 3-SAT 即推翻 ETH。ETH 的原始提出者 Impagliazzo、Paturi 与 MIT 的 Ryan Williams 牵头独立审查，并明确“参与不代表认证”。Anthropic 随后也发布了自己的 ETH 反证。本文用通俗语言解释 ETH 是什么、这次到底证明了什么、没证明什么（不是以太坊、不推出 P=NP、目前没有发现密码学被攻破、不意味着 SAT 求解器立刻变快），Lean 形式化能保证什么、不能保证什么，以及它对学术界、AI 科研范式和企业智能体的含义。</summary>
+    <category term="ETH"/>
+    <category term="指数时间假设"/>
+    <category term="OpenAI"/>
+    <category term="Anthropic"/>
+    <category term="计算复杂性"/>
+    <category term="P vs NP"/>
+    <category term="3-SAT"/>
+    <category term="Lean"/>
+    <category term="形式化验证"/>
+    <category term="AI 科研"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/visa-bill-billtrust-agentic-b2b-payment</id>
     <title>智能体开始替企业付款</title>
     <updated>2026-10-28T00:00:00Z</updated>
