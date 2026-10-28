@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 202,
+    "total_articles": 203,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "ai-agent-evaluation-benchmarks-review",
+      "title": "分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图",
+      "date": "2026-10-29",
+      "description": "从静态题库、人类偏好竞技场到智能体任务基准与时间视界，AI 评测体系正在快速扩张，但饱和、污染、排行榜博弈、评测器缺陷、忽视成本、脚手架混淆、脱离真实工作和用户视角缺失等问题同样突出。本文梳理评测体系的指标现状与系统性缺陷，并提出效度、信度、可复现、经济性与授权一致性五位一体的完善路径。",
+      "tags": [
+        "AI评测",
+        "智能体评测",
+        "基准测试",
+        "排行榜",
+        "ARC-AGI",
+        "METR",
+        "AI治理",
+        "银行AI"
+      ]
+    },
     {
       "slug": "ai-era-human-agent-learning-organization-one-person-company",
       "title": "重构学习型组织：AI 时代人机协同的新范式——从马奎特五大子系统到一人公司的“自学习引擎”",
@@ -3432,5 +3448,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-29",
   "version": "1.1",
-  "total_articles": 202
+  "total_articles": 203
 }

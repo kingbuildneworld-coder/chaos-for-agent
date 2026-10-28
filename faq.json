@@ -1,10 +1,38 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-29",
-  "scanned_articles": 202,
-  "articles_with_faq": 102,
-  "total_questions": 469,
+  "scanned_articles": 203,
+  "articles_with_faq": 103,
+  "total_questions": 474,
   "items": [
+    {
+      "slug": "ai-agent-evaluation-benchmarks-review",
+      "title": "分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图",
+      "url": "https://bi-chao.com/articles/ai-agent-evaluation-benchmarks-review",
+      "date": "2026-10-29",
+      "faqs": [
+        {
+          "question": "当前主流的 AI 与智能体评测体系有哪些类型？",
+          "answer": "大致可分为五类：静态知识与推理题库、人类偏好竞技场（如 Chatbot Arena）、智能体任务基准（如 SWE-bench Verified、τ-bench、ARC-AGI-3）、自主性与风险评测（如 METR 时间视界），以及成本感知的综合平台（如普林斯顿 HAL）（来源1—6；分类为本文分析）。"
+        },
+        {
+          "question": "为什么同一个模型在同一基准上会出现差距很大的分数？",
+          "answer": "主要原因是测试脚手架不同。ARC Prize 测得 GPT-6 Astra 在 ARC-AGI-3 上用中立标准脚手架为 62.7%，用保留推理状态并压缩上下文的厂商适配脚手架为 99.9%（来源1）。"
+        },
+        {
+          "question": "智能体基准本身存在哪些缺陷？",
+          "answer": "研究发现 SWE-bench Verified 测试用例不足，τ-bench 会把空回复算作成功，这类问题可导致相对高估或低估最高达 100%；超过一半的被审查基准存在实现缺陷，80% 未承认自身弱点（来源4）。"
+        },
+        {
+          "question": "为什么说只看准确率不够？",
+          "answer": "准确率可以通过重试等方法提高，却不代表真正进步；只看准确率还会导致智能体过于复杂昂贵。评测应同时报告成本，并在准确率与成本的帕累托前沿上比较（来源5、6）。"
+        },
+        {
+          "question": "企业应如何评测准备部署的智能体？",
+          "answer": "用自身业务的真实任务构建内部评测集，在相同配置下比较质量、成本、时延与失败模式；评测整个系统而非单一模型；通过影子运行积累真实数据；把是否越权、是否谎报纳入验收，并持续监测（本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "ai-era-human-agent-learning-organization-one-person-company",
       "title": "重构学习型组织：AI 时代人机协同的新范式——从马奎特五大子系统到一人公司的“自学习引擎”",
