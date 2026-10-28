@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (200)
+## Articles (201)
 
+- [银行未来需要什么人](https://bi-chao.com/articles/barclays-ai-job-cuts-bank-talent-future)
+  - Description: 巴克莱2026年10月宣布预计到年底裁员约5000人，约占9.3万员工5%，60%为支持职能，随AI提效减少开发者，呼叫中心话量年降10%。扩散模型发明者、Anthropic科学家Sohl-Dickstein在斯坦福演讲提出，应按下一代模型前瞻规划，不要把会被碾压的技能当竞争力。本文分析银行岗位可碾压性分层，给出未来人才画像，以及求职者与在职者如何借AI杠杆、判断、担责、验证与治理能力避免被替代。
+  - Date: 2026-10-29
+  - Tags: 银行人才, 职业发展, AI替代, 就业, 智能体, 能力建设, 银行数字化转型
 - [国内需要泄露查询吗](https://bi-chao.com/articles/hibp-china-breach-notification-bank)
   - Description: HIBP是Troy Hunt创建的数据泄露查询服务，已收录1048起泄露、178亿条地址，提供邮箱、密码查询、域名监控和API，半数以上财富500强在用。其密码查询采用k匿名设计，只发哈希前缀，不回显明文。国内有12387报告和漏洞平台，却没有面向个人的泄露查询，法律上采取处理者主动通知模式。本文分析国内是否需要、如何防止其异化为社工库，以及银行在撞库防护、弱密码拦截和泄露监测上的机会与路径。
   - Date: 2026-10-29
@@ -816,8 +820,8 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
+- 智能体: 56 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 金融科技: 56 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- 智能体: 55 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 51 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 38 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 33 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
