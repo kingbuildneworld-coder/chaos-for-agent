@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 197,
+    "total_articles": 198,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -116,6 +116,21 @@
         "AI 安全",
         "写作即思考",
         "人类世"
+      ]
+    },
+    {
+      "slug": "memvid-single-file-agent-memory",
+      "title": "把记忆装进一个文件",
+      "date": "2026-10-28",
+      "description": "Memvid是16900余星的开源AI智能体记忆层，用Rust编写、Apache-2.0许可。它把文档、嵌入向量、全文与向量索引、元数据和引擎全部打包进单个.mv2文件，替代复杂RAG流水线。其设计借鉴视频编码，以追加式不可变帧组织记忆，内置WAL恢复、BM25与HNSW检索、时间索引，支持时间旅行、离线嵌入、密码加密。本文解读其机制、性能口径及对银行审计、数据驻留和智能体记忆的价值与局限。",
+      "tags": [
+        "智能体",
+        "RAG",
+        "向量数据库",
+        "记忆系统",
+        "Rust",
+        "数据驻留",
+        "AI工程化"
       ]
     },
     {
@@ -3355,5 +3370,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-28",
   "version": "1.1",
-  "total_articles": 197
+  "total_articles": 198
 }

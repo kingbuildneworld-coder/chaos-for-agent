@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (197)
+## Articles (198)
 
 - [量子拐点的美国路线图](https://bi-chao.com/articles/doe-scac-quantum-roadmap-bank)
   - Description: 2026年9月，美国能源部量子分委员会发布《SCAC量子委员会报告：通向集成量子未来》。报告把2028年演示科学相关、纠错量子计算机作为硬目标，提出量子大挑战、量子计算用户设施、全企业集成三阶段路线图和科学、硬件、技术三维里程碑，强调以科学效用而非量子比特数衡量、技术中立、多路线并行，并明确提到金融数据加速。本文解读其逻辑与对银行量子就绪、后量子密码迁移的启示。
@@ -30,6 +30,10 @@
   - Description: 扩散模型发明者、Anthropic 研究科学家 Jascha Sohl-Dickstein 于 2026 年 6 月 12 日在斯坦福 Physics and AI 会议（PAI26）发表演讲《给人类世最初与最后时光里年轻研究者的建议》，视频由 Stanford HAI 于 6 月 30 日上传，时长 45:14，10 月在 X 上再度走红。他的论据包括：十年来最大模型训练算力增长约 1000 万倍；METR 任务时长在不到一年里约增长 10 倍；AI 在约 7 个月里开始解决 Erdős 问题；按趋势 2030 年算力或达 2025 年的约 1 万倍。他的建议：选择在模型变强后仍有价值、甚至随之增值的课题；把执行交给 AI 但保留理解；自己写初稿——“写作即思考”；重估“读博—博后—教职”这条路径的安全性；趁指数增长早期，投身 AI 安全、可解释性、政策与公平获取。本文梳理其论证结构，…
   - Date: 2026-10-28
   - Tags: Jascha Sohl-Dickstein, Anthropic, 斯坦福, AGI, 科研生涯, Bitter Lesson, METR, AI 安全, 写作即思考, 人类世
+- [把记忆装进一个文件](https://bi-chao.com/articles/memvid-single-file-agent-memory)
+  - Description: Memvid是16900余星的开源AI智能体记忆层，用Rust编写、Apache-2.0许可。它把文档、嵌入向量、全文与向量索引、元数据和引擎全部打包进单个.mv2文件，替代复杂RAG流水线。其设计借鉴视频编码，以追加式不可变帧组织记忆，内置WAL恢复、BM25与HNSW检索、时间索引，支持时间旅行、离线嵌入、密码加密。本文解读其机制、性能口径及对银行审计、数据驻留和智能体记忆的价值与局限。
+  - Date: 2026-10-28
+  - Tags: 智能体, RAG, 向量数据库, 记忆系统, Rust, 数据驻留, AI工程化
 - [OpenAI“证伪 ETH”到底意味着什么？一篇讲清楚的深度研究：不是以太坊，不是 P=NP，也不是密码学末日](https://bi-chao.com/articles/openai-eth-exponential-time-hypothesis-explained)
   - Description: 2026 年 10 月 26 日，OpenAI 宣布其内部模型证伪了指数时间假设（Exponential Time Hypothesis，ETH）——一个由 Impagliazzo、Paturi 与 Zane 于 1999 年前后提出、被数百篇论文当作前提的计算复杂性猜想。模型于 10 月 16 日给出自然语言反证，10 月 17 日完成 Lean 形式化；论文给出一个确定性算法，能在亚指数时间、多项式空间内精确计数固定宽度 CNF 公式的满足赋值，取 3-SAT 即推翻 ETH。ETH 的原始提出者 Impagliazzo、Paturi 与 MIT 的 Ryan Williams 牵头独立审查，并明确“参与不代表认证”。Anthropic 随后也发布了自己的 ETH 反证。本文用通俗语言解释 ETH 是什么、这次到底证明了什么、没证明什么（不是以太坊、不推出 P=NP、目前没有发现密码…
   - Date: 2026-10-28
@@ -805,7 +809,7 @@
 
 ## Topics (top 10)
 - 金融科技: 55 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- 智能体: 54 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 55 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 51 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 37 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 33 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86

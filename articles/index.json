@@ -75,6 +75,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "把记忆装进一个文件",
+    "slug": "memvid-single-file-agent-memory",
+    "url": "/articles/memvid-single-file-agent-memory.md",
+    "description": "Memvid是16900余星的开源AI智能体记忆层，用Rust编写、Apache-2.0许可。它把文档、嵌入向量、全文与向量索引、元数据和引擎全部打包进单个.mv2文件，替代复杂RAG流水线。其设计借鉴视频编码，以追加式不可变帧组织记忆，内置WAL恢复、BM25与HNSW检索、时间索引，支持时间旅行、离线嵌入、密码加密。本文解读其机制、性能口径及对银行审计、数据驻留和智能体记忆的价值与局限。",
+    "date": "2026-10-28",
+    "tags": [
+      "智能体",
+      "RAG",
+      "向量数据库",
+      "记忆系统",
+      "Rust",
+      "数据驻留",
+      "AI工程化"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "OpenAI“证伪 ETH”到底意味着什么？一篇讲清楚的深度研究：不是以太坊，不是 P=NP，也不是密码学末日",
     "slug": "openai-eth-exponential-time-hypothesis-explained",
     "url": "/articles/openai-eth-exponential-time-hypothesis-explained.md",
