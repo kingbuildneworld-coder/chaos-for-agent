@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (194)
+## Articles (195)
 
 - [量子拐点的美国路线图](https://bi-chao.com/articles/doe-scac-quantum-roadmap-bank)
   - Description: 2026年9月，美国能源部量子分委员会发布《SCAC量子委员会报告：通向集成量子未来》。报告把2028年演示科学相关、纠错量子计算机作为硬目标，提出量子大挑战、量子计算用户设施、全企业集成三阶段路线图和科学、硬件、技术三维里程碑，强调以科学效用而非量子比特数衡量、技术中立、多路线并行，并明确提到金融数据加速。本文解读其逻辑与对银行量子就绪、后量子密码迁移的启示。
@@ -26,6 +26,10 @@
   - Description: 2026 年 10 月 26 日，OpenAI 宣布其内部模型证伪了指数时间假设（Exponential Time Hypothesis，ETH）——一个由 Impagliazzo、Paturi 与 Zane 于 1999 年前后提出、被数百篇论文当作前提的计算复杂性猜想。模型于 10 月 16 日给出自然语言反证，10 月 17 日完成 Lean 形式化；论文给出一个确定性算法，能在亚指数时间、多项式空间内精确计数固定宽度 CNF 公式的满足赋值，取 3-SAT 即推翻 ETH。ETH 的原始提出者 Impagliazzo、Paturi 与 MIT 的 Ryan Williams 牵头独立审查，并明确“参与不代表认证”。Anthropic 随后也发布了自己的 ETH 反证。本文用通俗语言解释 ETH 是什么、这次到底证明了什么、没证明什么（不是以太坊、不推出 P=NP、目前没有发现密码…
   - Date: 2026-10-28
   - Tags: ETH, 指数时间假设, OpenAI, Anthropic, 计算复杂性, P vs NP, 3-SAT, Lean, 形式化验证, AI 科研
+- [让AI Agent造芯片](https://bi-chao.com/articles/rsi-chip-rust-eda-agent-bank)
+  - Description: RSI-Chip是用Rust编写、面向AI Agent的开源EDA工具链与CPU验证平台，2026年10月创建，两周由一人完成29个crate，覆盖综合、仿真、形式验证、布局布线全流程，内置RV32I与i8086核及golden model差分验证，回归含15159个用例，自评尚不能流片。背景是EDA三巨头占七八成份额、2025年被限制对华出口。本文解读其工程方法及对银行芯片供应链与智能体的启示。
+  - Date: 2026-10-28
+  - Tags: 智能体, EDA, 芯片, Rust, 供应链安全, AI工程化, 开源
 - [智能体开始替企业付款](https://bi-chao.com/articles/visa-bill-billtrust-agentic-b2b-payment)
   - Description: 2026年10月20日，Visa、BILL与Billtrust启动首个B2B智能体付款实时试点：BILL付款智能体经Visa可信智能体协议与智能体目录注册，使用代币化凭证，按买方已批准指令，在Billtrust门户端到端完成发票付款。智能体不做付款决策、不共享门户凭证，认证可满足验证码与机器人防护，付款与发票绑定并提供状态可见性。这是智能体继只读后向受控写的关键一步。本文拆解其三道控制与落地清单。
   - Date: 2026-10-28
@@ -793,7 +797,7 @@
 
 ## Topics (top 10)
 - 金融科技: 55 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- 智能体: 53 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 54 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 51 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 37 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 33 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86

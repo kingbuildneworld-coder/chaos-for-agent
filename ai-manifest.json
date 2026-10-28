@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 194,
+    "total_articles": 195,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -100,6 +100,21 @@
         "Lean",
         "形式化验证",
         "AI 科研"
+      ]
+    },
+    {
+      "slug": "rsi-chip-rust-eda-agent-bank",
+      "title": "让AI Agent造芯片",
+      "date": "2026-10-28",
+      "description": "RSI-Chip是用Rust编写、面向AI Agent的开源EDA工具链与CPU验证平台，2026年10月创建，两周由一人完成29个crate，覆盖综合、仿真、形式验证、布局布线全流程，内置RV32I与i8086核及golden model差分验证，回归含15159个用例，自评尚不能流片。背景是EDA三巨头占七八成份额、2025年被限制对华出口。本文解读其工程方法及对银行芯片供应链与智能体的启示。",
+      "tags": [
+        "智能体",
+        "EDA",
+        "芯片",
+        "Rust",
+        "供应链安全",
+        "AI工程化",
+        "开源"
       ]
     },
     {
@@ -3306,5 +3321,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-28",
   "version": "1.1",
-  "total_articles": 194
+  "total_articles": 195
 }
