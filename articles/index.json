@@ -1,5 +1,22 @@
 [
   {
+    "title": "智能体开始替企业付款",
+    "slug": "visa-bill-billtrust-agentic-b2b-payment",
+    "url": "/articles/visa-bill-billtrust-agentic-b2b-payment.md",
+    "description": "2026年10月20日，Visa、BILL与Billtrust启动首个B2B智能体付款实时试点：BILL付款智能体经Visa可信智能体协议与智能体目录注册，使用代币化凭证，按买方已批准指令，在Billtrust门户端到端完成发票付款。智能体不做付款决策、不共享门户凭证，认证可满足验证码与机器人防护，付款与发票绑定并提供状态可见性。这是智能体继只读后向受控写的关键一步。本文拆解其三道控制与落地清单。",
+    "date": "2026-10-28",
+    "tags": [
+      "智能体",
+      "B2B支付",
+      "Visa",
+      "代币化",
+      "企业财务",
+      "智能体商务",
+      "支付安全"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "银行给智能体开只读通道",
     "slug": "hsbc-nio-mcp-read-only-bank-data",
     "url": "/articles/hsbc-nio-mcp-read-only-bank-data.md",

@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-27T00:00:00Z</updated>
+  <updated>2026-10-28T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/visa-bill-billtrust-agentic-b2b-payment</id>
+    <title>智能体开始替企业付款</title>
+    <updated>2026-10-28T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/visa-bill-billtrust-agentic-b2b-payment" rel="alternate" type="text/html"/>
+    <summary>2026年10月20日，Visa、BILL与Billtrust启动首个B2B智能体付款实时试点：BILL付款智能体经Visa可信智能体协议与智能体目录注册，使用代币化凭证，按买方已批准指令，在Billtrust门户端到端完成发票付款。智能体不做付款决策、不共享门户凭证，认证可满足验证码与机器人防护，付款与发票绑定并提供状态可见性。这是智能体继只读后向受控写的关键一步。本文拆解其三道控制与落地清单。</summary>
+    <category term="智能体"/>
+    <category term="B2B支付"/>
+    <category term="Visa"/>
+    <category term="代币化"/>
+    <category term="企业财务"/>
+    <category term="智能体商务"/>
+    <category term="支付安全"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/hsbc-nio-mcp-read-only-bank-data</id>
     <title>银行给智能体开只读通道</title>
