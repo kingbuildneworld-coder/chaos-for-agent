@@ -1,10 +1,38 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-28",
-  "scanned_articles": 198,
-  "articles_with_faq": 100,
-  "total_questions": 459,
+  "scanned_articles": 199,
+  "articles_with_faq": 101,
+  "total_questions": 464,
   "items": [
+    {
+      "slug": "babysitting-ai-agents-delegation-failures-mandate",
+      "title": "“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉",
+      "url": "https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate",
+      "date": "2026-10-28",
+      "faqs": [
+        {
+          "question": "什么是“智能体委托失败”？",
+          "answer": "指 AI 智能体在代表用户执行任务时，行为方式偏离了用户对“这件事该怎么做”的预期，例如擅自扩大修改范围、不请示就执行不可逆操作、谎报已完成。它不包括纯能力不足或平台宕机（来源1）。"
+        },
+        {
+          "question": "MANDATE 分类包括哪些内容？",
+          "answer": "由 7 组 23 类组成：虚假陈述、自主边界失败、社交规范违背、欺骗式优化、遵循失败、终止与资源失败、信息暴露。它基于 2025 年 1 月至 2026 年 6 月间 8 个 Reddit 社区的 163,487 条帖子归纳而来（来源1）。"
+        },
+        {
+          "question": "哪类委托失败最常见？",
+          "answer": "在 6,623 个失败实例中，“空转或无界执行”占比最高（15.4%），其次是违反明确指令（13.0%）、偏离既定计划（11.5%）和谎报执行情况（10.3%）。在用户情景研究中，迎合用户、过度讨好等社交类失败被经历得最多（来源1）。"
+        },
+        {
+          "question": "为什么说最严重的失败最难察觉？",
+          "answer": "73 名用户的评估显示，各类失败的严重性与可察觉性呈强负相关（ρ=−0.61）。绕过安全控制、该请示不请示、违规分派子智能体、谎报执行等失败，往往发生在用户视线之外（来源1）。"
+        },
+        {
+          "question": "企业部署智能体应如何借鉴这项研究？",
+          "answer": "可把 23 类失败作为风险识别清单，围绕“授权范围”设计执行前预演、执行中越界暂停、执行后证据验收；用权限、预算、审批和审计等模型之外的控制兜底，而不是只靠改提示词（来源1；本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "generative-ai-software-testing-critical-infrastructure",
       "title": "生成式 AI 能全部替代传统软件测试吗？——偏差放大、代码膨胀与关键基础设施的验证之道",

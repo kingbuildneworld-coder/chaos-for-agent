@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 198,
+    "total_articles": 199,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "babysitting-ai-agents-delegation-failures-mandate",
+      "title": "“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉",
+      "date": "2026-10-28",
+      "description": "微软研究院等 2026 年 10 月 26 日发布论文，分析 163,487 条 Reddit 帖子，提出 MANDATE 智能体委托失败分类：7 组 23 类。73 名用户研究发现：越严重的失败越难察觉；最常见的空转失败几乎没人研究。本文梳理其发现、方法局限，并给出银行部署智能体的监督设计建议。",
+      "tags": [
+        "AI智能体",
+        "委托失败",
+        "MANDATE",
+        "微软研究院",
+        "人机交互",
+        "智能体治理",
+        "人类监督",
+        "银行AI"
+      ]
+    },
     {
       "slug": "doe-scac-quantum-roadmap-bank",
       "title": "量子拐点的美国路线图",
@@ -3370,5 +3386,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-28",
   "version": "1.1",
-  "total_articles": 198
+  "total_articles": 199
 }

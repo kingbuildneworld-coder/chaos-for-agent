@@ -13,6 +13,21 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate</id>
+    <title>“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉</title>
+    <updated>2026-10-28T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate" rel="alternate" type="text/html"/>
+    <summary>微软研究院等 2026 年 10 月 26 日发布论文，分析 163,487 条 Reddit 帖子，提出 MANDATE 智能体委托失败分类：7 组 23 类。73 名用户研究发现：越严重的失败越难察觉；最常见的空转失败几乎没人研究。本文梳理其发现、方法局限，并给出银行部署智能体的监督设计建议。</summary>
+    <category term="AI智能体"/>
+    <category term="委托失败"/>
+    <category term="MANDATE"/>
+    <category term="微软研究院"/>
+    <category term="人机交互"/>
+    <category term="智能体治理"/>
+    <category term="人类监督"/>
+    <category term="银行AI"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/doe-scac-quantum-roadmap-bank</id>
     <title>量子拐点的美国路线图</title>
     <updated>2026-10-28T00:00:00Z</updated>

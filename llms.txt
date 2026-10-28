@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (198)
+## Articles (199)
 
+- [“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉](https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate)
+  - Description: 微软研究院等 2026 年 10 月 26 日发布论文，分析 163,487 条 Reddit 帖子，提出 MANDATE 智能体委托失败分类：7 组 23 类。73 名用户研究发现：越严重的失败越难察觉；最常见的空转失败几乎没人研究。本文梳理其发现、方法局限，并给出银行部署智能体的监督设计建议。
+  - Date: 2026-10-28
+  - Tags: AI智能体, 委托失败, MANDATE, 微软研究院, 人机交互, 智能体治理, 人类监督, 银行AI
 - [量子拐点的美国路线图](https://bi-chao.com/articles/doe-scac-quantum-roadmap-bank)
   - Description: 2026年9月，美国能源部量子分委员会发布《SCAC量子委员会报告：通向集成量子未来》。报告把2028年演示科学相关、纠错量子计算机作为硬目标，提出量子大挑战、量子计算用户设施、全企业集成三阶段路线图和科学、硬件、技术三维里程碑，强调以科学效用而非量子比特数衡量、技术中立、多路线并行，并明确提到金融数据加速。本文解读其逻辑与对银行量子就绪、后量子密码迁移的启示。
   - Date: 2026-10-28
@@ -811,7 +815,7 @@
 - 金融科技: 55 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 智能体: 55 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 51 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 银行AI: 37 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 银行AI: 38 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 风险管理: 33 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
