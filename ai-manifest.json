@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 195,
+    "total_articles": 196,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -82,6 +82,24 @@
         "NVIDIA Cosmos",
         "智能体",
         "物理AI"
+      ]
+    },
+    {
+      "slug": "jascha-sohl-dickstein-stanford-talk-young-investigator-agi",
+      "title": "Jascha Sohl-Dickstein 斯坦福演讲深度解读：人类世的最初与最后时光里，研究者该做什么",
+      "date": "2026-10-28",
+      "description": "扩散模型发明者、Anthropic 研究科学家 Jascha Sohl-Dickstein 于 2026 年 6 月 12 日在斯坦福 Physics and AI 会议（PAI26）发表演讲《给人类世最初与最后时光里年轻研究者的建议》，视频由 Stanford HAI 于 6 月 30 日上传，时长 45:14，10 月在 X 上再度走红。他的论据包括：十年来最大模型训练算力增长约 1000 万倍；METR 任务时长在不到一年里约增长 10 倍；AI 在约 7 个月里开始解决 Erdős 问题；按趋势 2030 年算力或达 2025 年的约 1 万倍。他的建议：选择在模型变强后仍有价值、甚至随之增值的课题；把执行交给 AI 但保留理解；自己写初稿——“写作即思考”；重估“读博—博后—教职”这条路径的安全性；趁指数增长早期，投身 AI 安全、可解释性、政策与公平获取。本文梳理其论证结构，区分事实、外推与个人观点，补充反方质疑，并给出对研究者、工程师和企业的可操作启示。",
+      "tags": [
+        "Jascha Sohl-Dickstein",
+        "Anthropic",
+        "斯坦福",
+        "AGI",
+        "科研生涯",
+        "Bitter Lesson",
+        "METR",
+        "AI 安全",
+        "写作即思考",
+        "人类世"
       ]
     },
     {
@@ -3321,5 +3339,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-28",
   "version": "1.1",
-  "total_articles": 195
+  "total_articles": 196
 }
