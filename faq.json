@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-28",
-  "scanned_articles": 193,
-  "articles_with_faq": 98,
-  "total_questions": 449,
+  "scanned_articles": 194,
+  "articles_with_faq": 99,
+  "total_questions": 454,
   "items": [
     {
       "slug": "genie-4-world-model-comparison-deep-research",
@@ -30,6 +30,34 @@
         {
           "question": "Genie 4 有哪些局限？",
           "answer": "官方承认：细节和物体会随时间漂移，只支持几分钟连续交互，多智能体交互、真实地点还原、文字渲染和实时音频准确性仍待改进（来源1、2）。"
+        }
+      ]
+    },
+    {
+      "slug": "openai-eth-exponential-time-hypothesis-explained",
+      "title": "OpenAI“证伪 ETH”到底意味着什么？一篇讲清楚的深度研究：不是以太坊，不是 P=NP，也不是密码学末日",
+      "url": "https://bi-chao.com/articles/openai-eth-exponential-time-hypothesis-explained",
+      "date": "2026-10-28",
+      "faqs": [
+        {
+          "question": "OpenAI 证伪的 ETH 是以太坊吗？",
+          "answer": "不是。这里的 ETH 是计算机科学中的指数时间假设（Exponential Time Hypothesis），与以太坊无关（来源1、3）。"
+        },
+        {
+          "question": "指数时间假设（ETH）是什么？",
+          "answer": "ETH 认为，不存在能在亚指数时间内解决所有 3-SAT 问题的算法，即解决这类逻辑难题的工作量必须随变量数指数增长；它被数百篇论文用来推导其他问题的难度下界（来源1、3、6）。"
+        },
+        {
+          "question": "OpenAI 证伪 ETH 意味着 P=NP 吗？",
+          "answer": "不意味着。OpenAI 的算法是亚指数时间，而 P=NP 需要多项式时间；牛津大学 Leslie Goldberg 表示这对 P vs NP 没有直接影响（来源3、6）。"
+        },
+        {
+          "question": "ETH 被证伪会让加密货币或银行密码被破解吗？",
+          "answer": "目前没有证据表明会。MIT 的 Ryan Williams 称 OpenAI 已检查密码系统，并相当有信心不意味着任何破解；但这是 OpenAI 的自评，独立审查仍在进行（来源4）。"
+        },
+        {
+          "question": "OpenAI 的 ETH 反证已经被确认了吗？",
+          "answer": "尚未。证明已在 Lean 中形式化，但由 ETH 提出者 Impagliazzo、Paturi 和 MIT 的 Williams 牵头的审查组明确表示参与不代表认证，专家也指出需核对形式化命题是否与原意一致（来源1、3、5、6）。"
         }
       ]
     },
