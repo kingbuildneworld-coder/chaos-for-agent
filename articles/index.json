@@ -17,6 +17,26 @@
     "schema_type": "Article"
   },
   {
+    "title": "Genie 4 深度研究：当世界模型请来一位“导演”——与 Genie 3、Runway、Odyssey、Decart、World Labs、Cosmos 的全面对比",
+    "slug": "genie-4-world-model-comparison-deep-research",
+    "url": "/articles/genie-4-world-model-comparison-deep-research.md",
+    "description": "2026 年 10 月 27 日，Google DeepMind 发布 Genie 4 研究预览版。它在实时可交互世界模拟中加入原生音频、实时对话、更逼真的物理与人物，并首次把 Gemini 3.8 Flash 作为“回路中的引导智能体”，持续观察画面、拆解目标、逐帧核验进度；机器人方向则由 Gemini 4 Argon 生成步骤字幕驱动 Genie 4 渲染。本文依据 DeepMind 官方博客与模型页、Ars Technica 报道，以及 Runway、NVIDIA、World Labs、Odyssey、Decart 等官方或二手资料，拆解 Genie 4 的四项能力、可推断的技术路线与官方承认的局限，并与 Genie 3、Runway GWM Worlds 2、Odyssey-2、Decart Oasis 3、World Labs Marble、NVIDIA Cosmos 3、Matrix-Game 3.0 逐项对比，最后讨论“混合世界模型”的走向及其对智能体工程的启示。",
+    "date": "2026-10-28",
+    "tags": [
+      "Genie 4",
+      "世界模型",
+      "Google DeepMind",
+      "Gemini",
+      "Runway",
+      "Odyssey",
+      "World Labs",
+      "NVIDIA Cosmos",
+      "智能体",
+      "物理AI"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "智能体开始替企业付款",
     "slug": "visa-bill-billtrust-agentic-b2b-payment",
     "url": "/articles/visa-bill-billtrust-agentic-b2b-payment.md",
