@@ -27,6 +27,21 @@
     <category term="AI治理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/generative-ai-software-testing-critical-infrastructure</id>
+    <title>生成式 AI 能全部替代传统软件测试吗？——偏差放大、代码膨胀与关键基础设施的验证之道</title>
+    <updated>2026-10-28T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/generative-ai-software-testing-critical-infrastructure" rel="alternate" type="text/html"/>
+    <summary>生成式 AI 不能全部替代软件测试，但会重构测试。本文梳理传统测试未解难题，用 Knight-Leveson 实验、LLM 断言与自评研究说明“AI 测 AI”为何放大同源偏差，结合 GitClear、DORA、Google 变异测试与形式化验证给出应对代码膨胀的办法，并依据 DO-178C/DO-330 与 CrowdStrike 事故，回答关键基础设施该怎么测、能否全盘生成代码。</summary>
+    <category term="生成式AI"/>
+    <category term="软件测试"/>
+    <category term="AI编程"/>
+    <category term="测试预言"/>
+    <category term="变异测试"/>
+    <category term="形式化验证"/>
+    <category term="关键基础设施"/>
+    <category term="DO-178C"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/genie-4-world-model-comparison-deep-research</id>
     <title>Genie 4 深度研究：当世界模型请来一位“导演”——与 Genie 3、Runway、Odyssey、Decart、World Labs、Cosmos 的全面对比</title>
     <updated>2026-10-28T00:00:00Z</updated>

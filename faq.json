@@ -1,10 +1,38 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-28",
-  "scanned_articles": 196,
-  "articles_with_faq": 99,
-  "total_questions": 454,
+  "scanned_articles": 197,
+  "articles_with_faq": 100,
+  "total_questions": 459,
   "items": [
+    {
+      "slug": "generative-ai-software-testing-critical-infrastructure",
+      "title": "生成式 AI 能全部替代传统软件测试吗？——偏差放大、代码膨胀与关键基础设施的验证之道",
+      "url": "https://bi-chao.com/articles/generative-ai-software-testing-critical-infrastructure",
+      "date": "2026-10-28",
+      "faqs": [
+        {
+          "question": "生成式 AI 能完全替代软件测试工程师吗？",
+          "answer": "不能。AI 可以替代大量用例编写、执行和日志分析等体力工作，但测试的核心是独立判定“预期行为”并对上线结论负责。研究表明 LLM 生成的断言主要反映代码的实际行为而非预期行为，因此需要独立的人和确定性工具来定义与裁判正确性（来源2）。"
+        },
+        {
+          "question": "用 AI 生成代码、再用 AI 生成测试，为什么会放大偏差？",
+          "answer": "因为两者同源。Knight 与 Leveson 1986 年的实验发现，即使独立开发的 27 个程序版本，也会在相同输入上同时失效；同一个模型写代码和测试，独立性更差。LLM 读代码写测试时容易把缺陷写成断言，LLM 评审还会偏爱自己的输出（来源1、2、3）。"
+        },
+        {
+          "question": "怎样降低“AI 测 AI”的偏差？",
+          "answer": "让测试从需求而非实现生成，代码与测试使用不同模型，用编译、静态分析、属性测试、差分测试、变异测试和形式化证明等确定性方法做裁判，关键验收标准由人定义。Meta 的 TestGen-LLM 就是让 LLM 只生成候选、由确定性过滤器筛选的例子（来源4）。"
+        },
+        {
+          "question": "AI 生成的代码太多、人看不过来怎么办？",
+          "answer": "在生成侧设定复杂度与变更体积预算、强制复用、小批量提交；在审阅侧按风险分级，人审规格与高风险变更；用 Google 式的增量变异测试让机器挑出测试没抓住的问题；对关键模块逐步引入形式化证明，让人只审规格（来源6、11、13）。"
+        },
+        {
+          "question": "关键基础设施软件能用生成式 AI 全盘生成代码吗？",
+          "answer": "现阶段不建议。航空标准要求 A 级软件达到 MC/DC 覆盖，且“输出即软件”的工具需要最严格的 TQL-1 鉴定，非确定性大模型难以满足；关键系统也最依赖验证独立性与清晰的责任链。AI 更适合用在测试生成、模糊测试、形式化证明辅助等验证侧（来源15、16）。"
+        }
+      ]
+    },
     {
       "slug": "genie-4-world-model-comparison-deep-research",
       "title": "Genie 4 深度研究：当世界模型请来一位“导演”——与 Genie 3、Runway、Odyssey、Decart、World Labs、Cosmos 的全面对比",

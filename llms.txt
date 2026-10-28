@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (196)
+## Articles (197)
 
 - [量子拐点的美国路线图](https://bi-chao.com/articles/doe-scac-quantum-roadmap-bank)
   - Description: 2026年9月，美国能源部量子分委员会发布《SCAC量子委员会报告：通向集成量子未来》。报告把2028年演示科学相关、纠错量子计算机作为硬目标，提出量子大挑战、量子计算用户设施、全企业集成三阶段路线图和科学、硬件、技术三维里程碑，强调以科学效用而非量子比特数衡量、技术中立、多路线并行，并明确提到金融数据加速。本文解读其逻辑与对银行量子就绪、后量子密码迁移的启示。
   - Date: 2026-10-28
   - Tags: 量子计算, 量子加密, 后量子密码, 金融科技, 风险管理, 技术路线图, AI治理
+- [生成式 AI 能全部替代传统软件测试吗？——偏差放大、代码膨胀与关键基础设施的验证之道](https://bi-chao.com/articles/generative-ai-software-testing-critical-infrastructure)
+  - Description: 生成式 AI 不能全部替代软件测试，但会重构测试。本文梳理传统测试未解难题，用 Knight-Leveson 实验、LLM 断言与自评研究说明“AI 测 AI”为何放大同源偏差，结合 GitClear、DORA、Google 变异测试与形式化验证给出应对代码膨胀的办法，并依据 DO-178C/DO-330 与 CrowdStrike 事故，回答关键基础设施该怎么测、能否全盘生成代码。
+  - Date: 2026-10-28
+  - Tags: 生成式AI, 软件测试, AI编程, 测试预言, 变异测试, 形式化验证, 关键基础设施, DO-178C
 - [Genie 4 深度研究：当世界模型请来一位“导演”——与 Genie 3、Runway、Odyssey、Decart、World Labs、Cosmos 的全面对比](https://bi-chao.com/articles/genie-4-world-model-comparison-deep-research)
   - Description: 2026 年 10 月 27 日，Google DeepMind 发布 Genie 4 研究预览版。它在实时可交互世界模拟中加入原生音频、实时对话、更逼真的物理与人物，并首次把 Gemini 3.8 Flash 作为“回路中的引导智能体”，持续观察画面、拆解目标、逐帧核验进度；机器人方向则由 Gemini 4 Argon 生成步骤字幕驱动 Genie 4 渲染。本文依据 DeepMind 官方博客与模型页、Ars Technica 报道，以及 Runway、NVIDIA、World Labs、Odyssey、Decart 等官方或二手资料，拆解 Genie 4 的四项能力、可推断的技术路线与官方承认的局限，并与 Genie 3、Runway GWM Worlds 2、Odyssey-2、Decart Oasis 3、World Labs Marble、NVIDIA Cosmos 3、Ma…
   - Date: 2026-10-28
