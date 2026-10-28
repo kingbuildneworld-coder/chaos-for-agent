@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 203,
+    "total_articles": 204,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -111,6 +111,21 @@
         "反欺诈",
         "账户接管",
         "金融科技"
+      ]
+    },
+    {
+      "slug": "hkma-art-agentic-ai-accountability-bank",
+      "title": "多智能体时代谁负责",
+      "date": "2026-10-29",
+      "description": "2026年10月15日，香港金管局公布「ART」框架及《负责任应用人工智能的监管指引》，以可问责、韧性、可信赖三支柱规范银行AI，通过GenAI沙盒++测试代理式AI，探讨意图为本问责、AI代理纪录册和介入机制。AI从生成式走向代理式，二期沙盒超60%用例为智能体。最危险的是问责碎片化：应用拆给多个智能体、监督分段负责，结果无人担责。本文解读ART框架、意图为本解法及对银行智能体治理的启示。",
+      "tags": [
+        "智能体",
+        "AI治理",
+        "香港金管局",
+        "模型风险",
+        "问责",
+        "可解释性",
+        "银行数字化转型"
       ]
     },
     {
@@ -3448,5 +3463,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-29",
   "version": "1.1",
-  "total_articles": 203
+  "total_articles": 204
 }
