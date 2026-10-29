@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 204,
+    "total_articles": 205,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -126,6 +126,22 @@
         "问责",
         "可解释性",
         "银行数字化转型"
+      ]
+    },
+    {
+      "slug": "rsi-continuous-evolution-human-agent-organization",
+      "title": "以 RSI 驱动持续进化：人、智能体与组织的三环共演——从演化博弈、强化学习、反身性到一人公司的实践路线",
+      "date": "2026-10-29",
+      "description": "人和组织为什么必须持续进化？大模型与智能体的递归自我改进（RSI）需要怎样的人和组织作支撑？本文综述达尔文哥德尔机、AlphaEvolve、AIDE²等 RSI 研究进展，借助演化博弈论、强化学习与索罗斯反身性理论，提出“智能体环—人环—组织环”三环共演框架，并以一人公司为例，具体回答组织怎么进化、人怎么进化、智能体怎么进化。",
+      "tags": [
+        "递归自我改进",
+        "RSI",
+        "智能体",
+        "学习型组织",
+        "一人公司",
+        "演化博弈",
+        "强化学习",
+        "反身性"
       ]
     },
     {
@@ -3463,5 +3479,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-29",
   "version": "1.1",
-  "total_articles": 204
+  "total_articles": 205
 }

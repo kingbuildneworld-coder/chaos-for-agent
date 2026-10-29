@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-29",
-  "scanned_articles": 204,
-  "articles_with_faq": 103,
-  "total_questions": 474,
+  "scanned_articles": 205,
+  "articles_with_faq": 104,
+  "total_questions": 479,
   "items": [
     {
       "slug": "ai-agent-evaluation-benchmarks-review",
@@ -58,6 +58,34 @@
         {
           "question": "一人公司使用 AI 的主要风险是什么？",
           "answer": "主要包括错误被自动固化、人的判断力退化、知识膨胀、严重失败难以察觉，以及常驻智能体带来的成本失控。对策是规则修改由人确认、关键决策先独立判断、用系统证据验收、设置预算和熔断机制（来源6、7；本文分析）。"
+        }
+      ]
+    },
+    {
+      "slug": "rsi-continuous-evolution-human-agent-organization",
+      "title": "以 RSI 驱动持续进化：人、智能体与组织的三环共演——从演化博弈、强化学习、反身性到一人公司的实践路线",
+      "url": "https://bi-chao.com/articles/rsi-continuous-evolution-human-agent-organization",
+      "date": "2026-10-29",
+      "faqs": [
+        {
+          "question": "什么是 RSI（递归自我改进）？",
+          "answer": "RSI 指 AI 系统利用经验和反馈对自身做出持久改变，并且这种改变还能作用于未来的改进机制本身；可信 RSI 综述将其拆分为改进诊断、提案生成、提案评估和更新实施四个阶段（来源5）。"
+        },
+        {
+          "question": "RSI 目前取得了哪些实际进展？",
+          "answer": "达尔文哥德尔机将编程智能体在 SWE-bench 上从 20.0% 提升到 50.0%（来源1）；AlphaEvolve 发现的调度启发式平均持续回收谷歌约 0.7% 的全球计算资源（来源2）；AIDE² 在 8 天自主运行中发现 7 项连续改进，并迁移到 4 个保留基准（来源3）。"
+        },
+        {
+          "question": "RSI 的主要瓶颈和风险是什么？",
+          "answer": "综述指出开放式 RSI 仍受真实信号锚定、崩塌动力学和算力的约束（来源4）；主要风险包括奖励投机、能力退化、约束弱化、安全漏洞和监督失效（来源5、6、7）。"
+        },
+        {
+          "question": "为什么 RSI 仍然需要人和组织？",
+          "answer": "每个改进回路都隐含“某种信号可替代人类判断”的主张（来源4）。定义目标、维护独立评估、设定边界、保留多样性和治理安全，都需要人和组织来完成（本文分析）。"
+        },
+        {
+          "question": "一人公司如何借鉴 RSI 实现持续进化？",
+          "answer": "智能体层面，在不改模型权重的前提下改进提示词、技能、记忆、工具和工作流，并用隐藏测试集验证、保留方案档案库、支持一键回滚；人的层面，建立每日、每周、每月、每季度四级学习与校准机制；组织层面，将章程版本化，同时运行多个小实验并按真实收益分配资源（本文分析）。"
         }
       ]
     },

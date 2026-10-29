@@ -87,6 +87,24 @@
     "schema_type": "Article"
   },
   {
+    "title": "以 RSI 驱动持续进化：人、智能体与组织的三环共演——从演化博弈、强化学习、反身性到一人公司的实践路线",
+    "slug": "rsi-continuous-evolution-human-agent-organization",
+    "url": "/articles/rsi-continuous-evolution-human-agent-organization.md",
+    "description": "人和组织为什么必须持续进化？大模型与智能体的递归自我改进（RSI）需要怎样的人和组织作支撑？本文综述达尔文哥德尔机、AlphaEvolve、AIDE²等 RSI 研究进展，借助演化博弈论、强化学习与索罗斯反身性理论，提出“智能体环—人环—组织环”三环共演框架，并以一人公司为例，具体回答组织怎么进化、人怎么进化、智能体怎么进化。",
+    "date": "2026-10-29",
+    "tags": [
+      "递归自我改进",
+      "RSI",
+      "智能体",
+      "学习型组织",
+      "一人公司",
+      "演化博弈",
+      "强化学习",
+      "反身性"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉",
     "slug": "babysitting-ai-agents-delegation-failures-mandate",
     "url": "/articles/babysitting-ai-agents-delegation-failures-mandate.md",
