@@ -1,5 +1,22 @@
 [
   {
+    "title": "美国稳定币规则落地",
+    "slug": "occ-genius-act-stablecoin-final-rule-bank",
+    "url": "/articles/occ-genius-act-stablecoin-final-rule-bank.md",
+    "description": "2026年10月，美国货币监理署OCC发布GENIUS法案首个稳定币规则，新增12 CFR第15部分，2027年1月18日生效。OCC是首个落地该法案的联邦监管机构，给出适用法律的首个答案。规则明确监管边界、许可活动、收益禁令、储备、赎回、资本与后盾，放松提案中收益推定、品牌限制、赎回延期等要求，但支付网络、钱包、跨链桥留待后续监管。本文解读规则要点及对银行存款竞争、代币化存款、子公司发币的影响。",
+    "date": "2026-10-30",
+    "tags": [
+      "稳定币",
+      "金融监管",
+      "GENIUS法案",
+      "支付",
+      "银行数字化转型",
+      "OCC",
+      "风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图",
     "slug": "ai-agent-evaluation-benchmarks-review",
     "url": "/articles/ai-agent-evaluation-benchmarks-review.md",

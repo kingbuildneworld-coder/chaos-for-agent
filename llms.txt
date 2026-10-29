@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (208)
+## Articles (209)
 
+- [美国稳定币规则落地](https://bi-chao.com/articles/occ-genius-act-stablecoin-final-rule-bank)
+  - Description: 2026年10月，美国货币监理署OCC发布GENIUS法案首个稳定币规则，新增12 CFR第15部分，2027年1月18日生效。OCC是首个落地该法案的联邦监管机构，给出适用法律的首个答案。规则明确监管边界、许可活动、收益禁令、储备、赎回、资本与后盾，放松提案中收益推定、品牌限制、赎回延期等要求，但支付网络、钱包、跨链桥留待后续监管。本文解读规则要点及对银行存款竞争、代币化存款、子公司发币的影响。
+  - Date: 2026-10-30
+  - Tags: 稳定币, 金融监管, GENIUS法案, 支付, 银行数字化转型, OCC, 风险管理
 - [分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图](https://bi-chao.com/articles/ai-agent-evaluation-benchmarks-review)
   - Description: 从静态题库、人类偏好竞技场到智能体任务基准与时间视界，AI 评测体系正在快速扩张，但饱和、污染、排行榜博弈、评测器缺陷、忽视成本、脚手架混淆、脱离真实工作和用户视角缺失等问题同样突出。本文梳理评测体系的指标现状与系统性缺陷，并提出效度、信度、可复现、经济性与授权一致性五位一体的完善路径。
   - Date: 2026-10-29
@@ -853,11 +857,11 @@
 - AI治理: 53 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 39 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 35 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
-- 风险管理: 33 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 19 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 模型风险管理: 17 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 金融监管: 17 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
