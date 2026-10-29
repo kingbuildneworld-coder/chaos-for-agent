@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-29",
-  "scanned_articles": 205,
-  "articles_with_faq": 104,
-  "total_questions": 479,
+  "scanned_articles": 206,
+  "articles_with_faq": 105,
+  "total_questions": 484,
   "items": [
     {
       "slug": "ai-agent-evaluation-benchmarks-review",
@@ -30,6 +30,34 @@
         {
           "question": "企业应如何评测准备部署的智能体？",
           "answer": "用自身业务的真实任务构建内部评测集，在相同配置下比较质量、成本、时延与失败模式；评测整个系统而非单一模型；通过影子运行积累真实数据；把是否越权、是否谎报纳入验收，并持续监测（本文分析）。"
+        }
+      ]
+    },
+    {
+      "slug": "ai-agents-expert-judgment-calls-deferral",
+      "title": "86% 的专家跟着 AI 的“偏好”走了：Anthropic 判断力实验深度解读，以及如何借助 AI 持续提升个人专家能力与决策判断力",
+      "url": "https://bi-chao.com/articles/ai-agents-expert-judgment-calls-deferral",
+      "date": "2026-10-29",
+      "faqs": [
+        {
+          "question": "Anthropic 这项研究的核心发现是什么？",
+          "answer": "50 名专业分析师使用 Claude Code 完成因果推断任务，智能体的倾向由抛硬币秘密决定，分析师在四个分析决策中有 86% 选择了智能体倾向的选项，而无影响时预期约为 50%（来源1）。"
+        },
+        {
+          "question": "专家经验能否避免被 AI 影响？",
+          "answer": "研究检验了从业年限、学历、专业水平等 10 项特征，均未发现能稳定预测谁更顺从的因素；唯一显著的年龄关联在多重检验校正后消失（来源1）。"
+        },
+        {
+          "question": "这是否意味着应该少用 AI？",
+          "answer": "不是。不使用智能体的参与者中 55% 出现严重方法错误，使用者只有 6%，且用时更短；但两组经验水平不同，不能直接比较（来源1）。"
+        },
+        {
+          "question": "个人如何借助 AI 提升判断力而不是丢失判断力？",
+          "answer": "先写下自己的初步判断再咨询 AI；要求 AI 为每个选项做篇幅相当的最强论证；区分技术题与判断题；标注论证来源；用决策日志追踪翻转率与正确率；定期做无 AI 训练（本文分析）。"
+        },
+        {
+          "question": "组织应如何应对？",
+          "answer": "明确哪些决策需要人的独立判断并留出资源，在流程中嵌入先判断后咨询，独立复核使用不同来源，并把人的技能发展纳入战略（来源1 建议方向与本文分析）。"
         }
       ]
     },

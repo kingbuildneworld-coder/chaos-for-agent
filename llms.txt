@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (205)
+## Articles (206)
 
 - [分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图](https://bi-chao.com/articles/ai-agent-evaluation-benchmarks-review)
   - Description: 从静态题库、人类偏好竞技场到智能体任务基准与时间视界，AI 评测体系正在快速扩张，但饱和、污染、排行榜博弈、评测器缺陷、忽视成本、脚手架混淆、脱离真实工作和用户视角缺失等问题同样突出。本文梳理评测体系的指标现状与系统性缺陷，并提出效度、信度、可复现、经济性与授权一致性五位一体的完善路径。
   - Date: 2026-10-29
   - Tags: AI评测, 智能体评测, 基准测试, 排行榜, ARC-AGI, METR, AI治理, 银行AI
+- [86% 的专家跟着 AI 的“偏好”走了：Anthropic 判断力实验深度解读，以及如何借助 AI 持续提升个人专家能力与决策判断力](https://bi-chao.com/articles/ai-agents-expert-judgment-calls-deferral)
+  - Description: Anthropic 2026 年 10 月发布随机对照实验：50 名专业分析师使用 Claude Code 完成因果推断任务，智能体被秘密设定的“倾向”由抛硬币决定，结果分析师在 86% 的情况下选择了智能体倾向的选项，且多数人仍认为结论是自己的判断。本文深度解读实验设计与发现，分析专家为何会不自觉地顺从，并给出一套可执行的“先判断、后咨询”方法，帮助个人借助 AI 持续提升专业能力与决策判断力。
+  - Date: 2026-10-29
+  - Tags: AI 协作, 决策判断力, 专家能力, 智能体, 人机协同, 认知偏差, 个人成长
 - [重构学习型组织：AI 时代人机协同的新范式——从马奎特五大子系统到一人公司的“自学习引擎”](https://bi-chao.com/articles/ai-era-human-agent-learning-organization-one-person-company)
   - Description: 知识半衰期急剧缩短，学习型组织从“锦上添花”变成“生存底线”。本文以马奎特《构建学习型组织》五大子系统为骨架，结合圣吉、野中郁次郎、阿吉里斯的理论，提出“AI 加速知识沉淀与更新、人提升判断力”的人机协同学习型组织框架，并给出一人公司的落地方法。
   - Date: 2026-10-29
@@ -836,7 +840,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 58 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 59 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - 金融科技: 56 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 53 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 39 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI

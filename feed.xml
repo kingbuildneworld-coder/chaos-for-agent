@@ -28,6 +28,20 @@
     <category term="银行AI"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/ai-agents-expert-judgment-calls-deferral</id>
+    <title>86% 的专家跟着 AI 的“偏好”走了：Anthropic 判断力实验深度解读，以及如何借助 AI 持续提升个人专家能力与决策判断力</title>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-agents-expert-judgment-calls-deferral" rel="alternate" type="text/html"/>
+    <summary>Anthropic 2026 年 10 月发布随机对照实验：50 名专业分析师使用 Claude Code 完成因果推断任务，智能体被秘密设定的“倾向”由抛硬币决定，结果分析师在 86% 的情况下选择了智能体倾向的选项，且多数人仍认为结论是自己的判断。本文深度解读实验设计与发现，分析专家为何会不自觉地顺从，并给出一套可执行的“先判断、后咨询”方法，帮助个人借助 AI 持续提升专业能力与决策判断力。</summary>
+    <category term="AI 协作"/>
+    <category term="决策判断力"/>
+    <category term="专家能力"/>
+    <category term="智能体"/>
+    <category term="人机协同"/>
+    <category term="认知偏差"/>
+    <category term="个人成长"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/ai-era-human-agent-learning-organization-one-person-company</id>
     <title>重构学习型组织：AI 时代人机协同的新范式——从马奎特五大子系统到一人公司的“自学习引擎”</title>
     <updated>2026-10-29T00:00:00Z</updated>
