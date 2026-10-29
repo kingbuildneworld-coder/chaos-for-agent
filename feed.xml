@@ -57,6 +57,20 @@
     <category term="组织学习"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/bank-llm-risk-control-ai-epistemology-compliance</id>
+    <title>以大模型为底座的银行智能风控平台：从人工智能认识论看全面风险管理与监管合规要点</title>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-llm-risk-control-ai-epistemology-compliance" rel="alternate" type="text/html"/>
+    <summary>以大模型为底座的银行风控平台属于金融监管总局指导意见（金发〔2026〕8号）界定的高风险应用。本文以斯坦福哲学百科《人工智能的知识论》为框架，结合全面风险管理与操作风险规则，梳理大模型风控在辩护、归纳边界、不透明性、解释失真、人工复核、责任归属、归纳风险与系统性风险上的要点，并给出分层架构、三道防线、生命周期清单与指标体系。</summary>
+    <category term="银行风控"/>
+    <category term="大模型"/>
+    <category term="全面风险管理"/>
+    <category term="金融监管"/>
+    <category term="人工智能认识论"/>
+    <category term="模型风险"/>
+    <category term="可解释性"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/barclays-ai-job-cuts-bank-talent-future</id>
     <title>银行未来需要什么人</title>
     <updated>2026-10-29T00:00:00Z</updated>
