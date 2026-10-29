@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 206,
+    "total_articles": 207,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -157,6 +157,21 @@
         "演化博弈",
         "强化学习",
         "反身性"
+      ]
+    },
+    {
+      "slug": "stanford-sep-epistemology-ai-llm-reliability",
+      "title": "斯坦福哲学百科《人工智能的知识论》深度解读：大模型如何用知识论提升性能与科研可靠性",
+      "date": "2026-10-29",
+      "description": "斯坦福哲学百科全书（SEP）于 2026 年 10 月 16 日新增《人工智能的知识论》词条，系统讨论 AI 的不透明性与可解释性、AI 输出何以成为知识、AI 能否带来理解、谁是认知主体等问题。本文梳理词条主要内容与价值，并把可靠主义、稳健性、归纳正当化、差异法、归纳风险等知识论概念转化为大模型工程与科研实践中的可执行方法，探讨如何以知识论提升大模型的性能与科研探索的可靠性。",
+      "tags": [
+        "知识论",
+        "人工智能哲学",
+        "大模型",
+        "可解释性",
+        "科研可靠性",
+        "AI for Science",
+        "可信 AI"
       ]
     },
     {
@@ -3494,5 +3509,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-29",
   "version": "1.1",
-  "total_articles": 206
+  "total_articles": 207
 }

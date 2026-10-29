@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (206)
+## Articles (207)
 
 - [分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图](https://bi-chao.com/articles/ai-agent-evaluation-benchmarks-review)
   - Description: 从静态题库、人类偏好竞技场到智能体任务基准与时间视界，AI 评测体系正在快速扩张，但饱和、污染、排行榜博弈、评测器缺陷、忽视成本、脚手架混淆、脱离真实工作和用户视角缺失等问题同样突出。本文梳理评测体系的指标现状与系统性缺陷，并提出效度、信度、可复现、经济性与授权一致性五位一体的完善路径。
@@ -42,6 +42,10 @@
   - Description: 人和组织为什么必须持续进化？大模型与智能体的递归自我改进（RSI）需要怎样的人和组织作支撑？本文综述达尔文哥德尔机、AlphaEvolve、AIDE²等 RSI 研究进展，借助演化博弈论、强化学习与索罗斯反身性理论，提出“智能体环—人环—组织环”三环共演框架，并以一人公司为例，具体回答组织怎么进化、人怎么进化、智能体怎么进化。
   - Date: 2026-10-29
   - Tags: 递归自我改进, RSI, 智能体, 学习型组织, 一人公司, 演化博弈, 强化学习, 反身性
+- [斯坦福哲学百科《人工智能的知识论》深度解读：大模型如何用知识论提升性能与科研可靠性](https://bi-chao.com/articles/stanford-sep-epistemology-ai-llm-reliability)
+  - Description: 斯坦福哲学百科全书（SEP）于 2026 年 10 月 16 日新增《人工智能的知识论》词条，系统讨论 AI 的不透明性与可解释性、AI 输出何以成为知识、AI 能否带来理解、谁是认知主体等问题。本文梳理词条主要内容与价值，并把可靠主义、稳健性、归纳正当化、差异法、归纳风险等知识论概念转化为大模型工程与科研实践中的可执行方法，探讨如何以知识论提升大模型的性能与科研探索的可靠性。
+  - Date: 2026-10-29
+  - Tags: 知识论, 人工智能哲学, 大模型, 可解释性, 科研可靠性, AI for Science, 可信 AI
 - [“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉](https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate)
   - Description: 微软研究院等 2026 年 10 月 26 日发布论文，分析 163,487 条 Reddit 帖子，提出 MANDATE 智能体委托失败分类：7 组 23 类。73 名用户研究发现：越严重的失败越难察觉；最常见的空转失败几乎没人研究。本文梳理其发现、方法局限，并给出银行部署智能体的监督设计建议。
   - Date: 2026-10-28
@@ -844,8 +848,8 @@
 - 金融科技: 56 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - AI治理: 53 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 39 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 大模型: 34 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 33 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 大模型: 33 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 19 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A

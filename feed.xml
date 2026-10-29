@@ -114,6 +114,20 @@
     <category term="反身性"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/stanford-sep-epistemology-ai-llm-reliability</id>
+    <title>斯坦福哲学百科《人工智能的知识论》深度解读：大模型如何用知识论提升性能与科研可靠性</title>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/stanford-sep-epistemology-ai-llm-reliability" rel="alternate" type="text/html"/>
+    <summary>斯坦福哲学百科全书（SEP）于 2026 年 10 月 16 日新增《人工智能的知识论》词条，系统讨论 AI 的不透明性与可解释性、AI 输出何以成为知识、AI 能否带来理解、谁是认知主体等问题。本文梳理词条主要内容与价值，并把可靠主义、稳健性、归纳正当化、差异法、归纳风险等知识论概念转化为大模型工程与科研实践中的可执行方法，探讨如何以知识论提升大模型的性能与科研探索的可靠性。</summary>
+    <category term="知识论"/>
+    <category term="人工智能哲学"/>
+    <category term="大模型"/>
+    <category term="可解释性"/>
+    <category term="科研可靠性"/>
+    <category term="AI for Science"/>
+    <category term="可信 AI"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/babysitting-ai-agents-delegation-failures-mandate</id>
     <title>“给智能体当保姆”：微软 MANDATE 研究深度解读——23 类委托失败、最危险的往往最难察觉</title>
     <updated>2026-10-28T00:00:00Z</updated>

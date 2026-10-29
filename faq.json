@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-29",
-  "scanned_articles": 206,
-  "articles_with_faq": 105,
-  "total_questions": 484,
+  "scanned_articles": 207,
+  "articles_with_faq": 106,
+  "total_questions": 489,
   "items": [
     {
       "slug": "ai-agent-evaluation-benchmarks-review",
@@ -114,6 +114,34 @@
         {
           "question": "一人公司如何借鉴 RSI 实现持续进化？",
           "answer": "智能体层面，在不改模型权重的前提下改进提示词、技能、记忆、工具和工作流，并用隐藏测试集验证、保留方案档案库、支持一键回滚；人的层面，建立每日、每周、每月、每季度四级学习与校准机制；组织层面，将章程版本化，同时运行多个小实验并按真实收益分配资源（本文分析）。"
+        }
+      ]
+    },
+    {
+      "slug": "stanford-sep-epistemology-ai-llm-reliability",
+      "title": "斯坦福哲学百科《人工智能的知识论》深度解读：大模型如何用知识论提升性能与科研可靠性",
+      "url": "https://bi-chao.com/articles/stanford-sep-epistemology-ai-llm-reliability",
+      "date": "2026-10-29",
+      "faqs": [
+        {
+          "question": "斯坦福《人工智能的知识论》词条是什么？",
+          "answer": "它是斯坦福哲学百科全书于 2026 年 10 月 16 日首次发布的词条，作者 Claus Beisbart，系统讨论人能否基于 AI 输出获得有正当理由的信念、知识与理解（来源1、4）。"
+        },
+        {
+          "question": "词条的核心框架是什么？",
+          "answer": "词条把 AI 视为双重角色：一是认知对象，涉及不透明性与可解释性；二是位于认知主体一侧，涉及 AI 对知识与理解的贡献、信任以及谁是认知主体（来源1）。"
+        },
+        {
+          "question": "为什么说 AI 输出不能简单当作证言？",
+          "answer": "词条指出，很多学者认为 AI 系统并不知道、相信或断言任何东西，因此证言知识模型不适用；更合理的是把 AI 视为与仪器共享认知地位（来源1）。"
+        },
+        {
+          "question": "神经网络的结果靠什么获得辩护？",
+          "answer": "词条指出，由于用户不知道网络内置了哪些假设，形式化验证也只能用于小型网络，神经网络结果的辩护主要依赖使用记录，即模型被优化以重现已知真理并在其他数据上测试，可大致重构为归纳推理（来源1）。"
+        },
+        {
+          "question": "大模型如何借助知识论提升可靠性？",
+          "answer": "可以建立分领域可靠性档案、把输出当作附带不确定度的仪器读数、做多模型稳健性检验、对可形式化输出做机器验证、用领域知识锚定、声明适用域、做反事实测试，并依据风险设定置信门槛（本文分析）。"
         }
       ]
     },
