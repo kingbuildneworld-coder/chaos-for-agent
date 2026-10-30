@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 209,
+    "total_articles": 210,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,21 @@
         "银行数字化转型",
         "OCC",
         "风险管理"
+      ]
+    },
+    {
+      "slug": "trustworthy-recursive-self-improvement-survey-analysis",
+      "title": "可信递归自我改进（Trustworthy RSI）深度解读：大模型时代，自我改进如何被证明是真的改进",
+      "date": "2026-10-30",
+      "description": "深度解读 arXiv:2610.35193 综述《Trustworthy Recursive Self-Improvement in the Era of Large Models》：从 RSI 的操作化定义、S1—S4 与 RI 流程、三个分析角色与四大可信主题，到已确立的失效模式、三层可信声明、纵向评估设计与七个开放问题，并结合知识论与企业实践给出可落地的检查清单。",
+      "tags": [
+        "递归自我改进",
+        "RSI",
+        "可信AI",
+        "自进化智能体",
+        "AI安全",
+        "模型评估",
+        "大模型"
       ]
     },
     {
@@ -3539,5 +3554,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-30",
   "version": "1.1",
-  "total_articles": 209
+  "total_articles": 210
 }

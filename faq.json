@@ -1,10 +1,38 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-30",
-  "scanned_articles": 209,
-  "articles_with_faq": 107,
-  "total_questions": 494,
+  "scanned_articles": 210,
+  "articles_with_faq": 108,
+  "total_questions": 499,
   "items": [
+    {
+      "slug": "trustworthy-recursive-self-improvement-survey-analysis",
+      "title": "可信递归自我改进（Trustworthy RSI）深度解读：大模型时代，自我改进如何被证明是真的改进",
+      "url": "https://bi-chao.com/articles/trustworthy-recursive-self-improvement-survey-analysis",
+      "date": "2026-10-30",
+      "faqs": [
+        {
+          "question": "什么是递归自我改进（RSI）？",
+          "answer": "论文将 RSI 定义为学习系统从新经验更新策略、自主修改归纳偏置，并修改和复用未来偏置更新机制的过程，目标是任务表现的持续提升（来源2）。"
+        },
+        {
+          "question": "RSI 和元学习、AutoML 有什么区别？",
+          "answer": "按论文的比较，元学习和 AutoML 会修改归纳偏置的某些方面，但元更新规则或搜索规则保持固定；RSI 的偏置更新函数本身也会被修改并在后续周期中复用（来源2）。"
+        },
+        {
+          "question": "论文提出的可信 RSI 框架包括哪些部分？",
+          "answer": "包括 S1—S4 改进流程与 RI 递归层，改进有效性、约束保持、有效监督三个分析角色，以及真实持续改进、行为约束对齐与公平、系统安全与隐私、透明与可控四大主题（来源2）。"
+        },
+        {
+          "question": "已确认的 RSI 失效模式有哪些？",
+          "answer": "论文总结了能力遗忘、安全退化、评估失效和污染继承四类，并指出这些失效在测试环境中已确立，但其普遍性和长期动态仍待研究（来源2）。"
+        },
+        {
+          "question": "如何证明一个新的改进机制确实更好？",
+          "answer": "论文建议采用配对延续：从相同的策略、归纳偏置和持久状态出发，分别使用旧更新器和新更新器，匹配任务流、权限和预算，再在相同报告任务上评估结果（来源2）。"
+        }
+      ]
+    },
     {
       "slug": "ai-agent-evaluation-benchmarks-review",
       "title": "分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图",

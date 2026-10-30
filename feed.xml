@@ -27,6 +27,20 @@
     <category term="风险管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/trustworthy-recursive-self-improvement-survey-analysis</id>
+    <title>可信递归自我改进（Trustworthy RSI）深度解读：大模型时代，自我改进如何被证明是真的改进</title>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/trustworthy-recursive-self-improvement-survey-analysis" rel="alternate" type="text/html"/>
+    <summary>深度解读 arXiv:2610.35193 综述《Trustworthy Recursive Self-Improvement in the Era of Large Models》：从 RSI 的操作化定义、S1—S4 与 RI 流程、三个分析角色与四大可信主题，到已确立的失效模式、三层可信声明、纵向评估设计与七个开放问题，并结合知识论与企业实践给出可落地的检查清单。</summary>
+    <category term="递归自我改进"/>
+    <category term="RSI"/>
+    <category term="可信AI"/>
+    <category term="自进化智能体"/>
+    <category term="AI安全"/>
+    <category term="模型评估"/>
+    <category term="大模型"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/ai-agent-evaluation-benchmarks-review</id>
     <title>分数之外：人工智能与智能体评测体系综述——指标现状、九大问题与下一代评测路线图</title>
     <updated>2026-10-29T00:00:00Z</updated>
