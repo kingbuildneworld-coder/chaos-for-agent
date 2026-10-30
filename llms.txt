@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (210)
+## Articles (211)
 
+- [连续流大模型来了](https://bi-chao.com/articles/large-flow-language-model-lafa-bank)
+  - Description: 2026年10月，UC Berkeley、Amazon等发布Large Flow Language Models，提出连续流模型Lafa，达8B。其前缀因果、块内双向异步流，流匹配从噪声生成词元，适配预训练自回归模型，用不到30B词元，比离散扩散少18倍数据。自投机解码在单模型内自回归验证草稿，H100达2.54倍吞吐、质量相当。本文解读机制、数据及对银行推理降本、领域适配、可控生成的价值与边界。
+  - Date: 2026-10-30
+  - Tags: 大模型, 流匹配, 推理加速, 智能体, 金融科技, AI治理, 开源
 - [美国稳定币规则落地](https://bi-chao.com/articles/occ-genius-act-stablecoin-final-rule-bank)
   - Description: 2026年10月，美国货币监理署OCC发布GENIUS法案首个稳定币规则，新增12 CFR第15部分，2027年1月18日生效。OCC是首个落地该法案的联邦监管机构，给出适用法律的首个答案。规则明确监管边界、许可活动、收益禁令、储备、赎回、资本与后盾，放松提案中收益推定、品牌限制、赎回延期等要求，但支付网络、钱包、跨链桥留待后续监管。本文解读规则要点及对银行存款竞争、代币化存款、子公司发币的影响。
   - Date: 2026-10-30
@@ -856,11 +860,11 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 59 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 金融科技: 56 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 53 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 智能体: 60 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 金融科技: 57 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 54 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 39 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 大模型: 36 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 大模型: 37 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 19 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD

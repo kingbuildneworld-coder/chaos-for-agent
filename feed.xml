@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/large-flow-language-model-lafa-bank</id>
+    <title>连续流大模型来了</title>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/large-flow-language-model-lafa-bank" rel="alternate" type="text/html"/>
+    <summary>2026年10月，UC Berkeley、Amazon等发布Large Flow Language Models，提出连续流模型Lafa，达8B。其前缀因果、块内双向异步流，流匹配从噪声生成词元，适配预训练自回归模型，用不到30B词元，比离散扩散少18倍数据。自投机解码在单模型内自回归验证草稿，H100达2.54倍吞吐、质量相当。本文解读机制、数据及对银行推理降本、领域适配、可控生成的价值与边界。</summary>
+    <category term="大模型"/>
+    <category term="流匹配"/>
+    <category term="推理加速"/>
+    <category term="智能体"/>
+    <category term="金融科技"/>
+    <category term="AI治理"/>
+    <category term="开源"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/occ-genius-act-stablecoin-final-rule-bank</id>
     <title>美国稳定币规则落地</title>
     <updated>2026-10-30T00:00:00Z</updated>
