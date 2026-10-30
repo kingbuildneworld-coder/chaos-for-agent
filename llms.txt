@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (211)
+## Articles (212)
 
+- [大模型能搬回机房吗](https://bi-chao.com/articles/mistral-large4-open-weights-bank)
+  - Description: 2026年10月29日，法国Mistral AI开源万亿参数旗舰模型Large 4权重。它是1.05万亿总参数、49B激活的MoE，100万token上下文，支持图文输入，在欧洲自有数据中心用约3800块Blackwell GPU训练。本文拆解其规格、部署算力账、非Apache许可证陷阱，以及西方最强开源排除中国模型的叙事，并给出银行要不要把万亿开源模型搬回机房的判断。
+  - Date: 2026-10-31
+  - Tags: 开源大模型, Mistral, 私有化部署, 算力成本, AI治理, 金融科技, 模型风险管理
 - [连续流大模型来了](https://bi-chao.com/articles/large-flow-language-model-lafa-bank)
   - Description: 2026年10月，UC Berkeley、Amazon等发布Large Flow Language Models，提出连续流模型Lafa，达8B。其前缀因果、块内双向异步流，流匹配从噪声生成词元，适配预训练自回归模型，用不到30B词元，比离散扩散少18倍数据。自投机解码在单模型内自回归验证草稿，H100达2.54倍吞吐、质量相当。本文解读机制、数据及对银行推理降本、领域适配、可控生成的价值与边界。
   - Date: 2026-10-30
@@ -861,15 +865,15 @@
 
 ## Topics (top 10)
 - 智能体: 60 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- 金融科技: 57 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- AI治理: 54 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 金融科技: 58 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 55 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 银行AI: 39 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 37 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 19 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 金融监管: 17 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
+- 模型风险管理: 18 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`

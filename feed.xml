@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-30T00:00:00Z</updated>
+  <updated>2026-10-31T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/mistral-large4-open-weights-bank</id>
+    <title>大模型能搬回机房吗</title>
+    <updated>2026-10-31T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/mistral-large4-open-weights-bank" rel="alternate" type="text/html"/>
+    <summary>2026年10月29日，法国Mistral AI开源万亿参数旗舰模型Large 4权重。它是1.05万亿总参数、49B激活的MoE，100万token上下文，支持图文输入，在欧洲自有数据中心用约3800块Blackwell GPU训练。本文拆解其规格、部署算力账、非Apache许可证陷阱，以及西方最强开源排除中国模型的叙事，并给出银行要不要把万亿开源模型搬回机房的判断。</summary>
+    <category term="开源大模型"/>
+    <category term="Mistral"/>
+    <category term="私有化部署"/>
+    <category term="算力成本"/>
+    <category term="AI治理"/>
+    <category term="金融科技"/>
+    <category term="模型风险管理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/large-flow-language-model-lafa-bank</id>
     <title>连续流大模型来了</title>

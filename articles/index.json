@@ -1,5 +1,22 @@
 [
   {
+    "title": "大模型能搬回机房吗",
+    "slug": "mistral-large4-open-weights-bank",
+    "url": "/articles/mistral-large4-open-weights-bank.md",
+    "description": "2026年10月29日，法国Mistral AI开源万亿参数旗舰模型Large 4权重。它是1.05万亿总参数、49B激活的MoE，100万token上下文，支持图文输入，在欧洲自有数据中心用约3800块Blackwell GPU训练。本文拆解其规格、部署算力账、非Apache许可证陷阱，以及西方最强开源排除中国模型的叙事，并给出银行要不要把万亿开源模型搬回机房的判断。",
+    "date": "2026-10-31",
+    "tags": [
+      "开源大模型",
+      "Mistral",
+      "私有化部署",
+      "算力成本",
+      "AI治理",
+      "金融科技",
+      "模型风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "连续流大模型来了",
     "slug": "large-flow-language-model-lafa-bank",
     "url": "/articles/large-flow-language-model-lafa-bank.md",
