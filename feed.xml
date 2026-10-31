@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/deepseek-super-agent-design-analysis</id>
+    <title>DeepSeek《Super-agent 设计探索》深度解读：当 Agent 不再绑定会话，瓶颈从模型转向人的注意力</title>
+    <updated>2026-10-31T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deepseek-super-agent-design-analysis" rel="alternate" type="text/html"/>
+    <summary>深度解读 DeepSeek Harness 团队 2026 年 10 月 31 日发布的《Super-agent 设计探索》：四个基础特征、Router/Worker 双层架构、事件驱动与订阅直通、链式召回、投机执行、全双工交互、存算分离与 Watchdog，以及实验数据、开源原型的注意力原则、安全开放问题与落地建议。</summary>
+    <category term="DeepSeek"/>
+    <category term="Super-agent"/>
+    <category term="智能体架构"/>
+    <category term="DeepSeek Harness"/>
+    <category term="多智能体"/>
+    <category term="事件驱动"/>
+    <category term="AI安全"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/mistral-large4-open-weights-bank</id>
     <title>大模型能搬回机房吗</title>
     <updated>2026-10-31T00:00:00Z</updated>

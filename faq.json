@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-31",
-  "scanned_articles": 214,
-  "articles_with_faq": 109,
-  "total_questions": 503,
+  "scanned_articles": 215,
+  "articles_with_faq": 110,
+  "total_questions": 507,
   "items": [
+    {
+      "slug": "deepseek-super-agent-design-analysis",
+      "title": "DeepSeek《Super-agent 设计探索》深度解读：当 Agent 不再绑定会话，瓶颈从模型转向人的注意力",
+      "url": "https://bi-chao.com/articles/deepseek-super-agent-design-analysis",
+      "date": "2026-10-31",
+      "faqs": [
+        {
+          "question": "Super-agent 和普通多 Agent 系统有什么区别？",
+          "answer": "原文指出，常见 Agent Team 主要用于单个复杂任务内部的拆解，Team Lead 承担很重的推理负载；Super-agent 的 Router 只处理任务之间的高层关联与分派，不介入单任务拆解，也不直接执行任务（来源1）。"
+        },
+        {
+          "question": "为什么一个 Router 不会成为瓶颈？",
+          "answer": "上一轮推理期间到达的事件会积压到下一轮合并处理。压测中，到达速率从约每分钟 1 条升到约 40 条时，平均 batch 从 1.0 升至 2.8，单次请求耗时只从 2.5 秒增至 3.9 秒，单个决定分摊推理时间从 6.4 秒降至 1.6 秒（来源1）。"
+        },
+        {
+          "question": "这是 DeepSeek 的正式产品吗？",
+          "answer": "不是。原文说明它是架构思路探讨；配套仓库声明为研究原型，并非官方产品，且与文章描述的实现不完全相同（来源1、来源2）。"
+        },
+        {
+          "question": "最大的风险是什么？",
+          "answer": "原文认为是安全与隐私：事件驱动增加接触不可信输入的风险，云端 Loop 被攻破可能波及所有端侧设备，端侧凭据进入上下文也可能泄露（来源1）。"
+        }
+      ]
+    },
     {
       "slug": "navier-stokes-lean-autoformalisation-software-testing",
       "title": "Lean 编译通过不等于证明正确：Navier-Stokes 自动形式化“翻译失真”深度解读，及其对软件测试全自动化的启示",

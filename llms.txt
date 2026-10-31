@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (214)
+## Articles (215)
 
+- [DeepSeek《Super-agent 设计探索》深度解读：当 Agent 不再绑定会话，瓶颈从模型转向人的注意力](https://bi-chao.com/articles/deepseek-super-agent-design-analysis)
+  - Description: 深度解读 DeepSeek Harness 团队 2026 年 10 月 31 日发布的《Super-agent 设计探索》：四个基础特征、Router/Worker 双层架构、事件驱动与订阅直通、链式召回、投机执行、全双工交互、存算分离与 Watchdog，以及实验数据、开源原型的注意力原则、安全开放问题与落地建议。
+  - Date: 2026-10-31
+  - Tags: DeepSeek, Super-agent, 智能体架构, DeepSeek Harness, 多智能体, 事件驱动, AI安全
 - [大模型能搬回机房吗](https://bi-chao.com/articles/mistral-large4-open-weights-bank)
   - Description: 2026年10月29日，法国Mistral AI开源万亿参数旗舰模型Large 4权重。它是1.05万亿总参数、49B激活的MoE，100万token上下文，支持图文输入，在欧洲自有数据中心用约3800块Blackwell GPU训练。本文拆解其规格、部署算力账、非Apache许可证陷阱，以及西方最强开源排除中国模型的叙事，并给出银行要不要把万亿开源模型搬回机房的判断。
   - Date: 2026-10-31
@@ -881,7 +885,7 @@
 - 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 19 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 模型风险管理: 18 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- AI安全: 18 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`

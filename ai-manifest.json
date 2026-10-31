@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 214,
+    "total_articles": 215,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "deepseek-super-agent-design-analysis",
+      "title": "DeepSeek《Super-agent 设计探索》深度解读：当 Agent 不再绑定会话，瓶颈从模型转向人的注意力",
+      "date": "2026-10-31",
+      "description": "深度解读 DeepSeek Harness 团队 2026 年 10 月 31 日发布的《Super-agent 设计探索》：四个基础特征、Router/Worker 双层架构、事件驱动与订阅直通、链式召回、投机执行、全双工交互、存算分离与 Watchdog，以及实验数据、开源原型的注意力原则、安全开放问题与落地建议。",
+      "tags": [
+        "DeepSeek",
+        "Super-agent",
+        "智能体架构",
+        "DeepSeek Harness",
+        "多智能体",
+        "事件驱动",
+        "AI安全"
+      ]
+    },
     {
       "slug": "mistral-large4-open-weights-bank",
       "title": "大模型能搬回机房吗",
@@ -3614,5 +3629,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-31",
   "version": "1.1",
-  "total_articles": 214
+  "total_articles": 215
 }
