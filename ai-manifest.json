@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 213,
+    "total_articles": 214,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,21 @@
         "AI治理",
         "金融科技",
         "模型风险管理"
+      ]
+    },
+    {
+      "slug": "navier-stokes-lean-autoformalisation-software-testing",
+      "title": "Lean 编译通过不等于证明正确：Navier-Stokes 自动形式化“翻译失真”深度解读，及其对软件测试全自动化的启示",
+      "date": "2026-10-31",
+      "description": "深度解读 arXiv:2610.08144《Navier-Stokes lost in translation》：为什么 AI 把自然语言证明翻译成 Lean 并编译通过，仍不能保证原证明正确；OpenAI Navier-Stokes 爆破证明中的两类翻译失真、比停机问题更难的歧义消解、Meta 教科书形式化事件，以及这些结论对软件测试全自动化、AI 生成测试和形式化验证的直接启示。",
+      "tags": [
+        "形式化验证",
+        "自动形式化",
+        "Lean",
+        "软件测试",
+        "AI可靠性",
+        "测试自动化",
+        "可计算性"
       ]
     },
     {
@@ -3599,5 +3614,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-31",
   "version": "1.1",
-  "total_articles": 213
+  "total_articles": 214
 }

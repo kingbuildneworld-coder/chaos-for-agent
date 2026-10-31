@@ -27,6 +27,20 @@
     <category term="模型风险管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/navier-stokes-lean-autoformalisation-software-testing</id>
+    <title>Lean 编译通过不等于证明正确：Navier-Stokes 自动形式化“翻译失真”深度解读，及其对软件测试全自动化的启示</title>
+    <updated>2026-10-31T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/navier-stokes-lean-autoformalisation-software-testing" rel="alternate" type="text/html"/>
+    <summary>深度解读 arXiv:2610.08144《Navier-Stokes lost in translation》：为什么 AI 把自然语言证明翻译成 Lean 并编译通过，仍不能保证原证明正确；OpenAI Navier-Stokes 爆破证明中的两类翻译失真、比停机问题更难的歧义消解、Meta 教科书形式化事件，以及这些结论对软件测试全自动化、AI 生成测试和形式化验证的直接启示。</summary>
+    <category term="形式化验证"/>
+    <category term="自动形式化"/>
+    <category term="Lean"/>
+    <category term="软件测试"/>
+    <category term="AI可靠性"/>
+    <category term="测试自动化"/>
+    <category term="可计算性"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/trend-ai-attack-spectrum-japan-bank</id>
     <title>AI攻击的三层光谱</title>
     <updated>2026-10-31T00:00:00Z</updated>

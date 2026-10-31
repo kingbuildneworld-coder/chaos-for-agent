@@ -17,6 +17,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "Lean 编译通过不等于证明正确：Navier-Stokes 自动形式化“翻译失真”深度解读，及其对软件测试全自动化的启示",
+    "slug": "navier-stokes-lean-autoformalisation-software-testing",
+    "url": "/articles/navier-stokes-lean-autoformalisation-software-testing.md",
+    "description": "深度解读 arXiv:2610.08144《Navier-Stokes lost in translation》：为什么 AI 把自然语言证明翻译成 Lean 并编译通过，仍不能保证原证明正确；OpenAI Navier-Stokes 爆破证明中的两类翻译失真、比停机问题更难的歧义消解、Meta 教科书形式化事件，以及这些结论对软件测试全自动化、AI 生成测试和形式化验证的直接启示。",
+    "date": "2026-10-31",
+    "tags": [
+      "形式化验证",
+      "自动形式化",
+      "Lean",
+      "软件测试",
+      "AI可靠性",
+      "测试自动化",
+      "可计算性"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI攻击的三层光谱",
     "slug": "trend-ai-attack-spectrum-japan-bank",
     "url": "/articles/trend-ai-attack-spectrum-japan-bank.md",

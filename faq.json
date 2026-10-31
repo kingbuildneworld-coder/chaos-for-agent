@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-10-31",
-  "scanned_articles": 213,
-  "articles_with_faq": 108,
-  "total_questions": 499,
+  "scanned_articles": 214,
+  "articles_with_faq": 109,
+  "total_questions": 503,
   "items": [
+    {
+      "slug": "navier-stokes-lean-autoformalisation-software-testing",
+      "title": "Lean 编译通过不等于证明正确：Navier-Stokes 自动形式化“翻译失真”深度解读，及其对软件测试全自动化的启示",
+      "url": "https://bi-chao.com/articles/navier-stokes-lean-autoformalisation-software-testing",
+      "date": "2026-10-31",
+      "faqs": [
+        {
+          "question": "为什么 Lean 编译通过还不能证明原自然语言证明正确？",
+          "answer": "论文指出，当前验收标准只检查 Lean 证明是否成立，不检查是否保留了原证明的推理；AI 可能修复原证明的错误、换一条论证，或证明一个更弱的命题（来源2）。"
+        },
+        {
+          "question": "论文在 OpenAI 的 Navier-Stokes 证明中发现了什么？",
+          "answer": "论文展示了两处失真：引理 8.6 的估计在 Lean 中需要多一阶导数，因而严格更弱；压力通量界 (10.19) 的陈述和证明方法都与 Lean 版本不同（来源2）。作者声明不对自然语言证明本身是否正确下结论（来源2）。"
+        },
+        {
+          "question": "为什么说语义忠实翻译比停机问题还难？",
+          "answer": "论文用一个依赖希尔伯特第十问题的例子说明，判断某个数学对象是否良定义，即使拥有停机问题神谕也无法始终做到，而忠实翻译需要先做出这种判断（来源2）。"
+        },
+        {
+          "question": "这对软件测试有什么启示？",
+          "answer": "本文分析认为，测试全绿或形式化验证通过只说明实现满足被写下的规约，不说明规约忠实表达了需求；应防止 AI 修改测试、禁止静默回退，并把人工审查集中在规约与需求的对应关系上。"
+        }
+      ]
+    },
     {
       "slug": "trustworthy-recursive-self-improvement-survey-analysis",
       "title": "可信递归自我改进（Trustworthy RSI）深度解读：大模型时代，自我改进如何被证明是真的改进",
