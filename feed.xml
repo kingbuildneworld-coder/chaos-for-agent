@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-10-31T00:00:00Z</updated>
+  <updated>2026-11-01T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/ecb-ai-cyber-action-plan-bank</id>
+    <title>AI网防成了硬任务</title>
+    <updated>2026-11-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ecb-ai-cyber-action-plan-bank" rel="alternate" type="text/html"/>
+    <summary>2026年10月31日，欧元区重要银行须向欧洲央行监管组提交应对AI赋能网络威胁的行动计划。ECB监管委员Buch署名发信，要求把AI带来的攻击提速、规模化和语言适配从一般ICT风险中单独拎出做专项防御。ECB还将横向比对各家计划并列名改进方向，并把年度IT问卷从9月延至2027年2月。本文拆解这封信的监管逻辑、与传统韧性要求的差异，以及中国银行该如何把AI网防变成可提交、可检查的硬任务。</summary>
+    <category term="ECB"/>
+    <category term="网络安全"/>
+    <category term="AI监管"/>
+    <category term="银行风控"/>
+    <category term="数字韧性"/>
+    <category term="威胁情报"/>
+    <category term="ICT风险"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/deepseek-super-agent-design-analysis</id>
     <title>DeepSeek《Super-agent 设计探索》深度解读：当 Agent 不再绑定会话，瓶颈从模型转向人的注意力</title>

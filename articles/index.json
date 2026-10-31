@@ -1,5 +1,22 @@
 [
   {
+    "title": "AI网防成了硬任务",
+    "slug": "ecb-ai-cyber-action-plan-bank",
+    "url": "/articles/ecb-ai-cyber-action-plan-bank.md",
+    "description": "2026年10月31日，欧元区重要银行须向欧洲央行监管组提交应对AI赋能网络威胁的行动计划。ECB监管委员Buch署名发信，要求把AI带来的攻击提速、规模化和语言适配从一般ICT风险中单独拎出做专项防御。ECB还将横向比对各家计划并列名改进方向，并把年度IT问卷从9月延至2027年2月。本文拆解这封信的监管逻辑、与传统韧性要求的差异，以及中国银行该如何把AI网防变成可提交、可检查的硬任务。",
+    "date": "2026-11-01",
+    "tags": [
+      "ECB",
+      "网络安全",
+      "AI监管",
+      "银行风控",
+      "数字韧性",
+      "威胁情报",
+      "ICT风险"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "DeepSeek《Super-agent 设计探索》深度解读：当 Agent 不再绑定会话，瓶颈从模型转向人的注意力",
     "slug": "deepseek-super-agent-design-analysis",
     "url": "/articles/deepseek-super-agent-design-analysis.md",
