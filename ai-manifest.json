@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 212,
+    "total_articles": 213,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,21 @@
         "AI治理",
         "金融科技",
         "模型风险管理"
+      ]
+    },
+    {
+      "slug": "trend-ai-attack-spectrum-japan-bank",
+      "title": "AI攻击的三层光谱",
+      "date": "2026-10-31",
+      "description": "2026年秋日本企业接连泄露，官方10月发警报。Trend Micro从三个攻击方公开目录重建基础设施，提出AI参与攻击的光谱：Case A用CyberStrikeAI的44个agent自主执行，Case B人主导、AI辅助规划并伪装授权绕过护栏，Case C仅工具开发留痕迹。入口都是已知弱点与默认配置，无0day。本文拆解三层光谱，以及银行可利用的AI输出弱点检测、内部AI算力防护与跨机构情报。",
+      "tags": [
+        "AI安全",
+        "网络攻击",
+        "Trend Micro",
+        "银行风控",
+        "攻击面",
+        "智能体安全",
+        "威胁情报"
       ]
     },
     {
@@ -3584,5 +3599,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-10-31",
   "version": "1.1",
-  "total_articles": 212
+  "total_articles": 213
 }

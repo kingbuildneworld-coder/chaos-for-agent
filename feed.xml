@@ -27,6 +27,20 @@
     <category term="模型风险管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/trend-ai-attack-spectrum-japan-bank</id>
+    <title>AI攻击的三层光谱</title>
+    <updated>2026-10-31T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/trend-ai-attack-spectrum-japan-bank" rel="alternate" type="text/html"/>
+    <summary>2026年秋日本企业接连泄露，官方10月发警报。Trend Micro从三个攻击方公开目录重建基础设施，提出AI参与攻击的光谱：Case A用CyberStrikeAI的44个agent自主执行，Case B人主导、AI辅助规划并伪装授权绕过护栏，Case C仅工具开发留痕迹。入口都是已知弱点与默认配置，无0day。本文拆解三层光谱，以及银行可利用的AI输出弱点检测、内部AI算力防护与跨机构情报。</summary>
+    <category term="AI安全"/>
+    <category term="网络攻击"/>
+    <category term="Trend Micro"/>
+    <category term="银行风控"/>
+    <category term="攻击面"/>
+    <category term="智能体安全"/>
+    <category term="威胁情报"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/large-flow-language-model-lafa-bank</id>
     <title>连续流大模型来了</title>
     <updated>2026-10-30T00:00:00Z</updated>
