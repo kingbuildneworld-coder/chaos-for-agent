@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/bank-asset-preservation-superagent-blueprint</id>
+    <title>资产保全超级智能体怎么搭</title>
+    <updated>2026-11-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bank-asset-preservation-superagent-blueprint" rel="alternate" type="text/html"/>
+    <summary>DeepSeek 的 dsh-superagent-prototype 是事件驱动、低打扰的智能体：Source 产事件，Router 签发带范围和制度版本的 Mandate，每工单独立执行。本文映射资产保全：法院查控、查封到期、质押物跌价、债务人工商变更作事件源，续封、补保全、线索核查、法拍跟进作工单，明确哪些智能体可做、哪些必须人决，给出 observe 到 auto 的三阶段路径与审计要点。</summary>
+    <category term="资产保全"/>
+    <category term="智能体架构"/>
+    <category term="DeepSeek"/>
+    <category term="事件驱动"/>
+    <category term="银行风控"/>
+    <category term="多智能体"/>
+    <category term="合规边界"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/ecb-ai-cyber-action-plan-bank</id>
     <title>AI网防成了硬任务</title>
     <updated>2026-11-01T00:00:00Z</updated>

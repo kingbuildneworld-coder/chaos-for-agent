@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (216)
+## Articles (217)
 
+- [资产保全超级智能体怎么搭](https://bi-chao.com/articles/bank-asset-preservation-superagent-blueprint)
+  - Description: DeepSeek 的 dsh-superagent-prototype 是事件驱动、低打扰的智能体：Source 产事件，Router 签发带范围和制度版本的 Mandate，每工单独立执行。本文映射资产保全：法院查控、查封到期、质押物跌价、债务人工商变更作事件源，续封、补保全、线索核查、法拍跟进作工单，明确哪些智能体可做、哪些必须人决，给出 observe 到 auto 的三阶段路径与审计要点。
+  - Date: 2026-11-01
+  - Tags: 资产保全, 智能体架构, DeepSeek, 事件驱动, 银行风控, 多智能体, 合规边界
 - [AI网防成了硬任务](https://bi-chao.com/articles/ecb-ai-cyber-action-plan-bank)
   - Description: 2026年10月31日，欧元区重要银行须向欧洲央行监管组提交应对AI赋能网络威胁的行动计划。ECB监管委员Buch署名发信，要求把AI带来的攻击提速、规模化和语言适配从一般ICT风险中单独拎出做专项防御。ECB还将横向比对各家计划并列名改进方向，并把年度IT问卷从9月延至2027年2月。本文拆解这封信的监管逻辑、与传统韧性要求的差异，以及中国银行该如何把AI网防变成可提交、可检查的硬任务。
   - Date: 2026-11-01
@@ -886,10 +890,10 @@
 - 银行AI: 39 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 37 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 资产保全: 21 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 19 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 19 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- AI安全: 18 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
+- 银行风控: 18 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E9%A3%8E%E6%8E%A7
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
