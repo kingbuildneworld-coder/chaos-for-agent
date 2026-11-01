@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-01",
-  "scanned_articles": 217,
-  "articles_with_faq": 110,
-  "total_questions": 507,
+  "scanned_articles": 219,
+  "articles_with_faq": 111,
+  "total_questions": 511,
   "items": [
+    {
+      "slug": "csrc-jrt-0357-2026-foundation-model-selection-guide",
+      "title": "证监会 JR/T 0357—2026《证券期货业基础大模型选型评估指引》深度解读：六个维度怎么用，智能体时代还缺什么",
+      "url": "https://bi-chao.com/articles/csrc-jrt-0357-2026-foundation-model-selection-guide",
+      "date": "2026-11-01",
+      "faqs": [
+        {
+          "question": "这份标准是强制的吗？",
+          "answer": "不是。证监会公告明确它是金融行业推荐性标准，自公布之日起施行（来源1）。但其中用“应”的条款大多对应已有法律法规义务（来源2；本文分析）。"
+        },
+        {
+          "question": "标准有没有给打分方法？",
+          "answer": "没有给出维度权重或及格线。附录 B 只提供了精确率、召回率、F1、ROUGE-N、错误接受率、错误拒绝率、mAP、Recall@K、MOS 等推荐指标（来源2）。"
+        },
+        {
+          "question": "标准提到了智能体吗？",
+          "answer": "标准在缩略语中列出 MCP 与 A2A，并在兼容适配中建议支持 MCP 和 A2A 协议（来源2），但未单独规定智能体的工具权限与越权测试。"
+        },
+        {
+          "question": "最硬的两条要求是什么？",
+          "answer": "总体原则中的“不得存在欺诈、误导客户、不公平对待等情况”和“不得发生未获得客户授权、使用客户数据开展大模型训练等情况”（来源2）。"
+        }
+      ]
+    },
     {
       "slug": "deepseek-super-agent-design-analysis",
       "title": "DeepSeek《Super-agent 设计探索》深度解读：当 Agent 不再绑定会话，瓶颈从模型转向人的注意力",

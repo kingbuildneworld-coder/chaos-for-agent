@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 217,
+    "total_articles": 219,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -67,6 +67,21 @@
       ]
     },
     {
+      "slug": "csrc-jrt-0357-2026-foundation-model-selection-guide",
+      "title": "证监会 JR/T 0357—2026《证券期货业基础大模型选型评估指引》深度解读：六个维度怎么用，智能体时代还缺什么",
+      "date": "2026-11-01",
+      "description": "解读证监会 2026 年 10 月 26 日发布即实施的金融行业推荐性标准 JR/T 0357—2026：五项总体原则、合规数据算法模态安全运营六维评估体系、应与宜的强弱区分、附录指标与合规义务清单，并分析其对 MCP、A2A 与智能体选型的意义、局限及机构落地清单。",
+      "tags": [
+        "金融监管",
+        "大模型选型",
+        "证券期货",
+        "AI治理",
+        "金融标准",
+        "智能体安全",
+        "模型风险管理"
+      ]
+    },
+    {
       "slug": "ecb-ai-cyber-action-plan-bank",
       "title": "AI网防成了硬任务",
       "date": "2026-11-01",
@@ -79,6 +94,21 @@
         "数字韧性",
         "威胁情报",
         "ICT风险"
+      ]
+    },
+    {
+      "slug": "oxford-handbook-generative-ai-regulation-bank",
+      "title": "AI监管的学术地图",
+      "date": "2026-11-01",
+      "description": "牛津大学出版社2026年8月推出《生成式AI基础与监管牛津手册》，由Hacker、Engel、Hammer、Mittelstadt四位跨学科学者主编，分导论、技术基础、监管挑战、行业应用、全球与区域五部分。本文梳理其结构，重点解读责任归属、反歧视、智能体安全、金融行业专章对银行AI治理的映射，并提示学术手册与操作手册之别。",
+      "tags": [
+        "生成式AI",
+        "AI治理",
+        "牛津手册",
+        "金融监管",
+        "可解释性",
+        "责任归属",
+        "反歧视"
       ]
     },
     {
@@ -3659,5 +3689,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-01",
   "version": "1.1",
-  "total_articles": 217
+  "total_articles": 219
 }

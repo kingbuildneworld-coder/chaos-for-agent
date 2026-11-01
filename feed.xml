@@ -27,6 +27,20 @@
     <category term="合规边界"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/csrc-jrt-0357-2026-foundation-model-selection-guide</id>
+    <title>证监会 JR/T 0357—2026《证券期货业基础大模型选型评估指引》深度解读：六个维度怎么用，智能体时代还缺什么</title>
+    <updated>2026-11-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/csrc-jrt-0357-2026-foundation-model-selection-guide" rel="alternate" type="text/html"/>
+    <summary>解读证监会 2026 年 10 月 26 日发布即实施的金融行业推荐性标准 JR/T 0357—2026：五项总体原则、合规数据算法模态安全运营六维评估体系、应与宜的强弱区分、附录指标与合规义务清单，并分析其对 MCP、A2A 与智能体选型的意义、局限及机构落地清单。</summary>
+    <category term="金融监管"/>
+    <category term="大模型选型"/>
+    <category term="证券期货"/>
+    <category term="AI治理"/>
+    <category term="金融标准"/>
+    <category term="智能体安全"/>
+    <category term="模型风险管理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/ecb-ai-cyber-action-plan-bank</id>
     <title>AI网防成了硬任务</title>
     <updated>2026-11-01T00:00:00Z</updated>
@@ -39,6 +53,20 @@
     <category term="数字韧性"/>
     <category term="威胁情报"/>
     <category term="ICT风险"/>
+  </entry>
+  <entry>
+    <id>https://bi-chao.com/articles/oxford-handbook-generative-ai-regulation-bank</id>
+    <title>AI监管的学术地图</title>
+    <updated>2026-11-01T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/oxford-handbook-generative-ai-regulation-bank" rel="alternate" type="text/html"/>
+    <summary>牛津大学出版社2026年8月推出《生成式AI基础与监管牛津手册》，由Hacker、Engel、Hammer、Mittelstadt四位跨学科学者主编，分导论、技术基础、监管挑战、行业应用、全球与区域五部分。本文梳理其结构，重点解读责任归属、反歧视、智能体安全、金融行业专章对银行AI治理的映射，并提示学术手册与操作手册之别。</summary>
+    <category term="生成式AI"/>
+    <category term="AI治理"/>
+    <category term="牛津手册"/>
+    <category term="金融监管"/>
+    <category term="可解释性"/>
+    <category term="责任归属"/>
+    <category term="反歧视"/>
   </entry>
   <entry>
     <id>https://bi-chao.com/articles/deepseek-super-agent-design-analysis</id>
