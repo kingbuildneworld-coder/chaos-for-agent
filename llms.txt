@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (220)
+## Articles (221)
 
 - [中美太空智能算力与在轨大模型深度对比：从 Suncatcher 的第一首俳句，到三体计算星座的二十五个模型](https://bi-chao.com/articles/china-us-space-ai-compute-orbital-llm-constraints)
   - Description: 以 Google Project Suncatcher 在轨 TPU 首次生成 Gemma 4 回答为切口，系统对比中美太空算力路线：三体计算星座、星算计划、灵境星座与 Suncatcher、Starcloud、SpaceX 百万星申请；拆解能源、散热、辐射、星间链路、发射成本、芯片、维护、频轨与安全八大约束，并提出分层解决思路。
   - Date: 2026-11-02
   - Tags: 太空算力, 在轨大模型, Project Suncatcher, 三体计算星座, 商业航天, AI基础设施, 中美科技竞争
+- [银行OCR搬进手机](https://bi-chao.com/articles/xiaomi-ocr-0-on-device-bank)
+  - Description: 小米2026年10月30日开源0.8B文档理解模型Xiaomi-OCR-0，单一模型同时做文档解析、关键字段抽取和视觉问答，OmniDocBench同尺寸类第一。它已经在小米手机超级小爱上从屏幕取件码、排队号和账单详情。本文分析这个0.8B模型对银行App智能服务和远程端侧金融服务的价值：身份证、营业执照、发票流水在手机本地结构化，敏感影像不回传，以及端侧第一道、云端第二道的混合架构怎么搭。
+  - Date: 2026-11-02
+  - Tags: 端侧AI, OCR, 小米, 文档理解, 银行App, 隐私计算, 远程开户
 - [资产保全超级智能体怎么搭](https://bi-chao.com/articles/bank-asset-preservation-superagent-blueprint)
   - Description: DeepSeek 的 dsh-superagent-prototype 是事件驱动、低打扰的智能体：Source 产事件，Router 签发带范围和制度版本的 Mandate，每工单独立执行。本文映射资产保全：法院查控、查封到期、质押物跌价、债务人工商变更作事件源，续封、补保全、线索核查、法拍跟进作工单，明确哪些智能体可做、哪些必须人决，给出 observe 到 auto 的三阶段路径与审计要点。
   - Date: 2026-11-01

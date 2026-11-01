@@ -17,6 +17,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "银行OCR搬进手机",
+    "slug": "xiaomi-ocr-0-on-device-bank",
+    "url": "/articles/xiaomi-ocr-0-on-device-bank.md",
+    "description": "小米2026年10月30日开源0.8B文档理解模型Xiaomi-OCR-0，单一模型同时做文档解析、关键字段抽取和视觉问答，OmniDocBench同尺寸类第一。它已经在小米手机超级小爱上从屏幕取件码、排队号和账单详情。本文分析这个0.8B模型对银行App智能服务和远程端侧金融服务的价值：身份证、营业执照、发票流水在手机本地结构化，敏感影像不回传，以及端侧第一道、云端第二道的混合架构怎么搭。",
+    "date": "2026-11-02",
+    "tags": [
+      "端侧AI",
+      "OCR",
+      "小米",
+      "文档理解",
+      "银行App",
+      "隐私计算",
+      "远程开户"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "资产保全超级智能体怎么搭",
     "slug": "bank-asset-preservation-superagent-blueprint",
     "url": "/articles/bank-asset-preservation-superagent-blueprint.md",
