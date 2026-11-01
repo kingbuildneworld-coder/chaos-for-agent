@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-01T00:00:00Z</updated>
+  <updated>2026-11-02T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/china-us-space-ai-compute-orbital-llm-constraints</id>
+    <title>中美太空智能算力与在轨大模型深度对比：从 Suncatcher 的第一首俳句，到三体计算星座的二十五个模型</title>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/china-us-space-ai-compute-orbital-llm-constraints" rel="alternate" type="text/html"/>
+    <summary>以 Google Project Suncatcher 在轨 TPU 首次生成 Gemma 4 回答为切口，系统对比中美太空算力路线：三体计算星座、星算计划、灵境星座与 Suncatcher、Starcloud、SpaceX 百万星申请；拆解能源、散热、辐射、星间链路、发射成本、芯片、维护、频轨与安全八大约束，并提出分层解决思路。</summary>
+    <category term="太空算力"/>
+    <category term="在轨大模型"/>
+    <category term="Project Suncatcher"/>
+    <category term="三体计算星座"/>
+    <category term="商业航天"/>
+    <category term="AI基础设施"/>
+    <category term="中美科技竞争"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/bank-asset-preservation-superagent-blueprint</id>
     <title>资产保全超级智能体怎么搭</title>

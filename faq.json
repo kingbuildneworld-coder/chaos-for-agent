@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-11-01",
-  "scanned_articles": 219,
-  "articles_with_faq": 111,
-  "total_questions": 511,
+  "updated": "2026-11-02",
+  "scanned_articles": 220,
+  "articles_with_faq": 112,
+  "total_questions": 515,
   "items": [
+    {
+      "slug": "china-us-space-ai-compute-orbital-llm-constraints",
+      "title": "中美太空智能算力与在轨大模型深度对比：从 Suncatcher 的第一首俳句，到三体计算星座的二十五个模型",
+      "url": "https://bi-chao.com/articles/china-us-space-ai-compute-orbital-llm-constraints",
+      "date": "2026-11-02",
+      "faqs": [
+        {
+          "question": "中美谁领先？",
+          "answer": "本文判断中国在多星组网和在轨模型应用上领先，美国在单芯片算力、资本规模和发射能力上领先。三体计算星座已有 16 颗计算卫星组网、部署 25 个模型（来源8），Suncatcher 仍处于单星验证阶段（来源1）。"
+        },
+        {
+          "question": "太空能训练大模型吗？",
+          "answer": "目前只有小规模演示，如 Starcloud 在轨训练 NanoGPT（来源10）。Google 测试认为辐射对推理影响很小，但对长时间大规模训练已构成问题（来源4）。"
+        },
+        {
+          "question": "太空算力什么时候能和地面数据中心比成本？",
+          "answer": "Google 论文估计发射价格需降到约 200 美元/千克，最早约在 2035 年前后，并需要星舰约 1800 次发射（来源4）。"
+        },
+        {
+          "question": "在轨大模型现在能做什么？",
+          "answer": "主要是遥感火情识别、气象分钟级预报、天文事件快速判定和简单问答（来源1、来源6、来源12）。"
+        }
+      ]
+    },
     {
       "slug": "csrc-jrt-0357-2026-foundation-model-selection-guide",
       "title": "证监会 JR/T 0357—2026《证券期货业基础大模型选型评估指引》深度解读：六个维度怎么用，智能体时代还缺什么",

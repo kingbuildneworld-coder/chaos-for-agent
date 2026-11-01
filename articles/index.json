@@ -1,5 +1,22 @@
 [
   {
+    "title": "中美太空智能算力与在轨大模型深度对比：从 Suncatcher 的第一首俳句，到三体计算星座的二十五个模型",
+    "slug": "china-us-space-ai-compute-orbital-llm-constraints",
+    "url": "/articles/china-us-space-ai-compute-orbital-llm-constraints.md",
+    "description": "以 Google Project Suncatcher 在轨 TPU 首次生成 Gemma 4 回答为切口，系统对比中美太空算力路线：三体计算星座、星算计划、灵境星座与 Suncatcher、Starcloud、SpaceX 百万星申请；拆解能源、散热、辐射、星间链路、发射成本、芯片、维护、频轨与安全八大约束，并提出分层解决思路。",
+    "date": "2026-11-02",
+    "tags": [
+      "太空算力",
+      "在轨大模型",
+      "Project Suncatcher",
+      "三体计算星座",
+      "商业航天",
+      "AI基础设施",
+      "中美科技竞争"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "资产保全超级智能体怎么搭",
     "slug": "bank-asset-preservation-superagent-blueprint",
     "url": "/articles/bank-asset-preservation-superagent-blueprint.md",
