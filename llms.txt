@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (231)
+## Articles (232)
 
 - [贵模型何时撒手](https://bi-chao.com/articles/agentbaton-model-handoff-bank)
   - Description: NVIDIA、HKUST与UIUC研究长程Agent任务中从贵模型到便宜模型的一次性交接。AgentBaton检测器根据任务进度模式学习何时切换，在11对模型组合上平均省65.9%的API成本，同时保持准确率，最高比全程用贵模型还高8.8分。反向交接（便宜切贵）几乎不省钱。本文分析它对银行长程Agent任务的成本优化。
@@ -50,6 +50,10 @@
   - Description: CMU、JHU与Aurora Innovation提出统一训练：把预训练、中训练、监督微调与强化学习全部放进同一个基于似然的目标，RL目标被推导为对模型生成目标的最大似然拟合。124M小模型从头统一训练即胜过分阶段训练；0.76B模型上5%中训练数据配比在数学与编码四项指标上最佳。本文分析它对银行自研大模型训练流程的影响。
   - Date: 2026-11-02
   - Tags: 模型训练, 强化学习, 预训练, 银行AI, 统一训练, 数据配比
+- [银行开始封AI助手](https://bi-chao.com/articles/us-banks-block-ai-agents-customer-accounts)
+  - Description: 2026年11月1日消息：美国主要银行开始封锁第三方AI助手使用客户登录凭证访问账户。JPMorgan Chase警告客户可能为AI助手发起的非预期交易负责，Morgan Stanley封锁所有第三方Agent，Wells Fargo 11月24日起更新协议。在联邦开放银行规则被法院暂停的真空期，银行各自划定边界。本文分析这对中国银行未来应对AI助手管理账户的启示。
+  - Date: 2026-11-02
+  - Tags: AI Agent, 银行账户, 凭证安全, 开放银行, 客户责任, 金融科技, AI治理
 - [Agent验证加在哪](https://bi-chao.com/articles/verification-harness-independent-review-bank)
   - Description: 阿里与Cornell在7个前沿编码模型上对比17种验证设计：系统角色指令只加3-4分，完成时自检不推荐，独立评审在Terminal-Bench上加5.9到9.5分、成本仅1.13到1.25倍。视觉工件上，评审变更比评审轨迹效果好。本文回答银行给Agent harness加验证时，哪一道最划算。
   - Date: 2026-11-02
@@ -941,8 +945,8 @@
 
 ## Topics (top 10)
 - 智能体: 61 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 58 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 金融科技: 58 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 59 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 金融科技: 59 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 44 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 37 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86

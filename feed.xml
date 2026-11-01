@@ -132,6 +132,20 @@
     <category term="数据配比"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/us-banks-block-ai-agents-customer-accounts</id>
+    <title>银行开始封AI助手</title>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/us-banks-block-ai-agents-customer-accounts" rel="alternate" type="text/html"/>
+    <summary>2026年11月1日消息：美国主要银行开始封锁第三方AI助手使用客户登录凭证访问账户。JPMorgan Chase警告客户可能为AI助手发起的非预期交易负责，Morgan Stanley封锁所有第三方Agent，Wells Fargo 11月24日起更新协议。在联邦开放银行规则被法院暂停的真空期，银行各自划定边界。本文分析这对中国银行未来应对AI助手管理账户的启示。</summary>
+    <category term="AI Agent"/>
+    <category term="银行账户"/>
+    <category term="凭证安全"/>
+    <category term="开放银行"/>
+    <category term="客户责任"/>
+    <category term="金融科技"/>
+    <category term="AI治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/verification-harness-independent-review-bank</id>
     <title>Agent验证加在哪</title>
     <updated>2026-11-02T00:00:00Z</updated>
