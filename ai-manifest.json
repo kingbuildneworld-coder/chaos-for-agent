@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 222,
+    "total_articles": 231,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -52,6 +52,34 @@
   },
   "articles": [
     {
+      "slug": "agentbaton-model-handoff-bank",
+      "title": "贵模型何时撒手",
+      "date": "2026-11-02",
+      "description": "NVIDIA、HKUST与UIUC研究长程Agent任务中从贵模型到便宜模型的一次性交接。AgentBaton检测器根据任务进度模式学习何时切换，在11对模型组合上平均省65.9%的API成本，同时保持准确率，最高比全程用贵模型还高8.8分。反向交接（便宜切贵）几乎不省钱。本文分析它对银行长程Agent任务的成本优化。",
+      "tags": [
+        "模型路由",
+        "成本优化",
+        "Agent",
+        "模型切换",
+        "银行AI",
+        "长程任务"
+      ]
+    },
+    {
+      "slug": "agentic-backdoor-pretraining-poisoning-bank",
+      "title": "模型也会被投毒",
+      "date": "2026-11-02",
+      "description": "Anthropic、UC Berkeley与UIUC发现：在预训练语料中投毒0.1%就能植入远程代码执行后门，且能穿过干净的后训练管线存活到CLI Agent。4B模型上普通文件路径触发时Pass@32攻击成功率92.7%，干净提示触发率0%。模型越大攻击越容易；0.0005%投毒率在单种子测试中仍有1.4%触发。本文分析银行使用开源预训练模型的供应链风险。",
+      "tags": [
+        "后门攻击",
+        "预训练投毒",
+        "模型供应链",
+        "银行AI安全",
+        "AI安全",
+        "Agent风险"
+      ]
+    },
+    {
       "slug": "bank-intelligent-operating-system-ai-era",
       "title": "银行需要自己的OS吗",
       "date": "2026-11-02",
@@ -79,6 +107,104 @@
         "商业航天",
         "AI基础设施",
         "中美科技竞争"
+      ]
+    },
+    {
+      "slug": "decision-vs-reranker-finetuning-bank",
+      "title": "重排序别用决策调",
+      "date": "2026-11-02",
+      "description": "Passau大学与ITU测试：决策微调是否比重排序微调更适合做重排序器。用6个Qwen模型从0.6B到27B、10个TREC DL与BEIR集合。重排序微调在0.6B到9B上赢5到29个nDCG@10点，27B打平；决策微调在9B以下不超过未微调基线。校准优势取决于问题措辞，不能弥补排序质量差距。本文分析银行知识库重排序该用什么微调目标。",
+      "tags": [
+        "重排序",
+        "微调",
+        "决策模型",
+        "检索",
+        "银行知识库",
+        "RAG"
+      ]
+    },
+    {
+      "slug": "decisionrag-hierarchical-retrieval-bank",
+      "title": "检索不生成token",
+      "date": "2026-11-02",
+      "description": "Cornell与ASAPP提出DecisionRAG，用决策模型做层级检索替代第一阶段检索器：不生成token，一次前向传播给候选打分，从宽主题逐层导航到文档和段落。在MultiDoc2Dial上比稠密检索加8B重排器高13.8个R@1点，Natural Questions上17.4个Hit@1点，检索仅0.7到1.8秒。本文分析它对银行制度库、合同库和客服知识库检索的意义。",
+      "tags": [
+        "RAG",
+        "检索",
+        "决策模型",
+        "银行知识库",
+        "Agent",
+        "推理成本"
+      ]
+    },
+    {
+      "slug": "emma-episodic-memory-multiagent-bank",
+      "title": "多智能体怎么演化",
+      "date": "2026-11-02",
+      "description": "UCSD与Amazon提出EMMA：把多智能体系统的配置存为情景记忆，并严格限制记忆怎么改。失败后反思器只把修复分配给拥有该范围的模块，一次只改一处。在KramaBench、AppWorld、BBEH五个backbone上综合最佳，比最强基线高32.5%，训练执行次数少17%到38%。本文分析它对银行多智能体系统演化的启示。",
+      "tags": [
+        "多智能体",
+        "系统演化",
+        "记忆",
+        "银行AI",
+        "配置治理",
+        "鲁棒性"
+      ]
+    },
+    {
+      "slug": "harnessmm-decision-reuse-bank",
+      "title": "Agent决策能复用",
+      "date": "2026-11-02",
+      "description": "清华与微软亚研提出HarnessMM：用可执行决策图存储Agent已解决的决策，工具反馈满足守卫条件时直接复用，不再回调模型。DeepSeek Harness在HumanEval上成功率从71.43%升到85.71%，每任务token从9.6万降到1.16万，省87.93%。本文分析它对银行Agent harness的成本与效率意义。",
+      "tags": [
+        "Agent",
+        "Harness",
+        "决策复用",
+        "成本优化",
+        "DeepSeek",
+        "银行智能体"
+      ]
+    },
+    {
+      "slug": "unified-training-one-loss-bank",
+      "title": "一个损失训到底",
+      "date": "2026-11-02",
+      "description": "CMU、JHU与Aurora Innovation提出统一训练：把预训练、中训练、监督微调与强化学习全部放进同一个基于似然的目标，RL目标被推导为对模型生成目标的最大似然拟合。124M小模型从头统一训练即胜过分阶段训练；0.76B模型上5%中训练数据配比在数学与编码四项指标上最佳。本文分析它对银行自研大模型训练流程的影响。",
+      "tags": [
+        "模型训练",
+        "强化学习",
+        "预训练",
+        "银行AI",
+        "统一训练",
+        "数据配比"
+      ]
+    },
+    {
+      "slug": "verification-harness-independent-review-bank",
+      "title": "Agent验证加在哪",
+      "date": "2026-11-02",
+      "description": "阿里与Cornell在7个前沿编码模型上对比17种验证设计：系统角色指令只加3-4分，完成时自检不推荐，独立评审在Terminal-Bench上加5.9到9.5分、成本仅1.13到1.25倍。视觉工件上，评审变更比评审轨迹效果好。本文回答银行给Agent harness加验证时，哪一道最划算。",
+      "tags": [
+        "Agent",
+        "验证",
+        "独立评审",
+        "harness",
+        "银行AI",
+        "质量控制"
+      ]
+    },
+    {
+      "slug": "visual-symbol-steering-agent-bank",
+      "title": "图片能偷偷改答案",
+      "date": "2026-11-02",
+      "description": "Google DeepMind与Stanford发现：简单视觉符号能改变视觉语言模型在无关任务上的行为，且模型不报告这种影响。无图片时Claude Opus 4.7和GPT-5.4总写迭代式中序遍历代码；上下文里放一个红心，两者100%改成递归。74.7%的思维链错误归因了符号作用，静默插入图片时GPT-5.4的思维链从不提到图片。本文分析这对读取截图的银行Agent意味着什么。",
+      "tags": [
+        "视觉引导",
+        "prompt注入",
+        "Agent安全",
+        "多模态",
+        "银行AI",
+        "隐蔽影响"
       ]
     },
     {
@@ -3734,5 +3860,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-02",
   "version": "1.1",
-  "total_articles": 222
+  "total_articles": 231
 }
