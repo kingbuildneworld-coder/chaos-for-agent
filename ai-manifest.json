@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 221,
+    "total_articles": 222,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "bank-intelligent-operating-system-ai-era",
+      "title": "银行需要自己的OS吗",
+      "date": "2026-11-02",
+      "description": "新人工智能时代，银行IT从核心系统、信贷、风控、CRM、OA堆叠走向统一入口。本文回答三个问题：银行是否需要一个智能操作系统，需要怎样的操作系统，以及能不能用大模型加速研发建设。核心判断：银行需要的不是替代核心账务的新OS，而是架在所有系统之上的意图理解、任务编排、权限代理与审计总线；大模型能写代码和理解遗留系统，但权限、审计和回滚逻辑必须人来设计。",
+      "tags": [
+        "银行IT",
+        "智能体",
+        "操作系统",
+        "大模型研发",
+        "系统架构",
+        "数字银行",
+        "AI治理"
+      ]
+    },
     {
       "slug": "china-us-space-ai-compute-orbital-llm-constraints",
       "title": "中美太空智能算力与在轨大模型深度对比：从 Suncatcher 的第一首俳句，到三体计算星座的二十五个模型",
@@ -3719,5 +3734,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-02",
   "version": "1.1",
-  "total_articles": 221
+  "total_articles": 222
 }
