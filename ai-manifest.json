@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 232,
+    "total_articles": 233,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "goldman-bans-traders-ai-coding-tools",
+      "title": "高盛掐了交易员AI",
+      "date": "2026-11-03",
+      "description": "2026年11月2日Bloomberg报道：高盛禁止大多数员工使用Anthropic的Claude Code和微软的GitHub Copilot，仅限约12000名工程师保留访问权。交易员此前用这些工具监控客户交易流、对头寸建模，被禁后不满。在生产力与风险评估后，高盛认为非工程岗位使用高级编程AI工具风险大于收益。本文分析这对中国银行内部AI治理的启示。",
+      "tags": [
+        "高盛",
+        "AI治理",
+        "银行内部管控",
+        "Claude Code",
+        "Copilot",
+        "信息安全",
+        "金融科技"
+      ]
+    },
     {
       "slug": "agentbaton-model-handoff-bank",
       "title": "贵模型何时撒手",
@@ -3873,7 +3888,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "version": "1.1",
-  "total_articles": 232
+  "total_articles": 233
 }

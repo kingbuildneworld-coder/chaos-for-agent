@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (232)
+## Articles (233)
 
+- [高盛掐了交易员AI](https://bi-chao.com/articles/goldman-bans-traders-ai-coding-tools)
+  - Description: 2026年11月2日Bloomberg报道：高盛禁止大多数员工使用Anthropic的Claude Code和微软的GitHub Copilot，仅限约12000名工程师保留访问权。交易员此前用这些工具监控客户交易流、对头寸建模，被禁后不满。在生产力与风险评估后，高盛认为非工程岗位使用高级编程AI工具风险大于收益。本文分析这对中国银行内部AI治理的启示。
+  - Date: 2026-11-03
+  - Tags: 高盛, AI治理, 银行内部管控, Claude Code, Copilot, 信息安全, 金融科技
 - [贵模型何时撒手](https://bi-chao.com/articles/agentbaton-model-handoff-bank)
   - Description: NVIDIA、HKUST与UIUC研究长程Agent任务中从贵模型到便宜模型的一次性交接。AgentBaton检测器根据任务进度模式学习何时切换，在11对模型组合上平均省65.9%的API成本，同时保持准确率，最高比全程用贵模型还高8.8分。反向交接（便宜切贵）几乎不省钱。本文分析它对银行长程Agent任务的成本优化。
   - Date: 2026-11-02
@@ -945,8 +949,8 @@
 
 ## Topics (top 10)
 - 智能体: 61 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 59 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 金融科技: 59 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- AI治理: 60 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 44 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 37 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
