@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 233,
+    "total_articles": 235,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,36 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "deepmind-economics-intelligence-competence-vs-coordination-bank",
+      "title": "AI越强银行越没变",
+      "date": "2026-11-03",
+      "description": "2026年10月29日DeepMind发布《The Economics of Intelligence》，核心结论：单个AI Agent是错误的经济分析单位。AI能力（Competence）提升渐进改变工资和价格，但组织协调能力（Coordination）跨越阈值才会引发市场结构突变。今天AI模型越来越强但银行没变化，因为协调能力还没跟上。本文从银行视角解读这个框架。",
+      "tags": [
+        "DeepMind",
+        "AGI",
+        "经济转型",
+        "组织协调",
+        "AI Agent",
+        "银行业",
+        "Competence"
+      ]
+    },
+    {
+      "slug": "deepmind-organizing-intelligence-bank-agent-team-size",
+      "title": "银行该养多少Agent",
+      "date": "2026-11-03",
+      "description": "DeepMind 108页工作论文《Organizing Intelligence》提出组织规模定律：像模型有scaling law一样，组织也有scaling law。分三个阶段——单人最优、有限规模、无限规模。当Agent协调能力超过阈值，越大越好，打破科斯天花板。本文从银行视角分析：银行该养多少AI Agent团队，最优规模是多少。",
+      "tags": [
+        "DeepMind",
+        "Organizing Intelligence",
+        "Agent团队",
+        "组织设计",
+        "银行AI",
+        "科斯天花板",
+        "多智能体"
+      ]
+    },
     {
       "slug": "goldman-bans-traders-ai-coding-tools",
       "title": "高盛掐了交易员AI",
@@ -3890,5 +3920,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-03",
   "version": "1.1",
-  "total_articles": 233
+  "total_articles": 235
 }

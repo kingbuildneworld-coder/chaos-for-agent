@@ -12,8 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (233)
+## Articles (235)
 
+- [AI越强银行越没变](https://bi-chao.com/articles/deepmind-economics-intelligence-competence-vs-coordination-bank)
+  - Description: 2026年10月29日DeepMind发布《The Economics of Intelligence》，核心结论：单个AI Agent是错误的经济分析单位。AI能力（Competence）提升渐进改变工资和价格，但组织协调能力（Coordination）跨越阈值才会引发市场结构突变。今天AI模型越来越强但银行没变化，因为协调能力还没跟上。本文从银行视角解读这个框架。
+  - Date: 2026-11-03
+  - Tags: DeepMind, AGI, 经济转型, 组织协调, AI Agent, 银行业, Competence
+- [银行该养多少Agent](https://bi-chao.com/articles/deepmind-organizing-intelligence-bank-agent-team-size)
+  - Description: DeepMind 108页工作论文《Organizing Intelligence》提出组织规模定律：像模型有scaling law一样，组织也有scaling law。分三个阶段——单人最优、有限规模、无限规模。当Agent协调能力超过阈值，越大越好，打破科斯天花板。本文从银行视角分析：银行该养多少AI Agent团队，最优规模是多少。
+  - Date: 2026-11-03
+  - Tags: DeepMind, Organizing Intelligence, Agent团队, 组织设计, 银行AI, 科斯天花板, 多智能体
 - [高盛掐了交易员AI](https://bi-chao.com/articles/goldman-bans-traders-ai-coding-tools)
   - Description: 2026年11月2日Bloomberg报道：高盛禁止大多数员工使用Anthropic的Claude Code和微软的GitHub Copilot，仅限约12000名工程师保留访问权。交易员此前用这些工具监控客户交易流、对头寸建模，被禁后不满。在生产力与风险评估后，高盛认为非工程岗位使用高级编程AI工具风险大于收益。本文分析这对中国银行内部AI治理的启示。
   - Date: 2026-11-03
@@ -951,13 +959,13 @@
 - 智能体: 61 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 60 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
-- 银行AI: 44 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
+- 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 37 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 银行业: 20 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - AI安全: 19 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
 - 金融监管: 19 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
-- 模型风险管理: 19 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
