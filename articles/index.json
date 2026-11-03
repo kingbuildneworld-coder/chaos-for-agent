@@ -1,5 +1,22 @@
 [
   {
+    "title": "香港给Agent立规矩",
+    "slug": "hkma-agentic-ai-governance-discussion-paper-2026",
+    "url": "/articles/hkma-agentic-ai-governance-discussion-paper-2026.md",
+    "description": "2026年11月2日香港金管局发布《银行业代理式AI治理讨论文件》，提出意图锚定问责制、急停机制、五个核心治理要素。Agent只能在批准的业务意图内行动，问责留在银行内部。外部Agent代客操作需认证身份和授权范围。反馈截止2027年2月1日。本文从银行视角解读这份讨论文件。",
+    "date": "2026-11-04",
+    "tags": [
+      "HKMA",
+      "Agentic AI",
+      "AI治理",
+      "意图锚定",
+      "急停机制",
+      "银行业",
+      "金融监管"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI越强银行越没变",
     "slug": "deepmind-economics-intelligence-competence-vs-coordination-bank",
     "url": "/articles/deepmind-economics-intelligence-competence-vs-coordination-bank.md",

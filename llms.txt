@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (237)
+## Articles (238)
 
+- [香港给Agent立规矩](https://bi-chao.com/articles/hkma-agentic-ai-governance-discussion-paper-2026)
+  - Description: 2026年11月2日香港金管局发布《银行业代理式AI治理讨论文件》，提出意图锚定问责制、急停机制、五个核心治理要素。Agent只能在批准的业务意图内行动，问责留在银行内部。外部Agent代客操作需认证身份和授权范围。反馈截止2027年2月1日。本文从银行视角解读这份讨论文件。
+  - Date: 2026-11-04
+  - Tags: HKMA, Agentic AI, AI治理, 意图锚定, 急停机制, 银行业, 金融监管
 - [AI越强银行越没变](https://bi-chao.com/articles/deepmind-economics-intelligence-competence-vs-coordination-bank)
   - Description: 2026年10月29日DeepMind发布《The Economics of Intelligence》，核心结论：单个AI Agent是错误的经济分析单位。AI能力（Competence）提升渐进改变工资和价格，但组织协调能力（Coordination）跨越阈值才会引发市场结构突变。今天AI模型越来越强但银行没变化，因为协调能力还没跟上。本文从银行视角解读这个框架。
   - Date: 2026-11-03
@@ -964,15 +968,15 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
+- AI治理: 62 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 62 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 61 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 38 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
-- 银行业: 20 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 金融监管: 20 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
+- 银行业: 21 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
+- 金融监管: 21 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - AI安全: 20 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
 
 ## For AI Agents

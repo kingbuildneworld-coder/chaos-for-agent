@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-03T00:00:00Z</updated>
+  <updated>2026-11-04T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/hkma-agentic-ai-governance-discussion-paper-2026</id>
+    <title>香港给Agent立规矩</title>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/hkma-agentic-ai-governance-discussion-paper-2026" rel="alternate" type="text/html"/>
+    <summary>2026年11月2日香港金管局发布《银行业代理式AI治理讨论文件》，提出意图锚定问责制、急停机制、五个核心治理要素。Agent只能在批准的业务意图内行动，问责留在银行内部。外部Agent代客操作需认证身份和授权范围。反馈截止2027年2月1日。本文从银行视角解读这份讨论文件。</summary>
+    <category term="HKMA"/>
+    <category term="Agentic AI"/>
+    <category term="AI治理"/>
+    <category term="意图锚定"/>
+    <category term="急停机制"/>
+    <category term="银行业"/>
+    <category term="金融监管"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/deepmind-economics-intelligence-competence-vs-coordination-bank</id>
     <title>AI越强银行越没变</title>
