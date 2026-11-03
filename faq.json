@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-03",
-  "scanned_articles": 236,
-  "articles_with_faq": 113,
-  "total_questions": 519,
+  "scanned_articles": 237,
+  "articles_with_faq": 114,
+  "total_questions": 523,
   "items": [
     {
       "slug": "sfc-large-firm-ai-readiness-survey-agentic-ai",
@@ -26,6 +26,30 @@
         {
           "question": "和金管局 ART 框架是什么关系？",
           "answer": "两者分属银行和证券监管，但都聚焦问责落实到人、AI 清册和有效介入，可以合并设计治理体系（来源1、来源6，本文分析）。"
+        }
+      ]
+    },
+    {
+      "slug": "weight-space-programming-llm-edit-weights-bank",
+      "title": "权重空间编程深度解读：大模型如何直接读写神经网络权重，又如何避免“瞎改出错”",
+      "url": "https://bi-chao.com/articles/weight-space-programming-llm-edit-weights-bank",
+      "date": "2026-11-03",
+      "faqs": [
+        {
+          "question": "权重空间编程和微调有什么区别？",
+          "answer": "微调通过数据和梯度下降更新大量权重；权重空间编程由大模型推理后直接改写少量权重，不用梯度、不跑训练循环（来源1）。"
+        },
+        {
+          "question": "为什么改 0.016% 的权重就能提升这么多？",
+          "answer": "因为 Qwen3.5-0.8B 的主要问题是思考循环，93% 的 MATH-500 回答撞到 token 上限。删掉导致循环的方向后，模型能完成本来就会做的题（来源1）。"
+        },
+        {
+          "question": "这种方法能让任何模型变强吗？",
+          "answer": "不能。在几乎不循环的 Gemma 3 270M 上，编辑没有带来确立的提升；作者认为编辑能移除障碍，但不能添加模型没有的能力（来源1）。"
+        },
+        {
+          "question": "如何验证结果不是作者夸大？",
+          "answer": "作者公开了全部实验日志和编辑后的模型，Hugging Face 的 Ahsen Khaliq 已根据日志重建模型并重跑评测（来源1、来源2、来源3）。"
         }
       ]
     },

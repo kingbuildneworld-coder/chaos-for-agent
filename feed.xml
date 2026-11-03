@@ -69,6 +69,20 @@
     <category term="金融监管"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/weight-space-programming-llm-edit-weights-bank</id>
+    <title>权重空间编程深度解读：大模型如何直接读写神经网络权重，又如何避免“瞎改出错”</title>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/weight-space-programming-llm-edit-weights-bank" rel="alternate" type="text/html"/>
+    <summary>2026年11月2日，MIT CSAIL团队发布《权重空间编程》：GPT-6 Astra不用梯度、不写训练循环，直接读写神经网络权重，只改Qwen3.5-0.8B中0.016%的权重，就把MATH-500从7.9%提到48.1%。本文拆解它如何读权重、改权重、从零写权重，重点分析避免改坏模型的八道护栏、两次失败实验揭示的边界，以及对银行模型治理的启示。</summary>
+    <category term="权重空间编程"/>
+    <category term="可解释性"/>
+    <category term="模型编辑"/>
+    <category term="大模型"/>
+    <category term="AI安全"/>
+    <category term="模型风险"/>
+    <category term="银行模型治理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/agentbaton-model-handoff-bank</id>
     <title>贵模型何时撒手</title>
     <updated>2026-11-02T00:00:00Z</updated>

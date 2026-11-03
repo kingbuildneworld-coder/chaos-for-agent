@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 236,
+    "total_articles": 237,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -109,6 +109,21 @@
         "券商",
         "网络安全",
         "金融监管"
+      ]
+    },
+    {
+      "slug": "weight-space-programming-llm-edit-weights-bank",
+      "title": "权重空间编程深度解读：大模型如何直接读写神经网络权重，又如何避免“瞎改出错”",
+      "date": "2026-11-03",
+      "description": "2026年11月2日，MIT CSAIL团队发布《权重空间编程》：GPT-6 Astra不用梯度、不写训练循环，直接读写神经网络权重，只改Qwen3.5-0.8B中0.016%的权重，就把MATH-500从7.9%提到48.1%。本文拆解它如何读权重、改权重、从零写权重，重点分析避免改坏模型的八道护栏、两次失败实验揭示的边界，以及对银行模型治理的启示。",
+      "tags": [
+        "权重空间编程",
+        "可解释性",
+        "模型编辑",
+        "大模型",
+        "AI安全",
+        "模型风险",
+        "银行模型治理"
       ]
     },
     {
@@ -3935,5 +3950,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-03",
   "version": "1.1",
-  "total_articles": 236
+  "total_articles": 237
 }

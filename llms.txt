@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (236)
+## Articles (237)
 
 - [AI越强银行越没变](https://bi-chao.com/articles/deepmind-economics-intelligence-competence-vs-coordination-bank)
   - Description: 2026年10月29日DeepMind发布《The Economics of Intelligence》，核心结论：单个AI Agent是错误的经济分析单位。AI能力（Competence）提升渐进改变工资和价格，但组织协调能力（Coordination）跨越阈值才会引发市场结构突变。今天AI模型越来越强但银行没变化，因为协调能力还没跟上。本文从银行视角解读这个框架。
@@ -30,6 +30,10 @@
   - Description: 2026年11月2日，香港证监会发布首份大型机构AI准备情况调查：20家大型机构中30%已在生产环境使用代理型AI，25%在试点，90%已把AI接入内部系统。本文拆解调查数据、八个代理型AI案例、五大推广障碍与治理挑战，解读“安全为先、以人为本、协作主导”四大监管重点，并与金管局ART框架对照，给出券商与银行的落地清单。
   - Date: 2026-11-03
   - Tags: 智能体, AI治理, 香港证监会, 香港金管局, 券商, 网络安全, 金融监管
+- [权重空间编程深度解读：大模型如何直接读写神经网络权重，又如何避免“瞎改出错”](https://bi-chao.com/articles/weight-space-programming-llm-edit-weights-bank)
+  - Description: 2026年11月2日，MIT CSAIL团队发布《权重空间编程》：GPT-6 Astra不用梯度、不写训练循环，直接读写神经网络权重，只改Qwen3.5-0.8B中0.016%的权重，就把MATH-500从7.9%提到48.1%。本文拆解它如何读权重、改权重、从零写权重，重点分析避免改坏模型的八道护栏、两次失败实验揭示的边界，以及对银行模型治理的启示。
+  - Date: 2026-11-03
+  - Tags: 权重空间编程, 可解释性, 模型编辑, 大模型, AI安全, 模型风险, 银行模型治理
 - [贵模型何时撒手](https://bi-chao.com/articles/agentbaton-model-handoff-bank)
   - Description: NVIDIA、HKUST与UIUC研究长程Agent任务中从贵模型到便宜模型的一次性交接。AgentBaton检测器根据任务进度模式学习何时切换，在11对模型组合上平均省65.9%的API成本，同时保持准确率，最高比全程用贵模型还高8.8分。反向交接（便宜切贵）几乎不省钱。本文分析它对银行长程Agent任务的成本优化。
   - Date: 2026-11-02
@@ -964,12 +968,12 @@
 - AI治理: 61 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 大模型: 37 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 大模型: 38 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 银行业: 20 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
 - 金融监管: 20 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
-- AI安全: 19 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
+- AI安全: 20 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
