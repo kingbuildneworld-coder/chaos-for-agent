@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-03",
-  "scanned_articles": 235,
-  "articles_with_faq": 112,
-  "total_questions": 515,
+  "scanned_articles": 236,
+  "articles_with_faq": 113,
+  "total_questions": 519,
   "items": [
+    {
+      "slug": "sfc-large-firm-ai-readiness-survey-agentic-ai",
+      "title": "香港证监会首份《大型机构 AI 应用及准备情况调查》深度解读：30% 已用智能体，监管从“管模型”转向“管工作流”",
+      "url": "https://bi-chao.com/articles/sfc-large-firm-ai-readiness-survey-agentic-ai",
+      "date": "2026-11-03",
+      "faqs": [
+        {
+          "question": "30% 和 25% 分别指什么？",
+          "answer": "20 家受访机构中，6 家（30%）允许代理型 AI 在生产环境运行，5 家（25%）允许在受控试点或测试中使用，合计 55%（来源1）。"
+        },
+        {
+          "question": "证监会会要求每个 AI 动作都人工审批吗？",
+          "answer": "不会。报告明确，以人为本的治理不要求对每个输出或动作人工审批，控制应与应用的权限和潜在影响相称（来源1）。"
+        },
+        {
+          "question": "证监会接下来会出什么？",
+          "answer": "将为自主性更高的 AI 应用制定务实、以原则为本的指引，并为持牌机构制定网络安全框架（来源4、来源5）。"
+        },
+        {
+          "question": "和金管局 ART 框架是什么关系？",
+          "answer": "两者分属银行和证券监管，但都聚焦问责落实到人、AI 清册和有效介入，可以合并设计治理体系（来源1、来源6，本文分析）。"
+        }
+      ]
+    },
     {
       "slug": "china-us-space-ai-compute-orbital-llm-constraints",
       "title": "中美太空智能算力与在轨大模型深度对比：从 Suncatcher 的第一首俳句，到三体计算星座的二十五个模型",

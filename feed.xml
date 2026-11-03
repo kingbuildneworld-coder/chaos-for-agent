@@ -55,6 +55,20 @@
     <category term="金融科技"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/sfc-large-firm-ai-readiness-survey-agentic-ai</id>
+    <title>香港证监会首份《大型机构 AI 应用及准备情况调查》深度解读：30% 已用智能体，监管从“管模型”转向“管工作流”</title>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/sfc-large-firm-ai-readiness-survey-agentic-ai" rel="alternate" type="text/html"/>
+    <summary>2026年11月2日，香港证监会发布首份大型机构AI准备情况调查：20家大型机构中30%已在生产环境使用代理型AI，25%在试点，90%已把AI接入内部系统。本文拆解调查数据、八个代理型AI案例、五大推广障碍与治理挑战，解读“安全为先、以人为本、协作主导”四大监管重点，并与金管局ART框架对照，给出券商与银行的落地清单。</summary>
+    <category term="智能体"/>
+    <category term="AI治理"/>
+    <category term="香港证监会"/>
+    <category term="香港金管局"/>
+    <category term="券商"/>
+    <category term="网络安全"/>
+    <category term="金融监管"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/agentbaton-model-handoff-bank</id>
     <title>贵模型何时撒手</title>
     <updated>2026-11-02T00:00:00Z</updated>

@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 235,
+    "total_articles": 236,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -94,6 +94,21 @@
         "Copilot",
         "信息安全",
         "金融科技"
+      ]
+    },
+    {
+      "slug": "sfc-large-firm-ai-readiness-survey-agentic-ai",
+      "title": "香港证监会首份《大型机构 AI 应用及准备情况调查》深度解读：30% 已用智能体，监管从“管模型”转向“管工作流”",
+      "date": "2026-11-03",
+      "description": "2026年11月2日，香港证监会发布首份大型机构AI准备情况调查：20家大型机构中30%已在生产环境使用代理型AI，25%在试点，90%已把AI接入内部系统。本文拆解调查数据、八个代理型AI案例、五大推广障碍与治理挑战，解读“安全为先、以人为本、协作主导”四大监管重点，并与金管局ART框架对照，给出券商与银行的落地清单。",
+      "tags": [
+        "智能体",
+        "AI治理",
+        "香港证监会",
+        "香港金管局",
+        "券商",
+        "网络安全",
+        "金融监管"
       ]
     },
     {
@@ -3920,5 +3935,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-03",
   "version": "1.1",
-  "total_articles": 235
+  "total_articles": 236
 }
