@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 241,
+    "total_articles": 242,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -65,6 +65,21 @@
         "MCP",
         "数据智能体",
         "数据治理"
+      ]
+    },
+    {
+      "slug": "occ-bank-ai-supervisory-framework-bulletin-2026-54",
+      "title": "OCC给银行AI定级",
+      "date": "2026-11-05",
+      "description": "2026年11月4日美国货币监理署发布Bulletin 2026-54，首个银行AI审查框架。核心原则：按后果评风险，不按技术复杂度。自主支付Agent、实时信贷决策列为最高风险。框架延伸到外部AI Agent。本文从银行视角解读这个四级风险框架。",
+      "tags": [
+        "OCC",
+        "AI监管",
+        "银行风险",
+        "风险分级",
+        "自主支付Agent",
+        "金融监管",
+        "Agentic AI"
       ]
     },
     {
@@ -4012,5 +4027,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-05",
   "version": "1.1",
-  "total_articles": 241
+  "total_articles": 242
 }

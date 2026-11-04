@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (241)
+## Articles (242)
 
 - [英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数](https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis)
   - Description: 英伟达开源 Auto Ontology（Apache 2.0），从数据库元数据自动生成业务本体，经人工认证后供智能体通过 MCP、CLI、API 调用，以减少问数场景的错误答案。本文拆解其生成、认证、作答三阶段、九个只读 MCP 工具、安全边界与 PII 机制，并指出尚无公开准确率、样本数据外发等落地风险。
   - Date: 2026-11-05
   - Tags: NVIDIA, Auto Ontology, 语义层, 本体, Text-to-SQL, MCP, 数据智能体, 数据治理
+- [OCC给银行AI定级](https://bi-chao.com/articles/occ-bank-ai-supervisory-framework-bulletin-2026-54)
+  - Description: 2026年11月4日美国货币监理署发布Bulletin 2026-54，首个银行AI审查框架。核心原则：按后果评风险，不按技术复杂度。自主支付Agent、实时信贷决策列为最高风险。框架延伸到外部AI Agent。本文从银行视角解读这个四级风险框架。
+  - Date: 2026-11-05
+  - Tags: OCC, AI监管, 银行风险, 风险分级, 自主支付Agent, 金融监管, Agentic AI
 - [801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进](https://bi-chao.com/articles/801-30b-rsi-frontier-pretraining-report)
   - Description: 上海创智学院（SII）与新序 AI 发布 801-30B-A3B 技术报告《No Second Run》，称首次把递归自我改进（RSI）用于完整的前沿预训练：新组建团队三个月从零训练 11.8T token，30B-A3B 开源基座排名第二，6.33B token 轻量 SFT 后四项智能体基准均分 58.43 居首。本文拆解三类闭环、上下文基础设施、“伪停滞”发现与反作弊机制。
   - Date: 2026-11-04
@@ -986,9 +990,9 @@
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 38 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 金融监管: 22 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 银行业: 21 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 金融监管: 21 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - AI安全: 20 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
 
 ## For AI Agents

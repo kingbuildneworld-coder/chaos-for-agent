@@ -28,6 +28,20 @@
     <category term="数据治理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/occ-bank-ai-supervisory-framework-bulletin-2026-54</id>
+    <title>OCC给银行AI定级</title>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/occ-bank-ai-supervisory-framework-bulletin-2026-54" rel="alternate" type="text/html"/>
+    <summary>2026年11月4日美国货币监理署发布Bulletin 2026-54，首个银行AI审查框架。核心原则：按后果评风险，不按技术复杂度。自主支付Agent、实时信贷决策列为最高风险。框架延伸到外部AI Agent。本文从银行视角解读这个四级风险框架。</summary>
+    <category term="OCC"/>
+    <category term="AI监管"/>
+    <category term="银行风险"/>
+    <category term="风险分级"/>
+    <category term="自主支付Agent"/>
+    <category term="金融监管"/>
+    <category term="Agentic AI"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/801-30b-rsi-frontier-pretraining-report</id>
     <title>801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进</title>
     <updated>2026-11-04T00:00:00Z</updated>

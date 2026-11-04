@@ -18,6 +18,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "OCC给银行AI定级",
+    "slug": "occ-bank-ai-supervisory-framework-bulletin-2026-54",
+    "url": "/articles/occ-bank-ai-supervisory-framework-bulletin-2026-54.md",
+    "description": "2026年11月4日美国货币监理署发布Bulletin 2026-54，首个银行AI审查框架。核心原则：按后果评风险，不按技术复杂度。自主支付Agent、实时信贷决策列为最高风险。框架延伸到外部AI Agent。本文从银行视角解读这个四级风险框架。",
+    "date": "2026-11-05",
+    "tags": [
+      "OCC",
+      "AI监管",
+      "银行风险",
+      "风险分级",
+      "自主支付Agent",
+      "金融监管",
+      "Agentic AI"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进",
     "slug": "801-30b-rsi-frontier-pretraining-report",
     "url": "/articles/801-30b-rsi-frontier-pretraining-report.md",
