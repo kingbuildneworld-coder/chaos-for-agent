@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (239)
+## Articles (240)
 
 - [801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进](https://bi-chao.com/articles/801-30b-rsi-frontier-pretraining-report)
   - Description: 上海创智学院（SII）与新序 AI 发布 801-30B-A3B 技术报告《No Second Run》，称首次把递归自我改进（RSI）用于完整的前沿预训练：新组建团队三个月从零训练 11.8T token，30B-A3B 开源基座排名第二，6.33B token 轻量 SFT 后四项智能体基准均分 58.43 居首。本文拆解三类闭环、上下文基础设施、“伪停滞”发现与反作弊机制。
@@ -22,6 +22,10 @@
   - Description: 2026年11月2日香港金管局发布《银行业代理式AI治理讨论文件》，提出意图锚定问责制、急停机制、五个核心治理要素。Agent只能在批准的业务意图内行动，问责留在银行内部。外部Agent代客操作需认证身份和授权范围。反馈截止2027年2月1日。本文从银行视角解读这份讨论文件。
   - Date: 2026-11-04
   - Tags: HKMA, Agentic AI, AI治理, 意图锚定, 急停机制, 银行业, 金融监管
+- [AI时代银行的人](https://bi-chao.com/articles/un-ai-human-development-convenings-bank-2026)
+  - Description: 2026年9月联合国伙伴关系办公室发布《AI与人类发展：有目的的对话》，汇总6-9月在开罗、墨西哥城、西安、罗马四场全球对话，130多位跨领域领袖参与。核心问题：AI时代做一个人意味着什么？只有15%的人认为社区能理解AI如何影响自己，50%认为引导窗口期不到12个月。本文从银行视角解读这份报告。
+  - Date: 2026-11-04
+  - Tags: 联合国, AI治理, 人类发展, 银行, 社会韧性, AI伦理, 可持续发展目标
 - [AI越强银行越没变](https://bi-chao.com/articles/deepmind-economics-intelligence-competence-vs-coordination-bank)
   - Description: 2026年10月29日DeepMind发布《The Economics of Intelligence》，核心结论：单个AI Agent是错误的经济分析单位。AI能力（Competence）提升渐进改变工资和价格，但组织协调能力（Coordination）跨越阈值才会引发市场结构突变。今天AI模型越来越强但银行没变化，因为协调能力还没跟上。本文从银行视角解读这个框架。
   - Date: 2026-11-03
@@ -973,7 +977,7 @@
 
 ## Topics (top 10)
 - 智能体: 63 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 62 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 63 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 38 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
