@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-11-04",
-  "scanned_articles": 240,
-  "articles_with_faq": 115,
-  "total_questions": 527,
+  "updated": "2026-11-05",
+  "scanned_articles": 241,
+  "articles_with_faq": 116,
+  "total_questions": 531,
   "items": [
+    {
+      "slug": "nvidia-auto-ontology-semantic-layer-agents-analysis",
+      "title": "英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数",
+      "url": "https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis",
+      "date": "2026-11-05",
+      "faqs": [
+        {
+          "question": "Auto Ontology 是全自动的吗？",
+          "answer": "不是。它自动生成本体草稿，但需要人工用真实问题测试、修正并认证后，才算可信（来源1）。"
+        },
+        {
+          "question": "它支持哪些数据库？",
+          "answer": "PostgreSQL、MySQL、Databricks、Snowflake、ClickHouse、Trino、Apache Kyuubi、HeavyDB、DuckDB、SQLite（来源1）。"
+        },
+        {
+          "question": "能不能用自己的大模型？",
+          "answer": "可以。每个模型角色都能配置为自托管 NIM 或任何兼容 OpenAI 的端点，但模型需支持结构化输出（来源1）。"
+        },
+        {
+          "question": "它的准确率是多少？",
+          "answer": "截至本文写作时，官方仓库和评测仓库都没有公布结果数字，只提供了带对照组的评测框架（来源1、来源3）。"
+        }
+      ]
+    },
     {
       "slug": "801-30b-rsi-frontier-pretraining-report",
       "title": "801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进",

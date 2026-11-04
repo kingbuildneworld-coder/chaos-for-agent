@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-04T00:00:00Z</updated>
+  <updated>2026-11-05T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis</id>
+    <title>英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数</title>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis" rel="alternate" type="text/html"/>
+    <summary>英伟达开源 Auto Ontology（Apache 2.0），从数据库元数据自动生成业务本体，经人工认证后供智能体通过 MCP、CLI、API 调用，以减少问数场景的错误答案。本文拆解其生成、认证、作答三阶段、九个只读 MCP 工具、安全边界与 PII 机制，并指出尚无公开准确率、样本数据外发等落地风险。</summary>
+    <category term="NVIDIA"/>
+    <category term="Auto Ontology"/>
+    <category term="语义层"/>
+    <category term="本体"/>
+    <category term="Text-to-SQL"/>
+    <category term="MCP"/>
+    <category term="数据智能体"/>
+    <category term="数据治理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/801-30b-rsi-frontier-pretraining-report</id>
     <title>801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进</title>
