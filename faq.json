@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-04",
-  "scanned_articles": 238,
-  "articles_with_faq": 114,
-  "total_questions": 523,
+  "scanned_articles": 239,
+  "articles_with_faq": 115,
+  "total_questions": 527,
   "items": [
+    {
+      "slug": "801-30b-rsi-frontier-pretraining-report",
+      "title": "801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进",
+      "url": "https://bi-chao.com/articles/801-30b-rsi-frontier-pretraining-report",
+      "date": "2026-11-04",
+      "faqs": [
+        {
+          "question": "801-30B-A3B 是什么模型？",
+          "answer": "上海创智学院与新序 AI 从零训练的 MoE 基座模型，约 300 亿总参数、30 亿激活参数，训练数据约 11.8T token（来源1）。"
+        },
+        {
+          "question": "报告里的“递归自我改进”是模型自己训练自己吗？",
+          "answer": "不是。报告中被改进的是预训练项目本身，包括智能体、研究员和基础设施；智能体负责排障、数据管线、评测和数据生成（来源1）。"
+        },
+        {
+          "question": "什么是“伪停滞”？",
+          "answer": "基座评测分数看起来停滞，但经过同样的小规模 SFT 后分数仍在上升，说明模型潜力还在积累（来源1）。"
+        },
+        {
+          "question": "801 的智能体成绩真的最强吗？",
+          "answer": "四项均分 58.43 最高，但主要来自 KernelBench 的 77.60；去掉这一项后 Flint-40B-A2.5B 略高。报告也说明这一层对比不是同等条件（来源1，本文计算）。"
+        }
+      ]
+    },
     {
       "slug": "sfc-large-firm-ai-readiness-survey-agentic-ai",
       "title": "香港证监会首份《大型机构 AI 应用及准备情况调查》深度解读：30% 已用智能体，监管从“管模型”转向“管工作流”",

@@ -1,5 +1,23 @@
 [
   {
+    "title": "801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进",
+    "slug": "801-30b-rsi-frontier-pretraining-report",
+    "url": "/articles/801-30b-rsi-frontier-pretraining-report.md",
+    "description": "上海创智学院（SII）与新序 AI 发布 801-30B-A3B 技术报告《No Second Run》，称首次把递归自我改进（RSI）用于完整的前沿预训练：新组建团队三个月从零训练 11.8T token，30B-A3B 开源基座排名第二，6.33B token 轻量 SFT 后四项智能体基准均分 58.43 居首。本文拆解三类闭环、上下文基础设施、“伪停滞”发现与反作弊机制。",
+    "date": "2026-11-04",
+    "tags": [
+      "801-30B",
+      "递归自我改进",
+      "RSI",
+      "预训练",
+      "MoE",
+      "智能体",
+      "开源大模型",
+      "AI工程"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "香港给Agent立规矩",
     "slug": "hkma-agentic-ai-governance-discussion-paper-2026",
     "url": "/articles/hkma-agentic-ai-governance-discussion-paper-2026.md",
