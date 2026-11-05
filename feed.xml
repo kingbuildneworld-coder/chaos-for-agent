@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/claude-personal-finance-bank-account-read-only</id>
+    <title>AI开始读账单</title>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/claude-personal-finance-bank-account-read-only" rel="alternate" type="text/html"/>
+    <summary>2026年11月5日Anthropic发布Claude Personal Finance功能，通过Plaid连接银行和信用卡账户，让AI分析用户收支。只读访问，不能转账。这是大模型公司第一次直接接入银行账户数据。与银行侧&apos;封AI助手&apos;形成鲜明张力。本文从银行视角解读。</summary>
+    <category term="Anthropic"/>
+    <category term="Claude"/>
+    <category term="Personal Finance"/>
+    <category term="银行账户"/>
+    <category term="Plaid"/>
+    <category term="只读访问"/>
+    <category term="AI金融"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/operations-research-ai-financial-risk-control-analysis</id>
     <title>运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起</title>
     <updated>2026-11-06T00:00:00Z</updated>
