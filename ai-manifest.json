@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 242,
+    "total_articles": 243,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -80,6 +80,22 @@
         "自主支付Agent",
         "金融监管",
         "Agentic AI"
+      ]
+    },
+    {
+      "slug": "shanghai-ai-lab-physical-ai-monograph-analysis",
+      "title": "上海AI实验室《Physical AI》专著深度解读：AI走出屏幕，需要的不只是更大的模型",
+      "date": "2026-11-05",
+      "description": "上海人工智能实验室物理智能团队发布 388 页专著《Physical AI: Concepts, Techniques, and Challenges》，给出物理智能的统一定义与四要素闭环，梳理数据、世界模型、操作与全身运动基础模型、硬件系统，提出物理 AGI 四维度与五大发展方向。本文拆解核心框架并评析其价值与局限。",
+      "tags": [
+        "Physical AI",
+        "物理智能",
+        "上海人工智能实验室",
+        "具身智能",
+        "世界模型",
+        "VLA",
+        "机器人",
+        "物理AGI"
       ]
     },
     {
@@ -4027,5 +4043,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-05",
   "version": "1.1",
-  "total_articles": 242
+  "total_articles": 243
 }

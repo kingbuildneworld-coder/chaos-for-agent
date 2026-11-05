@@ -35,6 +35,24 @@
     "schema_type": "Article"
   },
   {
+    "title": "上海AI实验室《Physical AI》专著深度解读：AI走出屏幕，需要的不只是更大的模型",
+    "slug": "shanghai-ai-lab-physical-ai-monograph-analysis",
+    "url": "/articles/shanghai-ai-lab-physical-ai-monograph-analysis.md",
+    "description": "上海人工智能实验室物理智能团队发布 388 页专著《Physical AI: Concepts, Techniques, and Challenges》，给出物理智能的统一定义与四要素闭环，梳理数据、世界模型、操作与全身运动基础模型、硬件系统，提出物理 AGI 四维度与五大发展方向。本文拆解核心框架并评析其价值与局限。",
+    "date": "2026-11-05",
+    "tags": [
+      "Physical AI",
+      "物理智能",
+      "上海人工智能实验室",
+      "具身智能",
+      "世界模型",
+      "VLA",
+      "机器人",
+      "物理AGI"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进",
     "slug": "801-30b-rsi-frontier-pretraining-report",
     "url": "/articles/801-30b-rsi-frontier-pretraining-report.md",

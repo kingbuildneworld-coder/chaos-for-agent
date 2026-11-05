@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-05",
-  "scanned_articles": 242,
-  "articles_with_faq": 116,
-  "total_questions": 531,
+  "scanned_articles": 243,
+  "articles_with_faq": 117,
+  "total_questions": 535,
   "items": [
     {
       "slug": "nvidia-auto-ontology-semantic-layer-agents-analysis",
@@ -26,6 +26,30 @@
         {
           "question": "它的准确率是多少？",
           "answer": "截至本文写作时，官方仓库和评测仓库都没有公布结果数字，只提供了带对照组的评测框架（来源1、来源3）。"
+        }
+      ]
+    },
+    {
+      "slug": "shanghai-ai-lab-physical-ai-monograph-analysis",
+      "title": "上海AI实验室《Physical AI》专著深度解读：AI走出屏幕，需要的不只是更大的模型",
+      "url": "https://bi-chao.com/articles/shanghai-ai-lab-physical-ai-monograph-analysis",
+      "date": "2026-11-05",
+      "faqs": [
+        {
+          "question": "这本专著是谁发布的？",
+          "answer": "上海人工智能实验室物理智能团队，2026 年 10 月 19 日以预印本形式发布于 arXiv（编号 2610.27045），由张伟楠、沈春华、薛天帆、赵斌、周伯文领衔（来源1）。"
+        },
+        {
+          "question": "物理智能和具身智能有什么区别？",
+          "answer": "具身智能关注身体形态如何塑造感知与行动，也包括仿真智能体；物理智能关注真实物理过程中的闭环干预，还包括交通、电网等没有机器人外形的分布式系统（来源1）。"
+        },
+        {
+          "question": "物理 AGI 是什么？",
+          "answer": "专著把它定义为能把技能带到训练范围之外、并在知识不足时高效学习的物理智能，用广度、深度、可塑性、持续性四个维度刻画（来源1）。"
+        },
+        {
+          "question": "专著对物理数据规模定律怎么看？",
+          "answer": "作者认为物理数据能否像语言数据一样带来可预测的增益“远未明确”，关键在于数据配比和稀缺真实交互的分配（来源1）。"
         }
       ]
     },

@@ -42,6 +42,21 @@
     <category term="Agentic AI"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/shanghai-ai-lab-physical-ai-monograph-analysis</id>
+    <title>上海AI实验室《Physical AI》专著深度解读：AI走出屏幕，需要的不只是更大的模型</title>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/shanghai-ai-lab-physical-ai-monograph-analysis" rel="alternate" type="text/html"/>
+    <summary>上海人工智能实验室物理智能团队发布 388 页专著《Physical AI: Concepts, Techniques, and Challenges》，给出物理智能的统一定义与四要素闭环，梳理数据、世界模型、操作与全身运动基础模型、硬件系统，提出物理 AGI 四维度与五大发展方向。本文拆解核心框架并评析其价值与局限。</summary>
+    <category term="Physical AI"/>
+    <category term="物理智能"/>
+    <category term="上海人工智能实验室"/>
+    <category term="具身智能"/>
+    <category term="世界模型"/>
+    <category term="VLA"/>
+    <category term="机器人"/>
+    <category term="物理AGI"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/801-30b-rsi-frontier-pretraining-report</id>
     <title>801-30B 技术报告深度解读：只有一次训练机会，AI 如何在预训练里递归自我改进</title>
     <updated>2026-11-04T00:00:00Z</updated>
