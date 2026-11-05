@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (243)
+## Articles (244)
 
+- [运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起](https://bi-chao.com/articles/operations-research-ai-financial-risk-control-analysis)
+  - Description: 运筹学在金融风控中负责在约束下做最优决策，人工智能擅长预测和理解。本文梳理运筹学在授信、组合、压力测试、反欺诈中的作用，分析大模型自动建模、决策导向学习、演化式寻优等最新进展与银行案例，并提出银行落地路径与风险边界。
+  - Date: 2026-11-06
+  - Tags: 运筹学, 最优化, 人工智能, 大模型, 金融风控, 决策智能, 压力测试, 银行
 - [英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数](https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis)
   - Description: 英伟达开源 Auto Ontology（Apache 2.0），从数据库元数据自动生成业务本体，经人工认证后供智能体通过 MCP、CLI、API 调用，以减少问数场景的错误答案。本文拆解其生成、认证、作答三阶段、九个只读 MCP 工具、安全边界与 PII 机制，对比企业指标平台并探讨数据治理的本体化方向，指出尚无公开准确率等风险。
   - Date: 2026-11-05
@@ -992,12 +996,12 @@
 - AI治理: 63 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 大模型: 38 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 大模型: 39 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 金融监管: 22 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 银行业: 21 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- AI安全: 20 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
+- 人工智能: 20 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`

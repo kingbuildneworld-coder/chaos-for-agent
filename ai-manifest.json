@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 243,
+    "total_articles": 244,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "operations-research-ai-financial-risk-control-analysis",
+      "title": "运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起",
+      "date": "2026-11-06",
+      "description": "运筹学在金融风控中负责在约束下做最优决策，人工智能擅长预测和理解。本文梳理运筹学在授信、组合、压力测试、反欺诈中的作用，分析大模型自动建模、决策导向学习、演化式寻优等最新进展与银行案例，并提出银行落地路径与风险边界。",
+      "tags": [
+        "运筹学",
+        "最优化",
+        "人工智能",
+        "大模型",
+        "金融风控",
+        "决策智能",
+        "压力测试",
+        "银行"
+      ]
+    },
     {
       "slug": "nvidia-auto-ontology-semantic-layer-agents-analysis",
       "title": "英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数",
@@ -4041,7 +4057,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-05",
+  "last_updated": "2026-11-06",
   "version": "1.1",
-  "total_articles": 243
+  "total_articles": 244
 }

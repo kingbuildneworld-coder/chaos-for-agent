@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-05T00:00:00Z</updated>
+  <updated>2026-11-06T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,21 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/operations-research-ai-financial-risk-control-analysis</id>
+    <title>运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起</title>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/operations-research-ai-financial-risk-control-analysis" rel="alternate" type="text/html"/>
+    <summary>运筹学在金融风控中负责在约束下做最优决策，人工智能擅长预测和理解。本文梳理运筹学在授信、组合、压力测试、反欺诈中的作用，分析大模型自动建模、决策导向学习、演化式寻优等最新进展与银行案例，并提出银行落地路径与风险边界。</summary>
+    <category term="运筹学"/>
+    <category term="最优化"/>
+    <category term="人工智能"/>
+    <category term="大模型"/>
+    <category term="金融风控"/>
+    <category term="决策智能"/>
+    <category term="压力测试"/>
+    <category term="银行"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis</id>
     <title>英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数</title>
