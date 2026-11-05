@@ -3,7 +3,7 @@
   "updated": "2026-11-05",
   "scanned_articles": 243,
   "articles_with_faq": 117,
-  "total_questions": 535,
+  "total_questions": 536,
   "items": [
     {
       "slug": "nvidia-auto-ontology-semantic-layer-agents-analysis",
@@ -22,6 +22,10 @@
         {
           "question": "能不能用自己的大模型？",
           "answer": "可以。每个模型角色都能配置为自托管 NIM 或任何兼容 OpenAI 的端点，但模型需支持结构化输出（来源1）。"
+        },
+        {
+          "question": "它和企业的指标平台是什么关系？",
+          "answer": "思路相近：认证过的 SQL 属性相当于指标口径。差别在于指标平台靠人工建模、查询确定，主要服务报表；Auto Ontology 自动生成草稿、服务智能体自由提问。更合理的做法是把指标平台的口径导入本体，作为权威来源（本文分析）。"
         },
         {
           "question": "它的准确率是多少？",

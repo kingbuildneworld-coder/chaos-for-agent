@@ -3,7 +3,7 @@
     "title": "英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数",
     "slug": "nvidia-auto-ontology-semantic-layer-agents-analysis",
     "url": "/articles/nvidia-auto-ontology-semantic-layer-agents-analysis.md",
-    "description": "英伟达开源 Auto Ontology（Apache 2.0），从数据库元数据自动生成业务本体，经人工认证后供智能体通过 MCP、CLI、API 调用，以减少问数场景的错误答案。本文拆解其生成、认证、作答三阶段、九个只读 MCP 工具、安全边界与 PII 机制，并指出尚无公开准确率、样本数据外发等落地风险。",
+    "description": "英伟达开源 Auto Ontology（Apache 2.0），从数据库元数据自动生成业务本体，经人工认证后供智能体通过 MCP、CLI、API 调用，以减少问数场景的错误答案。本文拆解其生成、认证、作答三阶段、九个只读 MCP 工具、安全边界与 PII 机制，对比企业指标平台并探讨数据治理的本体化方向，指出尚无公开准确率等风险。",
     "date": "2026-11-05",
     "tags": [
       "NVIDIA",
