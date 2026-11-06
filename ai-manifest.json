@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 245,
+    "total_articles": 246,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,21 @@
         "Plaid",
         "只读访问",
         "AI金融"
+      ]
+    },
+    {
+      "slug": "nicolas-cole-ai-write-like-you-bank-voice",
+      "title": "让AI写得像你",
+      "date": "2026-11-06",
+      "description": "Nicolas Cole为数百位商业领袖代笔十年，现在教你怎么让AI写得像你。核心不是写'用我的声音写'，而是把声音拆成用词、句长、句式三个可观察变量，用具体例子训练。本文从银行写材料的角度解读这套方法。",
+      "tags": [
+        "AI写作",
+        "Nicolas Cole",
+        "个人语言模型",
+        "银行公文",
+        "风格迁移",
+        "去AI味",
+        "写作方法"
       ]
     },
     {
@@ -4074,5 +4089,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-06",
   "version": "1.1",
-  "total_articles": 245
+  "total_articles": 246
 }

@@ -27,6 +27,20 @@
     <category term="AI金融"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/nicolas-cole-ai-write-like-you-bank-voice</id>
+    <title>让AI写得像你</title>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/nicolas-cole-ai-write-like-you-bank-voice" rel="alternate" type="text/html"/>
+    <summary>Nicolas Cole为数百位商业领袖代笔十年，现在教你怎么让AI写得像你。核心不是写&apos;用我的声音写&apos;，而是把声音拆成用词、句长、句式三个可观察变量，用具体例子训练。本文从银行写材料的角度解读这套方法。</summary>
+    <category term="AI写作"/>
+    <category term="Nicolas Cole"/>
+    <category term="个人语言模型"/>
+    <category term="银行公文"/>
+    <category term="风格迁移"/>
+    <category term="去AI味"/>
+    <category term="写作方法"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/operations-research-ai-financial-risk-control-analysis</id>
     <title>运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起</title>
     <updated>2026-11-06T00:00:00Z</updated>

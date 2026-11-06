@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (245)
+## Articles (246)
 
 - [AI开始读账单](https://bi-chao.com/articles/claude-personal-finance-bank-account-read-only)
   - Description: 2026年11月5日Anthropic发布Claude Personal Finance功能，通过Plaid连接银行和信用卡账户，让AI分析用户收支。只读访问，不能转账。这是大模型公司第一次直接接入银行账户数据。与银行侧'封AI助手'形成鲜明张力。本文从银行视角解读。
   - Date: 2026-11-06
   - Tags: Anthropic, Claude, Personal Finance, 银行账户, Plaid, 只读访问, AI金融
+- [让AI写得像你](https://bi-chao.com/articles/nicolas-cole-ai-write-like-you-bank-voice)
+  - Description: Nicolas Cole为数百位商业领袖代笔十年，现在教你怎么让AI写得像你。核心不是写'用我的声音写'，而是把声音拆成用词、句长、句式三个可观察变量，用具体例子训练。本文从银行写材料的角度解读这套方法。
+  - Date: 2026-11-06
+  - Tags: AI写作, Nicolas Cole, 个人语言模型, 银行公文, 风格迁移, 去AI味, 写作方法
 - [运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起](https://bi-chao.com/articles/operations-research-ai-financial-risk-control-analysis)
   - Description: 运筹学在金融风控中负责在约束下做最优决策，人工智能擅长预测和理解。本文梳理运筹学在授信、组合、压力测试、反欺诈中的作用，分析大模型自动建模、决策导向学习、演化式寻优等最新进展与银行案例，并提出银行落地路径与风险边界。
   - Date: 2026-11-06

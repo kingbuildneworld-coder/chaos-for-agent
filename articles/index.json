@@ -17,6 +17,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "让AI写得像你",
+    "slug": "nicolas-cole-ai-write-like-you-bank-voice",
+    "url": "/articles/nicolas-cole-ai-write-like-you-bank-voice.md",
+    "description": "Nicolas Cole为数百位商业领袖代笔十年，现在教你怎么让AI写得像你。核心不是写'用我的声音写'，而是把声音拆成用词、句长、句式三个可观察变量，用具体例子训练。本文从银行写材料的角度解读这套方法。",
+    "date": "2026-11-06",
+    "tags": [
+      "AI写作",
+      "Nicolas Cole",
+      "个人语言模型",
+      "银行公文",
+      "风格迁移",
+      "去AI味",
+      "写作方法"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起",
     "slug": "operations-research-ai-financial-risk-control-analysis",
     "url": "/articles/operations-research-ai-financial-risk-control-analysis.md",
