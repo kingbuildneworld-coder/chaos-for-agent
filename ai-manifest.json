@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 246,
+    "total_articles": 247,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -94,6 +94,22 @@
         "金融风控",
         "决策智能",
         "压力测试",
+        "银行"
+      ]
+    },
+    {
+      "slug": "sequoia-ai-ascent-2026-keynote-this-is-agi-analysis",
+      "title": "红杉 AI Ascent 2026 开场演讲深度解读：AGI 怎么算、10 万亿美元在哪、银行该怎么看",
+      "date": "2026-11-06",
+      "description": "红杉资本三位合伙人在 AI Ascent 2026 开场 32 分钟演讲中宣称“这就是 AGI”：以能否派出智能体、从失败中恢复并坚持完成任务作为功能定义，并指出服务业约 10 万亿美元的机会。本文梳理三段核心论点、关键数字、MAD 框架，并分析其局限与对银行业的启示。",
+      "tags": [
+        "红杉资本",
+        "AI Ascent",
+        "AGI",
+        "智能体",
+        "服务即软件",
+        "创业",
+        "人工智能",
         "银行"
       ]
     },
@@ -4089,5 +4105,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-06",
   "version": "1.1",
-  "total_articles": 246
+  "total_articles": 247
 }

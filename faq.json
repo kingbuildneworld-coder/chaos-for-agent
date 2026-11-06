@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-06",
-  "scanned_articles": 246,
-  "articles_with_faq": 118,
-  "total_questions": 540,
+  "scanned_articles": 247,
+  "articles_with_faq": 119,
+  "total_questions": 544,
   "items": [
     {
       "slug": "operations-research-ai-financial-risk-control-analysis",
@@ -26,6 +26,30 @@
         {
           "question": "AI 风控怎样满足监管的可解释要求？",
           "answer": "一种做法是用运筹模型承接 AI 输出：最终决策由显式的目标和约束决定，可以复算，并可说明受哪个约束限制；高风险环节保留人工监督和干预（来源1、本文分析）。"
+        }
+      ]
+    },
+    {
+      "slug": "sequoia-ai-ascent-2026-keynote-this-is-agi-analysis",
+      "title": "红杉 AI Ascent 2026 开场演讲深度解读：AGI 怎么算、10 万亿美元在哪、银行该怎么看",
+      "url": "https://bi-chao.com/articles/sequoia-ai-ascent-2026-keynote-this-is-agi-analysis",
+      "date": "2026-11-06",
+      "faqs": [
+        {
+          "question": "红杉说的 AGI 是什么意思？",
+          "answer": "红杉不给技术定义，只给功能定义：派出一个智能体去完成一项工作，它能从失败中恢复，并坚持到完成，从商业角度看就相当于 AGI（来源1）。"
+        },
+        {
+          "question": "10 万亿美元的机会是怎么估出来的？",
+          "answer": "演讲中并没有测算过程。Pat Grady 说这是一个方便的整数，可能是 5 万亿，也可能是 50 万亿；唯一的具体锚点是美国法律服务市场约 4000 亿美元（来源1）。"
+        },
+        {
+          "question": "MAD 框架是什么？",
+          "answer": "红杉给应用层创业者的建议：M 是从客户端往回建护城河，A 是做到不用解释就会用的“可供性”，D 是利用模型能力与企业实际部署之间的扩散差（来源1、来源2）。"
+        },
+        {
+          "question": "这场演讲对银行有什么启示？",
+          "answer": "银行中后台的大量认知工作可能被智能体“作为服务”交付；银行的客户关系、牌照和数据是相对稳定的护城河；但在授信、交易等高风险环节，必须保留人工监督和停止条件（本文分析）。"
         }
       ]
     },

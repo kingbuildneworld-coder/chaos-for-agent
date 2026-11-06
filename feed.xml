@@ -56,6 +56,21 @@
     <category term="银行"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/sequoia-ai-ascent-2026-keynote-this-is-agi-analysis</id>
+    <title>红杉 AI Ascent 2026 开场演讲深度解读：AGI 怎么算、10 万亿美元在哪、银行该怎么看</title>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/sequoia-ai-ascent-2026-keynote-this-is-agi-analysis" rel="alternate" type="text/html"/>
+    <summary>红杉资本三位合伙人在 AI Ascent 2026 开场 32 分钟演讲中宣称“这就是 AGI”：以能否派出智能体、从失败中恢复并坚持完成任务作为功能定义，并指出服务业约 10 万亿美元的机会。本文梳理三段核心论点、关键数字、MAD 框架，并分析其局限与对银行业的启示。</summary>
+    <category term="红杉资本"/>
+    <category term="AI Ascent"/>
+    <category term="AGI"/>
+    <category term="智能体"/>
+    <category term="服务即软件"/>
+    <category term="创业"/>
+    <category term="人工智能"/>
+    <category term="银行"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis</id>
     <title>英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数</title>
     <updated>2026-11-05T00:00:00Z</updated>

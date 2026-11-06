@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (246)
+## Articles (247)
 
 - [AI开始读账单](https://bi-chao.com/articles/claude-personal-finance-bank-account-read-only)
   - Description: 2026年11月5日Anthropic发布Claude Personal Finance功能，通过Plaid连接银行和信用卡账户，让AI分析用户收支。只读访问，不能转账。这是大模型公司第一次直接接入银行账户数据。与银行侧'封AI助手'形成鲜明张力。本文从银行视角解读。
@@ -26,6 +26,10 @@
   - Description: 运筹学在金融风控中负责在约束下做最优决策，人工智能擅长预测和理解。本文梳理运筹学在授信、组合、压力测试、反欺诈中的作用，分析大模型自动建模、决策导向学习、演化式寻优等最新进展与银行案例，并提出银行落地路径与风险边界。
   - Date: 2026-11-06
   - Tags: 运筹学, 最优化, 人工智能, 大模型, 金融风控, 决策智能, 压力测试, 银行
+- [红杉 AI Ascent 2026 开场演讲深度解读：AGI 怎么算、10 万亿美元在哪、银行该怎么看](https://bi-chao.com/articles/sequoia-ai-ascent-2026-keynote-this-is-agi-analysis)
+  - Description: 红杉资本三位合伙人在 AI Ascent 2026 开场 32 分钟演讲中宣称“这就是 AGI”：以能否派出智能体、从失败中恢复并坚持完成任务作为功能定义，并指出服务业约 10 万亿美元的机会。本文梳理三段核心论点、关键数字、MAD 框架，并分析其局限与对银行业的启示。
+  - Date: 2026-11-06
+  - Tags: 红杉资本, AI Ascent, AGI, 智能体, 服务即软件, 创业, 人工智能, 银行
 - [英伟达 Auto Ontology 深度解读：给数据智能体装上“企业词典”，让 AI 写的 SQL 算对数](https://bi-chao.com/articles/nvidia-auto-ontology-semantic-layer-agents-analysis)
   - Description: 英伟达开源 Auto Ontology（Apache 2.0），从数据库元数据自动生成业务本体，经人工认证后供智能体通过 MCP、CLI、API 调用，以减少问数场景的错误答案。本文拆解其生成、认证、作答三阶段、九个只读 MCP 工具、安全边界与 PII 机制，对比企业指标平台并探讨数据治理的本体化方向，指出尚无公开准确率等风险。
   - Date: 2026-11-05
@@ -1000,7 +1004,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 63 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 64 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 63 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
@@ -1008,8 +1012,8 @@
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 金融监管: 22 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 人工智能: 21 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 21 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A
-- 人工智能: 20 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
