@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 247,
+    "total_articles": 248,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "bmo-agentic-ai-credit-card-case-prep",
+      "title": "AI给客服备料",
+      "date": "2026-11-07",
+      "description": "2026年11月6日BMO发布AI Agent Assist，用于信用卡交易争议处理。AI自动匹配交易、检索政策、准备案件材料，客服员工审核后回复客户。目标减少30%通话时间。这是银行内部Agentic AI的实际落地案例。",
+      "tags": [
+        "BMO",
+        "Agentic AI",
+        "银行客服",
+        "信用卡",
+        "AI辅助员工",
+        "案件准备",
+        "银行数字化"
+      ]
+    },
     {
       "slug": "claude-personal-finance-bank-account-read-only",
       "title": "AI开始读账单",
@@ -4103,7 +4118,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-07",
   "version": "1.1",
-  "total_articles": 247
+  "total_articles": 248
 }

@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-06T00:00:00Z</updated>
+  <updated>2026-11-07T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/bmo-agentic-ai-credit-card-case-prep</id>
+    <title>AI给客服备料</title>
+    <updated>2026-11-07T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bmo-agentic-ai-credit-card-case-prep" rel="alternate" type="text/html"/>
+    <summary>2026年11月6日BMO发布AI Agent Assist，用于信用卡交易争议处理。AI自动匹配交易、检索政策、准备案件材料，客服员工审核后回复客户。目标减少30%通话时间。这是银行内部Agentic AI的实际落地案例。</summary>
+    <category term="BMO"/>
+    <category term="Agentic AI"/>
+    <category term="银行客服"/>
+    <category term="信用卡"/>
+    <category term="AI辅助员工"/>
+    <category term="案件准备"/>
+    <category term="银行数字化"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/claude-personal-finance-bank-account-read-only</id>
     <title>AI开始读账单</title>
