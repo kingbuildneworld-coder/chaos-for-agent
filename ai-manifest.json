@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 248,
+    "total_articles": 249,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "model-merging-on-phone-normalization-consistency",
+      "title": "手机上的模型合并实验深度解读：真正决定合并成败的，是那 57 个归一化张量",
+      "date": "2026-11-08",
+      "description": "一份在无 GPU 手机上完成的模型合并实验报告：对 Qwen2.5-1.5B 数学与代码专家，朴素平均、TIES、任务向量正交化、逐层自适应、沿深度缝合全部失败，唯一有效的是小比例混合加归一化层整体取自单一专家。本文拆解其实验、诊断与配方，核对数字与文献，并指出证据边界。",
+      "tags": [
+        "模型合并",
+        "Model Merging",
+        "归一化层",
+        "RMSNorm",
+        "Qwen2.5",
+        "端侧AI",
+        "任务向量",
+        "权重空间"
+      ]
+    },
     {
       "slug": "bmo-agentic-ai-credit-card-case-prep",
       "title": "AI给客服备料",
@@ -4118,7 +4134,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-07",
+  "last_updated": "2026-11-08",
   "version": "1.1",
-  "total_articles": 248
+  "total_articles": 249
 }

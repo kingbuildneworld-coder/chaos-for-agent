@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (248)
+## Articles (249)
 
+- [手机上的模型合并实验深度解读：真正决定合并成败的，是那 57 个归一化张量](https://bi-chao.com/articles/model-merging-on-phone-normalization-consistency)
+  - Description: 一份在无 GPU 手机上完成的模型合并实验报告：对 Qwen2.5-1.5B 数学与代码专家，朴素平均、TIES、任务向量正交化、逐层自适应、沿深度缝合全部失败，唯一有效的是小比例混合加归一化层整体取自单一专家。本文拆解其实验、诊断与配方，核对数字与文献，并指出证据边界。
+  - Date: 2026-11-08
+  - Tags: 模型合并, Model Merging, 归一化层, RMSNorm, Qwen2.5, 端侧AI, 任务向量, 权重空间
 - [AI给客服备料](https://bi-chao.com/articles/bmo-agentic-ai-credit-card-case-prep)
   - Description: 2026年11月6日BMO发布AI Agent Assist，用于信用卡交易争议处理。AI自动匹配交易、检索政策、准备案件材料，客服员工审核后回复客户。目标减少30%通话时间。这是银行内部Agentic AI的实际落地案例。
   - Date: 2026-11-07

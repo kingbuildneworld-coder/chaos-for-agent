@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
-  "updated": "2026-11-07",
-  "scanned_articles": 248,
-  "articles_with_faq": 119,
-  "total_questions": 544,
+  "updated": "2026-11-08",
+  "scanned_articles": 249,
+  "articles_with_faq": 120,
+  "total_questions": 548,
   "items": [
+    {
+      "slug": "model-merging-on-phone-normalization-consistency",
+      "title": "手机上的模型合并实验深度解读：真正决定合并成败的，是那 57 个归一化张量",
+      "url": "https://bi-chao.com/articles/model-merging-on-phone-normalization-consistency",
+      "date": "2026-11-08",
+      "faqs": [
+        {
+          "question": "这份实验的最终合并配方是什么？",
+          "answer": "普通权重按 95% 数学专家、5% 代码专家混合，57 个归一化张量完全取自数学专家。得到数学 NLL 2.3492、代码 NLL 2.4408（来源1）。"
+        },
+        {
+          "question": "为什么归一化层这么重要？",
+          "answer": "消融显示，同一批普通权重只换归一化张量的来源，NLL 相差约 4.6 倍（来源1）。本文分析认为，Qwen2.5 的 RMSNorm 缩放向量与后续权重共同决定每层输入的尺度，两个专家的缩放方向相反，平均后会破坏尺度。"
+        },
+        {
+          "question": "岭回归缝线层误差只有 0.67%，为什么效果更差？",
+          "answer": "报告认为，岭回归对齐的是激活的整体分布，而后续 Transformer 层需要逐 token、依赖上下文的精确状态；分布对齐不等于函数等价（来源1）。"
+        },
+        {
+          "question": "这个结论能直接用到其他模型吗？",
+          "answer": "不能直接推广。实验只用了 Qwen2.5-1.5B 一个模型族、自编 48 题、只报告 NLL，最终配方相对纯数学专家的提升仅约 1%～2%（来源1，本文计算）。"
+        }
+      ]
+    },
     {
       "slug": "operations-research-ai-financial-risk-control-analysis",
       "title": "运筹学×人工智能×金融风控深度解读：AI 负责“看清”，运筹负责“算优”，风控需要两者合在一起",
