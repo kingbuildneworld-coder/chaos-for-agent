@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 249,
+    "total_articles": 250,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "bill-robin-ai-underwriting-15x-bank",
+      "title": "AI承保快15倍",
+      "date": "2026-11-08",
+      "description": "BILL公司CEO在2026年11月5日财报电话会上披露：Robin三件套AI Agent把小企业贷款承保案件从3小时压缩到12分钟。过去一年建了100+个AI Agent。本文从银行中小企业信贷承保的角度解读这个案例。",
+      "tags": [
+        "BILL",
+        "Robin",
+        "AI Agent",
+        "承保",
+        "中小企业贷款",
+        "银行风控",
+        "后台自动化"
+      ]
+    },
     {
       "slug": "model-merging-on-phone-normalization-consistency",
       "title": "手机上的模型合并实验深度解读：真正决定合并成败的，是那 57 个归一化张量",
@@ -4136,5 +4151,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-08",
   "version": "1.1",
-  "total_articles": 249
+  "total_articles": 250
 }

@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (249)
+## Articles (250)
 
+- [AI承保快15倍](https://bi-chao.com/articles/bill-robin-ai-underwriting-15x-bank)
+  - Description: BILL公司CEO在2026年11月5日财报电话会上披露：Robin三件套AI Agent把小企业贷款承保案件从3小时压缩到12分钟。过去一年建了100+个AI Agent。本文从银行中小企业信贷承保的角度解读这个案例。
+  - Date: 2026-11-08
+  - Tags: BILL, Robin, AI Agent, 承保, 中小企业贷款, 银行风控, 后台自动化
 - [手机上的模型合并实验深度解读：真正决定合并成败的，是那 57 个归一化张量](https://bi-chao.com/articles/model-merging-on-phone-normalization-consistency)
   - Description: 一份在无 GPU 手机上完成的模型合并实验报告：对 Qwen2.5-1.5B 数学与代码专家，朴素平均、TIES、任务向量正交化、逐层自适应、沿深度缝合全部失败，唯一有效的是小比例混合加归一化层整体取自单一专家。本文拆解其实验、诊断与配方，核对数字与文献，并指出证据边界。
   - Date: 2026-11-08

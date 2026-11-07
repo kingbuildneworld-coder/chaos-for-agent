@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/bill-robin-ai-underwriting-15x-bank</id>
+    <title>AI承保快15倍</title>
+    <updated>2026-11-08T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/bill-robin-ai-underwriting-15x-bank" rel="alternate" type="text/html"/>
+    <summary>BILL公司CEO在2026年11月5日财报电话会上披露：Robin三件套AI Agent把小企业贷款承保案件从3小时压缩到12分钟。过去一年建了100+个AI Agent。本文从银行中小企业信贷承保的角度解读这个案例。</summary>
+    <category term="BILL"/>
+    <category term="Robin"/>
+    <category term="AI Agent"/>
+    <category term="承保"/>
+    <category term="中小企业贷款"/>
+    <category term="银行风控"/>
+    <category term="后台自动化"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/model-merging-on-phone-normalization-consistency</id>
     <title>手机上的模型合并实验深度解读：真正决定合并成败的，是那 57 个归一化张量</title>
     <updated>2026-11-08T00:00:00Z</updated>
