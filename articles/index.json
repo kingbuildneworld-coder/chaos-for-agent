@@ -35,6 +35,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "AI递归进化",
+    "slug": "tencent-terminal-rsi-recursive-agent-bank",
+    "url": "/articles/tencent-terminal-rsi-recursive-agent-bank.md",
+    "description": "腾讯混元团队发布Terminal-RSI论文：基于Qwen3.8-27B，通过递归自我重写（RSR）和递归策略精炼（RPR）交替进行，训练出终端Agent。两个循环后，Terminal-Bench成功率从57%提升到74%。本文从银行Agent训练角度解读这套技术逻辑。",
+    "date": "2026-11-08",
+    "tags": [
+      "腾讯混元",
+      "Terminal-RSI",
+      "RSI",
+      "终端Agent",
+      "递归自我重写",
+      "强化学习",
+      "银行Agent"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI给客服备料",
     "slug": "bmo-agentic-ai-credit-card-case-prep",
     "url": "/articles/bmo-agentic-ai-credit-card-case-prep.md",
