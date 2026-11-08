@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 251,
+    "total_articles": 252,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "ai-agent-payment-access-europe-vs-bank-block",
+      "title": "AI Agent怎么碰钱",
+      "date": "2026-11-09",
+      "description": "英美银行封AI Agent，欧洲支付机构却在测试另一条路：Worldline、ING、Visa把Agent纳入支付基础设施，Agent只做搜索推荐，支付授权仍走银行认证。本文对比两条路径，分析银行在Agent时代的角色。",
+      "tags": [
+        "AI Agent",
+        "支付",
+        "Worldline",
+        "ING",
+        "Visa",
+        "银行授权",
+        "Agentic Commerce"
+      ]
+    },
     {
       "slug": "bill-robin-ai-underwriting-15x-bank",
       "title": "AI承保快15倍",
@@ -4164,7 +4179,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-08",
+  "last_updated": "2026-11-09",
   "version": "1.1",
-  "total_articles": 251
+  "total_articles": 252
 }

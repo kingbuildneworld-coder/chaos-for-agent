@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-08T00:00:00Z</updated>
+  <updated>2026-11-09T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/ai-agent-payment-access-europe-vs-bank-block</id>
+    <title>AI Agent怎么碰钱</title>
+    <updated>2026-11-09T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-agent-payment-access-europe-vs-bank-block" rel="alternate" type="text/html"/>
+    <summary>英美银行封AI Agent，欧洲支付机构却在测试另一条路：Worldline、ING、Visa把Agent纳入支付基础设施，Agent只做搜索推荐，支付授权仍走银行认证。本文对比两条路径，分析银行在Agent时代的角色。</summary>
+    <category term="AI Agent"/>
+    <category term="支付"/>
+    <category term="Worldline"/>
+    <category term="ING"/>
+    <category term="Visa"/>
+    <category term="银行授权"/>
+    <category term="Agentic Commerce"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/bill-robin-ai-underwriting-15x-bank</id>
     <title>AI承保快15倍</title>

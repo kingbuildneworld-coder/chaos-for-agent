@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (251)
+## Articles (252)
 
+- [AI Agent怎么碰钱](https://bi-chao.com/articles/ai-agent-payment-access-europe-vs-bank-block)
+  - Description: 英美银行封AI Agent，欧洲支付机构却在测试另一条路：Worldline、ING、Visa把Agent纳入支付基础设施，Agent只做搜索推荐，支付授权仍走银行认证。本文对比两条路径，分析银行在Agent时代的角色。
+  - Date: 2026-11-09
+  - Tags: AI Agent, 支付, Worldline, ING, Visa, 银行授权, Agentic Commerce
 - [AI承保快15倍](https://bi-chao.com/articles/bill-robin-ai-underwriting-15x-bank)
   - Description: BILL公司CEO在2026年11月5日财报电话会上披露：Robin三件套AI Agent把小企业贷款承保案件从3小时压缩到12分钟。过去一年建了100+个AI Agent。本文从银行中小企业信贷承保的角度解读这个案例。
   - Date: 2026-11-08
