@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-09T00:00:00Z</updated>
+  <updated>2026-11-10T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/google-tpu-8tx-8i-max-china-chip-lessons-bank</id>
+    <title>芯片开始分场景</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/google-tpu-8tx-8i-max-china-chip-lessons-bank" rel="alternate" type="text/html"/>
+    <summary>谷歌2026年11月9日发布TPU 8tx和8i Max：8tx是首个硬件级机密计算云TPU，数据在处理中也加密；8i Max双芯封装专攻超大上下文。一年四款芯片，AI芯片进入按场景分工时代。本文从银行视角分析对中国芯片算力的启发。</summary>
+    <category term="TPU"/>
+    <category term="AI芯片"/>
+    <category term="机密计算"/>
+    <category term="华为昇腾"/>
+    <category term="算力"/>
+    <category term="HBM"/>
+    <category term="银行科技"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/ai-agent-payment-access-europe-vs-bank-block</id>
     <title>AI Agent怎么碰钱</title>

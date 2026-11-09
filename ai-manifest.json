@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 252,
+    "total_articles": 253,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "google-tpu-8tx-8i-max-china-chip-lessons-bank",
+      "title": "芯片开始分场景",
+      "date": "2026-11-10",
+      "description": "谷歌2026年11月9日发布TPU 8tx和8i Max：8tx是首个硬件级机密计算云TPU，数据在处理中也加密；8i Max双芯封装专攻超大上下文。一年四款芯片，AI芯片进入按场景分工时代。本文从银行视角分析对中国芯片算力的启发。",
+      "tags": [
+        "TPU",
+        "AI芯片",
+        "机密计算",
+        "华为昇腾",
+        "算力",
+        "HBM",
+        "银行科技"
+      ]
+    },
     {
       "slug": "ai-agent-payment-access-europe-vs-bank-block",
       "title": "AI Agent怎么碰钱",
@@ -4179,7 +4194,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-10",
   "version": "1.1",
-  "total_articles": 252
+  "total_articles": 253
 }
