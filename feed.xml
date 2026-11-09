@@ -13,6 +13,20 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/anthropic-claude-fable-mythos-5-2-bank-review-gate</id>
+    <title>强模型要审查用</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/anthropic-claude-fable-mythos-5-2-bank-review-gate" rel="alternate" type="text/html"/>
+    <summary>Anthropic 11月9日发布Claude Fable 5.2和Mythos 5.2：同款权重，一个公开通用、一个审查后专用网络安全。Mythos发现的漏洞六分之一其他模型全漏，速度提三成、降价两成、支持百万上下文。本文从银行视角分析这种分档策略对模型选型和准入的启示。</summary>
+    <category term="Anthropic"/>
+    <category term="Claude"/>
+    <category term="大模型"/>
+    <category term="网络安全"/>
+    <category term="AI治理"/>
+    <category term="模型选型"/>
+    <category term="银行科技"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/google-tpu-8tx-8i-max-china-chip-lessons-bank</id>
     <title>芯片开始分场景</title>
     <updated>2026-11-10T00:00:00Z</updated>

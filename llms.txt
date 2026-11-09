@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (253)
+## Articles (254)
 
+- [强模型要审查用](https://bi-chao.com/articles/anthropic-claude-fable-mythos-5-2-bank-review-gate)
+  - Description: Anthropic 11月9日发布Claude Fable 5.2和Mythos 5.2：同款权重，一个公开通用、一个审查后专用网络安全。Mythos发现的漏洞六分之一其他模型全漏，速度提三成、降价两成、支持百万上下文。本文从银行视角分析这种分档策略对模型选型和准入的启示。
+  - Date: 2026-11-10
+  - Tags: Anthropic, Claude, 大模型, 网络安全, AI治理, 模型选型, 银行科技
 - [芯片开始分场景](https://bi-chao.com/articles/google-tpu-8tx-8i-max-china-chip-lessons-bank)
   - Description: 谷歌2026年11月9日发布TPU 8tx和8i Max：8tx是首个硬件级机密计算云TPU，数据在处理中也加密；8i Max双芯封装专攻超大上下文。一年四款芯片，AI芯片进入按场景分工时代。本文从银行视角分析对中国芯片算力的启发。
   - Date: 2026-11-10
@@ -1028,11 +1032,11 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
+- AI治理: 64 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 智能体: 64 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 63 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 大模型: 39 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 大模型: 40 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 金融监管: 22 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
