@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 257,
+    "total_articles": 258,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -111,6 +111,22 @@
         "千问",
         "金融监管",
         "消费者保护"
+      ]
+    },
+    {
+      "slug": "deepmind-formally-verified-quantum-programs-lean-agents",
+      "title": "DeepMind 用 AI 智能体发现“经数学证明正确”的量子程序：Lean 形式化验证、多团队协作与 290 倍降本深度解读",
+      "date": "2026-11-10",
+      "description": "Google DeepMind 与 Google Quantum AI 在 arXiv:2611.09822 中，用 Lean 定理证明器搭建量子程序库，让多支大模型智能体团队在冻结的形式化规格下设计量子算法并自证正确性与成本。本文拆解其方法、五项结果、协作机制与局限，并讨论对可信智能体的启示。",
+      "tags": [
+        "量子计算",
+        "DeepMind",
+        "Google Quantum AI",
+        "Lean",
+        "形式化验证",
+        "多智能体",
+        "AI for Science",
+        "量子算法"
       ]
     },
     {
@@ -4258,5 +4274,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-10",
   "version": "1.1",
-  "total_articles": 257
+  "total_articles": 258
 }

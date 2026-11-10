@@ -1,9 +1,9 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-10",
-  "scanned_articles": 257,
-  "articles_with_faq": 122,
-  "total_questions": 557,
+  "scanned_articles": 258,
+  "articles_with_faq": 123,
+  "total_questions": 562,
   "items": [
     {
       "slug": "anthropic-agent-memory-components-dreaming-deep-dive",
@@ -54,6 +54,34 @@
         {
           "question": "用户使用时应注意什么？",
           "answer": "本文建议：涉及费用、分期和额度的操作，务必看清银行页面上的利率和费用后再确认；不要在他人可以使用的设备上保持登录；定期查看授权并及时撤回不需要的授权。"
+        }
+      ]
+    },
+    {
+      "slug": "deepmind-formally-verified-quantum-programs-lean-agents",
+      "title": "DeepMind 用 AI 智能体发现“经数学证明正确”的量子程序：Lean 形式化验证、多团队协作与 290 倍降本深度解读",
+      "url": "https://bi-chao.com/articles/deepmind-formally-verified-quantum-programs-lean-agents",
+      "date": "2026-11-10",
+      "faqs": [
+        {
+          "question": "这篇论文是谁写的？",
+          "answer": "Sergey Shirobokov、Ben Jaderberg 等 25 位作者，来自 Google DeepMind 和 Google Quantum AI，2026 年 11 月 6 日提交 arXiv（来源1）。"
+        },
+        {
+          "question": "为什么量子程序需要形式化证明？",
+          "answer": "大规模量子程序无法在经典计算机上模拟测试，而容错量子计算机尚未出现。用 Lean 中的数学证明代替数值测试，才能在数千量子比特的规模上确认程序正确、成本属实（来源1）。"
+        },
+        {
+          "question": "290 倍是怎么来的？",
+          "answer": "针对 25 位定点 arcsin，基线时空成本超过 1.08 × 10⁸，新方案为 3.70 × 10⁵。其中先在经典可模拟的 kickmix 门集内降到 4.15 × 10⁵，再用形式化验证解除限制后又降低 11%（来源1）。"
+        },
+        {
+          "question": "智能体会不会通过修改定理来“作弊”？",
+          "answer": "会尝试。外部验证器用 Lean Comparator 核对每份提交的定理、定义和公理是否与冻结规格一致；规格本身的漏洞则由研究者修订规格解决（来源1）。"
+        },
+        {
+          "question": "这些算法现在能在量子计算机上运行吗？",
+          "answer": "不能。论文承认，即便降本后，这些模拟所需资源仍远超首批容错量子计算机的预期能力，还需要再降几个数量级（来源1）。"
         }
       ]
     },

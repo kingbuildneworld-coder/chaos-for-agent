@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (257)
+## Articles (258)
 
 - [Anthropic 公开 Agent 记忆内幕深度解读：四层记忆金字塔与“做梦”，真正决定记忆好坏的是取舍与纠错](https://bi-chao.com/articles/anthropic-agent-memory-components-dreaming-deep-dive)
   - Description: 2026 年 11 月 6 日，Anthropic 工程博客发布《The components of agent memory》，把 Agent 记忆拆成原始记录、记忆笔记、记忆表征（如 Wiki）和注入上下文四层，并用多组实验量化了“做梦”（离线整理记忆）何时有用、何时无用。本文逐项拆解数据，并讨论对企业与金融智能体的启示。
@@ -30,6 +30,10 @@
   - Description: 招行信用卡继 2026 年 6 月首批内测接入微信 AI 智能体后，又以 Agent to Agent 模式首批接入千问智能体，上线办卡、信用知识问答、账单查询、饭票查询等服务。本文梳理它带来的便利，分析对智能经济与金融的长期意义，并对照信用卡监管规则，逐项列出需要防范的风险。
   - Date: 2026-11-10
   - Tags: 招商银行, 信用卡, AI智能体, Agent to Agent, 微信, 千问, 金融监管, 消费者保护
+- [DeepMind 用 AI 智能体发现“经数学证明正确”的量子程序：Lean 形式化验证、多团队协作与 290 倍降本深度解读](https://bi-chao.com/articles/deepmind-formally-verified-quantum-programs-lean-agents)
+  - Description: Google DeepMind 与 Google Quantum AI 在 arXiv:2611.09822 中，用 Lean 定理证明器搭建量子程序库，让多支大模型智能体团队在冻结的形式化规格下设计量子算法并自证正确性与成本。本文拆解其方法、五项结果、协作机制与局限，并讨论对可信智能体的启示。
+  - Date: 2026-11-10
+  - Tags: 量子计算, DeepMind, Google Quantum AI, Lean, 形式化验证, 多智能体, AI for Science, 量子算法
 - [芯片开始分场景](https://bi-chao.com/articles/google-tpu-8tx-8i-max-china-chip-lessons-bank)
   - Description: 谷歌2026年11月9日发布TPU 8tx和8i Max：8tx是首个硬件级机密计算云TPU，数据在处理中也加密；8i Max双芯封装专攻超大上下文。一年四款芯片，AI芯片进入按场景分工时代。本文从银行视角分析对中国芯片算力的启发。
   - Date: 2026-11-10

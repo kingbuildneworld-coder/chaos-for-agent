@@ -71,6 +71,21 @@
     <category term="消费者保护"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/deepmind-formally-verified-quantum-programs-lean-agents</id>
+    <title>DeepMind 用 AI 智能体发现“经数学证明正确”的量子程序：Lean 形式化验证、多团队协作与 290 倍降本深度解读</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/deepmind-formally-verified-quantum-programs-lean-agents" rel="alternate" type="text/html"/>
+    <summary>Google DeepMind 与 Google Quantum AI 在 arXiv:2611.09822 中，用 Lean 定理证明器搭建量子程序库，让多支大模型智能体团队在冻结的形式化规格下设计量子算法并自证正确性与成本。本文拆解其方法、五项结果、协作机制与局限，并讨论对可信智能体的启示。</summary>
+    <category term="量子计算"/>
+    <category term="DeepMind"/>
+    <category term="Google Quantum AI"/>
+    <category term="Lean"/>
+    <category term="形式化验证"/>
+    <category term="多智能体"/>
+    <category term="AI for Science"/>
+    <category term="量子算法"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/google-tpu-8tx-8i-max-china-chip-lessons-bank</id>
     <title>芯片开始分场景</title>
     <updated>2026-11-10T00:00:00Z</updated>
