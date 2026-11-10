@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 256,
+    "total_articles": 257,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -80,6 +80,21 @@
         "AI治理",
         "模型选型",
         "银行科技"
+      ]
+    },
+    {
+      "slug": "anthropic-fable-5-2-robotics-embodied-llm-principle-bank",
+      "title": "通用模型学会动手",
+      "date": "2026-11-10",
+      "description": "Anthropic Fable 5.2 在机器人仿真评测RoboDojo Sim中拿到64.9%，一代模型从27.6%跃升，翻倍还多，领先GPT-6 Astra和Opus 5.5。一个通用大模型跨界做具身任务，背后是代码即策略、世界知识内化、计划执行重规划等机制。本文拆解原理，并分析其对银行自动化采购与落地的启示。",
+      "tags": [
+        "Anthropic",
+        "具身智能",
+        "机器人",
+        "VLA",
+        "通用大模型",
+        "智能体",
+        "银行自动化"
       ]
     },
     {
@@ -4243,5 +4258,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-10",
   "version": "1.1",
-  "total_articles": 256
+  "total_articles": 257
 }

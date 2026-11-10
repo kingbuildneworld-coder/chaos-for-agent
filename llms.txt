@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (256)
+## Articles (257)
 
 - [Anthropic 公开 Agent 记忆内幕深度解读：四层记忆金字塔与“做梦”，真正决定记忆好坏的是取舍与纠错](https://bi-chao.com/articles/anthropic-agent-memory-components-dreaming-deep-dive)
   - Description: 2026 年 11 月 6 日，Anthropic 工程博客发布《The components of agent memory》，把 Agent 记忆拆成原始记录、记忆笔记、记忆表征（如 Wiki）和注入上下文四层，并用多组实验量化了“做梦”（离线整理记忆）何时有用、何时无用。本文逐项拆解数据，并讨论对企业与金融智能体的启示。
@@ -22,6 +22,10 @@
   - Description: Anthropic 11月9日发布Claude Fable 5.2和Mythos 5.2：同款权重，一个公开通用、一个审查后专用网络安全。Mythos发现的漏洞六分之一其他模型全漏，速度提三成、降价两成、支持百万上下文。本文从银行视角分析这种分档策略对模型选型和准入的启示。
   - Date: 2026-11-10
   - Tags: Anthropic, Claude, 大模型, 网络安全, AI治理, 模型选型, 银行科技
+- [通用模型学会动手](https://bi-chao.com/articles/anthropic-fable-5-2-robotics-embodied-llm-principle-bank)
+  - Description: Anthropic Fable 5.2 在机器人仿真评测RoboDojo Sim中拿到64.9%，一代模型从27.6%跃升，翻倍还多，领先GPT-6 Astra和Opus 5.5。一个通用大模型跨界做具身任务，背后是代码即策略、世界知识内化、计划执行重规划等机制。本文拆解原理，并分析其对银行自动化采购与落地的启示。
+  - Date: 2026-11-10
+  - Tags: Anthropic, 具身智能, 机器人, VLA, 通用大模型, 智能体, 银行自动化
 - [招行信用卡首批接入微信与千问智能体：带来哪些便利，对智能经济金融意味着什么，又该防范哪些风险](https://bi-chao.com/articles/cmb-credit-card-wechat-qwen-agent-a2a-analysis)
   - Description: 招行信用卡继 2026 年 6 月首批内测接入微信 AI 智能体后，又以 Agent to Agent 模式首批接入千问智能体，上线办卡、信用知识问答、账单查询、饭票查询等服务。本文梳理它带来的便利，分析对智能经济与金融的长期意义，并对照信用卡监管规则，逐项列出需要防范的风险。
   - Date: 2026-11-10
@@ -1040,7 +1044,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 65 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 66 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 64 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
