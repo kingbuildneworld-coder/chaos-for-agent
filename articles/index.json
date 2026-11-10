@@ -69,6 +69,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "看懂AI就安全吗",
+    "slug": "bengio-mechanistic-interpretability-survey-ai-safety-bank",
+    "url": "/articles/bengio-mechanistic-interpretability-survey-ai-safety-bank.md",
+    "description": "牛津大学团队联合图灵奖得主Bengio发布机制可解释性综述（arXiv:2611.08438），系统梳理探针、稀疏自编码器、电路分析等方法，归纳六种研究取向和知识编辑、表征引导、机制监控等安全应用。综述核心追问：理解模型内部是否真能让它更安全，并指出这一假设尚未被证实、可解释性证据存在不稳定。本文拆解并映射银行模型治理。",
+    "date": "2026-11-10",
+    "tags": [
+      "机制可解释性",
+      "Bengio",
+      "AI安全",
+      "稀疏自编码器",
+      "模型治理",
+      "可解释AI",
+      "银行风控"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "招行信用卡首批接入微信与千问智能体：带来哪些便利，对智能经济金融意味着什么，又该防范哪些风险",
     "slug": "cmb-credit-card-wechat-qwen-agent-a2a-analysis",
     "url": "/articles/cmb-credit-card-wechat-qwen-agent-a2a-analysis.md",

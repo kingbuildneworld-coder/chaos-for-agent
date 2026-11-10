@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 260,
+    "total_articles": 261,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -110,6 +110,21 @@
         "通用大模型",
         "智能体",
         "银行自动化"
+      ]
+    },
+    {
+      "slug": "bengio-mechanistic-interpretability-survey-ai-safety-bank",
+      "title": "看懂AI就安全吗",
+      "date": "2026-11-10",
+      "description": "牛津大学团队联合图灵奖得主Bengio发布机制可解释性综述（arXiv:2611.08438），系统梳理探针、稀疏自编码器、电路分析等方法，归纳六种研究取向和知识编辑、表征引导、机制监控等安全应用。综述核心追问：理解模型内部是否真能让它更安全，并指出这一假设尚未被证实、可解释性证据存在不稳定。本文拆解并映射银行模型治理。",
+      "tags": [
+        "机制可解释性",
+        "Bengio",
+        "AI安全",
+        "稀疏自编码器",
+        "模型治理",
+        "可解释AI",
+        "银行风控"
       ]
     },
     {
@@ -4304,5 +4319,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-10",
   "version": "1.1",
-  "total_articles": 260
+  "total_articles": 261
 }
