@@ -1,5 +1,22 @@
 [
   {
+    "title": "免费数据有代价",
+    "slug": "aleph-geo-open-source-llm-spatial-data-embodied-bank",
+    "url": "/articles/aleph-geo-open-source-llm-spatial-data-embodied-bank.md",
+    "description": "开源项目Aleph让AI代理无需密钥即可抓取街景、卫星、3D网格和地形数据，GitHub两个月862星。但核验发现其核心数据来自逆向Google未公开接口，下载违反Google条款且随时可能失效。本文拆解其原理，客观回答它对通用模型具身进展有无帮助，并指出银行使用的合规红线与合法替代。",
+    "date": "2026-11-10",
+    "tags": [
+      "Aleph",
+      "地理空间",
+      "具身智能",
+      "开源",
+      "数据合规",
+      "AI智能体",
+      "银行科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Anthropic 公开 Agent 记忆内幕深度解读：四层记忆金字塔与“做梦”，真正决定记忆好坏的是取舍与纠错",
     "slug": "anthropic-agent-memory-components-dreaming-deep-dive",
     "url": "/articles/anthropic-agent-memory-components-dreaming-deep-dive.md",
