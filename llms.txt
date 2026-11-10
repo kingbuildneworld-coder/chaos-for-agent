@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (254)
+## Articles (255)
 
 - [强模型要审查用](https://bi-chao.com/articles/anthropic-claude-fable-mythos-5-2-bank-review-gate)
   - Description: Anthropic 11月9日发布Claude Fable 5.2和Mythos 5.2：同款权重，一个公开通用、一个审查后专用网络安全。Mythos发现的漏洞六分之一其他模型全漏，速度提三成、降价两成、支持百万上下文。本文从银行视角分析这种分档策略对模型选型和准入的启示。
   - Date: 2026-11-10
   - Tags: Anthropic, Claude, 大模型, 网络安全, AI治理, 模型选型, 银行科技
+- [招行信用卡首批接入微信与千问智能体：带来哪些便利，对智能经济金融意味着什么，又该防范哪些风险](https://bi-chao.com/articles/cmb-credit-card-wechat-qwen-agent-a2a-analysis)
+  - Description: 招行信用卡继 2026 年 6 月首批内测接入微信 AI 智能体后，又以 Agent to Agent 模式首批接入千问智能体，上线办卡、信用知识问答、账单查询、饭票查询等服务。本文梳理它带来的便利，分析对智能经济与金融的长期意义，并对照信用卡监管规则，逐项列出需要防范的风险。
+  - Date: 2026-11-10
+  - Tags: 招商银行, 信用卡, AI智能体, Agent to Agent, 微信, 千问, 金融监管, 消费者保护
 - [芯片开始分场景](https://bi-chao.com/articles/google-tpu-8tx-8i-max-china-chip-lessons-bank)
   - Description: 谷歌2026年11月9日发布TPU 8tx和8i Max：8tx是首个硬件级机密计算云TPU，数据在处理中也加密；8i Max双芯封装专攻超大上下文。一年四款芯片，AI芯片进入按场景分工时代。本文从银行视角分析对中国芯片算力的启发。
   - Date: 2026-11-10
@@ -1038,7 +1042,7 @@
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 40 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
-- 金融监管: 22 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
+- 金融监管: 23 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 - 人工智能: 21 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 银行业: 21 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8C%E4%B8%9A

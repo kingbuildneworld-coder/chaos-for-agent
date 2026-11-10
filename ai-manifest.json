@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 254,
+    "total_articles": 255,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -64,6 +64,22 @@
         "AI治理",
         "模型选型",
         "银行科技"
+      ]
+    },
+    {
+      "slug": "cmb-credit-card-wechat-qwen-agent-a2a-analysis",
+      "title": "招行信用卡首批接入微信与千问智能体：带来哪些便利，对智能经济金融意味着什么，又该防范哪些风险",
+      "date": "2026-11-10",
+      "description": "招行信用卡继 2026 年 6 月首批内测接入微信 AI 智能体后，又以 Agent to Agent 模式首批接入千问智能体，上线办卡、信用知识问答、账单查询、饭票查询等服务。本文梳理它带来的便利，分析对智能经济与金融的长期意义，并对照信用卡监管规则，逐项列出需要防范的风险。",
+      "tags": [
+        "招商银行",
+        "信用卡",
+        "AI智能体",
+        "Agent to Agent",
+        "微信",
+        "千问",
+        "金融监管",
+        "消费者保护"
       ]
     },
     {
@@ -4211,5 +4227,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-10",
   "version": "1.1",
-  "total_articles": 254
+  "total_articles": 255
 }

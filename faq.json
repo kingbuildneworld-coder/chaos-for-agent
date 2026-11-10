@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-10",
-  "scanned_articles": 254,
-  "articles_with_faq": 120,
-  "total_questions": 548,
+  "scanned_articles": 255,
+  "articles_with_faq": 121,
+  "total_questions": 552,
   "items": [
+    {
+      "slug": "cmb-credit-card-wechat-qwen-agent-a2a-analysis",
+      "title": "招行信用卡首批接入微信与千问智能体：带来哪些便利，对智能经济金融意味着什么，又该防范哪些风险",
+      "url": "https://bi-chao.com/articles/cmb-credit-card-wechat-qwen-agent-a2a-analysis",
+      "date": "2026-11-10",
+      "faqs": [
+        {
+          "question": "招行信用卡在千问和微信上分别上线了哪些服务？",
+          "answer": "千问 App 首期上线信用卡办理和信用知识问答；微信 AI 助手“小微”（测试版）上线办卡申请、账单查询、饭票查询，并接入超过 10 万家餐饮商户优惠信息（来源1）。"
+        },
+        {
+          "question": "什么是 Agent to Agent 模式？",
+          "answer": "平台的通用智能体理解用户需求后，把任务交给银行自己的智能体办理。本文分析认为，这种方式让银行保留业务规则、风控和数据控制权。"
+        },
+        {
+          "question": "在 AI 助手里办信用卡合规吗？",
+          "answer": "现行规定要求办卡申请、身份验证、发卡审核、签约必须通过银行自营渠道完成，不得通过合作机构控制的平台实施（来源2）。因此，AI 助手更适合作为“发起入口”，关键环节应在银行自营渠道完成。招行称其接入遵循监管要求（来源1），具体流程本文未独立验证。"
+        },
+        {
+          "question": "用户使用时应注意什么？",
+          "answer": "本文建议：涉及费用、分期和额度的操作，务必看清银行页面上的利率和费用后再确认；不要在他人可以使用的设备上保持登录；定期查看授权并及时撤回不需要的授权。"
+        }
+      ]
+    },
     {
       "slug": "model-merging-on-phone-normalization-consistency",
       "title": "手机上的模型合并实验深度解读：真正决定合并成败的，是那 57 个归一化张量",
