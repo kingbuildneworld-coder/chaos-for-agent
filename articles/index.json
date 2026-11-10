@@ -1,5 +1,22 @@
 [
   {
+    "title": "在AI里认领门面",
+    "slug": "openai-chatgpt-businesses-business-agent-claim-bank",
+    "url": "/articles/openai-chatgpt-businesses-business-agent-claim-bank.md",
+    "description": "OpenAI于11月10日推出Businesses in ChatGPT测试版，企业可认领商家资料、管理产品信息、查看提及与点击数据，符合条件的美国电商和在线服务企业还能创建Business Agent回答客户问题，并与Shopify打通。本文分析这一AI入口平台化动作对银行客户触点、营销合规、脱媒风险和责任界定的影响，给出分阶段应对。",
+    "date": "2026-11-11",
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Business Agent",
+      "AI入口",
+      "数字渠道",
+      "营销合规",
+      "银行科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "免费数据有代价",
     "slug": "aleph-geo-open-source-llm-spatial-data-embodied-bank",
     "url": "/articles/aleph-geo-open-source-llm-spatial-data-embodied-bank.md",

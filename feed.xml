@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-10T00:00:00Z</updated>
+  <updated>2026-11-11T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/openai-chatgpt-businesses-business-agent-claim-bank</id>
+    <title>在AI里认领门面</title>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/openai-chatgpt-businesses-business-agent-claim-bank" rel="alternate" type="text/html"/>
+    <summary>OpenAI于11月10日推出Businesses in ChatGPT测试版，企业可认领商家资料、管理产品信息、查看提及与点击数据，符合条件的美国电商和在线服务企业还能创建Business Agent回答客户问题，并与Shopify打通。本文分析这一AI入口平台化动作对银行客户触点、营销合规、脱媒风险和责任界定的影响，给出分阶段应对。</summary>
+    <category term="OpenAI"/>
+    <category term="ChatGPT"/>
+    <category term="Business Agent"/>
+    <category term="AI入口"/>
+    <category term="数字渠道"/>
+    <category term="营销合规"/>
+    <category term="银行科技"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/aleph-geo-open-source-llm-spatial-data-embodied-bank</id>
     <title>免费数据有代价</title>
