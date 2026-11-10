@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 255,
+    "total_articles": 256,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,22 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "anthropic-agent-memory-components-dreaming-deep-dive",
+      "title": "Anthropic 公开 Agent 记忆内幕深度解读：四层记忆金字塔与“做梦”，真正决定记忆好坏的是取舍与纠错",
+      "date": "2026-11-10",
+      "description": "2026 年 11 月 6 日，Anthropic 工程博客发布《The components of agent memory》，把 Agent 记忆拆成原始记录、记忆笔记、记忆表征（如 Wiki）和注入上下文四层，并用多组实验量化了“做梦”（离线整理记忆）何时有用、何时无用。本文逐项拆解数据，并讨论对企业与金融智能体的启示。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Agent记忆",
+        "Dreaming",
+        "上下文工程",
+        "知识Wiki",
+        "智能体",
+        "持续学习"
+      ]
+    },
     {
       "slug": "anthropic-claude-fable-mythos-5-2-bank-review-gate",
       "title": "强模型要审查用",
@@ -4227,5 +4243,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-10",
   "version": "1.1",
-  "total_articles": 255
+  "total_articles": 256
 }

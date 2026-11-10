@@ -13,6 +13,21 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/anthropic-agent-memory-components-dreaming-deep-dive</id>
+    <title>Anthropic 公开 Agent 记忆内幕深度解读：四层记忆金字塔与“做梦”，真正决定记忆好坏的是取舍与纠错</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/anthropic-agent-memory-components-dreaming-deep-dive" rel="alternate" type="text/html"/>
+    <summary>2026 年 11 月 6 日，Anthropic 工程博客发布《The components of agent memory》，把 Agent 记忆拆成原始记录、记忆笔记、记忆表征（如 Wiki）和注入上下文四层，并用多组实验量化了“做梦”（离线整理记忆）何时有用、何时无用。本文逐项拆解数据，并讨论对企业与金融智能体的启示。</summary>
+    <category term="Anthropic"/>
+    <category term="Claude"/>
+    <category term="Agent记忆"/>
+    <category term="Dreaming"/>
+    <category term="上下文工程"/>
+    <category term="知识Wiki"/>
+    <category term="智能体"/>
+    <category term="持续学习"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/anthropic-claude-fable-mythos-5-2-bank-review-gate</id>
     <title>强模型要审查用</title>
     <updated>2026-11-10T00:00:00Z</updated>
