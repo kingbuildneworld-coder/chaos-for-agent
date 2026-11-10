@@ -114,6 +114,20 @@
     <category term="银行科技"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/scientisttwo-autonomous-ai-research-closed-loop-bank</id>
+    <title>AI自己做研究</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/scientisttwo-autonomous-ai-research-closed-loop-bank" rel="alternate" type="text/html"/>
+    <summary>ScientistTwo是一个全自主多智能体科研框架，在107个来自ICML、ICLR、NeurIPS的问题上完成86个，成功率80.4%，平均相对人类SOTA提升25.2%，论文在自动评审下分数超过被接收论文。本文拆解其六个Agent闭环与反驳即实验机制，分析AI评AI的自我背书等结构性局限，并映射银行模型工厂的落地启示。</summary>
+    <category term="ScientistTwo"/>
+    <category term="自主科研"/>
+    <category term="多智能体"/>
+    <category term="模型评审"/>
+    <category term="MLOps"/>
+    <category term="模型风险"/>
+    <category term="银行科技"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/ai-agent-payment-access-europe-vs-bank-block</id>
     <title>AI Agent怎么碰钱</title>
     <updated>2026-11-09T00:00:00Z</updated>

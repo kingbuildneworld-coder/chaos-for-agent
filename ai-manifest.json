@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 259,
+    "total_articles": 260,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -156,6 +156,21 @@
         "华为昇腾",
         "算力",
         "HBM",
+        "银行科技"
+      ]
+    },
+    {
+      "slug": "scientisttwo-autonomous-ai-research-closed-loop-bank",
+      "title": "AI自己做研究",
+      "date": "2026-11-10",
+      "description": "ScientistTwo是一个全自主多智能体科研框架，在107个来自ICML、ICLR、NeurIPS的问题上完成86个，成功率80.4%，平均相对人类SOTA提升25.2%，论文在自动评审下分数超过被接收论文。本文拆解其六个Agent闭环与反驳即实验机制，分析AI评AI的自我背书等结构性局限，并映射银行模型工厂的落地启示。",
+      "tags": [
+        "ScientistTwo",
+        "自主科研",
+        "多智能体",
+        "模型评审",
+        "MLOps",
+        "模型风险",
         "银行科技"
       ]
     },
@@ -4289,5 +4304,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-10",
   "version": "1.1",
-  "total_articles": 259
+  "total_articles": 260
 }

@@ -122,6 +122,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "AI自己做研究",
+    "slug": "scientisttwo-autonomous-ai-research-closed-loop-bank",
+    "url": "/articles/scientisttwo-autonomous-ai-research-closed-loop-bank.md",
+    "description": "ScientistTwo是一个全自主多智能体科研框架，在107个来自ICML、ICLR、NeurIPS的问题上完成86个，成功率80.4%，平均相对人类SOTA提升25.2%，论文在自动评审下分数超过被接收论文。本文拆解其六个Agent闭环与反驳即实验机制，分析AI评AI的自我背书等结构性局限，并映射银行模型工厂的落地启示。",
+    "date": "2026-11-10",
+    "tags": [
+      "ScientistTwo",
+      "自主科研",
+      "多智能体",
+      "模型评审",
+      "MLOps",
+      "模型风险",
+      "银行科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI Agent怎么碰钱",
     "slug": "ai-agent-payment-access-europe-vs-bank-block",
     "url": "/articles/ai-agent-payment-access-europe-vs-bank-block.md",

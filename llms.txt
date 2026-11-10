@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (259)
+## Articles (260)
 
 - [免费数据有代价](https://bi-chao.com/articles/aleph-geo-open-source-llm-spatial-data-embodied-bank)
   - Description: 开源项目Aleph让AI代理无需密钥即可抓取街景、卫星、3D网格和地形数据，GitHub两个月862星。但核验发现其核心数据来自逆向Google未公开接口，下载违反Google条款且随时可能失效。本文拆解其原理，客观回答它对通用模型具身进展有无帮助，并指出银行使用的合规红线与合法替代。
@@ -42,6 +42,10 @@
   - Description: 谷歌2026年11月9日发布TPU 8tx和8i Max：8tx是首个硬件级机密计算云TPU，数据在处理中也加密；8i Max双芯封装专攻超大上下文。一年四款芯片，AI芯片进入按场景分工时代。本文从银行视角分析对中国芯片算力的启发。
   - Date: 2026-11-10
   - Tags: TPU, AI芯片, 机密计算, 华为昇腾, 算力, HBM, 银行科技
+- [AI自己做研究](https://bi-chao.com/articles/scientisttwo-autonomous-ai-research-closed-loop-bank)
+  - Description: ScientistTwo是一个全自主多智能体科研框架，在107个来自ICML、ICLR、NeurIPS的问题上完成86个，成功率80.4%，平均相对人类SOTA提升25.2%，论文在自动评审下分数超过被接收论文。本文拆解其六个Agent闭环与反驳即实验机制，分析AI评AI的自我背书等结构性局限，并映射银行模型工厂的落地启示。
+  - Date: 2026-11-10
+  - Tags: ScientistTwo, 自主科研, 多智能体, 模型评审, MLOps, 模型风险, 银行科技
 - [AI Agent怎么碰钱](https://bi-chao.com/articles/ai-agent-payment-access-europe-vs-bank-block)
   - Description: 英美银行封AI Agent，欧洲支付机构却在测试另一条路：Worldline、ING、Visa把Agent纳入支付基础设施，Agent只做搜索推荐，支付授权仍走银行认证。本文对比两条路径，分析银行在Agent时代的角色。
   - Date: 2026-11-09
