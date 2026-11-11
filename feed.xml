@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-11T00:00:00Z</updated>
+  <updated>2026-11-12T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank</id>
+    <title>买Agent还是造Agent</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank" rel="alternate" type="text/html"/>
+    <summary>IBM与微软11月10日联合推出Imagine Enterprise，预置6000多个Agent和行业框架，金融服务为首批行业；同期土耳其Fibabanka自研的自主Agent NEO在自有数据中心上岗，每步人工审批留痕。本文对比银行落地Agent的平台采购与自研内化两条路线，分析治理层、数据集成、供应商锁定与组织影响，给出混合路线建议。</summary>
+    <category term="AI Agent"/>
+    <category term="IBM"/>
+    <category term="微软"/>
+    <category term="数字员工"/>
+    <category term="银行科技"/>
+    <category term="Agent治理"/>
+    <category term="金融科技"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/openai-chatgpt-businesses-business-agent-claim-bank</id>
     <title>在AI里认领门面</title>

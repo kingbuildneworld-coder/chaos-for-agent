@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 262,
+    "total_articles": 263,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,21 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank",
+      "title": "买Agent还是造Agent",
+      "date": "2026-11-12",
+      "description": "IBM与微软11月10日联合推出Imagine Enterprise，预置6000多个Agent和行业框架，金融服务为首批行业；同期土耳其Fibabanka自研的自主Agent NEO在自有数据中心上岗，每步人工审批留痕。本文对比银行落地Agent的平台采购与自研内化两条路线，分析治理层、数据集成、供应商锁定与组织影响，给出混合路线建议。",
+      "tags": [
+        "AI Agent",
+        "IBM",
+        "微软",
+        "数字员工",
+        "银行科技",
+        "Agent治理",
+        "金融科技"
+      ]
+    },
     {
       "slug": "openai-chatgpt-businesses-business-agent-claim-bank",
       "title": "在AI里认领门面",
@@ -4332,7 +4347,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "version": "1.1",
-  "total_articles": 262
+  "total_articles": 263
 }

@@ -1,5 +1,22 @@
 [
   {
+    "title": "买Agent还是造Agent",
+    "slug": "ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank",
+    "url": "/articles/ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank.md",
+    "description": "IBM与微软11月10日联合推出Imagine Enterprise，预置6000多个Agent和行业框架，金融服务为首批行业；同期土耳其Fibabanka自研的自主Agent NEO在自有数据中心上岗，每步人工审批留痕。本文对比银行落地Agent的平台采购与自研内化两条路线，分析治理层、数据集成、供应商锁定与组织影响，给出混合路线建议。",
+    "date": "2026-11-12",
+    "tags": [
+      "AI Agent",
+      "IBM",
+      "微软",
+      "数字员工",
+      "银行科技",
+      "Agent治理",
+      "金融科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "在AI里认领门面",
     "slug": "openai-chatgpt-businesses-business-agent-claim-bank",
     "url": "/articles/openai-chatgpt-businesses-business-agent-claim-bank.md",

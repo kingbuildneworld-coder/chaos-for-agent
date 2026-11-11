@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (262)
+## Articles (263)
 
+- [买Agent还是造Agent](https://bi-chao.com/articles/ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank)
+  - Description: IBM与微软11月10日联合推出Imagine Enterprise，预置6000多个Agent和行业框架，金融服务为首批行业；同期土耳其Fibabanka自研的自主Agent NEO在自有数据中心上岗，每步人工审批留痕。本文对比银行落地Agent的平台采购与自研内化两条路线，分析治理层、数据集成、供应商锁定与组织影响，给出混合路线建议。
+  - Date: 2026-11-12
+  - Tags: AI Agent, IBM, 微软, 数字员工, 银行科技, Agent治理, 金融科技
 - [在AI里认领门面](https://bi-chao.com/articles/openai-chatgpt-businesses-business-agent-claim-bank)
   - Description: OpenAI于11月10日推出Businesses in ChatGPT测试版，企业可认领商家资料、管理产品信息、查看提及与点击数据，符合条件的美国电商和在线服务企业还能创建Business Agent回答客户问题，并与Shopify打通。本文分析这一AI入口平台化动作对银行客户触点、营销合规、脱媒风险和责任界定的影响，给出分阶段应对。
   - Date: 2026-11-11
@@ -1066,7 +1070,7 @@
 ## Topics (top 10)
 - 智能体: 66 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 64 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
-- 金融科技: 60 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
+- 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 40 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
