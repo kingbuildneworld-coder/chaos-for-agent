@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (264)
+## Articles (265)
 
+- [让模型分清敌我](https://bi-chao.com/articles/ibm-granite-llmon-prompt-injection-agent-security-bank)
+  - Description: IBM于11月12日发布两个实验性Granite模型（3B、8B预览版），基于LLM对象标记语言LLMON训练，把可信指令与不可信数据分离，官方称比最佳前沿模型多避免47%的提示注入攻击，且通用能力不打折。本文拆解提示注入为何是Agent头号威胁、LLMON标记与执行机制的原理，以及银行如何做模型层、数据层、工具层、监控层的纵深防御。
+  - Date: 2026-11-13
+  - Tags: 提示注入, IBM Granite, LLMON, Agent安全, AI治理, 网络安全, 银行科技
 - [Anthropic 路演说的不是“去英伟达化”，而是“不依赖任何一家”：四芯片算力池、Mythos 三天移植 AMD 与对中国的启示](https://bi-chao.com/articles/anthropic-ipo-multi-chip-not-de-nvidia-china-lessons)
   - Description: Anthropic 在 IPO 路演和招股书中称，Claude 已在 Trainium、TPU、英伟达和 AMD 四类芯片上训练与推理，并由 Mythos 三天把 Claude 跑上 AMD。本文核对原话，厘清它掌握的是哪一层，拆解多芯片工程方法，并讨论对中国国产算力的借鉴。
   - Date: 2026-11-12
@@ -1073,7 +1077,7 @@
 
 ## Topics (top 10)
 - 智能体: 66 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 64 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 65 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 40 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B

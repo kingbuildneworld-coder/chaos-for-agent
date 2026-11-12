@@ -1,5 +1,22 @@
 [
   {
+    "title": "让模型分清敌我",
+    "slug": "ibm-granite-llmon-prompt-injection-agent-security-bank",
+    "url": "/articles/ibm-granite-llmon-prompt-injection-agent-security-bank.md",
+    "description": "IBM于11月12日发布两个实验性Granite模型（3B、8B预览版），基于LLM对象标记语言LLMON训练，把可信指令与不可信数据分离，官方称比最佳前沿模型多避免47%的提示注入攻击，且通用能力不打折。本文拆解提示注入为何是Agent头号威胁、LLMON标记与执行机制的原理，以及银行如何做模型层、数据层、工具层、监控层的纵深防御。",
+    "date": "2026-11-13",
+    "tags": [
+      "提示注入",
+      "IBM Granite",
+      "LLMON",
+      "Agent安全",
+      "AI治理",
+      "网络安全",
+      "银行科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "Anthropic 路演说的不是“去英伟达化”，而是“不依赖任何一家”：四芯片算力池、Mythos 三天移植 AMD 与对中国的启示",
     "slug": "anthropic-ipo-multi-chip-not-de-nvidia-china-lessons",
     "url": "/articles/anthropic-ipo-multi-chip-not-de-nvidia-china-lessons.md",
