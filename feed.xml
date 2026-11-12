@@ -13,6 +13,21 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/anthropic-ipo-multi-chip-not-de-nvidia-china-lessons</id>
+    <title>Anthropic 路演说的不是“去英伟达化”，而是“不依赖任何一家”：四芯片算力池、Mythos 三天移植 AMD 与对中国的启示</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/anthropic-ipo-multi-chip-not-de-nvidia-china-lessons" rel="alternate" type="text/html"/>
+    <summary>Anthropic 在 IPO 路演和招股书中称，Claude 已在 Trainium、TPU、英伟达和 AMD 四类芯片上训练与推理，并由 Mythos 三天把 Claude 跑上 AMD。本文核对原话，厘清它掌握的是哪一层，拆解多芯片工程方法，并讨论对中国国产算力的借鉴。</summary>
+    <category term="Anthropic"/>
+    <category term="IPO"/>
+    <category term="英伟达"/>
+    <category term="多芯片"/>
+    <category term="算力"/>
+    <category term="AMD"/>
+    <category term="国产芯片"/>
+    <category term="AI基础设施"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank</id>
     <title>买Agent还是造Agent</title>
     <updated>2026-11-12T00:00:00Z</updated>

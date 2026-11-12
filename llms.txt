@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (263)
+## Articles (264)
 
+- [Anthropic 路演说的不是“去英伟达化”，而是“不依赖任何一家”：四芯片算力池、Mythos 三天移植 AMD 与对中国的启示](https://bi-chao.com/articles/anthropic-ipo-multi-chip-not-de-nvidia-china-lessons)
+  - Description: Anthropic 在 IPO 路演和招股书中称，Claude 已在 Trainium、TPU、英伟达和 AMD 四类芯片上训练与推理，并由 Mythos 三天把 Claude 跑上 AMD。本文核对原话，厘清它掌握的是哪一层，拆解多芯片工程方法，并讨论对中国国产算力的借鉴。
+  - Date: 2026-11-12
+  - Tags: Anthropic, IPO, 英伟达, 多芯片, 算力, AMD, 国产芯片, AI基础设施
 - [买Agent还是造Agent](https://bi-chao.com/articles/ibm-microsoft-imagine-enterprise-agent-build-vs-buy-bank)
   - Description: IBM与微软11月10日联合推出Imagine Enterprise，预置6000多个Agent和行业框架，金融服务为首批行业；同期土耳其Fibabanka自研的自主Agent NEO在自有数据中心上岗，每步人工审批留痕。本文对比银行落地Agent的平台采购与自研内化两条路线，分析治理层、数据集成、供应商锁定与组织影响，给出混合路线建议。
   - Date: 2026-11-12

@@ -1,10 +1,34 @@
 {
   "generated_from": "src/index.js (Worker) + articles/*.md",
   "updated": "2026-11-12",
-  "scanned_articles": 263,
-  "articles_with_faq": 123,
-  "total_questions": 562,
+  "scanned_articles": 264,
+  "articles_with_faq": 124,
+  "total_questions": 566,
   "items": [
+    {
+      "slug": "anthropic-ipo-multi-chip-not-de-nvidia-china-lessons",
+      "title": "Anthropic 路演说的不是“去英伟达化”，而是“不依赖任何一家”：四芯片算力池、Mythos 三天移植 AMD 与对中国的启示",
+      "url": "https://bi-chao.com/articles/anthropic-ipo-multi-chip-not-de-nvidia-china-lessons",
+      "date": "2026-11-12",
+      "faqs": [
+        {
+          "question": "Anthropic 在路演中说自己已经“去英伟达化”了吗？",
+          "answer": "没有。路演和招股书说的是在 Trainium、TPU、英伟达 GPU 和 AMD GPU 四类芯片上训练和服务 Claude，减少对任何单一供应商的依赖（来源1、来源2）。英伟达仍是其主要算力来源之一，并拟在同步私募中认购约 100 亿美元股份（来源1）。"
+        },
+        {
+          "question": "Anthropic 自己造芯片吗？",
+          "answer": "不造。它掌握的是芯片之上的软件栈、推理栈、统一编排层，以及通过 Anthropic Direct 自建数据中心的能力（来源1、来源2）。"
+        },
+        {
+          "question": "“三天把 Claude 移植到 AMD”是真的吗？",
+          "answer": "这是 Anthropic 在路演中的说法：Mythos 三天让 Claude 在 AMD 上运行，几乎所有内核由 Claude 移植或编写（来源2）。图表对应的是 AMD MI355X 上的提示处理性能（来源4）。该数字未经独立验证。"
+        },
+        {
+          "question": "对中国最值得借鉴的是什么？",
+          "answer": "本文认为，最值得借鉴的是重视芯片之上的软件能力：编译器、算子、跨芯片一致性测试和统一调度，以及模型方与芯片方的协同设计。DeepSeek 为国产芯片设计 UE8M0 FP8 格式就是同一方向的例子（来源5）。"
+        }
+      ]
+    },
     {
       "slug": "anthropic-agent-memory-components-dreaming-deep-dive",
       "title": "Anthropic 公开 Agent 记忆内幕深度解读：四层记忆金字塔与“做梦”，真正决定记忆好坏的是取舍与纠错",
