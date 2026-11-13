@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-13T00:00:00Z</updated>
+  <updated>2026-11-14T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/openai-chatgpt-wallet-agent-tokenized-payment-bank</id>
+    <title>让Agent安全地付钱</title>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/openai-chatgpt-wallet-agent-tokenized-payment-bank" rel="alternate" type="text/html"/>
+    <summary>OpenAI于11月13日发布ChatGPT Wallet，联手Visa、万事达、美国运通，让AI Agent用支付令牌代用户付款，全程看不到真实卡号，每笔须生物识别逐笔授权；Wirex前一天推出Navoka，给Agent独立IBAN、借记卡和稳定币钱包。本文拆解令牌化原理、逐笔授权与专用账户两条路线的区别，以及银行在Agent支付控制权上的机会、风险与责任边界。</summary>
+    <category term="ChatGPT Wallet"/>
+    <category term="令牌化"/>
+    <category term="Agent支付"/>
+    <category term="Visa"/>
+    <category term="支付安全"/>
+    <category term="Wirex"/>
+    <category term="银行科技"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/ibm-granite-llmon-prompt-injection-agent-security-bank</id>
     <title>让模型分清敌我</title>
