@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (266)
+## Articles (267)
 
+- [让AI替你炒股](https://bi-chao.com/articles/public-agentic-brokerage-ai-trading-retail-risk-bank)
+  - Description: 美国券商Public自称全球首个Agentic Brokerage，让散户用自然语言生成自定义股票指数，并设定可循环执行的交易Agent，监控条件、自动下单。本文拆解其生成式指数、评估与执行Agent的技术原理，分析self-directed免责的合规边界、回测过拟合、算法同质化羊群效应与安全风险，以及银行在适当性管理、责任认定和投资者保护上的护城河。
+  - Date: 2026-11-15
+  - Tags: Agentic Brokerage, 智能投顾, AI炒股, 财富管理, 适当性, 算法风险, 银行科技
 - [让Agent安全地付钱](https://bi-chao.com/articles/openai-chatgpt-wallet-agent-tokenized-payment-bank)
   - Description: OpenAI于11月13日发布ChatGPT Wallet，联手Visa、万事达、美国运通，让AI Agent用支付令牌代用户付款，全程看不到真实卡号，每笔须生物识别逐笔授权；Wirex前一天推出Navoka，给Agent独立IBAN、借记卡和稳定币钱包。本文拆解令牌化原理、逐笔授权与专用账户两条路线的区别，以及银行在Agent支付控制权上的机会、风险与责任边界。
   - Date: 2026-11-14

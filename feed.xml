@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-14T00:00:00Z</updated>
+  <updated>2026-11-15T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/public-agentic-brokerage-ai-trading-retail-risk-bank</id>
+    <title>让AI替你炒股</title>
+    <updated>2026-11-15T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/public-agentic-brokerage-ai-trading-retail-risk-bank" rel="alternate" type="text/html"/>
+    <summary>美国券商Public自称全球首个Agentic Brokerage，让散户用自然语言生成自定义股票指数，并设定可循环执行的交易Agent，监控条件、自动下单。本文拆解其生成式指数、评估与执行Agent的技术原理，分析self-directed免责的合规边界、回测过拟合、算法同质化羊群效应与安全风险，以及银行在适当性管理、责任认定和投资者保护上的护城河。</summary>
+    <category term="Agentic Brokerage"/>
+    <category term="智能投顾"/>
+    <category term="AI炒股"/>
+    <category term="财富管理"/>
+    <category term="适当性"/>
+    <category term="算法风险"/>
+    <category term="银行科技"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/openai-chatgpt-wallet-agent-tokenized-payment-bank</id>
     <title>让Agent安全地付钱</title>

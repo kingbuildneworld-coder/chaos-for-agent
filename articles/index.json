@@ -1,5 +1,22 @@
 [
   {
+    "title": "让AI替你炒股",
+    "slug": "public-agentic-brokerage-ai-trading-retail-risk-bank",
+    "url": "/articles/public-agentic-brokerage-ai-trading-retail-risk-bank.md",
+    "description": "美国券商Public自称全球首个Agentic Brokerage，让散户用自然语言生成自定义股票指数，并设定可循环执行的交易Agent，监控条件、自动下单。本文拆解其生成式指数、评估与执行Agent的技术原理，分析self-directed免责的合规边界、回测过拟合、算法同质化羊群效应与安全风险，以及银行在适当性管理、责任认定和投资者保护上的护城河。",
+    "date": "2026-11-15",
+    "tags": [
+      "Agentic Brokerage",
+      "智能投顾",
+      "AI炒股",
+      "财富管理",
+      "适当性",
+      "算法风险",
+      "银行科技"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让Agent安全地付钱",
     "slug": "openai-chatgpt-wallet-agent-tokenized-payment-bank",
     "url": "/articles/openai-chatgpt-wallet-agent-tokenized-payment-bank.md",
