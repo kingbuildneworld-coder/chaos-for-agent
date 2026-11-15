@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (267)
+## Articles (268)
 
+- [让Agent懂得分寸](https://bi-chao.com/articles/agent-initiative-proactivity-abstain-governance-bank)
+  - Description: Deepnote于11月13日发布Agent Initiative Benchmark，把12个前沿模型放进合成公司Slack，测试它们何时该主动、何时该沉默，发现多数模型倾向过度主动。本文结合DelegationBench、ProactBench等框架，拆解行动、请示、追问、拒绝四类决策，分析过度主动的训练根因与删库、数据泄露等代价，以及银行在适当性、授权和责任上的分寸治理。
+  - Date: 2026-11-16
+  - Tags: Agent主动性, 智能体治理, 过度行动, 适当性, 运行时控制, 银行科技
 - [让AI替你炒股](https://bi-chao.com/articles/public-agentic-brokerage-ai-trading-retail-risk-bank)
   - Description: 美国券商Public自称全球首个Agentic Brokerage，让散户用自然语言生成自定义股票指数，并设定可循环执行的交易Agent，监控条件、自动下单。本文拆解其生成式指数、评估与执行Agent的技术原理，分析self-directed免责的合规边界、回测过拟合、算法同质化羊群效应与安全风险，以及银行在适当性管理、责任认定和投资者保护上的护城河。
   - Date: 2026-11-15

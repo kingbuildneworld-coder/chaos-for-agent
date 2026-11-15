@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 267,
+    "total_articles": 268,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,20 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "agent-initiative-proactivity-abstain-governance-bank",
+      "title": "让Agent懂得分寸",
+      "date": "2026-11-16",
+      "description": "Deepnote于11月13日发布Agent Initiative Benchmark，把12个前沿模型放进合成公司Slack，测试它们何时该主动、何时该沉默，发现多数模型倾向过度主动。本文结合DelegationBench、ProactBench等框架，拆解行动、请示、追问、拒绝四类决策，分析过度主动的训练根因与删库、数据泄露等代价，以及银行在适当性、授权和责任上的分寸治理。",
+      "tags": [
+        "Agent主动性",
+        "智能体治理",
+        "过度行动",
+        "适当性",
+        "运行时控制",
+        "银行科技"
+      ]
+    },
     {
       "slug": "public-agentic-brokerage-ai-trading-retail-risk-bank",
       "title": "让AI替你炒股",
@@ -4408,7 +4422,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-15",
+  "last_updated": "2026-11-16",
   "version": "1.1",
-  "total_articles": 267
+  "total_articles": 268
 }
