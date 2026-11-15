@@ -16,6 +16,24 @@
     "schema_type": "Article"
   },
   {
+    "title": "Meta 与 Sierra 的个人智能体协议 Poppy 1.0 分析报告：智能体“持证进门”，金融机构该怎么接、怎么记账",
+    "slug": "meta-sierra-personal-agent-protocol-poppy-bank-observability",
+    "url": "/articles/meta-sierra-personal-agent-protocol-poppy-bank-observability.md",
+    "description": "2026年11月13日，Sierra 与 Meta 牵头的个人智能体协议 Poppy 发布 1.0，Meta 的 Muse 全量启用、Shopify 全部商户默认支持，设计伙伴超过100家，含美国银行、富国、BBVA、Visa、万事达。本文拆解协议五个模块与审批扩展，分析它对金融机构的意义、未解决的问题，以及对国内金融智能体可观测性标准的启示。",
+    "date": "2026-11-16",
+    "tags": [
+      "Poppy",
+      "个人智能体协议",
+      "Meta",
+      "Sierra",
+      "智能体身份",
+      "OAuth",
+      "金融智能体",
+      "可观测性"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让AI替你炒股",
     "slug": "public-agentic-brokerage-ai-trading-retail-risk-bank",
     "url": "/articles/public-agentic-brokerage-ai-trading-retail-risk-bank.md",
