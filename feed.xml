@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-16T00:00:00Z</updated>
+  <updated>2026-11-17T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,19 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/fed-barr-agentic-bank-run-deposit-flash-liquidity-bank</id>
+    <title>当挤兑按秒发生</title>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/fed-barr-agentic-bank-run-deposit-flash-liquidity-bank" rel="alternate" type="text/html"/>
+    <summary>美联储理事Barr于11月16日在米兰警告，自主AI Agent可瞬间检测收益率差异和稳定性信号，自动高速转移存款，把银行挤兑压缩到几分钟内，使传统流动性管理和监管干预失效，大型银行已发现Agent在零售账户尝试未授权操作。本文结合Apollo的Agent挤兑警告与硅谷银行对照，拆解机器速度挤兑的感知、决策、执行与正反馈机制，以及断路器、转账限速、显式授权等治理应对。</summary>
+    <category term="银行挤兑"/>
+    <category term="智能体"/>
+    <category term="流动性风险"/>
+    <category term="金融稳定"/>
+    <category term="断路器"/>
+    <category term="银行治理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/agent-initiative-proactivity-abstain-governance-bank</id>
     <title>让Agent懂得分寸</title>
