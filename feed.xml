@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-17T00:00:00Z</updated>
+  <updated>2026-11-18T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,19 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/banks-block-third-party-ai-agents-account-access-liability-bank</id>
+    <title>把Agent挡在门外</title>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/banks-block-third-party-ai-agents-account-access-liability-bank" rel="alternate" type="text/html"/>
+    <summary>从10月美国四大行到11月英国五大行，多家银行封锁或限制第三方AI Agent登录客户账户，部分禁止其在客户未参与时代为交易。银行的核心难题不是反AI，而是无法验证的委托：软件用客户密码登录、以客户名义行事，却无法证明自己被授权做什么。本文拆解封锁、合同甩责与自建授权收费站三种应对，分析开放银行框架与AI Agent的错配、未授权支付的责任真空，以及监管如何为Agent金融重建准入与问责边界。</summary>
+    <category term="智能体"/>
+    <category term="开放银行"/>
+    <category term="账户准入"/>
+    <category term="责任归属"/>
+    <category term="银行治理"/>
+    <category term="消费者保护"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/fed-barr-agentic-bank-run-deposit-flash-liquidity-bank</id>
     <title>当挤兑按秒发生</title>

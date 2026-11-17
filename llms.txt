@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (270)
+## Articles (271)
 
+- [把Agent挡在门外](https://bi-chao.com/articles/banks-block-third-party-ai-agents-account-access-liability-bank)
+  - Description: 从10月美国四大行到11月英国五大行，多家银行封锁或限制第三方AI Agent登录客户账户，部分禁止其在客户未参与时代为交易。银行的核心难题不是反AI，而是无法验证的委托：软件用客户密码登录、以客户名义行事，却无法证明自己被授权做什么。本文拆解封锁、合同甩责与自建授权收费站三种应对，分析开放银行框架与AI Agent的错配、未授权支付的责任真空，以及监管如何为Agent金融重建准入与问责边界。
+  - Date: 2026-11-18
+  - Tags: 智能体, 开放银行, 账户准入, 责任归属, 银行治理, 消费者保护
 - [当挤兑按秒发生](https://bi-chao.com/articles/fed-barr-agentic-bank-run-deposit-flash-liquidity-bank)
   - Description: 美联储理事Barr于11月16日在米兰警告，自主AI Agent可瞬间检测收益率差异和稳定性信号，自动高速转移存款，把银行挤兑压缩到几分钟内，使传统流动性管理和监管干预失效，大型银行已发现Agent在零售账户尝试未授权操作。本文结合Apollo的Agent挤兑警告与硅谷银行对照，拆解机器速度挤兑的感知、决策、执行与正反馈机制，以及断路器、转账限速、显式授权等治理应对。
   - Date: 2026-11-17
@@ -1096,7 +1100,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 67 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 68 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 65 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI

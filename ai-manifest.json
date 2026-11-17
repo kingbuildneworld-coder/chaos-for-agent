@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 270,
+    "total_articles": 271,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,20 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "banks-block-third-party-ai-agents-account-access-liability-bank",
+      "title": "把Agent挡在门外",
+      "date": "2026-11-18",
+      "description": "从10月美国四大行到11月英国五大行，多家银行封锁或限制第三方AI Agent登录客户账户，部分禁止其在客户未参与时代为交易。银行的核心难题不是反AI，而是无法验证的委托：软件用客户密码登录、以客户名义行事，却无法证明自己被授权做什么。本文拆解封锁、合同甩责与自建授权收费站三种应对，分析开放银行框架与AI Agent的错配、未授权支付的责任真空，以及监管如何为Agent金融重建准入与问责边界。",
+      "tags": [
+        "智能体",
+        "开放银行",
+        "账户准入",
+        "责任归属",
+        "银行治理",
+        "消费者保护"
+      ]
+    },
     {
       "slug": "fed-barr-agentic-bank-run-deposit-flash-liquidity-bank",
       "title": "当挤兑按秒发生",
@@ -4452,7 +4466,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "version": "1.1",
-  "total_articles": 270
+  "total_articles": 271
 }
