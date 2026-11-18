@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (271)
+## Articles (272)
 
+- [给Agent画一个框](https://bi-chao.com/articles/agent-to-agent-financial-transaction-control-layer-bank)
+  - Description: 摩根大通Kinexys与现代卡、BNY与微软几乎同时完成Agent间金融交易试点：前者让两个Agent在授权框内自动完成模拟外汇交易，后者让Agent在控制层上谈判美国国债、人工保留最终批准。两个案例设计不同，却共用同一套逻辑——身份验证、授权网关、交易限额、人工否决与全程留痕。本文拆解Agent间交易的控制层五件套，分析为什么机构普遍认为治理比技术更难，以及监管沙盒如何为Agent金融铺路。
+  - Date: 2026-11-19
+  - Tags: 智能体, 机构间交易, 控制层, 授权治理, 外汇, 国债, 银行治理
 - [把Agent挡在门外](https://bi-chao.com/articles/banks-block-third-party-ai-agents-account-access-liability-bank)
   - Description: 从10月美国四大行到11月英国五大行，多家银行封锁或限制第三方AI Agent登录客户账户，部分禁止其在客户未参与时代为交易。银行的核心难题不是反AI，而是无法验证的委托：软件用客户密码登录、以客户名义行事，却无法证明自己被授权做什么。本文拆解封锁、合同甩责与自建授权收费站三种应对，分析开放银行框架与AI Agent的错配、未授权支付的责任真空，以及监管如何为Agent金融重建准入与问责边界。
   - Date: 2026-11-18
@@ -1100,7 +1104,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 68 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 69 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 65 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI

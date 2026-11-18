@@ -1,5 +1,22 @@
 [
   {
+    "title": "给Agent画一个框",
+    "slug": "agent-to-agent-financial-transaction-control-layer-bank",
+    "url": "/articles/agent-to-agent-financial-transaction-control-layer-bank.md",
+    "description": "摩根大通Kinexys与现代卡、BNY与微软几乎同时完成Agent间金融交易试点：前者让两个Agent在授权框内自动完成模拟外汇交易，后者让Agent在控制层上谈判美国国债、人工保留最终批准。两个案例设计不同，却共用同一套逻辑——身份验证、授权网关、交易限额、人工否决与全程留痕。本文拆解Agent间交易的控制层五件套，分析为什么机构普遍认为治理比技术更难，以及监管沙盒如何为Agent金融铺路。",
+    "date": "2026-11-19",
+    "tags": [
+      "智能体",
+      "机构间交易",
+      "控制层",
+      "授权治理",
+      "外汇",
+      "国债",
+      "银行治理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "把Agent挡在门外",
     "slug": "banks-block-third-party-ai-agents-account-access-liability-bank",
     "url": "/articles/banks-block-third-party-ai-agents-account-access-liability-bank.md",
