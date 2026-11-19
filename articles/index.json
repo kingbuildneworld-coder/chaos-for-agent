@@ -17,6 +17,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "微软 BitNet 分析：1 比特大模型把推理搬回 CPU，金融机构的边缘智能体该不该跟",
+    "slug": "microsoft-bitnet-1-bit-llm-cpu-inference-bank-edge",
+    "url": "/articles/microsoft-bitnet-1-bit-llm-cpu-inference-bank-edge.md",
+    "description": "微软开源的 BitNet（bitnet.cpp）是 1.58 比特三值大模型的官方推理框架，GitHub 星标超过 4 万。官方 2B 模型非嵌入内存仅 0.4GB，x86 CPU 提速 2.37 至 6.17 倍。本文拆解其原理、性能与短板，并分析金融机构在网点、终端与内网场景的落地路径。",
+    "date": "2026-11-19",
+    "tags": [
+      "BitNet",
+      "1比特大模型",
+      "微软",
+      "CPU推理",
+      "端侧AI",
+      "模型量化",
+      "金融智能体"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "把Agent挡在门外",
     "slug": "banks-block-third-party-ai-agents-account-access-liability-bank",
     "url": "/articles/banks-block-third-party-ai-agents-account-access-liability-bank.md",
