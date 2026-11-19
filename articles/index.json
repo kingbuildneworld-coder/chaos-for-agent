@@ -1,5 +1,21 @@
 [
   {
+    "title": "别只听模型自证",
+    "slug": "ai-model-independent-evidence-attestation-bank",
+    "url": "/articles/ai-model-independent-evidence-attestation-bank.md",
+    "description": "微软在Ignite大会上联合40多家组织发起AI透明度倡议，核心判断是：企业能看到模型接触的一切，却看不到模型内部，而模型对自己的描述不是独立证据，嵌套黑箱不可接受。本文拆解该倡议的三个部分，梳理可信执行环境、零知识证明、加密证明链与签名审计日志等独立验证技术，分析它们如何让银行在不接触模型权重的情况下核验模型行为，并结合模型风险管理与供应链治理，探讨信任基础为何转向可独立重放的证据链。",
+    "date": "2026-11-20",
+    "tags": [
+      "AI治理",
+      "模型风险管理",
+      "透明度",
+      "加密证明",
+      "供应链治理",
+      "智能体"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "给Agent画一个框",
     "slug": "agent-to-agent-financial-transaction-control-layer-bank",
     "url": "/articles/agent-to-agent-financial-transaction-control-layer-bank.md",

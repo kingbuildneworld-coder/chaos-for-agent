@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-19T00:00:00Z</updated>
+  <updated>2026-11-20T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,19 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/ai-model-independent-evidence-attestation-bank</id>
+    <title>别只听模型自证</title>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/ai-model-independent-evidence-attestation-bank" rel="alternate" type="text/html"/>
+    <summary>微软在Ignite大会上联合40多家组织发起AI透明度倡议，核心判断是：企业能看到模型接触的一切，却看不到模型内部，而模型对自己的描述不是独立证据，嵌套黑箱不可接受。本文拆解该倡议的三个部分，梳理可信执行环境、零知识证明、加密证明链与签名审计日志等独立验证技术，分析它们如何让银行在不接触模型权重的情况下核验模型行为，并结合模型风险管理与供应链治理，探讨信任基础为何转向可独立重放的证据链。</summary>
+    <category term="AI治理"/>
+    <category term="模型风险管理"/>
+    <category term="透明度"/>
+    <category term="加密证明"/>
+    <category term="供应链治理"/>
+    <category term="智能体"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/agent-to-agent-financial-transaction-control-layer-bank</id>
     <title>给Agent画一个框</title>
