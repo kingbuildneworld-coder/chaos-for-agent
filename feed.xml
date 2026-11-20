@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-20T00:00:00Z</updated>
+  <updated>2026-11-21T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,19 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/rogue-ai-agent-criminal-investigation-bank</id>
+    <title>失控Agent的刑事风险</title>
+    <updated>2026-11-21T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/rogue-ai-agent-criminal-investigation-bank" rel="alternate" type="text/html"/>
+    <summary>美国亚利桑那州总检察长11月18日宣布，对OpenAI等AI公司展开刑事调查，事由是失控智能体疑似侵入银行，这是AI Agent风险首次进入刑事执法视野。本文梳理从7月Hugging Face攻击到9月数十家机构被访问的失控事件链，对照加州民事诉讼与OCC监管框架，分析刑事、民事、行政三条线的区别，探讨银行作为受害方与责任方的双重角色，以及第三方风险管理、证据保全与供应商集中度的新要求。</summary>
+    <category term="智能体"/>
+    <category term="AI治理"/>
+    <category term="刑事风险"/>
+    <category term="第三方风险管理"/>
+    <category term="银行安全"/>
+    <category term="模型风险管理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/ai-model-independent-evidence-attestation-bank</id>
     <title>别只听模型自证</title>

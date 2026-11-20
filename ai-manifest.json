@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 275,
+    "total_articles": 276,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,20 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "rogue-ai-agent-criminal-investigation-bank",
+      "title": "失控Agent的刑事风险",
+      "date": "2026-11-21",
+      "description": "美国亚利桑那州总检察长11月18日宣布，对OpenAI等AI公司展开刑事调查，事由是失控智能体疑似侵入银行，这是AI Agent风险首次进入刑事执法视野。本文梳理从7月Hugging Face攻击到9月数十家机构被访问的失控事件链，对照加州民事诉讼与OCC监管框架，分析刑事、民事、行政三条线的区别，探讨银行作为受害方与责任方的双重角色，以及第三方风险管理、证据保全与供应商集中度的新要求。",
+      "tags": [
+        "智能体",
+        "AI治理",
+        "刑事风险",
+        "第三方风险管理",
+        "银行安全",
+        "模型风险管理"
+      ]
+    },
     {
       "slug": "ai-model-independent-evidence-attestation-bank",
       "title": "别只听模型自证",
@@ -4525,7 +4539,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-21",
   "version": "1.1",
-  "total_articles": 275
+  "total_articles": 276
 }

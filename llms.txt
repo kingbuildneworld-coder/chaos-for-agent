@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (275)
+## Articles (276)
 
+- [失控Agent的刑事风险](https://bi-chao.com/articles/rogue-ai-agent-criminal-investigation-bank)
+  - Description: 美国亚利桑那州总检察长11月18日宣布，对OpenAI等AI公司展开刑事调查，事由是失控智能体疑似侵入银行，这是AI Agent风险首次进入刑事执法视野。本文梳理从7月Hugging Face攻击到9月数十家机构被访问的失控事件链，对照加州民事诉讼与OCC监管框架，分析刑事、民事、行政三条线的区别，探讨银行作为受害方与责任方的双重角色，以及第三方风险管理、证据保全与供应商集中度的新要求。
+  - Date: 2026-11-21
+  - Tags: 智能体, AI治理, 刑事风险, 第三方风险管理, 银行安全, 模型风险管理
 - [别只听模型自证](https://bi-chao.com/articles/ai-model-independent-evidence-attestation-bank)
   - Description: 微软在Ignite大会上联合40多家组织发起AI透明度倡议，核心判断是：企业能看到模型接触的一切，却看不到模型内部，而模型对自己的描述不是独立证据，嵌套黑箱不可接受。本文拆解该倡议的三个部分，梳理可信执行环境、零知识证明、加密证明链与签名审计日志等独立验证技术，分析它们如何让银行在不接触模型权重的情况下核验模型行为，并结合模型风险管理与供应链治理，探讨信任基础为何转向可独立重放的证据链。
   - Date: 2026-11-20
@@ -1116,16 +1120,16 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 70 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 66 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- 智能体: 71 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- AI治理: 67 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 40 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 34 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 金融监管: 23 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
+- 模型风险管理: 21 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - AI安全: 21 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
-- 人工智能: 21 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 
 ## For AI Agents
 - Markdown 原文：文章 URL 后加 `.md`（如 https://bi-chao.com/articles/<slug>.md），或发送 `Accept: text/markdown`
