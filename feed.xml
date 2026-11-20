@@ -26,6 +26,20 @@
     <category term="智能体"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/softbank-idc-frontier-ransomware-ai-vulnerability-bank</id>
+    <title>软银 IDC Frontier 勒索事件深度分析：AI 让漏洞越补越多，银行的补丁体系还撑得住吗</title>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/softbank-idc-frontier-ransomware-ai-vulnerability-bank" rel="alternate" type="text/html"/>
+    <summary>软银子公司 IDC Frontier 因认证系统所用开源软件漏洞遭勒索攻击，495 家企业和地方政府受影响。软银随后承认开源组件未纳入诊断，用新 AI 模型复查又冒出 3.5 万个漏洞。本文拆解事件经过、软银的应对与盲点，并给出银行和金融机构可直接对照的检查清单。</summary>
+    <category term="软银"/>
+    <category term="IDC Frontier"/>
+    <category term="勒索软件"/>
+    <category term="开源软件安全"/>
+    <category term="AI漏洞挖掘"/>
+    <category term="补丁管理"/>
+    <category term="银行网络安全"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/agent-to-agent-financial-transaction-control-layer-bank</id>
     <title>给Agent画一个框</title>
     <updated>2026-11-19T00:00:00Z</updated>
