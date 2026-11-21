@@ -1,5 +1,21 @@
 [
   {
+    "title": "量子帮模型挑变量",
+    "slug": "bmo-quantum-machine-learning-feature-selection-bank",
+    "url": "/articles/bmo-quantum-machine-learning-feature-selection-bank.md",
+    "description": "加拿大BMO银行11月19日宣布，联合高校在IBM量子计算机上完成机器学习特征选择实验，证明量子效用：在结果质量相近的前提下，所需样本比传统方法少1到2个数量级。本文拆解其改编的量子博弈框架如何把变量筛选变成量子战略游戏，解释特征选择在信用评分、反欺诈和风险建模中的作用，分析样本效率对小样本、稀有事件和隐私敏感场景的意义，并结合量子硬件局限、模型验证与供应商生态，给出银行量子就绪的冷静判断。",
+    "date": "2026-11-22",
+    "tags": [
+      "量子计算",
+      "量子机器学习",
+      "特征选择",
+      "风险管理",
+      "数据治理",
+      "模型验证"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "失控Agent的刑事风险",
     "slug": "rogue-ai-agent-criminal-investigation-bank",
     "url": "/articles/rogue-ai-agent-criminal-investigation-bank.md",
