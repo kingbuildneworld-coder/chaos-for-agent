@@ -17,6 +17,23 @@
     "schema_type": "Article"
   },
   {
+    "title": "可验证的发现机器：GSI 研究成果解读与量化投资启示",
+    "slug": "gsi-verifiable-discovery-quant-investing",
+    "url": "/articles/gsi-verifiable-discovery-quant-investing.md",
+    "description": "Generalised Superintelligence（GSI）用两台小型云服务器产出 112 项可验证成果，覆盖组合设计、量子纠错、SAT、材料与芯片布局。它的方法是先找结构、一类结构一个引擎、先写检验器、多验证器复核并诚实标注局限。对量化投资而言，alpha 没有检验器，真正该借鉴的是方法与纪律：组合优化与执行用最优性证书，回测用独立双引擎与不变量测试，信号研究记录每次尝试、只报区间。",
+    "date": "2026-11-23",
+    "tags": [
+      "AI科研",
+      "自动发现",
+      "量化投资",
+      "组合优化",
+      "回测",
+      "可验证性",
+      "模型风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "让 AI 助手安全地「自我进化」：Safe Personal RSI 解读",
     "slug": "safe-personal-rsi-agent-update-arxiv-2611-23651",
     "url": "/articles/safe-personal-rsi-agent-update-arxiv-2611-23651.md",

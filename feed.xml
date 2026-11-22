@@ -27,6 +27,20 @@
     <category term="AI治理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/gsi-verifiable-discovery-quant-investing</id>
+    <title>可验证的发现机器：GSI 研究成果解读与量化投资启示</title>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/gsi-verifiable-discovery-quant-investing" rel="alternate" type="text/html"/>
+    <summary>Generalised Superintelligence（GSI）用两台小型云服务器产出 112 项可验证成果，覆盖组合设计、量子纠错、SAT、材料与芯片布局。它的方法是先找结构、一类结构一个引擎、先写检验器、多验证器复核并诚实标注局限。对量化投资而言，alpha 没有检验器，真正该借鉴的是方法与纪律：组合优化与执行用最优性证书，回测用独立双引擎与不变量测试，信号研究记录每次尝试、只报区间。</summary>
+    <category term="AI科研"/>
+    <category term="自动发现"/>
+    <category term="量化投资"/>
+    <category term="组合优化"/>
+    <category term="回测"/>
+    <category term="可验证性"/>
+    <category term="模型风险管理"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/safe-personal-rsi-agent-update-arxiv-2611-23651</id>
     <title>让 AI 助手安全地「自我进化」：Safe Personal RSI 解读</title>
     <updated>2026-11-23T00:00:00Z</updated>
