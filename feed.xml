@@ -13,6 +13,21 @@
   <rights>CC BY-NC-ND 4.0</rights>
 
   <entry>
+    <id>https://bi-chao.com/articles/cola2-vs-meta-lcm-concept-language-models</id>
+    <title>先想意思再写字：Cola2 与 Meta LCM 深度对比</title>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/cola2-vs-meta-lcm-concept-language-models" rel="alternate" type="text/html"/>
+    <summary>Meta 的 Large Concept Model（LCM）和字节跳动 Seed 的 Cola2 都让模型先在连续语义空间里决定说什么，再写成文字。LCM 借用冻结的 SONAR 句向量空间，赢在多语言零样本、输在流畅度；Cola2 让动态压缩 VAE、DiT 与扩散解码器共同适应，用 346B 源 token 达到八项平均 60.10，并在 HellaSwag 与 StoryCloze 上小胜 Llama-3-8B，但知识型任务仍明显落后。</summary>
+    <category term="大语言模型"/>
+    <category term="概念模型"/>
+    <category term="连续潜空间"/>
+    <category term="扩散模型"/>
+    <category term="Cola2"/>
+    <category term="LCM"/>
+    <category term="Meta"/>
+    <category term="字节跳动"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/frontier-models-unmask-author-arxiv-2611-26216</id>
     <title>一段文字就能揭开你是谁：前沿大模型的作者识别能力解读</title>
     <updated>2026-11-23T00:00:00Z</updated>

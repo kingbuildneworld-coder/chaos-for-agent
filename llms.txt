@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (280)
+## Articles (281)
 
+- [先想意思再写字：Cola2 与 Meta LCM 深度对比](https://bi-chao.com/articles/cola2-vs-meta-lcm-concept-language-models)
+  - Description: Meta 的 Large Concept Model（LCM）和字节跳动 Seed 的 Cola2 都让模型先在连续语义空间里决定说什么，再写成文字。LCM 借用冻结的 SONAR 句向量空间，赢在多语言零样本、输在流畅度；Cola2 让动态压缩 VAE、DiT 与扩散解码器共同适应，用 346B 源 token 达到八项平均 60.10，并在 HellaSwag 与 StoryCloze 上小胜 Llama-3-8B，但知识型任务仍明显落后。
+  - Date: 2026-11-23
+  - Tags: 大语言模型, 概念模型, 连续潜空间, 扩散模型, Cola2, LCM, Meta, 字节跳动
 - [一段文字就能揭开你是谁：前沿大模型的作者识别能力解读](https://bi-chao.com/articles/frontier-models-unmask-author-arxiv-2611-26216)
   - Description: arXiv:2611.26216 论文显示：只给一段文字、不联网不给候选名单，前沿大模型能判断人写还是 AI 写（Gemini 4 Carbon 检出 97% 纯 AI 文本，与 Pangram 4.1 持平），能认出出自哪家实验室（Opus 5.5 对三大实验室准确率 98%），还能直接叫出人类作者的名字：Claude Fable 5.2 认出 56% 的私密同行评审、78% 的《Nature》评审、69% 的活跃 Reddit 用户。本文解读其方法、发现、匿名性影响与防御局限，并讨论对金融业的启示。
   - Date: 2026-11-23
