@@ -12,8 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (277)
+## Articles (279)
 
+- [一段文字就能揭开你是谁：前沿大模型的作者识别能力解读](https://bi-chao.com/articles/frontier-models-unmask-author-arxiv-2611-26216)
+  - Description: arXiv:2611.26216 论文显示：只给一段文字、不联网不给候选名单，前沿大模型能判断人写还是 AI 写（Gemini 4 Carbon 检出 97% 纯 AI 文本，与 Pangram 4.1 持平），能认出出自哪家实验室（Opus 5.5 对三大实验室准确率 98%），还能直接叫出人类作者的名字：Claude Fable 5.2 认出 56% 的私密同行评审、78% 的《Nature》评审、69% 的活跃 Reddit 用户。本文解读其方法、发现、匿名性影响与防御局限，并讨论对金融业的启示。
+  - Date: 2026-11-23
+  - Tags: arXiv, 作者识别, 去匿名化, AI文本检测, 隐私, 大模型, AI治理
+- [让 AI 助手安全地「自我进化」：Safe Personal RSI 解读](https://bi-chao.com/articles/safe-personal-rsi-agent-update-arxiv-2611-23651)
+  - Description: arXiv:2611.23651 论文 Safe Personal RSI 把个人智能体的「自我进化」收窄为只改提示词，并在更新前加一道安检：新旧版本对比测试、回滚定位、失败引导修复、安全与效用双门槛，过不了就保留旧版本。21 次风险更新拦下 20 次；GPT-5.6 Luna 修复后违规从 10.7% 降到 0%；小模型上学到的修复迁移到 Qwen3-14B 后违规从 69.0% 降到 17.9%。论文还揭示删除的记忆会「复活」、OAuth 权限未在本地检查两个运行时漏洞，并给出对金融业智能体治理的启示。
+  - Date: 2026-11-23
+  - Tags: arXiv, 智能体安全, 自我进化, 提示词工程, 授权边界, AI治理, 模型风险管理
 - [量子帮模型挑变量](https://bi-chao.com/articles/bmo-quantum-machine-learning-feature-selection-bank)
   - Description: 加拿大BMO银行11月19日宣布，联合高校在IBM量子计算机上完成机器学习特征选择实验，证明量子效用：在结果质量相近的前提下，所需样本比传统方法少1到2个数量级。本文拆解其改编的量子博弈框架如何把变量筛选变成量子战略游戏，解释特征选择在信用评分、反欺诈和风险建模中的作用，分析样本效率对小样本、稀有事件和隐私敏感场景的意义，并结合量子硬件局限、模型验证与供应商生态，给出银行量子就绪的冷静判断。
   - Date: 2026-11-22
@@ -1125,14 +1133,14 @@
 
 ## Topics (top 10)
 - 智能体: 71 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
-- AI治理: 67 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
+- AI治理: 69 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
-- 大模型: 40 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
+- 大模型: 41 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 35 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 金融监管: 23 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
+- 模型风险管理: 22 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
-- 模型风险管理: 21 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - AI安全: 21 articles → https://bi-chao.com/tags/AI%E5%AE%89%E5%85%A8
 
 ## For AI Agents
