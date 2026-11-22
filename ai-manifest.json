@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 281,
+    "total_articles": 282,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -65,6 +65,21 @@
         "LCM",
         "Meta",
         "字节跳动"
+      ]
+    },
+    {
+      "slug": "cop31-antalya-ai-climate-outcome-analysis",
+      "title": "COP31 深度分析：安塔利亚会议如何看待人工智能的气候影响，以及大会为何没能达成总协议",
+      "date": "2026-11-23",
+      "description": "COP31 关注了人工智能的气候影响，但只停留在谈判桌外：土耳其主席国与国际电信联盟发起自愿性的《安塔利亚人工智能承诺》，正式谈判没有设专门议题。大会本身在化石燃料措辞上破裂，覆盖性的「安塔利亚协定」未获通过，仅在公正转型等具体议题上取得进展。本文梳理大会主要内容、各方分歧，并讨论 AI 气候账本里被忽略的「赋能排放」。",
+      "tags": [
+        "COP31",
+        "气候变化",
+        "人工智能",
+        "数据中心",
+        "能源转型",
+        "气候金融",
+        "ESG"
       ]
     },
     {
@@ -4616,5 +4631,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-23",
   "version": "1.1",
-  "total_articles": 281
+  "total_articles": 282
 }
