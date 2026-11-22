@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (282)
+## Articles (283)
 
+- [AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析](https://bi-chao.com/articles/ai-lifecycle-carbon-footprint-assessment)
+  - Description: 只算推理用电会严重低估 AI 的环境影响。国际电信联盟 2026 年 2 月通过的 ITU-T L.1801 已把 AI 碳足迹的边界划到「从原材料到报废」，并要求单独报告训练、拆分初始训练与持续学习、按推理量分摊基础模型。本文用谷歌 Gemini、Mistral Large 2、TPU 与 H100 的公开数据说明：为什么要全生命周期算、各阶段各占多少、哪些地方最容易算错，以及对金融机构的含义。
+  - Date: 2026-11-23
+  - Tags: 人工智能, 碳足迹, 生命周期评价, LCA, 数据中心, ESG, 绿色计算
 - [先想意思再写字：Cola2 与 Meta LCM 深度对比](https://bi-chao.com/articles/cola2-vs-meta-lcm-concept-language-models)
   - Description: Meta 的 Large Concept Model（LCM）和字节跳动 Seed 的 Cola2 都让模型先在连续语义空间里决定说什么，再写成文字。LCM 借用冻结的 SONAR 句向量空间，赢在多语言零样本、输在流畅度；Cola2 让动态压缩 VAE、DiT 与扩散解码器共同适应，用 346B 源 token 达到八项平均 60.10，并在 HellaSwag 与 StoryCloze 上小胜 Llama-3-8B，但知识型任务仍明显落后。
   - Date: 2026-11-23
@@ -1150,9 +1154,9 @@
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
 - 大模型: 41 articles → https://bi-chao.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B
 - 风险管理: 35 articles → https://bi-chao.com/tags/%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
+- 人工智能: 23 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 模型风险管理: 23 articles → https://bi-chao.com/tags/%E6%A8%A1%E5%9E%8B%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86
 - 金融监管: 23 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%9B%91%E7%AE%A1
-- 人工智能: 22 articles → https://bi-chao.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD
 - 资产保全: 22 articles → https://bi-chao.com/tags/%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8
 
 ## For AI Agents

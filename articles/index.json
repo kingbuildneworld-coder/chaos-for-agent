@@ -1,5 +1,22 @@
 [
   {
+    "title": "AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析",
+    "slug": "ai-lifecycle-carbon-footprint-assessment",
+    "url": "/articles/ai-lifecycle-carbon-footprint-assessment.md",
+    "description": "只算推理用电会严重低估 AI 的环境影响。国际电信联盟 2026 年 2 月通过的 ITU-T L.1801 已把 AI 碳足迹的边界划到「从原材料到报废」，并要求单独报告训练、拆分初始训练与持续学习、按推理量分摊基础模型。本文用谷歌 Gemini、Mistral Large 2、TPU 与 H100 的公开数据说明：为什么要全生命周期算、各阶段各占多少、哪些地方最容易算错，以及对金融机构的含义。",
+    "date": "2026-11-23",
+    "tags": [
+      "人工智能",
+      "碳足迹",
+      "生命周期评价",
+      "LCA",
+      "数据中心",
+      "ESG",
+      "绿色计算"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "先想意思再写字：Cola2 与 Meta LCM 深度对比",
     "slug": "cola2-vs-meta-lcm-concept-language-models",
     "url": "/articles/cola2-vs-meta-lcm-concept-language-models.md",
