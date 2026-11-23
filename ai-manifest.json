@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 289,
+    "total_articles": 291,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -144,6 +144,22 @@
       ]
     },
     {
+      "slug": "minimax-colm-forgery-cryptanalysis",
+      "title": "两次加密查询伪造 CAESAR 获胜方案 COLM₀：MiniMax 内部模型如何击穿“纵深防御”认证加密的 64 比特完整性声明",
+      "date": "2026-11-23",
+      "description": "MiniMax 于 2026 年 11 月 20 日公开报告：其内部模型驱动的智能体系统发现，CAESAR 最终组合方案 COLM 的主模式 COLM₀ 在标准的唯一 nonce、仅加密查询模型下，只需 2 次加密查询、0 次解密查询即可以概率 1 伪造合法密文，远低于设计者声称的 2^64 安全界。本文梳理攻击原理、与既有攻击的对比、官方安全证明的漏洞、COLM₁₂₇ 为何幸免，以及对金融业密码敏捷性与供应商尽调的启示。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "认证加密",
+        "AEAD",
+        "CAESAR",
+        "COLM",
+        "对称密码"
+      ]
+    },
+    {
       "slug": "minimax-hawk-signature-cryptanalysis",
       "title": "单核 30.9 分钟恢复 HAWK-256 私钥：MiniMax 用“模 2 子格”把已退出 NIST 评选的后量子签名再削 9–24 比特",
       "date": "2026-11-23",
@@ -219,6 +235,21 @@
         "形式化验证",
         "Lean 4",
         "数学猜想"
+      ]
+    },
+    {
+      "slug": "minimax-waterfall-hash-collision",
+      "title": "把2^70变成3.5毫秒：MiniMax内部模型对SHA-3首轮候选Waterfall哈希的实用碰撞攻击深度解读",
+      "date": "2026-11-23",
+      "description": "MiniMax于2026年11月20日公开对2008年SHA-3首轮候选哈希Waterfall的实用碰撞攻击：借助Xbox置换的13维仿射差分不动点陪集、累加池奇偶抵消与块计数器转向，单核3.5毫秒生成512字节全状态碰撞，覆盖四种摘要长度。本文拆解原理，对比Fluhrer的2^70理论估计，复核公开碰撞样本，并讨论AI角色与需保持的警惕。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "哈希函数",
+        "碰撞攻击",
+        "差分密码分析",
+        "SHA-3"
       ]
     },
     {
@@ -4740,5 +4771,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-23",
   "version": "1.1",
-  "total_articles": 289
+  "total_articles": 291
 }

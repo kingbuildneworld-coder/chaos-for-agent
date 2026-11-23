@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (289)
+## Articles (291)
 
 - [AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析](https://bi-chao.com/articles/ai-lifecycle-carbon-footprint-assessment)
   - Description: 只算推理用电会严重低估 AI 的环境影响。国际电信联盟 2026 年 2 月通过的 ITU-T L.1801 已把 AI 碳足迹的边界划到「从原材料到报废」，并要求单独报告训练、拆分初始训练与持续学习、按推理量分摊基础模型。本文用谷歌 Gemini、Mistral Large 2、TPU 与 H100 的公开数据说明：为什么要全生命周期算、各阶段各占多少、哪些地方最容易算错，以及对金融机构的含义。
@@ -38,6 +38,10 @@
   - Description: MiniMax 于 2026 年 11 月 20 日公开对 SHA-3 首轮候选哈希 Blender 的分析：标准 IV 下 Blender-256 全轮碰撞 8 线程平均 0.73 秒可得，最短仅 24 字节；四个官方变体均有常数时间半自由起点碰撞；原像复杂度估计降至 2^35.93 至 2^67.64。MiniMax 称成果主要由内部模型驱动的智能体发现。本文拆解原理并讨论影响与疑点。
   - Date: 2026-11-23
   - Tags: 密码分析, MiniMax, AI for Science, 哈希函数, SHA-3, 碰撞攻击, 原像攻击, ARX
+- [两次加密查询伪造 CAESAR 获胜方案 COLM₀：MiniMax 内部模型如何击穿“纵深防御”认证加密的 64 比特完整性声明](https://bi-chao.com/articles/minimax-colm-forgery-cryptanalysis)
+  - Description: MiniMax 于 2026 年 11 月 20 日公开报告：其内部模型驱动的智能体系统发现，CAESAR 最终组合方案 COLM 的主模式 COLM₀ 在标准的唯一 nonce、仅加密查询模型下，只需 2 次加密查询、0 次解密查询即可以概率 1 伪造合法密文，远低于设计者声称的 2^64 安全界。本文梳理攻击原理、与既有攻击的对比、官方安全证明的漏洞、COLM₁₂₇ 为何幸免，以及对金融业密码敏捷性与供应商尽调的启示。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 认证加密, AEAD, CAESAR, COLM, 对称密码
 - [单核 30.9 分钟恢复 HAWK-256 私钥：MiniMax 用“模 2 子格”把已退出 NIST 评选的后量子签名再削 9–24 比特](https://bi-chao.com/articles/minimax-hawk-signature-cryptanalysis)
   - Description: MiniMax Cyber Team 于 2026 年 11 月 20 日公开 HAWK 密钥恢复改进工作：在 Anthropic 研究者提出的 τ-余循环格攻击基础上，把模 2 奇偶约束提前并入格结构，并用高精度 Cholesky 预处理消除病态基，使 HAWK-256 的私钥恢复在单个 CPU 核上 30.9 分钟完成，按 CPU 核秒计比此前 96 核基线少约 690 倍，并把 HAWK-256/512/1024 的启发式门复杂度估计分别再降低 9.28、11.15、23.74 比特。HAWK 已于 2026 年 7 月 29 日退出 NIST 第三轮，本文梳理该攻击的原理、数字口径、AI 角色与对安全实践的启示。
   - Date: 2026-11-23
@@ -58,6 +62,10 @@
   - Description: MiniMax 团队 2026 年 10 月 23 日在 arXiv 发布论文，用 8 元函数 x1x2(x3x4+x5x6+x7x8) 推翻 Tokareva 的弯函数和分解猜想，并推广到所有偶数 n≥8，同时给出导数猜想在 n≥10 的显式反例。主定理已用 Lean 4 形式化。本文解读猜想背景、反例构造、Lean 验证边界与 AI 角色。
   - Date: 2026-11-23
   - Tags: 密码分析, MiniMax, AI for Science, 布尔函数, 弯函数, 形式化验证, Lean 4, 数学猜想
+- [把2^70变成3.5毫秒：MiniMax内部模型对SHA-3首轮候选Waterfall哈希的实用碰撞攻击深度解读](https://bi-chao.com/articles/minimax-waterfall-hash-collision)
+  - Description: MiniMax于2026年11月20日公开对2008年SHA-3首轮候选哈希Waterfall的实用碰撞攻击：借助Xbox置换的13维仿射差分不动点陪集、累加池奇偶抵消与块计数器转向，单核3.5毫秒生成512字节全状态碰撞，覆盖四种摘要长度。本文拆解原理，对比Fluhrer的2^70理论估计，复核公开碰撞样本，并讨论AI角色与需保持的警惕。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 哈希函数, 碰撞攻击, 差分密码分析, SHA-3
 - [让 AI 助手安全地「自我进化」：Safe Personal RSI 解读](https://bi-chao.com/articles/safe-personal-rsi-agent-update-arxiv-2611-23651)
   - Description: arXiv:2611.23651 论文 Safe Personal RSI 把个人智能体的「自我进化」收窄为只改提示词，并在更新前加一道安检：新旧版本对比测试、回滚定位、失败引导修复、安全与效用双门槛，过不了就保留旧版本。21 次风险更新拦下 20 次；GPT-5.6 Luna 修复后违规从 10.7% 降到 0%；小模型上学到的修复迁移到 Qwen3-14B 后违规从 69.0% 降到 17.9%。论文还揭示删除的记忆会「复活」、OAuth 权限未在本地检查两个运行时漏洞，并给出对金融业智能体治理的启示。
   - Date: 2026-11-23
