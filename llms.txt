@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (291)
+## Articles (292)
 
 - [AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析](https://bi-chao.com/articles/ai-lifecycle-carbon-footprint-assessment)
   - Description: 只算推理用电会严重低估 AI 的环境影响。国际电信联盟 2026 年 2 月通过的 ITU-T L.1801 已把 AI 碳足迹的边界划到「从原材料到报废」，并要求单独报告训练、拆分初始训练与持续学习、按推理量分摊基础模型。本文用谷歌 Gemini、Mistral Large 2、TPU 与 H100 的公开数据说明：为什么要全生命周期算、各阶段各占多少、哪些地方最容易算错，以及对金融机构的含义。
@@ -34,6 +34,10 @@
   - Description: Generalised Superintelligence（GSI）用两台小型云服务器产出 112 项可验证成果，覆盖组合设计、量子纠错、SAT、材料与芯片布局。它的方法是先找结构、一类结构一个引擎、先写检验器、多验证器复核并诚实标注局限。对量化投资而言，alpha 没有检验器，真正该借鉴的是方法与纪律：组合优化与执行用最优性证书，回测用独立双引擎与不变量测试，信号研究记录每次尝试、只报区间。
   - Date: 2026-11-23
   - Tags: AI科研, 自动发现, 量化投资, 组合优化, 回测, 可验证性, 模型风险管理
+- [单核 16 秒恢复 8 轮内主密钥：MiniMax 用 OPTIC 积分框架重写 NSA 内存加密分组密码 ARADI 的低轮攻击纪录](https://bi-chao.com/articles/minimax-aradi-block-cipher-cryptanalysis)
+  - Description: MiniMax 11 月 20 日公开对 NSA 内存加密分组密码 ARADI 的积分分析：OPTIC 框架在单个 CPU 核上对 5 至 8 轮实现 256 比特主密钥恢复，每次不超过 16 秒、仅需 4 至 90,112 个选择明文；另给出首个专门 9 轮攻击（2^54.77 次蝶形运算）并改进 10 至 12 轮全密钥攻击。完整 16 轮仍未攻破。本文拆解原理并讨论影响与疑点。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 分组密码, ARADI, NSA, 积分攻击, 内存加密
 - [0.73 秒撞出 Blender-256 碰撞：MiniMax 用 AI 把一个 SHA-3 首轮候选哈希的原像攻击压到 2^35.9](https://bi-chao.com/articles/minimax-blender-hash-collision)
   - Description: MiniMax 于 2026 年 11 月 20 日公开对 SHA-3 首轮候选哈希 Blender 的分析：标准 IV 下 Blender-256 全轮碰撞 8 线程平均 0.73 秒可得，最短仅 24 字节；四个官方变体均有常数时间半自由起点碰撞；原像复杂度估计降至 2^35.93 至 2^67.64。MiniMax 称成果主要由内部模型驱动的智能体发现。本文拆解原理并讨论影响与疑点。
   - Date: 2026-11-23

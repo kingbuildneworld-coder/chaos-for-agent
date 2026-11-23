@@ -84,6 +84,21 @@
     <category term="模型风险管理"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/minimax-aradi-block-cipher-cryptanalysis</id>
+    <title>单核 16 秒恢复 8 轮内主密钥：MiniMax 用 OPTIC 积分框架重写 NSA 内存加密分组密码 ARADI 的低轮攻击纪录</title>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/minimax-aradi-block-cipher-cryptanalysis" rel="alternate" type="text/html"/>
+    <summary>MiniMax 11 月 20 日公开对 NSA 内存加密分组密码 ARADI 的积分分析：OPTIC 框架在单个 CPU 核上对 5 至 8 轮实现 256 比特主密钥恢复，每次不超过 16 秒、仅需 4 至 90,112 个选择明文；另给出首个专门 9 轮攻击（2^54.77 次蝶形运算）并改进 10 至 12 轮全密钥攻击。完整 16 轮仍未攻破。本文拆解原理并讨论影响与疑点。</summary>
+    <category term="密码分析"/>
+    <category term="MiniMax"/>
+    <category term="AI for Science"/>
+    <category term="分组密码"/>
+    <category term="ARADI"/>
+    <category term="NSA"/>
+    <category term="积分攻击"/>
+    <category term="内存加密"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/minimax-blender-hash-collision</id>
     <title>0.73 秒撞出 Blender-256 碰撞：MiniMax 用 AI 把一个 SHA-3 首轮候选哈希的原像攻击压到 2^35.9</title>
     <updated>2026-11-23T00:00:00Z</updated>

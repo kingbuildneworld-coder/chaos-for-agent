@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 291,
+    "total_articles": 292,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -125,6 +125,22 @@
         "回测",
         "可验证性",
         "模型风险管理"
+      ]
+    },
+    {
+      "slug": "minimax-aradi-block-cipher-cryptanalysis",
+      "title": "单核 16 秒恢复 8 轮内主密钥：MiniMax 用 OPTIC 积分框架重写 NSA 内存加密分组密码 ARADI 的低轮攻击纪录",
+      "date": "2026-11-23",
+      "description": "MiniMax 11 月 20 日公开对 NSA 内存加密分组密码 ARADI 的积分分析：OPTIC 框架在单个 CPU 核上对 5 至 8 轮实现 256 比特主密钥恢复，每次不超过 16 秒、仅需 4 至 90,112 个选择明文；另给出首个专门 9 轮攻击（2^54.77 次蝶形运算）并改进 10 至 12 轮全密钥攻击。完整 16 轮仍未攻破。本文拆解原理并讨论影响与疑点。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "分组密码",
+        "ARADI",
+        "NSA",
+        "积分攻击",
+        "内存加密"
       ]
     },
     {
@@ -4771,5 +4787,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-23",
   "version": "1.1",
-  "total_articles": 291
+  "total_articles": 292
 }
