@@ -12,7 +12,7 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (283)
+## Articles (289)
 
 - [AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析](https://bi-chao.com/articles/ai-lifecycle-carbon-footprint-assessment)
   - Description: 只算推理用电会严重低估 AI 的环境影响。国际电信联盟 2026 年 2 月通过的 ITU-T L.1801 已把 AI 碳足迹的边界划到「从原材料到报废」，并要求单独报告训练、拆分初始训练与持续学习、按推理量分摊基础模型。本文用谷歌 Gemini、Mistral Large 2、TPU 与 H100 的公开数据说明：为什么要全生命周期算、各阶段各占多少、哪些地方最容易算错，以及对金融机构的含义。
@@ -34,6 +34,30 @@
   - Description: Generalised Superintelligence（GSI）用两台小型云服务器产出 112 项可验证成果，覆盖组合设计、量子纠错、SAT、材料与芯片布局。它的方法是先找结构、一类结构一个引擎、先写检验器、多验证器复核并诚实标注局限。对量化投资而言，alpha 没有检验器，真正该借鉴的是方法与纪律：组合优化与执行用最优性证书，回测用独立双引擎与不变量测试，信号研究记录每次尝试、只报区间。
   - Date: 2026-11-23
   - Tags: AI科研, 自动发现, 量化投资, 组合优化, 回测, 可验证性, 模型风险管理
+- [0.73 秒撞出 Blender-256 碰撞：MiniMax 用 AI 把一个 SHA-3 首轮候选哈希的原像攻击压到 2^35.9](https://bi-chao.com/articles/minimax-blender-hash-collision)
+  - Description: MiniMax 于 2026 年 11 月 20 日公开对 SHA-3 首轮候选哈希 Blender 的分析：标准 IV 下 Blender-256 全轮碰撞 8 线程平均 0.73 秒可得，最短仅 24 字节；四个官方变体均有常数时间半自由起点碰撞；原像复杂度估计降至 2^35.93 至 2^67.64。MiniMax 称成果主要由内部模型驱动的智能体发现。本文拆解原理并讨论影响与疑点。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 哈希函数, SHA-3, 碰撞攻击, 原像攻击, ARX
+- [单核 30.9 分钟恢复 HAWK-256 私钥：MiniMax 用“模 2 子格”把已退出 NIST 评选的后量子签名再削 9–24 比特](https://bi-chao.com/articles/minimax-hawk-signature-cryptanalysis)
+  - Description: MiniMax Cyber Team 于 2026 年 11 月 20 日公开 HAWK 密钥恢复改进工作：在 Anthropic 研究者提出的 τ-余循环格攻击基础上，把模 2 奇偶约束提前并入格结构，并用高精度 Cholesky 预处理消除病态基，使 HAWK-256 的私钥恢复在单个 CPU 核上 30.9 分钟完成，按 CPU 核秒计比此前 96 核基线少约 690 倍，并把 HAWK-256/512/1024 的启发式门复杂度估计分别再降低 9.28、11.15、23.74 比特。HAWK 已于 2026 年 7 月 29 日退出 NIST 第三轮，本文梳理该攻击的原理、数字口径、AI 角色与对安全实践的启示。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 后量子密码, 格密码, 数字签名, HAWK, NIST PQC
+- [MiniMax 代数攻击 LOCKER 与 ROLLO：一条被动密文数秒恢复共享密钥，2019 版 ROLLO-I-128 私钥单核 5.97 秒破解](https://bi-chao.com/articles/minimax-locker-rollo-kem-attack)
+  - Description: MiniMax Cyber Team 于 2026 年 11 月 20 日公开对 NIST 后量子第一、二轮候选秩度量 KEM LOCKER 与 ROLLO 的代数密码分析：利用“系数矩阵转置 + 部分 Frobenius 自同构”，从单条被动密文或公钥生成共轭方程组，在 9 组 LOCKER 参数上全部低于此前最好攻击，LOCKER-I 共享密钥 1.15 秒、58 MB 内存恢复，2019 版 ROLLO-I-128 私钥单核 5.97 秒恢复；但 2020 年修订后的 ROLLO 参数不受影响。本文解读其原理、数据、与既有攻击的对比、AI 角色与局限。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 后量子密码, 秩度量编码, KEM, NIST PQC
+- [一个签名、0.06 秒还原全部私钥：MiniMax 披露 ASIACRYPT 2025 后量子签名 SBC_VOLE 的结构性漏洞](https://bi-chao.com/articles/minimax-sbc-vole-signature-key-recovery)
+  - Description: MiniMax 网络安全团队 2026 年 11 月公开报告称，ASIACRYPT 2025 发表的 VOLE-in-the-Head 后量子签名方案 SBC_VOLE 及其 MinMax 变体存在结构性缺陷：被动截获一个合法签名，即可在约 2^25.24 次比特运算、单核约 0.06 秒内恢复完整 256 比特私钥，全部 6 组参数、两个变体均受影响。报告同时指出原 EUF-CMA 证明的模拟器漏洞，并给出签名增大 8.6%–15.1% 的修复方案。本文梳理方案背景、攻击原理、与既有分析的对比、实际影响与 AI 参与的边界。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 后量子密码, 数字签名, VOLE-in-the-Head, 零知识证明
+- [MiniMax 恢复 94 把 TII McEliece 挑战私钥：原码缩短 ISD 把“数小时到数天”压到秒级，但 Classic McEliece 标准参数不受影响](https://bi-chao.com/articles/minimax-tii-mceliece-key-recovery)
+  - Description: MiniMax 网络安全团队 11 月 20 日发布报告：用“原码缩短 + 多目标 ISD”的结构性攻击，在 TII McEliece 挑战 Track 2 上恢复 94 把 Goppa 码私钥，55 把为首破，最高提速 43,400 倍，全部通过官方校验；报告同时论证 Classic McEliece 标准参数不受影响。本文拆解原理、数据、前作对比、AI 角色披露边界与后量子迁移启示。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 后量子密码, 编码密码学, McEliece, Goppa 码, 密钥恢复
+- [AI 智能体推翻 Tokareva 弯函数猜想：MiniMax 给出 n≥8 显式反例，并用 Lean 4 完成形式化验证](https://bi-chao.com/articles/minimax-tokareva-bent-conjecture-counterexample)
+  - Description: MiniMax 团队 2026 年 10 月 23 日在 arXiv 发布论文，用 8 元函数 x1x2(x3x4+x5x6+x7x8) 推翻 Tokareva 的弯函数和分解猜想，并推广到所有偶数 n≥8，同时给出导数猜想在 n≥10 的显式反例。主定理已用 Lean 4 形式化。本文解读猜想背景、反例构造、Lean 验证边界与 AI 角色。
+  - Date: 2026-11-23
+  - Tags: 密码分析, MiniMax, AI for Science, 布尔函数, 弯函数, 形式化验证, Lean 4, 数学猜想
 - [让 AI 助手安全地「自我进化」：Safe Personal RSI 解读](https://bi-chao.com/articles/safe-personal-rsi-agent-update-arxiv-2611-23651)
   - Description: arXiv:2611.23651 论文 Safe Personal RSI 把个人智能体的「自我进化」收窄为只改提示词，并在更新前加一道安检：新旧版本对比测试、回滚定位、失败引导修复、安全与效用双门槛，过不了就保留旧版本。21 次风险更新拦下 20 次；GPT-5.6 Luna 修复后违规从 10.7% 降到 0%；小模型上学到的修复迁移到 Qwen3-14B 后违规从 69.0% 降到 17.9%。论文还揭示删除的记忆会「复活」、OAuth 权限未在本地检查两个运行时漏洞，并给出对金融业智能体治理的启示。
   - Date: 2026-11-23

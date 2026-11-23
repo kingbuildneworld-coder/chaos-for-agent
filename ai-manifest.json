@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 283,
+    "total_articles": 289,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -125,6 +125,100 @@
         "回测",
         "可验证性",
         "模型风险管理"
+      ]
+    },
+    {
+      "slug": "minimax-blender-hash-collision",
+      "title": "0.73 秒撞出 Blender-256 碰撞：MiniMax 用 AI 把一个 SHA-3 首轮候选哈希的原像攻击压到 2^35.9",
+      "date": "2026-11-23",
+      "description": "MiniMax 于 2026 年 11 月 20 日公开对 SHA-3 首轮候选哈希 Blender 的分析：标准 IV 下 Blender-256 全轮碰撞 8 线程平均 0.73 秒可得，最短仅 24 字节；四个官方变体均有常数时间半自由起点碰撞；原像复杂度估计降至 2^35.93 至 2^67.64。MiniMax 称成果主要由内部模型驱动的智能体发现。本文拆解原理并讨论影响与疑点。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "哈希函数",
+        "SHA-3",
+        "碰撞攻击",
+        "原像攻击",
+        "ARX"
+      ]
+    },
+    {
+      "slug": "minimax-hawk-signature-cryptanalysis",
+      "title": "单核 30.9 分钟恢复 HAWK-256 私钥：MiniMax 用“模 2 子格”把已退出 NIST 评选的后量子签名再削 9–24 比特",
+      "date": "2026-11-23",
+      "description": "MiniMax Cyber Team 于 2026 年 11 月 20 日公开 HAWK 密钥恢复改进工作：在 Anthropic 研究者提出的 τ-余循环格攻击基础上，把模 2 奇偶约束提前并入格结构，并用高精度 Cholesky 预处理消除病态基，使 HAWK-256 的私钥恢复在单个 CPU 核上 30.9 分钟完成，按 CPU 核秒计比此前 96 核基线少约 690 倍，并把 HAWK-256/512/1024 的启发式门复杂度估计分别再降低 9.28、11.15、23.74 比特。HAWK 已于 2026 年 7 月 29 日退出 NIST 第三轮，本文梳理该攻击的原理、数字口径、AI 角色与对安全实践的启示。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "后量子密码",
+        "格密码",
+        "数字签名",
+        "HAWK",
+        "NIST PQC"
+      ]
+    },
+    {
+      "slug": "minimax-locker-rollo-kem-attack",
+      "title": "MiniMax 代数攻击 LOCKER 与 ROLLO：一条被动密文数秒恢复共享密钥，2019 版 ROLLO-I-128 私钥单核 5.97 秒破解",
+      "date": "2026-11-23",
+      "description": "MiniMax Cyber Team 于 2026 年 11 月 20 日公开对 NIST 后量子第一、二轮候选秩度量 KEM LOCKER 与 ROLLO 的代数密码分析：利用“系数矩阵转置 + 部分 Frobenius 自同构”，从单条被动密文或公钥生成共轭方程组，在 9 组 LOCKER 参数上全部低于此前最好攻击，LOCKER-I 共享密钥 1.15 秒、58 MB 内存恢复，2019 版 ROLLO-I-128 私钥单核 5.97 秒恢复；但 2020 年修订后的 ROLLO 参数不受影响。本文解读其原理、数据、与既有攻击的对比、AI 角色与局限。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "后量子密码",
+        "秩度量编码",
+        "KEM",
+        "NIST PQC"
+      ]
+    },
+    {
+      "slug": "minimax-sbc-vole-signature-key-recovery",
+      "title": "一个签名、0.06 秒还原全部私钥：MiniMax 披露 ASIACRYPT 2025 后量子签名 SBC_VOLE 的结构性漏洞",
+      "date": "2026-11-23",
+      "description": "MiniMax 网络安全团队 2026 年 11 月公开报告称，ASIACRYPT 2025 发表的 VOLE-in-the-Head 后量子签名方案 SBC_VOLE 及其 MinMax 变体存在结构性缺陷：被动截获一个合法签名，即可在约 2^25.24 次比特运算、单核约 0.06 秒内恢复完整 256 比特私钥，全部 6 组参数、两个变体均受影响。报告同时指出原 EUF-CMA 证明的模拟器漏洞，并给出签名增大 8.6%–15.1% 的修复方案。本文梳理方案背景、攻击原理、与既有分析的对比、实际影响与 AI 参与的边界。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "后量子密码",
+        "数字签名",
+        "VOLE-in-the-Head",
+        "零知识证明"
+      ]
+    },
+    {
+      "slug": "minimax-tii-mceliece-key-recovery",
+      "title": "MiniMax 恢复 94 把 TII McEliece 挑战私钥：原码缩短 ISD 把“数小时到数天”压到秒级，但 Classic McEliece 标准参数不受影响",
+      "date": "2026-11-23",
+      "description": "MiniMax 网络安全团队 11 月 20 日发布报告：用“原码缩短 + 多目标 ISD”的结构性攻击，在 TII McEliece 挑战 Track 2 上恢复 94 把 Goppa 码私钥，55 把为首破，最高提速 43,400 倍，全部通过官方校验；报告同时论证 Classic McEliece 标准参数不受影响。本文拆解原理、数据、前作对比、AI 角色披露边界与后量子迁移启示。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "后量子密码",
+        "编码密码学",
+        "McEliece",
+        "Goppa 码",
+        "密钥恢复"
+      ]
+    },
+    {
+      "slug": "minimax-tokareva-bent-conjecture-counterexample",
+      "title": "AI 智能体推翻 Tokareva 弯函数猜想：MiniMax 给出 n≥8 显式反例，并用 Lean 4 完成形式化验证",
+      "date": "2026-11-23",
+      "description": "MiniMax 团队 2026 年 10 月 23 日在 arXiv 发布论文，用 8 元函数 x1x2(x3x4+x5x6+x7x8) 推翻 Tokareva 的弯函数和分解猜想，并推广到所有偶数 n≥8，同时给出导数猜想在 n≥10 的显式反例。主定理已用 Lean 4 形式化。本文解读猜想背景、反例构造、Lean 验证边界与 AI 角色。",
+      "tags": [
+        "密码分析",
+        "MiniMax",
+        "AI for Science",
+        "布尔函数",
+        "弯函数",
+        "形式化验证",
+        "Lean 4",
+        "数学猜想"
       ]
     },
     {
@@ -4646,5 +4740,5 @@
   "license": "CC BY-NC-ND 4.0",
   "last_updated": "2026-11-23",
   "version": "1.1",
-  "total_articles": 283
+  "total_articles": 289
 }
