@@ -27,6 +27,19 @@
     <category term="绿色计算"/>
   </entry>
   <entry>
+    <id>https://bi-chao.com/articles/autonomous-agent-zero-day-vulnerability-discovery-bank</id>
+    <title>Agent自己找零日</title>
+    <updated>2026-11-23T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/autonomous-agent-zero-day-vulnerability-discovery-bank" rel="alternate" type="text/html"/>
+    <summary>亚马逊威胁情报11月20日披露，攻击者借开源自主渗透框架Cairn，让智能体在无人指挥下，于9月对东亚高校的攻击中11分钟内自主发现并利用医疗影像软件MONAI Label的零日漏洞，最终取得服务器root权限。本文梳理这起首个有完整记录的自主Agent零日案例，结合智能体四小时挖出工控系统四个漏洞的对照，分析攻击循环从人驱动到Agent闭环的质变，及其对银行漏洞管理、开源治理与攻防体系的影响。</summary>
+    <category term="零日漏洞"/>
+    <category term="智能体"/>
+    <category term="网络安全"/>
+    <category term="漏洞管理"/>
+    <category term="开源治理"/>
+    <category term="攻防对抗"/>
+  </entry>
+  <entry>
     <id>https://bi-chao.com/articles/cola2-vs-meta-lcm-concept-language-models</id>
     <title>先想意思再写字：Cola2 与 Meta LCM 深度对比</title>
     <updated>2026-11-23T00:00:00Z</updated>

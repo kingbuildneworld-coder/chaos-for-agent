@@ -12,12 +12,16 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (292)
+## Articles (293)
 
 - [AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析](https://bi-chao.com/articles/ai-lifecycle-carbon-footprint-assessment)
   - Description: 只算推理用电会严重低估 AI 的环境影响。国际电信联盟 2026 年 2 月通过的 ITU-T L.1801 已把 AI 碳足迹的边界划到「从原材料到报废」，并要求单独报告训练、拆分初始训练与持续学习、按推理量分摊基础模型。本文用谷歌 Gemini、Mistral Large 2、TPU 与 H100 的公开数据说明：为什么要全生命周期算、各阶段各占多少、哪些地方最容易算错，以及对金融机构的含义。
   - Date: 2026-11-23
   - Tags: 人工智能, 碳足迹, 生命周期评价, LCA, 数据中心, ESG, 绿色计算
+- [Agent自己找零日](https://bi-chao.com/articles/autonomous-agent-zero-day-vulnerability-discovery-bank)
+  - Description: 亚马逊威胁情报11月20日披露，攻击者借开源自主渗透框架Cairn，让智能体在无人指挥下，于9月对东亚高校的攻击中11分钟内自主发现并利用医疗影像软件MONAI Label的零日漏洞，最终取得服务器root权限。本文梳理这起首个有完整记录的自主Agent零日案例，结合智能体四小时挖出工控系统四个漏洞的对照，分析攻击循环从人驱动到Agent闭环的质变，及其对银行漏洞管理、开源治理与攻防体系的影响。
+  - Date: 2026-11-23
+  - Tags: 零日漏洞, 智能体, 网络安全, 漏洞管理, 开源治理, 攻防对抗
 - [先想意思再写字：Cola2 与 Meta LCM 深度对比](https://bi-chao.com/articles/cola2-vs-meta-lcm-concept-language-models)
   - Description: Meta 的 Large Concept Model（LCM）和字节跳动 Seed 的 Cola2 都让模型先在连续语义空间里决定说什么，再写成文字。LCM 借用冻结的 SONAR 句向量空间，赢在多语言零样本、输在流畅度；Cola2 让动态压缩 VAE、DiT 与扩散解码器共同适应，用 346B 源 token 达到八项平均 60.10，并在 HellaSwag 与 StoryCloze 上小胜 Llama-3-8B，但知识型任务仍明显落后。
   - Date: 2026-11-23
@@ -1184,7 +1188,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 71 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 72 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 69 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
