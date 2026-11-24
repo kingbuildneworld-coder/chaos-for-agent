@@ -3,7 +3,7 @@
   <id>https://bi-chao.com/</id>
   <title>chaos-for-agent — Chao Pih 的知识库</title>
   <subtitle>Agent-First 内容写作、AI大模型、银行业数字化转型深度文章</subtitle>
-  <updated>2026-11-23T00:00:00Z</updated>
+  <updated>2026-11-24T00:00:00Z</updated>
   <link href="https://bi-chao.com/" rel="alternate" type="text/html"/>
   <link href="https://bi-chao.com/feed.xml" rel="self" type="application/atom+xml"/>
   <author>
@@ -12,6 +12,20 @@
   <generator uri="https://bi-chao.com/">chaos-for-agent</generator>
   <rights>CC BY-NC-ND 4.0</rights>
 
+  <entry>
+    <id>https://bi-chao.com/articles/securities-ai-alliance-csrc-six-requirements-analysis</id>
+    <title>证券业人工智能应用发展联盟成立解读：证监会科技司“六点要求”释放了哪些信号，券商与 AI 厂商该如何应对</title>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <link href="https://bi-chao.com/articles/securities-ai-alliance-csrc-six-requirements-analysis" rel="alternate" type="text/html"/>
+    <summary>2026 年 11 月 20 日，证券业人工智能应用发展联盟在杭州成立，由证监会科技监管司指导、中国证券业协会牵头、21 家机构发起。本文逐条拆解科技司提出的“先试点、后推广”“技术中立”等六点要求，梳理联盟五个工作组与 2027 年四项任务，结合此前一年的监管脉络，分析它对券商、AI 厂商与量化从业者意味着什么，以及仍未公开的关键信息。</summary>
+    <category term="金融监管"/>
+    <category term="证券业"/>
+    <category term="AI治理"/>
+    <category term="中国证券业协会"/>
+    <category term="证监会"/>
+    <category term="行业联盟"/>
+    <category term="模型风险管理"/>
+  </entry>
   <entry>
     <id>https://bi-chao.com/articles/ai-lifecycle-carbon-footprint-assessment</id>
     <title>AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析</title>

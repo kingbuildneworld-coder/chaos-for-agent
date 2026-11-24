@@ -1,5 +1,22 @@
 [
   {
+    "title": "证券业人工智能应用发展联盟成立解读：证监会科技司“六点要求”释放了哪些信号，券商与 AI 厂商该如何应对",
+    "slug": "securities-ai-alliance-csrc-six-requirements-analysis",
+    "url": "/articles/securities-ai-alliance-csrc-six-requirements-analysis.md",
+    "description": "2026 年 11 月 20 日，证券业人工智能应用发展联盟在杭州成立，由证监会科技监管司指导、中国证券业协会牵头、21 家机构发起。本文逐条拆解科技司提出的“先试点、后推广”“技术中立”等六点要求，梳理联盟五个工作组与 2027 年四项任务，结合此前一年的监管脉络，分析它对券商、AI 厂商与量化从业者意味着什么，以及仍未公开的关键信息。",
+    "date": "2026-11-24",
+    "tags": [
+      "金融监管",
+      "证券业",
+      "AI治理",
+      "中国证券业协会",
+      "证监会",
+      "行业联盟",
+      "模型风险管理"
+    ],
+    "schema_type": "Article"
+  },
+  {
     "title": "AI 的碳足迹该从哪算到哪：从芯片制造到硬件报废的全生命周期评价深度分析",
     "slug": "ai-lifecycle-carbon-footprint-assessment",
     "url": "/articles/ai-lifecycle-carbon-footprint-assessment.md",
