@@ -8,7 +8,7 @@
   },
   "content": {
     "format": "Markdown with YAML front matter",
-    "total_articles": 294,
+    "total_articles": 295,
     "update_frequency": "weekly",
     "primary_language": "zh-CN",
     "topics": [
@@ -51,6 +51,20 @@
     "robots_txt": "https://bi-chao.com/robots.txt"
   },
   "articles": [
+    {
+      "slug": "mcp-skills-tasks-elicitation-agent-collaboration-bank",
+      "title": "MCP学会协作",
+      "date": "2026-11-25",
+      "description": "Anthropic于11月24日升级模型上下文协议：Skills over MCP开启公测，让服务器随工具下发专业技能与操作手册；Tasks与Elicitation正式可用，分别支持后台异步任务与执行中途向用户征询确认，文件上传即将推出。本文从银行风控视角解读MCP如何从连接层走向智能体协作层，分析技能供应链、后台任务授权与人工确认协议化的新课题，并给出落地治理清单。",
+      "tags": [
+        "MCP",
+        "智能体",
+        "人工确认",
+        "供应链安全",
+        "模型上下文协议",
+        "银行治理"
+      ]
+    },
     {
       "slug": "securities-ai-alliance-csrc-six-requirements-analysis",
       "title": "证券业人工智能应用发展联盟成立解读：证监会科技司“六点要求”释放了哪些信号，券商与 AI 厂商该如何应对",
@@ -4814,7 +4828,7 @@
     }
   ],
   "license": "CC BY-NC-ND 4.0",
-  "last_updated": "2026-11-24",
+  "last_updated": "2026-11-25",
   "version": "1.1",
-  "total_articles": 294
+  "total_articles": 295
 }

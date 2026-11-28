@@ -12,8 +12,12 @@
 - Tutorials: https://bi-chao.com/tutorials/%E4%BB%80%E4%B9%88%E6%98%AF%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D_%E4%BA%92%E5%8A%A8%E6%95%99%E7%A8%8B.html
 - Quant course: https://bi-chao.com/quant-course/index.html
 
-## Articles (294)
+## Articles (295)
 
+- [MCP学会协作](https://bi-chao.com/articles/mcp-skills-tasks-elicitation-agent-collaboration-bank)
+  - Description: Anthropic于11月24日升级模型上下文协议：Skills over MCP开启公测，让服务器随工具下发专业技能与操作手册；Tasks与Elicitation正式可用，分别支持后台异步任务与执行中途向用户征询确认，文件上传即将推出。本文从银行风控视角解读MCP如何从连接层走向智能体协作层，分析技能供应链、后台任务授权与人工确认协议化的新课题，并给出落地治理清单。
+  - Date: 2026-11-25
+  - Tags: MCP, 智能体, 人工确认, 供应链安全, 模型上下文协议, 银行治理
 - [证券业人工智能应用发展联盟成立解读：证监会科技司“六点要求”释放了哪些信号，券商与 AI 厂商该如何应对](https://bi-chao.com/articles/securities-ai-alliance-csrc-six-requirements-analysis)
   - Description: 2026 年 11 月 20 日，证券业人工智能应用发展联盟在杭州成立，由证监会科技监管司指导、中国证券业协会牵头、21 家机构发起。本文逐条拆解科技司提出的“先试点、后推广”“技术中立”等六点要求，梳理联盟五个工作组与 2027 年四项任务，结合此前一年的监管脉络，分析它对券商、AI 厂商与量化从业者意味着什么，以及仍未公开的关键信息。
   - Date: 2026-11-24
@@ -1192,7 +1196,7 @@
   - Tags: 数字人民币, 智能经济, 数字货币, 智能合约, 跨境支付, mBridge, CIPS, 金融基础设施, 货币数字化, 普惠金融
 
 ## Topics (top 10)
-- 智能体: 72 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
+- 智能体: 73 articles → https://bi-chao.com/tags/%E6%99%BA%E8%83%BD%E4%BD%93
 - AI治理: 70 articles → https://bi-chao.com/tags/AI%E6%B2%BB%E7%90%86
 - 金融科技: 61 articles → https://bi-chao.com/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80
 - 银行AI: 45 articles → https://bi-chao.com/tags/%E9%93%B6%E8%A1%8CAI
